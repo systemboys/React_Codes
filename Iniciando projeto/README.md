@@ -8,7 +8,8 @@ Com o npm lts instalado, crie seu projeto como Vite.
 npm create vite@latest project_name
 ```
 
-Obs.: Selecione React e depois JavaScript, o Fenestra não está utilizando TypyScript!
+> Obs.: Selecione React e depois JavaScript, o Fenestra não está utilizando TypyScript!
+
 2 - Entre no diretório do seu projeto project_name:
 
 Instale as dependências npm.
