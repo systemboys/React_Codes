@@ -2,7 +2,6 @@
 
 ## Sumário
 
-- Iniciando projeto com `Vite`
-- Instalando `NPM`
-- Instalando as `dependencias`
+- Iniciando projeto com `Vite`.
+- Instalando as dependencias `NPM`.
 
