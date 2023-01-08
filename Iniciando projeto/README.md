@@ -1,4 +1,4 @@
-# - [React Codes](https://github.com/systemboys/React_Codes "React Codes") / Iniciando projeto
+# [React Codes](https://github.com/systemboys/React_Codes "React Codes") / Iniciando projeto
 
 1 - Crie o seu projeto com o Vite:
 
