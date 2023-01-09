@@ -21,7 +21,7 @@
 - Link 2
 - Link 3
 
-### Manipulação de elementos JavaScript
+### Manipulação de elementos HTML
 
 - Link 1
 - Link 2
