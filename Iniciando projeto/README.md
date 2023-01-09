@@ -2,10 +2,9 @@
 
 ------------
 
-## Iniciando projeto com Vite
+- [Iniciando projeto com Vite](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#iniciando-projeto-com-vite "Iniciando projeto com Vite")
 
-- [Iniciando projeto com Vite][Iniciando projeto com Vite]
-[Iniciando projeto com Vite]: https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#iniciando-projeto-com-vite "Iniciando projeto com Vite"
+## Iniciando projeto com Vite
 
 1 - Crie o seu projeto com o Vite:
 
