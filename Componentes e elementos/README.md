@@ -3,6 +3,7 @@
 - [Formulário responsívo com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
 - [Abas horizontais com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [Utilizando o CSS Modules do React](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
+- [Responsive grids com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#utilizando-o-css-modules-do-react "Responsive grids com React-Bootstrap")
 
 ------------
 
@@ -121,6 +122,39 @@ Na impessão de elementos, as classes aparecerão da seguinte forma:
 
 ```
 <div class="_youClassName_n97f3_18"></div>
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Responsive grids com React-Bootstrap
+
+O Col permite especificar larguras de coluna em 6 tamanhos de ponto de interrupção (xs, sm, md, lg, xl e xxl). Para cada ponto de interrupção, você pode especificar a quantidade de colunas a serem expandidas ou definir a propriedade como para larguras de layout automáticas.
+
+Importações dos componentes:
+
+```javascript
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+```
+
+Elementos do HTML:
+
+```javascript
+<Container>
+    <Row>
+        <Col sm={8}>sm=8</Col>
+        <Col sm={4}>sm=4</Col>
+    </Row>
+    <Row>
+        <Col sm>sm=true</Col>
+        <Col sm>sm=true</Col>
+        <Col sm>sm=true</Col>
+    </Row>
+</Container>
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
