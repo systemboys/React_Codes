@@ -6,7 +6,7 @@
 
 ## Iniciando projeto com Vite
 
-1 - Crie o seu projeto com o Vite:
+### 1 - Crie o seu projeto com o Vite:
 
 Com o npm lts instalado, crie seu projeto como Vite.
 
@@ -16,7 +16,7 @@ npm create vite@latest project_name
 
 > Obs.: Selecione React e depois JavaScript, o Fenestra não está utilizando TypyScript!
 
-2 - Entre no diretório do seu projeto project_name:
+### 2 - Entre no diretório do seu projeto project_name:
 
 Instale as dependências npm.
 
@@ -24,7 +24,7 @@ Instale as dependências npm.
 npm i
 ```
 
-3 - Execute o projeto com o seguinte comando:
+### 3 - Execute o projeto com o seguinte comando:
 
 ```javascript
 npm run dev
