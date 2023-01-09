@@ -1,9 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes "React Codes") / Iniciando projeto
 
 - [1 - Crie o seu projeto com o Vite](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#1---crie-o-seu-projeto-com-o-vite "1 - Crie o seu projeto com o Vite")
-
 - [2 - Entre no diretório do seu projeto project_name](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#2---entre-no-diret%C3%B3rio-do-seu-projeto-project_name "2 - Entre no diretório do seu projeto project_name")
-
 - [3 - Execute o projeto com o seguinte comando](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
 
 ------------
