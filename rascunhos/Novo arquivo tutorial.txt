@@ -6,6 +6,8 @@
 
 ## Texto de começo
 
+![Imagem de exemplo](https://... "Imagem de exemplo")
+
 Descrição do conteúdo...
 
 ```javascript
