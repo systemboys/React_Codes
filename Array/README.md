@@ -9,14 +9,14 @@ Crie um arquivo como por exemplo `data.js`:
 
 ```javascript
 export default[
-    {id:1, file: 'https://site.com/img/background1.png', name:'file 1'},
-    {id:2, file: 'https://site.com/img/background2.png', name:'file 2'},
-    {id:3, file: 'https://site.com/img/background3.png', name:'file 3'},
-    {id:4, file: 'https://site.com/img/background4.png', name:'file 4'},
-    {id:5, file: 'https://site.com/img/background5.png', name:'file 5'},
-    {id:6, file: 'https://site.com/img/background6.png', name:'file 6'},
-    {id:7, file: 'https://site.com/img/background7.png', name:'file 7'},
-    {id:8, file: 'https://site.com/img/background8.png', name:'file 8'},
+    {id:1, option: 'Opção 1'},
+    {id:2, option: 'Opção 2'},
+    {id:3, option: 'Opção 3'},
+    {id:4, option: 'Opção 4'},
+    {id:5, option: 'Opção 5'},
+    {id:6, option: 'Opção 6'},
+    {id:7, option: 'Opção 7'},
+    {id:8, option: 'Opção 8'},
 ]
 ```
 
@@ -36,7 +36,7 @@ No componente (dentro da função que carrega o conteúdo) coloque a função qu
 function List_YourItems() {
     return YourItems.map(YourItems => {
         return (
-            <option value={YourItems.id}>{YourItems.name}</option>
+            <option value={YourItems.id}>{YourItems.option}</option>
         )
     })
 }
