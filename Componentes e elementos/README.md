@@ -4,6 +4,7 @@
 - [Abas horizontais com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [Utilizando o CSS Modules do React](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
 - [Responsive grids com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
+- [Buttons com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#responsive-grids-com-react-bootstrap "Buttons com React-Bootstrap")
 
 ------------
 
@@ -155,6 +156,35 @@ Elementos do HTML:
         <Col sm>sm=true</Col>
     </Row>
 </Container>
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Buttons com React-Bootstrap
+
+Importação dos botões do Bootstrap:
+
+```javascript
+import Button from 'react-bootstrap/Button';
+```
+
+Elementos HTML:
+
+```javascript
+<>
+    <Button variant="primary">Primary</Button>{' '}
+    <Button variant="secondary">Secondary</Button>{' '}
+    <Button variant="success">Success</Button>{' '}
+    <Button variant="warning">Warning</Button>{' '}
+    <Button variant="danger">Danger</Button>{' '}
+    <Button variant="info">Info</Button>{' '}
+    <Button variant="light">Light</Button>{' '}
+    <Button variant="dark">Dark</Button>
+    <Button variant="link">Link</Button>
+</>
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
