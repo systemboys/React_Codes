@@ -31,10 +31,6 @@ npm run dev
 > Após executar o projeto, logo lhe apresentará o endereço localhost com a parta selecionada como no exemplo abaixo:
 
 ```javascript
-> 01-fundamentos-reactjs@0.0.0 dev
-> vite
-
-
   VITE v3.2.3  ready in 772 ms
 
   ➜  Local:   http://localhost:5173/
