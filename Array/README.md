@@ -26,7 +26,7 @@ Importe o arquivo no componente:
 
 ```javascript
 // Arquivo de dados onde estão os planos de fundo
-import background from './data.js';
+import Background from './data.js';
 ```
 
 No componente (dentro da função que carrega o conteúdo) crie a função como mostra abaixo:
@@ -34,10 +34,10 @@ No componente (dentro da função que carrega o conteúdo) crie a função como 
 ```javascript
 // Função que faz o laço em busca dos itens do Array
 function listBackgrounds() {
-    return background.map(background => {
+    return Background.map(Background => {
         return (
             <li>
-                {background.name}
+                {Background.name}
             </li>
         )
     })
