@@ -1,6 +1,8 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Componentes e elementos
 
 - [Formulário responsívo com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
+- [Abas horizontais com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Abas horizontais com React-Bootstrap")
+- [Utilizando o CSS Modules do React](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Utilizando o CSS Modules do React")
 
 ------------
 
@@ -63,3 +65,66 @@ Elementos do formulário modelo:
 [(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
+
+## Abas horizontais com React-Bootstrap
+
+Importações dos componentes:
+
+```javascript
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
+```
+
+Elementos do HTML:
+
+```javascript
+<Tabs
+    defaultActiveKey="TabOne"
+    id="uncontrolled-tab-example"
+    className="mb-3"
+>
+    <Tab eventKey="TabOne" title="Aba 1">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae alias sed, similique illum sequi adipisci fugit deleniti minus quaerat animi ipsa natus libero assumenda iste veritatis repellat earum excepturi sit!</p>
+    </Tab>
+    <Tab eventKey="TabTwo" title="Aba 2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolores facilis nisi id enim quidem at natus, officia possimus accusantium! Cupiditate iure optio veniam incidunt, magnam ex consequatur aut doloribus!</p>
+    </Tab>
+</Tabs>
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Utilizando o CSS Modules do React
+
+O arquivo de estilo deverá ter o seguinte nome:
+
+```
+styles.module.css
+```
+
+Importação da folha de estilo:
+
+```javascript
+import styles from './styles.module.css';
+```
+
+Incrementação da classe no elemento HTML:
+
+```javascript
+<div className={styles.youClassName}></div>
+```
+
+Na impessão de elementos, as classes aparecerão da seguinte forma:
+
+```
+<div class="_youClassName_n97f3_18"></div>
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
