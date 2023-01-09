@@ -12,7 +12,7 @@
 
 Com o npm lts instalado, crie seu projeto como Vite.
 
-```javascript
+```
 npm create vite@latest project_name
 ```
 
@@ -25,7 +25,7 @@ npm create vite@latest project_name
 
 Instale as dependências npm.
 
-```javascript
+```
 npm i
 ```
 
@@ -34,13 +34,13 @@ npm i
 
 ### 3 - Execute o projeto com o seguinte comando:
 
-```javascript
+```
 npm run dev
 ```
 
 > Após executar o projeto, logo lhe apresentará o endereço localhost com a parta selecionada como no exemplo abaixo:
 
-```javascript
+```
   VITE v3.2.3  ready in 772 ms
 
   ➜  Local:   http://localhost:5173/
