@@ -73,6 +73,7 @@ Elementos do formulário modelo:
 Importações dos componentes:
 
 ```javascript
+// Abas horizontais
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 ```
