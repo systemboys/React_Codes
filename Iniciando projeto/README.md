@@ -20,6 +20,9 @@ npm create vite@latest project_name
 
 > Obs.: Selecione React e depois JavaScript, o Fenestra não está utilizando TypyScript!
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Subir para o topo")
+
 ### 2 - Entre no diretório do seu projeto project_name:
 
 Instale as dependências npm.
@@ -27,6 +30,9 @@ Instale as dependências npm.
 ```javascript
 npm i
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Subir para o topo")
 
 ### 3 - Execute o projeto com o seguinte comando:
 
@@ -43,7 +49,7 @@ npm run dev
   ➜  Network: use --host to expose
 ```
 
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário")
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#iniciando-projeto-com-vite "Subir para o topo")
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Subir para o topo")
 
 ------------
