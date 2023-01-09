@@ -42,7 +42,7 @@ function List_YourItems() {
 }
 ```
 
-No `retorno` de seu componente onde deve ser listado os itens do Array, vamos interpolar a função:
+No `retorno` de seu componente onde deve ser listados os itens do Array, vamos interpolar a função:
 
 ```javascript
 return (
