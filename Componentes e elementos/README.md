@@ -112,6 +112,8 @@ Elementos do HTML:
 
 ## Responsive grids com React-Bootstrap
 
+[![Sistema de Grids exemplo](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Responsive_grids_com_React-Bootstrap.png "Sistema de Grids exemplo")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Responsive_grids_com_React-Bootstrap.png "Sistema de Grids exemplo")
+
 Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
 
 ```
