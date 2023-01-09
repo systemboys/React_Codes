@@ -25,33 +25,31 @@ export default[
 Importe o arquivo no componente:
 
 ```javascript
-// Arquivo de dados onde estão os planos de fundo
-import Background from './data.js';
+// Arquivo de dados onde estão os Itens
+import YourItems from './data.js';
 ```
 
-No componente (dentro da função que carrega o conteúdo) crie a função como mostra abaixo:
+No componente (dentro da função que carrega o conteúdo) coloque a função que retorna o `map()` com os itens do Array:
 
 ```javascript
 // Função que faz o laço em busca dos itens do Array
-function List_Background() {
-    return Background.map(Background => {
+function List_YourItems() {
+    return YourItems.map(YourItems => {
         return (
-            <li>
-                {Background.name}
-            </li>
+            <option value={YourItems.id}>{YourItems.name}</option>
         )
     })
 }
 ```
 
-No `retorno` de seu componente, vamos interpolar a função:
+No `retorno` de seu componente onde deve ser listado os itens do Array, vamos interpolar a função:
 
 ```javascript
 return (
     <>
-        <ul>
-            {List_Background()}
-        </ul>
+        <select>
+            {List_YourItems()}
+        </select>
     </>
 );
 ```
