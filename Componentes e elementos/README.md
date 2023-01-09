@@ -8,7 +8,7 @@
 
 Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
 
-```javascript
+```
 npm install react-bootstrap bootstrap
 ```
 
