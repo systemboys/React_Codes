@@ -72,6 +72,8 @@ Elementos do formulário modelo:
 
 ## Abas horizontais com React-Bootstrap
 
+[![Abas do React-Bootstrap](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Abas_horizontais_com_React-Bootstrap.png "Abas do React-Bootstrap")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Abas_horizontais_com_React-Bootstrap.png "Abas do React-Bootstrap")
+
 Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
 
 ```
