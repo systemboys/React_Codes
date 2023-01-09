@@ -1,5 +1,9 @@
 # [React Codes](https://github.com/systemboys/React_Codes "React Codes") / Iniciando projeto
 
+------------
+
+## Iniciando projeto com Vite
+
 1 - Crie o seu projeto com o Vite:
 
 Com o npm lts instalado, crie seu projeto como Vite.
