@@ -6,7 +6,7 @@
 
 ## Texto de começo
 
-![Imagem de exemplo](https://... "Imagem de exemplo")
+[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
 
 Descrição do conteúdo...
 
