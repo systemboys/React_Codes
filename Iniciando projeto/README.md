@@ -37,6 +37,6 @@ npm run dev
   ➜  Network: use --host to expose
 ```
 
-[Voltar a React Codes](https://github.com/systemboys/React_Codes "Voltar ao React Codes")
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes "Voltar ao Sumário")
 
 ------------
