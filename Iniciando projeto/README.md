@@ -43,6 +43,7 @@ npm run dev
   ➜  Network: use --host to expose
 ```
 
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes "Voltar ao Sumário")
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário")
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#iniciando-projeto-com-vite "Subir para o topo")
 
 ------------

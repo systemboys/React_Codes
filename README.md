@@ -2,6 +2,6 @@
 
 ## Sumário
 
-- [Iniciando projeto com `Vite`.](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto "Iniciando projeto com `Vite`.")
+- [Iniciando projeto com `Vite`.](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Iniciando projeto com `Vite`.")
 
 
