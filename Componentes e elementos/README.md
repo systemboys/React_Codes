@@ -4,7 +4,7 @@
 - [Abas horizontais com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [Utilizando o CSS Modules do React](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
 - [Responsive grids com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
-- [Buttons com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#responsive-grids-com-react-bootstrap "Buttons com React-Bootstrap")
+- [Buttons com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
 
 ------------
 
