@@ -10,6 +10,8 @@
 
 ## Formulário responsívo com React-Bootstrap
 
+[![Formulário de exemplo](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Formulario_responsivo_com_React-Bootstrap.png "Formulário de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Formulario_responsivo_com_React-Bootstrap.png "Formulário de exemplo")
+
 Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
 
 ```
@@ -70,6 +72,12 @@ Elementos do formulário modelo:
 
 ## Abas horizontais com React-Bootstrap
 
+Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
+
+```
+npm install react-bootstrap bootstrap
+```
+
 Importações dos componentes:
 
 ```javascript
@@ -101,6 +109,12 @@ Elementos do HTML:
 ------------
 
 ## Responsive grids com React-Bootstrap
+
+Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
+
+```
+npm install react-bootstrap bootstrap
+```
 
 O Col permite especificar larguras de coluna em 6 tamanhos de ponto de interrupção (xs, sm, md, lg, xl e xxl). Para cada ponto de interrupção, você pode especificar a quantidade de colunas a serem expandidas ou definir a propriedade como para larguras de layout automáticas.
 
@@ -136,6 +150,12 @@ Elementos do HTML:
 ## Buttons com React-Bootstrap
 
 [![Botões do React-Bootstrap](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Buttons_com_React-Bootstrap.png "Botões do React-Bootstrap")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Buttons_com_React-Bootstrap.png "Botões do React-Bootstrap")
+
+Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
+
+```
+npm install react-bootstrap bootstrap
+```
 
 Importação dos botões do Bootstrap:
 
