@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Arrays
 
-- [1 - Crie o seu projeto com o Vite](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#1---crie-o-seu-projeto-com-o-vite "1 - Crie o seu projeto com o Vite")
+- [Obter dados de um Array com map()](https://github.com/systemboys/React_Codes/tree/main/Array#obter-dados-de-um-array-com-map "Obter dados de um Array com map()")
 
 ------------
 ## Obter dados de um Array com `map()`
@@ -55,3 +55,6 @@ return (
     </>
 );
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Array#react-codes--arrays "Subir para o topo")
