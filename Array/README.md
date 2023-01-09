@@ -33,7 +33,7 @@ No componente (dentro da função que carrega o conteúdo) crie a função como 
 
 ```javascript
 // Função que faz o laço em busca dos itens do Array
-function listBackgrounds() {
+function List_Background() {
     return Background.map(Background => {
         return (
             <li>
@@ -50,7 +50,7 @@ No `retorno` de seu componente, vamos interpolar a função:
 return (
     <>
         <ul>
-            {listBackgrounds()}
+            {List_Background()}
         </ul>
     </>
 );
