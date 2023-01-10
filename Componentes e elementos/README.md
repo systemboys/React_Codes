@@ -83,7 +83,6 @@ npm install react-bootstrap bootstrap
 Importações dos componentes:
 
 ```javascript
-// Abas horizontais
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 ```
