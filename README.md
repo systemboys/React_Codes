@@ -12,24 +12,4 @@
 ### Componentes e elementos
 
 - [Componentes e elementos](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Componentes e elementos")
-- Link 2
-- Link 3
-
-### Bootstrap
-
-- Link 1
-- Link 2
-- Link 3
-
-### Manipulação de elementos HTML
-
-- Link 1
-- Link 2
-- Link 3
-
-### Scripts prontos
-
-- Script 1
-- Script 2
-- Script 3
 
