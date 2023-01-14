@@ -8,7 +8,7 @@
 - [Interfaces com `guias` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#interfaces-com-guias-com-react-bootstrap "Interfaces com guias com React-Bootstrap")
 - [Itens `acionáveis` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#itens-acion%C3%A1veis-com-react-bootstrap "Itens acionáveis com React-Bootstrap")
 - [`Posicionamento` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#posicionamento-com-react-Bootstrap "Posicionamento com React-Bootstrap")
-- [Mais opções com `Paginação`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#mais-opcoes-com-paginacao "Mais opções com Paginação")
+- [Mais opções com `Paginação`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#mais-op%C3%A7%C3%B5es-com-pagina%C3%A7%C3%A3o "Mais opções com Paginação")
 
 ------------
 
