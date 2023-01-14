@@ -278,7 +278,7 @@ export function TabsExample() {
 
 [![Itens acionáveis](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Itens_acionaveis.png "Itens acionáveis")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Itens_acionaveis.png "Itens acionáveis")
 
-Alterne a propriedade de ação para criar itens de grupo de lista acionáveis, com estilos desativados, de foco e ativos. As ações do item de lista renderizarão um <button> ou <a> (dependendo da presença de um href) por padrão, mas podem ser substituídas definindo o as prop como de costume.
+Alterne a propriedade de ação para criar itens de grupo de lista acionáveis, com estilos desativados, de foco e ativos. As ações do item de lista renderizarão um `<button>` ou `<a>` (dependendo da presença de um href) por padrão, mas podem ser substituídas definindo o as prop como de costume.
 
 As ações de itens de lista são diferentes de itens simples para garantir que recursos de clique ou toque não sejam aplicados a itens não interativos.
 
