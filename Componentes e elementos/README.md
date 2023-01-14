@@ -5,6 +5,7 @@
 - [`Responsive grids` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
 - [`Buttons` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
 - [Utilizando o `CSS Modules` do React](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
+- [Interfaces com `guias` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#itens-acion%C3%A1veis "Interfaces com guias com React-Bootstrap")
 - [Itens `acionáveis` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#itens-acion%C3%A1veis "Itens acionáveis com React-Bootstrap")
 
 ------------
@@ -219,7 +220,59 @@ Na impessão de elementos, as classes aparecerão da seguinte forma:
 
 ------------
 
-## Itens acionáveis
+## Interfaces com guias com React-Bootstrap
+
+[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
+
+Você também pode usar os componentes Tab para criar interfaces com tabulações compatíveis com ARIA com o componente `<ListGroup>`. Troque o componente `<Nav>` pelo grupo de listas e pronto.
+
+Importar os componentes:
+
+```javascript
+import Col from 'react-bootstrap/Col';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
+```
+Elementos HTML:
+
+```javascript
+export function TabsExample() {
+  return (
+    <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
+      <Row>
+        <Col sm={4}>
+          <ListGroup>
+            <ListGroup.Item action href="#link1">
+              Link 1
+            </ListGroup.Item>
+            <ListGroup.Item action href="#link2">
+              Link 2
+            </ListGroup.Item>
+          </ListGroup>
+        </Col>
+        <Col sm={8}>
+          <Tab.Content>
+            <Tab.Pane eventKey="#link1">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat harum quae unde corporis eius velit omnis temporibus iste possimus? Dolore saepe hic tenetur consequuntur praesentium, pariatur quo dolores magni unde.</p>
+            </Tab.Pane>
+            <Tab.Pane eventKey="#link2">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magnam dolores repellendus eum animi ipsam repudiandae molestias quas explicabo placeat. Suscipit molestiae similique magnam quos, illo architecto? Quo, delectus inventore.</p>
+            </Tab.Pane>
+          </Tab.Content>
+        </Col>
+      </Row>
+    </Tab.Container>
+  );
+}
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Itens acionáveis com React-Bootstrap
 
 [![Itens acionáveis](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Itens_acionaveis.png "Itens acionáveis")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Itens_acionaveis.png "Itens acionáveis")
 
