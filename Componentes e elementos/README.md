@@ -5,6 +5,7 @@
 - [`Responsive grids` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
 - [`Buttons` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
 - [Utilizando o `CSS Modules` do React](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
+- [Itens `acionáveis`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#utilizando-o-css-modules-do-react "Itens acionáveis")
 
 ------------
 
@@ -215,6 +216,48 @@ Na impessão de elementos, as classes aparecerão da seguinte forma:
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Itens acionáveis
+
+[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
+
+Alterne a propriedade de ação para criar itens de grupo de lista acionáveis, com estilos desativados, de foco e ativos. As ações do item de lista renderizarão um <button> ou <a> (dependendo da presença de um href) por padrão, mas podem ser substituídas definindo o as prop como de costume.
+
+As ações de itens de lista são diferentes de itens simples para garantir que recursos de clique ou toque não sejam aplicados a itens não interativos.
+
+Importar o componente:
+
+```javascript
+import ListGroup from 'react-bootstrap/ListGroup';
+```
+Elementos HTML:
+
+```javascript
+export function LinkedExample() {
+  const alertClicked = () => {
+    alert('You clicked the third ListGroupItem');
+  };
+
+  return (
+    <ListGroup defaultActiveKey="#link1">
+      <ListGroup.Item action href="#link1">
+        Link 1
+      </ListGroup.Item>
+      <ListGroup.Item action href="#link2" disabled>
+        Link 2
+      </ListGroup.Item>
+      <ListGroup.Item action onClick={alertClicked}>
+        This one is a button
+      </ListGroup.Item>
+    </ListGroup>
+  );
+}
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/... "Subir para o topo")
 
 ------------
 
