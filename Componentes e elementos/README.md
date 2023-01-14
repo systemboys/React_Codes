@@ -423,3 +423,64 @@ export function AdvancedExample() {
 
 ------------
 
+## Espaços reservados com React Bootstrap
+
+[![Espaços reservados](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Espacos_reservados.png "Espaços reservados")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Espacos_reservados.png "Espaços reservados")
+
+Use espaços reservados de carregamento para seus componentes ou páginas para indicar que algo ainda pode estar carregando.
+
+> Os espaços reservados podem ser usados para aprimorar a experiência do seu aplicativo. Eles são construídos apenas com HTML e CSS, o que significa que você não precisa de nenhum JavaScript para criá-los. Você precisará, no entanto, de algum JavaScript personalizado para alternar sua visibilidade. Sua aparência, cor e tamanho podem ser facilmente personalizados com nossas classes utilitárias.
+
+### Exemplo
+
+No exemplo abaixo, pegamos um componente de cartão típico e o recriamos com espaços reservados aplicados para criar um “cartão de carregamento”. Tamanho e proporções são os mesmos entre os dois.
+
+Importar os componentes:
+
+```javascript
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Placeholder from 'react-bootstrap/Placeholder';
+```
+
+Elementos HTML:
+
+```javascript
+export function CardExample() {
+  return (
+    <div className="d-flex justify-content-around">
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
+
+      <Card style={{ width: '18rem' }}>
+        <Card.Img variant="top" src="holder.js/100px180" />
+        <Card.Body>
+          <Placeholder as={Card.Title} animation="glow">
+            <Placeholder xs={6} />
+          </Placeholder>
+          <Placeholder as={Card.Text} animation="glow">
+            <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}
+            <Placeholder xs={6} /> <Placeholder xs={8} />
+          </Placeholder>
+          <Placeholder.Button variant="primary" xs={6} />
+        </Card.Body>
+      </Card>
+    </div>
+  );
+}
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
