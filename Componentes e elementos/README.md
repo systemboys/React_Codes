@@ -314,3 +314,67 @@ export function LinkedExample() {
 
 ------------
 
+## Texto de começo
+
+[![Posicionamento](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Posicionamento.png "Posicionamento")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Posicionamento.png "Posicionamento")
+
+Offcanvas oferece suporte a alguns posicionamentos diferentes:
+
+- começar coloca fora da tela à esquerda da viewport
+- lugares finais fora da tela à direita da viewport
+- principais lugares fora da tela na parte superior da viewport
+- bottom coloca offcanvas na parte inferior da viewport
+
+Importar os componentes:
+
+```javascript
+import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+```
+
+Elementos HTML:
+
+```javascript
+function OffCanvasExample({ name, ...props }) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="primary" onClick={handleShow} className="me-2">
+        {name}
+      </Button>
+      <Offcanvas show={show} onHide={handleClose} {...props}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
+  );
+}
+
+function Example() {
+  return (
+    <>
+      {['start', 'end', 'top', 'bottom'].map((placement, idx) => (
+        <OffCanvasExample key={idx} placement={placement} name={placement} />
+      ))}
+    </>
+  );
+}
+
+render(<Example />);
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/... "Subir para o topo")
+
+------------
+
