@@ -8,6 +8,7 @@
 - [Interfaces com `guias` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#interfaces-com-guias-com-react-bootstrap "Interfaces com guias com React-Bootstrap")
 - [Itens `acionáveis` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#itens-acion%C3%A1veis-com-react-bootstrap "Itens acionáveis com React-Bootstrap")
 - [`Posicionamento` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#posicionamento-com-react-Bootstrap "Posicionamento com React-Bootstrap")
+- [Mais opções com `Paginação`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#mais-opcoes-com-paginacao "Mais opções com Paginação")
 
 ------------
 
@@ -372,6 +373,49 @@ function Example() {
 }
 
 render(<Example />);
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Mais opções com Paginação
+
+[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
+
+Para criar uma IU de paginação mais complexa, existem alguns subcomponentes convenientes para adicionar os botões "Primeiro", "Anterior", "Próximo" e "Último", bem como um item "Reticências" para indicar resultados anteriores ou contínuos.
+
+Importar o componente:
+
+```javascript
+import Pagination from 'react-bootstrap/Pagination';
+```
+
+Elementos HTML:
+
+```javascript
+export function AdvancedExample() {
+  return (
+    <Pagination>
+      <Pagination.First />
+      <Pagination.Prev />
+      <Pagination.Item>{1}</Pagination.Item>
+      <Pagination.Ellipsis />
+
+      <Pagination.Item>{10}</Pagination.Item>
+      <Pagination.Item>{11}</Pagination.Item>
+      <Pagination.Item active>{12}</Pagination.Item>
+      <Pagination.Item>{13}</Pagination.Item>
+      <Pagination.Item disabled>{14}</Pagination.Item>
+
+      <Pagination.Ellipsis />
+      <Pagination.Item>{20}</Pagination.Item>
+      <Pagination.Next />
+      <Pagination.Last />
+    </Pagination>
+  );
+}
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
