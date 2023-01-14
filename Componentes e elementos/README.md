@@ -222,7 +222,7 @@ Na impessão de elementos, as classes aparecerão da seguinte forma:
 
 ## Interfaces com guias com React-Bootstrap
 
-[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
+[![Interfaces com guias com React-Bootstrap](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Interfaces_com_guias_com_React-Bootstrap.png "Interfaces com guias com React-Bootstrap")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Interfaces_com_guias_com_React-Bootstrap.png "Interfaces com guias com React-Bootstrap")
 
 Você também pode usar os componentes Tab para criar interfaces com tabulações compatíveis com ARIA com o componente `<ListGroup>`. Troque o componente `<Nav>` pelo grupo de listas e pronto.
 
