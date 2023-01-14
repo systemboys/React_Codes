@@ -8,8 +8,9 @@
 - [Interfaces com `guias` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#interfaces-com-guias-com-react-bootstrap "Interfaces com guias com React-Bootstrap")
 - [Itens `acionáveis` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#itens-acion%C3%A1veis-com-react-bootstrap "Itens acionáveis com React-Bootstrap")
 - [`Posicionamento` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#posicionamento-com-react-bootstrap "Posicionamento com React-Bootstrap")
-- [Mais opções com `Paginação` com React Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#mais-op%C3%A7%C3%B5es-com-pagina%C3%A7%C3%A3o-com-react-bootstrap "Mais opções com Paginação com React Bootstrap")
-- [`Espaços reservados` com React Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
+- [Mais opções com `Paginação` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#mais-op%C3%A7%C3%B5es-com-pagina%C3%A7%C3%A3o-com-react-bootstrap "Mais opções com Paginação com React Bootstrap")
+- [`Espaços reservados` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
+- [`Barra com animação` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
 
 ------------
 
@@ -476,6 +477,40 @@ export function CardExample() {
         </Card.Body>
       </Card>
     </div>
+  );
+}
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Barra com animação com React-Bootstrap
+
+[![Barra com animação com React-Bootstrap](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Barra_com_animacao_com_React-Bootstrap.png "Barra com animação com React-Bootstrap")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/Barra_com_animacao_com_React-Bootstrap.png "Barra com animação com React-Bootstrap")
+
+Anime espaços reservados definindo a animação de suporte para brilhar ou ondular para transmitir melhor a percepção de algo sendo carregado ativamente.
+
+Importar o componente:
+
+```javascript
+import Placeholder from 'react-bootstrap/Placeholder';
+```
+
+Elementos HTML:
+
+```javascript
+export function AnimationExample() {
+  return (
+    <>
+      <Placeholder as="p" animation="glow">
+        <Placeholder xs={12} />
+      </Placeholder>
+      <Placeholder as="p" animation="wave">
+        <Placeholder xs={12} />
+      </Placeholder>
+    </>
   );
 }
 ```
