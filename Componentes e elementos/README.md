@@ -9,6 +9,7 @@
 - [Itens `acionáveis` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#itens-acion%C3%A1veis-com-react-bootstrap "Itens acionáveis com React-Bootstrap")
 - [`Posicionamento` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#posicionamento-com-react-bootstrap "Posicionamento com React-Bootstrap")
 - [Mais opções com `Paginação` com React Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#mais-op%C3%A7%C3%B5es-com-pagina%C3%A7%C3%A3o-com-react-bootstrap "Mais opções com Paginação com React Bootstrap")
+- [Espaços reservados com React Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
 
 ------------
 
