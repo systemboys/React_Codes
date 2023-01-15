@@ -535,7 +535,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPrint } from '@fortawesome/free-solid-svg-icons';
 ```
 
-> Para cada ícone, você deve consultar o site oficial do `[Font Awesome](https://fontawesome.com/ "Font Awesome")` e verificar qual a classe você deseja colocando os dados no parâmentro `icon={faPrint}` do elemento HTML.
+> Para cada ícone, você deve consultar o site oficial do [Font Awesome](https://fontawesome.com/ "Font Awesome") e verificar qual a classe você deseja colocando os dados no parâmentro `icon={faPrint}` do elemento HTML.
 
 Elemento HTML:
 
