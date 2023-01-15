@@ -11,6 +11,7 @@
 - [Mais opções com `Paginação` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#mais-op%C3%A7%C3%B5es-com-pagina%C3%A7%C3%A3o-com-react-bootstrap "Mais opções com Paginação com React Bootstrap")
 - [`Espaços reservados` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
 - [`Barra com animação` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
+- [Incrementando React-FontAwesome](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#incrementando-react-fontawesome "Incrementando React-FontAwesome")
 
 ------------
 
@@ -513,6 +514,33 @@ export function AnimationExample() {
     </>
   );
 }
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Incrementando React-FontAwesome
+
+[![React-FontAwesome](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/React-FontAwesome.png "React-FontAwesome")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/React-FontAwesome.png "React-FontAwesome")
+
+Implementação de ícones do `React-FontAwesome` em seu projeto.
+
+Importar os componentes:
+
+```javascript
+// React-Fontawesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPrint } from '@fortawesome/free-solid-svg-icons';
+```
+
+> Para cada ícone, você deve consultar o site oficial do `[Font Awesome](https://fontawesome.com/ "Font Awesome")` e verificar qual a classe você deseja colocando os dados no parâmentro `icon={faPrint}` de `<FontAwesomeIcon icon={faPrint} size="1x" />`.
+
+Elemento HTML:
+
+```javascript
+<FontAwesomeIcon icon={faPrint} size="1x" />
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
