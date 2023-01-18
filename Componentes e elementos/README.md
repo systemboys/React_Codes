@@ -1,5 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Componentes e elementos
 
+- [Componentes no modo `Default Exports`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#componentes-no-modo-default-exports "Componentes no modo Default Exports")
+- [Componentes no modo `Named Exports`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#componentes-no-modo-named-exports "Componentes no modo Named Exports")
 - [`Formulário` responsívo com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
 - [`Abas` horizontais com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [`Responsive grids` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
@@ -12,8 +14,6 @@
 - [`Espaços reservados` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
 - [`Barra com animação` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
 - [Incrementando `React-FontAwesome`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#incrementando-react-fontawesome "Incrementando React-FontAwesome")
-- [Componentes no modo `Default Exports`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#componentes-no-modo-default-exports "Componentes no modo Default Exports")
-- [Componentes no modo `Named Exports`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#componentes-no-modo-named-exports "Componentes no modo Named Exports")
 
 ------------
 
