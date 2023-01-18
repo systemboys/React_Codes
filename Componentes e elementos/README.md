@@ -12,6 +12,139 @@
 - [`Espaços reservados` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
 - [`Barra com animação` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
 - [Incrementando `React-FontAwesome`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#incrementando-react-fontawesome "Incrementando React-FontAwesome")
+- [Componentes no modo `Default Exports`](https://github.com/systemboys/React_Codes/... "Componentes no modo Default Exports")
+- [Componentes no modo `Named Exports`](https://github.com/systemboys/React_Codes/... "Componentes no modo Named Exports")
+
+------------
+
+## Componentes no modo Default Exports
+
+Arquivo `index.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link real="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
+
+Arquivo `main.jsx`.
+
+```javascript
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import Test from './Test'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+    <Test />
+  </React.StrictMode>
+)
+```
+
+Arquivo `App.jsx`.
+
+```javascript
+export function App() {
+  return (
+    <h1>Hello World!</h1>
+  )
+}
+
+export default App
+```
+
+Arquivo `Test.jsx`.
+
+```javascript
+function Test() {
+    return (
+      <h1>Content test...</h1>
+    )
+}
+
+export default Test
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Componentes no modo Named Exports
+
+Arquivo `index.html`.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link real="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
+
+Arquivo `main.jsx`.
+
+```javascript
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { App } from './App'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+)
+```
+
+Arquivo `App.jsx`.
+
+```javascript
+import { Post } from './Post'
+
+export function App() {
+  return (
+    <div>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+    </div>
+  )
+}
+```
+
+Arquivo `Post.jsx`.
+
+```javascript
+export function Post() {
+    return <p>Post</p>
+}
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
