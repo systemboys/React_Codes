@@ -5,8 +5,6 @@
 - [Atualizar dados da tabela](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#atualizar-dados-da-tabela "Atualizar dados da tabela")
 - [Consultar os dados da tabela](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#consultar-os-dados-da-tabela "Consultar os dados da tabela")
 - [Deletar dados da tabela](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#deletar-dados-da-tabela "Deletar dados da tabela")
-- [Componentes no modo `Default Exports`](https://github.com/systemboys/React_Codes/... "Componentes no modo Default Exports")
-- [Componentes no modo `Named Exports`](https://github.com/systemboys/React_Codes/... "Componentes no modo Named Exports")
 
 ------------
 
