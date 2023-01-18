@@ -65,7 +65,7 @@ export function App() {
 export default App
 ```
 
-Arquivo `Test.jsx`.
+Arquivo `Test.jsx` com o componente em modo Default Exports.
 
 ```javascript
 function Test() {
@@ -135,7 +135,7 @@ export function App() {
 }
 ```
 
-Arquivo `Post.jsx`.
+Arquivo `Post.jsx` com o componente em modo Named Exports.
 
 ```javascript
 export function Post() {
