@@ -18,7 +18,7 @@ Criar um novo projeto e iniciar o servidor:
 npm init -y
 ```
 
-Criar o arquivo `seever.ts`:
+Criar o arquivo `server.ts`:
 
 ```
 ./src/server.ts
@@ -42,7 +42,11 @@ Iniciar TypeScript:
 npx tsc --init
 ```
 
-> Mudar "target": "es2016" para "es2020" no arquivo `./tsconfig.json`!
+Mudar "target": "es2016" para "es2020" no arquivo `./tsconfig.json`:
+
+```javascript
+"target": "es2020", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+```
 
 Instalar o PRISMA:
 
