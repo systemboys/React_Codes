@@ -45,6 +45,7 @@ npx tsc --init
 Mudar "target": "es2016" para "es2020" no arquivo `./tsconfig.json`:
 
 ```javascript
+/* Language and Environment */
 "target": "es2020", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
 ```
 
