@@ -64,13 +64,20 @@ npx prisma init
 
 Configurar o arquivo `.env`:
 
+```javscript
+DATABASE_URL="mysql://youUser:yourPassword@yourHost:3306/yourDataBase"
 ```
-DATABASE_URL="mysql://user:password@yourHost:3306/yourDataBase"
-```
+
+> Onde:
+> `youUser` é seu usuário de banco de dados;
+> `yourPassword` é a senha do seu banco;
+> `yourHost` é o Host de sua hospedagem;
+> `3306` é porta do banco de dados;
+> `yourDataBase` é seu banco de dados;
 
 Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo:
 
-```
+```javscript
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
