@@ -47,10 +47,10 @@ npx tsc --init
 Instalar o PRISMA:
 
 ```
-npm install primsa --save-dev
+npm install prisma --save-dev
 ```
 
-Instalar o PRISMA CLIENT:
+Instalar o Prisma Client no projeto com o seguinte comando:
 
 ```
 npm install @prisma/cliente
@@ -69,11 +69,11 @@ DATABASE_URL="mysql://youUser:yourPassword@yourHost:3306/yourDataBase"
 ```
 
 > Onde:
-> `youUser` é seu usuário de banco de dados;
-> `yourPassword` é a senha do seu banco;
-> `yourHost` é o Host de sua hospedagem;
-> `3306` é porta do banco de dados;
-> `yourDataBase` é seu banco de dados;
+> `youUser` é seu usuário de banco de dados,
+> `yourPassword` é a senha do seu banco,
+> `yourHost` é o Host de sua hospedagem,
+> `3306` é porta do banco de dados e
+> `yourDataBase` é seu banco de dados.
 
 Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo:
 
