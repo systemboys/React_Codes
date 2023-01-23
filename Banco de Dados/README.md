@@ -82,6 +82,8 @@ DATABASE_URL="mysql://youUser:yourPassword@yourHost:3306/yourDataBase"
 
 Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo:
 
+> O valor de `provider` deve ser `mysql`, que é o tipo de banco de dados!
+
 ```javscript
 datasource db {
   provider = "mysql"
@@ -95,7 +97,7 @@ Obter os modules:
 npx prisma db pull
 ```
 
-> O PRISMA irá obter a estrutura de todas as tabelas do banco de dados!
+> O PRISMA irá obter a estrutura de todas as tabelas do seu banco de dados!
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#react-codes--banco-de-dados "Subir para o topo")
