@@ -59,7 +59,7 @@ npx prisma init
 
 Configurar o arquivo `.env`:
 
-```javscript
+```javascript
 DATABASE_URL="mysql://youUser:yourPassword@yourHost:3306/yourDataBase"
 ```
 
@@ -74,7 +74,7 @@ Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo:
 
 > O valor de `provider` deve ser `mysql`, que é o tipo de banco de dados!
 
-```javscript
+```javascript
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
@@ -95,7 +95,7 @@ Exemplo abaixo:
 
 Criar o arquivo `src/prisma.ts` e configure o seguinte código:
 
-```javscript
+```javascript
 import { PrismaClient } from "@prisma/client"
 
 export const prisma = new PrismaClient ({
@@ -105,7 +105,7 @@ export const prisma = new PrismaClient ({
 
 Criar o arquivo `src/server.ts` e configure o seguinte código:
 
-```javscript
+```javascript
 import express from 'express';
 import { routes } from './routes';
 
@@ -120,7 +120,7 @@ App.listen(3333, ()=>{
 
 Criar o arquivo `src/routes.ts` e configure o seguinte código:
 
-```javscript
+```javascript
 import express from "express";
 
 import { prisma } from './prisma';
@@ -166,7 +166,7 @@ npm install tsx
 
 No arquivo `package.json` editar o script deixando como no exemplo abaixo:
 
-```javscript
+```javascript
 "script": {
     "dev": "tsx watch src/server.ts"
 }
