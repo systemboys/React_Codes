@@ -14,12 +14,6 @@ Criar um novo projeto e iniciar o servidor:
 npm init -y
 ```
 
-Criar o arquivo `server.ts`:
-
-```
-./src/server.ts
-```
-
 Instalar o Express:
 
 ```
@@ -97,9 +91,104 @@ npx prisma db pull
 
 Exemplo abaixo:
 
-[![Print de uma execução no Db Pull](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/npx_prisma_db_pull.png "Print de uma execução no Db Pull")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/npx_prisma_db_pull.png "Print de uma execução no Db Pull")
+[![Print de uma execução no Db Pull](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")
+
+Criar o arquivo `src/prisma.ts` e configure o seguinte código:
+
+```javscript
+import { PrismaClient } from "@prisma/client"
+
+export const prisma = new PrismaClient ({
+    log: ['query'],
+})
+```
+
+Criar o arquivo `src/server.ts` e configure o seguinte código:
+
+```javscript
+import express from 'express';
+import { routes } from './routes';
+
+const App = express();
+
+App.use(express.json())
+App.use(routes);
+App.listen(3333, ()=>{
+    console.log('Server is running! 🔥');
+})
+```
+
+Criar o arquivo `src/routes.ts` e configure o seguinte código:
+
+```javscript
+import express from "express";
+
+import { prisma } from './prisma';
+
+export const routes = express.Router();
+
+// Consultar 'admins'
+routes.get('/admins', async (req, res) => {
+    const admins = await prisma.admins.findMany()
+    res.status(200).json(admins);
+})
+
+// Inserir 'admins'
+routes.post('/admins', async (req, res) => {
+    const {
+        id,
+        primary_email,
+        username,
+        password,
+        full_name,
+        level
+    } = req.body
+    
+    const admins = await prisma.admins.create({
+        data:{
+            id,
+            primary_email,
+            username,
+            password,
+            full_name,
+            level
+        }
+    })
+    return res.status(201).json({ data:admins })
+})
+```
+
+Instalar o TSX:
+
+```
+npm install tsx
+```
+
+No arquivo `package.json` editar o script deixando como no exemplo abaixo:
+
+```javscript
+"script": {
+    "dev": "tsx watch src/server.ts"
+}
+```
+
+Execute o servidor NPM:
+
+```
+npm run dev
+```
+
+[![Server executando](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#react-codes--banco-de-dados "Subir para o topo")
+
+Com o `Insomnia`instalado, executar o GET para consultar os registros na tabela `admins` e gerar um `JSON`:
+
+[![Consultar os dados com o Insomnia](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/Insomnia_get_admins.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/Insomnia_get_admins.png "Consultar os dados com o Insomnia")
+
+Com o `Insomnia`instalado, executar o POST para inserir um registro na tabela `admins` e gerar um `JSON`:
+
+[![Registrar dados com o Insomnia](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Registrar dados com o Insomnia")
 
 ------------
