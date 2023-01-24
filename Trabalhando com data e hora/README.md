@@ -25,10 +25,10 @@ Configuração de Data:
 // Data
 import { parseISO } from 'date-fns';
 
-const date = '2018-04-01 18:00:00'; // Data informada
+const date = '2018-04-01'; // Data informada
 
 // Data
-const parsedDate = parseISO(date).toISOString();
+const parsedDate = parseISO(date).toISOString(); // Data
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
