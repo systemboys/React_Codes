@@ -192,3 +192,14 @@ Com o `Insomnia`instalado, executar o POST para inserir um registro na tabela `a
 [(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#react-codes--banco-de-dados "Subir para o topo")
 
 ------------
+
+Recriar instâncias nos módulos:
+
+```javascript
+npx prisma generate
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#react-codes--banco-de-dados "Subir para o topo")
+
+------------
