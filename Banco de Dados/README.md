@@ -131,7 +131,7 @@ export const routes = express.Router();
 routes.get('/admins', async (req, res) => {
     const admins = await prisma.admins.findMany()
     res.status(200).json(admins);
-})
+});
 
 // ### Inserir 'admins' ###
 routes.post('/admins', async (req, res) => {
