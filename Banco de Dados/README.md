@@ -127,35 +127,34 @@ import { prisma } from './prisma';
 
 export const routes = express.Router();
 
-// Consultar 'admins'
+// ### Consultar 'admins' ###
 routes.get('/admins', async (req, res) => {
     const admins = await prisma.admins.findMany()
     res.status(200).json(admins);
 })
 
-// Inserir 'admins'
+// ### Inserir 'admins' ###
 routes.post('/admins', async (req, res) => {
     const {
-        id,
         primary_email,
         username,
         password,
         full_name,
         level
-    } = req.body
-    
+    } = req.body;
+
+    // Gravar na tabela
     const admins = await prisma.admins.create({
         data:{
-            id,
             primary_email,
             username,
             password,
             full_name,
             level
         }
-    })
-    return res.status(201).json({ data:admins })
-})
+    });
+    return res.status(201).json({ data:admins });
+});
 ```
 
 Instalar o TSX:
