@@ -1,7 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Trabalhando com data e hora
 
-- [Formatando Hata](https://github.com/systemboys/React_Codes/... "Formatando Hata")
-- [Formatando Hora](https://github.com/systemboys/React_Codes/... "Formatando Hora")
+- [Formatando Data](https://github.com/systemboys/React_Codes/tree/main/Trabalhando%20com%20data%20e%20hora#formatando-data "Formatando Data")
+- [Formatando Hora](https://github.com/systemboys/React_Codes/tree/main/Trabalhando%20com%20data%20e%20hora#formatando-hora "Formatando Hora")
 
 ------------
 
@@ -32,7 +32,7 @@ const parsedDate = parseISO(date).toISOString();
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/... "Subir para o topo")
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Trabalhando%20com%20data%20e%20hora#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
 
 ------------
 
@@ -48,6 +48,6 @@ const Hours = new Date("1970-01-01T" + hour + "Z"); // Hora
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/... "Subir para o topo")
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Trabalhando%20com%20data%20e%20hora#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
 
 ------------
