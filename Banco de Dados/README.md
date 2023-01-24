@@ -122,7 +122,6 @@ Criar o arquivo `src/routes.ts` e configure o seguinte código:
 
 ```javascript
 import express from "express";
-
 import { prisma } from './prisma';
 
 export const routes = express.Router();
