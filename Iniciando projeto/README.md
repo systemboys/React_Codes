@@ -16,7 +16,7 @@ Com o npm lts instalado, crie seu projeto como Vite.
 npm create vite@latest project_name
 ```
 
-> Obs.: Selecione React e depois JavaScript, o Fenestra não está utilizando TypyScript!
+> Obs.: Selecione React e depois JavaScript ou TypyScript, dependendo do que deseja em seu projeto!
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Subir para o topo")
