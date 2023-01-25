@@ -73,10 +73,11 @@ Para deixar de ser selecionada automaticamente, a imagem abaixo mostra o exemplo
 [![Resultado da execução do servidor com a nova porta](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_da_porta_no_Vite.png "Resultado da execução do servidor com a nova porta")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_da_porta_no_Vite.png "Resultado da execução do servidor com a nova porta")
 
 Atalhos:
-   Pressione `r` para reiniciar o servidor
-   Pressione `u` para mostrar o URL do servidor
-   Pressione `o` para abrir no navegador
-   Pressione `q` para sair
+
+- Pressione `r` para reiniciar o servidor
+- Pressione `u` para mostrar o URL do servidor
+- Pressione `o` para abrir no navegador
+- Pressione `q` para sair
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Subir para o topo")
