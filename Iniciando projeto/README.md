@@ -3,6 +3,7 @@
 - [1 - Crie o seu projeto com o Vite](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#1---crie-o-seu-projeto-com-o-vite "1 - Crie o seu projeto com o Vite")
 - [2 - Entre no diretório do seu projeto project_name](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#2---entre-no-diret%C3%B3rio-do-seu-projeto-project_name "2 - Entre no diretório do seu projeto project_name")
 - [3 - Execute o projeto com o seguinte comando](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
+- [4 - Configuração da porta no Vite](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4 - Configuração da porta no Vite")
 
 ------------
 
@@ -69,7 +70,7 @@ export default defineConfig({
 
 Para deixar de ser selecionada automaticamente, a imagem abaixo mostra o exemplo:
 
-[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
+[![Resultado da execução do servidor com a nova porta](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_da_porta_no_Vite.png "Resultado da execução do servidor com a nova porta")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_da_porta_no_Vite.png "Resultado da execução do servidor com a nova porta")
 
 Atalhos:
    Pressione `r` para reiniciar o servidor
