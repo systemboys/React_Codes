@@ -1,9 +1,9 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Styled Components
 
-- [Várias classes em na propriedade `className={}`](https://github.com/systemboys/React_Codes/... "Várias classes em na propriedade className={}")
-- [Trabalhando com `Styled Components`](https://github.com/systemboys/React_Codes/... "Trabalhando com Styled Components")
+- [Várias classes na propriedade `className={}`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#v%C3%A1rias-classes-na-propriedade-classname "Várias classes na propriedade className={}")
+- [Trabalhando com `Styled Components`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#trabalhando-com-styled-components "Trabalhando com Styled Components")
 
-## Várias classes em na propriedade `className={}`
+## Várias classes na propriedade `className={}`
 
 Interpolar classe para colocar mais de uma:
 
@@ -12,7 +12,7 @@ Interpolar classe para colocar mais de uma:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/... "Subir para o topo")
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#react-codes--styled-components "Subir para o topo")
 
 
 ------------
