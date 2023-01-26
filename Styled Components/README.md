@@ -2,7 +2,7 @@
 
 - [Várias classes na propriedade `className={}`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#v%C3%A1rias-classes-na-propriedade-classname "Várias classes na propriedade className={}")
 - [Trabalhando com `Styled Components`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#trabalhando-com-styled-components "Trabalhando com Styled Components")
-- [`Estilizando` com código `JavaScript`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#estilizando-com-codigo-javascript "Estilizando com código JavaScript")
+- [`Estilizando` com código `JavaScript`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#estilizando-com-c%C3%B3digo-javascript "Estilizando com código JavaScript")
 
 ## Várias classes na propriedade `className={}`
 
