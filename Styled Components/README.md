@@ -6,7 +6,7 @@
 
 ## Várias classes na propriedade `className={}`
 
-Interpolar classe para colocar mais de uma:
+Para usar mais de uma classe em um component, utilizamos o `TemplateString` para utilizar o JavaScript dentro de uma classe:
 
 ```javascript
 <button className={`${styles.button} ${styles.primary}`}>Enviar</button>
