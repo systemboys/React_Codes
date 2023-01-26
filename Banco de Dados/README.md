@@ -89,7 +89,7 @@ npx prisma db pull
 
 > O PRISMA irá obter a estrutura de todas as tabelas do seu banco de dados!
 
-Escrevendo o model no arquivo `schema.prisma`:
+Escrevendo o model no arquivo `prisma/schema.prisma`:
 
 ```javascript
 model admins {
