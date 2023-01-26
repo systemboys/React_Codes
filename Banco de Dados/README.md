@@ -89,6 +89,21 @@ npx prisma db pull
 
 > O PRISMA irá obter a estrutura de todas as tabelas do seu banco de dados!
 
+Escrevendo o model no arquivo `schema.prisma`:
+
+```javascript
+model admins {
+  id           Int    @id @default(autoincrement())
+  simple_field String @db.VarChar(255)
+  external_id  Int
+  date         DateTime @db.Date
+  hour         DateTime @db.Time(0)
+  text_field   String @db.Text
+}
+```
+
+> Acima estão os campos mais comuns utilizados no MySQL!
+
 Exemplo abaixo:
 
 [![Print de uma execução no Db Pull](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")
