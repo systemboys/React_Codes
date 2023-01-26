@@ -2,6 +2,7 @@
 
 - [Várias classes na propriedade `className={}`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#v%C3%A1rias-classes-na-propriedade-classname "Várias classes na propriedade className={}")
 - [Trabalhando com `Styled Components`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#trabalhando-com-styled-components "Trabalhando com Styled Components")
+- [`Estilizando` com código `JavaScript`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#estilizando-com-codigo-javascript "Estilizando com código JavaScript")
 
 ## Várias classes na propriedade `className={}`
 
@@ -43,10 +44,10 @@ Arquivo `App.tsx`:
 export function App() {
     return (
         <>
-            <Button color="primary" />
-            <Button color="secondary" />
-            <Button color="danger" />
-            <Button color="success" />
+            <Button variant="primary" />
+            <Button variant="secondary" />
+            <Button variant="danger" />
+            <Button variant="success" />
             <Button />
         </>
     )
@@ -61,11 +62,11 @@ No arquivo `Button.tsx` está a estilização dos nossos botões:
 import styles from './Button.module.css';
 
 interface ButtonProps {
-    color?: 'primary' | 'secondary' | 'danger' | 'success';
+    variant?: 'primary' | 'secondary' | 'danger' | 'success';
 }
 
-export function Button({ color = 'primary' }: ButtonProps) {
-    return <button className={`${styles.button} ${styles.[color]}`}>Enviar</button>
+export function Button({ variant = 'primary' }: ButtonProps) {
+    return <button className={`${styles.button} ${styles.[variant]}`}>Enviar</button>
 }
 ```
 
@@ -94,4 +95,56 @@ Vamos fazer o uso do CSS Modules, criando um arquivo `Button.module.css`.
 [(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#react-codes--styled-components "Subir para o topo")
 
 ------------
+
+### Estilizando com código JavaScript
+
+Vamos começar com um arquivo `Button.styles.js` ou `*.ts`, dependendo do seu projeto:
+
+```javascript
+import styled, { css } from 'styled-components';
+
+export type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'success';
+
+interface ButtonContainerProps {
+    variant: ButtonVariant;
+}
+
+const ButtonVariants = {
+    primary: 'purple',
+    secondary: 'orange',
+    danger: 'red',
+    success: 'green'
+}
+
+export const ButtonContainer = styled.button<ButtonContainerProps>`
+    width: 100px;
+    height: 40px;
+
+    ${props => {
+        return css`
+            background-color: ${ButtonVariants[props.variant]}
+        `
+    }}
+`
+```
+
+No arquivo `Button.tsx`, na className:
+
+```javascript
+import { ButtonContainer, ButtonVariant } from './Button.module.css';
+
+interface ButtonProps {
+    variant?: ButtonVariant;
+}
+
+export function Button({ variant = 'primary' }: ButtonProps) {
+    return <ButtonContainer variant={variant}>Enviar</ButtonContainer>
+}
+```
+
+> Dessa forma, estamos utilizando um components estilizado!
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#react-codes--styled-components "Subir para o topo")
+
 
