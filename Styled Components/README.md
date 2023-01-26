@@ -31,6 +31,10 @@ Instalando o `Type Styled Components` como dependência de desenvolvimento:
 npm i @types/styled-components -D
 ```
 
+> É importante que você esteja com a `extenção do Styled Components` instalada em seu VSCode!
+
+[![Extenção do Styled Components](https://github.com/systemboys/React_Codes/raw/main/Styled%20Components/images/vscode-styled-components.png "Extenção do Styled Components")](https://github.com/systemboys/React_Codes/raw/main/Styled%20Components/images/vscode-styled-components.png "Extenção do Styled Components")
+
 Arquivo `App.tsx`:
 
 > Vamos colocar um fragmento `<></>` no return, aquela div que renderiza, não aparece no HTML, algo apenas para colocar por volta dos componentes!
