@@ -1,9 +1,16 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Banco de Dados
 
 - [Conectar Banco de Dados `MySQL` com ORM `PRISMA`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#conectar-banco-de-dados-mysql-com-orm-prisma "Conectar Banco de Dados MySQL com ORM PRISMA")
-    - [Link do Texto de começo](https://github.com/systemboys/React_Codes/... "Link do Texto de começo")
-    - [Link do Texto de começo](https://github.com/systemboys/React_Codes/... "Link do Texto de começo")
-    - [Link do Texto de começo](https://github.com/systemboys/React_Codes/... "Link do Texto de começo")
+    - [Criar um novo projeto e iniciar o servidor](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-um-novo-projeto-e-iniciar-o-servidor "Criar um novo projeto e iniciar o servidor")
+    - [Instalar o PRISMA](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#instalar-o-prisma "Instalar o PRISMA")
+    - [Configurar o arquivo `.env`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#configurar-o-arquivo-env "Configurar o arquivo .env")
+    - [Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#configurar-no-arquivo-prismaschemaprisma-o-trecho-de-codigo "Configurar no arquivo ./prisma/schema.prisma o trecho de codigo")
+    - [Escrevendo o model no arquivo `prisma/schema.prisma`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#escrevendo-o-model-no-arquivo-prismaschemaprisma "Escrevendo o model no arquivo `prisma/schema.prisma`")
+    - [Criar o arquivo src/prisma.ts e configure o seguinte código](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-o-arquivo-srcprismats-e-configure-o-seguinte-c%C3%B3digo "Criar o arquivo `src/prisma.ts` e configure o seguinte código")
+    - [Criar o arquivo src/server.ts e configure o seguinte código](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-o-arquivo-srcserverts-e-configure-o-seguinte-c%C3%B3digo "Criar o arquivo `src/server.ts` e configure o seguinte código")
+    - [Criar e configurar o arquivo `src/routes.ts`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-e-configurar-o-arquivo-srcroutests "Criar e configurar o arquivo src/routes.ts")
+    - [Utilização do `Insomnia` para leitura, gravação, atualização e delete](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#utiliza%C3%A7%C3%A3o-do-insomnia-para-leitura-grava%C3%A7%C3%A3o-atualiza%C3%A7%C3%A3o-e-delete "Utilização do Insomnia para leitura, gravação, atualização e delete")
+    - [Recriar instâncias nos módulos](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#recriar-inst%C3%A2ncias-nos-m%C3%B3dulos "Recriar instâncias nos módulos")
 
 ------------
 
