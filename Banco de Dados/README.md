@@ -3,7 +3,7 @@
 - [Conectar Banco de Dados `MySQL` com ORM `PRISMA`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#conectar-banco-de-dados-mysql-com-orm-prisma "Conectar Banco de Dados MySQL com ORM PRISMA")
     - [Criar um `novo projeto` e iniciar o servidor](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-um-novo-projeto-e-iniciar-o-servidor "Criar um novo projeto e iniciar o servidor")
     - [Instalar o PRISMA](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#instalar-o-prisma "Instalar o PRISMA")
-    - [Configurar o arquivo `.env`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#configurar-o-arquivo-env "Configurar o arquivo .env")
+    - [Configurar o arquivo `./.env`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#configurar-o-arquivo-env "Configurar o arquivo .env")
     - [Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#configurar-no-arquivo-prismaschemaprisma-o-trecho-de-codigo "Configurar no arquivo ./prisma/schema.prisma o trecho de codigo")
     - [Escrevendo o model no arquivo `./prisma/schema.prisma`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#escrevendo-o-model-no-arquivo-prismaschemaprisma "Escrevendo o model no arquivo `prisma/schema.prisma`")
     - [Criar o arquivo `./src/prisma.ts` e configure o seguinte código](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-o-arquivo-srcprismats-e-configure-o-seguinte-c%C3%B3digo "Criar o arquivo `src/prisma.ts` e configure o seguinte código")
