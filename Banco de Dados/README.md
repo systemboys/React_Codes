@@ -1,12 +1,15 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Banco de Dados
 
 - [Conectar Banco de Dados `MySQL` com ORM `PRISMA`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#conectar-banco-de-dados-mysql-com-orm-prisma "Conectar Banco de Dados MySQL com ORM PRISMA")
+    - [Link do Texto de começo](https://github.com/systemboys/React_Codes/... "Link do Texto de começo")
+    - [Link do Texto de começo](https://github.com/systemboys/React_Codes/... "Link do Texto de começo")
+    - [Link do Texto de começo](https://github.com/systemboys/React_Codes/... "Link do Texto de começo")
 
 ------------
 
 ## Conectar Banco de Dados MySQL com ORM PRISMA
 
-Criar um novo projeto e iniciar o servidor:
+### Criar um novo projeto e iniciar o servidor:
 
 > Crie um novo projeto fora do diretório do seu projeto o qual quer conectá-lo. Na verdade, você estará criando uma API para conectar seu projeto!
 
@@ -39,7 +42,7 @@ Mudar "target": "es2016" para "es2020" no arquivo `./tsconfig.json`:
 "target": "es2020", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
 ```
 
-Instalar o PRISMA:
+### Instalar o PRISMA:
 
 ```
 npm install prisma --save-dev
@@ -57,7 +60,7 @@ Iniciar o PRISMA:
 npx prisma init
 ```
 
-Configurar o arquivo `.env`:
+### Configurar o arquivo `.env`:
 
 ```javascript
 DATABASE_URL="mysql://youUser:yourPassword@yourHost:3306/yourDataBase"
@@ -70,7 +73,7 @@ DATABASE_URL="mysql://youUser:yourPassword@yourHost:3306/yourDataBase"
 > `3306` é porta e
 > `yourDataBase` é seu banco de dados.
 
-Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo:
+### Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo:
 
 > O valor de `provider` deve ser `mysql`, que é o tipo de banco de dados!
 
@@ -89,7 +92,7 @@ npx prisma db pull
 
 > O PRISMA irá obter a estrutura de todas as tabelas do seu banco de dados!
 
-Escrevendo o model no arquivo `prisma/schema.prisma`:
+### Escrevendo o model no arquivo `prisma/schema.prisma`:
 
 ```javascript
 model admins {
@@ -108,7 +111,7 @@ Exemplo abaixo:
 
 [![Print de uma execução no Db Pull](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")
 
-Criar o arquivo `src/prisma.ts` e configure o seguinte código:
+### Criar o arquivo `src/prisma.ts` e configure o seguinte código:
 
 ```javascript
 import { PrismaClient } from "@prisma/client"
@@ -118,7 +121,7 @@ export const prisma = new PrismaClient ({
 })
 ```
 
-Criar o arquivo `src/server.ts` e configure o seguinte código:
+### Criar o arquivo `src/server.ts` e configure o seguinte código:
 
 ```javascript
 import express from 'express';
@@ -133,7 +136,7 @@ App.listen(3333, ()=>{
 })
 ```
 
-Criar o arquivo `src/routes.ts` e configure o seguinte código:
+### Criar e configurar o arquivo `src/routes.ts`:
 
 ```javascript
 import express from "express";
@@ -197,15 +200,17 @@ npm run dev
 
 [![Server executando](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")
 
-Com o `Insomnia` instalado, executar o GET para consultar os registros na tabela `admins` e gerar um `JSON`:
+### Utilização do `Insomnia` para leitura, gravação, atualização e delete.
+
+Executar o GET para consultar os registros na tabela `admins` e gerar um `JSON` com o `Insomnia`:
 
 [![Consultar os dados com o Insomnia](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/Insomnia_get_admins.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/Insomnia_get_admins.png "Consultar os dados com o Insomnia")
 
-Com o `Insomnia` instalado, executar o POST para inserir um registro na tabela `admins` e gerar um `JSON`:
+Executar o POST para inserir um registro na tabela `admins` e gerar um `JSON`:
 
 [![Registrar dados com o Insomnia](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Registrar dados com o Insomnia")
 
-Recriar instâncias nos módulos:
+### Recriar instâncias nos módulos:
 
 ```javascript
 npx prisma generate
