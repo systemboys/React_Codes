@@ -143,7 +143,11 @@ export const routes = express.Router();
 
 // ### Consultar 'admins' ###
 routes.get('/admins', async (req, res) => {
-    const admins = await prisma.admins.findMany();
+    const admins = await prisma.admins.findMany(
+        orderBy: {
+            id: 'desc'
+        }
+    );
     res.status(200).json(admins);
 });
 
