@@ -5,10 +5,10 @@
     - [Instalar o PRISMA](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#instalar-o-prisma "Instalar o PRISMA")
     - [Configurar o arquivo `.env`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#configurar-o-arquivo-env "Configurar o arquivo .env")
     - [Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#configurar-no-arquivo-prismaschemaprisma-o-trecho-de-codigo "Configurar no arquivo ./prisma/schema.prisma o trecho de codigo")
-    - [Escrevendo o model no arquivo `prisma/schema.prisma`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#escrevendo-o-model-no-arquivo-prismaschemaprisma "Escrevendo o model no arquivo `prisma/schema.prisma`")
-    - [Criar o arquivo `src/prisma.ts` e configure o seguinte código](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-o-arquivo-srcprismats-e-configure-o-seguinte-c%C3%B3digo "Criar o arquivo `src/prisma.ts` e configure o seguinte código")
-    - [Criar o arquivo `src/server.ts` e configure o seguinte código](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-o-arquivo-srcserverts-e-configure-o-seguinte-c%C3%B3digo "Criar o arquivo `src/server.ts` e configure o seguinte código")
-    - [Criar e configurar o arquivo `src/routes.ts`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-e-configurar-o-arquivo-srcroutests "Criar e configurar o arquivo src/routes.ts")
+    - [Escrevendo o model no arquivo `./prisma/schema.prisma`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#escrevendo-o-model-no-arquivo-prismaschemaprisma "Escrevendo o model no arquivo `prisma/schema.prisma`")
+    - [Criar o arquivo `./src/prisma.ts` e configure o seguinte código](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-o-arquivo-srcprismats-e-configure-o-seguinte-c%C3%B3digo "Criar o arquivo `src/prisma.ts` e configure o seguinte código")
+    - [Criar o arquivo `./src/server.ts` e configure o seguinte código](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-o-arquivo-srcserverts-e-configure-o-seguinte-c%C3%B3digo "Criar o arquivo `src/server.ts` e configure o seguinte código")
+    - [Criar e configurar o arquivo `./src/routes.ts`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-e-configurar-o-arquivo-srcroutests "Criar e configurar o arquivo src/routes.ts")
     - [Utilização do `Insomnia` para leitura, gravação, atualização e delete](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#utiliza%C3%A7%C3%A3o-do-insomnia-para-leitura-grava%C3%A7%C3%A3o-atualiza%C3%A7%C3%A3o-e-delete "Utilização do Insomnia para leitura, gravação, atualização e delete")
     - [`Recriar instâncias` nos módulos](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#recriar-inst%C3%A2ncias-nos-m%C3%B3dulos "Recriar instâncias nos módulos")
 
@@ -67,7 +67,7 @@ Iniciar o PRISMA:
 npx prisma init
 ```
 
-### Configurar o arquivo `.env`:
+### Configurar o arquivo `./.env`:
 
 ```javascript
 DATABASE_URL="mysql://youUser:yourPassword@yourHost:3306/yourDataBase"
@@ -99,7 +99,7 @@ npx prisma db pull
 
 > O PRISMA irá obter a estrutura de todas as tabelas do seu banco de dados!
 
-### Escrevendo o model no arquivo `prisma/schema.prisma`:
+### Escrevendo o model no arquivo `./prisma/schema.prisma`:
 
 ```javascript
 model admins {
@@ -118,7 +118,7 @@ Exemplo abaixo:
 
 [![Print de uma execução no Db Pull](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")
 
-### Criar o arquivo `src/prisma.ts` e configure o seguinte código:
+### Criar o arquivo `./src/prisma.ts` e configure o seguinte código:
 
 ```javascript
 import { PrismaClient } from "@prisma/client"
@@ -128,7 +128,7 @@ export const prisma = new PrismaClient ({
 })
 ```
 
-### Criar o arquivo `src/server.ts` e configure o seguinte código:
+### Criar o arquivo `./src/server.ts` e configure o seguinte código:
 
 ```javascript
 import express from 'express';
@@ -143,7 +143,7 @@ App.listen(3333, ()=>{
 })
 ```
 
-### Criar e configurar o arquivo `src/routes.ts`:
+### Criar e configurar o arquivo `./src/routes.ts`:
 
 ```javascript
 import express from "express";
@@ -191,7 +191,7 @@ Instalar o TSX:
 npm install tsx
 ```
 
-No arquivo `package.json` editar o script deixando como no exemplo abaixo:
+No arquivo `./package.json` editar o script deixando como no exemplo abaixo:
 
 ```javascript
 "script": {
