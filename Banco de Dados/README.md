@@ -12,6 +12,8 @@
     - [Utilização do `Insomnia` para leitura, gravação, atualização e delete](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#utiliza%C3%A7%C3%A3o-do-insomnia-para-leitura-grava%C3%A7%C3%A3o-atualiza%C3%A7%C3%A3o-e-delete "Utilização do Insomnia para leitura, gravação, atualização e delete")
     - [`Recriar instâncias` nos módulos](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#recriar-inst%C3%A2ncias-nos-m%C3%B3dulos "Recriar instâncias nos módulos")
 - [`Listar itens` da `tabela` no seu componente](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#listar-itens-da-tabela-no-seu-componente "Listar itens da tabela no seu componente")
+    - [Instalações necessárias](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#instala%C3%A7%C3%B5es-necess%C3%A1rias "Instalações necessárias")
+    - [Listar os itens no seu componente](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#listar-os-itens-no-seu-componente "Listar os itens no seu componente")
 
 ------------
 
