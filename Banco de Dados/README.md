@@ -11,7 +11,7 @@
     - [Criar e configurar o arquivo `./src/routes.ts`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-e-configurar-o-arquivo-srcroutests "Criar e configurar o arquivo src/routes.ts")
     - [Utilização do `Insomnia` para leitura, gravação, atualização e delete](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#utiliza%C3%A7%C3%A3o-do-insomnia-para-leitura-grava%C3%A7%C3%A3o-atualiza%C3%A7%C3%A3o-e-delete "Utilização do Insomnia para leitura, gravação, atualização e delete")
     - [`Recriar instâncias` nos módulos](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#recriar-inst%C3%A2ncias-nos-m%C3%B3dulos "Recriar instâncias nos módulos")
-- [`Listar itens` da `tabela` no seu componente](https://github.com/systemboys/React_Codes/... "Listar itens da tabela no seu componente")
+- [`Listar itens` da `tabela` no seu componente](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#listar-itens-da-tabela-no-seu-componente "Listar itens da tabela no seu componente")
 
 ------------
 
@@ -231,7 +231,7 @@ npx prisma generate
 
 ### Listar itens da tabela no seu componente
 
-INSTALAÇÕES NECESSÁRIAS
+### INSTALAÇÕES NECESSÁRIAS
 
 Instalar a dependência `Axios` no NPM do seu projeto o qual deseja listar os itens:
 
@@ -265,7 +265,7 @@ export const Api = axios.create({
     }
 });
 ```
-LISTAR OS ITENS NO SEU COMPONENTE
+### LISTAR OS ITENS NO SEU COMPONENTE
 
 > Este exemplo lista itens de uma tabela de atualizações de commits do GitHub!
 
