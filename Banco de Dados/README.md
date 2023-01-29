@@ -11,6 +11,7 @@
     - [Criar e configurar o arquivo `./src/routes.ts`](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#criar-e-configurar-o-arquivo-srcroutests "Criar e configurar o arquivo src/routes.ts")
     - [Utilização do `Insomnia` para leitura, gravação, atualização e delete](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#utiliza%C3%A7%C3%A3o-do-insomnia-para-leitura-grava%C3%A7%C3%A3o-atualiza%C3%A7%C3%A3o-e-delete "Utilização do Insomnia para leitura, gravação, atualização e delete")
     - [`Recriar instâncias` nos módulos](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#recriar-inst%C3%A2ncias-nos-m%C3%B3dulos "Recriar instâncias nos módulos")
+- [`Listar itens` da `tabela` no seu componente](https://github.com/systemboys/React_Codes/... "Listar itens da tabela no seu componente")
 
 ------------
 
@@ -221,6 +222,80 @@ Executar o POST para inserir um registro na tabela `admins` e gerar um `JSON`:
 
 ```javascript
 npx prisma generate
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#react-codes--banco-de-dados "Subir para o topo")
+
+------------
+
+### Listar itens da tabela no seu componente
+
+INSTALAÇÕES NECESSÁRIAS
+
+Instalar a dependência `Axios` no NPM do seu projeto o qual deseja listar os itens:
+
+```
+npm i axios
+```
+
+> Obs.: Se houver erro, forçar a instalação com `--force`!
+
+Instalar o `CORS` na sua API (`prisma`) fora do seu projeto o qual vai listar:
+
+```
+npm i cors
+```
+
+Instalar os `Types` do CORS:
+
+```
+npm i @types/cors
+```
+
+Criar no seu projeto o qual deseja listar os registros da tabela, o arquivo `./src/server/api.js`:
+
+```javascript
+import axios from "axios";
+
+export const Api = axios.create({
+    baseURL: 'http://localhost:3333',
+    headers: {
+        'Content-Type': 'application/json'
+    }
+});
+```
+LISTAR OS ITENS NO SEU COMPONENTE
+
+> Este exemplo lista itens de uma tabela de atualizações de commits do GitHub!
+
+Na lista a qual deve obter os registros, importar os `Hooks` e a `Api`:
+
+```javascript
+import { useState, useEffect } from 'react';
+import { Api } from '../../server/api';
+```
+
+Criar um `useState` e `setListUpdates` dentro do export do seu componente:
+
+```javascript
+const [listUpdates, setListUpdates] = useState([]);
+    
+useEffect(() => {
+    Api.get('/latest_updates').then((res) => {
+        setListUpdates(res.data)
+    })
+}, []);
+```
+
+E por último, o `map()` para obter sua lista:
+
+```javascript
+<ul>
+    {listUpdates.map(Updates => (
+        <li><span className={styles.commit}>Update: [{Updates.commit}]</span><br/><span className={styles.span1}>{Updates.date} às {Updates.hour} - <FontAwesomeIcon icon={faScrewdriverWrench} size="1x" /> {Updates.author}</span><br /><span className={styles.span2}>{Updates.description}</span></li>
+    ))}
+</ul>
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
