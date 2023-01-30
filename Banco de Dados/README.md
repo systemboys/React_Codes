@@ -294,7 +294,7 @@ E por último, o `map()` para obter sua lista:
 ```javascript
 <ul>
     {listUpdates.map(Updates => (
-        <li><span className={styles.commit}>Update: [{Updates.commit}]</span><br/><span className={styles.span1}>{Updates.date} às {Updates.hour} - <FontAwesomeIcon icon={faScrewdriverWrench} size="1x" /> {Updates.author}</span><br /><span className={styles.span2}>{Updates.description}</span></li>
+        <li>Atualização: {Updates.commit} | Data: {Updates.date} às {Updates.hour} | Autor: {Updates.author} | Descrição: {Updates.description}</li>
     ))}
 </ul>
 ```
