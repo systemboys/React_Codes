@@ -278,7 +278,7 @@ import { useState, useEffect } from 'react';
 import { Api } from '../../server/api';
 ```
 
-Criar um `useState` e `setListUpdates` dentro do export do seu componente:
+Criar um `useState` e `setListUpdates` dentro do export do seu componente e configurar a rota no `Api.get()`:
 
 ```javascript
 const [listUpdates, setListUpdates] = useState([]);
