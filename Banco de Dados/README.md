@@ -282,7 +282,6 @@ Criar um `useState` e `setListUpdates` dentro do export do seu componente:
 
 ```javascript
 const [listUpdates, setListUpdates] = useState([]);
-    
 useEffect(() => {
     Api.get('/latest_updates').then((res) => {
         setListUpdates(res.data)
