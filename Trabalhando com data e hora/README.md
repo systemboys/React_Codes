@@ -13,7 +13,7 @@ Instalar módulo Datas:
 npm install date-fns
 ```
 
-Os tipos de de data do TypeScript:
+Os tipos de data do TypeScript:
 
 ```javascript
 npm i @types/date-fns
@@ -22,7 +22,6 @@ npm i @types/date-fns
 Configuração de Data:
 
 ```javascript
-// Data
 import { parseISO } from 'date-fns';
 
 const date = '2018-04-01'; // Data informada
