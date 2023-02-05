@@ -11,13 +11,21 @@ Quando a função é acionada a partir de um click do usuário, é recomendável
 ```javascript
 function handleYourFunction() {
     alert('Helo World!');
-}
+};
+```
+
+Outra forma em uma constante:
+
+```javascript
+const handleYourFunction = () => {
+    alert('Helo World!');
+};
 ```
 
 Sua função pode ser executada por exemplo, em um elemento HTML escrita da seguinte forma na propriedade `onClick={}`:
 
 ```javascript
- onClick={handleSelectBackground}
+ onClick={handleYourFunction}
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
