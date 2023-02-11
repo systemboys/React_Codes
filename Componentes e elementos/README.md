@@ -149,7 +149,7 @@ export function Post() {
 
 Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
 
-```
+```bash
 npm install react-bootstrap bootstrap
 ```
 
@@ -211,7 +211,7 @@ Elementos do formulário modelo:
 
 Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
 
-```
+```bash
 npm install react-bootstrap bootstrap
 ```
 
@@ -250,7 +250,7 @@ Elementos do HTML:
 
 Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
 
-```
+```bash
 npm install react-bootstrap bootstrap
 ```
 
@@ -291,7 +291,7 @@ Elementos do HTML:
 
 Se o `React-Bootstrap` não estiver instalado no `npm`, execute o seguinte comando no terminal:
 
-```
+```bash
 npm install react-bootstrap bootstrap
 ```
 
@@ -326,7 +326,7 @@ Elementos HTML:
 
 O arquivo de estilo deverá ter o seguinte nome:
 
-```
+```bash
 styles.module.css
 ```
 
@@ -344,7 +344,7 @@ Incrementação da classe no elemento HTML:
 
 Na impessão de elementos, as classes aparecerão da seguinte forma:
 
-```
+```html
 <div class="_youClassName_n97f3_18"></div>
 ```
 

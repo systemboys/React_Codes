@@ -22,13 +22,13 @@ Para usar mais de uma classe em um component, utilizamos o `TemplateString` para
 
 Instalando o `Styled Components`:
 
-```
+```bash
 npm i styled-components
 ```
 
 Instalando o `Type Styled Components` como dependência de desenvolvimento:
 
-```
+```bash
 npm i @types/styled-components -D
 ```
 

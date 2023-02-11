@@ -23,25 +23,25 @@
 
 > Crie um novo projeto fora do diretório do seu projeto o qual quer conectá-lo. Na verdade, você estará criando uma API para conectar seu projeto!
 
-```
+```bash
 npm init -y
 ```
 
 Instalar o Express:
 
-```
+```bash
 npm i express @types/express
 ```
 
 Instalar o TypeScript:
 
-```
+```bash
 npm install typescript ts-node @types/node --save-dev
 ```
 
 Iniciar TypeScript:
 
-```
+```bash
 npx tsc --init
 ```
 
@@ -54,19 +54,19 @@ Mudar "target": "es2016" para "es2020" no arquivo `./tsconfig.json`:
 
 ### Instalar o PRISMA:
 
-```
+```bash
 npm install prisma --save-dev
 ```
 
 Instalar o Prisma Client no projeto com o seguinte comando:
 
-```
+```bash
 npm install @prisma/cliente
 ```
 
 Iniciar o PRISMA:
 
-```
+```bash
 npx prisma init
 ```
 
@@ -96,7 +96,7 @@ datasource db {
 
 Obter os modules:
 
-```
+```bash
 npx prisma db pull
 ```
 
@@ -190,7 +190,7 @@ routes.post('/admins', async (req, res) => {
 
 Instalar o TSX:
 
-```
+```bash
 npm install tsx
 ```
 
@@ -204,7 +204,7 @@ No arquivo `./package.json` editar o script deixando como no exemplo abaixo:
 
 Execute o servidor NPM:
 
-```
+```bash
 npm run dev
 ```
 
@@ -237,7 +237,7 @@ npx prisma generate
 
 Instalar a dependência `Axios` no NPM do seu projeto o qual deseja listar os itens:
 
-```
+```bash
 npm i axios
 ```
 
@@ -245,13 +245,13 @@ npm i axios
 
 Instalar o `CORS` na sua API (`prisma`) fora do seu projeto o qual vai listar:
 
-```
+```bash
 npm i cors
 ```
 
 Instalar os `Types` do CORS:
 
-```
+```bash
 npm i @types/cors
 ```
 

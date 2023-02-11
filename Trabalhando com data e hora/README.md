@@ -9,13 +9,13 @@
 
 Instalar módulo Datas:
 
-```javascript
+```bash
 npm install date-fns
 ```
 
 Os tipos de data do TypeScript:
 
-```javascript
+```bash
 npm i @types/date-fns
 ```
 
