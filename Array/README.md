@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Arrays
 
-- [Obter dados de um `Array` com o `map()`](https://github.com/systemboys/React_Codes/tree/main/Array#obter-dados-de-um-array-com-map "Obter dados de um Array com map()")
+- [Obter dados de um `Array` com o `map()`](#obter-dados-de-um-array-com-map "Obter dados de um Array com map()")
 
 ------------
 ## Obter dados de um Array com `map()`
@@ -55,4 +55,4 @@ return (
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Array#react-codes--arrays "Subir para o topo")
+[(&uarr;) Subir](#react-codes--arrays "Subir para o topo")

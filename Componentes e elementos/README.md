@@ -1,19 +1,19 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Componentes e elementos
 
-- [Componentes no modo `Default Exports`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#componentes-no-modo-default-exports "Componentes no modo Default Exports")
-- [Componentes no modo `Named Exports`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#componentes-no-modo-named-exports "Componentes no modo Named Exports")
-- [`Formulário` responsívo com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
-- [`Abas` horizontais com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
-- [`Responsive grids` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
-- [`Buttons` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
-- [Utilizando o `CSS Modules` do React](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
-- [Interfaces com `guias` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#interfaces-com-guias-com-react-bootstrap "Interfaces com guias com React-Bootstrap")
-- [Itens `acionáveis` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#itens-acion%C3%A1veis-com-react-bootstrap "Itens acionáveis com React-Bootstrap")
-- [`Posicionamento` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#posicionamento-com-react-bootstrap "Posicionamento com React-Bootstrap")
-- [Mais opções com `Paginação` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#mais-op%C3%A7%C3%B5es-com-pagina%C3%A7%C3%A3o-com-react-bootstrap "Mais opções com Paginação com React Bootstrap")
-- [`Espaços reservados` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
-- [`Barra com animação` com React-Bootstrap](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
-- [Incrementando `React-FontAwesome`](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#incrementando-react-fontawesome "Incrementando React-FontAwesome")
+- [Componentes no modo `Default Exports`](#componentes-no-modo-default-exports "Componentes no modo Default Exports")
+- [Componentes no modo `Named Exports`](#componentes-no-modo-named-exports "Componentes no modo Named Exports")
+- [`Formulário` responsívo com React-Bootstrap](#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
+- [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
+- [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
+- [`Buttons` com React-Bootstrap](#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
+- [Utilizando o `CSS Modules` do React](#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
+- [Interfaces com `guias` com React-Bootstrap](#interfaces-com-guias-com-react-bootstrap "Interfaces com guias com React-Bootstrap")
+- [Itens `acionáveis` com React-Bootstrap](#itens-acion%C3%A1veis-com-react-bootstrap "Itens acionáveis com React-Bootstrap")
+- [`Posicionamento` com React-Bootstrap](#posicionamento-com-react-bootstrap "Posicionamento com React-Bootstrap")
+- [Mais opções com `Paginação` com React-Bootstrap](#mais-op%C3%A7%C3%B5es-com-pagina%C3%A7%C3%A3o-com-react-bootstrap "Mais opções com Paginação com React Bootstrap")
+- [`Espaços reservados` com React-Bootstrap](#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
+- [`Barra com animação` com React-Bootstrap](#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
+- [Incrementando `React-FontAwesome`](#incrementando-react-fontawesome "Incrementando React-FontAwesome")
 
 ------------
 
@@ -78,7 +78,7 @@ export default Test
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -139,7 +139,7 @@ export function Post() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -201,7 +201,7 @@ Elementos do formulário modelo:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -240,7 +240,7 @@ Elementos do HTML:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -281,7 +281,7 @@ Elementos do HTML:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -318,7 +318,7 @@ Elementos HTML:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -349,7 +349,7 @@ Na impessão de elementos, as classes aparecerão da seguinte forma:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -401,7 +401,7 @@ export function TabsExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -443,7 +443,7 @@ export function LinkedExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -507,7 +507,7 @@ render(<Example />);
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -550,7 +550,7 @@ export function AdvancedExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -611,7 +611,7 @@ export function CardExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -645,7 +645,7 @@ export function AnimationExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
@@ -672,7 +672,7 @@ Elemento HTML:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ------------
 
