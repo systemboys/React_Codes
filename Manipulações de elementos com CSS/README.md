@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Manipulações de elementos com CSS
 
-- [`Transbordar` texto dentro de um elemento](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20de%20elementos%20com%20CSS#transbordar-texto-dentro-de-um-elemento "Transbordar texto dentro de um elemento")
+- [`Transbordar` texto dentro de um elemento](#transbordar-texto-dentro-de-um-elemento "Transbordar texto dentro de um elemento")
 
 ------------
 
@@ -24,7 +24,7 @@ Sua class CSS
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20de%20elementos%20com%20CSS#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
+[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
 
 ------------
 

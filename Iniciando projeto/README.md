@@ -1,9 +1,9 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Iniciando projeto
 
-- [1 - Crie o seu projeto com o Vite](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#1---crie-o-seu-projeto-com-o-vite "1 - Crie o seu projeto com o Vite")
-- [2 - Entre no diretório do seu projeto project_name](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#2---entre-no-diret%C3%B3rio-do-seu-projeto-project_name "2 - Entre no diretório do seu projeto project_name")
-- [3 - Execute o projeto com o seguinte comando](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
-- [4 - Configuração da porta no Vite](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4 - Configuração da porta no Vite")
+- [1 - Crie o seu projeto com o Vite](#1---crie-o-seu-projeto-com-o-vite "1 - Crie o seu projeto com o Vite")
+- [2 - Entre no diretório do seu projeto project_name](#2---entre-no-diret%C3%B3rio-do-seu-projeto-project_name "2 - Entre no diretório do seu projeto project_name")
+- [3 - Execute o projeto com o seguinte comando](#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
+- [4 - Configuração da porta no Vite](#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4 - Configuração da porta no Vite")
 
 ------------
 
@@ -20,7 +20,7 @@ npm create vite@latest project_name
 > Obs.: Selecione React e depois JavaScript ou TypyScript, dependendo do que deseja em seu projeto!
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
 
 ### 2 - Entre no diretório do seu projeto project_name:
 
@@ -31,7 +31,7 @@ npm i
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
 
 ### 3 - Execute o projeto com o seguinte comando:
 
@@ -49,7 +49,7 @@ npm run dev
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
 
 ------------
 
@@ -80,6 +80,6 @@ Atalhos:
 - Pressione `q` para sair
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
 
 ------------

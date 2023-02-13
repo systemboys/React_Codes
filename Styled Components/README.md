@@ -1,8 +1,8 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Styled Components
 
-- [Várias classes na propriedade `className={}`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#v%C3%A1rias-classes-na-propriedade-classname "Várias classes na propriedade className={}")
-- [Trabalhando com `Styled Components`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#trabalhando-com-styled-components "Trabalhando com Styled Components")
-- [`Estilizando` com código `JavaScript`](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#estilizando-com-c%C3%B3digo-javascript "Estilizando com código JavaScript")
+- [Várias classes na propriedade `className={}`](#v%C3%A1rias-classes-na-propriedade-classname "Várias classes na propriedade className={}")
+- [Trabalhando com `Styled Components`](#trabalhando-com-styled-components "Trabalhando com Styled Components")
+- [`Estilizando` com código `JavaScript`](#estilizando-com-c%C3%B3digo-javascript "Estilizando com código JavaScript")
 
 ## Várias classes na propriedade `className={}`
 
@@ -13,7 +13,7 @@ Para usar mais de uma classe em um component, utilizamos o `TemplateString` para
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#react-codes--styled-components "Subir para o topo")
+[(&uarr;) Subir](#react-codes--styled-components "Subir para o topo")
 
 
 ------------
@@ -92,7 +92,7 @@ Vamos fazer o uso do CSS Modules, criando um arquivo `Button.module.css`.
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#react-codes--styled-components "Subir para o topo")
+[(&uarr;) Subir](#react-codes--styled-components "Subir para o topo")
 
 ------------
 
@@ -145,6 +145,6 @@ export function Button({ variant = 'primary' }: ButtonProps) {
 > Dessa forma, estamos utilizando um components estilizado!
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#react-codes--styled-components "Subir para o topo")
+[(&uarr;) Subir](#react-codes--styled-components "Subir para o topo")
 
 
