@@ -165,7 +165,8 @@ routes.get('/admins', async (req, res) => {
 });
 
 /* Consultar 'admins/:Number(level)', onde o nível é um determinado valor.
-Essa rota deve conter o parâmentro específico `Api.get('/admins/2').then((res) => ...`. */
+Essa rota deve conter o parâmentro específico. Exemplo: Api.get('/admins/2').then((res) => ... */
+
 routes.get('/admins/:level', async (req, res) => {
     const { level } = req.params;
     const admins = await prisma.admins.findMany({
