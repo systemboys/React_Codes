@@ -24,7 +24,7 @@ npm create vite@latest project_name
 
 ### 2 - Entre no diretório do seu projeto project_name:
 
-Instale as dependências npm.
+Entre no diretório do seu novo projeto e instale as dependências npm.
 
 ```bash
 npm i
