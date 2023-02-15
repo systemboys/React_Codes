@@ -14,6 +14,7 @@
 - [`Espaços reservados` com React-Bootstrap](#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
 - [`Barra com animação` com React-Bootstrap](#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
 - [Incrementando `React-FontAwesome`](#incrementando-react-fontawesome "Incrementando React-FontAwesome")
+- [Enviando um `formulário`](#enviando-um-formulario "Enviando um formulário")
 
 ------------
 
@@ -670,6 +671,74 @@ Elemento HTML:
 ```javascript
 <FontAwesomeIcon icon={faPrint} size="1x" />
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
+## Enviando um formulário
+
+Importar o `useState` do React:
+
+```javascript
+import React, { useState } from 'react';
+```
+
+Quando não há `action=""` ou quando há mas não é definido nenhum valor, ao enviar o submit, o usuário será direcionado para a mesma tela do formulário (comportamento típico do form). A ação do envio deverá ser mapeada e interceptada.
+
+Dentro do seu componente, antes do retorno, declaração dos valores, deixando-os vazios:
+
+```javascript
+// Declaração dos valores, deixando-os vazios
+const [email, setEmail] = useState("");
+const [username, setUsername] = useState("");
+const [password, setPassword] = useState("");
+
+// Função para interceptar o evento de submit
+const handleSubmitLogin = (e) => {
+    e.preventDefault();
+
+    console.log("submit", { email, username, password });
+}
+```
+
+A função deverá ser colocada no `<form>...</form>` no evento `onSubmit={}`:
+
+```javascript
+<form onSubmit={handleSubmitLogin}>
+```
+
+Agora os geters e os seters deverão ser ligados nos campos:
+
+```javascript
+<input
+    type="email"
+    name="email"
+    id="email"
+    placeholder="Email principal"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+/>
+<input
+    type="text"
+    name="username"
+    id="username"
+    placeholder="Usuário"
+    value={username}
+    onChange={(e) => setUsername(e.target.value)}
+/>
+<input
+    type="password"
+    name="password"
+    id="password"
+    placeholder="Senha"
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
+/>
+```
+
+> O valor de leitura e a função que define o valor.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
