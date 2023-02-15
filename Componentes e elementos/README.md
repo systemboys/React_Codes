@@ -738,7 +738,7 @@ Agora os geters e os seters deverão ser ligados nos campos:
 />
 ```
 
-> O valor de leitura e a função que define o valor.
+> O valor de leitura e a função que define o valor são colocados no `value={}` e no `onChange={}`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
