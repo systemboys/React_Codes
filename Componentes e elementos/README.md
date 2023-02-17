@@ -699,6 +699,7 @@ const [password, setPassword] = useState("");
 const handleSubmitLogin = (e) => {
     e.preventDefault();
 
+    // Exibir no console os valores obitidos nos campos
     console.log("submit", { email, username, password });
 }
 ```
