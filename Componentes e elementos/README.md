@@ -679,7 +679,7 @@ Elemento HTML:
 
 ## Enviando um formulário
 
-Importar o `useState` do React:
+Importar o `useState` do React para armazenarmos os valores:
 
 ```javascript
 import React, { useState } from 'react';
