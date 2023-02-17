@@ -703,6 +703,8 @@ const handleSubmitLogin = (e) => {
 }
 ```
 
+> Na função, o (e) em `const handleSubmitLogin = (e) => {...` pode ser colocado (e), (ev) ou (event)!
+
 A função deverá ser colocada no `<form>...</form>` no evento `onSubmit={}`:
 
 ```javascript
