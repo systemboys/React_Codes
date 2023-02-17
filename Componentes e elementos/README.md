@@ -685,7 +685,7 @@ Importar o `useState` do React:
 import React, { useState } from 'react';
 ```
 
-Dentro do seu componente, antes do retorno, devem ser declarados os valores, deixando-os vazios e, deverá ter também uma `Arrow Function` para interceptar o Submit:
+Dentro do seu componente, antes do retorno, devem ser declarados os valores, deixando-os vazios e, deverá ter também uma `Arrow Function` para interceptar o Submit do formulário:
 
 > Quando não há `action=""` ou quando há mas não é definido nenhum valor, ao enviar o submit, o usuário será direcionado para a mesma tela do formulário (comportamento típico do form). A ação do envio deverá ser mapeada e interceptada.
 
