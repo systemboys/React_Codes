@@ -43,11 +43,11 @@ Por exemplo, suponha que você tenha um botão com um id definido e deseja execu
 ```javascript
 // Evento do onClick={}
 const handleClick = (event, id) => {
-    console.log(`O botão com o id ${id} foi clicado.`);
+    console.log(`O evento do onClick no botão com o valor ${id} definido no segundo parâmentro arrow function handleClick() foi clicado.`);
 };
 ```
 
-Neste exemplo, a arrow function handleClick é definida para receber o evento e o id do elemento como seus parâmetros. O componente MyButton renderiza um botão com o id definido e passa a arrow function handleClick para a propriedade onClick do botão, juntamente com o id do botão.
+Neste exemplo, a arrow function handleClick é definida para receber o evento e o id do elemento como seus parâmetros. O seu componente renderiza um botão com o id definido e passa a arrow function handleClick para a propriedade onClick do botão, juntamente com o id do botão.
 
 Quando o botão é clicado, a arrow function é executada com o evento e o id do botão como seus parâmetros, permitindo que você acesse a propriedade do elemento dentro da função.
 
@@ -55,7 +55,7 @@ Quando o botão é clicado, a arrow function é executada com o evento e o id do
 return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</button>;
 ```
 
-> O `onClick={}` envia o evento, no segundo parâmetro de `handleClick(event, "123")` será definido o valor a ser enviado.
+> O `onClick={}` envia o evento, e no segundo parâmetro de `handleClick(event, "123")` será definido o valor a ser enviado. O resultado do exemplo
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#assunto "Subir para o topo")
