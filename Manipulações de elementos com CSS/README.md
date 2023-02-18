@@ -40,6 +40,8 @@ if (element) {
 }
 ```
 
+Neste exemplo, estamos selecionando o elemento que possui a classe .fenestra-desktop-icons usando document.querySelector e definindo a imagem de plano de fundo usando element.style.backgroundImage. Certifique-se de substituir o seletor de classe pelo nome da sua classe específica.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
 
