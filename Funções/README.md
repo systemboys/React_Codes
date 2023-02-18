@@ -1,7 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Funções
 
 - [Função simples](#fun%C3%A7%C3%A3o-simples "Função simples")
-- [Passando um valor para a Arrow Function](#passando-um-valor-para-a-arrow-function "Passando um valor para a Arrow Function")
+- [Passar uma propriedade de um elemento para uma arrow function](#passar-uma-propriedade-de-um-elemento-para-uma-arrow-function "Passar uma propriedade de um elemento para uma arrow function")
 
 ------------
 
@@ -34,9 +34,11 @@ Sua função pode ser executada por exemplo, em um elemento HTML escrita da segu
 
 ------------
 
-## Passando um valor para a Arrow Function
+## Passar uma propriedade de um elemento para uma arrow function
 
-A Arrow Function que recebe o evento do onClick:
+Para executar uma arrow function que recebe a propriedade de um elemento quando um evento onClick é disparado, você pode definir a arrow function como uma função que recebe o evento e o elemento como seus parâmetros, e em seguida passá-la para a propriedade onClick do elemento.
+
+Por exemplo, suponha que você tenha um botão com um id definido e deseja executar uma arrow function que recebe o id do botão quando ele é clicado. Você pode fazer o seguinte:
 
 ```javascript
 // Evento do onClick={}
@@ -45,12 +47,12 @@ const handleClick = (event, id) => {
 };
 ```
 
-> O resultado deste exemplo será executado no `console`: `O botão com o id 123 foi clicado.`!
+Neste exemplo, a arrow function handleClick é definida para receber o evento e o id do elemento como seus parâmetros. O componente MyButton renderiza um botão com o id definido e passa a arrow function handleClick para a propriedade onClick do botão, juntamente com o id do botão.
 
-O valor passado pelo `onClick={}` no elemento HTML:
+Quando o botão é clicado, a arrow function é executada com o evento e o id do botão como seus parâmetros, permitindo que você acesse a propriedade do elemento dentro da função.
 
 ```javascript
-onClick={(event) => handleClick(event, "123")}
+return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</button>;
 ```
 
 > O `onClick={}` envia o evento, no segundo parâmetro de `handleClick(event, "123")` será definido o valor a ser enviado.
