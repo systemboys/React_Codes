@@ -55,7 +55,7 @@ Quando o botão é clicado, a arrow function é executada com o evento e o id do
 return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</button>;
 ```
 
-> O `onClick={}` envia o evento, e no segundo parâmetro de `handleClick(event, "123")` será definido o valor a ser enviado. O resultado do exemplo
+> O `onClick={}` envia o evento, e no segundo parâmetro de `handleClick(event, "123")` será definido o valor a ser enviado. O resultado deste exemplo é exibido no `console`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#assunto "Subir para o topo")
