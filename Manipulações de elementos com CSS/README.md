@@ -38,6 +38,7 @@ const element = document.querySelector('.youClassName');
 if (element) {
     element.style.backgroundImage = `url(${url})`;
 }
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
