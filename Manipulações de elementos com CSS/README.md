@@ -31,7 +31,7 @@ Sua class CSS
 
 ## Mudar a imagem do plano de fundo de um elemento
 
-Este exemplo altera a imagem do plano de fundo de um objeto. A constante `element` recebe o nome de uma classe e, a condição abaixo após verificar a existência de um valor, faz a lateração:
+Este exemplo altera a imagem do plano de fundo de um objeto. A constante `element` recebe o nome de uma classe e, a condição abaixo após verificar a existência de um valor, e faz a lateração:
 
 ```javascript
 const element = document.querySelector('.youClassName');
