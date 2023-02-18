@@ -58,6 +58,6 @@ return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</butto
 > O `onClick={}` envia o evento, e no segundo parâmetro de `handleClick(event, "123")` será definido o valor a ser enviado. O resultado deste exemplo é exibido no `console`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#assunto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
 
 ------------
