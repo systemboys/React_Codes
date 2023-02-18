@@ -1,6 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Manipulações de elementos com CSS
 
 - [`Transbordar` texto dentro de um elemento](#transbordar-texto-dentro-de-um-elemento "Transbordar texto dentro de um elemento")
+- [Mudar a `imagem do plano de fundo` de um elemento](#mudar-a-imagem-do-plano-de-fundo-de-um-elemento "Mudar a imagem do plano de fundo de um elemento")
 
 ------------
 
@@ -22,6 +23,21 @@ Sua class CSS
   overflow: hidden;
 }
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
+
+------------
+
+## Mudar a imagem do plano de fundo de um elemento
+
+A Arrow Function que recebe o evento do onClick e exibindo no console como exemplo:
+
+```javascript
+const element = document.querySelector('.youClassName');
+if (element) {
+    element.style.backgroundImage = `url(${url})`;
+}
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
