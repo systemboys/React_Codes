@@ -45,15 +45,15 @@ const handleClick = (event, id) => {
 };
 ```
 
-> O resultado deste exemplo será executado no `console`!
+> O resultado deste exemplo será executado no `console`: `O botão com o id 123 foi clicado.`!
 
 O valor passado pelo `onClick={}` no elemento HTML:
 
 ```javascript
-onClick={(event) => handleClick(event, "my-button")}
+onClick={(event) => handleClick(event, "123")}
 ```
 
-> O `onClick={}` envia o evento, no segundo parâmetro de `handleClick(event, "valor")` será definido o valor a ser enviado.
+> O `onClick={}` envia o evento, no segundo parâmetro de `handleClick(event, "123")` será definido o valor a ser enviado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#assunto "Subir para o topo")
