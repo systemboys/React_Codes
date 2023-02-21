@@ -14,6 +14,7 @@
 - [`Listar itens` da `tabela` no seu componente](#listar-itens-da-tabela-no-seu-componente "Listar itens da tabela no seu componente")
     - [Instalações necessárias](#instala%C3%A7%C3%B5es-necess%C3%A1rias "Instalações necessárias")
     - [Listar os itens no seu componente](#listar-os-itens-no-seu-componente "Listar os itens no seu componente")
+    - [Listar 1 registro a partir do ID](#listar-1-registro-a-partir-do-id "Listar 1 registro a partir do ID")
 
 ------------
 
@@ -313,6 +314,55 @@ E por último, o `map()` para obter sua lista:
         <li>Atualização: {Updates.commit} | Data: {Updates.date} às {Updates.hour} | Autor: {Updates.author} | Descrição: {Updates.description}</li>
     ))}
 </ul>
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+------------
+
+## Listar 1 registro a partir do ID
+
+No exemplo, iremos mudar o plano de fundo de um objeto onde é identificado pela classe `fenestra-desktop-icons`.
+
+No arquivo `src/routes.ts` da sua Api, crie sua rota:
+
+```javascript
+// Consultar 'backgroundsId/:Number(id)'.
+routes.get('/backgroundsId/:id', async (req, res) => {
+    const { id } = req.params;
+    const backgrounds = await prisma.backgrounds.findMany({
+        where: {
+            id: Number(id)
+        }
+    });
+    res.status(200).json(backgrounds);
+});
+```
+
+Importe os hooks e a sua Api:
+
+```javascript
+import { useState, useEffect } from 'react';
+import { Api } from './server/api';
+```
+
+Dentro do seu componente, antes do retorno `return()`, execute a sua rota:
+
+```javascript
+// Obter o registro a partir do ID na rota.
+const [listBackground, setListBackground] = useState([]);
+
+useEffect(() => {
+  Api.get('/backgroundsId/67').then((res) => {
+    setListBackground(res.data)
+  });
+}, []);
+
+// Mudar o plano de fundo do objeto com a class determinada.
+useEffect(() => {
+  document.querySelector(".fenestra-desktop-icons").style.backgroundImage = `url(${listBackground[0]?.file})`;
+}, [listBackground]);
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
