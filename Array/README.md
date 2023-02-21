@@ -29,7 +29,7 @@ Importe o arquivo no componente:
 import YourItems from './data.js';
 ```
 
-No componente (dentro da função que carrega o conteúdo) coloque a função que retorna o `map()` com os itens do Array:
+No componente (dentro da função que carrega o conteúdo) coloque a função antes do retorna, o `map()` com os itens do Array:
 
 ```javascript
 // Função que faz o laço em busca dos itens do Array
