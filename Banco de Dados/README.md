@@ -340,7 +340,7 @@ routes.get('/backgroundsId/:id', async (req, res) => {
 });
 ```
 
-Importe os hooks e a sua Api no arquivo de seu componente:
+Importe os `hooks` necessários e sua `Api` no arquivo de seu componente:
 
 ```javascript
 import { useState, useEffect } from 'react';
