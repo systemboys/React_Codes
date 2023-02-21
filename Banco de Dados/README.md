@@ -144,8 +144,34 @@ App.use(express.json())
 App.use(routes);
 App.listen(3333, ()=>{
     console.log('Server is running! 🔥');
-})
+});
 ```
+
+Para habilitar o CORS no seu servidor Express, você pode usar a biblioteca cors. Para permitir qualquer origem, você pode passar `{ origin: '*' }` como opções para a função `cors()`.
+
+Você pode modificar o seu arquivo `server.ts` da seguinte forma:
+
+```javascript
+import express from 'express';
+import cors from 'cors';
+import { routes } from './routes';
+
+const app = express();
+const port = 3333;
+
+app.use(cors({ origin: '*' }));
+app.use(express.json());
+app.use(routes);
+
+app.listen(port, () => {
+  console.log('Server is running! 🔥');
+});
+
+```
+
+A configuração acima permite que todas as solicitações de origens diferentes sejam aceitas. Você também pode especificar uma lista de origens permitidas, caso queira restringir o acesso a um conjunto específico de domínios. Para mais informações sobre como configurar o CORS em sua aplicação, consulte a documentação do pacote `cors` no npm.
+
+> Com essa configuração, todas as requisições vindas de qualquer origem serão permitidas. Lembre-se que em produção, você deve configurar o CORS de forma mais restrita, permitindo somente as origens necessárias.
 
 ### Criar e configurar o arquivo `./src/routes.ts`:
 
