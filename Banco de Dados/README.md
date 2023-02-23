@@ -393,7 +393,7 @@ useEffect(() => {
 
 > No exemplo acima, está sendo mudado o plano de fundo de um objeto. Note que na `url()` está setado o registro `listBackground[0]?.file` buscado na tabela do banco de dados.
 
-Exemplo de uma consulta de uma tabela, onde seu resultado é colocado em outra rota para selecionar outra informação:
+Exemplo de uma consulta em uma tabela, onde seu resultado é colocado em outra rota para obter outra informação:
 
 ```javascript
 const [listCompanySystem, setListCompanySystem] = useState([]);
