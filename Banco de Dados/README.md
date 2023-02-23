@@ -399,12 +399,14 @@ Exemplo de uma consulta de um registro de uma outra tabela, onde seu resultado Ã
 const [listCompanySystem, setListCompanySystem] = useState([]);
 const [listBackground, setListBackground] = useState([]);
 
+// Obter um registro da tabela 1.
 useEffect(() => {
 Api.get('/companySystemCompanyId/1').then((res) => {
     setListCompanySystem(res.data)
 });
 }, []);
 
+// Obter o registro da tabela 2 a partir do registro da tabela 1.
 useEffect(() => {
 if (listCompanySystem.length > 0) {
     const SystemCompanyId = listCompanySystem[0]?.background;
