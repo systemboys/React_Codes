@@ -393,6 +393,35 @@ useEffect(() => {
 
 > No exemplo acima, está sendo mudado o plano de fundo de um objeto. Note que na `url()` está setado o registro `listBackground[0]?.file` buscado na tabela do banco de dados.
 
+Exemplo de uma consulta de um registro de uma outra tabela, onde seu resultado é colocado em outra rota para selecionar outra informação:
+
+```javascript
+const [listCompanySystem, setListCompanySystem] = useState([]);
+const [listBackground, setListBackground] = useState([]);
+
+useEffect(() => {
+Api.get('/companySystemCompanyId/1').then((res) => {
+    setListCompanySystem(res.data)
+});
+}, []);
+
+useEffect(() => {
+if (listCompanySystem.length > 0) {
+    const SystemCompanyId = listCompanySystem[0]?.background;
+    Api.get(`/backgroundsId/${SystemCompanyId}`).then((res) => {
+    setListBackground(res.data)
+    });
+}
+}, [listCompanySystem]);
+
+// Mudar o plano de fundo do objeto com a class determinada.
+useEffect(() => {
+document.querySelector(".fenestra-desktop-icons").style.backgroundImage = `url(${listBackground[0]?.file})`;
+}, [listBackground]);
+```
+
+> Neste exemplo, é selecionado um registro de uma tabela, onde esse registro é posto em outra rota para selecionar outro registro, logo em seguida fazendo a mudança do plano de fundo de um objeto.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
