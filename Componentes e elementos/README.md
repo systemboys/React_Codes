@@ -750,3 +750,44 @@ Agora os geters e os seters deverão ser ligados nos campos:
 
 ------------
 
+## Campos editáveis no formulário dentro de um componente
+
+Como definir um valor em um campo onde ele se torna editável dentro de um componente?
+
+> Para definir um valor padrão para um campo `type="text"` em React, você pode definir o valor inicial do estado que irá controlar o valor do campo. Você pode usar o hook `useState` para definir o estado inicial do valor do campo, assim como a função para atualizá-lo quando necessário.
+
+> Aqui está um exemplo de como definir um valor padrão para um campo de texto usando o componente `Form.Control` do React Bootstrap:
+
+```javascript
+import { useState } from 'react';
+import { Form, Col } from 'react-bootstrap';
+
+function MyForm() {
+  const [systemTitle, setSystemTitle] = useState('Meu título padrão');
+
+  return (
+    <Form>
+      <Form.Group className="mb-3" as={Col} controlId="formGridTitle">
+        <Form.Label>Título do sistema</Form.Label>
+        <Form.Control
+          type="text"
+          size="sm"
+          value={systemTitle}
+          onChange={(event) => setSystemTitle(event.target.value)}
+          placeholder="Um título..."
+        />
+      </Form.Group>
+    </Form>
+  );
+}
+```
+
+>Neste exemplo, o valor padrão do campo de texto é definido como `'Meu título padrão'` através do estado inicial `systemTitle`. Em seguida, o valor é controlado pelo estado usando a propriedade value do componente `Form.Control`.
+
+> A função `onChange` é usada para atualizar o valor do estado `systemTitle` sempre que o usuário digita algo no campo. Dessa forma, o valor do campo será atualizado conforme o usuário digita e pode ser usado em outras partes do seu código.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+------------
+
