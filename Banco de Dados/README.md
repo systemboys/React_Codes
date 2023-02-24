@@ -18,7 +18,7 @@
         - [Exemplo 1, Onde iremos mudar o plano de fundo de um objeto](#exemplo-1 "Exemplo 1, Onde iremos mudar o plano de fundo de um objeto")
         - [Exemplo 2, Onde seu resultado é colocado em outra rota](#exemplo-2 "Exemplo 2, Onde seu resultado é colocado em outra rota")
         - [Exemplo 3, Onde uma função obtem o registro a partir do ID](#exemplo-3 "Exemplo 3, Onde uma função obtem o registro a partir do ID")
-- [Atualização de um registro a partir do ID](#exemplo-3 "Atualização de um registro a partir do ID")
+- [Atualizar um registro a partir do ID](#atualizar-um-registro-a-partir-do-id "Atualizar um registro a partir do ID")
 
 ---
 
@@ -487,7 +487,7 @@ onClick={(event) => handleClick(event, GradientBackgrounds.id)}
 
 ---
 
-## Atualização de um registro a partir do ID
+## Atualizar um registro a partir do ID
 
 Para atualizar um registro a partir de um ID específico, segue a seguite rota para seu arquivo `./src/routes.ts`:
 
