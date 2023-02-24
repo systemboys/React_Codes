@@ -3,7 +3,7 @@
 - [`Transbordar` texto dentro de um elemento](#transbordar-texto-dentro-de-um-elemento "Transbordar texto dentro de um elemento")
 - [Mudar a `imagem do plano de fundo` de um elemento](#mudar-a-imagem-do-plano-de-fundo-de-um-elemento "Mudar a imagem do plano de fundo de um elemento")
 
-------------
+---
 
 ## Transbordar texto dentro de um elemento
 
@@ -27,7 +27,7 @@ Sua class CSS
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
 
-------------
+---
 
 ## Mudar a imagem do plano de fundo de um elemento
 
@@ -58,5 +58,5 @@ Note que aqui estamos usando `element.style.backgroundColor` em vez de `element.
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
 
-------------
+---
 

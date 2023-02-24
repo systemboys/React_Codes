@@ -2,7 +2,7 @@
 
 - [Obter dados de um `Array` com o `map()`](#obter-dados-de-um-array-com-map "Obter dados de um Array com map()")
 
-------------
+---
 ## Obter dados de um Array com `map()`
 
 Crie um arquivo como por exemplo `data.js`:

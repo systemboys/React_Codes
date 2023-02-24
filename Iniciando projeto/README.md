@@ -5,7 +5,7 @@
 - [3 - Execute o projeto com o seguinte comando](#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
 - [4 - Configuração da porta no Vite](#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4 - Configuração da porta no Vite")
 
-------------
+---
 
 ## Iniciando projeto com Vite
 
@@ -51,7 +51,7 @@ npm run dev
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
 
-------------
+---
 
 ### 4 - Configuração da porta no Vite:
 
@@ -82,4 +82,4 @@ Atalhos:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
 
-------------
+---

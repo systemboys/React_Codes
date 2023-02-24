@@ -19,7 +19,7 @@
         - [Exemplo 2, Onde seu resultado é colocado em outra rota](#exemplo-2 "Exemplo 2, Onde seu resultado é colocado em outra rota")
         - [Exemplo 3, Onde uma função obtem o registro a partir do ID](#exemplo-3 "Exemplo 3, Onde uma função obtem o registro a partir do ID")
 
-------------
+---
 
 ## Conectar Banco de Dados MySQL com ORM PRISMA
 
@@ -275,7 +275,7 @@ npx prisma generate
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
-------------
+---
 
 ### Listar itens da tabela no seu componente
 
@@ -348,7 +348,7 @@ E por último, o `map()` para obter sua lista:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
-------------
+---
 
 ## Listar 1 registro a partir do ID
 
@@ -484,4 +484,4 @@ onClick={(event) => handleClick(event, GradientBackgrounds.id)}
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
-------------
+---

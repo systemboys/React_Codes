@@ -16,7 +16,7 @@ Para usar mais de uma classe em um component, utilizamos o `TemplateString` para
 [(&uarr;) Subir](#react-codes--styled-components "Subir para o topo")
 
 
-------------
+---
 
 ## Trabalhando com Styled Components
 
@@ -94,7 +94,7 @@ Vamos fazer o uso do CSS Modules, criando um arquivo `Button.module.css`.
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--styled-components "Subir para o topo")
 
-------------
+---
 
 ### Estilizando com código JavaScript
 

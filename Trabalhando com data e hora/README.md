@@ -3,7 +3,7 @@
 - [Formatando Data](#formatando-data "Formatando Data")
 - [Formatando Hora](#formatando-hora "Formatando Hora")
 
-------------
+---
 
 ## Formatando data
 
@@ -33,7 +33,7 @@ const parsedDate = parseISO(date).toISOString(); // Data
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
 
-------------
+---
 
 ## Formatando Hora
 
@@ -49,4 +49,4 @@ const Hours = new Date("1970-01-01T" + hour + "Z"); // Hora
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
 
-------------
+---

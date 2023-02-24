@@ -3,7 +3,7 @@
 - [Função simples](#fun%C3%A7%C3%A3o-simples "Função simples")
 - [Passar uma propriedade de um elemento para uma arrow function](#passar-uma-propriedade-de-um-elemento-para-uma-arrow-function "Passar uma propriedade de um elemento para uma arrow function")
 
-------------
+---
 
 ## Função simples
 
@@ -32,7 +32,7 @@ Sua função pode ser executada por exemplo, em um elemento HTML escrita da segu
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
 
-------------
+---
 
 ## Passar uma propriedade de um elemento para uma arrow function
 
@@ -60,4 +60,4 @@ return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</butto
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
 
-------------
+---

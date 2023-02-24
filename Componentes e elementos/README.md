@@ -17,7 +17,7 @@
 - [Enviando um `formulário`](#enviando-um-formul%C3%A1rio "Enviando um formulário")
 - [`Campos editáveis` no formulário dentro de um componente](#campos-edit%C3%A1veis-no-formul%C3%A1rio-dentro-de-um-componente "Campos editáveis no formulário dentro de um componente")
 
-------------
+---
 
 ## Componentes no modo Default Exports
 
@@ -82,7 +82,7 @@ export default Test
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Componentes no modo Named Exports
 
@@ -143,7 +143,7 @@ export function Post() {
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Formulário responsívo com React-Bootstrap
 
@@ -205,7 +205,7 @@ Elementos do formulário modelo:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Abas horizontais com React-Bootstrap
 
@@ -244,7 +244,7 @@ Elementos do HTML:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Responsive grids com React-Bootstrap
 
@@ -285,7 +285,7 @@ Elementos do HTML:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Buttons com React-Bootstrap
 
@@ -322,7 +322,7 @@ Elementos HTML:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Utilizando o CSS Modules do React
 
@@ -353,7 +353,7 @@ Na impessão de elementos, as classes aparecerão da seguinte forma:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Interfaces com guias com React-Bootstrap
 
@@ -405,7 +405,7 @@ export function TabsExample() {
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Itens acionáveis com React-Bootstrap
 
@@ -447,7 +447,7 @@ export function LinkedExample() {
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Posicionamento com React-Bootstrap
 
@@ -511,7 +511,7 @@ render(<Example />);
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Mais opções com Paginação com React Bootstrap
 
@@ -554,7 +554,7 @@ export function AdvancedExample() {
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Espaços reservados com React Bootstrap
 
@@ -615,7 +615,7 @@ export function CardExample() {
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Barra com animação com React-Bootstrap
 
@@ -649,7 +649,7 @@ export function AnimationExample() {
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Incrementando React-FontAwesome
 
@@ -676,7 +676,7 @@ Elemento HTML:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Enviando um formulário
 
@@ -749,7 +749,7 @@ Agora os geters e os seters deverão ser ligados nos campos:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
 ## Campos editáveis no formulário dentro de um componente
 
@@ -790,5 +790,5 @@ function MyForm() {
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-------------
+---
 
