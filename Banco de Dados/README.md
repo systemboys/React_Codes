@@ -18,6 +18,7 @@
         - [Exemplo 1, Onde iremos mudar o plano de fundo de um objeto](#exemplo-1 "Exemplo 1, Onde iremos mudar o plano de fundo de um objeto")
         - [Exemplo 2, Onde seu resultado é colocado em outra rota](#exemplo-2 "Exemplo 2, Onde seu resultado é colocado em outra rota")
         - [Exemplo 3, Onde uma função obtem o registro a partir do ID](#exemplo-3 "Exemplo 3, Onde uma função obtem o registro a partir do ID")
+- [Atualização de um registro a partir do ID](#exemplo-3 "Atualização de um registro a partir do ID")
 
 ---
 
@@ -480,6 +481,41 @@ Aqui está o `onClick={}` como deve executar a função no elemento que executa 
 ```javascript
 onClick={(event) => handleClick(event, GradientBackgrounds.id)}
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
+## Atualização de um registro a partir do ID
+
+Para atualizar um registro a partir de um ID específico, segue a seguite rota para seu arquivo `./src/routes.ts`:
+
+```javascript
+// Atualizar dado na tabela "company_system", coluna "background" a partir do ID do registro
+// Rota: '/companySystemCompanyUpdateBackgroundId/1/2'.
+routes.put('/companySystemCompanyUpdateBackgroundId/:companyId/:companyIdBackgroundId', async (req, res) => {
+    const { companyId, companyIdBackgroundId } = req.params;
+    const updatedCompanySystem = await prisma.company_system.update({
+      where: { id: Number(companyId) },
+      data: { background: Number(companyIdBackgroundId) },
+    });
+    res.status(200).json(updatedCompanySystem);
+}); 
+```
+
+No seu componente antes do retorno:
+
+```javascript
+const setCompanySystemCompanyBackground = useState([]);
+
+// Executar a rota para atualizar "table".
+Api.put(`/companySystemCompanyUpdateBackgroundId/1/${id}`).then((res) => {
+    setCompanySystemCompanyBackground(res.data);
+});
+```
+
+> No exemplo acima, estamos atualizando uma informação na tabela "company_system", na coluna "background" a partir do ID do registro, no caso o ID do registro é "1" e o dado da coluna é "2".
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
