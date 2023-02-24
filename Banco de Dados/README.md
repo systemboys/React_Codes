@@ -15,6 +15,9 @@
     - [Instalações necessárias](#instala%C3%A7%C3%B5es-necess%C3%A1rias "Instalações necessárias")
     - [Listar os itens no seu componente](#listar-os-itens-no-seu-componente "Listar os itens no seu componente")
     - [Listar 1 registro a partir do ID](#listar-1-registro-a-partir-do-id "Listar 1 registro a partir do ID")
+        - [Exemplo 1](#exemplo-1 "Exemplo 1")
+        - [Exemplo 2](#exemplo-2 "Exemplo 2")
+        - [Exemplo 3](#exemplo-3 "Exemplo 3")
 
 ------------
 
