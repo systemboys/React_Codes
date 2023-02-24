@@ -14,7 +14,7 @@
 - [`Listar itens` da `tabela` no seu componente](#listar-itens-da-tabela-no-seu-componente "Listar itens da tabela no seu componente")
     - [Instalações necessárias](#instala%C3%A7%C3%B5es-necess%C3%A1rias "Instalações necessárias")
     - [Listar os itens no seu componente](#listar-os-itens-no-seu-componente "Listar os itens no seu componente")
-    - [Listar 1 registro a partir do ID](#listar-1-registro-a-partir-do-id "Listar 1 registro a partir do ID")
+    - #### [Listar 1 registro a partir do ID](#listar-1-registro-a-partir-do-id "Listar 1 registro a partir do ID")
         - [Exemplo 1, Onde iremos mudar o plano de fundo de um objeto](#exemplo-1 "Exemplo 1, Onde iremos mudar o plano de fundo de um objeto")
         - [Exemplo 2, Onde seu resultado é colocado em outra rota](#exemplo-2 "Exemplo 2, Onde seu resultado é colocado em outra rota")
         - [Exemplo 3, Onde uma função obtem o registro a partir do ID](#exemplo-3 "Exemplo 3, Onde uma função obtem o registro a partir do ID")
