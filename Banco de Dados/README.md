@@ -356,7 +356,7 @@ E por último, o `map()` para obter sua lista:
 
 ## Listar 1 registro a partir do ID
 
-### Exemplo 1
+### Listar 1 registro a partir do ID, Exemplo 1
 
 No exemplo, iremos mudar o plano de fundo de um objeto onde é identificado pela classe `fenestra-desktop-icons`.
 
@@ -406,7 +406,7 @@ useEffect(() => {
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
 ---
-### Exemplo 2
+### Listar 1 registro a partir do ID, Exemplo 2
 
 Exemplo de uma consulta em uma tabela, onde seu resultado é colocado em outra rota para obter outra informação:
 
@@ -444,7 +444,7 @@ useEffect(() => {
 
 ---
 
-### Exemplo 3
+### Listar 1 registro a partir do ID, Exemplo 3
 
 Exemplo de mudança de plano de fundo, onde uma função obtem o registro a partir do ID na rota sendo passado como parâmetro.
 
@@ -519,6 +519,42 @@ Api.put(`/companySystemUpdateBackgroundId/1/${id}`).then((res) => {
 ```
 
 > No exemplo acima, estamos atualizando uma informação na tabela "company_system", na coluna "background" a partir do ID do registro, no caso o ID do registro é "1" e o dado da coluna é "2".
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
+## Gravar novo registro
+
+### Gravar novo registro, Exemplo 1
+
+Neste exemplo, estamos adicionando um registro na tabela "admins":
+
+```javascript
+// Inserir dados na tabela "admins".
+// Rota: '/admins'.
+routes.post('/admins', async (req, res) => {
+    const {
+        primary_email,
+        username,
+        password,
+        full_name,
+        level
+    } = req.body;
+    // Gravar na tabela.
+    const admins = await prisma.admins.create({
+        data:{
+            primary_email,
+            username,
+            password,
+            full_name,
+            level
+        }
+    });
+    return res.status(201).json({ data:admins });
+});
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
