@@ -349,6 +349,8 @@ E por último, o `map()` para obter sua lista:
 
 ## Listar 1 registro a partir do ID
 
+### Exemplo 1
+
 No exemplo, iremos mudar o plano de fundo de um objeto onde é identificado pela classe `fenestra-desktop-icons`.
 
 No arquivo `src/routes.ts` da sua Api, crie sua rota:
@@ -393,6 +395,9 @@ useEffect(() => {
 
 > No exemplo acima, está sendo mudado o plano de fundo de um objeto. Note que na `url()` está setado o registro `listBackground[0]?.file` buscado na tabela do banco de dados.
 
+---
+### Exemplo 2
+
 Exemplo de uma consulta em uma tabela, onde seu resultado é colocado em outra rota para obter outra informação:
 
 ```javascript
@@ -423,6 +428,49 @@ document.querySelector(".fenestra-desktop-icons").style.backgroundImage = `url($
 ```
 
 > Neste exemplo, é selecionado um registro de uma tabela, onde esse registro é posto em outra rota para selecionar outro registro, logo em seguida fazendo a mudança do plano de fundo de um objeto.
+
+---
+
+### Exemplo 3
+
+Exemplo de mudança de plano de fundo, onde uma função obtem o registro a partir do ID na rota sendo passado como parâmetro.
+
+```javascript
+const [listGradientBackgrounds, setListGradientBackgrounds] = useState([]);
+const [listBackground, setListBackground] = useState([]);
+
+// Rota que obtem dados da tabela para obter o ID e levar como parâmetro da função no onClick={}.
+useEffect(() => {
+    Api.get('/backgrounds/2').then((res) => {
+        setListGradientBackgrounds(res.data);
+    });
+}, []);
+
+// Evento do onClick={}
+const handleClick = (event, id) => {
+    const element = document.querySelector('.fenestra-desktop-icons');
+    if (element) {
+        Api.get(`/backgroundsId/${id}`).then((res) => {
+            setListBackground(res.data);
+        });
+    }
+};
+
+// Mudar o plano de fundo.
+useEffect(() => {
+    if (listBackground[0]?.file) {
+        document.querySelector(".fenestra-desktop-icons").style.backgroundImage = `url(${listBackground[0]?.file})`;
+    }
+}, [listBackground]);
+```
+
+> No exemplo acima, estamos mudando o plano de fundo de um elemento, onde a primeira rota está buscando os planos de fundo da categoria "Gradiente" que é indicada pelo ID 2.
+
+Aqui está o `onClick={}` como deve executar a função no elemento que executa a função:
+
+```javascript
+onClick={(event) => handleClick(event, GradientBackgrounds.id)}
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
