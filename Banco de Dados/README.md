@@ -509,7 +509,7 @@ No seu componente antes do retorno:
 ```javascript
 const setCompanySystemCompanyBackground = useState([]);
 
-// Executar a rota para atualizar "table".
+// Executar a rota para atualizar "company_system".
 Api.put(`/companySystemCompanyUpdateBackgroundId/1/${id}`).then((res) => {
     setCompanySystemCompanyBackground(res.data);
 });
