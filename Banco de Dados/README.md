@@ -15,7 +15,6 @@
     - [Instalações necessárias](#instala%C3%A7%C3%B5es-necess%C3%A1rias "Instalações necessárias")
     - [Listar os itens no seu componente](#listar-os-itens-no-seu-componente "Listar os itens no seu componente")
     - [Listar 1 registro a partir do ID](#listar-1-registro-a-partir-do-id "Listar 1 registro a partir do ID")
-    #### Exemplos de Listagem de registro a partir do ID
         - [Exemplo 1, Onde iremos mudar o plano de fundo de um objeto](#exemplo-1 "Exemplo 1, Onde iremos mudar o plano de fundo de um objeto")
         - [Exemplo 2, Onde seu resultado é colocado em outra rota](#exemplo-2 "Exemplo 2, Onde seu resultado é colocado em outra rota")
         - [Exemplo 3, Onde uma função obtem o registro a partir do ID](#exemplo-3 "Exemplo 3, Onde uma função obtem o registro a partir do ID")
@@ -347,7 +346,7 @@ E por último, o `map()` para obter sua lista:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#exemplos-de-listagem-de-registro-a-partir-do-id "Subir para o topo")
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
 ------------
 
@@ -400,7 +399,7 @@ useEffect(() => {
 > No exemplo acima, está sendo mudado o plano de fundo de um objeto. Note que na `url()` está setado o registro `listBackground[0]?.file` buscado na tabela do banco de dados.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#exemplos-de-listagem-de-registro-a-partir-do-id "Subir para o topo")
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
 ---
 ### Exemplo 2
@@ -437,7 +436,7 @@ document.querySelector(".fenestra-desktop-icons").style.backgroundImage = `url($
 > Neste exemplo, é selecionado um registro de uma tabela, onde esse registro é posto em outra rota para selecionar outro registro, logo em seguida fazendo a mudança do plano de fundo de um objeto.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#exemplos-de-listagem-de-registro-a-partir-do-id "Subir para o topo")
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
 ---
 
