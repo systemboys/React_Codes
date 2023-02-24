@@ -185,7 +185,8 @@ import { prisma } from './prisma';
 
 export const routes = express.Router();
 
-// ### Consultar 'admins' ###
+// Atualizar dado na tabela "admins".
+// Rota: '/admins'.
 routes.get('/admins', async (req, res) => {
     const admins = await prisma.admins.findMany(
         orderBy: {
@@ -198,6 +199,8 @@ routes.get('/admins', async (req, res) => {
 /* Consultar 'admins/:Number(level)', onde o nível é um determinado valor.
 Essa rota deve conter o parâmentro específico. Exemplo: Api.get('/admins/2').then((res) => ... */
 
+// Selecionar dados na tabela "admins", a partir do ID na coluna "level".
+// Rota: '/admins/5'.
 routes.get('/admins/:level', async (req, res) => {
     const { level } = req.params;
     const admins = await prisma.admins.findMany({
@@ -211,7 +214,8 @@ routes.get('/admins/:level', async (req, res) => {
     res.status(200).json(admins);
 });
 
-// ### Inserir 'admins' ###
+// Inserir dados na tabela "admins".
+// Rota: '/admins'.
 routes.post('/admins', async (req, res) => {
     const {
         primary_email,
@@ -220,7 +224,6 @@ routes.post('/admins', async (req, res) => {
         full_name,
         level
     } = req.body;
-
     // Gravar na tabela
     const admins = await prisma.admins.create({
         data:{
@@ -386,14 +389,14 @@ Dentro do seu componente, antes do retorno `return()`, execute a sua rota:
 const [listBackground, setListBackground] = useState([]);
 
 useEffect(() => {
-  Api.get('/backgroundsId/67').then((res) => {
-    setListBackground(res.data)
-  });
+    Api.get('/backgroundsId/67').then((res) => {
+        setListBackground(res.data)
+    });
 }, []);
 
 // Mudar o plano de fundo do objeto com a class determinada.
 useEffect(() => {
-  document.querySelector(".fenestra-desktop-icons").style.backgroundImage = `url(${listBackground[0]?.file})`;
+    document.querySelector(".fenestra-desktop-icons").style.backgroundImage = `url(${listBackground[0]?.file})`;
 }, [listBackground]);
 ```
 
@@ -413,24 +416,24 @@ const [listBackground, setListBackground] = useState([]);
 
 // Obter um registro da tabela 1.
 useEffect(() => {
-Api.get('/companySystemCompanyId/1').then((res) => {
-    setListCompanySystem(res.data)
-});
+    Api.get('/companySystemCompanyId/1').then((res) => {
+        setListCompanySystem(res.data)
+    });
 }, []);
 
 // Obter o registro da tabela 2 a partir do registro da tabela 1.
 useEffect(() => {
 if (listCompanySystem.length > 0) {
-    const BackgroundId = listCompanySystem[0]?.background;
-    Api.get(`/backgroundsId/${BackgroundId}`).then((res) => {
-    setListBackground(res.data)
+        const BackgroundId = listCompanySystem[0]?.background;
+        Api.get(`/backgroundsId/${BackgroundId}`).then((res) => {
+        setListBackground(res.data)
     });
 }
 }, [listCompanySystem]);
 
 // Mudar o plano de fundo do objeto com a class determinada.
 useEffect(() => {
-document.querySelector(".fenestra-desktop-icons").style.backgroundImage = `url(${listBackground[0]?.file})`;
+    document.querySelector(".fenestra-desktop-icons").style.backgroundImage = `url(${listBackground[0]?.file})`;
 }, [listBackground]);
 ```
 
@@ -492,9 +495,9 @@ onClick={(event) => handleClick(event, GradientBackgrounds.id)}
 Para atualizar um registro a partir de um ID específico, segue a seguite rota para seu arquivo `./src/routes.ts`:
 
 ```javascript
-// Atualizar dado na tabela "company_system", coluna "background" a partir do ID do registro
-// Rota: '/companySystemCompanyUpdateBackgroundId/1/2'.
-routes.put('/companySystemCompanyUpdateBackgroundId/:companyId/:companyIdBackgroundId', async (req, res) => {
+// Atualizar dado na tabela "company_system", coluna "background" a partir do ID do registro.
+// Rota: '/companySystemUpdateBackgroundId/1/2'.
+routes.put('/companySystemUpdateBackgroundId/:companyId/:companyIdBackgroundId', async (req, res) => {
     const { companyId, companyIdBackgroundId } = req.params;
     const updatedCompanySystem = await prisma.company_system.update({
       where: { id: Number(companyId) },
@@ -504,14 +507,14 @@ routes.put('/companySystemCompanyUpdateBackgroundId/:companyId/:companyIdBackgro
 }); 
 ```
 
-No seu componente antes do retorno:
+No seu componente antes do retorno, declare o estado da contante:
 
 ```javascript
-const setCompanySystemCompanyBackground = useState([]);
+const [setCompanySystemBackground] = useState([]);
 
 // Executar a rota para atualizar a tabela "company_system".
-Api.put(`/companySystemCompanyUpdateBackgroundId/1/${id}`).then((res) => {
-    setCompanySystemCompanyBackground(res.data);
+Api.put(`/companySystemUpdateBackgroundId/1/${id}`).then((res) => {
+    setCompanySystemBackground(res.data);
 });
 ```
 
