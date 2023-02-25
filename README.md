@@ -21,5 +21,5 @@
 
 ### Outras coisas interessantes
 
-- [Dicionário do programador](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20de%20c%C3%B3digo#react-codes--dicion%C3%A1rio-do-programador "Dicionário do programador")
+- [Dicionário do programador](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do-programador#react-codes--dicion%C3%A1rio-do-programador "Dicionário do programador")
 
