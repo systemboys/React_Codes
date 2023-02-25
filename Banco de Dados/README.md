@@ -558,6 +558,8 @@ routes.post('/admins', async (req, res) => {
 });
 ```
 
+> No exemplo acima, é apenas uma gravação simples, sem regras.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
