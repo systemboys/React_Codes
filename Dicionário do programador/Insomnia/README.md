@@ -1,6 +1,4 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Dicionário do programador
-
-# Insomnia
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Insomnia
 
 - [Métodos no Insomnia](#m%C3%A9todos-no-insomnia "Métodos no Insomnia")
 
