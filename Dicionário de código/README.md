@@ -1,4 +1,4 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Dicionário de código
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Dicionário do programador
 
 # Dicionário de código
 
