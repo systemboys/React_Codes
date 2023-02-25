@@ -358,7 +358,7 @@ Para renderizar elementos HTML dentro do JSX, você pode usar a função `danger
 No seu código, você pode usar a função `dangerouslySetInnerHTML` da seguinte maneira:
 
 ```javascript
-<Col sm={8} className={styles.aboutSystem} dangerouslySetInnerHTML={{ __html: listCompanySystem[0]?.about_system }}></Col>
+<Col sm={8} dangerouslySetInnerHTML={{ __html: listInQuestion[0]?.column }}></Col>
 ```
 
 Observe que a propriedade `dangerouslySetInnerHTML` recebe um objeto com uma única propriedade `__html` que contém o HTML que você deseja injetar no DOM. O React irá avisá-lo caso esta propriedade esteja presente, para que você se certifique de que deseja fazer isso.
