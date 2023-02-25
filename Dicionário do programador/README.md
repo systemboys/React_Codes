@@ -25,6 +25,6 @@ No Insomnia, o que significa os seguintes métodos?
 | HEAD | É semelhante ao método GET, mas em vez de retornar o corpo do recurso solicitado, ele retorna apenas os cabeçalhos da resposta. Isso é útil para verificar informações sobre o recurso, como o tamanho do arquivo, sem precisar baixá-lo completo. |
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#link-do-texto-de-comeco "Subir para o topo")
+[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do%20programador#dicion%C3%A1rio-de-c%C3%B3digo "Subir para o topo")
 
 ---
