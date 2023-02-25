@@ -351,6 +351,20 @@ E por último, o `map()` para obter sua lista:
 </ul>
 ```
 
+>>> Dica!
+
+Para renderizar elementos HTML dentro do JSX, você pode usar a função `dangerouslySetInnerHTML` do React. Essa função permite injetar HTML diretamente no DOM, mas você deve usá-la com cuidado, pois ela pode expor seu aplicativo a ataques de injeção de script (cross-site scripting - XSS).
+
+No seu código, você pode usar a função `dangerouslySetInnerHTML` da seguinte maneira:
+
+```javascript
+<Col sm={8} className={styles.aboutSystem} dangerouslySetInnerHTML={{ __html: listCompanySystem[0]?.about_system }}></Col>
+```
+
+Observe que a propriedade `dangerouslySetInnerHTML` recebe um objeto com uma única propriedade `__html` que contém o HTML que você deseja injetar no DOM. O React irá avisá-lo caso esta propriedade esteja presente, para que você se certifique de que deseja fazer isso.
+
+Com essa mudança, o conteúdo HTML deve ser renderizado corretamente no seu componente. Mas lembre-se de usar esta função com cuidado e evitar expor seu aplicativo a ataques de XSS.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
 
