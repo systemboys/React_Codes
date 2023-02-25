@@ -1,12 +1,10 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Dicionário do programador
 
-# Dicionário de código
+# Insomnia
 
 - [No Insomnia](#no-insomnia "No Insomnia")
 
 ---
-
-### No Insomnia
 
 No Insomnia, o que significa os seguintes métodos?
 
@@ -24,7 +22,7 @@ No Insomnia, o que significa os seguintes métodos?
 | OPTIONS | É usado para obter informações sobre os métodos HTTP suportados por um servidor web para um determinado recurso. |
 | HEAD | É semelhante ao método GET, mas em vez de retornar o corpo do recurso solicitado, ele retorna apenas os cabeçalhos da resposta. Isso é útil para verificar informações sobre o recurso, como o tamanho do arquivo, sem precisar baixá-lo completo. |
 
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do%20programador#react-codes--dicion%C3%A1rio-do-programador "Subir para o topo")
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do%20programador#react-codes--dicion%C3%A1rio-do-programador "Voltar") | 
+[(&uarr;) Subir](#insomnia "Subir para o topo")
 
 ---
