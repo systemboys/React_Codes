@@ -14,7 +14,7 @@ No Insomnia, o que significa os seguintes métodos?
 
 > Esses métodos são verbos HTTP (Protocolo de Transferência de Hipertexto) que descrevem a ação que deve ser realizada em um recurso identificado por um URL (Uniform Resource Locator) em um servidor web. Aqui está uma breve descrição de cada um:
 
-| Palavra ou trecho | O que é e o que significa |
+| Método | Descrição |
 | :------------ | :------------ |
 | GET | É usado para recuperar recursos do servidor web. Quando você acessa uma página da web, está usando o método GET para solicitar que o servidor envie o conteúdo da página para o seu navegador. |
 | POST | É usado para enviar dados para o servidor. Por exemplo, quando você envia um formulário preenchido em um site, o método POST é usado para enviar as informações do formulário para o servidor. |
