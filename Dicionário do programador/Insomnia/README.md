@@ -2,9 +2,11 @@
 
 # Insomnia
 
-- [No Insomnia](#no-insomnia "No Insomnia")
+- [Métodos no Insomnia](#no-insomnia "Métodos no Insomnia")
 
 ---
+
+## Métodos no Insomnia
 
 No Insomnia, o que significa os seguintes métodos?
 
