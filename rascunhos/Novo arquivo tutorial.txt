@@ -34,3 +34,33 @@ const yourCodeJavaScript = "Seu código JavaScript";
 
 ---
 
+# Tabelas com títulos
+
+> Títulos centralizados em negrito
+
+| Título A | Título B |
+| ------------ | ------------ |
+| 1 | 2 |
+| 3 | 4 |
+
+> Títulos centralizados em negrito e dados alinhado à "esquerda"
+
+| Título A | Título B |
+| :------------ | :------------ |
+| 1 | 2 |
+| 3 | 4 |
+
+> Títulos centralizados em negrito e dados alinhado ao "centro"
+
+| Título A | Título B |
+| :------------: | :------------: |
+| 1 | 2 |
+| 3 | 4 |
+
+> Títulos centralizados em negrito e dados alinhado à "direita"
+
+| Título A | Título B |
+| ------------: | ------------: |
+| 1 | 2 |
+| 3 | 4 |
+
