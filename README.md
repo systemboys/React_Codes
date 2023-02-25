@@ -21,5 +21,5 @@
 
 ### Outras coisas interessantes
 
-- [Dicionário de código](#link-do-texto-de-comeco "Dicionário de código")
+- [Dicionário de código](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20de%20c%C3%B3digo#react-codes--dicion%C3%A1rio-de-c%C3%B3digo "Dicionário de código")
 
