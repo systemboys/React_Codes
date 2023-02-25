@@ -1,8 +1,10 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Dicionário de código
 
-## Dicionário de código
+# Dicionário de código
 
 - [No Insomnia](#no-insomnia "No Insomnia")
+
+---
 
 ### No Insomnia
 
