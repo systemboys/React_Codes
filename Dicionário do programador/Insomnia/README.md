@@ -8,6 +8,8 @@
 
 No Insomnia, o que significa os seguintes métodos?
 
+[![Os métodos do Insomnia](https://github.com/systemboys/React_Codes/raw/main/Dicion%C3%A1rio%20do%20programador/Insomnia/images/Insomnia_1.png "Os métodos do Insomnia")](https://github.com/systemboys/React_Codes/raw/main/Dicion%C3%A1rio%20do%20programador/Insomnia/images/Insomnia_1.png "Os métodos do Insomnia")
+
 "GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD"
 
 > Esses métodos são verbos HTTP (Protocolo de Transferência de Hipertexto) que descrevem a ação que deve ser realizada em um recurso identificado por um URL (Uniform Resource Locator) em um servidor web. Aqui está uma breve descrição de cada um:
