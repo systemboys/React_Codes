@@ -351,7 +351,7 @@ E por último, o `map()` para obter sua lista:
 </ul>
 ```
 
->>> Dica! [renderizar, elemento html, html, dangerouslySetInnerHTML, injetar html, dom]
+>>> Dica! [renderizar, elemento html, html, dangerouslySetInnerHTML, injetar html, conteúdo html, dom]
 
 Para renderizar elementos HTML dentro do JSX, você pode usar a função `dangerouslySetInnerHTML` do React. Essa função permite injetar HTML diretamente no DOM, mas você deve usá-la com cuidado, pois ela pode expor seu aplicativo a ataques de injeção de script (cross-site scripting - XSS).
 
