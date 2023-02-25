@@ -18,7 +18,7 @@
         - [Exemplo 1, Onde iremos mudar o plano de fundo de um objeto](#listar-1-registro-a-partir-do-id-exemplo-1 "Exemplo 1, Onde iremos mudar o plano de fundo de um objeto")
         - [Exemplo 2, Onde seu resultado é colocado em outra rota](#listar-1-registro-a-partir-do-id-exemplo-2 "Exemplo 2, Onde seu resultado é colocado em outra rota")
         - [Exemplo 3, Onde uma função obtem o registro a partir do ID](#listar-1-registro-a-partir-do-id-exemplo-3 "Exemplo 3, Onde uma função obtem o registro a partir do ID")
-- [Atualizar um registro a partir do ID](#atualizar-um-registro-a-partir-do-id "Atualizar um registro a partir do ID")
+- [`Atualizar` um registro `a partir do ID`](#atualizar-um-registro-a-partir-do-id "Atualizar um registro a partir do ID")
 - [Gravar novo registro](#gravar-novo-registro "Gravar novo registro")
     - [Exemplo 1, onde é gravado um registro sem condições](#gravar-novo-registro-exemplo-1 "Exemplo 1, onde é gravado um registro sem condições")
 
