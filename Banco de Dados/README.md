@@ -376,7 +376,7 @@ Com essa mudança, o conteúdo HTML deve ser renderizado corretamente no seu com
 
 No exemplo, iremos mudar o plano de fundo de um objeto onde é identificado pela classe `fenestra-desktop-icons`.
 
-No arquivo `src/routes.ts` da sua Api, crie sua rota:
+No arquivo `./src/routes.ts` da sua Api, crie sua rota:
 
 ```javascript
 // Consultar 'backgroundsId/:Number(id)'.
