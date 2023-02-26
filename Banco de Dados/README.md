@@ -439,12 +439,12 @@ useEffect(() => {
 
 // Obter o registro da tabela 2 a partir do registro da tabela 1.
 useEffect(() => {
-if (listCompanySystem.length > 0) {
+    if (listCompanySystem.length > 0) {
         const BackgroundId = listCompanySystem[0]?.background;
         Api.get(`/backgroundsId/${BackgroundId}`).then((res) => {
-        setListBackground(res.data)
-    });
-}
+            setListBackground(res.data)
+        });
+    }
 }, [listCompanySystem]);
 
 // Mudar o plano de fundo do objeto com a class determinada.
