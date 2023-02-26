@@ -404,7 +404,6 @@ Dentro do seu componente, antes do retorno `return()`, execute a sua rota:
 ```javascript
 // Selecionar dados na tabela "table", a partir do ID.
 const [listBackground, setListBackground] = useState([]);
-
 useEffect(() => {
     Api.get('/backgroundsId/67').then((res) => {
         setListBackground(res.data)
