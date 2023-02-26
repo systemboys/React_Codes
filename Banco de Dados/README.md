@@ -379,7 +379,8 @@ No exemplo, iremos mudar o plano de fundo de um objeto onde é identificado pela
 No arquivo `./src/routes.ts` da sua Api, crie sua rota:
 
 ```javascript
-// Consultar 'backgroundsId/:Number(id)'.
+// Selecionar dados na tabela "backgrounds", a partir do ID do registro.
+// Rota: 'backgroundsId/1'.
 routes.get('/backgroundsId/:id', async (req, res) => {
     const { id } = req.params;
     const backgrounds = await prisma.backgrounds.findMany({
