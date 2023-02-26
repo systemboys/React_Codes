@@ -54,8 +54,6 @@ const Hours = new Date("1970-01-01T" + hour + "Z"); // Hora
 
 ## Renderizar data no formato desejado no JSX
 
-[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
-
 Para formatar datas e horas no formato desejado, você pode usar a biblioteca `date-fns`, que é uma das bibliotecas mais populares para lidar com datas em JavaScript.
 
 Para formatar a data e a hora, você pode usar as funções `format` e `parseISO` do `date-fns`.
