@@ -91,7 +91,7 @@ Para formatar a hora corretamente, você pode usar a função `format` do `date-
 <Col>{formatDate(listContent[0]?.date, listContent[0]?.time)}</Col>
 ```
 
-Assumindo que `listCompanySystem[0]?.date` contém a data no formato "yyyy-mm-dd" e `listCompanySystem[0]?.time` contém a hora no formato "hh:mm:ss", essa chamada de função deve retornar a string no formato desejado "Dia dd/mm/yyyy às hh:mm:ss".
+Assumindo que `listContent[0]?.date` contém a data no formato "yyyy-mm-dd" e `listContent[0]?.time` contém a hora no formato "hh:mm:ss", essa chamada de função deve retornar a string no formato desejado "Dia dd/mm/yyyy às hh:mm:ss".
 
 Espero que isso ajude!
 
