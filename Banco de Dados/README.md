@@ -523,7 +523,7 @@ routes.put('/companySystemUpdateBackgroundId/:companyId/:companyIdBackgroundId',
 }); 
 ```
 
-No seu componente antes do retorno, declare o estado da contante:
+No seu componente antes do retorno, declare o estado da constante:
 
 ```javascript
 const [setCompanySystemBackground] = useState([]);
@@ -560,7 +560,7 @@ routes.post('/admins', async (req, res) => {
     } = req.body;
     // Gravar na tabela.
     const admins = await prisma.admins.create({
-        data:{
+        data: {
             primary_email,
             username,
             password,
