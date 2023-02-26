@@ -401,7 +401,7 @@ import { Api } from './server/api';
 Dentro do seu componente, antes do retorno `return()`, execute a sua rota:
 
 ```javascript
-// Obter o registro a partir do ID na rota.
+// Selecionar dados na tabela "table", a partir do ID.
 const [listBackground, setListBackground] = useState([]);
 
 useEffect(() => {
