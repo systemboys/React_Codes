@@ -405,7 +405,7 @@ Dentro do seu componente, antes do retorno `return()`, execute a sua rota:
 // Selecionar dados na tabela "table", a partir do ID.
 const [listBackground, setListBackground] = useState([]);
 useEffect(() => {
-    Api.get('/backgroundsId/67').then((res) => {
+    Api.get(`/backgroundsId/${id}`).then((res) => {
         setListBackground(res.data)
     });
 }, []);
@@ -430,14 +430,14 @@ Exemplo de uma consulta em uma tabela, onde seu resultado é colocado em outra r
 const [listCompanySystem, setListCompanySystem] = useState([]);
 const [listBackground, setListBackground] = useState([]);
 
-// Obter um registro da tabela 1.
+// Selecionar dados na tabela "table_1", a partir do ID.
 useEffect(() => {
-    Api.get('/companySystemCompanyId/1').then((res) => {
+    Api.get(`/companySystemCompanyId/${id}`).then((res) => {
         setListCompanySystem(res.data)
     });
 }, []);
 
-// Obter o registro da tabela 2 a partir do registro da tabela 1.
+// Selecionar dados na tabela "table_2", a partir do registro da "table_1".
 useEffect(() => {
     if (listCompanySystem.length > 0) {
         const BackgroundId = listCompanySystem[0]?.background;
@@ -470,7 +470,7 @@ const [listBackground, setListBackground] = useState([]);
 
 // Rota que obtem dados da tabela para obter o ID e levar como parâmetro da função no onClick={}.
 useEffect(() => {
-    Api.get('/backgrounds/2').then((res) => {
+    Api.get(`/backgrounds/${id}`).then((res) => {
         setListGradientBackgrounds(res.data);
     });
 }, []);
