@@ -528,7 +528,7 @@ No seu componente antes do retorno, declare o estado da constante:
 ```javascript
 const [setCompanySystemBackground] = useState([]);
 
-// Executar a rota para atualizar a tabela "company_system".
+// Atualizar dado na tabela "company_system", coluna "background" a partir do ID do registro.
 Api.put(`/companySystemUpdateBackgroundId/1/${id}`).then((res) => {
     setCompanySystemBackground(res.data);
 });
