@@ -87,6 +87,8 @@ Atalhos:
 
 ## 5 - Rodar projeto em desenvolvimento na rede local
 
+[![Computadores em rede](https://i.ytimg.com/vi/brJ0cpiL484/maxresdefault.jpg "Computadores em rede")](https://i.ytimg.com/vi/brJ0cpiL484/maxresdefault.jpg "Computadores em rede")
+
 Modificar o código do seu arquivo `package.json`, na configuração do script "dev", dentro do `"scripts": {...}`, adicionando a flag `--host 0.0.0.0` ficando da seguinte forma:
 
 ```javascript
