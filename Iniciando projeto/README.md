@@ -4,7 +4,7 @@
 - [2 - Entre no diretório do seu projeto project_name](#2---entre-no-diret%C3%B3rio-do-seu-projeto-project_name "2 - Entre no diretório do seu projeto project_name")
 - [3 - Execute o projeto com o seguinte comando](#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
 - [4 - Configuração da porta no Vite](#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4 - Configuração da porta no Vite")
-  - [4.1 - Rodar projeto em desenvolvimento na rede local](#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4.1 - Rodar projeto em desenvolvimento na rede local")
+- [5 - Rodar projeto em desenvolvimento na rede local](#5---rodar-projeto-em-desenvolvimento-na-rede-local "5 - Rodar projeto em desenvolvimento na rede local")
 
 ---
 
@@ -96,6 +96,8 @@ No arquivo `package.jsn`, no `"dev": "vite"` dentro do `"scripts": {...}`, adici
   ...
 ```
 
+[![Configuração do Vite no package](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_do_Vite_no_package.png "Configuração do Vite no package")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_do_Vite_no_package.png "Configuração do Vite no package")
+
 No arquivo `api.js` da sua API, modifique a sua URL trocando `localhost` para o IP da máquina que está rodando o servidor:
 
 ```javascript
@@ -104,6 +106,8 @@ export const Api = axios.create({
     baseURL: 'http://10.0.0.102:3333',
     ...
 ```
+
+[![Arquivo api.js de sua API](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Arquivo_api_de_sua_API.png "Arquivo api.js de sua API")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Arquivo_api_de_sua_API.png "Arquivo api.js de sua API")
 
 Se seu servidor estiver rodando em Linux, libere as portas do seu Front-end e da sua API com o seuignte comando no terminal:
 
@@ -136,11 +140,11 @@ root@debian:~# sudo iptables -S
 -A INPUT -p tcp -m tcp --dport 3333 -j ACCEPT
 ```
 
-[![Dado os comandos no terminal](https://site.com/img/exemplo.png "Dado os comandos no terminal")](http://link.com "Dado os comandos no terminal")
+[![Dado os comandos no terminal](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Comandos_liberar_portas.png "Dado os comandos no terminal")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Comandos_liberar_portas.png "Dado os comandos no terminal")
 
 Nas máquinas que estão na mesma rede, abrir seu navegador e digitar a URL do seu projeto:
 
-[![URL no navegador da máquina local](https://site.com/img/exemplo.png "URL no navegador da máquina local")](http://link.com "URL no navegador da máquina local")
+[![URL no navegador da máquina local](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
