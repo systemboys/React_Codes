@@ -96,9 +96,9 @@ Modificar o código do seu arquivo `package.json`, na configuração do script "
   ...
 ```
 
->Note que no script "dev", adicionamos a flag "--host 0.0.0.0" para que o servidor possa ser acessado de outras máquinas na rede. Lembre-se também de executar o comando `npm install` na pasta do projeto para atualizar as dependências e então executar o comando "npm run dev" para rodar o servidor.
-
 [![Configuração do Vite no package](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_do_Vite_no_package.png "Configuração do Vite no package")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_do_Vite_no_package.png "Configuração do Vite no package")
+
+>Note que no script "dev", adicionamos a flag "--host 0.0.0.0" para que o servidor possa ser acessado de outras máquinas na rede. Lembre-se também de executar o comando `npm install` na pasta do projeto para atualizar as dependências e então executar o comando "npm run dev" para rodar o servidor.
 
 No arquivo `api.js` da sua API, modifique a sua URL trocando `localhost` para o IP da máquina que está rodando o servidor:
 
