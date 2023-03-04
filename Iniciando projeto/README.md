@@ -109,7 +109,7 @@ export const Api = axios.create({
 
 [![Arquivo api.js de sua API](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Arquivo_api_de_sua_API.png "Arquivo api.js de sua API")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Arquivo_api_de_sua_API.png "Arquivo api.js de sua API")
 
-Se seu servidor estiver rodando em Linux, libere as portas do seu Front-end e da sua API com o seuignte comando no terminal:
+Se seu servidor estiver rodando em Linux, libere as portas do seu `Front-end` e da sua `API` com o seuignte comando no terminal:
 
 ```bash
 sudo iptables -A INPUT -p tcp --dport 5173 -j ACCEPT
