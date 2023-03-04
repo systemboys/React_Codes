@@ -4,6 +4,7 @@
 - [2 - Entre no diretório do seu projeto project_name](#2---entre-no-diret%C3%B3rio-do-seu-projeto-project_name "2 - Entre no diretório do seu projeto project_name")
 - [3 - Execute o projeto com o seguinte comando](#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
 - [4 - Configuração da porta no Vite](#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4 - Configuração da porta no Vite")
+  - [4.1 - Rodar projeto em desenvolvimento na rede local](#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4.1 - Rodar projeto em desenvolvimento na rede local")
 
 ---
 
@@ -78,6 +79,68 @@ Atalhos:
 - Pressione `u` para mostrar o URL do servidor
 - Pressione `o` para abrir no navegador
 - Pressione `q` para sair
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
+
+---
+
+## 5 - Rodar projeto em desenvolvimento na rede local
+
+No arquivo `package.jsn`, no `"dev": "vite"` dentro do `"scripts": {...}`, adicionar `-- --host` ficando da seguinte forma:
+
+```javascript
+...
+"scripts": {
+  "dev": "-- --host vite",
+  ...
+```
+
+No arquivo `api.js` da sua API, modifique a sua URL trocando `localhost` para o IP da máquina que está rodando o servidor:
+
+```javascript
+...
+export const Api = axios.create({
+    baseURL: 'http://10.0.0.102:3333',
+    ...
+```
+
+Se seu servidor estiver rodando em Linux, libere as portas do seu Front-end e da sua API com o seuignte comando no terminal:
+
+```bash
+sudo iptables -A INPUT -p tcp --dport 5173 -j ACCEPT
+```
+
+> Liberada a porta 5173.
+
+```bash
+sudo iptables -A INPUT -p tcp --dport 3333 -j ACCEPT
+```
+
+> Liberada a porta 3333.
+
+```bash
+sudo iptables -S
+```
+
+> O último comando verifica o status do `iptables` mostrando as protas aceitas.
+
+Dado o comando `sudo iptables` será exposto o status da seguinte forma:
+
+```bash
+root@debian:~# sudo iptables -S
+-P INPUT ACCEPT
+-P FORWARD ACCEPT
+-P OUTPUT ACCEPT
+-A INPUT -p tcp -m tcp --dport 5173 -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 3333 -j ACCEPT
+```
+
+[![Dado os comandos no terminal](https://site.com/img/exemplo.png "Dado os comandos no terminal")](http://link.com "Dado os comandos no terminal")
+
+Nas máquinas que estão na mesma rede, abrir seu navegador e digitar a URL do seu projeto:
+
+[![URL no navegador da máquina local](https://site.com/img/exemplo.png "URL no navegador da máquina local")](http://link.com "URL no navegador da máquina local")
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
