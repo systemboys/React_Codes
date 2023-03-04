@@ -87,12 +87,12 @@ Atalhos:
 
 ## 5 - Rodar projeto em desenvolvimento na rede local
 
-No arquivo `package.jsn`, no `"dev": "vite"` dentro do `"scripts": {...}`, adicionar `-- --host` ficando da seguinte forma:
+Modificar o código do seu arquivo `package.json`, na configuração do script "dev", dentro do `"scripts": {...}`, adicionando a flag `--host 0.0.0.0` ficando da seguinte forma:
 
 ```javascript
 ...
 "scripts": {
-  "dev": "-- --host vite",
+  "dev": "vite --host 0.0.0.0",
   ...
 ```
 
