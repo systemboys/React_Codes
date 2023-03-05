@@ -12,19 +12,19 @@ Para instalar o Node.js no Linux, você pode seguir os seguintes passos:
 
 `1` - Abra o terminal e atualize o cache de pacotes do sistema usando o comando:
 
-```javascript
+```bash
 sudo apt-get update
 ```
 
 `2` - Instale o Node.js e o gerenciador de pacotes NPM (Node Package Manager) usando o seguinte comando:
 
-```javascript
+```bash
 sudo apt-get install nodejs npm
 ```
 
 Verifique se o Node.js foi instalado corretamente digitando o seguinte comando:
 
-```javascript
+```bash
 node -v
 ```
 
@@ -32,13 +32,40 @@ node -v
 
 Para verificar se o NPM foi instalado corretamente, digite o seguinte comando:
 
-```javascript
+```bash
 npm -v
 ```
 
 > Isso deve exibir a versão do NPM instalada no sistema.
 
 Após seguir esses passos, você deve ter o Node.js e o NPM instalados em seu sistema Linux.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--instala%C3%A7%C3%B5es "Subir para o topo")
+
+---
+
+## Atualização do Node.JS e NPM
+
+Para atualizar o Node.js, você pode utilizar o seguinte comando no terminal:
+
+```javascript
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
+
+Este comando limpa o cache do npm, instala o pacote n, que é um gerenciador de versões do Node.js, e, em seguida, instala a versão estável mais recente do Node.js.
+
+Para atualizar o npm, você pode usar o seguinte comando:
+
+```javascript
+sudo npm install -g npm@latest
+```
+
+Este comando atualiza o npm para a versão mais recente.
+
+> Note que o sudo é necessário para obter permissões administrativas no seu sistema. Certifique-se de que você tem as permissões necessárias antes de executar esses comandos.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--instala%C3%A7%C3%B5es "Subir para o topo")
