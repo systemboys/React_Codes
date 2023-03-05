@@ -1,8 +1,8 @@
 # React Codes
 
-## Sumário
+[![Imagem de exemplo](https://github.com/systemboys/React_Codes/raw/main/images/photo-1518932945647-7a1c969f8be2.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/images/photo-1518932945647-7a1c969f8be2.png "Imagem de exemplo")
 
-[![Imagem de exemplo](https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1366&h=100&q=80 "Imagem de exemplo")](https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1366&h=100&q=80 "Imagem de exemplo")
+## Sumário
 
 ### Funcionalidades
 
