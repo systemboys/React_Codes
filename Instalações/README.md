@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Instalações
 
-- [Node.JS e NPM](#node.js-e-npm "Node.JS e NPM")
+- [Instalação do Node.JS e NPM](#instala%C3%A7%C3%A3o-do-nodejs-e-npm "Instalação do Node.JS e NPM")
 
 ---
 
@@ -15,7 +15,7 @@ const yourCodeJavaScript = "Seu código JavaScript";
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#link-do-texto-de-comeco "Subir para o topo")
+[(&uarr;) Subir](#react-codes--instala%C3%A7%C3%B5es "Subir para o topo")
 
 ---
 
