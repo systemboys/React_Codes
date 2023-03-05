@@ -2,6 +2,8 @@
 
 ## Sumário
 
+[![Imagem de exemplo](https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1366&h=100&q=80 "Imagem de exemplo")](https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1366&h=100&q=80 "Imagem de exemplo")
+
 ### Funcionalidades
 
 - [Iniciando projeto](https://github.com/systemboys/React_Codes/tree/main/Iniciando%20projeto#react-codes--iniciando-projeto "Iniciando projeto")
