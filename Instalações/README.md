@@ -23,7 +23,7 @@ sudo apt-get update
 sudo apt-get install nodejs npm
 ```
 
-Verifique se o Node.js foi instalado corretamente digitando o seguinte comando:
+`3` - Verifique se o Node.js foi instalado corretamente digitando o seguinte comando:
 
 ```bash
 node -v
@@ -31,7 +31,7 @@ node -v
 
 > Isso deve exibir a versão do Node.js instalada no sistema.
 
-Para verificar se o NPM foi instalado corretamente, digite o seguinte comando:
+`4` - Para verificar se o NPM foi instalado corretamente, digite o seguinte comando:
 
 ```bash
 npm -v
