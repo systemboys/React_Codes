@@ -1,6 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Instalações
 
 - [Instalação do Node.JS e NPM](#instala%C3%A7%C3%A3o-do-nodejs-e-npm "Instalação do Node.JS e NPM")
+- [Atualização do Node.JS e NPM](#atualiza%C3%A7%C3%A3o-do-nodejs-e-npm "Atualização do Node.JS e NPM")
 
 ---
 
