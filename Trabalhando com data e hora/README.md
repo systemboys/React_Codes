@@ -99,3 +99,83 @@ Espero que isso ajude!
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
 
 ---
+
+## Data atual no elemento HTML
+
+Para colocar a data atual em um input HTML no ReactJS, você pode utilizar o objeto Date do JavaScript. Primeiro, você pode criar uma nova instância do objeto Date e, em seguida, formatar a data para o formato desejado usando os métodos getFullYear(), getMonth() e getDate(). Por fim, você pode passar a data formatada como valor padrão do input usando a prop defaultValue.
+
+Veja um exemplo de como fazer isso:
+
+```javascript
+import React from 'react';
+
+function App() {
+  const today = new Date();
+  const formattedDate = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+
+  return (
+    <div>
+      <input type="date" defaultValue={formattedDate} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Este exemplo cria uma instância do objeto Date contendo a data atual e, em seguida, formata-a no formato "YYYY-MM-DD". Em seguida, a data formatada é passada como valor padrão para um input HTML do tipo "date".
+
+## Exibir a data no formato dd/mm/aaaa
+
+Para exibir a data no formato dd/mm/aaaa em um input HTML no ReactJS, você pode usar o objeto Date do JavaScript. Para formatar a data, você pode usar os métodos getDay(), getMonth() e getFullYear().
+
+Veja um exemplo de como fazer isso:
+
+```javascript
+import React from 'react';
+
+function App() {
+  const today = new Date();
+  const formattedDate = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear()}`;
+
+  return (
+    <div>
+      <input type="text" defaultValue={formattedDate} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Este exemplo cria uma instância do objeto Date contendo a data atual. Em seguida, a data é formatada no formato "dd/mm/aaaa" e é passada como valor padrão para um input HTML do tipo "text". Observe que o método padStart é usado para adicionar um zero à esquerda quando o dia ou mês é menor que 10.
+
+## Hora atual no elemento HTML
+
+Para adicionar a hora atual em um input HTML no ReactJS, você pode usar o objeto Date do JavaScript. Para formatar a hora, você pode usar os métodos getHours(), getMinutes() e getSeconds().
+
+Veja um exemplo de como fazer isso:
+
+```javascript
+import React from 'react';
+
+function App() {
+  const today = new Date();
+  const formattedTime = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+
+  return (
+    <div>
+      <input type="time" defaultValue={formattedTime} />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Este exemplo cria uma instância do objeto Date contendo a data e hora atuais. Em seguida, a hora é formatada no formato "HH:mm:ss" e é passada como valor padrão para um input HTML do tipo "time".
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+
+---
