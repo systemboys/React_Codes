@@ -128,6 +128,11 @@ export default App;
 
 Este exemplo cria uma instância do objeto Date contendo a data atual e, em seguida, formata-a no formato "YYYY-MM-DD". Em seguida, a data formatada é passada como valor padrão para um input HTML do tipo "date".
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+
+---
+
 ## Exibir a data no formato dd/mm/aaaa
 
 Para exibir a data no formato dd/mm/aaaa em um input HTML no ReactJS, você pode usar o objeto Date do JavaScript. Para formatar a data, você pode usar os métodos getDay(), getMonth() e getFullYear().
@@ -152,6 +157,11 @@ export default App;
 ```
 
 Este exemplo cria uma instância do objeto Date contendo a data atual. Em seguida, a data é formatada no formato "dd/mm/aaaa" e é passada como valor padrão para um input HTML do tipo "text". Observe que o método padStart é usado para adicionar um zero à esquerda quando o dia ou mês é menor que 10.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+
+---
 
 ## Hora atual no elemento HTML
 
