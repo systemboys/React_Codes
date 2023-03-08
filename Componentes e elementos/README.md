@@ -222,10 +222,12 @@ Elementos do formulário modelo:
 Caso você esteja utilizando CSS Modules e deseja que o botão `imput` seja fixado abaixo do formulário, segue o CSS:
 
 ```css
-.formBody {
-    overflow: auto;
-    height: 362.5px;
-    border-bottom: 1px solid rgba(255,255,255,.2);
+@media screen and (min-width: 990px) {
+    .formBody {
+        overflow: auto;
+        height: 362.5px;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+    }
 }
 ```
 
