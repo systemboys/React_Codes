@@ -219,7 +219,7 @@ Elementos do formulário modelo:
 </Form>
 ```
 
-Caso você esteja utilizando CSS Modules e deseja que o botão `imput` seja fixado abaixo do formulário, segue o CSS:
+Caso você esteja utilizando CSS Modules e deseja que o botão `imput` seja fixado abaixo do formulário e rolar apenas o conteúdo do formulário com a barra de rolagem, segue o CSS:
 
 ```css
 @media screen and (min-width: 990px) {
