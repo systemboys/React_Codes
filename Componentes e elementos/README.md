@@ -186,7 +186,7 @@ Elementos do formulário modelo:
         <Col sm={6}>
             <Form.Group className="mb-3" as={Col} controlId="formGridEmail">
                 <Form.Label>Email principal</Form.Label>
-                <Form.Control type="email" size="sm" defaultValue="your_email@server.com" placeholder="Email do sistema..." value="your_email@host.com" />
+                <Form.Control type="email" size="sm" defaultValue="your_email@server.com" placeholder="Email do sistema..." />
             </Form.Group>
         </Col>
         <Col sm={6}>
