@@ -275,18 +275,20 @@ import Tabs from 'react-bootstrap/Tabs';
 Elementos do HTML:
 
 ```javascript
-<Tabs
-    defaultActiveKey="TabOne"
-    id="uncontrolled-tab-example"
-    className="mb-3"
->
-    <Tab eventKey="TabOne" title="Aba 1">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae alias sed, similique illum sequi adipisci fugit deleniti minus quaerat animi ipsa natus libero assumenda iste veritatis repellat earum excepturi sit!</p>
-    </Tab>
-    <Tab eventKey="TabTwo" title="Aba 2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolores facilis nisi id enim quidem at natus, officia possimus accusantium! Cupiditate iure optio veniam incidunt, magnam ex consequatur aut doloribus!</p>
-    </Tab>
-</Tabs>
+<Container>
+    <Tabs
+        defaultActiveKey="TabOne"
+        id="uncontrolled-tab-example"
+        className="mb-3"
+    >
+        <Tab eventKey="TabOne" title="Aba 1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae alias sed, similique illum sequi adipisci fugit deleniti minus quaerat animi ipsa natus libero assumenda iste veritatis repellat earum excepturi sit!</p>
+        </Tab>
+        <Tab eventKey="TabTwo" title="Aba 2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolores facilis nisi id enim quidem at natus, officia possimus accusantium! Cupiditate iure optio veniam incidunt, magnam ex consequatur aut doloribus!</p>
+        </Tab>
+    </Tabs>
+</Container>
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
