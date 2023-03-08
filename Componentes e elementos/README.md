@@ -182,7 +182,7 @@ Elementos do formulário modelo:
 
 ```javascript
 <Form>
-    <Row className="mb-3">
+    <Row className="mb-2">
         <Col sm={6}>
             <Form.Group className="mb-3" as={Col} controlId="formGridEmail">
                 <Form.Label>Email principal</Form.Label>
@@ -243,7 +243,7 @@ export function YourComponent() {
     return (
         <Container>
             <Form>
-                <Row className={`${styles.formBody} mb-3`}>
+                <Row className={`${styles.formBody} mb-2`}>
                     <Col sm={6}>
                         ...
 ```
