@@ -199,7 +199,7 @@ Elementos do formulário modelo:
             <Form.Group className="mb-3" as={Col} controlId="formGridState">
                 <Form.Label>Estado</Form.Label>
                 <Form.Select size="sm" value="SP">
-                    <option value="">--Selecione--</option>
+                    <option value="">&raquo; Selecione &laquo;</option>
                     <option value="SP">São Paulo</option>
                     <option value="RJ">Rio de Janeiro</option>
                     <option value="MG">Minas Gerais</option>
