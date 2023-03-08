@@ -207,7 +207,7 @@ Elementos do formulário modelo:
             </Form.Group>
         </Col>
         <Col sm={12}>
-            <Form.Group className="mb-3" controlId="exampleForm.ControlAboutSystem">
+            <Form.Group className="mb-3" controlId="formGridAboutSystem">
                 <Form.Label>Sobore o sistema</Form.Label>
                 <Form.Control as="textarea" size="sm" rows={8} defaultValue="Your text" placeholder="Escreva algo sobre o sistema..." />
             </Form.Group>
