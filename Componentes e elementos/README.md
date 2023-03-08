@@ -4,9 +4,7 @@
 - [Componentes no modo `Named Exports`](#componentes-no-modo-named-exports "Componentes no modo Named Exports")
 - [`Formulário` responsívo com React-Bootstrap](#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
-
-- [Lista simples com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Lista simples com React-Bootstrap")
-
+- [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
 - [`Buttons` com React-Bootstrap](#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
 - [Utilizando o `CSS Modules` do React](#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
@@ -300,6 +298,8 @@ Elementos do HTML:
 ---
 
 ## Lista simples com React-Bootstrap
+
+[![Lista simples com React-Bootstrap](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/listas_simples_react-bootstrap.png "Lista simples com React-Bootstrap")](https://github.com/systemboys/React_Codes/raw/main/Componentes%20e%20elementos/images/listas_simples_react-bootstrap.png "Lista simples com React-Bootstrap")
 
 Importar do React-Bootstrap os componentes:
 
