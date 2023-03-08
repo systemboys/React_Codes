@@ -176,7 +176,7 @@ import {
 } from 'react-bootstrap';
 ```
 
-> Como todos os elementos acima vêm do `react-bootstrap`, podem ser colodos dentro de chaves `{...}` fazendo uma desestruturação.
+> Como todos os elementos acima vêm do `react-bootstrap`, podem ser colodos dentro de chaves `{...}` separados por virgula (,) fazendo uma desestruturação.
 
 Elementos do formulário modelo:
 
