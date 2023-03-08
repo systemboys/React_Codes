@@ -4,6 +4,10 @@
 - [Formatando Hora](#formatando-hora "Formatando Hora")
 - [Renderizar data no formato desejado no JSX](#renderizar-data-no-formato-desejado-no-jsx "Renderizar data no formato desejado no JSX")
 
+- [Data atual no elemento HTML](#data-atual-no-elemento-html "Data atual no elemento HTML")
+- [Exibir a data no formato dd/mm/aaaa](#exibir-a-data-no-formato-ddmmaaaa "Exibir a data no formato dd/mm/aaaa")
+- [Hora atual no elemento HTML](#hora-atual-no-elemento-html "Hora atual no elemento HTML")
+
 ---
 
 ## Formatando data
