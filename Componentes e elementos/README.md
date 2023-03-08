@@ -4,6 +4,9 @@
 - [Componentes no modo `Named Exports`](#componentes-no-modo-named-exports "Componentes no modo Named Exports")
 - [`Formulário` responsívo com React-Bootstrap](#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
+
+- [Lista simples com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Lista simples com React-Bootstrap")
+
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
 - [`Buttons` com React-Bootstrap](#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
 - [Utilizando o `CSS Modules` do React](#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
@@ -288,6 +291,56 @@ Elementos do HTML:
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolores facilis nisi id enim quidem at natus, officia possimus accusantium! Cupiditate iure optio veniam incidunt, magnam ex consequatur aut doloribus!</p>
         </Tab>
     </Tabs>
+</Container>
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Lista simples com React-Bootstrap
+
+Importar do React-Bootstrap os componentes:
+
+```javascript
+import { Container, Table } from 'react-bootstrap';
+```
+
+Os elementos HTML no retorno:
+
+```javascript
+<Container>
+    <Table striped bordered hover size="sm">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry the Bird</td>
+                <td>Roboto</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </Table>
 </Container>
 ```
 
