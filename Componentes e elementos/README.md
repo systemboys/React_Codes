@@ -219,6 +219,33 @@ Elementos do formulário modelo:
 </Form>
 ```
 
+Caso você esteja utilizando CSS Modules e deseja que o botão `imput` seja fixado abaixo do formulário, segue o CSS:
+
+```css
+.formBody {
+    overflow: auto;
+    height: 362.5px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+```
+
+Adicione a classe no elemento HTML:
+
+```javascript
+...
+import styles from './styles.module.css';
+
+export function YourComponent() {
+    return (
+        <Container>
+            <Form>
+                <Row className={`${styles.formBody} mb-3`}>
+                    <Col sm={6}>
+                        ...
+```
+
+> Note que foi adicionado em `<Row className="mb-3">` a classe do CSS Modules ficando assim `<Row className={`${styles.formBody} mb-3`}>`.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
