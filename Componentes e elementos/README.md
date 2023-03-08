@@ -244,7 +244,7 @@ export function YourComponent() {
                         ...
 ```
 
-> Note que foi adicionado em `<Row className="mb-3">` a classe do CSS Modules ficando assim `<Row className={`${styles.formBody} mb-3`}>`.
+> Note que foi adicionado em `className="mb-3"` a classe do CSS Modules ficando assim: `${styles.formBody} mb-3`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
