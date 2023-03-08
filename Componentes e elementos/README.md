@@ -214,7 +214,7 @@ Elementos do formulário modelo:
         </Col>
     </Row>
     <Button variant="primary" type="submit">
-        <i class="fa fa-floppy-o" aria-hidden="true"></i> Salvar
+        <i class="fa fa-floppy-o" aria-hidden="true"></i> Enviar
     </Button>
 </Form>
 ```
