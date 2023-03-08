@@ -164,6 +164,20 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 ```
 
+Ou:
+
+```javascript
+import {
+    Container,
+    Button,
+    Col,
+    Form,
+    Row
+} from 'react-bootstrap';
+```
+
+> Como todos os elementos acima vêm do `react-bootstrap`, podem ser colodos dentro de chaves fazendo uma desestruturação.
+
 Elementos do formulário modelo:
 
 ```javascript
