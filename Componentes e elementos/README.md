@@ -231,7 +231,7 @@ Caso você esteja utilizando CSS Modules e deseja que o botão `imput` seja fixa
 }
 ```
 
-> Obs.: Lembrando que o `@media` está definindo que as regras do estilo CSS serão aplicadas apenas quando o screen for no mínimo 990px ou superior!
+> Obs.: Lembrando que o `@media` está definindo que as regras do estilo CSS serão aplicadas apenas quando o screen for no mínimo `990px` ou superior!
 
 Adicione a classe no elemento HTML:
 
