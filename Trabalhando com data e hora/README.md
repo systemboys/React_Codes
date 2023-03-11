@@ -177,7 +177,7 @@ function App() {
   // Data e hora atual.
   const today = new Date();
   const formattedDate = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear()}`;
-  const formattedTime = `${today.getHours().toString().padStart(2, '0')}:${today.getMinutes()}:${today.getSeconds().toString().padStart(2, '0')}`;
+  const formattedTime = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
 
   return (
     <div>
@@ -200,6 +200,12 @@ Você pode usar o método padStart() para adicionar um zero à esquerda quando o
 
 ```javascript
 ${today.getSeconds().toString().padStart(2, '0')}
+```
+
+Modificação após adicionar `.toString().padStart(2, '0')` na hora, minuto e segundo:
+
+```javascript
+const formattedTime = `${today.getHours().toString().padStart(2, '0')}:${today.getMinutes().toString().padStart(2, '0')}:${today.getSeconds().toString().padStart(2, '0')}`;
 ```
 
 Nesse caso, o método toString() é usado para converter o número de segundos em uma string antes de aplicar o padStart(). O primeiro argumento do método padStart() é o comprimento final da string resultante, que deve ter pelo menos 2 caracteres. O segundo argumento é o caractere usado para preencher a string à esquerda, nesse caso, um zero '0'.
