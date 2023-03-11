@@ -853,51 +853,6 @@ Agora os geters e os seters deverão ser ligados nos campos:
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
-## Validar os campos vazios do formulário
-
-Para verificar se os campos estão vazios, você pode usar uma declaração condicional `if` para verificar se as variáveis de estado correspondentes estão vazias ou não antes de enviar o formulário. Você pode fazer algo assim:
-
-```javascript
-const handleSubmitCustomerRegistration = (e) => {
-  e.preventDefault();
-
-  // Verifica se o campo "Nome completo" está vazio
-  if (full_name.trim() === '') {
-    alert('Por favor, preencha o campo "Nome completo"');
-    return;
-  }
-
-  // Verifica se o campo "CPF" ou "CNPJ" está vazio
-  if (client_type === 'pessoa_fisica' && individual_registration.trim() === '') {
-    alert('Por favor, preencha o campo "CPF"');
-    return;
-  } else if (client_type === 'pessoa_juridica' && cnpj.trim() === '') {
-    alert('Por favor, preencha o campo "CNPJ"');
-    return;
-  }
-
-  // Verifica se o campo "Data de nascimento" está vazio
-  if (client_type === 'pessoa_fisica' && birth_date.trim() === '') {
-    alert('Por favor, preencha o campo "Data de nascimento"');
-    return;
-  }
-
-  // Verifica se o campo "Razão social" está vazio
-  if (client_type === 'pessoa_juridica' && company_name.trim() === '') {
-    alert('Por favor, preencha o campo "Razão social"');
-    return;
-  }
-
-  // Envia os dados do formulário se todos os campos obrigatórios estiverem preenchidos
-  console.log("submit: ", {client_type, full_name, general_record, state_registration, individual_registration, cnpj, company_name, sex, birth_date, registered_date, registered_time});
-}
-```
-
-Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" está vazio usando o método `trim()` para remover os espaços em branco em ambos os lados da string e depois comparando com uma string vazia. Se o campo estiver vazio, exibirá um alerta e a função retornará, impedindo que o formulário seja enviado. Em seguida, é feita uma verificação semelhante para outros campos obrigatórios, dependendo do tipo de cliente selecionado. Se todos os campos obrigatórios estiverem preenchidos, o formulário será enviado e os valores dos campos serão exibidos no console.
-
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
-
 ---
 
 ## Campos editáveis no formulário dentro de um componente
@@ -940,4 +895,46 @@ function MyForm() {
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
 ---
+
+## Validar os campos vazios do formulário
+
+Para verificar se os campos estão vazios, você pode usar uma declaração condicional `if` para verificar se as variáveis de estado correspondentes estão vazias ou não antes de enviar o formulário. Você pode fazer algo assim:
+
+```javascript
+const handleSubmitCustomerRegistration = (e) => {
+  e.preventDefault();
+
+  // Verifica se o campo "Tipo de pessoa" está vazio.
+  if (client_type.trim() === '') {
+    alert('Informe o "Tipo de pessoa"!');
+    return;
+  }
+
+  // Verifica se o campo "Nome completo" está vazio.
+  if (full_name.trim() === '') {
+    alert('Informe o "Nome completo"!');
+    return;
+  }
+
+  // Verifica se o campo "RG" está vazio.
+  if (general_record.trim() === '') {
+    alert('Informe o "RG"!');
+    return;
+  }
+
+  // Verifica se o campo "CPF" está vazio.
+  if (individual_registration.trim() === '') {
+    alert('Informe o "CPF"!');
+    return;
+  }
+
+  // Envia os dados do formulário se todos os campos obrigatórios estiverem preenchidos.
+  console.log("submit: ", {client_type, full_name, general_record, individual_registration});
+}
+```
+
+Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" está vazio usando o método `trim()` para remover os espaços em branco em ambos os lados da string e depois comparando com uma string vazia. Se o campo estiver vazio, exibirá um alerta e a função retornará, impedindo que o formulário seja enviado. Em seguida, é feita uma verificação semelhante para outros campos obrigatórios, dependendo do tipo de cliente selecionado. Se todos os campos obrigatórios estiverem preenchidos, o formulário será enviado e os valores dos campos serão exibidos no console.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
