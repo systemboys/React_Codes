@@ -1012,7 +1012,7 @@ import { useRef } from "react";
 
   > Obs.: Coloque os nomes dos campos como no exemplo:
 
-4. No formulário foi colocado a referência `ref={formRef}`:
+4. No formulário coloque a referência `ref={formRef}`:
 
 ```javascript
 <form ref={formRef}>
@@ -1020,7 +1020,7 @@ import { useRef } from "react";
 </form>
 ```
 
-5. A função criada acima foi colocada em um `onClick={}` no `<button>...</button>`:
+5. Coloque a função que foi criada `handleReset()` em um `onClick={}` no `<button>...</button>`:
 
   ```javascript
   <button type="button" onClick={handleReset}>
