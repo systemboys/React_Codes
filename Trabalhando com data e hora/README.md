@@ -176,7 +176,7 @@ function App() {
   // Data e hora atual.
   const today = new Date();
   const formattedDate = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear()}`;
-  const formattedTime = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
+  const formattedTime = `${today.getHours().toString().padStart(2, '0')}:${today.getMinutes()}:${today.getSeconds().toString().padStart(2, '0')}`;
 
   return (
     <div>
@@ -190,6 +190,27 @@ export default App;
 ```
 
 Este exemplo cria uma instância do objeto Date contendo a data e hora atuais. Em seguida, a hora é formatada no formato "HH:mm:ss" e é passada como valor padrão para um input HTML do tipo "time".
+
+### Zero à esquerda para valores menor que 10
+
+Obs.: Para a hora, o resultado será por exemplo: `9:9:9`, indicando nove horas, nove minutos e nove segundos. Com os números meior que 10, o zero à esquerda não será exibido. Para reverter isso, veja o exemplo abaixo:
+
+Você pode usar o método padStart() para adicionar um zero à esquerda quando o número de segundos for menor que 10. Aqui está um exemplo:
+
+```javascript
+${today.getSeconds().toString().padStart(2, '0')}
+```
+
+Nesse caso, o método toString() é usado para converter o número de segundos em uma string antes de aplicar o padStart(). O primeiro argumento do método padStart() é o comprimento final da string resultante, que deve ter pelo menos 2 caracteres. O segundo argumento é o caractere usado para preencher a string à esquerda, nesse caso, um zero '0'.
+
+Vale para horas também?
+
+Sim, você pode aplicar a mesma lógica para adicionar um zero à esquerda em horas menores que 10. Por exemplo:
+```javascript
+${(today.getHours() < 10 ? "0" : "") + today.getHours()}:${(today.getMinutes() < 10 ? "0" : "") + today.getMinutes()}:${(today.getSeconds() < 10 ? "0" : "") + today.getSeconds()}
+```
+
+Nesse caso, o zero à esquerda é adicionado apenas se o valor for menor que 10, usando o operador ternário ? :. Se o valor for menor que 10, é concatenado um zero à esquerda, caso contrário, não é adicionado nada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
