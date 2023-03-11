@@ -949,7 +949,7 @@ const handleSubmitCustomerRegistration = (e) => {
 }
 ```
 
-Nos campos adicione sua referências `ref={full_nameInputRef}`:
+Nos campos adicione suas referências `ref={full_nameInputRef}`:
 
 ```javascript
 <input
