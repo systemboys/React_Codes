@@ -6,6 +6,7 @@
 - [Data atual no elemento HTML](#data-atual-no-elemento-html "Data atual no elemento HTML")
 - [Exibir a data no formato dd/mm/aaaa](#exibir-a-data-no-formato-ddmmaaaa "Exibir a data no formato dd/mm/aaaa")
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
+  - [Zero à esquerda para valores menor que 10](#zero-%C3%A0-esquerda-para-valores-menor-que-10 "Zero à esquerda para valores menor que 10")
 
 ---
 
