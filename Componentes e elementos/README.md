@@ -901,29 +901,45 @@ function MyForm() {
 Para verificar se os campos estão vazios, você pode usar uma declaração condicional `if` para verificar se as variáveis de estado correspondentes estão vazias ou não antes de enviar o formulário. Você pode fazer algo assim:
 
 ```javascript
+// Declaração dos valores dos campos
+const [client_type, setClient_type] = useState("");
+const [full_name, setFull_name] = useState("");
+const [general_record, setGeneral_record] = useState("");
+const [individual_registration, setIndividual_registration] = useState("");
+
+// Criando referências para os campos de entrada para setar o focus
+const client_typeInputRef = useRef(null);
+const full_nameInputRef = useRef(null);
+const generalRecordInputRef = useRef(null);
+const individualRegistrationInputRef = useRef(null);
+
 const handleSubmitCustomerRegistration = (e) => {
   e.preventDefault();
 
   // Verifica se o campo "Tipo de pessoa" está vazio.
   if (client_type.trim() === '') {
+    client_typeInputRef.current.focus();
     alert('Informe o "Tipo de pessoa"!');
     return;
   }
 
   // Verifica se o campo "Nome completo" está vazio.
   if (full_name.trim() === '') {
+    full_nameInputRef.current.focus();
     alert('Informe o "Nome completo"!');
     return;
   }
 
   // Verifica se o campo "RG" está vazio.
   if (general_record.trim() === '') {
+    general_recordInputRef.current.focus();
     alert('Informe o "RG"!');
     return;
   }
 
   // Verifica se o campo "CPF" está vazio.
   if (individual_registration.trim() === '') {
+    individual_registrationInputRef.current.focus();
     alert('Informe o "CPF"!');
     return;
   }
@@ -931,6 +947,17 @@ const handleSubmitCustomerRegistration = (e) => {
   // Envia os dados do formulário se todos os campos obrigatórios estiverem preenchidos.
   console.log("submit: ", {client_type, full_name, general_record, individual_registration});
 }
+```
+
+Nos campos adicione sua referências `ref={full_nameInputRef}`:
+
+```javascript
+<input
+  type="text"
+  value={full_name}
+  onChange={(e) => setFull_name(e.target.value)}
+  ref={full_nameInputRef}
+/>
 ```
 
 Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" está vazio usando o método `trim()` para remover os espaços em branco em ambos os lados da string e depois comparando com uma string vazia. Se o campo estiver vazio, exibirá um alerta e a função retornará, impedindo que o formulário seja enviado. Em seguida, é feita uma verificação semelhante para outros campos obrigatórios, dependendo do tipo de cliente selecionado. Se todos os campos obrigatórios estiverem preenchidos, o formulário será enviado e os valores dos campos serão exibidos no console.
