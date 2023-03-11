@@ -6,7 +6,7 @@
 - [Data atual no elemento HTML](#data-atual-no-elemento-html "Data atual no elemento HTML")
 - [Exibir a data no formato dd/mm/aaaa](#exibir-a-data-no-formato-ddmmaaaa "Exibir a data no formato dd/mm/aaaa")
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
-  - [Zero à esquerda para valores menor que 10](#zero-%C3%A0-esquerda-para-valores-menor-que-10 "Zero à esquerda para valores menor que 10")
+  - [Zero à esquerda para hora, minutos e segundos menores que 10](#zero-%C3%A0-esquerda-para-valores-menor-que-10 "Zero à esquerda para hora, minutos e segundos menores que 10")
 
 ---
 
@@ -192,7 +192,7 @@ export default App;
 
 Este exemplo cria uma instância do objeto Date contendo a data e hora atuais. Em seguida, a hora é formatada no formato "HH:mm:ss" e é passada como valor padrão para um input HTML do tipo "time".
 
-### Zero à esquerda para valores menor que 10
+### Zero à esquerda para hora, minutos e segundos menores que 10
 
 Obs.: Para a hora, o resultado será por exemplo: `9:9:9`, indicando nove horas, nove minutos e nove segundos. Com os números meior que 10, o zero à esquerda não será exibido. Para reverter isso, veja o exemplo abaixo:
 
