@@ -995,7 +995,7 @@ Assim, basta adicionar um evento de click no botão "Reset" e chamar o método `
 import { useRef } from "react";
 ```
 
-2. Abaixo das declaraçõs dos valores dos campos, foi adicionado:
+2. Abaixo das declaraçõs dos valores dos campos, declare a constante `formRef`:
 
   ```javascript
   const formRef = useRef();
