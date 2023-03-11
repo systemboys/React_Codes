@@ -1003,6 +1003,7 @@ import { useRef } from "react";
 3. Adicione a função `handleReset()`:
 
   ```javascript
+  // Função que Reset os campos
   function handleReset() {
     formRef.current.reset();
     setName("");
