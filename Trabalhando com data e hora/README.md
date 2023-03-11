@@ -5,7 +5,7 @@
 - [Renderizar data no formato desejado no JSX](#renderizar-data-no-formato-desejado-no-jsx "Renderizar data no formato desejado no JSX")
 - [Data atual no elemento HTML](#data-atual-no-elemento-html "Data atual no elemento HTML")
 - [Exibir a data no formato dd/mm/aaaa](#exibir-a-data-no-formato-ddmmaaaa "Exibir a data no formato dd/mm/aaaa")
-- [Hora atual no elemento HTML](#hora-atual-no-elemento-html "Hora atual no elemento HTML")
+- [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
 
 ---
 
@@ -163,7 +163,7 @@ Este exemplo cria uma instância do objeto Date contendo a data atual. Em seguid
 
 ---
 
-## Hora atual no elemento HTML
+## Data e Hora atual no elemento HTML
 
 Para adicionar a hora atual em um input HTML no ReactJS, você pode usar o objeto Date do JavaScript. Para formatar a hora, você pode usar os métodos getHours(), getMinutes() e getSeconds().
 
@@ -173,12 +173,15 @@ Veja um exemplo de como fazer isso:
 import React from 'react';
 
 function App() {
+  // Data e hora atual.
   const today = new Date();
+  const formattedDate = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear()}`;
   const formattedTime = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
 
   return (
     <div>
-      <input type="time" defaultValue={formattedTime} />
+      <input type="text" defaultValue={formattedDate} />
+      <input type="text" defaultValue={formattedTime} />
     </div>
   );
 }
