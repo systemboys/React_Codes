@@ -18,6 +18,7 @@
 - [Enviando um `formulário`](#enviando-um-formul%C3%A1rio "Enviando um formulário")
   - [`Campos editáveis` no formulário dentro de um componente](#campos-edit%C3%A1veis-no-formul%C3%A1rio-dentro-de-um-componente "Campos editáveis no formulário dentro de um componente")
   - [`Validar` os `campos vazios` do formulário](#validar-os-campos-vazios-do-formul%C3%A1rio "Validar os campos vazios do formulário")
+  - [`Resetar` campos do `formulário`](#resetar-campos-do-formul%C3%A1rio "Resetar campos do formulário")
 
 ---
 
@@ -978,3 +979,58 @@ Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
+---
+
+## Resetar campos do formulário
+
+Para resetar todos os campos do formulário, você pode utilizar o método `reset()` do objeto `HTMLFormElement`. Esse método faz com que todos os campos dentro do formulário sejam resetados para os valores iniciais.
+
+Assim, basta adicionar um evento de click no botão "Reset" e chamar o método `reset()` no objeto `form`, que representa o elemento `form` do seu formulário.
+
+>>> Resumo: Passo-a-passo
+
+1. Fora do componente, importe o `useRef`:
+
+```javascript
+import { useRef } from "react";
+```
+
+2. Abaixo das declaraçõs dos valores dos campos, foi adicionado:
+
+  ```javascript
+  const formRef = useRef();
+  ```
+3. Foi adicionada a função `handleReset()`:
+
+  ```javascript
+  function handleReset() {
+    formRef.current.reset();
+    setName("");
+    setEmail("");
+  }
+  ```
+
+  > Obs.: Coloque os nomes dos campos como no exemplo:
+
+4. No formulário foi colocado a referência `ref={formRef}`:
+
+```javascript
+<form ref={formRef}>
+  ...
+</form>
+```
+
+5. A função criada acima foi colocada em um `onClick={}` no `<button>...</button>`:
+
+  ```javascript
+  <button type="button" onClick={handleReset}>
+    Reset
+  </button>
+  ```
+
+Nesse exemplo, utilizamos a propriedade `ref` do elemento `form` para obter uma referência ao formulário. Em seguida, passamos essa referência para a propriedade `ref` do elemento `form` e utilizamos o método `reset()` nessa referência no evento de click do botão "Reset". Note que, para resetar os estados dos campos controlados pelo React (`name` e `email`), também precisamos setar esses valores para as strings vazias.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
