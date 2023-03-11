@@ -910,7 +910,7 @@ const [individual_registration, setIndividual_registration] = useState("");
 // Criando referências para os campos de entrada para setar o focus
 const client_typeInputRef = useRef(null);
 const full_nameInputRef = useRef(null);
-const generalRecordInputRef = useRef(null);
+const general_recordInputRef = useRef(null);
 const individualRegistrationInputRef = useRef(null);
 
 const handleSubmitCustomerRegistration = (e) => {
