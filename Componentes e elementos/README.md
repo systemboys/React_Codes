@@ -887,7 +887,7 @@ function MyForm() {
 }
 ```
 
->Neste exemplo, o valor padrão do campo de texto é definido como `'Meu título padrão'` através do estado inicial `systemTitle`. Em seguida, o valor é controlado pelo estado usando a propriedade value do componente `Form.Control`.
+> Neste exemplo, o valor padrão do campo de texto é definido como `'Meu título padrão'` através do estado inicial `systemTitle`. Em seguida, o valor é controlado pelo estado usando a propriedade value do componente `Form.Control`.
 
 > A função `onChange` é usada para atualizar o valor do estado `systemTitle` sempre que o usuário digita algo no campo. Dessa forma, o valor do campo será atualizado conforme o usuário digita e pode ser usado em outras partes do seu código.
 
@@ -899,6 +899,14 @@ function MyForm() {
 ## Validar os campos vazios do formulário
 
 Para verificar se os campos estão vazios, você pode usar uma declaração condicional `if` para verificar se as variáveis de estado correspondentes estão vazias ou não antes de enviar o formulário. Você pode fazer algo assim:
+
+Inportar o `useRef` do React.
+
+```javascript
+import React, { useState, useRef } from "react";
+```
+
+> Aqui está um exemplo de como você pode definir o foco nos campos de entrada criando referências para setar o focus.
 
 ```javascript
 // Declaração dos valores dos campos
@@ -949,7 +957,7 @@ const handleSubmitCustomerRegistration = (e) => {
 }
 ```
 
-Nos campos adicione suas referências `ref={full_nameInputRef}`:
+Nos campos devem ser atribuídas suas referências `ref={full_nameInputRef}`:
 
 ```javascript
 <input
