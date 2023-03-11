@@ -1000,7 +1000,7 @@ import { useRef } from "react";
   ```javascript
   const formRef = useRef();
   ```
-3. Foi adicionada a função `handleReset()`:
+3. Adicione a função `handleReset()`:
 
   ```javascript
   function handleReset() {
