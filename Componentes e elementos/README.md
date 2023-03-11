@@ -795,16 +795,16 @@ Dentro do seu componente, antes do retorno, devem ser declarados os valores, dei
 > Quando não há `action=""` ou quando há mas não é definido nenhum valor, ao enviar o submit, o usuário será direcionado para a mesma tela do formulário (comportamento típico do form). A ação do envio deverá ser mapeada e interceptada.
 
 ```javascript
-// Declaração dos valores, deixando-os vazios
+// Declaração dos valores dos campos.
 const [email, setEmail] = useState("");
 const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
 
-// Função para interceptar o evento de submit
+// Interceptar o evento de submit.
 const handleSubmitLogin = (e) => {
     e.preventDefault();
 
-    // Exibir no console os valores obitidos nos campos
+    // Exibir no console os valores obitidos nos campos.
     console.log("submit", { email, username, password });
 }
 ```
@@ -868,6 +868,8 @@ import { useState } from 'react';
 import { Form, Col } from 'react-bootstrap';
 
 function MyForm() {
+
+  // Declaração dos valores dos campos.
   const [systemTitle, setSystemTitle] = useState('Meu título padrão');
 
   return (
@@ -909,18 +911,19 @@ import React, { useState, useRef } from "react";
 > Aqui está um exemplo de como você pode definir o foco nos campos de entrada criando referências para setar o focus.
 
 ```javascript
-// Declaração dos valores dos campos
+// Declaração dos valores dos campos.
 const [client_type, setClient_type] = useState("");
 const [full_name, setFull_name] = useState("");
 const [general_record, setGeneral_record] = useState("");
 const [individual_registration, setIndividual_registration] = useState("");
 
-// Criando referências para os campos de entrada para setar o focus
+// Referências para os campos de entrada para setar o focus.
 const client_typeInputRef = useRef(null);
 const full_nameInputRef = useRef(null);
 const general_recordInputRef = useRef(null);
 const individualRegistrationInputRef = useRef(null);
 
+// Interceptar o evento de submit.
 const handleSubmitCustomerRegistration = (e) => {
   e.preventDefault();
 
@@ -960,12 +963,14 @@ const handleSubmitCustomerRegistration = (e) => {
 Nos campos devem ser atribuídas suas referências `ref={full_nameInputRef}`:
 
 ```javascript
+...
 <input
   type="text"
   value={full_name}
   onChange={(e) => setFull_name(e.target.value)}
   ref={full_nameInputRef}
 />
+...
 ```
 
 Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" está vazio usando o método `trim()` para remover os espaços em branco em ambos os lados da string e depois comparando com uma string vazia. Se o campo estiver vazio, exibirá um alerta e a função retornará, impedindo que o formulário seja enviado. Em seguida, é feita uma verificação semelhante para outros campos obrigatórios, dependendo do tipo de cliente selecionado. Se todos os campos obrigatórios estiverem preenchidos, o formulário será enviado e os valores dos campos serão exibidos no console.
