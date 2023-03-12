@@ -184,42 +184,44 @@ import {
 Elementos do formulário modelo:
 
 ```javascript
-<Form>
-    <Row className="mb-2">
-        <Col sm={6}>
-            <Form.Group className="mb-3" as={Col} controlId="formGridEmail">
-                <Form.Label>Email principal</Form.Label>
-                <Form.Control type="email" size="sm" defaultValue="your_email@server.com" placeholder="Email do sistema..." />
-            </Form.Group>
-        </Col>
-        <Col sm={6}>
-            <Form.Group className="mb-3" as={Col} controlId="formGridTitle">
-                <Form.Label>Título do sistema</Form.Label>
-                <Form.Control type="text" size="sm" defaultValue="Your title" placeholder="Um título..." />
-            </Form.Group>
-        </Col>
-        <Col sm={12}>
-            <Form.Group className="mb-3" as={Col} controlId="formGridState">
-                <Form.Label>Estado</Form.Label>
-                <Form.Select size="sm" value="SP">
-                    <option value="">&raquo; Selecione &laquo;</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="MG">Minas Gerais</option>
-                </Form.Select>
-            </Form.Group>
-        </Col>
-        <Col sm={12}>
-            <Form.Group className="mb-3" controlId="formGridAboutSystem">
-                <Form.Label>Sobore o sistema</Form.Label>
-                <Form.Control as="textarea" size="sm" rows={8} defaultValue="Your text" placeholder="Escreva algo sobre o sistema..." />
-            </Form.Group>
-        </Col>
-    </Row>
-    <Button variant="primary" type="submit">
-        <i class="fa fa-floppy-o" aria-hidden="true"></i> Enviar
-    </Button>
-</Form>
+<Container>
+    <Form>
+        <Row className="mb-2">
+            <Col sm={6}>
+                <Form.Group className="mb-3" as={Col} controlId="formGridEmail">
+                    <Form.Label>Email principal</Form.Label>
+                    <Form.Control type="email" size="sm" defaultValue="your_email@server.com" placeholder="Email do sistema..." />
+                </Form.Group>
+            </Col>
+            <Col sm={6}>
+                <Form.Group className="mb-3" as={Col} controlId="formGridTitle">
+                    <Form.Label>Título do sistema</Form.Label>
+                    <Form.Control type="text" size="sm" defaultValue="Your title" placeholder="Um título..." />
+                </Form.Group>
+            </Col>
+            <Col sm={12}>
+                <Form.Group className="mb-3" as={Col} controlId="formGridState">
+                    <Form.Label>Estado</Form.Label>
+                    <Form.Select size="sm" value="SP">
+                        <option value="">&raquo; Selecione &laquo;</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </Form.Select>
+                </Form.Group>
+            </Col>
+            <Col sm={12}>
+                <Form.Group className="mb-3" controlId="formGridAboutSystem">
+                    <Form.Label>Sobore o sistema</Form.Label>
+                    <Form.Control as="textarea" size="sm" rows={8} defaultValue="Your text" placeholder="Escreva algo sobre o sistema..." />
+                </Form.Group>
+            </Col>
+        </Row>
+        <Button variant="primary" type="submit">
+            <i class="fa fa-floppy-o" aria-hidden="true"></i> Enviar
+        </Button>
+    </Form>
+</Container>
 ```
 
 Caso você esteja utilizando CSS Modules e deseja que o botão `imput` seja fixado abaixo do formulário e rolar apenas o conteúdo do formulário com a barra de rolagem, segue o CSS:
