@@ -222,7 +222,7 @@ Elementos do formulário modelo:
             </Col>
             <Col sm={12}>
                 <Form.Group className="mb-3" controlId="formGridAboutSystem">
-                    <Form.Label>Sobore o sistema</Form.Label>
+                    <Form.Label>Sobre o sistema</Form.Label>
                     <Form.Control
                       as="textarea"
                       size="sm"
