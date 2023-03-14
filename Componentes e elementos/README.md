@@ -787,7 +787,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPrint } from '@fortawesome/free-solid-svg-icons';
 ```
 
-> Para cada ícone, você deve consultar o site oficial do [Font Awesome](https://fontawesome.com/ "Font Awesome") e verificar qual a classe você deseja colocando os dados no parâmentro `icon={faPrint}` do elemento HTML.
+> Para cada ícone, você deve consultar o site oficial do [Font Awesome](https://fontawesome.com/ "Font Awesome") e verificar qual a classe você deseja colocando os dados no parâmentro `icon={faPrint}` do elemento HTML. Obs.: No site oficial, em React, ele mostrará da seguinte forma: `<FontAwesomeIcon icon="fa-solid fa-print" />`, observe que a classe é `fa-print`, importe no formato `camelCase` como está no exemplo acima `{ faPrint }` e ponha no componente como está abaixo `icon={faPrint}`.
 
 Elemento HTML:
 
