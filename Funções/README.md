@@ -61,3 +61,46 @@ return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</butto
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
 
 ---
+
+## Popup com uma determinada URL passada via parâmetro
+
+Para abrir uma popup com uma determinada URL em um projeto em ReactJS, você pode usar o seguinte código:
+
+```javascript
+function openPopup(url) {
+  window.open(url, 'popup', 'width=600,height=600');
+}
+
+// Exemplo de uso
+openPopup('https://www.google.com');
+```
+
+Neste exemplo, a função `openPopup` recebe uma URL como parâmetro e utiliza o método `window.open` para abrir uma nova janela com a URL especificada. O segundo parâmetro da função `window.open` define o nome da janela (no caso, "popup"), e o terceiro parâmetro especifica as dimensões da janela. Você pode ajustar o tamanho de acordo com suas necessidades.
+
+## PopUp passando além de uma URL, dimensões e centralizada
+
+Você pode usar o método `window.open()` do JavaScript para abrir uma nova janela popup com uma determinada URL e dimensões. Para centralizar a janela na tela, você pode usar as dimensões da tela e as dimensões da janela para calcular a posição do canto superior esquerdo da janela. Aqui está um exemplo de código que faz isso:
+
+```javascript
+function openPopup(url, width, height) {
+  // calcula a posição do canto superior esquerdo da janela para centralizá-la
+  const left = (screen.width - width) / 2;
+  const top = (screen.height - height) / 2;
+
+  // abre a janela popup com a URL e dimensões especificadas
+  window.open(url, "", `width=${width}, height=${height}, left=${left}, top=${top}`);
+}
+```
+
+Para usar essa função em seu projeto React, basta chamá-la em algum evento de um elemento da interface do usuário, por exemplo:
+
+```javascript
+<button onClick={() => openPopup("https://www.google.com", 800, 600)}>Abrir popup</button>
+```
+
+Este exemplo criará um botão que, quando clicado, abrirá uma janela popup com a URL "https://www.google.com" e as dimensões 800x600, centralizadas na tela.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+
+---
