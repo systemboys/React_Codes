@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Particularidades do HTML
 
-- [Como criar um link com uma âncora](#link-do-texto-de-comeco "Como criar um link com uma âncora")
+- [Como criar um link com uma âncora](#como-criar-um-link-com-uma-%C3%A2ncora "Como criar um link com uma âncora")
 
 ---
 
@@ -26,6 +26,6 @@ Nesse exemplo, o link "Ir para a seção 1" aponta para a seção com o `id` "se
 Você pode também usar o atributo `target` para especificar como o link deve ser aberto. Por exemplo, para abrir o link em uma nova janela, você pode usar `target="_blank"`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#particularidades-do-html "Subir para o topo")
+[(&uarr;) Subir](#react-codes--particularidades-do-html "Subir para o topo")
 
 ---
