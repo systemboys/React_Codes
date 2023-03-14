@@ -161,6 +161,7 @@ npm install react-bootstrap bootstrap
 Importar os seguintes componentes:
 
 ```javascript
+// Componentes do formulário.
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -170,6 +171,7 @@ import Row from 'react-bootstrap/Row';
 Ou:
 
 ```javascript
+// Componentes do formulário.
 import {
     Container,
     Button,
