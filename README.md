@@ -22,6 +22,7 @@
 - [Manipulações de elementos com CSS](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20de%20elementos%20com%20CSS#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Manipulações de elementos com CSS")
 - [Manipulações de elementos com JavaScript](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20de%20elementos%20com%20JavaScript#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-javascript "Manipulações de elementos com JavaScript")
 - [Styled Components](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#react-codes--styled-components "Styled Components")
+- [Particularidades do HTML](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#react-codes--styled-components "Particularidades do HTML")
 
 ### Outras coisas interessantes
 
