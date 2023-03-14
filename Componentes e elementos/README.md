@@ -235,7 +235,7 @@ Elementos do formulário modelo:
             </Col>
         </Row>
         <Button variant="primary" type="submit">
-            <i className="fa fa-floppy-o" aria-hidden="true"></i> Enviar
+            Enviar
         </Button>
     </Form>
 </Container>
