@@ -6,8 +6,6 @@
 
 ## Como criar um link com uma âncora
 
-[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
-
 Para criar um link com uma âncora em HTML, você pode usar a tag `<a>` com o atributo `href` apontando para a seção que você deseja linkar usando o valor do atributo `id` da tag correspondente à seção. Por exemplo:
 
 ```html
