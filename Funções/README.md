@@ -69,11 +69,12 @@ return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</butto
 Para abrir uma popup com uma determinada URL em um projeto em ReactJS, você pode usar o seguinte código:
 
 ```javascript
+// PopUp simples.
 function openPopup(url) {
   window.open(url, 'popup', 'width=600,height=600');
 }
 
-// Exemplo de uso
+// Exemplo de uso.
 openPopup('https://www.google.com');
 ```
 
@@ -84,12 +85,13 @@ Neste exemplo, a função `openPopup` recebe uma URL como parâmetro e utiliza o
 Você pode usar o método `window.open()` do JavaScript para abrir uma nova janela popup com uma determinada URL e dimensões. Para centralizar a janela na tela, você pode usar as dimensões da tela e as dimensões da janela para calcular a posição do canto superior esquerdo da janela. Aqui está um exemplo de código que faz isso:
 
 ```javascript
+// PopUp simples centralizada.
 function openPopup(url, width, height) {
-  // calcula a posição do canto superior esquerdo da janela para centralizá-la
+  // calcular a posição do canto superior esquerdo da janela para centralizá-la.
   const left = (screen.width - width) / 2;
   const top = (screen.height - height) / 2;
 
-  // abre a janela popup com a URL e dimensões especificadas
+  // abrir a janela popup com a URL e dimensões especificadas.
   window.open(url, "", `width=${width}, height=${height}, left=${left}, top=${top}`);
 }
 ```
