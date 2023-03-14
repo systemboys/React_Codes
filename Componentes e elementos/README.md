@@ -945,28 +945,25 @@ const individualRegistrationInputRef = useRef(null);
 const handleSubmitCustomerRegistration = (e) => {
   e.preventDefault();
 
-  // Verifica se o campo "Tipo de pessoa" está vazio.
+  // Verificar se o campo "Tipo de pessoa" está vazio.
   if (client_type.trim() === '') {
     client_typeInputRef.current.focus();
     alert('Informe o campo "Tipo de pessoa"!');
     return;
   }
-
-  // Verifica se o campo "Nome completo" está vazio.
+  // Verificar se o campo "Nome completo" está vazio.
   if (full_name.trim() === '') {
     full_nameInputRef.current.focus();
     alert('Informe o campo "Nome completo"!');
     return;
   }
-
-  // Verifica se o campo "RG" está vazio.
+  // Verificar se o campo "RG" está vazio.
   if (general_record.trim() === '') {
     general_recordInputRef.current.focus();
     alert('Informe o campo "RG"!');
     return;
   }
-
-  // Verifica se o campo "CPF" está vazio.
+  // Verificar se o campo "CPF" está vazio.
   if (individual_registration.trim() === '') {
     individual_registrationInputRef.current.focus();
     alert('Informe o campo "CPF"!');
