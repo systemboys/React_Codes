@@ -1012,6 +1012,7 @@ import { useRef } from "react";
 2. Abaixo das declaraçõs dos valores dos campos, declare a constante `formRef`:
 
   ```javascript
+  // Referenciar o formulário.
   const formRef = useRef();
   ```
 3. Adicione a função `handleReset()`:
