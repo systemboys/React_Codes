@@ -17,9 +17,10 @@
 
 - [Componentes e elementos](https://github.com/systemboys/React_Codes/tree/main/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Componentes e elementos")
 
-### Estilo CSS
+### CSS e HTML
 
 - [Manipulações de elementos com CSS](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20de%20elementos%20com%20CSS#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Manipulações de elementos com CSS")
+- [Manipulações de elementos com JavaScript](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20de%20elementos%20com%20CSS#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Manipulações de elementos com JavaScript")
 - [Styled Components](https://github.com/systemboys/React_Codes/tree/main/Styled%20Components#react-codes--styled-components "Styled Components")
 
 ### Outras coisas interessantes
