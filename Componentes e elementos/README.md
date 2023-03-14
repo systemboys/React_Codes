@@ -782,7 +782,7 @@ Implementação de ícones do `React-FontAwesome` em seu projeto.
 Importar os componentes:
 
 ```javascript
-// // Ícones React-Fontawesome.
+// Ícones React-Fontawesome.
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPrint } from '@fortawesome/free-solid-svg-icons';
 ```
