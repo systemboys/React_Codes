@@ -72,7 +72,6 @@ function MeuComponente() {
         { valor: 'valor2', label: 'Opção 2' },
         { valor: 'valor3', label: 'Opção 3' }
     ];
-
     return (
         <select>
             {opcoes.map(opcao => (
@@ -97,15 +96,17 @@ Colocar o array diretamente no `map()`.
 ```javascript
 function MeuComponente() {
     return (
-        <select>
+        <Container>
             {[
-                { link: 'https://www.site.com/rota1/', name: 'Rota 1', title: 'Ir para rota 1' },
-                { link: 'https://www.site.com/rota2/', name: 'Rota 2', title: 'Ir para rota 2' },
-                { link: 'https://www.site.com/rota3/', name: 'Rota 3', title: 'Ir para rota 3' }
+                { link: 'https://www.google.com/', name: 'Google', title: 'Ir para o Google' },
+                { link: 'https://www.youtube.com/', name: 'YouTube', title: 'Ir para o YouTube' },
+                { link: 'https://www.bing.com/', name: 'Bing', title: 'Ir para o Bing' }
             ].map(opcao => (
-                <a href={opcao.valor} title={opcao.title}>{opcao.name}</a>
+                <>
+                   <p><a href={opcao.link} target="_blank" title={opcao.title}>{opcao.name}</a></p>
+                </>
             ))}
-        </select>
+        </Container>
     );
 }
 ```
