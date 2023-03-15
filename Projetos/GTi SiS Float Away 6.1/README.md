@@ -3,7 +3,11 @@
 
 [![GTi SiS Float Away 6.1](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Front_GTi-SiS-Float-Away-6.1.png "GTi SiS Float Away 6.1")](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Front_GTi-SiS-Float-Away-6.1.png "GTi SiS Float Away 6.1")
 
-- [Link do Texto de começo](#link-do-texto-de-comeco "Link do Texto de começo")
+- [React-Fenestra](#react-fenestra "React-Fenestra")
+- [Como instalar o GTi SiS Float Away 6.1?](#como-instalar-o-gti-sis-float-away-61 "Como instalar o GTi SiS Float Away 6.1?")
+- [Tamanho e posição da janela](#tamanho-e-posi%C3%A7%C3%A3o-da-janela "Tamanho e posição da janela")
+- [Centralizar a janela](#centralizar-a-janela "Centralizar a janela")
+- [Abrir janelas a partir de outras janelas do Fenestra](#abrir-janelas-a-partir-de-outras-janelas-do-fenestra "Abrir janelas a partir de outras janelas do Fenestra")
 
 ---
 
