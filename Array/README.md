@@ -2,6 +2,7 @@
 
 - [Obter dados de um `Array` com o `map()`](#obter-dados-de-um-array-com-map "Obter dados de um Array com map()")
 - [Executar Array dentro do retorno de um componente](#executar-array-dentro-do-retorno-de-um-componente "Executar Array dentro do retorno de um componente")
+- [Mapeamento direto no map()](#mapeamento-direto-no-map "Mapeamento direto no map()")
 
 ---
 ## Obter dados de um Array com `map()`
