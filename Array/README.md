@@ -18,7 +18,7 @@ export default[
     { id:5, option: 'Opção 5' },
     { id:6, option: 'Opção 6' },
     { id:7, option: 'Opção 7' },
-    { id:8, option: 'Opção 8' },
+    { id:8, option: 'Opção 8' }
 ]
 ```
 
