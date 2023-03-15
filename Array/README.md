@@ -66,23 +66,48 @@ Para mapear o array dentro do retorno de um componente em um select por exemplo,
 
 ```javascript
 function MeuComponente() {
-  const opcoes = [
-    { valor: 'valor1', label: 'Opção 1' },
-    { valor: 'valor2', label: 'Opção 2' },
-    { valor: 'valor3', label: 'Opção 3' }
-  ];
+    const opcoes = [
+        { valor: 'valor1', label: 'Opção 1' },
+        { valor: 'valor2', label: 'Opção 2' },
+        { valor: 'valor3', label: 'Opção 3' }
+    ];
 
-  return (
-    <select>
-      {opcoes.map(opcao => (
-        <option key={opcao.valor} value={opcao.valor}>{opcao.label}</option>
-      ))}
-    </select>
-  );
+    return (
+        <select>
+            {opcoes.map(opcao => (
+                <option key={opcao.valor} value={opcao.valor}>{opcao.label}</option>
+            ))}
+        </select>
+    );
 }
 ```
 
 Nesse exemplo, criamos um array `opcoes` com três objetos que representam as opções do select. Em seguida, utilizamos o método `map()` para criar um array de elementos `<option>` com base nos objetos do array `opcoes`. Cada elemento `<option>` tem o atributo value com o valor do objeto e o texto da opção com o atributo label. Note que é importante incluir a propriedade `key` em cada elemento gerado pelo `map()` para ajudar o React a identificar qual item deve ser atualizado em caso de mudanças na lista. Por fim, o array de elementos `<option>` é renderizado dentro do elemento `<select>`.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
+
+---
+
+## Mapeamento direto no map()
+
+Colocar o array diretamente no `map()`.
+
+```javascript
+function MeuComponente() {
+    return (
+        <select>
+            {[
+                { link: 'https://www.site.com/rota1/', name: 'Rota 1', title: 'Ir para rota 1' },
+                { link: 'https://www.site.com/rota2/', name: 'Rota 2', title: 'Ir para rota 2' },
+                { link: 'https://www.site.com/rota3/', name: 'Rota 3', title: 'Ir para rota 3' }
+            ].map(opcao => (
+                <a href={opcao.valor} title={opcao.title}>{opcao.name}</a>
+            ))}
+        </select>
+    );
+}
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
