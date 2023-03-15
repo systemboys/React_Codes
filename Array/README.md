@@ -11,14 +11,14 @@ Crie um arquivo como por exemplo `data.js`:
 
 ```javascript
 export default[
-    {id:1, option: 'Opção 1'},
-    {id:2, option: 'Opção 2'},
-    {id:3, option: 'Opção 3'},
-    {id:4, option: 'Opção 4'},
-    {id:5, option: 'Opção 5'},
-    {id:6, option: 'Opção 6'},
-    {id:7, option: 'Opção 7'},
-    {id:8, option: 'Opção 8'},
+    { id:1, option: 'Opção 1' },
+    { id:2, option: 'Opção 2' },
+    { id:3, option: 'Opção 3' },
+    { id:4, option: 'Opção 4' },
+    { id:5, option: 'Opção 5' },
+    { id:6, option: 'Opção 6' },
+    { id:7, option: 'Opção 7' },
+    { id:8, option: 'Opção 8' },
 ]
 ```
 
