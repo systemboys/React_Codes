@@ -16,6 +16,6 @@ const yourCodeJavaScript = "Seu código JavaScript";
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#link-do-texto-de-comeco "Subir para o topo")
+[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
 
 ---
