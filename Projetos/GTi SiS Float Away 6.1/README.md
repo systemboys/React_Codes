@@ -301,19 +301,25 @@ Aqui segue a alteração e a explicação:
 
 1) Nas expressões do arquivo `./src/App.jsx`, modifique a expressão :
 
+```javascript
 content: ({ fenestra }) =>
 
 <YourComponent />
+```
 
 Por:
 
+```javascript
 content: YourComponent
+```
 
 Ou por:
 
+```javascript
 content: ({ fenestra }) =>
 
 <YourComponent fenestra={fenestra}/>
+```
 
 Você deve instanciar o conteúdo da página com as propriedades do fenestra.
 
