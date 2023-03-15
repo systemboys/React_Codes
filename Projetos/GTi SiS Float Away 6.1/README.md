@@ -285,6 +285,32 @@ Por exemplo, você pode abrir uma janela filho com o formulário e receber o cal
 onClick={() => props.fenestra.open({  title: "Nova Janela Filho", content: ({ fenestra }) => <form onSubmit={() => meuCallback()}><button type="submit">Me envie!</button></form>})}
 ```
 
+Exemplo em um botão `<Button onClick={() => ...>...</Button>`:
+
+> Janela centralizada
+
+```javascript
+<Button variant="primary" onClick={() => props.fenestra.open({title: "Centralizada", left: (window.innerWidth - 500) / 2, top: (window.innerHeight - 300) / 2, width: 500, height: 300, content: ({ fenestra }) => <p>Nova janela</p>})}>
+  Demo
+</Button>
+```
+
+> Janela posicionada
+
+```javascript
+<Button variant="primary" onClick={() => props.fenestra.open({title: "Posicionada", left: 30, top: 30, width: 500, height: 300, content: ({ fenestra }) => <p>Nova janela</p>})}>
+  Demo
+</Button>
+```
+
+> Janela resumida
+
+```javascript
+<Button variant="primary" onClick={() => props.fenestra.open({title: "Resumida", resizeable: false, left: (window.innerWidth - 350) / 2, top: (window.innerHeight - 150) / 2, width: 350, height: 150, content: ({ fenestra }) => <p>Nova janela</p>})}>
+  Demo
+</Button>
+```
+
 Você deve utilizar o parâmetro props na definição da função. Assim, a função reescrita ficaria assim: 
 
 ```javascript
