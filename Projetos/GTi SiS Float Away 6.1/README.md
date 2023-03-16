@@ -49,6 +49,8 @@ npm create vite@latest project_name
   - Baixe o arquivo compactado [`Download Zip`](https://github.com/systemboys/gti-sis-float-away-6.1 "Download Zip") do projeto no GitHub;
   - Extraia o diretório e copie o diretório `./src` e os arquivos `./index.html` e `./package.json`.
 
+[![Download do projeto](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Download_Zip_gti-sis-float-away-6.1.png "Download do projeto")](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Download_Zip_gti-sis-float-away-6.1.png "Download do projeto")
+
 > Substitua os que foram criados pelo Vite:
 
 3 - Instale as dependências NPM.
