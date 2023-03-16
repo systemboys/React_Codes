@@ -2,7 +2,7 @@
 
 - [Função simples](#fun%C3%A7%C3%A3o-simples "Função simples")
 - [Passar uma propriedade de um elemento para uma arrow function](#passar-uma-propriedade-de-um-elemento-para-uma-arrow-function "Passar uma propriedade de um elemento para uma arrow function")
-- [Popup com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
+- [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
 - [PopUp passando além de uma URL, dimensões e centralizada](#popup-passando-al%C3%A9m-de-uma-url-dimens%C3%B5es-e-centralizada "PopUp passando além de uma URL, dimensões e centralizada")
 
 ---
@@ -64,7 +64,7 @@ return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</butto
 
 ---
 
-## Popup com uma determinada URL passada via parâmetro
+## PopUp com uma determinada URL passada via parâmetro
 
 Para abrir uma popup com uma determinada URL em um projeto em ReactJS, você pode usar o seguinte código:
 
