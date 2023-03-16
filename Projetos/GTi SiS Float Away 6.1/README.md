@@ -50,7 +50,7 @@ npm create vite@latest project_name
   - Extraia o diretório `./src`;
   - Copie os arquivos `./index.html` e `./package.json`.
 
-  > Substitua os que foram criados pelo Vite:
+> Substitua os que foram criados pelo Vite:
 
 3 - Instale as dependências NPM.
 
