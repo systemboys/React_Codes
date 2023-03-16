@@ -44,7 +44,7 @@ npm create vite@latest project_name
 
 >Obs.: Selecione `React` e depois `JavaScript`, o Fenestra está utilizando!
 
-2 - Entre no diretório do seu projeto `project_name` e os seguintes passos:
+2 - Entre no diretório do seu projeto `project_name` e siga os seguintes passos:
 
   - Baixe o arquivo compactado [`Download Zip`](https://github.com/systemboys/gti-sis-float-away-6.1 "Download Zip") do projeto no GitHub;
   - Extraia o diretório `./src`;
