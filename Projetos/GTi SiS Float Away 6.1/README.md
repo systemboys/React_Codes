@@ -44,23 +44,21 @@ npm create vite@latest project_name
 
 >Obs.: Selecione `React` e depois `JavaScript`, o Fenestra não está utilizando `TypyScript`!
 
-### Diretório
+2 - Entre no diretório do seu projeto `project_name` e copie os arquivos do projeto:
 
-2 - Entre no diretório do seu projeto `project_name`:
+  1. Baixe o arquivo compactado [`Download Zip`](https://github.com/systemboys/gti-sis-float-away-6.1 "Download Zip") do projeto no GitHub;
+  2. Extraia o diretório `./src`;
+  3. Copie os arquivos `./index.html` e `./package.json`.
 
-Instale as dependências npm.
+> Substitua os que foram criados pelo Vite:
+
+3 - Instale as dependências NPM.
 
 ```bash
 npm i
 ```
 
-### Arquivos
-
-3 - Copie os arquivos do projeto:
-  1. Baixe o arquivo compactado `Download Zip` do projeto no GitHub;
-  2. Extraia o diretório `./src`;
-  3. Copie os arquivos `./index.html` e `./package.json`.
-> Substitua os que foram criados pelo Vite:
+> Se houver erro com indicando conflitos, force a instalação com `npm i --force`.
 
 Após isto, execute o projeto com o seguinte comando:
 
