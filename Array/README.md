@@ -10,7 +10,7 @@
 Crie um arquivo como por exemplo `data.js`:
 
 ```javascript
-export default[
+export default [
     { id:1, option: 'Opção 1' },
     { id:2, option: 'Opção 2' },
     { id:3, option: 'Opção 3' },
