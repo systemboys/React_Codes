@@ -38,7 +38,7 @@ React-Fenestra é uma biblioteca para implementação de um Desktop baseado em j
 
 Com o `npm lts` instalado, crie seu projeto como `Vite`.
 
-```
+```bash
 npm create vite@latest project_name
 ```
 
@@ -50,33 +50,27 @@ npm create vite@latest project_name
 
 Instale as dependências npm.
 
-```
+```bash
 npm i
 ```
 
 ### Arquivos
 
-3 - Copie os arquivos `./index.html` e `./package.json` e todo o diretório `./src/*` substituindo os que foram criados pelo Vite no diretório `./src/` dos arquivos acima:
-
-Baixe o arquivo `Download Zip` e obtenha o diretório `src` entre os arquivos.
-
-### NPM
-
-4 - Instale a partir do npm:
-
-```
-npm install react-fenestra
-```
+3 - Copie os arquivos do projeto:
+  1. Baixe o arquivo compactado `Download Zip` do projeto no GitHub;
+  2. Extraia o diretório `./src`;
+  3. Copie os arquivos `./index.html` e `./package.json`.
+> Substitua os que foram criados pelo Vite:
 
 Após isto, execute o projeto com o seguinte comando:
 
-```
+```bash
 npm run dev
 ```
 
 Após executar o projeto, logo lhe apresentará o endereço localhost com a parta selecionada como no exemplo abaixo:
 
-```
+```bash
   VITE v3.2.3  ready in 772 ms
 
   ➜  Local:   http://localhost:5173/
