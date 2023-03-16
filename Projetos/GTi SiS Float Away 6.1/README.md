@@ -46,7 +46,7 @@ npm create vite@latest project_name
 
 2 - Entre no diretório do seu projeto `project_name` e copie os arquivos do projeto:
 
-  - Baixe o arquivo compactado [`Download Zip`](https://github.com/systemboys/gti-sis-float-away-6.1 "Download Zip") do projeto no GitHub;
+  - Baixe o arquivo compactado [`Download Zip`](https://github.com/systemboys/gti-sis-float-away-6.1 "Download Zip" target="_blank") do projeto no GitHub;
   - Extraia o diretório `./src`;
   - Copie os arquivos `./index.html` e `./package.json`.
 
