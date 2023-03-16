@@ -8,8 +8,6 @@
 
 [![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
 
-[Link do Texto com Target](https://www.site.com#link-do-texto-de-comeco "Link do Texto com Target" target="_blank")
-
 Descrição do conteúdo...
 
 ```javascript
