@@ -36,15 +36,15 @@ React-Fenestra é uma biblioteca para implementação de um Desktop baseado em j
 
 1 - Crie o seu projeto com o `Vite`:
 
-Com o `npm lts` instalado, crie seu projeto como `Vite`.
+Com o `npm lts` instalado, crie seu projeto com o `Vite`.
 
 ```bash
 npm create vite@latest project_name
 ```
 
->Obs.: Selecione `React` e depois `JavaScript`, o Fenestra não está utilizando `TypyScript`!
+>Obs.: Selecione `React` e depois `JavaScript`, o Fenestra está utilizando!
 
-2 - Entre no diretório do seu projeto `project_name` e copie os arquivos do projeto:
+2 - Entre no diretório do seu projeto `project_name` e os seguintes passos:
 
   - Baixe o arquivo compactado [`Download Zip`](https://github.com/systemboys/gti-sis-float-away-6.1 "Download Zip") do projeto no GitHub;
   - Extraia o diretório `./src`;
