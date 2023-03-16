@@ -87,11 +87,11 @@ Você pode usar o método `window.open()` do JavaScript para abrir uma nova jane
 ```javascript
 // PopUp simples centralizada.
 function openPopup(url, width, height) {
-  // calcular a posição do canto superior esquerdo da janela para centralizá-la.
+  // Calcular a posição do canto superior esquerdo da janela para centralizá-la.
   const left = (screen.width - width) / 2;
   const top = (screen.height - height) / 2;
 
-  // abrir a janela popup com a URL e dimensões especificadas.
+  // Abrir a janela popup com a URL e dimensões especificadas.
   window.open(url, "", `width=${width}, height=${height}, left=${left}, top=${top}`);
 }
 ```
