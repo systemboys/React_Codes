@@ -42,12 +42,12 @@ Com o `npm lts` instalado, crie seu projeto com o `Vite`.
 npm create vite@latest project_name
 ```
 
->Obs.: Selecione `React` e depois `JavaScript`, o Fenestra está utilizando!
+>Obs.: Selecione uma estrutura, no nosso caso, a framework `React` e depois a variante `JavaScript`!
 
 2 - Entre no diretório do seu projeto `project_name` e siga os seguintes passos:
 
   - Baixe o arquivo compactado [`Download Zip`](https://github.com/systemboys/gti-sis-float-away-6.1 "Download Zip") do projeto no GitHub;
-  - Extraia o diretório e copie o diretório `./src` e os arquivos `./index.html` e `./package.json`.
+  - Extraia o projeto e copie o diretório `./src` e os arquivos `./index.html` e `./package.json`.
 
 [![Download do projeto](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Download_Zip_gti-sis-float-away-6.1.png "Download do projeto")](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Download_Zip_gti-sis-float-away-6.1.png "Download do projeto")
 
@@ -56,10 +56,10 @@ npm create vite@latest project_name
 3 - Instale as dependências NPM.
 
 ```bash
-npm i
+npm install
 ```
 
-> Se houver erro com indicando conflitos, force a instalação com `npm i --force`.
+> Se houver erro com indicando conflitos, force a instalação com `npm install --force`.
 
 Após isto, execute o projeto com o seguinte comando:
 
