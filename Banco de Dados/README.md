@@ -80,11 +80,11 @@ npx prisma init
 ### Configurar o arquivo `./.env`:
 
 ```javascript
-DATABASE_URL="mysql://youUser:yourPassword@yourHost:3306/yourDataBase"
+DATABASE_URL="mysql://yourUser:yourPassword@yourHost:3306/yourDataBase"
 ```
 
 > Onde:
-> `youUser` é seu usuário de banco de dados,
+> `yourUser` é seu usuário de banco de dados,
 > `yourPassword` é a senha,
 > `yourHost` é o Host de sua hospedagem,
 > `3306` é porta e
