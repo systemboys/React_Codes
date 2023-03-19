@@ -687,7 +687,7 @@ Se você já tem o campo de texto, como por exemplo:
 </Form.Group>
 ```
 
-3. Substitua o campo Form.Control que você deseja usar o CKEditor pelo componente CKEditor. Para isso, você pode remover a propriedade as="textarea" e adicionar a propriedade editor={ClassicEditor}. Além disso, você pode definir a propriedade data com o valor do texto do campo:
+3. Substitua o campo `Form.Control` que você deseja usar o CKEditor pelo componente `CKEditor`. Para isso, você pode remover a propriedade `as="textarea"` e adicionar a propriedade editor={ClassicEditor}. Além disso, você pode definir a propriedade `data` com o valor do texto do campo:
 
 ```javascript
 <Form.Group className="mb-3" controlId="formGridAboutSystem">
@@ -703,9 +703,42 @@ Se você já tem o campo de texto, como por exemplo:
 </Form.Group>
 ```
 
-No método onChange do CKEditor, você pode atualizar o estado com o novo valor inserido no editor. Por padrão, o CKEditor retorna o conteúdo formatado em HTML, mas você pode usar o método editor.getData() para obter o conteúdo em um formato diferente.
+No método `onChange` do `CKEditor`, você pode atualizar o estado com o novo valor inserido no editor. Por padrão, o CKEditor retorna o conteúdo formatado em HTML, mas você pode usar o método `editor.getData()` para obter o conteúdo em um formato diferente.
 
 > Com esses passos, você deve conseguir utilizar o CKEditor 5 no seu componente.
+
+Para usar o componente CKEditor `personalizado` e passe as opções personalizadas. Na opção `config`, você pode personalizar a barra de ferramentas, removendo ou adicionando botões de acordo com as suas necessidades. Você também pode definir a altura da área de texto no CSS ou na opção `config` usando a propriedade `content.minHeight`. Por exemplo:
+
+```javascript
+<CKEditor
+  editor={ClassicEditor}
+  data={listCompanySystem[0]?.about_system}
+  config={{
+    toolbar: [
+      'heading',
+      '|',
+      'bold',
+      'italic',
+      'link',
+      'bulletedList',
+      'numberedList',
+      '|',
+      'indent',
+      'outdent',
+      '|',
+      'undo',
+      'redo'
+    ],
+    content: {
+      minHeight: '300px'
+    },
+    language: 'pt-br'
+  }}
+  // ...
+/>
+```
+
+O valor da altura pode ser ajustado de acordo com suas necessidades.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
