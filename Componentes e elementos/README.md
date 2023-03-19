@@ -682,8 +682,8 @@ Se você já tem o campo de texto, como por exemplo:
 
 ```javascript
 <Form.Group className="mb-3" controlId="formGridAboutSystem">
-    <Form.Label>Sobore o sistema</Form.Label>
-    <Form.Control as="textarea" size="sm" rows={8} defaultValue={listCompanySystem[0]?.about_system} placeholder="Escreva algo sobre o sistema..." />
+  <Form.Label>Sobore o sistema</Form.Label>
+  <Form.Control as="textarea" size="sm" rows={8} defaultValue={listCompanySystem[0]?.about_system} placeholder="Escreva algo sobre o sistema..." />
 </Form.Group>
 ```
 
@@ -691,15 +691,15 @@ Se você já tem o campo de texto, como por exemplo:
 
 ```javascript
 <Form.Group className="mb-3" controlId="formGridAboutSystem">
-    <Form.Label>Sobore o sistema</Form.Label>
-    <CKEditor
-        editor={ClassicEditor}
-        data={listCompanySystem[0]?.about_system}
-        onChange={(event, editor) => {
-        const data = editor.getData();
-            // você pode atualizar o estado com o novo valor aqui
-        }}
-    />
+  <Form.Label>Sobore o sistema</Form.Label>
+  <CKEditor
+    editor={ClassicEditor}
+    data={listCompanySystem[0]?.about_system}
+    onChange={(event, editor) => {
+    const data = editor.getData();
+      // você pode atualizar o estado com o novo valor aqui
+    }}
+  />
 </Form.Group>
 ```
 
