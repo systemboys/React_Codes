@@ -748,7 +748,7 @@ Aqui está uma lista completa das opções disponíveis na barra de ferramentas:
 | :------------: | :------------ |
 | undo | Desfazer a última ação. |
 | redo | Refazer a última ação desfeita. |
-| &#124; | Barra de divisão |
+| &#124; | Pipe character para dividir áreas dos botões. |
 | bold | Negrito. |
 | italic | Itálico. |
 | underline | Sublinhado. |
