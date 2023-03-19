@@ -612,19 +612,19 @@ Assim, basta adicionar um evento de click no botão "Reset" e chamar o método `
 
 >>> Resumo: Passo-a-passo
 
-1. Fora do componente, importe o `useRef`:
+`1`. Fora do componente, importe o `useRef`:
 
 ```javascript
 import { useRef } from "react";
 ```
 
-2. Abaixo das declaraçõs dos valores dos campos, declare a constante `formRef`:
+`2`. Abaixo das declaraçõs dos valores dos campos, declare a constante `formRef`:
 
   ```javascript
   // Referenciar o formulário.
   const formRef = useRef();
   ```
-3. Adicione a função `handleReset()`:
+`3`. Adicione a função `handleReset()`:
 
   ```javascript
   // Função Reset, para resetar os campos do formulário.
@@ -637,7 +637,7 @@ import { useRef } from "react";
 
   > Obs.: Coloque os nomes dos campos como no exemplo:
 
-4. No formulário coloque a referência `ref={formRef}`:
+`4`. No formulário coloque a referência `ref={formRef}`:
 
 ```javascript
 <form ref={formRef}>
@@ -645,7 +645,7 @@ import { useRef } from "react";
 </form>
 ```
 
-5. Coloque a função que foi criada `handleReset()` em um `onClick={}` no `<button>...</button>`:
+`5`. Coloque a função que foi criada `handleReset()` em um `onClick={}` no `<button>...</button>`:
 
   ```javascript
   <button type="button" onClick={handleReset}>
@@ -662,7 +662,7 @@ Nesse exemplo, utilizamos a propriedade `ref` do elemento `form` para obter uma 
 
 ## Instalar e utilizar o "CKEditor 5" no ReactJS
 
-1. Instale o CKEditor 5 via npm:
+`1`. Instale o CKEditor 5 via npm:
 
 ```bash
 npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
@@ -670,7 +670,7 @@ npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
 
 > Se houver erros de conflito, tente o comando acima com o uso forçado `--force`!
 
-2. Importe o componente CKEditor:
+`2`. Importe o componente CKEditor:
 
 ```javascript
 // CKEditor
@@ -687,7 +687,7 @@ Se você já tem o campo de texto, como por exemplo:
 </Form.Group>
 ```
 
-3. Substitua o campo `Form.Control` que você deseja usar o CKEditor pelo componente `CKEditor`. Para isso, você pode remover a propriedade `as="textarea"` e adicionar a propriedade editor={ClassicEditor}. Além disso, você pode definir a propriedade `data` com o valor do texto do campo:
+`3`. Substitua o campo `Form.Control` que você deseja usar o CKEditor pelo componente `CKEditor`. Para isso, você pode remover a propriedade `as="textarea"` e adicionar a propriedade editor={ClassicEditor}. Além disso, você pode definir a propriedade `data` com o valor do texto do campo:
 
 ```javascript
 <Form.Group className="mb-3" controlId="formGridAboutSystem">
