@@ -3,6 +3,7 @@
 - [Componentes no modo `Default Exports`](#componentes-no-modo-default-exports "Componentes no modo Default Exports")
 - [Componentes no modo `Named Exports`](#componentes-no-modo-named-exports "Componentes no modo Named Exports")
 - [`Formulário` responsívo com React-Bootstrap](#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
+  - [`Máscara` nos campos](#link-do-texto-de-comeco "Máscara nos campos")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
@@ -271,6 +272,75 @@ export function YourComponent() {
 ```
 
 > Note que foi adicionado em `className="mb-2"` a classe do CSS Modules ficando assim: `${styles.formBody} mb-2`.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Máscara nos campos
+
+Para aplicar uma máscara no input do campo CPF, podemos utilizar uma biblioteca de formatação de strings, como o react-input-mask.
+
+Para utilizá-lo, primeiro precisamos instalá-lo:
+
+```bash
+npm install react-input-mask
+```
+
+Em seguida, podemos importá-lo em nosso componente e utilizá-lo no input da seguinte forma:
+
+```javscript
+import React, { useState } from 'react';
+import InputMask from 'react-input-mask';
+
+function MyForm() {
+  const [cpf, setCpf] = useState('');
+
+  function handleCpfChange(event) {
+    setCpf(event.target.value);
+  }
+
+  return (
+    <form>
+      <label htmlFor="cpf">CPF:</label>
+      <InputMask
+        mask="999.999.999-99"
+        id="cpf"
+        value={cpf}
+        onChange={handleCpfChange}
+      />
+    </form>
+  );
+}
+```
+
+No exemplo acima, importamos o InputMask e utilizamos dentro do input de CPF. Definimos a propriedade mask com a máscara desejada e utilizamos as props value e onChange para lidar com o estado do componente.
+
+Dessa forma, o input será formatado de acordo com a máscara definida, e o valor digitado pelo usuário será atualizado no estado do componente.
+
+Se você já tem o campo e não quer mexer na sua estrutura, você pode envolver o seu <Form.Control ... /> com o componente InputMask, passando a máscara desejada como uma string de formatação. O código ficaria assim:
+
+```javascript
+<Form.Group className="mb-3" as={Col} controlId="formGridCPF">
+    <Form.Label>CPF</Form.Label>
+    <InputMask
+        mask="999.999.999-99"
+        maskChar="_"
+        value={individual_registration}
+        onChange={(e) => setIndividual_registration(e.target.value)}
+        ref={individual_registrationInputRef}
+    >
+        {() => (
+            <Form.Control
+                type="text"
+                size="sm"
+                placeholder="___.___.___-__"
+            />
+        )}
+    </InputMask>
+</Form.Group>
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
