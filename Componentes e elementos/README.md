@@ -4,6 +4,10 @@
 - [Componentes no modo `Named Exports`](#componentes-no-modo-named-exports "Componentes no modo Named Exports")
 - [`Formulário` responsívo com React-Bootstrap](#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
   - [`Máscara` nos campos](#m%C3%A1scara-nos-campos "Máscara nos campos")
+  - [Enviando um `formulário`](#enviando-um-formul%C3%A1rio "Enviando um formulário")
+  - [`Campos editáveis` no formulário dentro de um componente](#campos-edit%C3%A1veis-no-formul%C3%A1rio-dentro-de-um-componente "Campos editáveis no formulário dentro de um componente")
+  - [`Validar` os `campos vazios` do formulário](#validar-os-campos-vazios-do-formul%C3%A1rio "Validar os campos vazios do formulário")
+  - [`Resetar` campos do `formulário`](#resetar-campos-do-formul%C3%A1rio "Resetar campos do formulário")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
@@ -16,10 +20,6 @@
 - [`Espaços reservados` com React-Bootstrap](#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
 - [`Barra com animação` com React-Bootstrap](#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
 - [Incrementando `React-FontAwesome`](#incrementando-react-fontawesome "Incrementando React-FontAwesome")
-- [Enviando um `formulário`](#enviando-um-formul%C3%A1rio "Enviando um formulário")
-  - [`Campos editáveis` no formulário dentro de um componente](#campos-edit%C3%A1veis-no-formul%C3%A1rio-dentro-de-um-componente "Campos editáveis no formulário dentro de um componente")
-  - [`Validar` os `campos vazios` do formulário](#validar-os-campos-vazios-do-formul%C3%A1rio "Validar os campos vazios do formulário")
-  - [`Resetar` campos do `formulário`](#resetar-campos-do-formul%C3%A1rio "Resetar campos do formulário")
 
 ---
 
@@ -402,6 +402,257 @@ Da mesma forma, é utilizado para o campo de horas:
 ```
 
 Lembre-se de importar o componente InputMask e definir os estados e as referências de acordo com o campo de hora.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Enviando um formulário
+
+Importar o `useState` do React para armazenarmos os valores:
+
+```javascript
+import React, { useState } from 'react';
+```
+
+Dentro do seu componente, antes do retorno, devem ser declarados os valores, deixando-os vazios e, deverá ter também uma `Arrow Function` para interceptar o evento do Submit do formulário:
+
+> Quando não há `action=""` ou quando há mas não é definido nenhum valor, ao enviar o submit, o usuário será direcionado para a mesma tela do formulário (comportamento típico do form). A ação do envio deverá ser mapeada e interceptada.
+
+```javascript
+// Declaração dos valores dos campos.
+const [email, setEmail] = useState("");
+const [username, setUsername] = useState("");
+const [password, setPassword] = useState("");
+
+// Interceptar o evento de submit.
+const handleSubmitLogin = (e) => {
+    e.preventDefault();
+
+    // Exibir no console os valores obitidos nos campos.
+    console.log("submit", { email, username, password });
+}
+```
+
+> Na função, o (e) em `const handleSubmitLogin = (e) => {...` pode ser colocado (e), (ev) ou (event)!
+
+A função deverá ser colocada no `<form>...</form>` no evento `onSubmit={}`:
+
+```javascript
+<form onSubmit={handleSubmitLogin}>
+```
+
+Agora os geters e os seters deverão ser ligados nos campos:
+
+```javascript
+<input
+    type="email"
+    name="email"
+    id="email"
+    placeholder="Email principal"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+/>
+<input
+    type="text"
+    name="username"
+    id="username"
+    placeholder="Usuário"
+    value={username}
+    onChange={(e) => setUsername(e.target.value)}
+/>
+<input
+    type="password"
+    name="password"
+    id="password"
+    placeholder="Senha"
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
+/>
+```
+
+> O valor de leitura e a função que define o valor são colocados no `value={}` e no `onChange={}`.
+
+> Os valores desses campos estão na propriedade `.value` em `setPassword(e.target.value)`.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Campos editáveis no formulário dentro de um componente
+
+Como definir um valor em um campo onde ele se torna editável dentro de um componente?
+
+> Para definir um valor padrão para um campo `type="text"` em React, você pode definir o valor inicial do estado que irá controlar o valor do campo. Você pode usar o hook `useState` para definir o estado inicial do valor do campo, assim como a função para atualizá-lo quando necessário.
+
+> Aqui está um exemplo de como definir um valor padrão para um campo de texto usando o componente `Form.Control` do React Bootstrap:
+
+```javascript
+import { useState } from 'react';
+import { Form, Col } from 'react-bootstrap';
+
+function MyForm() {
+
+  // Declaração dos valores dos campos.
+  const [systemTitle, setSystemTitle] = useState('Meu título padrão');
+
+  return (
+    <Form>
+      <Form.Group className="mb-3" as={Col} controlId="formGridTitle">
+        <Form.Label>Título do sistema</Form.Label>
+        <Form.Control
+          type="text"
+          size="sm"
+          value={systemTitle}
+          onChange={(event) => setSystemTitle(event.target.value)}
+          placeholder="Um título..."
+        />
+      </Form.Group>
+    </Form>
+  );
+}
+```
+
+> Neste exemplo, o valor padrão do campo de texto é definido como `'Meu título padrão'` através do estado inicial `systemTitle`. Em seguida, o valor é controlado pelo estado usando a propriedade value do componente `Form.Control`.
+
+> A função `onChange` é usada para atualizar o valor do estado `systemTitle` sempre que o usuário digita algo no campo. Dessa forma, o valor do campo será atualizado conforme o usuário digita e pode ser usado em outras partes do seu código.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Validar os campos vazios do formulário
+
+Para verificar se os campos estão vazios, você pode usar uma declaração condicional `if` para verificar se as variáveis de estado correspondentes estão vazias ou não antes de enviar o formulário. Você pode fazer algo assim:
+
+Inportar o `useRef` do React.
+
+```javascript
+import React, { useState, useRef } from "react";
+```
+
+> Aqui está um exemplo de como você pode definir o foco nos campos de entrada criando referências para setar o focus.
+
+```javascript
+// Declaração dos valores dos campos.
+const [client_type, setClient_type] = useState("");
+const [full_name, setFull_name] = useState("");
+const [general_record, setGeneral_record] = useState("");
+const [individual_registration, setIndividual_registration] = useState("");
+
+// Referências para os campos de entrada para setar o focus.
+const client_typeInputRef = useRef(null);
+const full_nameInputRef = useRef(null);
+const general_recordInputRef = useRef(null);
+const individualRegistrationInputRef = useRef(null);
+
+// Interceptar o evento de submit.
+const handleSubmitCustomerRegistration = (e) => {
+  e.preventDefault();
+
+  // Verificar se o campo "Tipo de pessoa" está vazio.
+  if (client_type.trim() === '') {
+    client_typeInputRef.current.focus();
+    alert('Informe o campo "Tipo de pessoa"!');
+    return;
+  }
+  // Verificar se o campo "Nome completo" está vazio.
+  if (full_name.trim() === '') {
+    full_nameInputRef.current.focus();
+    alert('Informe o campo "Nome completo"!');
+    return;
+  }
+  // Verificar se o campo "RG" está vazio.
+  if (general_record.trim() === '') {
+    general_recordInputRef.current.focus();
+    alert('Informe o campo "RG"!');
+    return;
+  }
+  // Verificar se o campo "CPF" está vazio.
+  if (individual_registration.trim() === '') {
+    individual_registrationInputRef.current.focus();
+    alert('Informe o campo "CPF"!');
+    return;
+  }
+
+  // Envia os dados do formulário se todos os campos obrigatórios estiverem preenchidos.
+  console.log("submit: ", {client_type, full_name, general_record, individual_registration});
+}
+```
+
+Nos campos devem ser atribuídas suas referências `ref={full_nameInputRef}`:
+
+```javascript
+...
+<input
+  type="text"
+  value={full_name}
+  onChange={(e) => setFull_name(e.target.value)}
+  ref={full_nameInputRef}
+/>
+...
+```
+
+Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" está vazio usando o método `trim()` para remover os espaços em branco em ambos os lados da string e depois comparando com uma string vazia. Se o campo estiver vazio, exibirá um alerta e a função retornará, impedindo que o formulário seja enviado. Em seguida, é feita uma verificação semelhante para outros campos obrigatórios, dependendo do tipo de cliente selecionado. Se todos os campos obrigatórios estiverem preenchidos, o formulário será enviado e os valores dos campos serão exibidos no console.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Resetar campos do formulário
+
+Para resetar todos os campos do formulário, você pode utilizar o método `reset()` do objeto `HTMLFormElement`. Esse método faz com que todos os campos dentro do formulário sejam resetados para os valores iniciais.
+
+Assim, basta adicionar um evento de click no botão "Reset" e chamar o método `reset()` no objeto `form`, que representa o elemento `form` do seu formulário.
+
+>>> Resumo: Passo-a-passo
+
+1. Fora do componente, importe o `useRef`:
+
+```javascript
+import { useRef } from "react";
+```
+
+2. Abaixo das declaraçõs dos valores dos campos, declare a constante `formRef`:
+
+  ```javascript
+  // Referenciar o formulário.
+  const formRef = useRef();
+  ```
+3. Adicione a função `handleReset()`:
+
+  ```javascript
+  // Função Reset, para resetar os campos do formulário.
+  function handleReset() {
+    formRef.current.reset();
+    setName("");
+    setEmail("");
+  }
+  ```
+
+  > Obs.: Coloque os nomes dos campos como no exemplo:
+
+4. No formulário coloque a referência `ref={formRef}`:
+
+```javascript
+<form ref={formRef}>
+  ...
+</form>
+```
+
+5. Coloque a função que foi criada `handleReset()` em um `onClick={}` no `<button>...</button>`:
+
+  ```javascript
+  <button type="button" onClick={handleReset}>
+    Reset
+  </button>
+  ```
+
+Nesse exemplo, utilizamos a propriedade `ref` do elemento `form` para obter uma referência ao formulário. Em seguida, passamos essa referência para a propriedade `ref` do elemento `form` e utilizamos o método `reset()` nessa referência no evento de click do botão "Reset". Note que, para resetar os estados dos campos controlados pelo React (`name` e `email`), também precisamos setar esses valores para as strings vazias.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
@@ -927,257 +1178,6 @@ Elemento HTML:
 ```javascript
 <FontAwesomeIcon icon={faPrint} size="1x" />
 ```
-
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
-
----
-
-## Enviando um formulário
-
-Importar o `useState` do React para armazenarmos os valores:
-
-```javascript
-import React, { useState } from 'react';
-```
-
-Dentro do seu componente, antes do retorno, devem ser declarados os valores, deixando-os vazios e, deverá ter também uma `Arrow Function` para interceptar o evento do Submit do formulário:
-
-> Quando não há `action=""` ou quando há mas não é definido nenhum valor, ao enviar o submit, o usuário será direcionado para a mesma tela do formulário (comportamento típico do form). A ação do envio deverá ser mapeada e interceptada.
-
-```javascript
-// Declaração dos valores dos campos.
-const [email, setEmail] = useState("");
-const [username, setUsername] = useState("");
-const [password, setPassword] = useState("");
-
-// Interceptar o evento de submit.
-const handleSubmitLogin = (e) => {
-    e.preventDefault();
-
-    // Exibir no console os valores obitidos nos campos.
-    console.log("submit", { email, username, password });
-}
-```
-
-> Na função, o (e) em `const handleSubmitLogin = (e) => {...` pode ser colocado (e), (ev) ou (event)!
-
-A função deverá ser colocada no `<form>...</form>` no evento `onSubmit={}`:
-
-```javascript
-<form onSubmit={handleSubmitLogin}>
-```
-
-Agora os geters e os seters deverão ser ligados nos campos:
-
-```javascript
-<input
-    type="email"
-    name="email"
-    id="email"
-    placeholder="Email principal"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-/>
-<input
-    type="text"
-    name="username"
-    id="username"
-    placeholder="Usuário"
-    value={username}
-    onChange={(e) => setUsername(e.target.value)}
-/>
-<input
-    type="password"
-    name="password"
-    id="password"
-    placeholder="Senha"
-    value={password}
-    onChange={(e) => setPassword(e.target.value)}
-/>
-```
-
-> O valor de leitura e a função que define o valor são colocados no `value={}` e no `onChange={}`.
-
-> Os valores desses campos estão na propriedade `.value` em `setPassword(e.target.value)`.
-
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
-
----
-
-## Campos editáveis no formulário dentro de um componente
-
-Como definir um valor em um campo onde ele se torna editável dentro de um componente?
-
-> Para definir um valor padrão para um campo `type="text"` em React, você pode definir o valor inicial do estado que irá controlar o valor do campo. Você pode usar o hook `useState` para definir o estado inicial do valor do campo, assim como a função para atualizá-lo quando necessário.
-
-> Aqui está um exemplo de como definir um valor padrão para um campo de texto usando o componente `Form.Control` do React Bootstrap:
-
-```javascript
-import { useState } from 'react';
-import { Form, Col } from 'react-bootstrap';
-
-function MyForm() {
-
-  // Declaração dos valores dos campos.
-  const [systemTitle, setSystemTitle] = useState('Meu título padrão');
-
-  return (
-    <Form>
-      <Form.Group className="mb-3" as={Col} controlId="formGridTitle">
-        <Form.Label>Título do sistema</Form.Label>
-        <Form.Control
-          type="text"
-          size="sm"
-          value={systemTitle}
-          onChange={(event) => setSystemTitle(event.target.value)}
-          placeholder="Um título..."
-        />
-      </Form.Group>
-    </Form>
-  );
-}
-```
-
-> Neste exemplo, o valor padrão do campo de texto é definido como `'Meu título padrão'` através do estado inicial `systemTitle`. Em seguida, o valor é controlado pelo estado usando a propriedade value do componente `Form.Control`.
-
-> A função `onChange` é usada para atualizar o valor do estado `systemTitle` sempre que o usuário digita algo no campo. Dessa forma, o valor do campo será atualizado conforme o usuário digita e pode ser usado em outras partes do seu código.
-
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
-
----
-
-## Validar os campos vazios do formulário
-
-Para verificar se os campos estão vazios, você pode usar uma declaração condicional `if` para verificar se as variáveis de estado correspondentes estão vazias ou não antes de enviar o formulário. Você pode fazer algo assim:
-
-Inportar o `useRef` do React.
-
-```javascript
-import React, { useState, useRef } from "react";
-```
-
-> Aqui está um exemplo de como você pode definir o foco nos campos de entrada criando referências para setar o focus.
-
-```javascript
-// Declaração dos valores dos campos.
-const [client_type, setClient_type] = useState("");
-const [full_name, setFull_name] = useState("");
-const [general_record, setGeneral_record] = useState("");
-const [individual_registration, setIndividual_registration] = useState("");
-
-// Referências para os campos de entrada para setar o focus.
-const client_typeInputRef = useRef(null);
-const full_nameInputRef = useRef(null);
-const general_recordInputRef = useRef(null);
-const individualRegistrationInputRef = useRef(null);
-
-// Interceptar o evento de submit.
-const handleSubmitCustomerRegistration = (e) => {
-  e.preventDefault();
-
-  // Verificar se o campo "Tipo de pessoa" está vazio.
-  if (client_type.trim() === '') {
-    client_typeInputRef.current.focus();
-    alert('Informe o campo "Tipo de pessoa"!');
-    return;
-  }
-  // Verificar se o campo "Nome completo" está vazio.
-  if (full_name.trim() === '') {
-    full_nameInputRef.current.focus();
-    alert('Informe o campo "Nome completo"!');
-    return;
-  }
-  // Verificar se o campo "RG" está vazio.
-  if (general_record.trim() === '') {
-    general_recordInputRef.current.focus();
-    alert('Informe o campo "RG"!');
-    return;
-  }
-  // Verificar se o campo "CPF" está vazio.
-  if (individual_registration.trim() === '') {
-    individual_registrationInputRef.current.focus();
-    alert('Informe o campo "CPF"!');
-    return;
-  }
-
-  // Envia os dados do formulário se todos os campos obrigatórios estiverem preenchidos.
-  console.log("submit: ", {client_type, full_name, general_record, individual_registration});
-}
-```
-
-Nos campos devem ser atribuídas suas referências `ref={full_nameInputRef}`:
-
-```javascript
-...
-<input
-  type="text"
-  value={full_name}
-  onChange={(e) => setFull_name(e.target.value)}
-  ref={full_nameInputRef}
-/>
-...
-```
-
-Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" está vazio usando o método `trim()` para remover os espaços em branco em ambos os lados da string e depois comparando com uma string vazia. Se o campo estiver vazio, exibirá um alerta e a função retornará, impedindo que o formulário seja enviado. Em seguida, é feita uma verificação semelhante para outros campos obrigatórios, dependendo do tipo de cliente selecionado. Se todos os campos obrigatórios estiverem preenchidos, o formulário será enviado e os valores dos campos serão exibidos no console.
-
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
-
----
-
-## Resetar campos do formulário
-
-Para resetar todos os campos do formulário, você pode utilizar o método `reset()` do objeto `HTMLFormElement`. Esse método faz com que todos os campos dentro do formulário sejam resetados para os valores iniciais.
-
-Assim, basta adicionar um evento de click no botão "Reset" e chamar o método `reset()` no objeto `form`, que representa o elemento `form` do seu formulário.
-
->>> Resumo: Passo-a-passo
-
-1. Fora do componente, importe o `useRef`:
-
-```javascript
-import { useRef } from "react";
-```
-
-2. Abaixo das declaraçõs dos valores dos campos, declare a constante `formRef`:
-
-  ```javascript
-  // Referenciar o formulário.
-  const formRef = useRef();
-  ```
-3. Adicione a função `handleReset()`:
-
-  ```javascript
-  // Função Reset, para resetar os campos do formulário.
-  function handleReset() {
-    formRef.current.reset();
-    setName("");
-    setEmail("");
-  }
-  ```
-
-  > Obs.: Coloque os nomes dos campos como no exemplo:
-
-4. No formulário coloque a referência `ref={formRef}`:
-
-```javascript
-<form ref={formRef}>
-  ...
-</form>
-```
-
-5. Coloque a função que foi criada `handleReset()` em um `onClick={}` no `<button>...</button>`:
-
-  ```javascript
-  <button type="button" onClick={handleReset}>
-    Reset
-  </button>
-  ```
-
-Nesse exemplo, utilizamos a propriedade `ref` do elemento `form` para obter uma referência ao formulário. Em seguida, passamos essa referência para a propriedade `ref` do elemento `form` e utilizamos o método `reset()` nessa referência no evento de click do botão "Reset". Note que, para resetar os estados dos campos controlados pelo React (`name` e `email`), também precisamos setar esses valores para as strings vazias.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
