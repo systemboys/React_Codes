@@ -42,3 +42,6 @@ A variedade de exemplos de código na documentação "React Code" é uma grande 
 
 Em suma, a documentação "React Code" é uma ferramenta valiosa para programadores de ReactJS, pois oferece uma ampla gama de trechos de código prontos para uso, ajudando a economizar tempo e esforço na implementação de funcionalidades específicas.
 
+[(&uarr;) Subir](#react-codes "Subir para o topo")
+
+---
