@@ -3,7 +3,7 @@
 - [Componentes no modo `Default Exports`](#componentes-no-modo-default-exports "Componentes no modo Default Exports")
 - [Componentes no modo `Named Exports`](#componentes-no-modo-named-exports "Componentes no modo Named Exports")
 - [`Formulário` responsívo com React-Bootstrap](#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
-  - [`Máscara` nos campos](#link-do-texto-de-comeco "Máscara nos campos")
+  - [`Máscara` nos campos](#m%C3%A1scara-nos-campos "Máscara nos campos")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
@@ -290,7 +290,7 @@ npm install react-input-mask
 
 Em seguida, podemos importá-lo em nosso componente e utilizá-lo no input da seguinte forma:
 
-```javscript
+```javascript
 import React, { useState } from 'react';
 import InputMask from 'react-input-mask';
 
