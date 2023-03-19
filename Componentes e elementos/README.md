@@ -740,6 +740,45 @@ Para usar o componente CKEditor `personalizado` e passe as opções personalizad
 
 O valor da altura pode ser ajustado de acordo com suas necessidades.
 
+Você pode encontrar uma lista completa das opções disponíveis para a barra de ferramentas do CKEditor 5 no seguinte link da documentação oficial: https://ckeditor.com/docs/ckeditor5/latest/features/ui-language-toolbar.html#toolbar-configuration.
+
+Aqui está uma lista completa das opções disponíveis na barra de ferramentas:
+
+| Botão | Descrição |
+| :------------: | :------------ |
+| undo | Desfazer a última ação. |
+| redo | Refazer a última ação desfeita. |
+| bold | Negrito. |
+| italic | Itálico. |
+| underline | Sublinhado. |
+| strikethrough | Tachado. |
+| subscript | Sobrescrito. |
+| superscript | Sobrescrito. |
+| highlight | Destaque. |
+| fontColor | Cor do texto. |
+| fontBackgroundColor | Cor do fundo do texto. |
+| fontFamily | Família de fontes. |
+| fontSize | Tamanho da fonte. |
+| heading | Cabeçalho (H1, H2, H3, H4, H5, H6). |
+| alignment | Alinhamento (esquerda, centralizado, direita, justificado). |
+| indent | Aumentar o recuo. |
+| outdent | Diminuir o recuo. |
+| link | Link. |
+| imageInsert | Inserir imagem. |
+| blockQuote | Citação em bloco. |
+| list | Lista (bulleted, numbered). |
+| codeBlock | Bloco de código. |
+| code | Código inline. |
+| subscript | Sobrescrito. |
+| superscript | Sobrescrito. |
+| horizontalLine | Linha horizontal. |
+| table | Tabela. |
+| specialCharacters | Caracteres especiais. |
+| mathFormula | Fórmulas matemáticas. |
+| mediaEmbed | Mídia incorporada. |
+
+Observe que algumas dessas opções podem não estar disponíveis, dependendo de quais plugins do CKEditor 5 você incluiu em seu projeto.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
 
