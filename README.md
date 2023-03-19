@@ -12,6 +12,7 @@
 - [Funções](https://github.com/systemboys/React_Codes/tree/main/Fun%C3%A7%C3%B5es#react-codes--fun%C3%A7%C3%B5es "Funções")
 - [Banco de Dados](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#react-codes--banco-de-dados "Banco de Dados")
 - [Trabalhando com data e hora](https://github.com/systemboys/React_Codes/tree/main/Trabalhando%20com%20data%20e%20hora#react-codes--trabalhando-com-data-e-hora "Trabalhando com data e hora")
+- [Sobre o React Code](#sobre-o-react-code "Sobre o React Code")
 
 ### Componentes
 
@@ -31,4 +32,12 @@
 ### Projetos
 
 - [Projetos desenvolvidos em React](https://github.com/systemboys/React_Codes/tree/main/Projetos#react-codes--projetos-desenvolvidos-em-react "Projetos desenvolvidos em React")
+
+# Sobre o React Code
+
+A documentação "React Code" é uma fonte valiosa de trechos de código prontos para serem utilizados pelos programadores em seus projetos ReactJS. Esta documentação pode ser muito útil para aqueles que precisam de exemplos de código em React para implementar determinadas funcionalidades ou resolver problemas específicos. Ao utilizar essa documentação, os programadores podem economizar tempo e esforço ao não precisarem escrever o código do zero, além de aumentar sua eficiência e produtividade.
+
+A variedade de exemplos de código na documentação "React Code" é uma grande vantagem, pois abrange desde tarefas simples até desafios mais complexos. Isso torna a documentação útil para desenvolvedores em diferentes níveis de experiência e habilidade, desde iniciantes até os mais experientes. Além disso, a disponibilidade de vários exemplos para cada recurso ou funcionalidade pode ajudar os desenvolvedores a entender melhor o uso dessas ferramentas e recursos.
+
+Em suma, a documentação "React Code" é uma ferramenta valiosa para programadores de ReactJS, pois oferece uma ampla gama de trechos de código prontos para uso, ajudando a economizar tempo e esforço na implementação de funcionalidades específicas.
 
