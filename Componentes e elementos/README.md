@@ -8,6 +8,7 @@
   - [`Campos editáveis` no formulário dentro de um componente](#campos-edit%C3%A1veis-no-formul%C3%A1rio-dentro-de-um-componente "Campos editáveis no formulário dentro de um componente")
   - [`Validar` os `campos vazios` do formulário](#validar-os-campos-vazios-do-formul%C3%A1rio "Validar os campos vazios do formulário")
   - [`Resetar` campos do `formulário`](#resetar-campos-do-formul%C3%A1rio "Resetar campos do formulário")
+  - [Instalar e utilizar o `CKEditor 5` no ReactJS](#link-do-texto-de-comeco "Instalar e utilizar o CKEditor 5 no ReactJS")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
@@ -653,6 +654,58 @@ import { useRef } from "react";
   ```
 
 Nesse exemplo, utilizamos a propriedade `ref` do elemento `form` para obter uma referência ao formulário. Em seguida, passamos essa referência para a propriedade `ref` do elemento `form` e utilizamos o método `reset()` nessa referência no evento de click do botão "Reset". Note que, para resetar os estados dos campos controlados pelo React (`name` e `email`), também precisamos setar esses valores para as strings vazias.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Instalar e utilizar o "CKEditor 5" no ReactJS
+
+1. Instale o CKEditor 5 via npm:
+
+```bash
+npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
+```
+
+> Se houver erros de conflito, tente o comando acima com o uso forçado `--force`!
+
+2. Importe o componente CKEditor:
+
+```javascript
+// CKEditor
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+```
+
+Se você já tem o campo de texto, como por exemplo:
+
+```javascript
+<Form.Group className="mb-3" controlId="formGridAboutSystem">
+    <Form.Label>Sobore o sistema</Form.Label>
+    <Form.Control as="textarea" size="sm" rows={8} defaultValue={listCompanySystem[0]?.about_system} placeholder="Escreva algo sobre o sistema..." />
+</Form.Group>
+```
+
+3. Substitua o campo Form.Control que você deseja usar o CKEditor pelo componente CKEditor. Para isso, você pode remover a propriedade as="textarea" e adicionar a propriedade editor={ClassicEditor}. Além disso, você pode definir a propriedade data com o valor do texto do campo:
+
+```javascript
+<Form.Group className="mb-3" controlId="formGridAboutSystem">
+    <Form.Label>Sobore o sistema</Form.Label>
+    <CKEditor
+        editor={ClassicEditor}
+        data={listCompanySystem[0]?.about_system}
+        onChange={(event, editor) => {
+        const data = editor.getData();
+            // você pode atualizar o estado com o novo valor aqui
+        }}
+    />
+</Form.Group>
+```
+
+No método onChange do CKEditor, você pode atualizar o estado com o novo valor inserido no editor. Por padrão, o CKEditor retorna o conteúdo formatado em HTML, mas você pode usar o método editor.getData() para obter o conteúdo em um formato diferente.
+
+> Com esses passos, você deve conseguir utilizar o CKEditor 5 no seu componente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
