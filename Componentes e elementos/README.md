@@ -323,24 +323,85 @@ Se você já tem o campo e não quer mexer na sua estrutura, você pode envolver
 
 ```javascript
 <Form.Group className="mb-3" as={Col} controlId="formGridCPF">
-    <Form.Label>CPF</Form.Label>
-    <InputMask
-        mask="999.999.999-99"
-        maskChar="_"
-        value={individual_registration}
-        onChange={(e) => setIndividual_registration(e.target.value)}
-        ref={individual_registrationInputRef}
-    >
-        {() => (
-            <Form.Control
-                type="text"
-                size="sm"
-                placeholder="___.___.___-__"
-            />
-        )}
-    </InputMask>
+  <Form.Label>CPF</Form.Label>
+  <InputMask
+    mask="999.999.999-99"
+    maskChar="_"
+    value={individual_registration}
+    onChange={(e) => setIndividual_registration(e.target.value)}
+    ref={individual_registrationInputRef}
+  >
+    {() => (
+      <Form.Control
+        type="text"
+        size="sm"
+        placeholder="___.___.___-__"
+      />
+    )}
+  </InputMask>
 </Form.Group>
 ```
+
+Você pode usar o react-input-mask para adicionar uma máscara ao campo de data. Por exemplo, se você quiser que o campo de data seja formatado como dd/mm/yyyy, você pode usar a seguinte sintaxe:
+
+```javascript
+<InputMask
+  mask="99/99/9999"
+  placeholder="dd/mm/yyyy"
+  value={date}
+  onChange={(e) => setDate(e.target.value)}
+/>
+```
+
+Nesse caso, o campo de entrada aceitará somente números e preencherá automaticamente com barras. Lembre-se de que você ainda precisará validar a entrada do usuário para garantir que seja uma data válida.
+
+Basta substituir o valor da propriedade mask para o valor da máscara de data desejada e atualizar a propriedade placeholder para exibir a máscara de data correspondente. Aqui está um exemplo:
+
+```javascript
+<Form.Group className="mb-3" as={Col} controlId="formGridDataRegistro">
+  <Form.Label>Data/Regist.</Form.Label>
+  <InputMask
+    mask="99/99/9999"
+    maskChar="_"
+    value={registered_date}
+    onChange={(e) => setRegistered_date(e.target.value)}
+    ref={registered_dateInputRef}
+  >
+    {() => (
+      <Form.Control
+        type="text"
+        size="sm"
+        placeholder="__/__/____"
+      />
+    )}
+  </InputMask>
+</Form.Group>
+```
+
+Da mesma forma, é utilizado para o campo de horas:
+
+```javascript
+<Form.Group className="mb-3" as={Col} controlId="formGridHoraRegistro">
+  <Form.Label>Hora/Regist.</Form.Label>
+  <InputMask
+    mask="99:99:99"
+    maskChar="_"
+    value={registered_time}
+    onChange={(e) => setRegistered_time(e.target.value)}
+    ref={registered_timeInputRef}
+  >
+    {() => (
+      <Form.Control
+        type="text"
+        size="sm"
+        placeholder="__:__:__"
+      />
+    )}
+  </InputMask>
+</Form.Group>
+```
+
+Lembre-se de importar o componente InputMask e definir os estados e as referências de acordo com o campo de hora.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
