@@ -4,6 +4,8 @@
 
 ## Sumário
 
+- [Sobre o React Code](#sobre-o-react-code "Sobre o React Code")
+
 ### Funcionalidades
 
 - [Instalações](https://github.com/systemboys/React_Codes/tree/main/Instala%C3%A7%C3%B5es#react-codes--instala%C3%A7%C3%B5es "Instalações")
@@ -12,7 +14,6 @@
 - [Funções](https://github.com/systemboys/React_Codes/tree/main/Fun%C3%A7%C3%B5es#react-codes--fun%C3%A7%C3%B5es "Funções")
 - [Banco de Dados](https://github.com/systemboys/React_Codes/tree/main/Banco%20de%20Dados#react-codes--banco-de-dados "Banco de Dados")
 - [Trabalhando com data e hora](https://github.com/systemboys/React_Codes/tree/main/Trabalhando%20com%20data%20e%20hora#react-codes--trabalhando-com-data-e-hora "Trabalhando com data e hora")
-- [Sobre o React Code](#sobre-o-react-code "Sobre o React Code")
 
 ### Componentes
 
