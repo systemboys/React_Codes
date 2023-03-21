@@ -7,6 +7,10 @@
     - [Filtrar itens mistos de um array](#filtrar-itens-mistos-de-um-array "Filtrar itens mistos de um array")
     - [Filtrar os números ímpares de um array](#filtrar-os-n%C3%BAmeros-%C3%ADmpares-de-um-array "Filtrar os números ímpares de um array")
     - [Retornar o index da idade maior que 30 anos](#retornar-o-index-da-idade-maior-que-30-anos "Retornar o index da idade maior que 30 anos")
+- [Array `map()`, `filter()` e `reduce()`](#link-do-texto-de-comeco "Array map(), filter() e reduce()")
+    - [Array map()](#link-do-texto-de-comeco "Array map()")
+    - [Array filter()](#link-do-texto-de-comeco "Array filter()")
+    - [Array Reduce()](#link-do-texto-de-comeco "Array Reduce()")
 
 ---
 ## Obter dados de um Array com `map()`
@@ -173,6 +177,160 @@ ages.findIndex((n) => n > 30)
 ```
 
 > Analisando que no array, o 18 está na posição "0" e o 68 na "6", o `findIndex()` está obtendo o primeiro da lista que é maior que 30, no caso é o valor que está na posição 2 que é o "32". Obs.: O 68 também é maior que 30, mas não é o primeiro no caso.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
+
+---
+
+# Array map(), filter() e reduce()
+
+Quem é que nunca precisou manipular arrays? Extrair somente os IDs de uma lista de produtos, ou obter dessa lista, somente os produtos de uma determinada categoria, ou então calcular o valor total dos produtos dessa lista. Nesse exemplo veremos três funções que resolvem esses problemas de forma simples.
+
+## Array map()
+
+O map() permite que você crie um novo array utilizando informações de um array já existente. No nosso caso, o nosso array já existente é o "produtos", e o novo array que será criado será o "ids":
+
+```javascript
+const produtos = [
+  { id: 1, name: 'detergente', valor: 2.00, categoria: 'limpeza' },
+  { id: 2, name: 'amaciante', valor: 6.50, categoria: 'limpeza' },
+  { id: 3, name: 'pão', valor: 2.00, categoria: 'alimento' },
+  { id: 4, name: 'queijo', valor: 7.00, categoria: 'alimento' },
+  { id: 5, name: 'leite', valor: 2.20, categoria: 'alimento' }
+];
+
+// Passando a função de callback.
+const ids = produtos.map(produto => produto.id);
+const nomes = produtos.map(produto => produto.name);
+
+// Teste 1.
+console.log(ids); // Retornando [1, 2, 3, 4, 5].
+
+// Teste 2.
+console.log(nomes); // Retornando ["detergente", "amaciante", "pão", "queijo", "leite"]
+```
+
+Para o map() funcionar, foi passado para o map() uma função callback, essa função recebe cada produto retornando o resultado, o valor que vai no novo array.
+
+> Utilizando o map(), você consegue criar um novo array a partir do array original contendo informações ou transformações dessas informações.
+
+Dicamos que você tem um array de números e que você quer duplicá-los criando um novo array com os resultados.
+
+```javascript
+const numeros = [1, 2, 3, 4, 5];
+
+// Duplicar.
+const duplicados = numeros.map(x => x * 2);
+
+// Teste.
+console.log(duplicados); // Retornando [2, 4, 6, 8, 10].
+```
+
+> Os valores do primeiro array foram transformados e seu resultado foi para um novo array criado pelo map(). Então, o callback que é passado para o map() recebe cada item e retorna o valor que você quer no array final.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
+
+## Array filter()
+
+O array filter() é um conceito um pouco mais simples de entender. Você cria um novo array a partir de outro array filtrando fora alguns itens. Será imposta uma regra para o map() e sendo respeitada determinado parâmetro.
+
+Dado o array `produtos`, e queremos que vá para o novo array apenas os alimentos. Veja o código abaixo:
+
+```javascript
+const produtos = [
+  { id: 1, name: 'detergente', valor: 2.00, categoria: 'limpeza' },
+  { id: 2, name: 'amaciante', valor: 6.50, categoria: 'limpeza' },
+  { id: 3, name: 'pão', valor: 2.00, categoria: 'alimento' },
+  { id: 4, name: 'queijo', valor: 7.00, categoria: 'alimento' },
+  { id: 5, name: 'leite', valor: 2.20, categoria: 'alimento' }
+];
+
+const alimentos = produtos.filter(p => p.categoria === 'alimento');
+
+// Teste 1.
+console.log(alimentos); // Retornando [Object, Object, Object].
+
+/* Teste 1 retornando os objetos completos de cada um.
+[Object, Object, Object]
+  0: Object
+    id: 3
+    name: "pão"
+    valur: 2
+    categoria: "alimento"
+  1: Object
+    id: 4
+    name: "queijo"
+    valur: 7
+    categoria: "alimento"
+  2: Object
+    id: 3
+    name: "leite"
+    valur: 2.2
+    categoria: "alimento"
+*/
+
+// Teste 2.
+console.log(alimentos.map(a => a.nome)); // Retornando ["pão", "queijo", "leite"].
+```
+
+No "Teste 1" `console.log(alimentos)` Foi declarada a constante `alimentos` com a função que filtra `p` (digamos que `p` é produtos), no caso, algo que tenha um valor que seja convertido em boleano (`true` ou `false`). O retorno do console.log é `[Object, Object, Object]`.
+
+No "Teste 2" `console.log(alimentos.map(a => a.nome))` é combinado um array com o outro array. Digamos que você queira apenas os nomes dos alimentos ao invés do objeto completo. O retorno do console.log é `["pão", "queijo", "leite"]`.
+
+No "Teste 3" `` se você quiser combinar o `filter()` com o `map()` é possível, basta colocar o map() na declaração da constante como no exemplo abaixo:
+
+```javascript
+const alimentos = produtos
+    .filter(p => p.categoria === 'alimento');
+    .map(a => a.nome);
+```
+
+> Isso é interessante, você pode combinar uma função com a outra e cada uma faz uma coisa específica. Os métodos podem ser colocados um abaixo do outro.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
+
+## Array Reduce
+
+Com o Reduce você pode gerar um único valor atravéz de uma coleção (uma lista, um array ...).
+
+Digamos que você tenha um array de números, e que você quer somar todos os valores de uma coluna no array obtendo um valor total. Com o Reduce isso é possível.
+
+Veja código abaixo, como o Reduce funciona:
+
+```javascript
+// Definida a constante com o seguinte array:
+const numeros = [1, 2, 3, 4];
+
+// Vamos somar todos os números dentro do array:
+const total = numeros.reduce((acc, numero) => acc + numero, 0);
+
+// Teste.
+console.log(total); // Retornando "10".
+```
+
+> O reduce, na primeira vez que ele intera com o array, ele pega o "1" e o "2" do array, o primeiro elemento vai ser o acumulado e o segundo vai se chamar "numero", ele retorna o acumulado mais o numero, no retorno do acumulado mais o numero ele soma o primeiro e o segundo elemento que no caso é o "1" e o "2" retornando "3", após isso, ele busca o próximo item do array que é o "3", o resultado da rodada anterior é "6", soma com o próximo trazendo o resultado "10". O zero "0" no final da linha na constante "total", é uma opção de passar um valor inicial para o array para ser o primeiro valor acumulado e o numero vai ser o primeiro item do array.
+
+Agora utilizando o array de "produtos" para somar o valor total deles:
+
+```javascript
+const produtos = [
+  { id: 1, name: 'detergente', valor: 2.00, categoria: 'limpeza' },
+  { id: 2, name: 'amaciante', valor: 6.50, categoria: 'limpeza' },
+  { id: 3, name: 'pão', valor: 2.00, categoria: 'alimento' },
+  { id: 4, name: 'queijo', valor: 7.00, categoria: 'alimento' },
+  { id: 5, name: 'leite', valor: 2.20, categoria: 'alimento' }
+];
+
+const total = produtos.reduce((acc, p) => acc + p.valor, 0);
+
+// Teste.
+console.log(total);
+```
+
+> Sempre a cada rodada que acontece do reduce, o valor que você está retornando vai se tornar o próximo acumulado e ele pega o próximo do array.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
