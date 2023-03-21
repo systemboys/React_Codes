@@ -7,10 +7,10 @@
     - [Filtrar itens mistos de um array](#filtrar-itens-mistos-de-um-array "Filtrar itens mistos de um array")
     - [Filtrar os números ímpares de um array](#filtrar-os-n%C3%BAmeros-%C3%ADmpares-de-um-array "Filtrar os números ímpares de um array")
     - [Retornar o index da idade maior que 30 anos](#retornar-o-index-da-idade-maior-que-30-anos "Retornar o index da idade maior que 30 anos")
-- [Array `map()`, `filter()` e `reduce()`](#link-do-texto-de-comeco "Array map(), filter() e reduce()")
-    - [Array map()](#link-do-texto-de-comeco "Array map()")
-    - [Array filter()](#link-do-texto-de-comeco "Array filter()")
-    - [Array Reduce()](#link-do-texto-de-comeco "Array Reduce()")
+- [Array `map()`, `filter()` e `reduce()`](#array-map-filter-e-reduce "Array map(), filter() e reduce()")
+    - [Array map()](#array-map "Array map()")
+    - [Array filter()](#array-filter "Array filter()")
+    - [Array Reduce()](#array-reduce "Array Reduce()")
 
 ---
 ## Obter dados de um Array com `map()`
