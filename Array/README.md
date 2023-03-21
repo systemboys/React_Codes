@@ -4,9 +4,9 @@
 - [Executar Array dentro do retorno de um componente](#executar-array-dentro-do-retorno-de-um-componente "Executar Array dentro do retorno de um componente")
 - [Mapeamento direto no map()](#mapeamento-direto-no-map "Mapeamento direto no map()")
 - [Pequenos macetes de Array](#pequenos-macetes-de-array "Pequenos macetes de Array")
-    - [Filtrar itens mistos de um array](#link-do-texto-de-comeco "Filtrar itens mistos de um array")
-    - [Filtrar os números ímpares de um array](#link-do-texto-de-comeco "Filtrar os números ímpares de um array")
-    - [Retornar o index da idade maior que 30 anos](#link-do-texto-de-comeco "Retornar o index da idade maior que 30 anos")
+    - [Filtrar itens mistos de um array](#filtrar-itens-mistos-de-um-array "Filtrar itens mistos de um array")
+    - [Filtrar os números ímpares de um array](#filtrar-os-n%C3%BAmeros-%C3%ADmpares-de-um-array "Filtrar os números ímpares de um array")
+    - [Retornar o index da idade maior que 30 anos](#retornar-o-index-da-idade-maior-que-30-anos "Retornar o index da idade maior que 30 anos")
 
 ---
 ## Obter dados de um Array com `map()`
