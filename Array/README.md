@@ -3,6 +3,10 @@
 - [Obter dados de um `Array` com o `map()`](#obter-dados-de-um-array-com-map "Obter dados de um Array com map()")
 - [Executar Array dentro do retorno de um componente](#executar-array-dentro-do-retorno-de-um-componente "Executar Array dentro do retorno de um componente")
 - [Mapeamento direto no map()](#mapeamento-direto-no-map "Mapeamento direto no map()")
+- [Pequenos macetes de Array](#pequenos-macetes-de-array "Pequenos macetes de Array")
+    - [Filtrar itens mistos de um array](#link-do-texto-de-comeco "Filtrar itens mistos de um array")
+    - [Filtrar os números ímpares de um array](#link-do-texto-de-comeco "Filtrar os números ímpares de um array")
+    - [Retornar o index da idade maior que 30 anos](#link-do-texto-de-comeco "Retornar o index da idade maior que 30 anos")
 
 ---
 ## Obter dados de um Array com `map()`
@@ -110,6 +114,65 @@ function MeuComponente() {
     );
 }
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
+
+---
+
+# Pequenos macetes de Array
+
+## Filtrar itens mistos de um array
+
+Imagina que você tem um array e ele contenha informações mistas, números e strings, mas você quer filtrar para obter apenas os números. Veja o código exemplo:
+
+```javascript
+const array = ['1', 2, 'three', 7];
+
+console.log(array.filter(Number.isInteger));
+
+// Resultado: Array [ 2, 7 ]
+```
+
+> Entre todos os itens dentro do array, será filtrado apenas os números deixando de fora do novo array as strings.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
+
+---
+
+## Filtrar os números ímpares de um array
+
+Você tem um array contendo números e você precisa filtrar apenas os ímpares, veja abaixo:
+
+```javascript
+const array2 = [1, 2, 3, 4, 5, 6, 7]; 
+
+console.log(array2.filter((number) => number % 2 !== 0));
+
+// Resultado: Array(4) [ 1, 3, 5, 7 ]
+```
+
+> O método `filter` retornou um novo array com os elementos que passaram no teste implantados na função fornecida.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
+
+---
+
+## Retornar o index da idade maior que 30 anos
+
+No exemplo, tratasse de obter apenas o index maior que 30 anos:
+
+```javascript
+const ages = [18, 20, 32, 23, 18, 17, 68];
+
+ages.findIndex((n) => n > 30)
+
+// Resultado: 2
+```
+
+> Analisando que no array, o 18 está na posição "0" e o 68 na "6", o `findIndex()` está obtendo o primeiro da lista que é maior que 30, no caso é o valor que está na posição 2 que é o "32". Obs.: O 68 também é maior que 30, mas não é o primeiro no caso.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
