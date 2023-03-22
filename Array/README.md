@@ -327,7 +327,7 @@ const produtos = [
 const total = produtos.reduce((acc, p) => acc + p.valor, 0);
 
 // Teste.
-console.log(total);
+console.log(total); // Retornando "39.2".
 ```
 
 > Sempre a cada rodada que acontece do reduce, o valor que você está retornando vai se tornar o próximo acumulado e ele pega o próximo do array.
