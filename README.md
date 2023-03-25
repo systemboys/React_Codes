@@ -8,7 +8,7 @@
 
 ### Frameworks
 
-- [Next.JS](https://link.com "Next.JS")
+- [Next.JS](https://github.com/systemboys/React_Codes/tree/main/Frameworks/NextJS#react-codes--nextjs "Next.JS")
 
 ### Tecnologia de contêiner
 
