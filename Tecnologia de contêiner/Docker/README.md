@@ -2,7 +2,24 @@
 
 [![Docker](https://github.com/systemboys/React_Codes/raw/main/Tecnologia%20de%20cont%C3%AAiner/Docker/images/Docker.png "Docker")](https://github.com/systemboys/React_Codes/raw/main/Tecnologia%20de%20cont%C3%AAiner/Docker/images/Docker.png "Docker")
 
+- [Criar um Docker container](#criar-um-docker-container "Criar um Docker container")
 - [Sobre Docker](#sobre-docker "Sobre Docker")
+
+---
+
+## Criar um Docker container
+
+Para criar um Docker container, você precisa seguir os seguintes passos:
+
+1. Escolha uma imagem base: o Docker Hub é um repositório de imagens Docker prontas para uso. Você pode pesquisar uma imagem que atenda às suas necessidades e usá-la como base para criar seu container. Por exemplo, se você precisa de um ambiente Node.js, pode escolher uma imagem do Node.js no [Docker Hub](https://hub.docker.com/ "Docker Hub").
+
+2. Escreva um arquivo Dockerfile: um Dockerfile é um arquivo de configuração que descreve como o seu container deve ser construído. Ele inclui comandos para instalar software, copiar arquivos e configurar o ambiente.
+
+3. Construa a imagem do Docker: depois de escrever o Dockerfile, você pode construir a imagem do Docker usando o comando docker build. Esse comando lê o Dockerfile e cria uma imagem com base nas instruções contidas nele.
+
+4. Execute o container do Docker: uma vez que a imagem do Docker tenha sido criada, você pode executar o container usando o comando docker run. Esse comando inicia o container e executa o aplicativo dentro dele.
+
+Lembre-se que esses são apenas os passos básicos para criar um Docker container. Dependendo do seu caso de uso específico, pode ser necessário configurar a rede, expor portas, definir variáveis de ambiente e outras configurações.
 
 ---
 
