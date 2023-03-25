@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Docker
 
-[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
+[![Docker](https://github.com/systemboys/React_Codes/raw/main/Tecnologia%20de%20cont%C3%AAiner/Docker/images/Docker.png "Docker")](https://github.com/systemboys/React_Codes/raw/main/Tecnologia%20de%20cont%C3%AAiner/Docker/images/Docker.png "Docker")
 
 - [Link do Texto de começo](#link-do-texto-de-comeco "Link do Texto de começo")
 
@@ -13,6 +13,6 @@ O Docker é uma plataforma de código aberto que permite criar, implantar e gere
 > Docker é uma ferramenta de virtualização de aplicativos, portanto, pode ser classificada como uma tecnologia de virtualização. Também pode ser classificada como uma tecnologia de contêiner, já que os contêineres são a unidade básica de implantação em Docker. Além disso, o Docker é frequentemente usado em desenvolvimento de software, implantação de aplicativos em nuvem, gerenciamento de infraestrutura e automação de TI, então também pode ser classificado nessas categorias.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#docker "Subir para o topo")
+[(&uarr;) Subir](#react-codes--docker "Subir para o topo")
 
 ---
