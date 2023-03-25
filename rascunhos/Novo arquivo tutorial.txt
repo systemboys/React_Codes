@@ -1,8 +1,8 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Assunto
 
-[![Imagem de exemplo](https://site.com/img/exemplo.png "Imagem de exemplo")](http://link.com "Imagem de exemplo")
+[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
 
-- [Link](https://site.com#anchor-link "Link")
+- [Link 1](https://site.com#anchor-link-1 "Link 1")
 
 ---
 
