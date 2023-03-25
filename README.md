@@ -6,6 +6,14 @@
 
 - [Sobre o React Code](#sobre-o-react-code "Sobre o React Code")
 
+### Frameworks
+
+- [Next.JS](https://link.com "Next.JS")
+
+### Tecnologia de contêiner
+
+- [Docker](https://link.com "Docker")
+
 ### Funcionalidades
 
 - [Instalações](https://github.com/systemboys/React_Codes/tree/main/Instala%C3%A7%C3%B5es#react-codes--instala%C3%A7%C3%B5es "Instalações")
