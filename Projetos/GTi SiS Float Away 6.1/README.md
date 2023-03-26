@@ -8,6 +8,7 @@
 - [Tamanho e posição da janela](#tamanho-e-posi%C3%A7%C3%A3o-da-janela "Tamanho e posição da janela")
 - [Centralizar a janela](#centralizar-a-janela "Centralizar a janela")
 - [Abrir janelas a partir de outras janelas do Fenestra](#abrir-janelas-a-partir-de-outras-janelas-do-fenestra "Abrir janelas a partir de outras janelas do Fenestra")
+- [`Filtrar` o `nível de usuário` para exibir os `ícones do Desktop`](#filtrar-o-nível-de-usuário-para-exibir-os-ícones-do-desktop "Filtrar o nível de usuário para exibir os ícones do Desktop")
 
 ---
 
@@ -397,6 +398,76 @@ onClick={() => props.fenestra.open({  title: "Nova Janela", content: ({ fenestra
 ```
 
 > [Luis Alfredo Galiza] Espero ter ajudado. Até mais.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+
+---
+
+## Filtrar o nível de usuário para exibir os ícones do Desktop
+
+Para filtrar o nível de usuário e exibir ou não os ícones de acordo com esse nível, você pode utilizar a estrutura condicional `if` dentro da array de ícones, verificando o valor de `userLevel`.
+
+Por exemplo, você pode envolver o ícone de "Configurações" em um bloco `if (userLevel === 1)` para exibi-lo apenas para usuários com nível igual a 1. Veja como ficaria o código:
+
+```javascript
+const userLevel = 0;
+return (
+  <Desktop
+    icons={
+
+      [
+        ({ fenestra }) =>
+          userLevel === 1 &&
+          <Icon title="Configurações"
+            icon={<FontAwesomeIcon icon={faGear} size="3x" />}
+            onClick={() => fenestra.open({
+              title: "Configurações",
+              left: (window.innerWidth - 990) / 2,
+              top: (window.innerHeight - 520) / 2,
+              width: 990,
+              height: 520,
+              content: ({ fenestra }) =>
+                <SettingsForTheSystem fenestra={fenestra} />
+            })}
+          />,
+
+        ({ fenestra }) =>
+          <Icon title="Usuário"
+            icon={<FontAwesomeIcon icon={faUser} size="3x" />}
+            onClick={() => fenestra.open({
+              title: "Usuário",
+              left: (window.innerWidth - 990) / 2,
+              top: (window.innerHeight - 520) / 2,
+              width: 990,
+              height: 520,
+              content: ({ fenestra }) =>
+                <ListUsers fenestra={fenestra} />
+            })}
+          />,
+
+        ({ fenestra }) =>
+          <Icon title="Clientes"
+            icon={<FontAwesomeIcon icon={faAddressCard} size="3x" />}
+            onClick={() => fenestra.open({
+              title: "Clientes",
+              left: (window.innerWidth - 990) / 2,
+              top: (window.innerHeight - 520) / 2,
+              width: 990,
+              height: 520,
+              content: ({ fenestra }) =>
+                <CustomersList fenestra={fenestra} />
+            })}
+          />
+
+      ].filter(Boolean) // Filtra elementos "falsy" do array
+
+    }
+  />
+)
+```
+
+Nesse exemplo, envolvemos a opção de ícone de Configurações em uma verificação condicional que só a exibe se o nível do usuário for 1. Além disso, adicionamos `.filter(Boolean)` ao final do array de ícones para filtrar todos os elementos "falsy" do array, o que inclui a opção de ícone de Configurações quando o nível do usuário é 0.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
