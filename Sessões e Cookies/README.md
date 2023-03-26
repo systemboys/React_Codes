@@ -51,6 +51,32 @@ console.log(nome); // Imprime 'João'.
 
 > É importante lembrar que cookies e sessões são vulneráveis a ataques de roubo de informações e podem expor dados sensíveis do usuário. Por isso, é recomendável criptografar ou codificar esses dados antes de armazená-los no navegador ou no servidor.
 
+Para apagar uma sessão ou um cookie, você pode utilizar a função `removeItem` do objeto `localStorage`. Por exemplo:
+
+Para remover um cookie:
+
+```javascript
+localStorage.removeItem('nomeDoCookie');
+```
+
+Para remover uma sessão:
+
+```javascript
+localStorage.removeItem('nomeDaSessao');
+```
+
+> Observe que, para remover tanto um cookie quanto uma sessão, é preciso passar o mesmo nome que foi utilizado para criar o cookie ou sessão.
+
+Para destruir todos os cookies ou sessões de uma vez, você pode utilizar o método `clear` do objeto `localStorage`.
+
+Por exemplo:
+
+```javascript
+localStorage.clear();
+```
+
+> Observe que este método irá remover todos os itens armazenados no `localStorage`, incluindo todas as sessões e cookies que foram criados pelo seu aplicativo. Por isso, é importante tomar cuidado ao utilizar esse método para não remover dados importantes ou que outros aplicativos estejam utilizando.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--sess%C3%B5es-e-cookies "Subir para o topo")
 
