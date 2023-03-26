@@ -802,19 +802,17 @@ async function handleSubmitDrivers(e) {
   // Validações ...
 
   // Dados do formulário.
-  const data = { name, cpf, rg, admissao, sexo, cnh, valCnh, orgEmissCnh, endereco, bairro, uf, cidade, status };
+  const data = { campo1, campo2, campo3 };
 
   // Chamada de API assíncrona - Envio dos dados para a API.
   try {
-    await Api.post('motoristas', data);
+    await Api.post('yourRoute', data);
   } catch (error) {
     alert('Ocorreu um erro ao enviar os dados. Tente novamente mais tarde.');
     console.error(error);
   }
 }
 ```
-
-> Note que adicionei o `console.error(error);` dentro do bloco `catch` para exibir mais detalhes sobre o erro na console do navegador, caso ocorra algum problema na chamada da API. Além disso, removi a duplicação do campo `valCnh` na criação do objeto `data`.
 
 O código apresentado é uma chamada de API assíncrona que tenta enviar dados (data) para um servidor usando o método HTTP POST, por meio da biblioteca Api. O objetivo é inserir um novo registro na coleção de motoristas no servidor.
 
