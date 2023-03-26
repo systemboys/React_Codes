@@ -1,0 +1,57 @@
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Sessões e Cookies
+
+[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+
+- [Sessões e Cookies com JavaScript](#sessões-e-cookies-com-javascript "Sessões e Cookies com JavaScript")
+
+---
+
+## Sessões e Cookies com JavaScript
+
+Para criar uma sessão, você pode usar o objeto `sessionStorage` do JavaScript. Ele é um objeto global do navegador que armazena dados de sessão na memória enquanto a página permanece aberta. Os dados armazenados nesse objeto são acessíveis apenas pela mesma página ou outras páginas abertas no mesmo domínio.
+
+Para armazenar um dado na sessão, você pode usar o método `setItem` do objeto `sessionStorage`, passando o nome da chave e o valor:
+
+```javascript
+// Armazena um valor na sessão.
+sessionStorage.setItem('nome', 'João');
+```
+
+Para recuperar um valor da sessão, você pode usar o método `getItem` do objeto `sessionStorage`, passando o nome da chave:
+
+```javascript
+// Recupera um valor da sessão.
+const nome = sessionStorage.getItem('nome');
+console.log(nome); // Imprime 'João'.
+```
+
+Para criar um cookie, você pode usar a propriedade `document.cookie` do JavaScript. Ela permite definir, atualizar ou excluir cookies no navegador. Cookies são dados armazenados no computador do usuário, que podem ser acessados por qualquer página ou aplicativo no mesmo domínio.
+
+Para definir um cookie, você pode definir a propriedade `document.cookie` com uma string contendo o nome da chave, o valor e algumas opções adicionais, como o tempo de expiração:
+
+```javascript
+// Define um cookie com o nome 'nome' e o valor 'João'
+document.cookie = 'nome=João';
+
+// Define um cookie com o nome 'idade' e o valor '30', expirando em 1 dia.
+const umDiaEmMs = 24 * 60 * 60 * 1000;
+const dataExpiracao = new Date(Date.now() + umDiaEmMs).toUTCString();
+document.cookie = 'idade=30; expires=' + dataExpiracao;
+```
+
+Para recuperar um cookie, você pode acessar a propriedade `document.cookie`, que retorna uma string contendo todos os cookies definidos para o domínio atual. Em seguida, é possível filtrar essa string para encontrar o cookie desejado:
+
+```javascript
+// Recupera o valor do cookie 'nome'.
+const cookies = document.cookie.split(';');
+const nomeCookie = cookies.find(cookie => cookie.trim().startsWith('nome='));
+const nome = nomeCookie ? nomeCookie.split('=')[1] : null;
+console.log(nome); // Imprime 'João'.
+```
+
+> É importante lembrar que cookies e sessões são vulneráveis a ataques de roubo de informações e podem expor dados sensíveis do usuário. Por isso, é recomendável criptografar ou codificar esses dados antes de armazená-los no navegador ou no servidor.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#assunto "Subir para o topo")
+
+---
