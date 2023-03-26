@@ -416,7 +416,8 @@ return (
   <Desktop
     icons={
 
-      [
+      [ // Filtra elementos "falsy" do array.
+
         ({ fenestra }) =>
           userLevel === 1 &&
           <Icon title="Configurações"
@@ -460,7 +461,7 @@ return (
             })}
           />
 
-      ].filter(Boolean) // Filtra elementos "falsy" do array
+      ].filter(Boolean) // Filtra elementos "falsy" do array.
 
     }
   />
