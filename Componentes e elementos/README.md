@@ -9,6 +9,7 @@
   - [`Validar` os `campos vazios` do formulário](#validar-os-campos-vazios-do-formul%C3%A1rio "Validar os campos vazios do formulário")
   - [`Resetar` campos do `formulário`](#resetar-campos-do-formul%C3%A1rio "Resetar campos do formulário")
   - [Instalar e utilizar o `CKEditor 5` no ReactJS](#instalar-e-utilizar-o-ckeditor-5-no-reactjs "Instalar e utilizar o CKEditor 5 no ReactJS")
+  - [`Envio` dos `dados` para a `API` do PRISMA](#envio-dos-dados-para-a-api-do-prisma "Envio dos dados para a API do PRISMA")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
@@ -779,6 +780,51 @@ Aqui está uma lista completa das opções disponíveis na barra de ferramentas:
 | mediaEmbed | Mídia incorporada. |
 
 Observe que algumas dessas opções podem não estar disponíveis, dependendo de quais plugins do CKEditor 5 você incluiu em seu projeto.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Envio dos dados para a API do PRISMA
+
+O código tem a função de interceptar o evento de envio de um formulário, validar os dados inseridos, e enviar esses dados para o servidor por meio de uma chamada de API assíncrona usando o método HTTP POST da biblioteca `Api`.
+
+O método `await` é utilizado para aguardar a resposta do servidor antes de continuar a execução do código. Caso ocorra algum erro durante a chamada de API, o bloco `catch` é executado, que emite um alerta com a mensagem "Error!".
+
+A linha `e.preventDefault()` é usada para evitar que o formulário seja enviado de forma padrão, ou seja, sem ser através da chamada de API assíncrona. Com isso, a página não é atualizada automaticamente e o usuário permanece na mesma página após o envio do formulário.
+
+```javascript
+// Interceptar o evento de submit.
+async function handleSubmitDrivers(e) {
+  e.preventDefault();
+
+  // Validações ...
+
+  // Dados do formulário.
+  const data = { name, cpf, rg, admissao, sexo, cnh, valCnh, orgEmissCnh, endereco, bairro, uf, cidade, status };
+
+  // Chamada de API assíncrona - Envio dos dados para a API.
+  try {
+    await Api.post('motoristas', data);
+  } catch (error) {
+    alert('Ocorreu um erro ao enviar os dados. Tente novamente mais tarde.');
+    console.error(error);
+  }
+}
+```
+
+> Note que adicionei o `console.error(error);` dentro do bloco `catch` para exibir mais detalhes sobre o erro na console do navegador, caso ocorra algum problema na chamada da API. Além disso, removi a duplicação do campo `valCnh` na criação do objeto `data`.
+
+O código apresentado é uma chamada de API assíncrona que tenta enviar dados (data) para um servidor usando o método HTTP POST, por meio da biblioteca Api. O objetivo é inserir um novo registro na coleção de motoristas no servidor.
+
+O try é utilizado para lidar com possíveis erros durante a chamada da API. O código dentro do bloco try é executado normalmente, e, caso ocorra um erro, o controle é transferido para o bloco catch.
+
+Caso haja sucesso na chamada da API, a execução continua normalmente. Caso contrário, é exibido um alerta com a mensagem "Error!".
+
+O await é utilizado para esperar pela conclusão da chamada da API antes de prosseguir com a execução do código. Isso garante que a chamada da API será finalizada antes que qualquer outra ação seja executada no código.
+
+O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScript, que são operações que podem levar algum tempo para serem concluídas e não bloqueiam a execução do código. Com o uso do await, o código não prossegue até que a operação assíncrona seja finalizada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
