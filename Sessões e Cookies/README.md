@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Sessões e Cookies
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![Cookies](https://github.com/systemboys/React_Codes/raw/main/Sess%C3%B5es%20e%20Cookies/images/cookies-1.png "Cookies")](https://github.com/systemboys/React_Codes/raw/main/Sess%C3%B5es%20e%20Cookies/images/cookies-1.png "Cookies")
 
 - [Sessões e Cookies com JavaScript](#sess%C3%B5es-e-cookies-com-javascript "Sessões e Cookies com JavaScript")
 
