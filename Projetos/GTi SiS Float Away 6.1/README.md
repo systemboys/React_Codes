@@ -8,7 +8,7 @@
 - [Tamanho e posição da janela](#tamanho-e-posi%C3%A7%C3%A3o-da-janela "Tamanho e posição da janela")
 - [Centralizar a janela](#centralizar-a-janela "Centralizar a janela")
 - [Abrir janelas a partir de outras janelas do Fenestra](#abrir-janelas-a-partir-de-outras-janelas-do-fenestra "Abrir janelas a partir de outras janelas do Fenestra")
-- [`Filtrar` o `nível de usuário` para exibir os `ícones do Desktop`](#filtrar-o-nível-de-usuário-para-exibir-os-ícones-do-desktop "Filtrar o nível de usuário para exibir os ícones do Desktop")
+- [`Filtrar` o `nível de usuário` para exibir os `ícones do Desktop`](#filtrar-o-n%C3%ADvel-de-usu%C3%A1rio-para-exibir-os-%C3%ADcones-do-desktop "Filtrar o nível de usuário para exibir os ícones do Desktop")
 
 ---
 
