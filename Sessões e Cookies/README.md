@@ -2,7 +2,7 @@
 
 [![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
 
-- [Sessões e Cookies com JavaScript](#sessões-e-cookies-com-javascript "Sessões e Cookies com JavaScript")
+- [Sessões e Cookies com JavaScript](#sess%C3%B5es-e-cookies-com-javascript "Sessões e Cookies com JavaScript")
 
 ---
 
