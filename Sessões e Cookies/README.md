@@ -52,6 +52,6 @@ console.log(nome); // Imprime 'João'.
 > É importante lembrar que cookies e sessões são vulneráveis a ataques de roubo de informações e podem expor dados sensíveis do usuário. Por isso, é recomendável criptografar ou codificar esses dados antes de armazená-los no navegador ou no servidor.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#assunto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--sess%C3%B5es-e-cookies "Subir para o topo")
 
 ---
