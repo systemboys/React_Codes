@@ -38,6 +38,6 @@ const hashedPassword = await hashPassword('senha123');
 Lembrando que a criptografia da senha é apenas uma das etapas importantes para garantir a segurança do sistema. É necessário tomar outras medidas, como armazenar os hashes das senhas em um formato seguro e implementar medidas para prevenir ataques de força bruta ou roubo de sessão, por exemplo.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#criptografias "Subir para o topo")
+[(&uarr;) Subir](#react-codes--criptografias "Subir para o topo")
 
 ---
