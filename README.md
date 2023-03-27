@@ -30,7 +30,7 @@
 
 ### Segurança
 
-- [Criptografias](#link "Criptografias")
+- [Criptografias](https://github.com/systemboys/React_Codes/tree/main/Seguran%C3%A7a/Criptografias#react-codes--criptografias "Criptografias")
 
 ### CSS e HTML
 
