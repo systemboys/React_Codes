@@ -580,7 +580,7 @@ Na função que intercepta a submissão do formulário em seu componente, você 
 
 ```javascript
 // Interceptar o evento de submit.
-async function handleSubmitDrivers(e) {
+async function handleSubmitAdmins(e) {
   e.preventDefault();
 
   // Validações ...
