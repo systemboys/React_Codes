@@ -429,7 +429,7 @@ const [username, setUsername] = useState("");
 const [password, setPassword] = useState("");
 
 // Interceptar o evento de submit.
-const handleSubmitLogin = (e) => {
+async function handleSubmitLogin(e) {
     e.preventDefault();
 
     // Exibir no console os valores obitidos nos campos.
@@ -437,7 +437,7 @@ const handleSubmitLogin = (e) => {
 }
 ```
 
-> Na função, o (e) em `const handleSubmitLogin = (e) => {...` pode ser colocado (e), (ev) ou (event)!
+> Na função, o (e) em `async function handleSubmitLogin(e) {...` pode ser colocado (e), (ev) ou (event)!
 
 A função deverá ser colocada no `<form>...</form>` no evento `onSubmit={}`:
 
