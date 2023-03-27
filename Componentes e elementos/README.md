@@ -552,7 +552,7 @@ const general_recordInputRef = useRef(null);
 const individualRegistrationInputRef = useRef(null);
 
 // Interceptar o evento de submit.
-const handleSubmitCustomerRegistration = (e) => {
+async function handleSubmitCustomerRegistration(e) {
   e.preventDefault();
 
   // Verificar se o campo "Tipo de pessoa" está vazio.
