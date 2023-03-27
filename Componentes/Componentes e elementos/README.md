@@ -7,6 +7,7 @@
   - [Enviando um `formulário`](#enviando-um-formul%C3%A1rio "Enviando um formulário")
   - [`Campos editáveis` no formulário dentro de um componente](#campos-edit%C3%A1veis-no-formul%C3%A1rio-dentro-de-um-componente "Campos editáveis no formulário dentro de um componente")
   - [`Validar` os `campos vazios` do formulário](#validar-os-campos-vazios-do-formul%C3%A1rio "Validar os campos vazios do formulário")
+  - [Validar campo de email com JavaScript no ReactJS](#validar-campo-de-email-com-javascript-no-reactjs "Validar campo de email com JavaScript no ReactJS")
   - [`Resetar` campos do `formulário`](#resetar-campos-do-formul%C3%A1rio "Resetar campos do formulário")
   - [Instalar e utilizar o `CKEditor 5` no ReactJS](#instalar-e-utilizar-o-ckeditor-5-no-reactjs "Instalar e utilizar o CKEditor 5 no ReactJS")
   - [`Envio` dos `dados` para a `API` do PRISMA](#envio-dos-dados-para-a-api-do-prisma "Envio dos dados para a API do PRISMA")
@@ -599,6 +600,82 @@ Nos campos devem ser atribuídas suas referências `ref={full_nameInputRef}`:
 ```
 
 Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" está vazio usando o método `trim()` para remover os espaços em branco em ambos os lados da string e depois comparando com uma string vazia. Se o campo estiver vazio, exibirá um alerta e a função retornará, impedindo que o formulário seja enviado. Em seguida, é feita uma verificação semelhante para outros campos obrigatórios, dependendo do tipo de cliente selecionado. Se todos os campos obrigatórios estiverem preenchidos, o formulário será enviado e os valores dos campos serão exibidos no console.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Validar campo de email com JavaScript no ReactJS
+
+Para validar um campo de e-mail em ReactJS usando JavaScript, você pode usar expressões regulares (regex) para verificar se o formato do e-mail é válido. Você pode adicionar uma função de validação ao seu componente que verifica se o valor do campo de e-mail corresponde a um padrão de e-mail válido. Aqui está um exemplo de como fazer isso:
+
+```javascript
+import React, { useState } from 'react';
+
+function YourComponent() {
+  const [email, setEmail] = useState('');
+  const [isValidEmail, setIsValidEmail] = useState(false);
+
+  function validateEmail(value) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(value);
+  }
+
+  function handleChange(event) {
+    const value = event.target.value;
+    setEmail(value);
+    setIsValidEmail(validateEmail(value));
+  }
+
+  return (
+    <div>
+      <label htmlFor="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value={email}
+        onChange={handleChange}
+        className={isValidEmail ? 'valid' : 'invalid'}
+      />
+      {isValidEmail ? null : <div className="error">E-mail inválido</div>}
+    </div>
+  );
+}
+
+export default EmailInput;
+```
+
+Neste exemplo, a função `validateEmail` usa uma expressão regular para validar o formato do e-mail. A função `handleChange` é chamada sempre que o valor do campo de e-mail muda. Ela atualiza o estado do componente com o valor atual do campo de e-mail e o resultado da validação. O estado `isValidEmail` é usado para aplicar uma classe CSS que indica se o valor do campo de e-mail é válido ou não. Um elemento `<div>` de erro é renderizado se o e-mail não for válido.
+
+> Quero que me dê um alerta `alert()` padrão de PopUp simples caso o email não seja válido.
+
+Claro, você pode adicionar uma condição para verificar se o email é válido e exibir um alerta caso não seja. Aqui está um exemplo:
+
+```javascript
+function validarEmail(email) {
+  // Expressão regular para validar email
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return re.test(email);
+}
+
+function handleSubmit(e) {
+  e.preventDefault();
+
+  const email = e.target.email.value;
+
+  // Verifica se o email é válido
+  if (!validarEmail(email)) {
+    alert('Por favor, insira um email válido!');
+    return;
+  }
+
+  // Resto do código para enviar o formulário
+}
+```
+
+Nesse exemplo, a função `validarEmail` usa uma expressão regular para verificar se o email é válido. Se o email não for válido, o código exibe um alerta. Caso contrário, o resto do código para enviar o formulário pode ser executado. Note que a função `handleSubmit` deve ser atribuída ao evento `onSubmit` do formulário para ser chamada quando o formulário for enviado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
