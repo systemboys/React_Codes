@@ -547,6 +547,8 @@ Api.put(`/companySystemUpdateBackgroundId/1/${id}`).then((res) => {
 
 Neste exemplo, estamos adicionando um registro na tabela "admins":
 
+> Configurações feitas no arquivo `./src/routes.ts`.
+
 ```javascript
 // Inserir dados na tabela "admins".
 // Rota: '/admins'.
@@ -573,6 +575,38 @@ routes.post('/admins', async (req, res) => {
 ```
 
 > No exemplo acima, é apenas uma gravação simples, sem regras.
+
+Na função que intercepta a submissão do formulário em seu componente, você deve colocar o código da seguinte forma:
+
+```javascript
+// Interceptar o evento de submit.
+async function handleSubmitDrivers(e) {
+  e.preventDefault();
+
+  // Validações ...
+
+  // Dados do formulário.
+  const data = { primary_email, username, password, full_name, level };
+
+  // Chamada de API assíncrona - Envio dos dados para a API.
+  try {
+    await Api.post('admins', data);
+  } catch (error) {
+    alert('Ocorreu um erro ao enviar os dados. Tente novamente mais tarde.');
+    console.error(error);
+  }
+}
+```
+
+O código apresentado é uma chamada de API assíncrona que tenta enviar dados (data) para um servidor usando o método HTTP POST, por meio da biblioteca Api. O objetivo é inserir um novo registro na coleção de motoristas no servidor.
+
+O try é utilizado para lidar com possíveis erros durante a chamada da API. O código dentro do bloco try é executado normalmente, e, caso ocorra um erro, o controle é transferido para o bloco catch.
+
+Caso haja sucesso na chamada da API, a execução continua normalmente. Caso contrário, é exibido um alerta com a mensagem "Error!".
+
+O await é utilizado para esperar pela conclusão da chamada da API antes de prosseguir com a execução do código. Isso garante que a chamada da API será finalizada antes que qualquer outra ação seja executada no código.
+
+O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScript, que são operações que podem levar algum tempo para serem concluídas e não bloqueiam a execução do código. Com o uso do await, o código não prossegue até que a operação assíncrona seja finalizada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
