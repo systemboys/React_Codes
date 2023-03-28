@@ -45,9 +45,9 @@ O Node.js não é um framework JavaScript, como o React ou o Vue.js, mas sim um 
 
 Devido ao baixo consumo de recursos e à capacidade de processar várias requisições simultaneamente, o Node.js é muito utilizado em aplicações que requerem uma alta escalabilidade, ou seja, que possam crescer sem perder qualidade ou aumentar os custos.
 
-Outra vantagem é a possibilidade de manter o ecossistema de aplicações e toda a base de código em uma só linguagem de programação, no caso, o JavaScript. Também há o NPM (Node Package Manager), o gerenciador de pacotes do Node.js, que dá acesso a um enorme repositório de bibliotecas e módulos que podem ser adicionadas ao projeto, contendo ferramentas e/ou soluções para os mais diversos problemas e requisitos.
+Outra vantagem é a possibilidade de manter o ecossistema de aplicações e toda a base de código em uma só linguagem de programação, no caso, o JavaScript. Também há o [NPM](https://www.npmjs.com/ "Node Package Manager") (Node Package Manager), o gerenciador de pacotes do Node.js, que dá acesso a um enorme repositório de bibliotecas e módulos que podem ser adicionadas ao projeto, contendo ferramentas e/ou soluções para os mais diversos problemas e requisitos.
 
-O Node.js é um software gratuito, de código-aberto e com uma comunidade ativa e participativa. É suportado pelos mais diversos serviços de hospedagem, com AWS, Google Could e Microsoft Azure, e amplamente utilizado em escala industrial por grandes empresas como Netflix, PayPal, Linkedin, entre outras. Você pode saber mais sobre o Node.js acessando o site oficial.
+O Node.js é um software gratuito, de código-aberto e com uma comunidade ativa e participativa. É suportado pelos mais diversos serviços de hospedagem, com AWS, Google Could e Microsoft Azure, e amplamente utilizado em escala industrial por grandes empresas como Netflix, PayPal, Linkedin, entre outras. Você pode saber mais sobre o Node.js acessando o [site oficial](https://nodejs.org/en/ "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.").
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
