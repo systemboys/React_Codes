@@ -1,8 +1,8 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Emails
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![Envio de Emails](https://github.com/systemboys/React_Codes/raw/main/Comunica%C3%A7%C3%A3o/Emails/images/SendMail1.png "Envio de Emails")](https://github.com/systemboys/React_Codes/raw/main/Comunica%C3%A7%C3%A3o/Emails/images/SendMail1.png "Envio de Emails")
 
-- [Link 1](https://site.com#anchor-link-1 "Link 1")
+- [Envio de e-mails com ReactJS utilizando o serviço de e-mail escolhido](#envio-de-e-mails-com-reactjs-utilizando-o-servi%C3%A7o-de-e-mail-escolhido "Envio de e-mails com ReactJS utilizando o serviço de e-mail escolhido")
 
 ---
 
@@ -94,6 +94,6 @@ Para usar esta função em seu código React, você pode simplesmente importá-l
 Lembre-se de que, para usar esta função, você precisará ter uma conta de email SMTP configurada e ter as credenciais de login e senha disponíveis. Além disso, certifique-se de que o seu servidor esteja configurado para permitir o envio de emails através do protocolo SMTP.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#assunto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--emails "Subir para o topo")
 
 ---
