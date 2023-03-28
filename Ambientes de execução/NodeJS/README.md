@@ -5,9 +5,9 @@
 - [O que é Node.js?](#o-que-%C3%A9-nodejs "O que é Node.js?")
 - [Como funciona?](#como-funciona "Como funciona?")
 - [Principais vantagens](#principais-vantagens "Principais vantagens")
-- [Node Version Manager (nvm)](# "Node Version Manager (nvm)")
+- [Node Version Manager (nvm)](#node-version-manager-nvm "Node Version Manager (nvm)")
     - [Como instalar?](#como-instalar "Como instalar?")
-    - [Comandos básicos do NVM para gerenciamento de versões do Node.js](# "Comandos básicos do NVM para gerenciamento de versões do Node.js")
+    - [Comandos básicos do NVM para gerenciamento de versões do Node.js](#comandos-b%C3%A1sicos-do-nvm-para-gerenciamento-de-vers%C3%B5es-do-nodejs "Comandos básicos do NVM para gerenciamento de versões do Node.js")
 
 ---
 
