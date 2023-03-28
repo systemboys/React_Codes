@@ -2,10 +2,12 @@
 
 [![Node.JS](https://github.com/systemboys/React_Codes/raw/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS/images/Node.js.jpg "Node.JS")](https://github.com/systemboys/React_Codes/raw/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS/images/Node.js.jpg "Node.JS")
 
-- [O que é Node.js?](https://site.com#anchor-link-1 "O que é Node.js?")
-- [Como funciona?](https://site.com#anchor-link-2 "Como funciona?")
-- [Principais vantagens](https://site.com#anchor-link-3 "Principais vantagens")
-- [Como instalar?](https://site.com#anchor-link-3 "Como instalar?")
+- [O que é Node.js?](#o-que-%C3%A9-nodejs "O que é Node.js?")
+- [Como funciona?](#como-funciona "Como funciona?")
+- [Principais vantagens](#principais-vantagens "Principais vantagens")
+- [Node Version Manager (nvm)](# "Node Version Manager (nvm)")
+    - [Como instalar?](#como-instalar "Como instalar?")
+    - [Comandos básicos do NVM para gerenciamento de versões do Node.js](# "Comandos básicos do NVM para gerenciamento de versões do Node.js")
 
 ---
 
@@ -37,9 +39,45 @@ Outra vantagem é a possibilidade de manter o ecossistema de aplicações e toda
 
 O Node.js é um software gratuito, de código-aberto e com uma comunidade ativa e participativa. É suportado pelos mais diversos serviços de hospedagem, com AWS, Google Could e Microsoft Azure, e amplamente utilizado em escala industrial por grandes empresas como Netflix, PayPal, Linkedin, entre outras. Você pode saber mais sobre o Node.js acessando o site oficial.
 
+## Node Version Manager (nvm)
+
+...
+
 ## Como instalar?
 
+...
+
+## Comandos básicos do NVM para gerenciamento de versões do Node.js
+
+Alguns comandos para lidar com versões:
+
+Listar as versões do Node.js.
+
+```bash
+nvm list
+```
+
+Instalar uma versão específica do Node.js
+
+```bash
+nvm install <version>
+```
+
+Selecionar a versão do Node.js que será usada no momento.
+
+```bash
+nvm use <version>
+```
+
+Esses comandos estão relacionados ao gerenciador de versões do Node.js chamado Node Version Manager (nvm).
+
+- O comando `nvm list` é usado para listar as versões do Node.js instaladas no sistema e identificar qual versão está atualmente em uso.
+
+- O comando `nvm install <version>` é usado para instalar uma versão específica do Node.js. Por exemplo, `nvm install 14.17.5` irá instalar a versão 14.17.5 do Node.js.
+
+- O comando `nvm use <version>` é usado para selecionar a versão do Node.js que será usada no momento. Por exemplo, `nvm use 14.17.5` irá selecionar a versão 14.17.5 do Node.js para uso. Ao usar esse comando, o nvm ajusta as variáveis de ambiente para apontar para a versão selecionada.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#assunto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
 
 ---
