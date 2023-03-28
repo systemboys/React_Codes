@@ -23,15 +23,15 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-// Configurando o body-parser para lidar com as requisições POST
+// Configurando o body-parser para lidar com as requisições POST.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Endpoint para receber as informações do formulário e enviar o e-mail
+// Endpoint para receber as informações do formulário e enviar o e-mail.
 app.post('/enviar-email', (req, res) => {
   const { nome, email, mensagem } = req.body;
 
-  // Configurando o Nodemailer com as informações do seu servidor de e-mail
+  // Configurando o Nodemailer com as informações do seu servidor de e-mail.
   const transporter = nodemailer.createTransport({
     host: 'smtp.seuservidordeemail.com',
     port: 587,
@@ -42,7 +42,7 @@ app.post('/enviar-email', (req, res) => {
     },
   });
 
-  // Configurando o e-mail que será enviado
+  // Configurando o e-mail que será enviado.
   const mailOptions = {
     from: 'seuemail@seuservidordeemail.com',
     to: 'emaildedestino@dominio.com',
@@ -50,7 +50,7 @@ app.post('/enviar-email', (req, res) => {
     text: `Nome: ${nome}\nE-mail: ${email}\nMensagem: ${mensagem}`,
   };
 
-  // Enviando o e-mail
+  // Enviando o e-mail.
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       console.log(error);
