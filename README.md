@@ -43,6 +43,10 @@
 - [Styled Components](https://github.com/systemboys/React_Codes/tree/main/CSS%20e%20HTML/Styled%20Components#react-codes--styled-components "Styled Components")
 - [Particularidades do HTML](https://github.com/systemboys/React_Codes/tree/main/CSS%20e%20HTML/Particularidades%20do%20HTML#react-codes--particularidades-do-html "Particularidades do HTML")
 
+### Comunicação
+
+-[Emails](# "Emails")
+
 ### Outras coisas interessantes
 
 - [Dicionário do programador](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do%20programador#react-codes--dicion%C3%A1rio-do-programador "Dicionário do programador")
