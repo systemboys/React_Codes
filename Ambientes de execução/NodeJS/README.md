@@ -56,7 +56,13 @@ O Node.js é um software gratuito, de código-aberto e com uma comunidade ativa 
 
 ## Node Version Manager (nvm)
 
-...
+NVM (Node Version Manager) é uma ferramenta utilizada para gerenciar as versões do Node.js instaladas em um sistema. Com o NVM, é possível instalar, desinstalar e alternar entre diferentes versões do Node.js em um mesmo ambiente, permitindo que desenvolvedores e equipes trabalhem com diferentes projetos que requerem diferentes versões do Node.js.
+
+O NVM funciona instalando as diferentes versões do Node.js em diretórios distintos e permitindo que o usuário as acesse por meio de comandos no terminal. Isso facilita o gerenciamento das versões, garantindo que cada projeto tenha a versão correta do Node.js sem interferir em outras aplicações.
+
+Além disso, o NVM permite que as diferentes versões do Node.js coexistam em um mesmo ambiente, permitindo que o desenvolvedor possa testar e executar seus projetos em diferentes versões do Node.js sem precisar desinstalar e reinstalar a versão desejada manualmente.
+
+O NVM é compatível com Linux, macOS e Windows e pode ser instalado por meio de um script de instalação ou por meio do gerenciador de pacotes do sistema operacional.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
@@ -65,7 +71,21 @@ O Node.js é um software gratuito, de código-aberto e com uma comunidade ativa 
 
 ## Como instalar?
 
-...
+Para instalar o Node.js, siga os seguintes passos:
+
+1. Acesse o site oficial do Node.js em [https://nodejs.org/](https://nodejs.org/ "Site oficial do Node.js").
+
+2. Clique no botão "Baixar" (Download).
+
+3. Selecione a versão recomendada para a maioria dos usuários ou escolha uma versão específica.
+
+4. Escolha o sistema operacional que você está usando (Windows, macOS, Linux, etc).
+
+5. Baixe o instalador correspondente.
+
+6. Execute o instalador e siga as instruções para concluir a instalação.
+
+Ao concluir a instalação, você poderá verificar se o Node.js foi instalado corretamente abrindo o terminal ou prompt de comando e digitando o comando `node -v`. Se o Node.js estiver instalado corretamente, o terminal deve exibir a versão instalada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
