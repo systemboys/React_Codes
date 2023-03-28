@@ -126,7 +126,7 @@ model admins {
 
 Exemplo abaixo:
 
-[![Print de uma execução no Db Pull](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")
+[![Print de uma execução no Db Pull](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")
 
 ### Criar o arquivo `./src/prisma.ts` e configure o seguinte código:
 
@@ -260,17 +260,17 @@ Execute o servidor NPM:
 npm run dev
 ```
 
-[![Server executando](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")
+[![Server executando](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")
 
 ### Utilização do `Insomnia` para leitura, gravação, atualização e delete.
 
 Executar o GET para consultar os registros na tabela `admins` e gerar um `JSON` com o `Insomnia`:
 
-[![Consultar os dados com o Insomnia](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/Insomnia_get_admins.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/Insomnia_get_admins.png "Consultar os dados com o Insomnia")
+[![Consultar os dados com o Insomnia](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/Insomnia_get_admins.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/Insomnia_get_admins.png "Consultar os dados com o Insomnia")
 
 Executar o POST para inserir um registro na tabela `admins` e gerar um `JSON`:
 
-[![Registrar dados com o Insomnia](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Registrar dados com o Insomnia")
+[![Registrar dados com o Insomnia](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Registrar dados com o Insomnia")
 
 ### Recriar instâncias nos módulos:
 
