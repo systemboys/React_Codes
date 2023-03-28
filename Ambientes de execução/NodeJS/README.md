@@ -17,7 +17,7 @@ Node.js é um ambiente de execução JavaScript que permite executar aplicaçõe
 
 Foi criado em 2009 pelo engenheiro de software Ryan Dahl como uma alternativa ao Apache HTTP Server, o servidor web mais popular da época. Dahl criticava algumas limitações do Apache, como o suporte relativamente baixo a múltiplas conexões, buscando resolver este problema com uma abordagem focada em eventos e execução assíncrona, sendo uma opção mais responsiva e com menos consumo de recursos do que os servidores “tradicionais”.
 
-Atualmente, o Node.js é mantido pela OpenJS Foundation, uma fundação criada em 2019 com o objetivo de promover a utilização do JavaScript e de suas tecnologias relacionadas.
+Atualmente, o Node.js é mantido pela [OpenJS Foundation](https://openjsf.org/ "OpenJS Foundation’s mission is to drive broad adoption and ongoing development of key JavaScript solutions and related technologies."), uma fundação criada em 2019 com o objetivo de promover a utilização do JavaScript e de suas tecnologias relacionadas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
