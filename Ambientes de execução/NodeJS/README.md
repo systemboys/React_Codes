@@ -19,6 +19,11 @@ Foi criado em 2009 pelo engenheiro de software Ryan Dahl como uma alternativa ao
 
 Atualmente, o Node.js é mantido pela OpenJS Foundation, uma fundação criada em 2019 com o objetivo de promover a utilização do JavaScript e de suas tecnologias relacionadas.
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+
+---
+
 ## Como funciona?
 
 A principal característica do Node.js é sua execução ser single-thread, ou seja, os recursos computacionais são alocados apenas uma vez pelo tempo que a aplicação estiver sendo executada. Aplicações multi-thread, como as criadas com PHP, por exemplo, requerem a criação de uma thread a cada nova requisição, e ela não é executada enquanto a anterior não for finalizada.
@@ -31,6 +36,11 @@ O Node.js não é um framework JavaScript, como o React ou o Vue.js, mas sim um 
 
 > Código Javascript (Imagem: Ferenc Almasi / Unsplash)
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+
+---
+
 ## Principais vantagens
 
 Devido ao baixo consumo de recursos e à capacidade de processar várias requisições simultaneamente, o Node.js é muito utilizado em aplicações que requerem uma alta escalabilidade, ou seja, que possam crescer sem perder qualidade ou aumentar os custos.
@@ -39,13 +49,28 @@ Outra vantagem é a possibilidade de manter o ecossistema de aplicações e toda
 
 O Node.js é um software gratuito, de código-aberto e com uma comunidade ativa e participativa. É suportado pelos mais diversos serviços de hospedagem, com AWS, Google Could e Microsoft Azure, e amplamente utilizado em escala industrial por grandes empresas como Netflix, PayPal, Linkedin, entre outras. Você pode saber mais sobre o Node.js acessando o site oficial.
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+
+---
+
 ## Node Version Manager (nvm)
 
 ...
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+
+---
+
 ## Como instalar?
 
 ...
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+
+---
 
 ## Comandos básicos do NVM para gerenciamento de versões do Node.js
 
