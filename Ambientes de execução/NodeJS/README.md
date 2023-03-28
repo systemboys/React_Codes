@@ -1,8 +1,11 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Node.JS
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![Node.JS](https://github.com/systemboys/React_Codes/raw/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS/images/Node.js.jpg "Node.JS")](https://github.com/systemboys/React_Codes/raw/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS/images/Node.js.jpg "Node.JS")
 
-- [Link 1](https://site.com#anchor-link-1 "Link 1")
+- [O que é Node.js?](https://site.com#anchor-link-1 "O que é Node.js?")
+- [Como funciona?](https://site.com#anchor-link-2 "Como funciona?")
+- [Principais vantagens](https://site.com#anchor-link-3 "Principais vantagens")
+- [Como instalar?](https://site.com#anchor-link-3 "Como instalar?")
 
 ---
 
@@ -22,6 +25,8 @@ Essa thread única é chamada de “Event Loop”. Ela trata todas as requisiç�
 
 O Node.js não é um framework JavaScript, como o React ou o Vue.js, mas sim um ambiente de execução em uma máquina virtual própria para interpretar e executar os scripts de forma autônoma, baseada no “motor” V8, criado pelo Google para o navegador Chrome.
 
+[![Código JavaScript](https://github.com/systemboys/React_Codes/blob/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS/images/o_que_e_node_js-e1612977170388-700x393.jpg?raw=true "Código JavaScript")](https://github.com/systemboys/React_Codes/blob/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS/images/o_que_e_node_js-e1612977170388-700x393.jpg?raw=true "Código JavaScript")
+
 > Código Javascript (Imagem: Ferenc Almasi / Unsplash)
 
 ## Principais vantagens
@@ -31,6 +36,8 @@ Devido ao baixo consumo de recursos e à capacidade de processar várias requisi
 Outra vantagem é a possibilidade de manter o ecossistema de aplicações e toda a base de código em uma só linguagem de programação, no caso, o JavaScript. Também há o NPM (Node Package Manager), o gerenciador de pacotes do Node.js, que dá acesso a um enorme repositório de bibliotecas e módulos que podem ser adicionadas ao projeto, contendo ferramentas e/ou soluções para os mais diversos problemas e requisitos.
 
 O Node.js é um software gratuito, de código-aberto e com uma comunidade ativa e participativa. É suportado pelos mais diversos serviços de hospedagem, com AWS, Google Could e Microsoft Azure, e amplamente utilizado em escala industrial por grandes empresas como Netflix, PayPal, Linkedin, entre outras. Você pode saber mais sobre o Node.js acessando o site oficial.
+
+## Como instalar?
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#assunto "Subir para o topo")
