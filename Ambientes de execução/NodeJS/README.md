@@ -122,6 +122,14 @@ Esses comandos estão relacionados ao gerenciador de versões do Node.js chamado
 
 - O comando `nvm use <version>` é usado para selecionar a versão do Node.js que será usada no momento. Por exemplo, `nvm use 14.17.5` irá selecionar a versão 14.17.5 do Node.js para uso. Ao usar esse comando, o nvm ajusta as variáveis de ambiente para apontar para a versão selecionada.
 
+- Feito essas alterações, faça o seguinte comando:
+
+    ```bash
+    npm i --force
+    ```
+
+    > Esse `--force` para o caso de apresentar erros.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
 
