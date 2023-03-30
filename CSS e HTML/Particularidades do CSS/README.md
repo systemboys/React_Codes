@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Particularidades do CSS
 
-- [Como criar um link com uma âncora](#como-criar-um-link-com-uma-%C3%A2ncora "Como criar um link com uma âncora")
+- [Impedir o uso de seleção de texto dentro do componente](#impedir-o-uso-de-sele%C3%A7%C3%A3o-de-texto-dentro-do-componente "Impedir o uso de seleção de texto dentro do componente")
 
 ---
 
