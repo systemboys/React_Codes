@@ -102,6 +102,16 @@ Listar as versões do Node.js.
 nvm list
 ```
 
+> O comando `nvm list` é usado para listar todas as versões do Node.js que foram instaladas no seu computador através do NVM (Node Version Manager). Ele mostra todas as versões do Node.js que você tem disponível, com a versão atual realçada em verde. Também indica qual é a versão padrão do Node.js que será usada se você não especificar uma versão específica do Node.js. Isso é útil para ver as versões do Node.js que estão disponíveis para uso e selecionar a versão apropriada para o seu projeto.
+
+Verificar a versão mais recente do Node.js.
+
+```bash
+npm view node version
+```
+
+> Isso deve retornar a versão mais recente do Node.js disponível no registro do npm. Se você preferir, também pode verificar a versão mais recente diretamente no site oficial do Node.js.
+
 Instalar uma versão específica do Node.js
 
 ```bash
