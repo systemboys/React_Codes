@@ -23,7 +23,7 @@
 - [`Espaços reservados` com React-Bootstrap](#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
 - [`Barra com animação` com React-Bootstrap](#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
 - [Incrementando `React-FontAwesome`](#incrementando-react-fontawesome "Incrementando React-FontAwesome")
-- [Impedir a exibição do menu de contexto (click inverso) dentro do componente](# "Impedir a exibição do menu de contexto (click inverso) dentro do componente")
+- [`Impedir` a exibição do `menu de contexto` (click inverso) dentro do componente](#impedir-a-exibi%C3%A7%C3%A3o-do-menu-de-contexto-click-inverso-dentro-do-componente "Impedir a exibição do menu de contexto (click inverso) dentro do componente")
 
 ---
 
