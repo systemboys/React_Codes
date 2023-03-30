@@ -77,7 +77,19 @@ Após executar o projeto, logo lhe apresentará o endereço localhost com a part
   ➜  Network: use --host to expose
 ```
 
-------------
+## Clonando do GitHub para seu computador
+
+No diretório onde deseja colocar seu projeto (ex.: /todos_os_projetos/), com o terminal digite o seguinte comando:
+
+```bash
+git clone https://github.com/systemboys/gti-sis-stock-6.1.git
+```
+
+> O Git exigirá suas credenciais (`usuário` e `senha ou token`)!
+
+Depois disso, faça a instalação das dependências. A instrução está no item `3 - Instale as dependências NPM.`.
+
+---
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
