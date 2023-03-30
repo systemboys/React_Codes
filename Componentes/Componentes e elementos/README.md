@@ -1442,6 +1442,8 @@ Você pode fazer isso da seguinte forma:
 import React, { useEffect } from 'react';
 
 function MyComponent() {
+
+  // Bloquear menu de contexto (click inverso).
   useEffect(() => {
     const handleContextMenu = (event) => {
       event.preventDefault();
