@@ -83,7 +83,7 @@ Após executar o projeto, logo lhe apresentará o endereço localhost com a part
 No diretório onde deseja colocar seu projeto (ex.: /todos_os_projetos/), com o terminal digite o seguinte comando:
 
 ```bash
-git clone https://github.com/systemboys/gti-sis-stock-6.1.git
+git clone https://github.com/youruser/youproject.git
 ```
 
 > O Git exigirá suas credenciais (`usuário` e `senha ou token`)!
