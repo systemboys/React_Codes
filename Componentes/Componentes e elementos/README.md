@@ -23,6 +23,7 @@
 - [`Espaços reservados` com React-Bootstrap](#espa%C3%A7os-reservados-com-react-bootstrap "Espaços reservados com React Bootstrap")
 - [`Barra com animação` com React-Bootstrap](#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
 - [Incrementando `React-FontAwesome`](#incrementando-react-fontawesome "Incrementando React-FontAwesome")
+- [Impedir a exibição do menu de contexto (click inverso) dentro do componente](# "Impedir a exibição do menu de contexto (click inverso) dentro do componente")
 
 ---
 
@@ -1425,6 +1426,43 @@ Elemento HTML:
 ```javascript
 <FontAwesomeIcon icon={faPrint} size="1x" />
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Impedir a exibição do menu de contexto (click inverso) dentro do componente
+
+Para impedir a exibição do menu de contexto dentro de um componente em React, você pode adicionar um listener para o evento `contextmenu` na montagem do componente e, em seguida, chamar o método `preventDefault()` do evento para evitar a exibição do menu de contexto.
+
+Você pode fazer isso da seguinte forma:
+
+```javascript
+import React, { useEffect } from 'react';
+
+function MyComponent() {
+  useEffect(() => {
+    const handleContextMenu = (event) => {
+      event.preventDefault();
+    };
+    document.addEventListener('contextmenu', handleContextMenu);
+    return () => {
+      document.removeEventListener('contextmenu', handleContextMenu);
+    };
+  }, []);
+
+  return (
+    <div>
+      {/* conteúdo do seu componente */}
+    </div>
+  );
+}
+```
+
+Nesse exemplo, estamos usando o hook `useEffect` para adicionar um listener para o evento `contextmenu` no elemento `document` quando o componente é montado. No retorno da função passada para o `useEffect`, estamos removendo o listener para garantir que ele não continue a ser executado quando o componente é desmontado.
+
+Com essa abordagem, qualquer menu de contexto que tente ser exibido dentro do seu componente será impedido de aparecer.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
