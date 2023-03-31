@@ -3,6 +3,7 @@
 - [Formatando Data](#formatando-data "Formatando Data")
 - [Formatando Hora](#formatando-hora "Formatando Hora")
 - [Renderizar data no formato desejado no JSX](#renderizar-data-no-formato-desejado-no-jsx "Renderizar data no formato desejado no JSX")
+- [Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'](# "Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'")
 - [Data atual no elemento HTML](#data-atual-no-elemento-html "Data atual no elemento HTML")
 - [Exibir a data no formato dd/mm/aaaa](#exibir-a-data-no-formato-ddmmaaaa "Exibir a data no formato dd/mm/aaaa")
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
@@ -98,6 +99,36 @@ Para formatar a hora corretamente, você pode usar a função `format` do `date-
 Assumindo que `listContent[0]?.date` contém a data no formato "yyyy-mm-dd" e `listContent[0]?.time` contém a hora no formato "hh:mm:ss", essa chamada de função deve retornar a string no formato desejado "Dia dd/mm/yyyy às hh:mm:ss".
 
 Espero que isso ajude!
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+
+---
+
+## Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'
+
+Você pode converter uma string com o valor de data no formato "dd/mm/aaaa" para "aaaa-mm-dd" no ReactJS seguindo os passos abaixo:
+
+1. Use o método `split()` para dividir a string da data em três partes, separadas pelo caractere `/`, de modo a obter o dia, o mês e o ano separadamente.
+
+2. Use o método `reverse()` para inverter a ordem dos elementos do array com o dia, mês e ano.
+
+3. Use o método `join()` para juntar os elementos do array com o caractere `-`, de modo a obter a string no formato "aaaa-mm-dd".
+
+Aqui está um exemplo de código que faz essa conversão:
+
+```javascript
+function formatDate(dateString) {
+  const [day, month, year] = dateString.split('/');
+  const formattedDate = [year, month, day].reverse().join('-');
+  return formattedDate;
+}
+
+const dateStr = '28/03/2023';
+const formattedDate = formatDate(dateStr); // '2023-03-28'
+```
+
+No exemplo acima, a função `formatDate()` recebe uma string com a data no formato "dd/mm/aaaa" e retorna a data no formato "aaaa-mm-dd".
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
