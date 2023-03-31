@@ -118,6 +118,7 @@ Você pode converter uma string com o valor de data no formato "dd/mm/aaaa" para
 Aqui está um exemplo de código que faz essa conversão:
 
 ```javascript
+// Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'.
 function formatDate(dateString) {
   const [day, month, year] = dateString.split('/');
   const formattedDate = [year, month, day].reverse().join('-');
