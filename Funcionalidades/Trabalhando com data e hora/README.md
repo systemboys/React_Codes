@@ -3,7 +3,7 @@
 - [Formatando Data](#formatando-data "Formatando Data")
 - [Formatando Hora](#formatando-hora "Formatando Hora")
 - [Renderizar data no formato desejado no JSX](#renderizar-data-no-formato-desejado-no-jsx "Renderizar data no formato desejado no JSX")
-- [Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'](# "Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'")
+- [Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'](#converter-string-com-data-no-formato-ddmmaaaa-para-aaaa-mm-dd "Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'")
 - [Data atual no elemento HTML](#data-atual-no-elemento-html "Data atual no elemento HTML")
 - [Exibir a data no formato dd/mm/aaaa](#exibir-a-data-no-formato-ddmmaaaa "Exibir a data no formato dd/mm/aaaa")
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
