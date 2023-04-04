@@ -118,10 +118,16 @@ Instalar uma versão específica do Node.js
 nvm install <version>
 ```
 
-Selecionar a versão do Node.js que será usada no momento.
+Selecionar entre várias instaladas a versão do Node.js que será usada no momento.
 
 ```bash
 nvm use <version>
+```
+
+Este comando define a versão do node.js que você deseja usar. Se você quiser que esta versão seja usada por padrão, você pode usar o comando:
+
+```javascript
+nvm alias default <version>
 ```
 
 Esses comandos estão relacionados ao gerenciador de versões do Node.js chamado Node Version Manager (nvm).
@@ -131,6 +137,8 @@ Esses comandos estão relacionados ao gerenciador de versões do Node.js chamado
 - O comando `nvm install <version>` é usado para instalar uma versão específica do Node.js. Por exemplo, `nvm install 14.17.5` irá instalar a versão 14.17.5 do Node.js.
 
 - O comando `nvm use <version>` é usado para selecionar a versão do Node.js que será usada no momento. Por exemplo, `nvm use 14.17.5` irá selecionar a versão 14.17.5 do Node.js para uso. Ao usar esse comando, o nvm ajusta as variáveis de ambiente para apontar para a versão selecionada.
+
+- Com o comando `nvm alias default <version>`, a versão será definida como padrão, e você poderá utilizá-la sempre que abrir um novo terminal. Para confirmar que a versão padrão foi alterada, você pode usar o comando: `nvm list`.
 
 - Feito essas alterações, faça o seguinte comando:
 
