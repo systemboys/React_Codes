@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Instalações
 
-[![Node.JS e NPM](https://github.com/systemboys/React_Codes/raw/main/Instala%C3%A7%C3%B5es/Node_%26_NPM/NodeJS-and-NPM.png "Node.JS e NPM")](https://github.com/systemboys/React_Codes/raw/main/Instala%C3%A7%C3%B5es/Node_%26_NPM/NodeJS-and-NPM.png "Node.JS e NPM")
+[![Node.JS e NPM](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Instala%C3%A7%C3%B5es/Node_%26_NPM/NodeJS-and-NPM.png "Node.JS e NPM")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Instala%C3%A7%C3%B5es/Node_%26_NPM/NodeJS-and-NPM.png "Node.JS e NPM")
 
 - [Instalação do Node.JS e NPM](#instala%C3%A7%C3%A3o-do-nodejs-e-npm "Instalação do Node.JS e NPM")
 - [Atualização do Node.JS e NPM](#atualiza%C3%A7%C3%A3o-do-nodejs-e-npm "Atualização do Node.JS e NPM")
