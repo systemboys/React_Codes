@@ -5,6 +5,7 @@
 - [3 - Execute o projeto com o seguinte comando](#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
 - [4 - Configuração da porta no Vite](#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4 - Configuração da porta no Vite")
 - [5 - Rodar projeto em desenvolvimento na rede local](#5---rodar-projeto-em-desenvolvimento-na-rede-local "5 - Rodar projeto em desenvolvimento na rede local")
+- [Descrição do comando `npm run build` e sua função no processo de desenvolvimento de aplicações](# "Descrição do comando 'npm run build' e sua função no processo de desenvolvimento de aplicações")
 
 ---
 
@@ -149,6 +150,23 @@ root@debian:~# sudo iptables -S
 Nas máquinas que estão na mesma rede, abrir seu navegador e digitar a URL do seu projeto:
 
 [![URL no navegador da máquina local](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
+
+---
+
+## Descrição do comando 'npm run build' e sua função no processo de desenvolvimento de aplicações
+
+O comando `npm run build` é usado para criar uma versão de produção da sua aplicação. Ele é usado comumente em projetos que usam o ReactJS, mas também pode ser usado em outros projetos Node.js.
+
+Quando você executa o comando `npm run build`, ele realiza uma série de tarefas, como compilar o código, otimizar os arquivos, criar arquivos de manifesto e arquivos de configuração, além de gerar uma pasta `build` na raiz do seu projeto. Essa pasta contém uma versão otimizada do seu aplicativo que pode ser implantada em um servidor web.
+
+Para usar o comando, basta navegar até o diretório do seu projeto usando o terminal e executar o comando `npm run build`. Depois que o processo for concluído, a pasta `build` será criada com o aplicativo otimizado.
+
+```bash
+npm run build
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
