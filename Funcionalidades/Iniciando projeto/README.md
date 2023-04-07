@@ -72,7 +72,7 @@ export default defineConfig({
 
 Para deixar de ser selecionada automaticamente, a imagem abaixo mostra o exemplo:
 
-[![Resultado da execução do servidor com a nova porta](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_da_porta_no_Vite.png "Resultado da execução do servidor com a nova porta")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_da_porta_no_Vite.png "Resultado da execução do servidor com a nova porta")
+[![Resultado da execução do servidor com a nova porta](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Configuracao_da_porta_no_Vite.png "Resultado da execução do servidor com a nova porta")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Configuracao_da_porta_no_Vite.png "Resultado da execução do servidor com a nova porta")
 
 Atalhos:
 
@@ -88,7 +88,7 @@ Atalhos:
 
 ## 5 - Rodar projeto em desenvolvimento na rede local
 
-[![Computadores em rede](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Computadores_em_rede.png "Computadores em rede")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Computadores_em_rede.png "Computadores em rede")
+[![Computadores em rede](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Computadores_em_rede.png "Computadores em rede")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Computadores_em_rede.png "Computadores em rede")
 
 Modificar o código do seu arquivo `package.json`, na configuração do script "dev", dentro do `"scripts": {...}`, adicionando a flag `--host 0.0.0.0` ficando da seguinte forma:
 
@@ -99,7 +99,7 @@ Modificar o código do seu arquivo `package.json`, na configuração do script "
   ...
 ```
 
-[![Configuração do Vite no package](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_do_Vite_no_package.png "Configuração do Vite no package")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Configuracao_do_Vite_no_package.png "Configuração do Vite no package")
+[![Configuração do Vite no package](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Configuracao_do_Vite_no_package.png "Configuração do Vite no package")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Configuracao_do_Vite_no_package.png "Configuração do Vite no package")
 
 >Note que no script "dev", adicionamos a flag "--host 0.0.0.0" para que o servidor possa ser acessado de outras máquinas na rede. Lembre-se também de executar o comando `npm install` na pasta do projeto para atualizar as dependências e então executar o comando "npm run dev" para rodar o servidor.
 
@@ -112,7 +112,7 @@ export const Api = axios.create({
     ...
 ```
 
-[![Arquivo api.js de sua API](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Arquivo_api_de_sua_API.png "Arquivo api.js de sua API")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Arquivo_api_de_sua_API.png "Arquivo api.js de sua API")
+[![Arquivo api.js de sua API](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Arquivo_api_de_sua_API.png "Arquivo api.js de sua API")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Arquivo_api_de_sua_API.png "Arquivo api.js de sua API")
 
 Se seu servidor estiver rodando em Linux, libere as portas do seu `Front-end` e da sua `API` com o seuignte comando no terminal:
 
@@ -145,11 +145,11 @@ root@debian:~# sudo iptables -S
 -A INPUT -p tcp -m tcp --dport 3333 -j ACCEPT
 ```
 
-[![Dado os comandos no terminal](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Comandos_liberar_portas.png "Dado os comandos no terminal")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Comandos_liberar_portas.png "Dado os comandos no terminal")
+[![Dado os comandos no terminal](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Comandos_liberar_portas.png "Dado os comandos no terminal")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Comandos_liberar_portas.png "Dado os comandos no terminal")
 
 Nas máquinas que estão na mesma rede, abrir seu navegador e digitar a URL do seu projeto:
 
-[![URL no navegador da máquina local](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")](https://github.com/systemboys/React_Codes/raw/main/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")
+[![URL no navegador da máquina local](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
