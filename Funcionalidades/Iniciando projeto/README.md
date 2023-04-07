@@ -5,7 +5,7 @@
 - [3 - Execute o projeto com o seguinte comando](#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
 - [4 - Configuração da porta no Vite](#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4 - Configuração da porta no Vite")
 - [5 - Rodar projeto em desenvolvimento na rede local](#5---rodar-projeto-em-desenvolvimento-na-rede-local "5 - Rodar projeto em desenvolvimento na rede local")
-- [Descrição do comando `npm run build` e sua função no processo de desenvolvimento de aplicações](# "Descrição do comando 'npm run build' e sua função no processo de desenvolvimento de aplicações")
+- [Descrição do comando `npm run build` e sua função no processo de desenvolvimento de aplicações](#descri%C3%A7%C3%A3o-do-comando-npm-run-build-e-sua-fun%C3%A7%C3%A3o-no-processo-de-desenvolvimento-de-aplica%C3%A7%C3%B5es "Descrição do comando 'npm run build' e sua função no processo de desenvolvimento de aplicações")
 
 ---
 
