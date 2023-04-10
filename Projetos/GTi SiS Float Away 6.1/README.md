@@ -10,7 +10,7 @@
 - [`Centralizar` a janela](#centralizar-a-janela "Centralizar a janela")
 - [`Abrir janelas` a partir de outras janelas do Fenestra](#abrir-janelas-a-partir-de-outras-janelas-do-fenestra "Abrir janelas a partir de outras janelas do Fenestra")
 - [`Filtrar` o `nível de usuário` para exibir os `ícones do Desktop`](#filtrar-o-n%C3%ADvel-de-usu%C3%A1rio-para-exibir-os-%C3%ADcones-do-desktop "Filtrar o nível de usuário para exibir os ícones do Desktop")
-- [Terminais no processo de programação do projeto GTi SiS Float Away 6.1](# "Terminais no processo de programação do projeto GTi SiS Float Away 6.1")
+- [Terminais no processo de programação do projeto GTi SiS Float Away 6.1](#terminais-no-processo-de-programa%C3%A7%C3%A3o-do-projeto-gti-sis-float-away-61 "Terminais no processo de programação do projeto GTi SiS Float Away 6.1")
 
 ---
 
@@ -493,7 +493,9 @@ Nesse exemplo, envolvemos a opção de ícone de Configurações em uma verifica
 
 Abaixo estão os terminais organizados durante o desenvolvimento dos projeto GTi SiS Float Away 6.1.
 
-[![Terminais durante o processo de desenvolvimento](https://site.com/img/exemplo.png "Terminais durante o processo de desenvolvimento")](http://link.com "Terminais durante o processo de desenvolvimento")
+[![Terminais durante o processo de desenvolvimento](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Terminais_Projetos_GTi_SiS.png "Terminais durante o processo de desenvolvimento")](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Terminais_Projetos_GTi_SiS.png "Terminais durante o processo de desenvolvimento")
+
+> Os terminais acima está em ordem para o programador se basear no momento do desenvolvimento. Separados em cores, sendo laranja para o Float e verde para o Stock.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
