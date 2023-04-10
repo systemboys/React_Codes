@@ -10,6 +10,7 @@
 - [`Centralizar` a janela](#centralizar-a-janela "Centralizar a janela")
 - [`Abrir janelas` a partir de outras janelas do Fenestra](#abrir-janelas-a-partir-de-outras-janelas-do-fenestra "Abrir janelas a partir de outras janelas do Fenestra")
 - [`Filtrar` o `nível de usuário` para exibir os `ícones do Desktop`](#filtrar-o-n%C3%ADvel-de-usu%C3%A1rio-para-exibir-os-%C3%ADcones-do-desktop "Filtrar o nível de usuário para exibir os ícones do Desktop")
+- [Terminais no processo de programação do projeto GTi SiS Float Away 6.1](# "Terminais no processo de programação do projeto GTi SiS Float Away 6.1")
 
 ---
 
@@ -482,6 +483,17 @@ return (
 ```
 
 Nesse exemplo, envolvemos a opção de ícone de Configurações em uma verificação condicional que só a exibe se o nível do usuário for 1. Além disso, adicionamos `.filter(Boolean)` ao final do array de ícones para filtrar todos os elementos "falsy" do array, o que inclui a opção de ícone de Configurações quando o nível do usuário é 0.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+
+---
+
+## Terminais no processo de programação do projeto GTi SiS Float Away 6.1
+
+Abaixo estão os terminais organizados durante o desenvolvimento dos projeto GTi SiS Float Away 6.1.
+
+[![Terminais durante o processo de desenvolvimento](https://site.com/img/exemplo.png "Terminais durante o processo de desenvolvimento")](http://link.com "Terminais durante o processo de desenvolvimento")
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
