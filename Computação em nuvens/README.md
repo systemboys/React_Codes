@@ -1,8 +1,8 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Computação em nuvens
 
-[![Computação em nuvens](https://site.com/img/exemplo.png "Computação em nuvens")](http://link.com "Computação em nuvens")
+[![Computação em nuvens](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/images/cloud_1.png "Computação em nuvens")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/images/cloud_1.png "Computação em nuvens")
 
-- [Link 1](https://site.com#anchor-link-1 "Link 1")
+- [Amazon Web Services - AWS](https://site.com#anchor-link-1 "Amazon Web Services - AWS")
 
 ---
 
@@ -15,6 +15,6 @@ const yourCodeJavaScript = "Seu código JavaScript";
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#assunto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--computa%C3%A7%C3%A3o-em-nuvens "Subir para o topo")
 
 ---
