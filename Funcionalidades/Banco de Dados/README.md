@@ -28,11 +28,25 @@
 
 ### Criar um novo projeto e iniciar o servidor:
 
-> Crie um novo projeto fora do diretório do seu projeto o qual quer conectá-lo. Na verdade, você estará criando uma API para conectar seu projeto!
+> Crie um novo projeto com o Vite fora do diretório do seu projeto o qual deseja conectá-lo ao banco de dados. Você irá criar uma API para conectar seu projeto!
 
 ```bash
-npm init -y
+npm create vite@latest api_project_name
 ```
+
+> Selecione a framework `React`, depois a variante `TypeScript`.
+
+Agora rode os comandos seguintes:
+
+```bash
+cd api_project_name
+npm install
+npm run dev
+```
+
+> Você estará entrando no seu novo projeto e instalando as dependências do node e o comando `npm run dev` rodar o servidor.
+
+Parar o servidor e apagar arquivo `./index.html`, todos os arquivos do diretório `./src/` e também o diretório `./public/`. O `npm run dev` era apenas para testar o servidor.
 
 Instalar o Express:
 
@@ -68,7 +82,7 @@ npm install prisma --save-dev
 Instalar o Prisma Client no projeto com o seguinte comando:
 
 ```bash
-npm install @prisma/cliente
+npm install @prisma/client
 ```
 
 Iniciar o PRISMA:
@@ -145,17 +159,30 @@ import express from 'express';
 import { routes } from './routes';
 
 const App = express();
+const port = 3333;
 
 App.use(express.json())
 App.use(routes);
 App.listen(3333, ()=>{
-    console.log('Server is running! 🔥');
+    console.log('Server is running on port "' + port + '"! 🔥');
 });
 ```
 
 Para habilitar o CORS no seu servidor Express, você pode usar a biblioteca cors. Para permitir qualquer origem, você pode passar `{ origin: '*' }` como opções para a função `cors()`.
 
-Você pode modificar o seu arquivo `server.ts` da seguinte forma:
+Instalar o `CORS`:
+
+```bash
+npm install cors
+```
+
+Instalar o pacote de tipos do `CORS`:
+
+```bash
+npm install @types/cors
+```
+
+Modificar o seu arquivo `./src/server.ts` da seguinte forma:
 
 ```javascript
 import express from 'express';
@@ -170,7 +197,7 @@ app.use(express.json());
 app.use(routes);
 
 app.listen(port, () => {
-  console.log('Server is running! 🔥');
+  console.log('Server is running on port "' + port + '"! 🔥');
 });
 
 ```
