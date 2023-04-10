@@ -15,6 +15,6 @@ const yourCodeJavaScript = "Seu código JavaScript";
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](https://github.com/systemboys/React_Codes/tree/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS#react-codes--assunto "Subir para o topo")
+[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
 
 ---
