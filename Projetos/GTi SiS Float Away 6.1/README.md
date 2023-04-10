@@ -10,7 +10,7 @@
 - [`Centralizar` a janela](#centralizar-a-janela "Centralizar a janela")
 - [`Abrir janelas` a partir de outras janelas do Fenestra](#abrir-janelas-a-partir-de-outras-janelas-do-fenestra "Abrir janelas a partir de outras janelas do Fenestra")
 - [`Filtrar` o `nível de usuário` para exibir os `ícones do Desktop`](#filtrar-o-n%C3%ADvel-de-usu%C3%A1rio-para-exibir-os-%C3%ADcones-do-desktop "Filtrar o nível de usuário para exibir os ícones do Desktop")
-- [Terminais no processo de programação do projeto GTi SiS Float Away 6.1](#terminais-no-processo-de-programa%C3%A7%C3%A3o-do-projeto-gti-sis-float-away-61 "Terminais no processo de programação do projeto GTi SiS Float Away 6.1")
+- [`Terminais` no `processo de programação` do projeto GTi SiS Float Away 6.1](#terminais-no-processo-de-programa%C3%A7%C3%A3o-do-projeto-gti-sis-float-away-61 "Terminais no processo de programação do projeto GTi SiS Float Away 6.1")
 
 ---
 
