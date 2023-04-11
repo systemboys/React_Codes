@@ -147,11 +147,11 @@ Exemplo abaixo:
 ### Criar o arquivo `./src/prisma.ts` e configure o seguinte código:
 
 ```javascript
-import { PrismaClient } from "@prisma/client"
+import { PrismaClient } from "@prisma/client";
 
 export const prisma = new PrismaClient ({
     log: ['query'],
-})
+});
 ```
 
 ### Criar o arquivo `./src/server.ts` e configure o seguinte código:
