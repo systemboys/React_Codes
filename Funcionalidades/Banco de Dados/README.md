@@ -216,7 +216,7 @@ import { prisma } from './prisma';
 
 export const routes = express.Router();
 
-// Atualizar dado na tabela "admins".
+// Selecionar dados na tabela "admins".
 // Rota: '/admins'.
 routes.get('/admins', async (req, res) => {
     const admins = await prisma.admins.findMany(
