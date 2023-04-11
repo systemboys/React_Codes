@@ -46,7 +46,7 @@ npm run dev
 
 > Você estará entrando no seu novo projeto e instalando as dependências do node e o comando `npm run dev` rodar o servidor.
 
-Após testar, parar o servidor apagar os arquivos `./index.html` e `./tsconfig.json`, o diretório `./public/` e todos os arquivos dentro do diretório `./src/`.
+Após testar, parar o servidor, apagar os arquivos `./index.html` e `./tsconfig.json`, o diretório `./public/` e todos os arquivos dentro do diretório `./src/`.
 
 Instalar o Express:
 
@@ -60,7 +60,7 @@ Instalar o TypeScript:
 npm install typescript ts-node @types/node --save-dev
 ```
 
-Iniciar TypeScript:
+Iniciar TypeScript, executar o comando `npx tsc --init` para criar um novo arquivo `tsconfig.json` em no projeto TypeScript:
 
 ```bash
 npx tsc --init
