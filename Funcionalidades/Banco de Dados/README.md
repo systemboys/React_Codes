@@ -66,7 +66,7 @@ Iniciar TypeScript, executar o comando `npx tsc --init` para criar um novo arqui
 npx tsc --init
 ```
 
-Mudar "target": "es2016" para "es2020" no arquivo `./tsconfig.json`:
+Mudar o valor do "target": "es2016" para "es2020" no arquivo `./tsconfig.json`:
 
 ```javascript
 /* Language and Environment */
