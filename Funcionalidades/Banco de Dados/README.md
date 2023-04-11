@@ -36,7 +36,7 @@ npm create vite@latest api_project_name
 
 > Selecione a framework `React`, depois a variante `TypeScript`.
 
-Agora rode os comandos seguintes:
+Agora rode os comandos seguintes para testar:
 
 ```bash
 cd api_project_name
@@ -46,7 +46,7 @@ npm run dev
 
 > Você estará entrando no seu novo projeto e instalando as dependências do node e o comando `npm run dev` rodar o servidor.
 
-Parar o servidor e apagar arquivo `./index.html`, todos os arquivos do diretório `./src/` e também o diretório `./public/`. O `npm run dev` era apenas para testar o servidor.
+Após testar, parar o servidor apagar os arquivos `./index.html` e `./tsconfig.json`, o diretório `./public/` e todos os arquivos dentro do diretório `./src/`.
 
 Instalar o Express:
 
@@ -94,15 +94,17 @@ npx prisma init
 ### Configurar o arquivo `./.env`:
 
 ```javascript
-DATABASE_URL="mysql://yourUser:yourPassword@yourHost:3306/yourDataBase"
+DATABASE_URL="postgresql://yourUser:yourPassword@yourHost:5432/yourDataBase"
 ```
 
-> Onde:
-> `yourUser` é seu usuário de banco de dados,
-> `yourPassword` é a senha,
-> `yourHost` é o Host de sua hospedagem,
-> `3306` é porta e
-> `yourDataBase` é seu banco de dados.
+| Parâmetro | Descrição |
+| :------------ | :------------ |
+| postgresql | Tipo de banco de dados. |
+| yourUser | Usuário de banco de dados. |
+| yourPassword | Senha do banco de dados. |
+| yourHost | Host de sua hospedagem. |
+| 5432 | Porta utilizada para acessar. Obs.: Para acessar o MySQL no host de sua hospedagem, use a porta `3306`. |
+| yourDataBase | Banco de dados. |
 
 ### Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo:
 
@@ -279,6 +281,12 @@ No arquivo `./package.json` editar o script deixando como no exemplo abaixo:
 "script": {
     "dev": "tsx watch src/server.ts"
 }
+```
+
+Executar o `prisma generate`:
+
+```bash
+npx prisma generate
 ```
 
 Execute o servidor NPM:
