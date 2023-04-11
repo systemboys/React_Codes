@@ -219,11 +219,11 @@ export const routes = express.Router();
 // Selecionar dados na tabela "admins".
 // Rota: '/admins'.
 routes.get('/admins', async (req, res) => {
-    const admins = await prisma.admins.findMany(
+    const admins = await prisma.admins.findMany({
         orderBy: {
             id: 'desc'
         }
-    );
+    });
     res.status(200).json(admins);
 });
 
