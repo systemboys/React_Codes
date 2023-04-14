@@ -8,7 +8,7 @@
 
 ## Componentes
 
-| Componente | Descrição |
+| Componente | Características gráficas |
 | :------------ | :------------ |
 | PostGallery | [![PostGallery](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/PostGallery.png "PostGallery")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/PostGallery.png "PostGallery") |
 | 3 | 4 |
