@@ -2,18 +2,18 @@
 
 [![Home do JMv4](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Jornal_de_Mirador.png "Home do JMv4")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Jornal_de_Mirador.png "Home do JMv4")
 
-- [Link 1](https://site.com#anchor-link-1 "Link 1")
+- [Componentes](#componentes "Componentes")
 
 ---
 
-## Texto de começo
+## Componentes
 
 | Componente | Descrição |
 | :------------ | :------------ |
-| PostGallery | [![PostGallery](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Jornal_de_Mirador.png "PostGallery")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Jornal_de_Mirador.png "PostGallery") |
+| PostGallery | [![PostGallery](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/PostGallery.png "PostGallery")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/PostGallery.png "PostGallery") |
 | 3 | 4 |
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#jornal-de-mirador-v4 "Subir para o topo")
+[(&uarr;) Subir](#react-codes--jornal-de-mirador-v4 "Subir para o topo")
 
 ---
