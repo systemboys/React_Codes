@@ -325,7 +325,7 @@ npx prisma generate
 Instalar a dependência `Axios` no NPM do seu projeto o qual deseja listar os itens:
 
 ```bash
-npm i axios
+npm install axios
 ```
 
 > Obs.: Se houver erro, forçar a instalação com `--force`!
