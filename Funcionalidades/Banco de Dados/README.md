@@ -324,6 +324,8 @@ npx prisma generate
 
 Instalar a dependência `Axios` no NPM do seu projeto o qual deseja listar os itens:
 
+> O pacote 'axios' é uma popular biblioteca de cliente HTTP para fazer requisições em APIs web a partir de aplicações JavaScript.
+
 ```bash
 npm install axios
 ```
