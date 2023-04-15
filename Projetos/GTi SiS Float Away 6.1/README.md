@@ -495,6 +495,17 @@ Abaixo estão os terminais organizados durante o desenvolvimento dos projeto GTi
 
 [![Terminais durante o processo de desenvolvimento](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Terminais_Projetos_GTi_SiS.png "Terminais durante o processo de desenvolvimento")](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Terminais_Projetos_GTi_SiS.png "Terminais durante o processo de desenvolvimento")
 
+| Terminais | Descrição |
+| :------------ | :------------ |
+| npm api_gsfa6.1 | Execução da API que conecta ao banco de dados do projeto GTi SiS Float Away 6.1. |
+| bash api_gsfa6.1 | Projeto da API que conecta ao banco de dados do projeto GTi SiS Float Away 6.1. |
+| npm gti-sis-float-away-6.1 | Execução do servidor local do projeto GTi SiS Float Away 6.1. |
+| bash gti-sis-float-away-6.1 | Projeto do projeto GTi SiS Float Away 6.1. |
+| npm api_gss6.1 | Execução da API que conecta ao banco de dados do projeto GTi SiS Stock 6.1. |
+| bash api_gss6.1 | Projeto da API que conecta ao banco de dados do projeto GTi SiS Stock 6.1. |
+| npm gti-sis-stock-6.1 | Execução do servidor local do projeto GTi SiS Stock 6.1 |
+| bash gti-sis-stock-6.1 | Projeto do projeto GTi SiS Stock 6.1. |
+
 > Os terminais acima está em ordem para o programador se basear no momento do desenvolvimento. Separados em cores, sendo laranja para o Float e verde para o Stock.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
