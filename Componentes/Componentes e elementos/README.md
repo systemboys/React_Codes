@@ -1016,9 +1016,11 @@ O Col permite especificar larguras de coluna em 6 tamanhos de ponto de interrup�
 Importações dos componentes:
 
 ```javascript
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import {
+    Container,
+    Row,
+    Col
+} from 'react-bootstrap';
 ```
 
 Elementos do HTML:
