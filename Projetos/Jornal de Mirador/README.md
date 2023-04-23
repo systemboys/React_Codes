@@ -6,6 +6,12 @@
 
 ---
 
+## Terminais
+
+Terminais em execução e desenvolvimento
+
+[![Terminais](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Terminais.png "Terminais")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Terminais.png "Terminais")
+
 ## Componentes
 
 | Componente | Características gráficas |
