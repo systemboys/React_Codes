@@ -2,6 +2,7 @@
 
 [![Home do JMv4](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Jornal_de_Mirador.png "Home do JMv4")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Jornal_de_Mirador.png "Home do JMv4")
 
+- [Terminais em execução e desenvolvimento](https://github.com/systemboys/React_Codes/tree/main/Projetos/Jornal%20de%20Mirador#terminais "Terminais em execução e desenvolvimento")
 - [Componentes](#componentes "Componentes")
 
 ---
