@@ -11,10 +11,9 @@
 
 Terminais em execução e desenvolvimento
 
-[![Terminais](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Terminais.png "Terminais")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Terminais.png "Terminais")
-
 | Terminal | Execução |
 | :------------ | :------------ |
+| [![Terminais](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Terminais.png "Terminais")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Terminais.png "Terminais") | Representação gráfica dos terminais. |
 | npm api_jm_v4 | Execute `npm run dev` para rodar API que conecta ao banco de dados do JM. |
 | bash api_jm_v4 | Seus comandos diversos. |
 | npm JornalDeMiradorReact | Execute `npm start` para rodar o servidor. Obs.: Antes verifique aversão do node e, use a versão 14, execute o comando `nvm use 14` para startar o servidor. |
