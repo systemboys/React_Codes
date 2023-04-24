@@ -13,6 +13,13 @@ Terminais em execução e desenvolvimento
 
 [![Terminais](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Terminais.png "Terminais")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Terminais.png "Terminais")
 
+| Terminal | Execução |
+| :------------ | :------------ |
+| npm api_jm_v4 | `npm run dev` |
+| bash api_jm_v4 | Seus comandos diversos. |
+| npm JornalDeMiradorReact | `npm start` |
+| bash JornalDeMiradorReact | Seus comandos diversos. |
+
 ## Componentes
 
 | Componente | Características gráficas |
