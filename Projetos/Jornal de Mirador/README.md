@@ -19,6 +19,8 @@ Terminais em execução e desenvolvimento
 | npm JornalDeMiradorReact | Execute `npm start` para rodar o servidor. Obs.: Antes verifique aversão do node e, use a versão 14, execute o comando `nvm use 14` para startar o servidor. |
 | bash JornalDeMiradorReact | Seus comandos diversos. |
 
+> Após executar os servidores, acesse `http://localhost:3000/` no seu navegador.
+
 ## Componentes
 
 | Componente | Características gráficas |
