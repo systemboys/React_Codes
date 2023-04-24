@@ -498,11 +498,11 @@ Abaixo estão os terminais organizados durante o desenvolvimento dos projeto GTi
 | Terminais | Descrição |
 | :------------ | :------------ |
 | npm api_gsfa6.1 | Execução da API que conecta ao banco de dados do projeto GTi SiS Float Away 6.1 (`npm run dev`). |
-| bash api_gsfa6.1 | Projeto da API que conecta ao banco de dados do projeto GTi SiS Float Away 6.1 (`npm run dev`). |
+| bash api_gsfa6.1 | Projeto da API que conecta ao banco de dados do projeto GTi SiS Float Away 6.1. |
 | npm gti-sis-float-away-6.1 | Execução do servidor local do projeto GTi SiS Float Away 6.1 (`npm run dev`). |
 | bash gti-sis-float-away-6.1 | Projeto do projeto GTi SiS Float Away 6.1. |
 | npm api_gss6.1 | Execução da API que conecta ao banco de dados do projeto GTi SiS Stock 6.1 (`npm run dev`). |
-| bash api_gss6.1 | Projeto da API que conecta ao banco de dados do projeto GTi SiS Stock 6.1 (`npm run dev`). |
+| bash api_gss6.1 | Projeto da API que conecta ao banco de dados do projeto GTi SiS Stock 6.1. |
 | npm gti-sis-stock-6.1 | Execução do servidor local do projeto GTi SiS Stock 6.1 (`npm run dev`). |
 | bash gti-sis-stock-6.1 | Projeto do projeto GTi SiS Stock 6.1. |
 
