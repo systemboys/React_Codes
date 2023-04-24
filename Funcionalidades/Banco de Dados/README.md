@@ -403,6 +403,11 @@ Observe que a propriedade `dangerouslySetInnerHTML` recebe um objeto com uma ún
 
 Com essa mudança, o conteúdo HTML deve ser renderizado corretamente no seu componente. Mas lembre-se de usar esta função com cuidado e evitar expor seu aplicativo a ataques de XSS.
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
 ## Consulta com o PRISMA em um compoente classe
 
 Se o componente for uma classe em vez de uma função, você pode utilizar o método `componentDidMount` para fazer a chamada à API e definir o estado inicial com a lista de atualizações vazia:
