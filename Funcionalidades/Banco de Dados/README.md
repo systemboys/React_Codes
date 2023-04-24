@@ -14,6 +14,7 @@
 - [`Listar itens` da `tabela` no seu componente](#listar-itens-da-tabela-no-seu-componente "Listar itens da tabela no seu componente")
     - [Instalações necessárias](#instala%C3%A7%C3%B5es-necess%C3%A1rias "Instalações necessárias")
     - [Listar os itens no seu componente](#listar-os-itens-no-seu-componente "Listar os itens no seu componente")
+    - [Consulta com o PRISMA em um compoente classe](#consulta-com-o-prisma-em-um-compoente-classe "Consulta com o PRISMA em um compoente classe")
     - [Listar 1 registro a partir do ID](#listar-1-registro-a-partir-do-id "Listar 1 registro a partir do ID")
         - [Exemplo 1, Onde iremos mudar o plano de fundo de um objeto](#listar-1-registro-a-partir-do-id-exemplo-1 "Exemplo 1, Onde iremos mudar o plano de fundo de um objeto")
         - [Exemplo 2, Onde seu resultado é colocado em outra rota](#listar-1-registro-a-partir-do-id-exemplo-2 "Exemplo 2, Onde seu resultado é colocado em outra rota")
@@ -401,6 +402,44 @@ No seu código, você pode usar a função `dangerouslySetInnerHTML` da seguinte
 Observe que a propriedade `dangerouslySetInnerHTML` recebe um objeto com uma única propriedade `__html` que contém o HTML que você deseja injetar no DOM. O React irá avisá-lo caso esta propriedade esteja presente, para que você se certifique de que deseja fazer isso.
 
 Com essa mudança, o conteúdo HTML deve ser renderizado corretamente no seu componente. Mas lembre-se de usar esta função com cuidado e evitar expor seu aplicativo a ataques de XSS.
+
+## Consulta com o PRISMA em um compoente classe
+
+Se o componente for uma classe em vez de uma função, você pode utilizar o método `componentDidMount` para fazer a chamada à API e definir o estado inicial com a lista de atualizações vazia:
+
+```javascript
+import React, { Component } from 'react';
+import { Api } from '../../server/api';
+
+class MeuComponente extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      listUpdates: []
+    };
+  }
+
+  componentDidMount() {
+    Api.get('/latest_updates').then((res) => {
+      this.setState({ listUpdates: res.data });
+    });
+  }
+
+  render() {
+    return (
+      <ul>
+        {this.state.listUpdates.map(Updates => (
+          <li>Atualização: {Updates.commit} | Data: {Updates.date} às {Updates.hour} | Autor: {Updates.author} | Descrição: {Updates.description}</li>
+        ))}
+      </ul>
+    );
+  }
+}
+
+export default MeuComponente;
+```
+
+O método `componentDidMount` é chamado automaticamente pelo React quando o componente é montado na tela. Dentro dele, é feita a chamada à API e o estado inicial do componente é definido com a lista de atualizações vazia. Quando a resposta da API é obtida, o estado é atualizado com a lista de atualizações recebida. Na função de renderização do componente, a lista é exibida utilizando o método `map()` como no exemplo anterior.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
