@@ -15,7 +15,7 @@ Terminais em execução e desenvolvimento
 
 | Terminal | Execução |
 | :------------ | :------------ |
-| npm api_jm_v4 | Execute `npm run dev` para rodar o servidor do projeto. |
+| npm api_jm_v4 | Execute `npm run dev` para rodar API que conecta ao banco de dados do JM. |
 | bash api_jm_v4 | Seus comandos diversos. |
 | npm JornalDeMiradorReact | Execute `npm start` para rodar o servidor. Obs.: Antes verifique aversão do node e, use a versão 14, execute o comando `nvm use 14` para startar o servidor. |
 | bash JornalDeMiradorReact | Seus comandos diversos. |
