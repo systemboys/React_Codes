@@ -1,10 +1,13 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Trabalhando com números
 
 - [Formatação de números](#formata%C3%A7%C3%A3o-de-n%C3%BAmeros "Formatação de números")
+    - [Moeada brasileira](#moeada-brasileira "Moeada brasileira")
 
 ---
 
 ## Formatação de números
+
+### Moeada brasileira
 
 Para formatar o valor como moeda brasileira, você pode usar o método `toLocaleString` do JavaScript, passando `'pt-BR'` como parâmetro para definir o idioma e `{ style: 'currency', currency: 'BRL' }` para definir o formato de moeda. Então, o seu código ficaria assim:
 
