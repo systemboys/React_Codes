@@ -381,6 +381,8 @@ useEffect(() => {
 }, []);
 ```
 
+> Obs.: A constante `listUpdates` deve ser mapeada pelo `map()`, porque os dados da tabela estão nessa constante.
+
 E por último, o `map()` para obter sua lista:
 
 ```javascript
