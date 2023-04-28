@@ -290,6 +290,8 @@ Executar o `prisma generate`:
 npx prisma generate
 ```
 
+> Ao executar `npx prisma generate`, o Prisma lê o schema do seu banco de dados e gera o código do Prisma Client que você pode usar em seu aplicativo para acessar o banco de dados. Isso é necessário sempre que você faz alterações em seu schema ou quando você cria um novo projeto e precisa gerar o código inicial.
+
 Execute o servidor NPM:
 
 ```bash
