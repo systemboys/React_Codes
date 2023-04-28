@@ -112,6 +112,17 @@ Este exemplo criará um botão que, quando clicado, abrirá uma janela popup com
 
 ## Contar número de caracteres de uma string
 
+Esta função recebe a o valor da string, conta os caracteres e retorna o valor referente à quantidade de caracteres.
+
+```javascript
+// Contar caracteres
+function countCharacters(string) {
+    const numberOfCharacters = string.length;
+    return numberOfCharacters;
+}
+// Exemplo: countCharacters("Seu texto aqui.")
+```
+
 Para contar o número de caracteres de uma string em ReactJS, você pode simplesmente usar a propriedade length da string. Por exemplo, suponha que você tenha uma variável chamada "texto" que contém o texto que você deseja contar os caracteres, você pode obter o número de caracteres usando o seguinte código:
 
 ```javascript
