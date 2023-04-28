@@ -123,7 +123,7 @@ function countCharacters(string) {
 // Exemplo: countCharacters("Seu texto aqui.")
 ```
 
-Para contar o número de caracteres de uma string em ReactJS, você pode simplesmente usar a propriedade length da string. Por exemplo, suponha que você tenha uma variável chamada "texto" que contém o texto que você deseja contar os caracteres, você pode obter o número de caracteres usando o seguinte código:
+Para contar o número de caracteres de uma string em ReactJS, você pode simplesmente usar a propriedade `length` da string. Por exemplo, suponha que você tenha uma variável chamada "texto" que contém o texto que você deseja contar os caracteres, você pode obter o número de caracteres usando o seguinte código:
 
 ```javascript
 const texto = "Exemplo de texto";
