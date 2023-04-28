@@ -2,6 +2,7 @@
 
 - [`Transbordar` texto dentro de um elemento](#transbordar-texto-dentro-de-um-elemento "Transbordar texto dentro de um elemento")
 - [Mudar a `imagem do plano de fundo` de um elemento](#mudar-a-imagem-do-plano-de-fundo-de-um-elemento "Mudar a imagem do plano de fundo de um elemento")
+- [Colocar uma DIV e todo seu conteúdo em escala de cinza](#colocar-uma-div-e-todo-seu-conteúdo-em-escala-de-cinza "Colocar uma DIV e todo seu conteúdo em escala de cinza")
 
 ---
 
@@ -60,3 +61,19 @@ Note que aqui estamos usando `element.style.backgroundColor` em vez de `element.
 
 ---
 
+## Colocar uma DIV e todo seu conteúdo em escala de cinza
+
+Para colocar uma DIV e todo seu conteúdo em escala de cinza utilizando CSS, você pode utilizar a propriedade "filter" com o valor "grayscale(100%)". Isso aplicará um filtro de escala de cinza de 100% na DIV e em todos os seus elementos filhos. Aqui está um exemplo de código CSS:
+
+```css
+div {
+  filter: grayscale(100%);
+}
+```
+
+Lembre-se de substituir "div" pelo seletor CSS correto para a sua DIV. Se você quiser aplicar o efeito de escala de cinza em outros elementos, basta usar o mesmo código com o seletor apropriado.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
+
+---
