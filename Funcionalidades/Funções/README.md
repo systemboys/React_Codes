@@ -4,7 +4,7 @@
 - [Passar uma propriedade de um elemento para uma arrow function](#passar-uma-propriedade-de-um-elemento-para-uma-arrow-function "Passar uma propriedade de um elemento para uma arrow function")
 - [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
 - [PopUp passando além de uma URL, dimensões e centralizada](#popup-passando-al%C3%A9m-de-uma-url-dimens%C3%B5es-e-centralizada "PopUp passando além de uma URL, dimensões e centralizada")
-- [Contar o número de caracteres de uma string](#contar-o-número-de-caracteres-de-uma-string "Contar o número de caracteres de uma string")
+- [Contar número de caracteres de uma string](#contar-número-de-caracteres-de-uma-string "Contar número de caracteres de uma string")
 
 ---
 
@@ -110,7 +110,7 @@ Este exemplo criará um botão que, quando clicado, abrirá uma janela popup com
 
 ---
 
-## Contar o número de caracteres de uma string
+## Contar número de caracteres de uma string
 
 Para contar o número de caracteres de uma string em ReactJS, você pode simplesmente usar a propriedade length da string. Por exemplo, suponha que você tenha uma variável chamada "texto" que contém o texto que você deseja contar os caracteres, você pode obter o número de caracteres usando o seguinte código:
 
