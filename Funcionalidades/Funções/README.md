@@ -81,6 +81,11 @@ openPopup('https://www.google.com');
 
 Neste exemplo, a função `openPopup` recebe uma URL como parâmetro e utiliza o método `window.open` para abrir uma nova janela com a URL especificada. O segundo parâmetro da função `window.open` define o nome da janela (no caso, "popup"), e o terceiro parâmetro especifica as dimensões da janela. Você pode ajustar o tamanho de acordo com suas necessidades.
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+
+---
+
 ## PopUp passando além de uma URL, dimensões e centralizada
 
 Você pode usar o método `window.open()` do JavaScript para abrir uma nova janela popup com uma determinada URL e dimensões. Para centralizar a janela na tela, você pode usar as dimensões da tela e as dimensões da janela para calcular a posição do canto superior esquerdo da janela. Aqui está um exemplo de código que faz isso:
