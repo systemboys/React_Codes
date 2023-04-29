@@ -426,6 +426,7 @@ onClick={() => props.fenestra.open({  title: "Nova Janela", content: ({ fenestra
 Executar dentro de uma função: ( ! ) Não esquecer de passar o `props` no componente:
 
 ```javascript
+// Suas importações.
 export function YourComponent(props) {
 
     // Tamanho da janela e do screen.
@@ -434,7 +435,7 @@ export function YourComponent(props) {
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
 
-    // Evento do onClick={}
+    // Evento do onClick={}.
     const handleClick = (event, id) => {
         props.fenestra.open({
             title: "Nova Janela",
