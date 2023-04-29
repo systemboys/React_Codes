@@ -462,6 +462,25 @@ Botão com o evento `onClink`:
 return <button onClick={(event) => handleClick(event, "123")}>Nova janela</button>;
 ```
 
+Para executar um componente para a nova janela e passar o `id` para este componente `<GetResource />`, você pode adicionar uma propriedade `id` ao elemento JSX, como no exemplo abaixo:
+
+```javascript
+const handleClick = (event, id) => {
+  props.fenestra.open({
+    title: "Nova Janela",
+    top: (viewportHeight - windowHeight) / 2,
+    left: (viewportWidth - windowWidth) / 2,
+    width: windowWidth,
+    height: windowHeight,
+    content: ({ fenestra }) => (
+      <GetResource id={id} />
+    )
+  });
+};
+```
+
+No exemplo acima, a propriedade `id` é passada para o componente `<GetResource />` como uma prop. O valor do `id` é passado para a função `handleClick` como um parâmetro.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
 
