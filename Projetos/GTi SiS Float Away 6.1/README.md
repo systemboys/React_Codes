@@ -9,6 +9,7 @@
 - [`Tamanho` e `posição` da janela](#tamanho-e-posi%C3%A7%C3%A3o-da-janela "Tamanho e posição da janela")
 - [`Centralizar` a janela](#centralizar-a-janela "Centralizar a janela")
 - [`Abrir janelas` a partir de outras janelas do Fenestra](#abrir-janelas-a-partir-de-outras-janelas-do-fenestra "Abrir janelas a partir de outras janelas do Fenestra")
+  - [Nova janela sendo executada dentro de uma arrow function](#nova-janela-sendo-executada-dentro-de-uma-arrow-function "Nova janela sendo executada dentro de uma arrow function")
 - [`Filtrar` o `nível de usuário` para exibir os `ícones do Desktop`](#filtrar-o-n%C3%ADvel-de-usu%C3%A1rio-para-exibir-os-%C3%ADcones-do-desktop "Filtrar o nível de usuário para exibir os ícones do Desktop")
 - [`Terminais` no `processo de programação` do projeto GTi SiS Float Away 6.1](#terminais-no-processo-de-programa%C3%A7%C3%A3o-do-projeto-gti-sis-float-away-61 "Terminais no processo de programação do projeto GTi SiS Float Away 6.1")
 
@@ -414,6 +415,51 @@ onClick={() => props.fenestra.open({  title: "Nova Janela", content: ({ fenestra
 ```
 
 > [Luis Alfredo Galiza] Espero ter ajudado. Até mais.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+
+---
+
+## Nova janela sendo executada dentro de uma arrow function
+
+Executar dentro de uma função: ( ! ) Não esquecer de passar o `props` no componente:
+
+```javascript
+export function YourComponent(props) {
+
+    // Tamanho da janela e do screen.
+    const windowWidth = 720;
+    const windowHeight = 400;
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+
+    // Evento do onClick={}
+    const handleClick = (event, id) => {
+        props.fenestra.open({
+            title: "Nova Janela",
+            top: (viewportHeight - windowHeight) / 2,
+            left: (viewportWidth - windowWidth) / 2,
+            width: windowWidth,
+            height: windowHeight,
+            content: ({ fenestra }) =>
+              <h1>Olá Mundo! { id }</h1>
+          })
+    };
+
+    return (
+    	<>
+    		//...
+    	</>
+    );
+}
+```
+
+Botão com o evento `onClink`:
+
+```javascript
+return <button onClick={(event) => handleClick(event, "123")}>Nova janela</button>;
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
