@@ -5,7 +5,7 @@
 
 - [React-Fenestra](#react-fenestra "React-Fenestra")
 - [Como `instalar` o `GTi SiS Float Away 6.1`?](#como-instalar-o-gti-sis-float-away-61 "Como instalar o GTi SiS Float Away 6.1?")
-  - [Clonando do GitHub para seu computador](#clonando-do-github-para-seu-computador "Clonando do GitHub para seu computador")
+  - [`Clonando do GitHub` para seu computador](#clonando-do-github-para-seu-computador "Clonando do GitHub para seu computador")
 - [`Tamanho` e `posição` da janela](#tamanho-e-posi%C3%A7%C3%A3o-da-janela "Tamanho e posição da janela")
 - [`Centralizar` a janela](#centralizar-a-janela "Centralizar a janela")
 - [`Abrir janelas` a partir de outras janelas do Fenestra](#abrir-janelas-a-partir-de-outras-janelas-do-fenestra "Abrir janelas a partir de outras janelas do Fenestra")
