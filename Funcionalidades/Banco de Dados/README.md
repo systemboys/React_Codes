@@ -632,7 +632,7 @@ Api.put(`/companySystemUpdateBackgroundId/1/${id}`).then((res) => {
 
 Neste exemplo, estamos adicionando um registro na tabela "admins":
 
-> Configurações feitas no arquivo `./src/routes.ts`.
+> Configurações feitas no arquivo `./src/routes.ts` de sua API.
 
 ```javascript
 // Inserir dados na tabela "admins".
