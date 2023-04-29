@@ -170,10 +170,12 @@ import "react-fenestra/css/fenestra.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowRestore } from '@fortawesome/free-solid-svg-icons';
 
+
+// (!) A variável global window é própria da linguagem Javascript. Ela não se refere à janela do fenestra.
+
+// Tamanho da janela e do screen.
 const windowWidth = 400;
 const windowHeight = 300;
-
-// A variável global window é própria da linguagem Javascript. Ela não se refere à janela do fenestra.
 const viewportWidth = window.innerWidth;
 const viewportHeight = window.innerHeight;
 
