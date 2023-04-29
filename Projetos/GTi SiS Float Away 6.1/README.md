@@ -481,6 +481,15 @@ const handleClick = (event, id) => {
 
 No exemplo acima, a propriedade `id` é passada para o componente `<GetResource />` como uma prop. O valor do `id` é passado para a função `handleClick` como um parâmetro.
 
+Para recuperar o ID dentro do componente, é necessário passá-lo como uma propriedade do componente. Por exemplo:
+
+```javascript
+export function GetResource(props) {
+    const { id } = props;
+    return <p>ID do Post: {id}</p>
+}
+```
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
 
