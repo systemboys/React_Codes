@@ -373,6 +373,7 @@ import { Api } from '../../server/api';
 Criar um `useState` e `setListUpdates` dentro do export do seu componente e configurar a rota no `Api.get()`:
 
 ```javascript
+// Executar a requisição GET para a rota '/latest_updates' da API.
 const [listUpdates, setListUpdates] = useState([]);
 useEffect(() => {
     Api.get('/latest_updates').then((res) => {
