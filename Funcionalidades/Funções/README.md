@@ -172,6 +172,39 @@ Em seguida, você pode utilizá-la no seu campo de formulário da seguinte forma
 
 Dessa forma, a função `capitalize()` será chamada sempre que houver uma mudança no valor do campo de formulário e a string digitada será capitalizada.
 
+> Quero que ignore as seguintes palavras: "de", "do", "da", "dos", "uma", "umas", "um", "uns".
+
+Para ignorar as palavras especificadas, você pode verificar se cada palavra está na lista de palavras ignoradas antes de capitalizá-la. Aqui está uma possível implementação da função:
+
+```javascript
+// Capitalizando as palavras.
+function capitalizeWords(value) {
+  const ignoredWords = ['de', 'do', 'da', 'dos', 'uma', 'umas', 'um', 'uns'];
+  const words = value.split(' ');
+  const capitalizedWords = words.map((word) => {
+    if (ignoredWords.includes(word.toLowerCase())) {
+      return word.toLowerCase();
+    } else {
+      return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+    }
+  });
+  return capitalizedWords.join(' ');
+}
+```
+
+Você pode usar essa função no seu componente React assim:
+
+```javascript
+<Form.Control
+  type="text"
+  size="sm"
+  placeholder="Nome completo do cliente"
+  value={full_name}
+  onChange={(e) => setFull_name(capitalizeWords(e.target.value))}
+  ref={full_nameInputRef}
+/>
+```
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
 
