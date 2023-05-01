@@ -25,9 +25,18 @@ A computação nas nuvens permite que as empresas reduzam os custos de infraestr
 
 [![Modelos de Serviços](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Modelo-de-Servi%C3%A7os.png "Modelos de Serviços")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Modelo-de-Servi%C3%A7os.png "Modelos de Serviços")
 
-Profissionais de TI
+Responsabilidade dos modelos.
 
 [![Profissionais de TI](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Profissionais-de-TI.png "Profissionais de TI")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Profissionais-de-TI.png "Profissionais de TI")
+
+| Modelo | Responsabilidade |
+| :------------ | :------------ |
+| Traditional IT | O TI tradicional tem a responsabilidade de tudo. O TI tem que cuidar da rede, cabeamento, os storeges, servidores físicos, rack, virtualização, o sistema operacional que está rodando, softwares no sistema operacional, versões de aplicações, bancos de dados, os dados em si no banco de dados e as aplicações. |
+| IaaS | Nesse modelo, o TI não precisa mais se preocupar com rede e cabeamento, storage, servidores, virtualizador, sendo uma responsabilidade do provedor de Cloud, no nosso caso aqui, a AWS. Mas nesse modelo, o TI ainda tem algumas responsabilidades como o sistema operacional, o que será instalado nesse sistema operacional, os dados e colocar as aplicações para rodar. |
+| PaaS | Nesse modelo, o TI só deve se preocupar com os dados e com as aplicações. Para o TI não interessa se estará rodando em Windows ou Linux, se está com os Paths de segurança, ele apenas colocará suas aplicações e dados. Sendo a grande tendência de de mercado é a utilização de PaaS. Por ser mais prático, mais barato, entregar mais qualidade e serviços. |
+| SaaS | Nesse modelo, é o que o usuário utiliza no dia a dia como e-mails, Netflix, gerenciamento de diretórios como OneDrive, GoogleDrive, DropBox etc. |
+
+> As empresas utilizam de IaaS e PaaS, infraestruturas como serviços para entregar um SaaS, um software como serviço. 
 
 ## Características essenciais de Cloud?
 
