@@ -5,6 +5,7 @@
 - [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
 - [PopUp passando além de uma URL, dimensões e centralizada](#popup-passando-al%C3%A9m-de-uma-url-dimens%C3%B5es-e-centralizada "PopUp passando além de uma URL, dimensões e centralizada")
 - [Contar número de caracteres de uma string](#contar-n%C3%BAmero-de-caracteres-de-uma-string "Contar número de caracteres de uma string")
+- [Capitalizando as palavras](#capitalizando-as-palavras "Capitalizando as palavras")
 
 ---
 
@@ -137,6 +138,39 @@ console.log(numeroCaracteres); // 16
 ```
 
 Neste exemplo, a constante `numeroCaracteres` vai conter o número de caracteres do texto, que no caso é 16.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+
+---
+
+## Capitalizando as palavras
+
+Você pode criar uma nova função em seu componente React que capitalize as letras da string. Segue um exemplo:
+
+```javascript
+// Capitalizando as palavras.
+function capitalize(str) {
+  return str.replace(/\b\w/g, function (match) {
+    return match.toUpperCase();
+  });
+}
+```
+
+Em seguida, você pode utilizá-la no seu campo de formulário da seguinte forma:
+
+```javascript
+<Form.Control
+  type="text"
+  size="sm"
+  placeholder="Nome completo do cliente"
+  value={full_name}
+  onChange={(e) => setFull_name(capitalize(e.target.value))}
+  ref={full_nameInputRef}
+/>
+```
+
+Dessa forma, a função `capitalize()` será chamada sempre que houver uma mudança no valor do campo de formulário e a string digitada será capitalizada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
