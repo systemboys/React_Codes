@@ -4,6 +4,7 @@
 
 - [O que é computação em nuvens?](#o-que-%C3%A9-computa%C3%A7%C3%A3o-nas-nuvens "O que é computação em nuvens?")
 - [Características de Cloud](#caracter%C3%ADsticas-essenciais-de-cloud "Características de Cloud")
+- [Modelos de Deploy](#modelos-de-deploy "Modelos de Deploy")
 
 ---
 
@@ -36,7 +37,12 @@ Responsabilidade dos modelos.
 | PaaS | Nesse modelo, o TI só deve se preocupar com os dados e com as aplicações. Para o TI não interessa se estará rodando em Windows ou Linux, se está com os Paths de segurança, ele apenas colocará suas aplicações e dados. Sendo a grande tendência de de mercado é a utilização de PaaS. Por ser mais prático, mais barato, entregar mais qualidade e serviços. |
 | SaaS | Nesse modelo, é o que o usuário utiliza no dia a dia como e-mails, Netflix, gerenciamento de diretórios como OneDrive, GoogleDrive, DropBox etc. |
 
-> As empresas utilizam de IaaS e PaaS, infraestruturas como serviços para entregar um SaaS, um software como serviço. 
+> As empresas utilizam de IaaS e PaaS, infraestruturas como serviços para entregar um SaaS, um software como serviço.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+
+---
 
 ## Características essenciais de Cloud?
 
@@ -52,6 +58,38 @@ Existem várias características essenciais que definem a computação em nuvem 
 | Segurança | A nuvem é altamente segura, com várias camadas de proteção de dados e infraestrutura para garantir a privacidade e segurança dos dados dos usuários. |
 
 Essas são apenas algumas das características essenciais da computação em nuvem, mas elas ajudam a explicar por que a nuvem se tornou tão popular para empresas de todos os tamanhos e setores.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+
+## Modelos de Deploy
+
+Os modelos de deploy (implantação) são formas diferentes de disponibilizar e instalar um aplicativo ou software em um ambiente de produção. Existem vários modelos de deploy, cada um com suas próprias vantagens e desvantagens. Aqui estão alguns dos modelos mais comuns:
+
+| Modelo | Conceito |
+| :------------ | :------------ |
+| On-Premises | Este modelo envolve a instalação de software em hardware local, geralmente em servidores que estão fisicamente localizados na empresa ou em um data center da empresa. Este modelo oferece controle total sobre o ambiente, mas pode ser mais caro em termos de investimento inicial em hardware e software, além de exigir mais recursos de manutenção e gerenciamento. |
+| Cloud (nuvem) | Neste modelo, o software é implantado em servidores remotos que são gerenciados por provedores de serviços em nuvem. Os provedores de serviços em nuvem fornecem recursos de computação, armazenamento e rede sob demanda, geralmente com base em um modelo de pagamento conforme o uso. Este modelo oferece escalabilidade, eficiência e flexibilidade, mas pode ter preocupações com a segurança e privacidade de dados. |
+| Híbrido | Este modelo combina elementos dos modelos On-Premises e Cloud, permitindo que as empresas aproveitem os benefícios de ambos. Por exemplo, um aplicativo pode ser implantado em um ambiente On-Premises, mas pode usar recursos em nuvem para lidar com picos de tráfego ou demanda. |
+| Container | Neste modelo, o aplicativo é implantado em um container, que é uma unidade de software que inclui todos os componentes necessários para executar o aplicativo. Os containers são altamente portáteis e podem ser executados em qualquer ambiente de hospedagem que suporte containers, como Kubernetes ou Docker. |
+| Serverless | Este modelo envolve a implantação de código em um ambiente gerenciado, em que o provedor de serviços gerencia automaticamente o dimensionamento, o provisionamento e o gerenciamento de recursos. O desenvolvedor fornece apenas o código do aplicativo, e o provedor de serviços em nuvem gerencia todo o resto. Este modelo oferece escalabilidade e eficiência, mas pode ter limitações em termos de controle sobre o ambiente de hospedagem. |
+
+Cada modelo de deploy tem suas próprias vantagens e desvantagens, e a escolha do modelo adequado dependerá das necessidades específicas da empresa e do aplicativo em questão.
+
+[![Modelos de Deploy](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Modelos-de-Deploy.png "Modelos de Deploy")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Modelos-de-Deploy.png "Modelos de Deploy")
+
+Na imagem acima, há alguns modelos de Deploy que existem, lembrando que há vários tipos de nuvens.
+
+| Tipo | Descrição |
+| :------------ | :------------ |
+| Nuvem privada | É quando você tem um Datacenter, onde nesse datacenter roda alguma plataforma de Claud e, só a sua empresa utiliza este datacenter. |
+| Nuvem pública | É quando você tem um Datacenter onde várias empresas consomem os recursos desses datacenters. O fato de você criar uma nuvem pública, não significa que seus dados são públicos. Você pode criar uma nuvem pública e ter um ambiente privado dentro dele. Exemplo: Você pode usar a AWS e ser acessível apenas de dentro da sua empresa. |
+| Nuvem híbrida | Onde você utiliza algo em ambiente local, mas também utiliza de uma nuvem pública. |
+| Nuvem comunitária | É uma nuvem privada, só que para uma comunidade. Exemplo: O governo do seu estado criou uma nuvem comunitária onde quem vai utilizar é o governo, a polícia militar, bombeiros, secretarias etc. |
+
+> Hoje, mais de 90% das empresas são nuvens públicas e o restante acabam usando nuvem privadas, sendo usando nuvems públicas em todos os pontos. Inclusive grandes bancos estão migrando para nuvems públicas por causa das questões de segurança.
+
+---
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
