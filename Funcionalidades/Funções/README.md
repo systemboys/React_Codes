@@ -192,7 +192,7 @@ function capitalizeWords(value) {
 }
 ```
 
-Você pode usar essa função no seu componente React assim:
+Você pode usar essa função `capitalizeWords()` no seu componente React assim:
 
 ```javascript
 <Form.Control
