@@ -25,6 +25,10 @@ A computação nas nuvens permite que as empresas reduzam os custos de infraestr
 
 [![Modelos de Serviços](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Modelo-de-Servi%C3%A7os.png "Modelos de Serviços")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Modelo-de-Servi%C3%A7os.png "Modelos de Serviços")
 
+Profissionais de TI
+
+[![Profissionais de TI](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Profissionais-de-TI.png "Profissionais de TI")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Profissionais-de-TI.png "Profissionais de TI")
+
 ## Características essenciais de Cloud?
 
 Existem várias características essenciais que definem a computação em nuvem (Cloud Computing). Aqui estão algumas das principais:
