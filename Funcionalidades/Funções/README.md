@@ -172,7 +172,7 @@ Em seguida, você pode utilizá-la no seu campo de formulário da seguinte forma
 
 Dessa forma, a função `capitalize()` será chamada sempre que houver uma mudança no valor do campo de formulário e a string digitada será capitalizada.
 
-> (!) Quero que ignore as seguintes palavras: "de", "do", "da", "dos", "uma", "umas", "um", "uns".
+> ( ! ) Quero que ignore as seguintes palavras: "de", "do", "da", "dos", "uma", "umas", "um", "uns".
 
 Para ignorar as palavras especificadas, você pode verificar se cada palavra está na lista de palavras ignoradas antes de capitalizá-la. Aqui está uma possível implementação da função:
 
