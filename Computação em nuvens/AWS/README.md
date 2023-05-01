@@ -2,7 +2,8 @@
 
 [![Amazon Web Services](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Group-169-3.png "Amazon Web Services")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Group-169-3.png "Amazon Web Services")
 
-- [Link 1](https://site.com#anchor-link-1 "Link 1")
+- [O que é computação em nuvens?](#o-que-%C3%A9-computa%C3%A7%C3%A3o-nas-nuvens "O que é computação em nuvens?")
+- [Características de Cloud](#caracter%C3%ADsticas-essenciais-de-cloud "Características de Cloud")
 
 ---
 
@@ -22,7 +23,7 @@ Os provedores de serviços em nuvem geralmente oferecem serviços em três model
 
 A computação nas nuvens permite que as empresas reduzam os custos de infraestrutura, aumentem a eficiência, escalabilidade e flexibilidade, e concentrem-se mais em suas atividades principais. Além disso, a computação em nuvem oferece acesso a tecnologias avançadas, como análise de dados e inteligência artificial, que muitas empresas podem não ter a capacidade de implementar localmente.
 
-[![Amazon Web Services](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Group-169-3.png "Amazon Web Services")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Group-169-3.png "Amazon Web Services")
+[![Modelos de Serviços](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Modelo-de-Servi%C3%A7os.png "Modelos de Serviços")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Modelo-de-Servi%C3%A7os.png "Modelos de Serviços")
 
 ## Características essenciais de Cloud?
 
