@@ -49,3 +49,6 @@ const yourCodeJavaScript = "Seu código JavaScript";
 | 1 | 2 |
 | 3 | 4 |
 
+╭─╮
+│ │
+╰─╯
