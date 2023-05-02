@@ -1,5 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Banco de Dados
 
+> Configurações e instalações.
+
 - [Conectar Banco de Dados `MySQL` com ORM `PRISMA`](#conectar-banco-de-dados-mysql-com-orm-prisma "Conectar Banco de Dados MySQL com ORM PRISMA")
     - [Criar um `novo projeto` e iniciar o servidor](#criar-um-novo-projeto-e-iniciar-o-servidor "Criar um novo projeto e iniciar o servidor")
     - [Instalar o PRISMA](#instalar-o-prisma "Instalar o PRISMA")
@@ -11,6 +13,11 @@
     - [Criar e configurar o arquivo `./src/routes.ts`](#criar-e-configurar-o-arquivo-srcroutests "Criar e configurar o arquivo src/routes.ts")
     - [Utilização do `Insomnia` para leitura, gravação, atualização e delete](#utiliza%C3%A7%C3%A3o-do-insomnia-para-leitura-grava%C3%A7%C3%A3o-atualiza%C3%A7%C3%A3o-e-delete "Utilização do Insomnia para leitura, gravação, atualização e delete")
     - [`Recriar instâncias` nos módulos](#recriar-inst%C3%A2ncias-nos-m%C3%B3dulos "Recriar instâncias nos módulos")
+
+---
+
+> Consultas em componentes de função.
+
 - [`Listar itens` da `tabela` no seu componente](#listar-itens-da-tabela-no-seu-componente "Listar itens da tabela no seu componente")
     - [Instalações necessárias](#instala%C3%A7%C3%B5es-necess%C3%A1rias "Instalações necessárias")
     - [Listar os itens no seu componente](#listar-os-itens-no-seu-componente "Listar os itens no seu componente")
@@ -23,6 +30,9 @@
 - [Gravar novo registro](#gravar-novo-registro "Gravar novo registro")
     - [Exemplo 1, onde é gravado um registro sem condições](#gravar-novo-registro-exemplo-1 "Exemplo 1, onde é gravado um registro sem condições")
 ---
+
+> Consultas em componentes de classe.
+
 - [Listar em componentes classe](#listar-em-componentes-classe "Listar em componentes classe")
 
 ---
