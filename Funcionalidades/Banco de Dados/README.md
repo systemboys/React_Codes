@@ -731,7 +731,7 @@ import { Api } from '../../server/api';
 
 ```javascript
 class YourComponent extends Component {
-    constructor(props) {
+    constructor() {
       // Atualizar o estado inicial no construtor.
       this.state = {
         listPosts: [],
