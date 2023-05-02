@@ -727,7 +727,7 @@ import React, { Component, useEffect, useState } from 'react';
 import { Api } from '../../server/api';
 ```
 
-3. Atualize o estado inicial no construtor `constructor(props)` da classe e adicione uma função de `componentDidMount` para fazer a chamada à API e atualizar o estado do componente.
+3. Atualize o estado inicial no construtor `constructor()` da classe e adicione uma função de `componentDidMount` para fazer a chamada à API e atualizar o estado do componente.
 
 ```javascript
 class YourComponent extends Component {
