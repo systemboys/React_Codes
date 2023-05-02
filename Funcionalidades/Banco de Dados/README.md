@@ -22,6 +22,7 @@
 - [`Atualizar` um registro `a partir do ID`](#atualizar-um-registro-a-partir-do-id "Atualizar um registro a partir do ID")
 - [Gravar novo registro](#gravar-novo-registro "Gravar novo registro")
     - [Exemplo 1, onde é gravado um registro sem condições](#gravar-novo-registro-exemplo-1 "Exemplo 1, onde é gravado um registro sem condições")
+- [Listar em componentes classe](#listar-em-componentes-classe "Listar em componentes classe")
 
 ---
 
@@ -693,6 +694,74 @@ Caso haja sucesso na chamada da API, a execução continua normalmente. Caso con
 O await é utilizado para esperar pela conclusão da chamada da API antes de prosseguir com a execução do código. Isso garante que a chamada da API será finalizada antes que qualquer outra ação seja executada no código.
 
 O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScript, que são operações que podem levar algum tempo para serem concluídas e não bloqueiam a execução do código. Com o uso do await, o código não prossegue até que a operação assíncrona seja finalizada.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
+## Listar em componentes classe
+
+Em componentes classe, você pode seguir os seguintes passos:
+
+1. Importe o `useEffect` e o `useState` do React.
+
+```javascript
+import React, { Component, useEffect, useState } from 'react';
+```
+
+2. Importe sua API:
+
+```javascript
+import { Api } from '../../server/api';
+```
+
+3. Atualize o estado inicial no construtor `constructor(props)` da classe e adicione uma função de `componentDidMount` para fazer a chamada à API e atualizar o estado do componente.
+
+```javascript
+class YourComponent extends Component {
+    constructor(props) {
+      // Atualizar o estado inicial no construtor.
+      this.state = {
+        listPosts: [],
+      };
+    }
+    
+    componentDidMount() {
+        // Chamada da API.
+        Api.get('/jm_posts').then((res) => {
+          this.setState({ listPosts: res.data });
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <Slider>
+                    {this.state.listPosts.slice(0, 9).map((item, i) => (
+                        <div key={i}>
+                            <div>
+                                <img src={item.image} />
+                            </div>
+                            <div>
+                                <div>
+                                    <Link to="#">{item.category}</Link>
+                                    <Link to="#">{item.date}</Link>
+                                </div>
+                                <h4><Link>{item.title}</Link></h4>
+                                <div />
+                                <p>{item.summary}</p>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+        );
+    }
+}
+```
+
+Com essas alterações, seu componente deve ser capaz de fazer a chamada à API e renderizar os dados recebidos. Lembre-se de importar o `Api` de onde ele está definido e ajustar o caminho para a rota correta.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
