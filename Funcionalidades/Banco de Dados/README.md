@@ -739,7 +739,7 @@ class YourComponent extends Component {
     }
     
     componentDidMount() {
-        // Chamada da API.
+        // Chamar a API.
         Api.get('/jm_posts').then((res) => {
           this.setState({ listPosts: res.data });
         });
