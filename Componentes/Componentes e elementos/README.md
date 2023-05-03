@@ -66,7 +66,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 Arquivo `App.jsx`.
 
 ```javascript
-export function App() {
+function App() {
   return (
     <h1>Hello World!</h1>
   )
