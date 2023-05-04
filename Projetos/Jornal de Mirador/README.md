@@ -26,7 +26,7 @@ Terminais em execução e desenvolvimento
 | Componente | Características gráficas |
 | :------------ | :------------ |
 | PostGallery | [![PostGallery](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/PostGallery.png "PostGallery")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/PostGallery.png "PostGallery") |
-| 3 | 4 |
+| MainMenu | [![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1") |
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--jornal-de-mirador-v4 "Subir para o topo")
