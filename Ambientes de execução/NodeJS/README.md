@@ -8,6 +8,7 @@
 - [Node Version Manager (nvm)](#node-version-manager-nvm "Node Version Manager (nvm)")
     - [Como instalar?](#como-instalar "Como instalar?")
     - [Comandos básicos do NVM para gerenciamento de versões do Node.js](#comandos-b%C3%A1sicos-do-nvm-para-gerenciamento-de-vers%C3%B5es-do-nodejs "Comandos básicos do NVM para gerenciamento de versões do Node.js")
+- [Resolvendo o erro de porta em uso no servidor Node.js](# "Resolvendo o erro de porta em uso no servidor Node.js")
 
 ---
 
@@ -147,6 +148,27 @@ Esses comandos estão relacionados ao gerenciador de versões do Node.js chamado
     ```
 
     > Esse `--force` para o caso de apresentar erros.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+
+---
+
+## Resolvendo o erro de porta em uso no servidor Node.js
+
+Esse erro ocorre porque a porta 3333 já está em uso. Você pode verificar quais processos estão usando essa porta digitando o seguinte comando no terminal:
+
+```bash
+sudo lsof -i :3333
+```
+
+Isso deve retornar informações sobre o processo que está usando a porta. Em seguida, você pode finalizar o processo usando o seguinte comando:
+
+```bash
+sudo kill <PID>
+```
+
+Substitua `<PID>` pelo ID do processo que está usando a porta 3333. Depois de finalizar o processo, você deve conseguir executar novamente o comando `npm run dev` sem problemas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
