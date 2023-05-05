@@ -5,7 +5,7 @@
 - [O que é computação em nuvens?](#o-que-%C3%A9-computa%C3%A7%C3%A3o-nas-nuvens "O que é computação em nuvens?")
 - [Características de Cloud](#caracter%C3%ADsticas-essenciais-de-cloud "Características de Cloud")
 - [Modelos de Deploy](#modelos-de-deploy "Modelos de Deploy")
-- [Serviços AWS](# "Serviços AWS")
+- [Serviços AWS](#servi%C3%A7os-aws "Serviços AWS")
 
 ---
 
@@ -97,7 +97,27 @@ Na imagem acima, há alguns modelos de Deploy que existem, lembrando que há vá
 
 ## Serviços AWS
 
+[![Serviços AWS](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services.png "Serviços AWS")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services.png "Serviços AWS")
 
+| Serviço | Descrição |
+| :------------: | :------------ |
+| EC2 | 3 |
+| CodePipeline | 4 |
+| CodeDeply | 5 |
+| S3 | 6 |
+| RDS | 7 |
+
+[![Serviços AWS](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services_icons.png "Serviços AWS")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services.png "Serviços AWS")
+
+## EC2
+
+EC2 (Elastic Compute Cloud) é um serviço de computação em nuvem da AWS que permite criar e executar instâncias de servidores virtuais na nuvem. Com o EC2, é possível criar, dimensionar e gerenciar instâncias de servidores com facilidade e flexibilidade, de acordo com as necessidades específicas de cada aplicação. 
+
+O EC2 oferece diversos tipos de instâncias, com diferentes configurações de CPU, memória, armazenamento e rede, para atender a diferentes cargas de trabalho, desde aplicações simples até ambientes de alta performance. Além disso, é possível escolher entre instâncias sob demanda, reservadas ou spot, dependendo das necessidades de capacidade e do orçamento disponível.
+
+O serviço também permite criar imagens de máquinas virtuais personalizadas, chamadas AMIs (Amazon Machine Images), que podem ser usadas para lançar novas instâncias ou replicar ambientes de produção com facilidade.
+
+O EC2 é altamente escalável e pode ser integrado com outros serviços da AWS, como o Elastic Load Balancing (ELB) e o Auto Scaling, para garantir alta disponibilidade e escalabilidade automática da infraestrutura. Ele também pode ser usado em conjunto com outros serviços da AWS, como o Amazon RDS (Relational Database Service) e o Amazon S3 (Simple Storage Service), para criar soluções completas e escaláveis na nuvem.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
