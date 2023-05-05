@@ -170,6 +170,16 @@ sudo kill <PID>
 
 Substitua `<PID>` pelo ID do processo que está usando a porta 3333. Depois de finalizar o processo, você deve conseguir executar novamente o comando `npm run dev` sem problemas.
 
+> O NPM é um servidor?
+
+NPM é a sigla para Node Package Manager, que é um gerenciador de pacotes para a plataforma Node.js. Ele é usado para instalar, gerenciar e compartilhar pacotes de código JavaScript que podem ser executados no ambiente Node.js. 
+
+O NPM pode ser utilizado para criar servidores web, mas ele não é em si um servidor. Quando você executa o comando `npm run dev`, você está na verdade rodando um script definido no arquivo `package.json` que pode iniciar um servidor local. 
+
+O servidor é criado através do código definido em um arquivo específico, geralmente chamado de `server.js` ou `index.js`. Esse arquivo utiliza algum framework de servidor web como o Express ou o Koa, e define rotas e respostas para as requisições que chegam ao servidor. 
+
+Portanto, o servidor NPM em si não existe, mas o NPM pode ser utilizado para instalar e gerenciar pacotes que são utilizados em servidores web construídos em Node.js.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
 
