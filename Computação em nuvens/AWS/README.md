@@ -107,7 +107,7 @@ Na imagem acima, há alguns modelos de Deploy que existem, lembrando que há vá
 | S3 | 6 |
 | RDS | 7 |
 
-[![Serviços AWS](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services_icons.png "Serviços AWS")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services.png "Serviços AWS")
+[![Serviços AWS](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services_icons.png "Serviços AWS")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services_icons.png "Serviços AWS")
 
 ## EC2
 
