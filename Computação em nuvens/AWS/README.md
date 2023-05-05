@@ -107,12 +107,12 @@ Na imagem acima, há alguns modelos de Deploy que existem, lembrando que há vá
 
 | Serviço | Descrição |
 | :------------: | :------------ |
-| IAM | 2 |
-| EC2 | 3 |
-| CodePipeline | 4 |
-| CodeDeply | 5 |
-| S3 | 6 |
-| RDS | 7 |
+| IAM | Serviço de gerenciamento de identidade e acesso que controla o acesso aos recursos da AWS. |
+| EC2 | Serviço de computação em nuvem que permite criar e gerenciar instâncias de servidores virtuais. |
+| CodePipeline | Serviço de integração e entrega contínua (CI/CD) que automatiza o processo de release de software. |
+| CodeDeply | Serviço que permite automatizar o deploy de aplicações em diferentes ambientes. |
+| S3 | Serviço de armazenamento em nuvem que permite armazenar e recuperar dados de forma segura e escalável. |
+| RDS | Serviço de banco de dados relacional gerenciado que permite implantar, operar e escalar bancos de dados na nuvem. |
 
 [![Serviços AWS](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services_icons.png "Serviços AWS")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services_icons.png "Serviços AWS")
 
