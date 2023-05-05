@@ -205,6 +205,14 @@ Você pode usar essa função `capitalizeWords()` no seu componente React assim:
 />
 ```
 
+Para utilizar a função `capitalizeWords` em um elemento HTML, basta chamá-la passando a string desejada como parâmetro e envolver o resultado em um elemento que deseja aplicá-lo, como um `<h1>` por exemplo. Veja um exemplo:
+
+```javascript
+<h1>{capitalizeWords('este é um exemplo de título capitalizado')}</h1>
+```
+
+Isso irá renderizar o texto "Este é um Exemplo de Título Capitalizado" dentro de um elemento `<h1>`.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
 
