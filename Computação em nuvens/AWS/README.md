@@ -5,6 +5,7 @@
 - [O que é computação em nuvens?](#o-que-%C3%A9-computa%C3%A7%C3%A3o-nas-nuvens "O que é computação em nuvens?")
 - [Características de Cloud](#caracter%C3%ADsticas-essenciais-de-cloud "Características de Cloud")
 - [Modelos de Deploy](#modelos-de-deploy "Modelos de Deploy")
+- [Serviços AWS](# "Serviços AWS")
 
 ---
 
@@ -89,7 +90,14 @@ Na imagem acima, há alguns modelos de Deploy que existem, lembrando que há vá
 
 > Hoje, mais de 90% das empresas são nuvens públicas e o restante acabam usando nuvem privadas, sendo usando nuvems públicas em todos os pontos. Inclusive grandes bancos estão migrando para nuvems públicas por causa das questões de segurança.
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+
 ---
+
+## Serviços AWS
+
+
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
