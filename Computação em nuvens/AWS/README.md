@@ -6,6 +6,12 @@
 - [Características de Cloud](#caracter%C3%ADsticas-essenciais-de-cloud "Características de Cloud")
 - [Modelos de Deploy](#modelos-de-deploy "Modelos de Deploy")
 - [Serviços AWS](#servi%C3%A7os-aws "Serviços AWS")
+    - [IAM](#iam "IAM")
+    - [EC2](#ec2 "EC2")
+    - [CodePipeline](#codepipeline "CodePipeline")
+    - [CodeDeply](#codedeply "CodeDeply")
+    - [S3](#s3 "S3")
+    - [RDS](#rds "RDS")
 
 ---
 
@@ -101,6 +107,7 @@ Na imagem acima, há alguns modelos de Deploy que existem, lembrando que há vá
 
 | Serviço | Descrição |
 | :------------: | :------------ |
+| IAM | 2 |
 | EC2 | 3 |
 | CodePipeline | 4 |
 | CodeDeply | 5 |
@@ -108,6 +115,16 @@ Na imagem acima, há alguns modelos de Deploy que existem, lembrando que há vá
 | RDS | 7 |
 
 [![Serviços AWS](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services_icons.png "Serviços AWS")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/AWS_services_icons.png "Serviços AWS")
+
+## IAM
+
+O IAM (Identity and Access Management) é um serviço da AWS que oferece controle de acesso seguro aos recursos da conta da AWS. Ele permite gerenciar o acesso de usuários e aplicativos a recursos da AWS de forma granular, definindo permissões específicas para cada recurso.
+
+Com o IAM, é possível criar usuários e grupos, definir permissões detalhadas para acesso aos serviços e recursos da AWS, criar políticas de acesso personalizadas, gerenciar chaves de acesso e credenciais de segurança, além de monitorar e auditar as atividades de usuários e aplicativos.
+
+O IAM é uma ferramenta essencial para garantir a segurança dos recursos da AWS, permitindo a criação de ambientes seguros e controlados, com o mínimo de privilégios necessários para cada usuário ou aplicativo. Com o IAM, é possível controlar de forma efetiva quem tem acesso a quais recursos, além de gerenciar e auditar as atividades desses usuários e aplicativos.
+
+[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
 
 ## EC2
 
@@ -118,6 +135,42 @@ O EC2 oferece diversos tipos de instâncias, com diferentes configurações de C
 O serviço também permite criar imagens de máquinas virtuais personalizadas, chamadas AMIs (Amazon Machine Images), que podem ser usadas para lançar novas instâncias ou replicar ambientes de produção com facilidade.
 
 O EC2 é altamente escalável e pode ser integrado com outros serviços da AWS, como o Elastic Load Balancing (ELB) e o Auto Scaling, para garantir alta disponibilidade e escalabilidade automática da infraestrutura. Ele também pode ser usado em conjunto com outros serviços da AWS, como o Amazon RDS (Relational Database Service) e o Amazon S3 (Simple Storage Service), para criar soluções completas e escaláveis na nuvem.
+
+[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+
+## CodePipeline
+
+O AWS CodePipeline é um serviço de integração e entrega contínua (CI/CD) totalmente gerenciado pela AWS que ajuda a automatizar o processo de lançamento de software, desde a compilação do código-fonte até a implantação em produção. Ele permite a criação de pipelines de entrega contínua que automatizam a compilação, teste e implantação de aplicativos. 
+
+O CodePipeline pode ser integrado a várias ferramentas de terceiros, como o Jenkins e o GitHub, bem como com serviços da AWS, como o AWS CodeBuild, o AWS CodeDeploy e o AWS Elastic Beanstalk, permitindo que os desenvolvedores personalizem os pipelines para atender às suas necessidades específicas. 
+
+O serviço também inclui recursos avançados de monitoramento e rastreamento de fluxos de trabalho, permitindo que os desenvolvedores monitorem todo o processo de lançamento, identifiquem rapidamente possíveis problemas e implementem correções de bugs em tempo real. Além disso, o CodePipeline é altamente escalável e pode ser usado para implantar aplicativos em uma ampla gama de ambientes, incluindo instâncias do Amazon EC2, contêineres do Docker e serviços sem servidor do AWS Lambda.
+
+[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+
+## CodeDeply
+
+CodeDeploy é um serviço de implantação automatizada da AWS que permite aos usuários automatizar a implantação de aplicativos em diferentes ambientes, como instâncias do Amazon EC2, servidores localizados no local, etc. O CodeDeploy facilita a implantação rápida e consistente de aplicativos em diferentes ambientes, com redução de tempo e riscos. Ele permite que os usuários implementem implantações sem tempo de inatividade e monitorem o status das implantações em tempo real. O CodeDeploy é flexível e pode ser integrado com outras ferramentas de desenvolvimento, como o AWS CodeCommit, AWS CodePipeline e outras ferramentas de terceiros. Com o CodeDeploy, é possível automatizar as atualizações de aplicativos em um ambiente, tornando o processo mais ágil, escalável e seguro.
+
+[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+
+## S3
+
+O Amazon S3 (Simple Storage Service) é um serviço de armazenamento de objetos altamente escalável e durável da AWS (Amazon Web Services). Ele permite que os usuários armazenem e recuperem quantidades praticamente ilimitadas de dados de forma segura e confiável por meio de uma interface web simples. 
+
+Os objetos armazenados no S3 podem variar de alguns bytes até terabytes de tamanho, e podem ser acessados ​​de qualquer lugar com acesso à Internet. Além disso, o Amazon S3 permite que os usuários armazenem e recupere dados em vários formatos, incluindo imagens, vídeos, arquivos de áudio, documentos e muito mais.
+
+O S3 da AWS possui alta disponibilidade, durabilidade e segurança, garantindo a integridade dos dados armazenados. Ele também oferece recursos de gerenciamento de ciclo de vida, controle de acesso e recursos de análise para ajudar os usuários a gerenciar seus dados de maneira eficaz e eficiente.
+
+[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+
+## RDS
+
+O Amazon Relational Database Service (RDS) é um serviço de banco de dados gerenciado oferecido pela Amazon Web Services (AWS) que permite aos usuários configurar, operar e escalar bancos de dados relacionais na nuvem. O RDS oferece suporte a vários bancos de dados relacionais, incluindo MySQL, PostgreSQL, Oracle, SQL Server e Amazon Aurora.
+
+O RDS gerencia tarefas de administração de banco de dados, como backup, replicação, atualizações de software e aplicação de patches de segurança. Ele também oferece recursos para monitorar a integridade do banco de dados, ajustar o desempenho e escalar verticalmente ou horizontalmente a capacidade do banco de dados.
+
+O RDS é altamente escalável, o que significa que os usuários podem aumentar ou diminuir a capacidade do banco de dados com facilidade, de acordo com as necessidades do aplicativo ou da empresa. Além disso, o RDS fornece opções de segurança avançadas, incluindo a criptografia de dados em trânsito e em repouso, bem como a integração com o AWS Identity and Access Management (IAM) para controle de acesso baseado em funções.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
