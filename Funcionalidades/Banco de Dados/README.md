@@ -739,7 +739,7 @@ class YourComponent extends Component {
     }
     
     componentDidMount() {
-        // Chamar a API.
+        // Buscar "jm_posts" da API e atualizar o estado com os dados retornados.
         Api.get('/jm_posts').then((res) => {
           this.setState({ listPosts: res.data });
         });
