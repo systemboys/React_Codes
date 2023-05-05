@@ -8,7 +8,7 @@
 - [Node Version Manager (nvm)](#node-version-manager-nvm "Node Version Manager (nvm)")
     - [Como instalar?](#como-instalar "Como instalar?")
     - [Comandos básicos do NVM para gerenciamento de versões do Node.js](#comandos-b%C3%A1sicos-do-nvm-para-gerenciamento-de-vers%C3%B5es-do-nodejs "Comandos básicos do NVM para gerenciamento de versões do Node.js")
-- [Resolvendo o erro de porta em uso no servidor Node.js](# "Resolvendo o erro de porta em uso no servidor Node.js")
+- [Resolvendo o erro de porta em uso no servidor Node.js](#resolvendo-o-erro-de-porta-em-uso-no-servidor-nodejs "Resolvendo o erro de porta em uso no servidor Node.js")
 
 ---
 
