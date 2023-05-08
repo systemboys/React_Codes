@@ -31,9 +31,10 @@ Para transformar a string "tag1, tag2, tag3, tag4, tag5" em um array de strings 
 
 ```javascript
 // Transformar a string "tag1, tag2, tag3" em um array de strings ["tag1", "tag2", "tag3"]
-const tagsPost = "tag1, tag2, tag3, tag4, tag5";
+const tagsPost = `${listPosts[0]?.tags}`;
 const tagsArray = tagsPost.split(", ");
-const tagsFormatted = tagsArray.map(tag => `"${tag}"`);
+const tagsFormatted = tagsArray.map(tag => `${tag}`);
+console.log(tagsFormatted);
 ```
 
 O resultado será o array `["tag1", "tag2", "tag3", "tag4", "tag5"]`.
@@ -44,7 +45,7 @@ Para renderizar os dados do array `tags` na lista HTML usando o método `map()` 
 
 ```javascript
 <ul>
-  {tags.map((tag) => (
+  {tagsFormatted.map((tag) => (
     <li key={tag}><Link to="/">{tag}</Link></li>
   ))}
 </ul>
