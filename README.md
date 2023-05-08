@@ -54,7 +54,7 @@
 ### Outras coisas interessantes
 
 - [Dicionário do programador](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do%20programador#react-codes--dicion%C3%A1rio-do-programador "Dicionário do programador")
-- [Manipulações com ReactJS](# "Manipulações com ReactJS")
+- [Manipulações com ReactJS](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS#react-codes--manipula%C3%A7%C3%B5es-em-reactjs "Manipulações com ReactJS")
 
 ### Projetos
 
