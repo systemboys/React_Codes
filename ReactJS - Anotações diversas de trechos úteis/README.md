@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / ReactJS: Anotações diversas de trechos úteis
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![React Coding](https://github.com/systemboys/React_Codes/blob/main/ReactJS%20-%20Anota%C3%A7%C3%B5es%20diversas%20de%20trechos%20%C3%BAteis/images/React_coding.png?raw=true "React Coding")](https://github.com/systemboys/React_Codes/blob/main/ReactJS%20-%20Anota%C3%A7%C3%B5es%20diversas%20de%20trechos%20%C3%BAteis/images/React_coding.png?raw=true "React Coding")
 
 - [Importando constantes de outros arquivos](#importando-constantes-de-outros-arquivos "Importando constantes de outros arquivos")
 
