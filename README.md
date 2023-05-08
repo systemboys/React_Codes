@@ -1,6 +1,6 @@
 # React Codes
 
-[![Imagem de exemplo](https://github.com/systemboys/React_Codes/raw/main/images/photo-1518932945647-7a1c969f8be2.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/images/photo-1518932945647-7a1c969f8be2.png "Imagem de exemplo")
+[![React Codes](https://github.com/systemboys/React_Codes/raw/main/images/photo-1518932945647-7a1c969f8be2.png "React Codes")](https://github.com/systemboys/React_Codes/raw/main/images/photo-1518932945647-7a1c969f8be2.png "React Codes")
 
 ## Sumário
 
@@ -55,7 +55,7 @@
 
 - [Dicionário do programador](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do%20programador#react-codes--dicion%C3%A1rio-do-programador "Dicionário do programador")
 - [Manipulações com ReactJS](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS#react-codes--manipula%C3%A7%C3%B5es-em-reactjs "Manipulações com ReactJS")
-- [ReactJS: Anotações diversas de trechos úteis](# "ReactJS: Anotações diversas de trechos úteis")
+- [ReactJS: Anotações diversas de trechos úteis](https://github.com/systemboys/React_Codes/tree/main/ReactJS%20-%20Anota%C3%A7%C3%B5es%20diversas%20de%20trechos%20%C3%BAteis#react-codes--reactjs-anota%C3%A7%C3%B5es-diversas-de-trechos-%C3%BAteis "ReactJS: Anotações diversas de trechos úteis")
 
 ### Projetos
 
