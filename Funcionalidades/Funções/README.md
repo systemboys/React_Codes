@@ -224,6 +224,7 @@ Isso irá renderizar o texto "Este é um Exemplo de Título Capitalizado" dentro
 Você pode criar uma função que receba o número do mês como argumento e retorne o nome do mês correspondente. Veja um exemplo:
 
 ```javascript
+// Transformando meses de 01 a 12 em Janeiro a Dezembro
 function getMonthName(month) {
   const monthNames = [
     "Janeiro", "Fevereiro", "Março", "Abril", 
