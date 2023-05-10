@@ -3,6 +3,7 @@
 [![Hospedagem](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/Hospedar%20aplicativo%20ReactJS%20em%20servidor%20de%20hospedagem/images/hospedagem-de-sites-destaque-2.png?raw=true "Hospedagem")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/Hospedar%20aplicativo%20ReactJS%20em%20servidor%20de%20hospedagem/images/hospedagem-de-sites-destaque-2.png?raw=true "Hospedagem")
 
 - [Hospedagem de projeto em ReactJS](#hospedagem-de-projeto-em-reactjs "Hospedagem de projeto em ReactJS")
+- [Se suas API's estiverem hospedadas em outro servidor](# "Se suas API's estiverem hospedadas em outro servidor")
 
 ---
 
@@ -23,6 +24,35 @@ O processo geral para hospedar um aplicativo ReactJS envolve alguns passos bási
 5. Publicar o aplicativo: Finalmente, você precisa publicar os arquivos do aplicativo ReactJS no servidor web. Isso geralmente envolve copiar os arquivos do diretório "build" para o diretório raiz do servidor web.
 
 Esses são apenas os passos básicos envolvidos na hospedagem de um aplicativo ReactJS. Cada provedor de hospedagem tem sua própria documentação e guias para ajudá-lo a configurar e implantar seu aplicativo. É importante seguir as instruções do provedor escolhido e garantir que o aplicativo esteja configurado corretamente antes de colocá-lo em produção.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Se suas API's estiverem hospedadas em outro servidor
+
+Se a sua API estiver hospedada em outro servidor, você precisará atualizar as configurações da sua aplicação ReactJS para apontar para a nova URL da API. Isso pode ser feito em um arquivo de configuração separado, como um arquivo `.env`, que é carregado durante o processo de compilação. Você pode definir a URL da API nesse arquivo, e em seguida, fazer referência a essa variável em seus componentes ReactJS.
+
+Por exemplo, suponha que a URL da API seja `http://localhost:3000`. Você poderia definir uma variável de ambiente chamada `REACT_APP_API_URL` em um arquivo `.env` na raiz do seu projeto ReactJS, da seguinte forma:
+
+```javascript
+REACT_APP_API_URL=http://localhost:3000
+```
+
+Em seguida, em seus componentes ReactJS, você poderia se referir a essa variável usando `process.env.REACT_APP_API_URL`. Por exemplo:
+
+```javascript
+axios.get(`${process.env.REACT_APP_API_URL}/users`)
+  .then(response => {
+    // faça algo com os dados da resposta
+  })
+  .catch(error => {
+    // lide com o erro
+  });
+```
+
+Ao fazer isso, sua aplicação ReactJS deve ser capaz de se comunicar com a API, independentemente de onde ela esteja hospedada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
