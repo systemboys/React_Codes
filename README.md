@@ -64,6 +64,7 @@
 ### Computação em nuvens
 
 - [Servidores](https://github.com/systemboys/React_Codes/tree/main/Computa%C3%A7%C3%A3o%20em%20nuvens#react-codes--computa%C3%A7%C3%A3o-em-nuvens "Servidores")
+- [Hospedar aplicativo ReactJS em servidor de hospedagem](# "Hospedar aplicativo ReactJS em servidor de hospedagem")
 
 ---
 
