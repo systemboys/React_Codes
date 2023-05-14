@@ -35,6 +35,7 @@
 
 - [Consulta com o PRISMA em um compoente classe](#consulta-com-o-prisma-em-um-compoente-classe "Consulta com o PRISMA em um compoente classe")
 - [Listar em componentes classe](#listar-em-componentes-classe "Listar em componentes classe")
+- [Configurando uma rota dentro de um componente de classe em React com definição de array](# "Configurando uma rota dentro de um componente de classe em React com definição de array")
 
 ---
 
@@ -781,6 +782,54 @@ class YourComponent extends Component {
 ```
 
 Com essas alterações, seu componente deve ser capaz de fazer a chamada à API e renderizar os dados recebidos. Lembre-se de importar o `Api` de onde ele está definido e ajustar o caminho para a rota correta.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
+## Configurando uma rota dentro de um componente de classe em React
+
+Aqui está a rota dentro de um componente de classe:
+
+```javascript
+import React, { Component } from 'react';
+import Api from 'path/to/Api'; // Importe o módulo de API conforme necessário
+
+class MyComponent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      listJMPosts: [],
+    };
+  }
+
+  componentDidMount() {
+    Api.get('/jm_posts').then((res) => {
+      const formattedData = res.data.map((item) => ({
+        thumb: item.thumb,
+        title: item.title,
+        category: item.category,
+        date: item.date,
+      }));
+      this.setState({ listJMPosts: formattedData });
+    });
+  }
+
+  render() {
+    const { listJMPosts } = this.state;
+
+    return (
+      // Renderize o conteúdo do componente aqui, usando os dados de listJMPosts
+      // ...
+    );
+  }
+}
+
+export default MyComponent;
+```
+
+Certifique-se de substituir `'path/to/Api'` pelo caminho correto para o módulo de API que você está usando em seu projeto. Além disso, lembre-se de atualizar a lógica de renderização para exibir os dados de `listJMPosts` conforme necessário.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
