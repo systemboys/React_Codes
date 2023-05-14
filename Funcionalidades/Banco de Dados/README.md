@@ -34,7 +34,7 @@
 
 - [Consulta com o PRISMA em um compoente classe](#consulta-com-o-prisma-em-um-compoente-classe "Consulta com o PRISMA em um compoente classe")
 - [Listar em componentes classe](#listar-em-componentes-classe "Listar em componentes classe")
-- [Formatação de Dados da API em um Array no Formato Específico](# "Formatação de Dados da API em um Array no Formato Específico")
+- [Formatação de Dados da API em um Array no Formato Específico](#formata%C3%A7%C3%A3o-de-dados-da-api-em-um-array-no-formato-espec%C3%ADfico "Formatação de Dados da API em um Array no Formato Específico")
 
 ---
 
