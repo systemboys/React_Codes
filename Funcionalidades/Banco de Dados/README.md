@@ -826,8 +826,8 @@ routes.get('/jm_posts', async (req, res) => {
     orderBy: {
       id: 'desc'
     },
-    skip: 6, // Número de registros a pular
-    take: 5 // Limite de registros a exibir
+    skip: 6, // Número de registros a pular.
+    take: 5 // Limite de registros a exibir.
   });
   res.status(200).json(jm_posts);
 });
