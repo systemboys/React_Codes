@@ -28,13 +28,20 @@
 - [`Atualizar` um registro `a partir do ID`](#atualizar-um-registro-a-partir-do-id "Atualizar um registro a partir do ID")
 - [Gravar novo registro](#gravar-novo-registro "Gravar novo registro")
     - [Exemplo 1, onde é gravado um registro sem condições](#gravar-novo-registro-exemplo-1 "Exemplo 1, onde é gravado um registro sem condições")
+
 ---
 
 > Consultas em componentes de classe.
 
 - [Consulta com o PRISMA em um compoente classe](#consulta-com-o-prisma-em-um-compoente-classe "Consulta com o PRISMA em um compoente classe")
 - [Listar em componentes classe](#listar-em-componentes-classe "Listar em componentes classe")
+
+---
+
+> Alguns macetes úteis
+
 - [Formatação de Dados da API em um Array no Formato Específico](#formata%C3%A7%C3%A3o-de-dados-da-api-em-um-array-no-formato-espec%C3%ADfico "Formatação de Dados da API em um Array no Formato Específico")
+- [Obtendo registros com limite e paginação na rota](# "Obtendo registros com limite e paginação na rota")
 
 ---
 
@@ -803,6 +810,30 @@ useEffect(() => {
 Aqui, usamos o método `map()` para percorrer cada item retornado pela consulta e criar um novo objeto no formato desejado. Em seguida, definimos o estado `listBackground` com o array `formattedData`, que contém os dados formatados.
 
 Certifique-se de que as propriedades `thumb`, `title`, `category` e `date` correspondam aos nomes corretos dos campos na resposta da API.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
+## Obtendo registros com limite e paginação na rota
+
+Para obter registros de 6 a 10 na rota '/jm_posts', você pode usar o método `skip` para pular os primeiros 6 registros e, em seguida, definir o limite usando o método `take`. O código ficaria assim:
+
+```javascript
+routes.get('/jm_posts', async (req, res) => {
+  const jm_posts = await prisma.jm_posts.findMany({
+    orderBy: {
+      id: 'desc'
+    },
+    skip: 6, // Pula os primeiros 6 registros
+    take: 5 // Define o limite como 5 para retornar os registros de 6 a 10
+  });
+  res.status(200).json(jm_posts);
+});
+```
+
+Dessa forma, a consulta retornará os registros de 6 a 10, ordenados por ID de forma decrescente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
