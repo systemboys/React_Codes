@@ -34,6 +34,7 @@
 
 - [Consulta com o PRISMA em um compoente classe](#consulta-com-o-prisma-em-um-compoente-classe "Consulta com o PRISMA em um compoente classe")
 - [Listar em componentes classe](#listar-em-componentes-classe "Listar em componentes classe")
+- [Formatação de Dados da API em um Array no Formato Específico](# "Formatação de Dados da API em um Array no Formato Específico")
 
 ---
 
@@ -773,6 +774,35 @@ class YourComponent extends Component {
 ```
 
 Com essas alterações, seu componente deve ser capaz de fazer a chamada à API e renderizar os dados recebidos. Lembre-se de importar o `Api` de onde ele está definido e ajustar o caminho para a rota correta.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
+## Formatação de Dados da API em um Array no Formato Específico
+
+Para formatar os dados retornados pela consulta em um array no formato desejado, você pode fazer o seguinte:
+
+```jsx
+// Selecionar dados na tabela "table", a partir do "category".
+const [listBackground, setListBackground] = useState([]);
+useEffect(() => {
+  Api.get(`/backgroundsId/${category}`).then((res) => {
+    const formattedData = res.data.map((item) => ({
+      image: item.thumb,
+      title: item.title,
+      category: item.category,
+      date: item.date,
+    }));
+    setListBackground(formattedData);
+  });
+}, []);
+```
+
+Aqui, usamos o método `map()` para percorrer cada item retornado pela consulta e criar um novo objeto no formato desejado. Em seguida, definimos o estado `listBackground` com o array `formattedData`, que contém os dados formatados.
+
+Certifique-se de que as propriedades `thumb`, `title`, `category` e `date` correspondam aos nomes corretos dos campos na resposta da API.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
