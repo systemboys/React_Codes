@@ -38,7 +38,7 @@
 
 ---
 
-> Alguns macetes úteis
+> Algumas dicas úteis.
 
 - [Formatação de Dados da API em um Array no Formato Específico](#formata%C3%A7%C3%A3o-de-dados-da-api-em-um-array-no-formato-espec%C3%ADfico "Formatação de Dados da API em um Array no Formato Específico")
 - [Obtendo registros com limite e paginação na rota](# "Obtendo registros com limite e paginação na rota")
