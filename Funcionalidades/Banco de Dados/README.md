@@ -35,7 +35,7 @@
 
 - [Consulta com o PRISMA em um compoente classe](#consulta-com-o-prisma-em-um-compoente-classe "Consulta com o PRISMA em um compoente classe")
 - [Listar em componentes classe](#listar-em-componentes-classe "Listar em componentes classe")
-- [Configurando uma rota dentro de um componente de classe em React com definição de array](# "Configurando uma rota dentro de um componente de classe em React com definição de array")
+- [Configurando uma rota dentro de um componente de classe em React com definição de array](#configurando-uma-rota-dentro-de-um-componente-de-classe-em-react "Configurando uma rota dentro de um componente de classe em React com definição de array")
 
 ---
 
