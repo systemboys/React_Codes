@@ -9,7 +9,7 @@
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
   - [Zero à esquerda para hora, minuto e segundo menores que 10](#zero-%C3%A0-esquerda-para-hora-minuto-e-segundo-menores-que-10 "Zero à esquerda para hora, minuto e segundo menores que 10")
   - [Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript](#formatando-a-data-atual-no-formato-segunda-15-de-maio-de-2023-em-javascript "Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript")
-  - [Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'](# "Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'")
+  - [Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'](#formatando-uma-data-no-formato-2023-05-23-para-o-formato-segunda-15-de-maio-de-2023 "Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'")
 
 ---
 
