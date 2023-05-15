@@ -8,7 +8,7 @@
 - [Exibir a data no formato dd/mm/aaaa](#exibir-a-data-no-formato-ddmmaaaa "Exibir a data no formato dd/mm/aaaa")
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
   - [Zero à esquerda para hora, minuto e segundo menores que 10](#zero-%C3%A0-esquerda-para-hora-minuto-e-segundo-menores-que-10 "Zero à esquerda para hora, minuto e segundo menores que 10")
-  - [Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript.](# "Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript.")
+  - [Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript](#formatando-a-data-atual-no-formato-segunda-15-de-maio-de-2023-em-javascript "Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript")
 
 ---
 
@@ -257,7 +257,7 @@ Nesse caso, o zero à esquerda é adicionado apenas se o valor for menor que 10,
 
 ---
 
-## Formatando a data atual no formato "Segunda, 15 de maio de 2023" em JavaScript.
+## Formatando a data atual no formato "Segunda, 15 de maio de 2023" em JavaScript
 
 Para obter a data atual no formato "Segunda, 15 de maio de 2023" em JavaScript, você pode usar as funções de data e manipulação de string. Aqui está um exemplo de código:
 
