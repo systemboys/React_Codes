@@ -9,6 +9,7 @@
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
   - [Zero à esquerda para hora, minuto e segundo menores que 10](#zero-%C3%A0-esquerda-para-hora-minuto-e-segundo-menores-que-10 "Zero à esquerda para hora, minuto e segundo menores que 10")
   - [Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript](#formatando-a-data-atual-no-formato-segunda-15-de-maio-de-2023-em-javascript "Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript")
+  - [Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'](# "Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'")
 
 ---
 
@@ -280,6 +281,49 @@ console.log(formattedDate);
 Isso irá imprimir a data atual no formato desejado no console.
 
 Lembre-se de ajustar os nomes dos dias da semana e dos meses de acordo com o idioma desejado.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+
+---
+
+## Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'
+
+Para transformar a data no formato "2023-05-23" para "Segunda, 15 de maio de 2023" em JavaScript, você pode seguir os seguintes passos:
+
+1. Crie um objeto `Date` com a data fornecida.
+2. Crie um array de nomes de meses em ordem.
+3. Obtenha o dia da semana da data criada.
+4. Obtenha o dia do mês da data criada.
+5. Obtenha o índice do mês da data criada.
+6. Obtenha o ano da data criada.
+7. Construa a string final no formato desejado.
+
+Aqui está um exemplo de código que realiza essa transformação:
+
+```javascript
+// Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'.
+const formatDate = (dateStr) => {
+  const date = new Date(dateStr);
+  const daysOfWeek = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+  const months = [
+    'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+    'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
+  ];
+
+  const dayOfWeek = daysOfWeek[date.getDay()];
+  const day = date.getDate();
+  const month = months[date.getMonth()];
+  const year = date.getFullYear();
+
+  return `${dayOfWeek}, ${day} de ${month} de ${year}`;
+};
+
+const formattedDate = formatDate('2023-05-23');
+console.log(formattedDate); // Saída: Terça-feira, 23 de maio de 2023.
+```
+
+Você pode usar a função `formatDate` para transformar qualquer data no formato desejado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
