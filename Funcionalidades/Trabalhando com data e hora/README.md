@@ -8,6 +8,7 @@
 - [Exibir a data no formato dd/mm/aaaa](#exibir-a-data-no-formato-ddmmaaaa "Exibir a data no formato dd/mm/aaaa")
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
   - [Zero à esquerda para hora, minuto e segundo menores que 10](#zero-%C3%A0-esquerda-para-hora-minuto-e-segundo-menores-que-10 "Zero à esquerda para hora, minuto e segundo menores que 10")
+  - [Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript.](# "Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript.")
 
 ---
 
@@ -250,6 +251,34 @@ ${(today.getHours() < 10 ? "0" : "") + today.getHours()}:${(today.getMinutes() <
 ```
 
 Nesse caso, o zero à esquerda é adicionado apenas se o valor for menor que 10, usando o operador ternário ? :. Se o valor for menor que 10, é concatenado um zero à esquerda, caso contrário, não é adicionado nada.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+
+---
+
+## Formatando a data atual no formato "Segunda, 15 de maio de 2023" em JavaScript.
+
+Para obter a data atual no formato "Segunda, 15 de maio de 2023" em JavaScript, você pode usar as funções de data e manipulação de string. Aqui está um exemplo de código:
+
+```javascript
+const diasSemana = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+const meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+
+const dataAtual = new Date();
+const diaSemana = diasSemana[dataAtual.getDay()];
+const dia = dataAtual.getDate();
+const mes = meses[dataAtual.getMonth()];
+const ano = dataAtual.getFullYear();
+
+const dataFormatada = `${diaSemana}, ${dia} de ${mes} de ${ano}`;
+
+console.log(dataFormatada);
+```
+
+Isso irá imprimir a data atual no formato desejado no console.
+
+Lembre-se de ajustar os nomes dos dias da semana e dos meses de acordo com o idioma desejado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
