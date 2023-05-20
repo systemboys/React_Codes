@@ -856,6 +856,8 @@ useEffect(() => {
 }, []);
 ```
 
+> ( ! ) Colocar a chamada da rota dentro do componente!
+
 Aqui, usamos o método `map()` para percorrer cada item retornado pela consulta e criar um novo objeto no formato desejado. Em seguida, definimos o estado `listBackground` com o array `formattedData`, que contém os dados formatados.
 
 Certifique-se de que as propriedades `thumb`, `title`, `category` e `date` correspondam aos nomes corretos dos campos na resposta da API.
