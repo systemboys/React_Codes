@@ -854,6 +854,8 @@ useEffect(() => {
     setListBackground(formattedData);
   });
 }, []);
+
+console.log(listPosts); // Retorno no console.
 ```
 
 > ( ! ) Colocar a chamada da rota dentro do componente!
