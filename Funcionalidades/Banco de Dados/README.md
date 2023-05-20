@@ -20,7 +20,7 @@
 
 - [`Listar itens` da `tabela` no seu componente](#listar-itens-da-tabela-no-seu-componente "Listar itens da tabela no seu componente")
     - [Instalações necessárias](#instala%C3%A7%C3%B5es-necess%C3%A1rias "Instalações necessárias")
-    - [Listar os itens no seu componente](#listar-os-itens-no-seu-componente "Listar os itens no seu componente")
+    - [Listar os itens no seu componente (`importação da API`)](#listar-os-itens-no-seu-componente "Listar os itens no seu componente (importação da API)")
     - [Listar 1 registro a partir do ID](#listar-1-registro-a-partir-do-id "Listar 1 registro a partir do ID")
         - [Exemplo 1, Onde iremos mudar o plano de fundo de um objeto](#listar-1-registro-a-partir-do-id-exemplo-1 "Exemplo 1, Onde iremos mudar o plano de fundo de um objeto")
         - [Exemplo 2, Onde seu resultado é colocado em outra rota](#listar-1-registro-a-partir-do-id-exemplo-2 "Exemplo 2, Onde seu resultado é colocado em outra rota")
@@ -41,7 +41,7 @@
 
 > Algumas dicas úteis.
 
-- [Formatação de Dados da API em um Array no Formato Específico (JSON)](#formata%C3%A7%C3%A3o-de-dados-da-api-em-um-array-no-formato-espec%C3%ADfico-json "Formatação de Dados da API em um Array no Formato Específico (JSON)")
+- [Formatação de Dados da API em um Array no Formato Específico (`JSON`)](#formata%C3%A7%C3%A3o-de-dados-da-api-em-um-array-no-formato-espec%C3%ADfico-json "Formatação de Dados da API em um Array no Formato Específico (JSON)")
 - [Obtendo registros com limite e paginação na rota](#obtendo-registros-com-limite-e-pagina%C3%A7%C3%A3o-na-rota "Obtendo registros com limite e paginação na rota")
 
 ---
@@ -380,7 +380,7 @@ export const Api = axios.create({
     }
 });
 ```
-### LISTAR OS ITENS NO SEU COMPONENTE
+### LISTAR OS ITENS NO SEU COMPONENTE (importação da API)
 
 > Este exemplo lista itens de uma tabela de atualizações de commits do GitHub!
 
