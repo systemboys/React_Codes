@@ -391,6 +391,20 @@ import { useState, useEffect } from 'react';
 import { Api } from '../../server/api';
 ```
 
+> ( ! ) A importação da API e os hooks devem ficar fora do componente.
+
+> Esse código importa os hooks `useState` e `useEffect` do pacote `react` e o objeto `Api` do arquivo `api.js` localizado no diretório `server`.
+>
+> Esses hooks são componentes fundamentais do React e são usados para gerenciar o estado e lidar com efeitos colaterais em componentes funcionais.
+>
+> O `useState` é um hook que permite adicionar estado a componentes funcionais. Ele retorna um par de valores: a variável de estado atual e uma função para atualizar esse estado.
+>
+> O `useEffect` é um hook que permite executar efeitos colaterais em componentes funcionais. Ele recebe uma função de callback como argumento e essa função é executada após a renderização do componente. Também pode ter uma lista de dependências opcional para controlar quando o efeito deve ser executado.
+>
+> O objeto `Api` é importado do arquivo `api.js` localizado no diretório `server`. Presumivelmente, esse objeto contém métodos para realizar chamadas à API, como `get`, `post`, etc.
+>
+> No geral, esse código prepara o ambiente para o uso dos hooks `useState` e `useEffect` e importa o objeto `Api` para realizar chamadas à API no componente atual.
+
 Criar um `useState` e `setListUpdates` dentro do export do seu componente e configurar a rota no `Api.get()`:
 
 ```javascript
