@@ -858,11 +858,23 @@ useEffect(() => {
 console.log(listBackground); // Retorno no console.
 ```
 
-> ( ! ) Colocar a chamada da rota dentro do componente!
+> ( ! ) A chamada à API deve ficar dentro do componente!
 
 Aqui, usamos o método `map()` para percorrer cada item retornado pela consulta e criar um novo objeto no formato desejado. Em seguida, definimos o estado `listBackground` com o array `formattedData`, que contém os dados formatados.
 
 Certifique-se de que as propriedades `thumb`, `title`, `category` e `date` correspondam aos nomes corretos dos campos na resposta da API.
+
+> Esse código faz uma chamada à API para obter dados da tabela "backgroundsId" com base na categoria fornecida. Ele usa os hooks `useState` e `useEffect` para fazer a chamada da API e formatar os dados recebidos.
+>
+> A chamada à API é feita através do `Api.get()` e usa o caminho `/backgroundsId/${category}` para buscar os dados correspondentes à categoria especificada.
+>
+> Quando a resposta da API é recebida, o código formata os dados retornados usando o método `map()`. Cada item retornado é transformado em um objeto com as propriedades `image`, `title`, `category` e `date`.
+>
+> Em seguida, os dados formatados são atribuídos ao estado `listBackground` usando a função `setListBackground`. Isso atualiza o estado com os dados obtidos da API.
+>
+> O `useEffect` é usado para executar esse código sempre que a categoria for alterada. A dependência vazia `[]` no final indica que o efeito deve ser executado apenas uma vez, após a montagem do componente.
+>
+> Por fim, o `console.log(listBackground)` é usado para exibir o valor atual de `listBackground` no console. Isso pode ser útil para verificar se os dados foram obtidos corretamente e para depurar eventuais problemas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
