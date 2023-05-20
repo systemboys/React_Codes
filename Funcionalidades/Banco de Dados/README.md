@@ -419,6 +419,14 @@ useEffect(() => {
 
 > Obs.: A constante `listUpdates` deve ser mapeada pelo `map()`, porque os dados da tabela estão nessa constante.
 
+> Nesse código, um hook `useState` é utilizado para criar uma variável de estado chamada `listUpdates` e uma função `setListUpdates` para atualizar esse estado. Inicialmente, o valor do estado é definido como um array vazio `[]`.
+>
+> Em seguida, um hook `useEffect` é utilizado para executar uma chamada GET para a rota `/latest_updates` da API. Dentro da função de callback do `useEffect`, a função `Api.get('/latest_updates')` é chamada para fazer a requisição GET. Quando a resposta é recebida, a função `setListUpdates` é chamada para atualizar o estado `listUpdates` com os dados da resposta, `res.data`.
+>
+> O segundo argumento do `useEffect` é um array vazio `[]`, o que significa que o efeito só será executado uma vez, após a renderização inicial do componente.
+>
+> Em resumo, esse código realiza uma requisição GET para a rota `/latest_updates` da API e atualiza o estado `listUpdates` com os dados recebidos da resposta.
+
 E por último, o `map()` para obter sua lista:
 
 ```javascript
@@ -428,6 +436,12 @@ E por último, o `map()` para obter sua lista:
     ))}
 </ul>
 ```
+
+> Nesse exemplo de código, está sendo utilizado o método `map` no array `listUpdates` para iterar sobre cada elemento e retornar um elemento `<li>` para cada atualização.
+>
+>Dentro de cada `<li>`, são exibidas informações específicas de cada atualização, que são acessadas através das propriedades do objeto `Updates`. Essas informações incluem o commit da atualização (`Updates.commit`), a data e hora da atualização (`Updates.date` e `Updates.hour`), o autor da atualização (`Updates.author`), e a descrição da atualização (`Updates.description`).
+>
+> Todas essas informações são interpoladas no JSX utilizando as chaves `{}` para envolver as expressões JavaScript e exibi-las corretamente no elemento `<li>`. O resultado final é uma lista não ordenada (`<ul>`) onde cada item `<li>` contém as informações da respectiva atualização.
 
 >>> Dica! [renderizar, elemento html, html, dangerouslySetInnerHTML, injetar html, conteúdo html, dom]
 
