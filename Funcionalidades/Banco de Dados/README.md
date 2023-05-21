@@ -462,6 +462,31 @@ Com essa mudança, o conteúdo HTML deve ser renderizado corretamente no seu com
 
 ---
 
+## Trazer resultados aleatórios na lista
+
+Se você deseja trazer os resultados aleatoriamente, uma opção é realizar a ordenação dos registros após a consulta usando JavaScript no seu arquivo onde está sua rota `./src/routes.ts`. Você pode utilizar a função `sort` para embaralhar a ordem dos resultados. Veja o exemplo abaixo:
+
+> ( ! ) Essa modificação deve ser feita na sua rota!
+
+```javascript
+routes.get('/jm_posts_PostCarousel', async (req, res) => {
+  const jm_posts = await prisma.jm_posts.findMany();
+  const randomizedPosts = jm_posts.sort(() => Math.random() - 0.5).slice(0, 6);
+  res.status(200).json(randomizedPosts);
+});
+```
+
+> ( ! ) Esse exemplo foi testado em uma tabela de Posts de notícias!
+
+Nesse exemplo, primeiro, todos os registros são recuperados usando `findMany`. Em seguida, a função `sort` é utilizada para ordenar os registros aleatoriamente, comparando dois elementos e retornando um número positivo, negativo ou zero. A função `Math.random()` é usada para gerar valores aleatórios entre 0 e 1, e subtraindo 0,5 garante que os resultados sejam embaralhados de forma aleatória. Por fim, é utilizada a função `slice` para limitar a quantidade de registros retornados, neste caso, para 6.
+
+Dessa forma, você deve obter uma lista de resultados aleatórios a partir da consulta ao banco de dados.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
 ## Listar 1 registro a partir do ID
 
 ### Listar 1 registro a partir do ID, Exemplo 1
