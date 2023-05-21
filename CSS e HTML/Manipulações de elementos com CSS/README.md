@@ -2,6 +2,7 @@
 
 - [`Transbordar` texto dentro de um elemento](#transbordar-texto-dentro-de-um-elemento "Transbordar texto dentro de um elemento")
 - [Mudar a `imagem do plano de fundo` de um elemento](#mudar-a-imagem-do-plano-de-fundo-de-um-elemento "Mudar a imagem do plano de fundo de um elemento")
+  - [Cropar uma imagem para as dimensões específicas](#cropar-uma-imagem-para-as-dimens%C3%B5es-espec%C3%ADficas "Cropar uma imagem para as dimensões específicas")
 - [`Colocar` uma `DIV` e todo seu conteúdo em `escala de cinza`](#colocar-uma-div-e-todo-seu-conte%C3%BAdo-em-escala-de-cinza "Colocar uma DIV e todo seu conteúdo em escala de cinza")
 
 ---
