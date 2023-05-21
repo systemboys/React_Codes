@@ -43,7 +43,7 @@
 > Algumas dicas úteis.
 
 - [Formatação de Dados da API em um Array no Formato Específico (`JSON`)](#formata%C3%A7%C3%A3o-de-dados-da-api-em-um-array-no-formato-espec%C3%ADfico-json "Formatação de Dados da API em um Array no Formato Específico (JSON)")
-  > ( ! ) Serve para todos os compoentes!
+  > ( ! ) Serve para todos os compoentes independetemente de ser classe, função ou constante!
 - [Obtendo registros com limite e paginação na rota](#obtendo-registros-com-limite-e-pagina%C3%A7%C3%A3o-na-rota "Obtendo registros com limite e paginação na rota")
   > ( ! ) Essa configuração deve ser feita na sua rota!
 
