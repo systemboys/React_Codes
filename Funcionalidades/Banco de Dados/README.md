@@ -46,6 +46,8 @@
   > ( ! ) Serve para todos os compoentes independetemente de ser classe, função ou constante!
 - [Obtendo registros com limite e paginação na rota](#obtendo-registros-com-limite-e-pagina%C3%A7%C3%A3o-na-rota "Obtendo registros com limite e paginação na rota")
   > ( ! ) Essa configuração deve ser feita na sua rota!
+- [`Correção do Carrossel` e Botão de Passador em Componente React](# "Correção do Carrossel e Botão de Passador em Componente React")
+  > ( ! ) Esta correção funcionou no componente ` <Swiper></Swiper>` que apresentava problemas ao exibir os itens!
 
 ---
 
@@ -957,6 +959,47 @@ routes.get('/jm_posts', async (req, res) => {
 ```
 
 Dessa forma, a consulta retornará os registros de 6 a 10, ordenados por ID de forma decrescente.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
+## Correção do Carrossel e Botão de Passador em Componente React
+
+Parece que o problema está relacionado ao momento em que o componente está sendo renderizado e o estado `listPosts` está sendo atualizado com os dados da API. Quando o componente é renderizado inicialmente, o estado `listPosts` está vazio e, portanto, o carrossel exibe apenas um item.
+
+Uma solução para garantir que o carrossel seja renderizado corretamente após os dados serem carregados é adicionar uma verificação antes de renderizar o carrossel. Você pode verificar se o estado `listPosts` tem dados antes de renderizar o carrossel. Algo assim:
+
+```javascript
+{listPosts.length > 0 && (
+  <Swiper getSwiper={setSwiper} className="trancarousel" {...params}>
+    {listPosts.map((item, i) => (
+      <div key={i} className="single_post widgets_small post_type5">
+        <div className="post_img">
+          <div className="img_wrap">
+            <Link to="/">
+              <img src={item.image} alt="slider5" />
+            </Link>
+          </div>
+        </div>
+        <div className="single_post_text">
+          <h4>
+            <Link to="/post1">{item.title}</Link>
+          </h4>
+          <p>{item.body}</p>
+        </div>
+      </div>
+    ))}
+  </Swiper>
+)}
+```
+
+Dessa forma, o carrossel será renderizado somente quando o estado `listPosts` tiver dados disponíveis.
+
+Quanto à diferença de comportamento entre `listPosts` e `postSlider`, pode haver uma diferença na estrutura dos dados retornados pela API em comparação com o array `postSlider`. Verifique se os dados retornados pela API têm a mesma estrutura esperada pelo carrossel. Verifique também se o array `listPosts` contém os dados corretos após a chamada da API, verificando o valor em `console.log(listPosts)` logo após `setListPosts(formattedData)`.
+
+Essas verificações ajudarão a identificar possíveis discrepâncias nos dados e a solucionar o problema de exibição do carrossel.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
