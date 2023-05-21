@@ -61,6 +61,28 @@ Note que aqui estamos usando `element.style.backgroundColor` em vez de `element.
 
 ---
 
+## Cropar uma imagem para as dimensões específicas
+
+Para cortar (cropar) uma imagem para as dimensões específicas de 100 por 60 pixels no CSS, você pode usar uma combinação de propriedades CSS como `width`, `height`, `object-fit` e `object-position`. Aqui está um exemplo de código CSS:
+
+```css
+img {
+  width: 100px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+}
+```
+
+Nesse exemplo, definimos a largura e altura desejadas para a imagem. A propriedade `object-fit: cover` garante que a imagem preencha totalmente o contêiner sem distorcer, cortando-a se necessário. A propriedade `object-position: center` centraliza a imagem no contêiner.
+
+Lembre-se de substituir "img" pelo seletor CSS correto para a sua imagem.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
+
+---
+
 ## Colocar uma DIV e todo seu conteúdo em escala de cinza
 
 Para colocar uma DIV e todo seu conteúdo em escala de cinza utilizando CSS, você pode utilizar a propriedade "filter" com o valor "grayscale(100%)". Isso aplicará um filtro de escala de cinza de 100% na DIV e em todos os seus elementos filhos. Aqui está um exemplo de código CSS:
