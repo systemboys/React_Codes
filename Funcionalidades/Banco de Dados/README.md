@@ -900,7 +900,7 @@ const [listBackground, setListBackground] = useState([]);
 useEffect(() => {
   Api.get(`/backgroundsId/${category}`).then((res) => {
     const formattedData = res.data.map((item) => ({
-      image: `/img/posts/${item.thumb}`,
+      image: `/img/backgrounds/${item.thumb}`,
       title: item.title,
       category: item.category,
       date: item.date,
