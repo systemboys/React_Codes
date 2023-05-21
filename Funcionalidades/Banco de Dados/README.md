@@ -43,7 +43,9 @@
 > Algumas dicas úteis.
 
 - [Formatação de Dados da API em um Array no Formato Específico (`JSON`)](#formata%C3%A7%C3%A3o-de-dados-da-api-em-um-array-no-formato-espec%C3%ADfico-json "Formatação de Dados da API em um Array no Formato Específico (JSON)")
+  > ( ! ) Serve para todos os compoentes!
 - [Obtendo registros com limite e paginação na rota](#obtendo-registros-com-limite-e-pagina%C3%A7%C3%A3o-na-rota "Obtendo registros com limite e paginação na rota")
+  > ( ! ) Essa configuração deve ser feita na sua rota!
 
 ---
 
@@ -938,6 +940,8 @@ Certifique-se de que as propriedades `thumb`, `title`, `category` e `date` corre
 ## Obtendo registros com limite e paginação na rota
 
 Para obter registros de 6 a 10 na rota '/jm_posts', você pode usar o método `skip` para pular os primeiros 6 registros e, em seguida, definir o limite usando o método `take`. O código ficaria assim:
+
+> ( ! ) Essa configuração deve ser feita na sua rota!
 
 ```javascript
 routes.get('/jm_posts', async (req, res) => {
