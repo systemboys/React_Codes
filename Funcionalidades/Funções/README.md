@@ -5,9 +5,9 @@
 - [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
 - [PopUp passando além de uma URL, dimensões e centralizada](#popup-passando-al%C3%A9m-de-uma-url-dimens%C3%B5es-e-centralizada "PopUp passando além de uma URL, dimensões e centralizada")
 - [Contar número de caracteres de uma string](#contar-n%C3%BAmero-de-caracteres-de-uma-string "Contar número de caracteres de uma string")
-- [Capitalizando as palavras](#capitalizando-as-palavras "Capitalizando as palavras")
-- [Transformando meses de 01 a 12 em Janeiro a Dezembro](#transformando-meses-de-01-a-12-em-janeiro-a-dezembro "Transformando meses de 01 a 12 em Janeiro a Dezembro")
+- [Capitalizando as palavras Capitalizando as palavras (ótimo para nomes de pessoas)](#capitalizando-as-palavras "Capitalizando as palavras Capitalizando as palavras (ótimo para nomes de pessoas)")
 - [Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](#fun%C3%A7%C3%A3o-para-capitalizar-a-primeira-palavra-de-um-par%C3%A1grafo-com-exce%C3%A7%C3%B5es-em-reactjs "Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
+- [Transformando meses de 01 a 12 em Janeiro a Dezembro](#transformando-meses-de-01-a-12-em-janeiro-a-dezembro "Transformando meses de 01 a 12 em Janeiro a Dezembro")
 
 ---
 
@@ -146,7 +146,7 @@ Neste exemplo, a constante `numeroCaracteres` vai conter o número de caracteres
 
 ---
 
-## Capitalizando as palavras
+## Capitalizando as palavras (ótimo para nomes de pessoas)
 
 Você pode criar uma nova função em seu componente React que capitalize as letras da string. Segue um exemplo:
 
@@ -220,29 +220,6 @@ Isso irá renderizar o texto "Este é um Exemplo de Título Capitalizado" dentro
 
 ---
 
-## Transformando meses de 01 a 12 em Janeiro a Dezembro
-
-Você pode criar uma função que receba o número do mês como argumento e retorne o nome do mês correspondente. Veja um exemplo:
-
-```javascript
-// Transformando meses de 01 a 12 em Janeiro a Dezembro
-function getMonthName(month) {
-  const monthNames = [
-    "Janeiro", "Fevereiro", "Março", "Abril", 
-    "Maio", "Junho", "Julho", "Agosto", 
-    "Setembro", "Outubro", "Novembro", "Dezembro"
-  ];
-  return monthNames[month - 1];
-}
-```
-
-Nesse exemplo, a função `getMonthName` recebe um número de mês (de 1 a 12) como argumento e retorna o nome do mês correspondente. O array `monthNames` contém os nomes dos meses em ordem, e a função usa o número do mês como índice para obter o nome correspondente do array. Note que a função subtrai 1 do número do mês, já que os arrays em JavaScript são indexados a partir de zero.
-
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
-
----
-
 ## Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS
 
 É possível usar um array para facilitar a inclusão de palavras em exceções no texto capitalizado. Aqui está o código que utiliza um array de palavras excepcionais:
@@ -292,6 +269,29 @@ Este código em ReactJS tem como objetivo capitalizar a primeira palavra de um p
 15. O parágrafo modificado é renderizado em um elemento `<p>`.
 
 Esse código pode ser usado como referência para capitalizar a primeira palavra de um parágrafo e lidar com exceções de palavras específicas em seu projeto ReactJS.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+
+---
+
+## Transformando meses de 01 a 12 em Janeiro a Dezembro
+
+Você pode criar uma função que receba o número do mês como argumento e retorne o nome do mês correspondente. Veja um exemplo:
+
+```javascript
+// Transformando meses de 01 a 12 em Janeiro a Dezembro
+function getMonthName(month) {
+  const monthNames = [
+    "Janeiro", "Fevereiro", "Março", "Abril", 
+    "Maio", "Junho", "Julho", "Agosto", 
+    "Setembro", "Outubro", "Novembro", "Dezembro"
+  ];
+  return monthNames[month - 1];
+}
+```
+
+Nesse exemplo, a função `getMonthName` recebe um número de mês (de 1 a 12) como argumento e retorna o nome do mês correspondente. O array `monthNames` contém os nomes dos meses em ordem, e a função usa o número do mês como índice para obter o nome correspondente do array. Note que a função subtrai 1 do número do mês, já que os arrays em JavaScript são indexados a partir de zero.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
