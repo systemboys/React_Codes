@@ -6,7 +6,7 @@
 - [PopUp passando além de uma URL, dimensões e centralizada](#popup-passando-al%C3%A9m-de-uma-url-dimens%C3%B5es-e-centralizada "PopUp passando além de uma URL, dimensões e centralizada")
 - [Contar número de caracteres de uma string](#contar-n%C3%BAmero-de-caracteres-de-uma-string "Contar número de caracteres de uma string")
 - [Capitalizando as palavras Capitalizando as palavras (ótimo para nomes de pessoas)](#capitalizando-as-palavras-%C3%B3timo-para-nomes-de-pessoas "Capitalizando as palavras Capitalizando as palavras (ótimo para nomes de pessoas)")
-- [Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](#fun%C3%A7%C3%A3o-para-capitalizar-a-primeira-palavra-de-um-par%C3%A1grafo-com-exce%C3%A7%C3%B5es-em-reactjs "Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
+- [Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](#fun%C3%A7%C3%A3o-para-capitalizar-a-primeira-palavra-de-um-par%C3%A1grafo-com-exce%C3%A7%C3%B5es-em-reactjs "Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
 - [Transformando meses de 01 a 12 em Janeiro a Dezembro](#transformando-meses-de-01-a-12-em-janeiro-a-dezembro "Transformando meses de 01 a 12 em Janeiro a Dezembro")
 
 ---
@@ -220,7 +220,7 @@ Isso irá renderizar o texto "Este é um Exemplo de Título Capitalizado" dentro
 
 ---
 
-## Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS
+## Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS
 
 É possível usar um array para facilitar a inclusão de palavras em exceções no texto capitalizado. Aqui está o código que utiliza um array de palavras excepcionais:
 
