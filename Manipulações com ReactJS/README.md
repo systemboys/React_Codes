@@ -3,6 +3,7 @@
 [![Manipulações com ReactJS](https://github.com/systemboys/React_Codes/raw/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS/images/Manipulacoes_com_ReactJS.png "Manipulações com ReactJS")](https://github.com/systemboys/React_Codes/raw/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS/images/Manipulacoes_com_ReactJS.png "Manipulações com ReactJS")
 
 - [Manipulação de URL em ReactJS](#manipula%C3%A7%C3%A3o-de-url-em-reactjs "Manipulação de URL em ReactJS")
+- [Obtendo a query string em ReactJS usando react-router-dom](# "Obtendo a query string em ReactJS usando react-router-dom")
 - [Trabalhando com Tags](#trabalhando-com-tags "Trabalhando com Tags")
 
 ---
@@ -19,6 +20,39 @@ console.log(hash); // Retorna "post-1".
 ```
 
 O código acima obtém a string após o hashtag (no exemplo, "governador-do-maranhao-recebe-comitiva-de-colinas") e remove o "#" do início da string usando o método `substr(1)`. Em seguida, essa string pode ser usada como necessário em sua aplicação.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-em-reactjs "Subir para o topo")
+
+---
+
+## Obtendo a query string em ReactJS usando react-router-dom
+
+Em ReactJS, você pode obter a query string de uma URL usando a biblioteca `react-router-dom`. Essa biblioteca oferece recursos de roteamento para aplicativos React.
+
+Para obter a query string em ReactJS usando o `react-router-dom`, você pode usar o componente `useLocation` fornecido pela biblioteca. O `useLocation` retorna um objeto de localização que contém informações sobre a URL atual, incluindo a query string.
+
+Aqui está um exemplo de como você pode obter a query string em ReactJS:
+
+```javascript
+import { useLocation } from 'react-router-dom';
+
+function MyComponent() {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  
+  // Exemplo: Obter o valor do parâmetro 'post'
+  const postId = queryParams.get('post');
+  
+  // Resto do código...
+}
+```
+
+Nesse exemplo, usamos o `useLocation` para obter o objeto de localização atual. Em seguida, criamos uma instância de `URLSearchParams` passando `location.search`, que é a string da query string da URL atual. Agora, podemos usar o método `get` do objeto `URLSearchParams` para obter o valor do parâmetro desejado, como 'post' no exemplo acima.
+
+Lembre-se de que o `useLocation` só funcionará se o seu aplicativo estiver usando o `BrowserRouter` ou outro roteador fornecido pelo `react-router-dom`.
+
+Certifique-se de ter instalado o `react-router-dom` usando o gerenciador de pacotes de sua preferência antes de usar o código acima.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-em-reactjs "Subir para o topo")
