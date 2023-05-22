@@ -7,7 +7,7 @@
 - [Contar número de caracteres de uma string](#contar-n%C3%BAmero-de-caracteres-de-uma-string "Contar número de caracteres de uma string")
 - [Capitalizando as palavras](#capitalizando-as-palavras "Capitalizando as palavras")
 - [Transformando meses de 01 a 12 em Janeiro a Dezembro](#transformando-meses-de-01-a-12-em-janeiro-a-dezembro "Transformando meses de 01 a 12 em Janeiro a Dezembro")
-- [Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](# "Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
+- [Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](#fun%C3%A7%C3%A3o-para-capitalizar-a-primeira-palavra-de-um-par%C3%A1grafo-com-exce%C3%A7%C3%B5es-em-reactjs "Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
 
 ---
 
