@@ -5,7 +5,7 @@
 - [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
 - [PopUp passando além de uma URL, dimensões e centralizada](#popup-passando-al%C3%A9m-de-uma-url-dimens%C3%B5es-e-centralizada "PopUp passando além de uma URL, dimensões e centralizada")
 - [Contar número de caracteres de uma string](#contar-n%C3%BAmero-de-caracteres-de-uma-string "Contar número de caracteres de uma string")
-- [Capitalizando as palavras Capitalizando as palavras (ótimo para nomes de pessoas)](#capitalizando-as-palavras-%C3%B3timo-para-nomes-de-pessoas "Capitalizando as palavras Capitalizando as palavras (ótimo para nomes de pessoas)")
+- [Capitalizar nomes (ótimo para cadastro de pessoas)](#capitalizando-as-palavras-%C3%B3timo-para-nomes-de-pessoas "Capitalizar nomes (ótimo para cadastro de pessoas)")
 - [Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](#capitalizar-a-primeira-palavra-de-um-par%C3%A1grafo-com-exce%C3%A7%C3%B5es-em-reactjs "Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
 - [Transformando meses de 01 a 12 em Janeiro a Dezembro](#transformando-meses-de-01-a-12-em-janeiro-a-dezembro "Transformando meses de 01 a 12 em Janeiro a Dezembro")
 
@@ -146,7 +146,7 @@ Neste exemplo, a constante `numeroCaracteres` vai conter o número de caracteres
 
 ---
 
-## Capitalizando as palavras (ótimo para nomes de pessoas)
+## Capitalizar nomes (ótimo para cadastro de pessoas)
 
 Você pode criar uma nova função em seu componente React que capitalize as letras da string. Segue um exemplo:
 
