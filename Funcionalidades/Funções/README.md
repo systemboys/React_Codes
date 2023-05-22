@@ -241,3 +241,58 @@ Nesse exemplo, a função `getMonthName` recebe um número de mês (de 1 a 12) c
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
 
 ---
+
+## Função para capitalizar a primeira palavra de um parágrafo com exceções em ReactJS
+
+É possível usar um array para facilitar a inclusão de palavras em exceções no texto capitalizado. Aqui está o código que utiliza um array de palavras excepcionais:
+
+```javascript
+// Capitalizar a primeira palavra de um parágrafo com exceções.
+function capitalizeFirstWord(text) {
+  const lowercaseText = text.toLowerCase();
+  const words = lowercaseText.split(' ');
+
+  const exceptions = ['educação', 'maranhão'];
+
+  const capitalizedWords = words.map((word, index) => {
+    if (index === 0) {
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    } else if (exceptions.includes(word)) {
+      return word.toUpperCase();
+    } else {
+      return word;
+    }
+  });
+  const capitalizedText = capitalizedWords.join(' ');
+  return capitalizedText;
+}
+
+console.log(capitalizeFirstWord(yourParagraph));
+```
+
+As palavras excepcionais estão armazenadas no array `exceptions`. O código verifica se a palavra está contida nesse array usando `exceptions.includes(word)`. Dessa forma, você pode adicionar ou remover palavras no array `exceptions` de acordo com suas necessidades. O resultado continuará sendo apenas a capitalização da primeira palavra e a preservação das palavras excepcionais.
+
+Este código em ReactJS tem como objetivo capitalizar a primeira palavra de um parágrafo, enquanto mantém as palavras em minúsculas, exceto por algumas exceções. Aqui está uma descrição passo a passo do código:
+
+1. É definida a função `capitalizeFirstWord` que recebe um texto como parâmetro.
+2. O texto é convertido para minúsculas usando o método `toLowerCase()`.
+3. O texto é dividido em palavras usando o método `split(' ')`, que retorna um array de palavras.
+4. É definido um array chamado `exceptions` que contém as palavras excepcionais que não serão convertidas para minúsculas.
+5. O array de palavras é percorrido usando o método `map()`.
+6. Para a primeira palavra (índice 0), a primeira letra é capitalizada usando `word.charAt(0).toUpperCase() + word.slice(1)`, que retorna a primeira letra em maiúscula concatenada com o restante da palavra em minúscula.
+7. Para as palavras subsequentes, é verificado se a palavra está presente no array `exceptions` usando `exceptions.includes(word)`.
+8. Se a palavra estiver no array de exceções, ela é mantida em maiúscula.
+9. Caso contrário, a palavra é mantida em minúscula.
+10. As palavras modificadas são armazenadas em um novo array chamado `capitalizedWords`.
+11. O array `capitalizedWords` é juntado novamente em um texto usando o método `join(' ')`.
+12. O texto final com a primeira palavra capitalizada e as exceções mantidas é retornado pela função `capitalizeFirstWord`.
+13. No componente `App`, é definido um parágrafo como exemplo, onde todas as palavras estão em letras maiúsculas.
+14. A função `capitalizeFirstWord` é chamada com o parágrafo como argumento, retornando o parágrafo modificado.
+15. O parágrafo modificado é renderizado em um elemento `<p>`.
+
+Esse código pode ser usado como referência para capitalizar a primeira palavra de um parágrafo e lidar com exceções de palavras específicas em seu projeto ReactJS.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+
+---
