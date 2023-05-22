@@ -3,7 +3,7 @@
 [![Manipulações com ReactJS](https://github.com/systemboys/React_Codes/raw/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS/images/Manipulacoes_com_ReactJS.png "Manipulações com ReactJS")](https://github.com/systemboys/React_Codes/raw/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS/images/Manipulacoes_com_ReactJS.png "Manipulações com ReactJS")
 
 - [Manipulação de URL em ReactJS](#manipula%C3%A7%C3%A3o-de-url-em-reactjs "Manipulação de URL em ReactJS")
-- [Obtendo a query string em ReactJS usando react-router-dom](# "Obtendo a query string em ReactJS usando react-router-dom")
+- [Obtendo a query string em ReactJS usando react-router-dom](#obtendo-a-query-string-em-reactjs-usando-react-router-dom "Obtendo a query string em ReactJS usando react-router-dom")
 - [Trabalhando com Tags](#trabalhando-com-tags "Trabalhando com Tags")
 
 ---
