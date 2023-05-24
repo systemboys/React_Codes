@@ -347,7 +347,7 @@ const formatDate = (dateStr) => {
         'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
     ];
 
-    // Ajustar para fuso horário UTC
+    // Ajustar para fuso horário UTC.
     date.setUTCHours(0, 0, 0, 0);
 
     const dayOfWeek = daysOfWeek[date.getUTCDay()];
