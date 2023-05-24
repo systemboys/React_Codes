@@ -8,9 +8,9 @@
 - [Exibir a data no formato dd/mm/aaaa](#exibir-a-data-no-formato-ddmmaaaa "Exibir a data no formato dd/mm/aaaa")
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
   - [Zero à esquerda para hora, minuto e segundo menores que 10](#zero-%C3%A0-esquerda-para-hora-minuto-e-segundo-menores-que-10 "Zero à esquerda para hora, minuto e segundo menores que 10")
-  - [Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript](#formatando-a-data-atual-no-formato-segunda-15-de-maio-de-2023-em-javascript "Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript")
+  - [Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000'](#formatando-a-data-atual-no-formato-segunda-15-de-maio-de-2023-em-javascript "Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000'")
   - [Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'](#formatando-uma-data-no-formato-2000-11-31-para-o-formato-doming-31-de-desembro-de-2000 "Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'")
-  - [Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023' (ajuste de fuso horário)](#formatando-uma-data-no-formato-2000-11-31-para-o-formato-doming-31-de-desembro-de-2000-ajuste-de-fuso-hor%C3%A1rio "Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023' (ajuste de fuso horário)")
+  - [Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000' (ajuste de fuso horário)](#formatando-uma-data-no-formato-2000-11-31-para-o-formato-doming-31-de-desembro-de-2000-ajuste-de-fuso-hor%C3%A1rio "Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000' (ajuste de fuso horário)")
 
 ---
 
@@ -347,7 +347,7 @@ const formatDate = (dateStr) => {
         'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
     ];
 
-    // Ajustar para fuso horário UTC
+    // Ajustar para fuso horário UTC.
     date.setUTCHours(0, 0, 0, 0);
 
     const dayOfWeek = daysOfWeek[date.getUTCDay()];
