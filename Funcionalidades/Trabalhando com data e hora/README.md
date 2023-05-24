@@ -9,7 +9,8 @@
 - [Data e Hora atual no elemento HTML](#data-e-hora-atual-no-elemento-html "Data e Hora atual no elemento HTML")
   - [Zero à esquerda para hora, minuto e segundo menores que 10](#zero-%C3%A0-esquerda-para-hora-minuto-e-segundo-menores-que-10 "Zero à esquerda para hora, minuto e segundo menores que 10")
   - [Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript](#formatando-a-data-atual-no-formato-segunda-15-de-maio-de-2023-em-javascript "Formatando a data atual no formato 'Segunda, 15 de maio de 2023' em JavaScript")
-  - [Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'](#formatando-uma-data-no-formato-2023-05-23-para-o-formato-segunda-15-de-maio-de-2023 "Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'")
+  - [Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'](#formatando-uma-data-no-formato-2000-11-31-para-o-formato-doming-31-de-desembro-de-2000 "Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'")
+  - [Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023' (ajuste de fuso horário)](#formatando-uma-data-no-formato-2000-11-31-para-o-formato-doming-31-de-desembro-de-2000-ajuste-de-fuso-hor%C3%A1rio "Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023' (ajuste de fuso horário)")
 
 ---
 
@@ -287,7 +288,7 @@ Lembre-se de ajustar os nomes dos dias da semana e dos meses de acordo com o idi
 
 ---
 
-## Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000'.
+## Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000'
 
 Para transformar a data no formato "2023-05-23" para "Segunda, 15 de maio de 2023" em JavaScript, você pode seguir os seguintes passos:
 
@@ -330,7 +331,7 @@ Você pode usar a função `formatDate` para transformar qualquer data no format
 
 ---
 
-## Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000' (ajuste de fuso horário).
+## Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000' (ajuste de fuso horário)
 
 Se você está obtendo um dia a menos na data formatada, é provável que o problema esteja relacionado ao fuso horário. O objeto `Date` em JavaScript leva em consideração o fuso horário local ao realizar conversões.
 
