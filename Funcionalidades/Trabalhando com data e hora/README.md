@@ -287,7 +287,7 @@ Lembre-se de ajustar os nomes dos dias da semana e dos meses de acordo com o idi
 
 ---
 
-## Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'
+## Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000'.
 
 Para transformar a data no formato "2023-05-23" para "Segunda, 15 de maio de 2023" em JavaScript, você pode seguir os seguintes passos:
 
@@ -302,7 +302,7 @@ Para transformar a data no formato "2023-05-23" para "Segunda, 15 de maio de 202
 Aqui está um exemplo de código que realiza essa transformação:
 
 ```javascript
-// Formatando uma data no formato '2023-05-23' para o formato 'Segunda, 15 de maio de 2023'.
+// Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000'.
 const formatDate = (dateStr) => {
   const date = new Date(dateStr);
   const daysOfWeek = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
@@ -324,6 +324,41 @@ console.log(formattedDate); // Saída: Terça-feira, 23 de maio de 2023.
 ```
 
 Você pode usar a função `formatDate` para transformar qualquer data no formato desejado.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+
+---
+
+## Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000' (ajuste de fuso horário).
+
+Se você está obtendo um dia a menos na data formatada, é provável que o problema esteja relacionado ao fuso horário. O objeto `Date` em JavaScript leva em consideração o fuso horário local ao realizar conversões.
+
+Você pode corrigir isso ajustando a data para o fuso horário UTC antes de formatá-la. Você pode usar os métodos `setUTC*` do objeto `Date` para isso. Aqui está uma versão atualizada da função `formatDate` que leva em consideração o fuso horário:
+
+```javascript
+// Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000'.
+const formatDate = (dateStr) => {
+    const date = new Date(dateStr);
+    const daysOfWeek = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+    const months = [
+        'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+        'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'
+    ];
+
+    // Ajustar para fuso horário UTC
+    date.setUTCHours(0, 0, 0, 0);
+
+    const dayOfWeek = daysOfWeek[date.getUTCDay()];
+    const day = date.getUTCDate();
+    const month = months[date.getUTCMonth()];
+    const year = date.getUTCFullYear();
+
+    return `${dayOfWeek}, ${day} de ${month} de ${year}`;
+};
+```
+
+Ao ajustar para o fuso horário UTC, você deve obter a data formatada corretamente. Lembre-se de também verificar as configurações de fuso horário no servidor e cliente, para garantir a consistência na interpretação das datas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
