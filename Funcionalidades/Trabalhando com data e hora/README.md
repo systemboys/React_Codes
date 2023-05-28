@@ -1,6 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Trabalhando com data e hora
 
 - [Formatando Data](#formatando-data "Formatando Data")
+- [Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'](# "Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'")
 - [Formatando Hora](#formatando-hora "Formatando Hora")
 - [Renderizar data no formato desejado no JSX](#renderizar-data-no-formato-desejado-no-jsx "Renderizar data no formato desejado no JSX")
 - [Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'](#converter-string-com-data-no-formato-ddmmaaaa-para-aaaa-mm-dd "Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'")
@@ -54,6 +55,41 @@ const hour = "18:19:49"; // Hora informada
 // Hora
 const Hours = new Date("1970-01-01T" + hour + "Z"); // Hora
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+
+---
+
+## dddddddddddddd
+
+Para formatar a data "1992-12-08T00:00:00.000Z" no formato "08-12-1992", você pode usar o objeto `Date` do JavaScript juntamente com os métodos disponíveis para manipulação de datas.
+
+Aqui está um exemplo de como você pode fazer isso:
+
+```jsx
+function formatDate(dateString) {
+  const date = new Date(dateString);
+
+  const day = date.getDate().toString().padStart(2, "0");
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const year = date.getFullYear().toString();
+
+  return `${day}-${month}-${year}`;
+}
+
+// Exemplo de uso
+const dateString = "1992-12-08T00:00:00.000Z";
+const formattedDate = formatDate(dateString);
+
+console.log(formattedDate); // Saída: 08-12-1992
+```
+
+> ( ! ) Você pode chamar a função formatDate() com qualquer string de data e obterá a data formatada no formato "08-12-1992".
+
+Neste exemplo, você cria um objeto `Date` com base na string da data. Em seguida, você usa os métodos `getDate()`, `getMonth()` e `getFullYear()` para obter os componentes do dia, mês e ano, respectivamente. Em seguida, você usa o método `padStart()` para adicionar zeros à esquerda, caso necessário, para garantir que os valores do dia e do mês tenham sempre dois dígitos. Por fim, você concatena as partes formatadas da data usando o formato desejado.
+
+Espero que isso ajude! Se tiver mais perguntas, estou aqui para ajudar.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
