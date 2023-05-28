@@ -1,7 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Trabalhando com data e hora
 
 - [Formatando Data](#formatando-data "Formatando Data")
-- [Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'](# "Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'")
+- [Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'](#formatar-data-1992-12-08t000000000z-no-formato-08-12-1992 "Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'")
 - [Formatando Hora](#formatando-hora "Formatando Hora")
 - [Renderizar data no formato desejado no JSX](#renderizar-data-no-formato-desejado-no-jsx "Renderizar data no formato desejado no JSX")
 - [Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'](#converter-string-com-data-no-formato-ddmmaaaa-para-aaaa-mm-dd "Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'")
