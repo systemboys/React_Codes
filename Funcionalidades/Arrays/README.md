@@ -75,22 +75,22 @@ Para mapear o array dentro do retorno de um componente em um select por exemplo,
 
 ```jsx
 function MeuComponente() {
-    const opcoes = [
-        { valor: 'valor1', label: 'Opção 1' },
-        { valor: 'valor2', label: 'Opção 2' },
-        { valor: 'valor3', label: 'Opção 3' }
+    const dataTableRecords = [
+        { value: 'valor 1', label: 'Opção 1' },
+        { value: 'valor 2', label: 'Opção 2' },
+        { value: 'valor 3', label: 'Opção 3' }
     ];
     return (
         <select>
-            {opcoes.map(opcao => (
-                <option key={opcao.valor} value={opcao.valor}>{opcao.label}</option>
+            {dataTableRecords.map(item => (
+                <option key={item.value} value={item.value}>{item.label}</option>
             ))}
         </select>
     );
 }
 ```
 
-Nesse exemplo, criamos um array `opcoes` com três objetos que representam as opções do select. Em seguida, utilizamos o método `map()` para criar um array de elementos `<option>` com base nos objetos do array `opcoes`. Cada elemento `<option>` tem o atributo value com o valor do objeto e o texto da opção com o atributo label. Note que é importante incluir a propriedade `key` em cada elemento gerado pelo `map()` para ajudar o React a identificar qual item deve ser atualizado em caso de mudanças na lista. Por fim, o array de elementos `<option>` é renderizado dentro do elemento `<select>`.
+Nesse exemplo, criamos um array `dataTableRecords` com três objetos que representam as opções do select. Em seguida, utilizamos o método `map()` para criar um array de elementos `<option>` com base nos objetos do array `dataTableRecords`. Cada elemento `<option>` tem o atributo value com o valor do objeto e o texto da opção com o atributo label. Note que é importante incluir a propriedade `key` em cada elemento gerado pelo `map()` para ajudar o React a identificar qual item deve ser atualizado em caso de mudanças na lista. Por fim, o array de elementos `<option>` é renderizado dentro do elemento `<select>`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--arrays "Subir para o topo")
@@ -109,9 +109,9 @@ function MeuComponente() {
                 { link: 'https://www.google.com/', name: 'Google', title: 'Ir para o Google' },
                 { link: 'https://www.youtube.com/', name: 'YouTube', title: 'Ir para o YouTube' },
                 { link: 'https://www.bing.com/', name: 'Bing', title: 'Ir para o Bing' }
-            ].map(opcao => (
+            ].map(item => (
                 <>
-                   <p><a href={opcao.link} target="_blank" title={opcao.title}>{opcao.name}</a></p>
+                   <p><a href={item.link} target="_blank" title={item.title}>{item.name}</a></p>
                 </>
             ))}
         </Container>
