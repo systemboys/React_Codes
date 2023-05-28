@@ -45,23 +45,7 @@ const parsedDate = parseISO(date).toISOString(); // Data
 
 ---
 
-## Formatando Hora
-
-Configuração da Hora:
-
-```jsx
-const hour = "18:19:49"; // Hora informada
-
-// Hora
-const Hours = new Date("1970-01-01T" + hour + "Z"); // Hora
-```
-
-[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
-
----
-
-## dddddddddddddd
+## Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'
 
 Para formatar a data "1992-12-08T00:00:00.000Z" no formato "08-12-1992", você pode usar o objeto `Date` do JavaScript juntamente com os métodos disponíveis para manipulação de datas.
 
@@ -90,6 +74,22 @@ console.log(formattedDate); // Saída: 08-12-1992
 Neste exemplo, você cria um objeto `Date` com base na string da data. Em seguida, você usa os métodos `getDate()`, `getMonth()` e `getFullYear()` para obter os componentes do dia, mês e ano, respectivamente. Em seguida, você usa o método `padStart()` para adicionar zeros à esquerda, caso necessário, para garantir que os valores do dia e do mês tenham sempre dois dígitos. Por fim, você concatena as partes formatadas da data usando o formato desejado.
 
 Espero que isso ajude! Se tiver mais perguntas, estou aqui para ajudar.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+
+---
+
+## Formatando Hora
+
+Configuração da Hora:
+
+```jsx
+const hour = "18:19:49"; // Hora informada
+
+// Hora
+const Hours = new Date("1970-01-01T" + hour + "Z"); // Hora
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
