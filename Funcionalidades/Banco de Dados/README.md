@@ -521,14 +521,12 @@ Caso tenha mais requisitos, basta incrementá-los na constante e na condição `
 // Rota: 'customers/:company/:customer'.
 routes.get('/customers/:company/:customer', async (req, res) => {
     const { company, customer } = req.params;
-  
     const customersAddress = await prisma.customers_address.findMany({
         where: {
             company: Number(company),
             customer: Number(customer)
         },
     });
-  
     res.status(200).json(customersAddress);
   });
 ```
