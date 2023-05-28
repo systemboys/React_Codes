@@ -534,7 +534,7 @@ routes.get('/customers/:company/:customer', async (req, res) => {
 > ( ! ) Lembrando que `Number()` se utilizando quando é número inteiro. O usuo de strings não é necessário!
 
 ```jsx
-// ...
+// Quando o parâmetro recebido pela URL for uma string, não há necessidade de Number().
 where: {
     company: company,
     customer: Number(customer)
