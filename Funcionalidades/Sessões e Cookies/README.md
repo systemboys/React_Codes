@@ -12,14 +12,14 @@ Para criar uma sessão, você pode usar o objeto `sessionStorage` do JavaScript.
 
 Para armazenar um dado na sessão, você pode usar o método `setItem` do objeto `sessionStorage`, passando o nome da chave e o valor:
 
-```javascript
+```jsx
 // Armazena um valor na sessão.
 sessionStorage.setItem('nome', 'João');
 ```
 
 Para recuperar um valor da sessão, você pode usar o método `getItem` do objeto `sessionStorage`, passando o nome da chave:
 
-```javascript
+```jsx
 // Recupera um valor da sessão.
 const nome = sessionStorage.getItem('nome');
 console.log(nome); // Imprime 'João'.
@@ -29,7 +29,7 @@ Para criar um cookie, você pode usar a propriedade `document.cookie` do JavaScr
 
 Para definir um cookie, você pode definir a propriedade `document.cookie` com uma string contendo o nome da chave, o valor e algumas opções adicionais, como o tempo de expiração:
 
-```javascript
+```jsx
 // Define um cookie com o nome 'nome' e o valor 'João'
 document.cookie = 'nome=João';
 
@@ -41,7 +41,7 @@ document.cookie = 'idade=30; expires=' + dataExpiracao;
 
 Para recuperar um cookie, você pode acessar a propriedade `document.cookie`, que retorna uma string contendo todos os cookies definidos para o domínio atual. Em seguida, é possível filtrar essa string para encontrar o cookie desejado:
 
-```javascript
+```jsx
 // Recupera o valor do cookie 'nome'.
 const cookies = document.cookie.split(';');
 const nomeCookie = cookies.find(cookie => cookie.trim().startsWith('nome='));
@@ -55,13 +55,13 @@ Para apagar uma sessão ou um cookie, você pode utilizar a função `removeItem
 
 Para remover um cookie:
 
-```javascript
+```jsx
 localStorage.removeItem('nomeDoCookie');
 ```
 
 Para remover uma sessão:
 
-```javascript
+```jsx
 localStorage.removeItem('nomeDaSessao');
 ```
 
@@ -71,7 +71,7 @@ Para destruir todos os cookies ou sessões de uma vez, você pode utilizar o mé
 
 Por exemplo:
 
-```javascript
+```jsx
 localStorage.clear();
 ```
 

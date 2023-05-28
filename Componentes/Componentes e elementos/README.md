@@ -49,7 +49,7 @@ Arquivo `index.html`.
 
 Arquivo `main.jsx`.
 
-```javascript
+```jsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
@@ -65,7 +65,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 Arquivo `App.jsx`.
 
-```javascript
+```jsx
 function App() {
   return (
     <h1>Hello World!</h1>
@@ -77,7 +77,7 @@ export default App
 
 Arquivo `Test.jsx` com o componente em modo Default Exports.
 
-```javascript
+```jsx
 function Test() {
     return (
       <h1>Content test...</h1>
@@ -114,7 +114,7 @@ Arquivo `index.html`.
 
 Arquivo `main.jsx`.
 
-```javascript
+```jsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { App } from './App'
@@ -128,7 +128,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 Arquivo `App.jsx`.
 
-```javascript
+```jsx
 import { Post } from './Post'
 
 export function App() {
@@ -142,7 +142,7 @@ export function App() {
 
 Arquivo `Post.jsx` com o componente em modo Named Exports.
 
-```javascript
+```jsx
 export function Post() {
     return <p>Post</p>
 }
@@ -165,7 +165,7 @@ npm install react-bootstrap bootstrap
 
 Importar os seguintes componentes:
 
-```javascript
+```jsx
 // Componentes do formulário.
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
@@ -176,7 +176,7 @@ import Row from 'react-bootstrap/Row';
 
 Ou:
 
-```javascript
+```jsx
 // Componentes do formulário.
 import {
     Container,
@@ -191,7 +191,7 @@ import {
 
 Elementos do formulário modelo:
 
-```javascript
+```jsx
 <Container>
     <Form>
         <Row className="mb-2">
@@ -263,7 +263,7 @@ Caso você esteja utilizando CSS Modules e deseja que o botão `imput` seja fixa
 
 Adicione a classe no elemento HTML:
 
-```javascript
+```jsx
 ...
 import styles from './styles.module.css';
 
@@ -295,7 +295,7 @@ npm install react-input-mask
 
 Em seguida, podemos importá-lo em nosso componente e utilizá-lo no input da seguinte forma:
 
-```javascript
+```jsx
 import React, { useState } from 'react';
 import InputMask from 'react-input-mask';
 
@@ -326,7 +326,7 @@ Dessa forma, o input será formatado de acordo com a máscara definida, e o valo
 
 Se você já tem o campo e não quer mexer na sua estrutura, você pode envolver o seu <Form.Control ... /> com o componente InputMask, passando a máscara desejada como uma string de formatação. O código ficaria assim:
 
-```javascript
+```jsx
 <Form.Group className="mb-3" as={Col} controlId="formGridCPF">
   <Form.Label>CPF</Form.Label>
   <InputMask
@@ -349,7 +349,7 @@ Se você já tem o campo e não quer mexer na sua estrutura, você pode envolver
 
 Você pode usar o react-input-mask para adicionar uma máscara ao campo de data. Por exemplo, se você quiser que o campo de data seja formatado como dd/mm/yyyy, você pode usar a seguinte sintaxe:
 
-```javascript
+```jsx
 <InputMask
   mask="99/99/9999"
   placeholder="dd/mm/yyyy"
@@ -362,7 +362,7 @@ Nesse caso, o campo de entrada aceitará somente números e preencherá automati
 
 Basta substituir o valor da propriedade mask para o valor da máscara de data desejada e atualizar a propriedade placeholder para exibir a máscara de data correspondente. Aqui está um exemplo:
 
-```javascript
+```jsx
 <Form.Group className="mb-3" as={Col} controlId="formGridDataRegistro">
   <Form.Label>Data/Regist.</Form.Label>
   <InputMask
@@ -385,7 +385,7 @@ Basta substituir o valor da propriedade mask para o valor da máscara de data de
 
 Da mesma forma, é utilizado para o campo de horas:
 
-```javascript
+```jsx
 <Form.Group className="mb-3" as={Col} controlId="formGridHoraRegistro">
   <Form.Label>Hora/Regist.</Form.Label>
   <InputMask
@@ -417,7 +417,7 @@ Lembre-se de importar o componente InputMask e definir os estados e as referênc
 
 Importar o `useState` do React para armazenarmos os valores:
 
-```javascript
+```jsx
 import React, { useState } from 'react';
 ```
 
@@ -425,7 +425,7 @@ Dentro do seu componente, antes do retorno, devem ser declarados os valores, dei
 
 > Quando não há `action=""` ou quando há mas não é definido nenhum valor, ao enviar o submit, o usuário será direcionado para a mesma tela do formulário (comportamento típico do form). A ação do envio deverá ser mapeada e interceptada.
 
-```javascript
+```jsx
 // Declaração dos valores dos campos.
 const [email, setEmail] = useState("");
 const [username, setUsername] = useState("");
@@ -444,13 +444,13 @@ async function handleSubmitLogin(e) {
 
 A função deverá ser colocada no `<form>...</form>` no evento `onSubmit={}`:
 
-```javascript
+```jsx
 <form onSubmit={handleSubmitLogin}>
 ```
 
 Agora os geters e os seters deverão ser ligados nos campos:
 
-```javascript
+```jsx
 <input
     type="email"
     name="email"
@@ -494,7 +494,7 @@ Como definir um valor em um campo onde ele se torna editável dentro de um compo
 
 > Aqui está um exemplo de como definir um valor padrão para um campo de texto usando o componente `Form.Control` do React Bootstrap:
 
-```javascript
+```jsx
 import { useState } from 'react';
 import { Form, Col } from 'react-bootstrap';
 
@@ -535,13 +535,13 @@ Para verificar se os campos estão vazios, você pode usar uma declaração cond
 
 Inportar o `useRef` do React.
 
-```javascript
+```jsx
 import React, { useState, useRef } from "react";
 ```
 
 > Aqui está um exemplo de como você pode definir o foco nos campos de entrada criando referências para setar o focus.
 
-```javascript
+```jsx
 // Declaração dos valores dos campos.
 const [client_type, setClient_type] = useState("");
 const [full_name, setFull_name] = useState("");
@@ -590,7 +590,7 @@ async function handleSubmitCustomerRegistration(e) {
 
 Nos campos devem ser atribuídas suas referências `ref={full_nameInputRef}`:
 
-```javascript
+```jsx
 ...
 <input
   type="text"
@@ -612,7 +612,7 @@ Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" 
 
 Para validar um campo de e-mail em ReactJS usando JavaScript, você pode usar expressões regulares (regex) para verificar se o formato do e-mail é válido. Você pode adicionar uma função de validação ao seu componente que verifica se o valor do campo de e-mail corresponde a um padrão de e-mail válido. Aqui está um exemplo de como fazer isso:
 
-```javascript
+```jsx
 import React, { useState } from 'react';
 
 function YourComponent() {
@@ -655,7 +655,7 @@ Neste exemplo, a função `validateEmail` usa uma expressão regular para valida
 
 Claro, você pode adicionar uma condição para verificar se o email é válido e exibir um alerta caso não seja. Aqui está um exemplo:
 
-```javascript
+```jsx
 function validarEmail(email) {
   // Expressão regular para validar email
   const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -694,19 +694,19 @@ Assim, basta adicionar um evento de click no botão "Reset" e chamar o método `
 
 `1`. Fora do componente, importe o `useRef`:
 
-```javascript
+```jsx
 import { useRef } from "react";
 ```
 
 `2`. Abaixo das declaraçõs dos valores dos campos, declare a constante `formRef`:
 
-  ```javascript
+  ```jsx
   // Referenciar o formulário.
   const formRef = useRef();
   ```
 `3`. Adicione a função `handleReset()`:
 
-  ```javascript
+  ```jsx
   // Função Reset, para resetar os campos do formulário.
   function handleReset() {
     formRef.current.reset();
@@ -719,7 +719,7 @@ import { useRef } from "react";
 
 `4`. No formulário coloque a referência `ref={formRef}`:
 
-```javascript
+```jsx
 <form ref={formRef}>
   ...
 </form>
@@ -727,7 +727,7 @@ import { useRef } from "react";
 
 `5`. Coloque a função que foi criada `handleReset()` em um `onClick={}` no `<button>...</button>`:
 
-  ```javascript
+  ```jsx
   <button type="button" onClick={handleReset}>
     Reset
   </button>
@@ -752,7 +752,7 @@ npm install --save @ckeditor/ckeditor5-react @ckeditor/ckeditor5-build-classic
 
 `2`. Importe o componente CKEditor:
 
-```javascript
+```jsx
 // CKEditor
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
@@ -760,7 +760,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 Se você já tem o campo de texto, como por exemplo:
 
-```javascript
+```jsx
 <Form.Group className="mb-3" controlId="formGridAboutSystem">
   <Form.Label>Sobore o sistema</Form.Label>
   <Form.Control as="textarea" size="sm" rows={8} defaultValue={listCompanySystem[0]?.about_system} placeholder="Escreva algo sobre o sistema..." />
@@ -769,7 +769,7 @@ Se você já tem o campo de texto, como por exemplo:
 
 `3`. Substitua o campo `Form.Control` que você deseja usar o CKEditor pelo componente `CKEditor`. Para isso, você pode remover a propriedade `as="textarea"` e adicionar a propriedade editor={ClassicEditor}. Além disso, você pode definir a propriedade `data` com o valor do texto do campo:
 
-```javascript
+```jsx
 <Form.Group className="mb-3" controlId="formGridAboutSystem">
   <Form.Label>Sobore o sistema</Form.Label>
   <CKEditor
@@ -789,7 +789,7 @@ No método `onChange` do `CKEditor`, você pode atualizar o estado com o novo va
 
 Para usar o componente CKEditor `personalizado` e passe as opções personalizadas. Na opção `config`, você pode personalizar a barra de ferramentas, removendo ou adicionando botões de acordo com as suas necessidades. Você também pode definir a altura da área de texto no CSS ou na opção `config` usando a propriedade `content.minHeight`. Por exemplo:
 
-```javascript
+```jsx
 <CKEditor
   editor={ClassicEditor}
   data={listCompanySystem[0]?.about_system}
@@ -873,7 +873,7 @@ O método `await` é utilizado para aguardar a resposta do servidor antes de con
 
 A linha `e.preventDefault()` é usada para evitar que o formulário seja enviado de forma padrão, ou seja, sem ser através da chamada de API assíncrona. Com isso, a página não é atualizada automaticamente e o usuário permanece na mesma página após o envio do formulário.
 
-```javascript
+```jsx
 // Interceptar o evento de submit.
 async function handleSubmitDrivers(e) {
   e.preventDefault();
@@ -920,14 +920,14 @@ npm install react-bootstrap bootstrap
 
 Importações dos componentes:
 
-```javascript
+```jsx
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 ```
 
 Elementos do HTML:
 
-```javascript
+```jsx
 <Container>
     <Tabs
         defaultActiveKey="TabOne"
@@ -955,13 +955,13 @@ Elementos do HTML:
 
 Importar do React-Bootstrap os componentes:
 
-```javascript
+```jsx
 import { Container, Table } from 'react-bootstrap';
 ```
 
 Os elementos HTML no retorno:
 
-```javascript
+```jsx
 <Container>
     <Table striped bordered hover size="sm">
         <thead>
@@ -1015,7 +1015,7 @@ O Col permite especificar larguras de coluna em 6 tamanhos de ponto de interrup�
 
 Importações dos componentes:
 
-```javascript
+```jsx
 import {
     Container,
     Row,
@@ -1025,7 +1025,7 @@ import {
 
 Elementos do HTML:
 
-```javascript
+```jsx
 <Container>
     <Row>
         <Col sm={8}>sm=8</Col>
@@ -1056,13 +1056,13 @@ npm install react-bootstrap bootstrap
 
 Importação dos botões do Bootstrap:
 
-```javascript
+```jsx
 import Button from 'react-bootstrap/Button';
 ```
 
 Elementos HTML:
 
-```javascript
+```jsx
 <>
     <Button variant="primary">Primary</Button>{' '}
     <Button variant="secondary">Secondary</Button>{' '}
@@ -1091,13 +1091,13 @@ styles.module.css
 
 Importação da folha de estilo:
 
-```javascript
+```jsx
 import styles from './styles.module.css';
 ```
 
 Incrementação da classe no elemento HTML:
 
-```javascript
+```jsx
 <div className={styles.youClassName}></div>
 ```
 
@@ -1120,7 +1120,7 @@ Você também pode usar os componentes Tab para criar interfaces com tabulaçõe
 
 Importar os componentes:
 
-```javascript
+```jsx
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
@@ -1128,7 +1128,7 @@ import Tab from 'react-bootstrap/Tab';
 ```
 Elementos HTML:
 
-```javascript
+```jsx
 export function TabsExample() {
   return (
     <Tab.Container id="list-group-tabs-example" defaultActiveKey="#link1">
@@ -1174,12 +1174,12 @@ As ações de itens de lista são diferentes de itens simples para garantir que 
 
 Importar o componente:
 
-```javascript
+```jsx
 import ListGroup from 'react-bootstrap/ListGroup';
 ```
 Elementos HTML:
 
-```javascript
+```jsx
 export function LinkedExample() {
   const alertClicked = () => {
     alert('You clicked the third ListGroupItem');
@@ -1219,7 +1219,7 @@ Offcanvas oferece suporte a alguns posicionamentos diferentes:
 
 Importar os componentes:
 
-```javascript
+```jsx
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -1227,7 +1227,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 
 Elementos HTML:
 
-```javascript
+```jsx
 function OffCanvasExample({ name, ...props }) {
   const [show, setShow] = useState(false);
 
@@ -1278,13 +1278,13 @@ Para criar uma IU de paginação mais complexa, existem alguns subcomponentes co
 
 Importar o componente:
 
-```javascript
+```jsx
 import Pagination from 'react-bootstrap/Pagination';
 ```
 
 Elementos HTML:
 
-```javascript
+```jsx
 export function AdvancedExample() {
   return (
     <Pagination>
@@ -1327,7 +1327,7 @@ No exemplo abaixo, pegamos um componente de cartão típico e o recriamos com es
 
 Importar os componentes:
 
-```javascript
+```jsx
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Placeholder from 'react-bootstrap/Placeholder';
@@ -1335,7 +1335,7 @@ import Placeholder from 'react-bootstrap/Placeholder';
 
 Elementos HTML:
 
-```javascript
+```jsx
 export function CardExample() {
   return (
     <div className="d-flex justify-content-around">
@@ -1382,13 +1382,13 @@ Anime espaços reservados definindo a animação de suporte para brilhar ou ondu
 
 Importar o componente:
 
-```javascript
+```jsx
 import Placeholder from 'react-bootstrap/Placeholder';
 ```
 
 Elementos HTML:
 
-```javascript
+```jsx
 export function AnimationExample() {
   return (
     <>
@@ -1416,7 +1416,7 @@ Implementação de ícones do `React-FontAwesome` em seu projeto.
 
 Importar os componentes:
 
-```javascript
+```jsx
 // Ícones React-Fontawesome.
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPrint } from '@fortawesome/free-solid-svg-icons';
@@ -1426,7 +1426,7 @@ import { faPrint } from '@fortawesome/free-solid-svg-icons';
 
 Elemento HTML:
 
-```javascript
+```jsx
 <FontAwesomeIcon icon={faPrint} size="1x" />
 ```
 
@@ -1441,7 +1441,7 @@ Para impedir a exibição do menu de contexto dentro de um componente em React, 
 
 Você pode fazer isso da seguinte forma:
 
-```javascript
+```jsx
 import React, { useEffect } from 'react';
 
 function MyComponent() {

@@ -50,7 +50,7 @@ Após seguir esses passos, você deve ter o Node.js e o NPM instalados em seu si
 
 Para atualizar o Node.js, você pode utilizar o seguinte comando no terminal:
 
-```javascript
+```jsx
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
@@ -60,7 +60,7 @@ Este comando limpa o cache do npm, instala o pacote n, que é um gerenciador de 
 
 Para atualizar o npm, você pode usar o seguinte comando:
 
-```javascript
+```jsx
 sudo npm install -g npm@latest
 ```
 

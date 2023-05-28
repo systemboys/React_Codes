@@ -16,7 +16,7 @@ npm install nodemailer
 
 Em seguida, você pode criar uma função para enviar o e-mail no componente "ContactTheDeveloper". Para isso, adicione o código abaixo:
 
-```javascript
+```jsx
 import nodemailer from 'nodemailer';
 
 async function sendEmail() {
@@ -46,7 +46,7 @@ async function sendEmail() {
 
 Substitua as informações do servidor SMTP pelas informações do seu próprio servidor de e-mail e substitua as informações do e-mail pelo seu próprio conteúdo. Depois, chame a função "sendEmail" dentro da função "handleSubmitContact":
 
-```javascript
+```jsx
 // Importe o pacote nodemailer.
 import nodemailer from 'nodemailer';
 

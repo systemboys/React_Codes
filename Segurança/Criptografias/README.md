@@ -12,7 +12,7 @@ No JavaScript/ReactJS, você pode utilizar a função `crypto.subtle.digest()` p
 
 Por exemplo, para gerar um hash SHA-256 da senha, você pode utilizar o seguinte código:
 
-```javascript
+```jsx
 async function hashPassword(password) {
   // Converte a string da senha em ArrayBuffer
   const encoder = new TextEncoder();
@@ -31,7 +31,7 @@ async function hashPassword(password) {
 
 Para utilizar a função `hashPassword()`, basta passar a senha como parâmetro e aguardar o resultado:
 
-```javascript
+```jsx
 const hashedPassword = await hashPassword('senha123');
 ```
 

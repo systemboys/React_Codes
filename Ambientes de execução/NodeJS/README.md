@@ -127,7 +127,7 @@ nvm use <version>
 
 Este comando define a versão do node.js que você deseja usar. Se você quiser que esta versão seja usada por padrão, você pode usar o comando:
 
-```javascript
+```jsx
 nvm alias default <version>
 ```
 

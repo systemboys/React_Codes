@@ -8,7 +8,7 @@
 
 Para remover uma div com várias classes, você pode usar o método `querySelector` do JavaScript para selecionar o elemento com base em suas classes. O código abaixo irá selecionar o primeiro elemento com a classe especificada e removê-lo do DOM:
 
-```javascript
+```jsx
 const divToRemove = document.querySelector(".fenestra-taskbar-button.mx-1.btn.active.btn-outline-primary");
 divToRemove.parentNode.removeChild(divToRemove);
 ```

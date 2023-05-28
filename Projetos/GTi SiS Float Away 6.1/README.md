@@ -105,7 +105,7 @@ Depois disso, faça a instalação das dependências. A instrução está no ite
 
 Para definir o tamanho e posição da janela, basta você passar os parâmetros top, left, width e height para o argumento da função open, como no exemplo abaixo:
 
-```javascript
+```jsx
 // Importações padrão do React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -155,7 +155,7 @@ root.render(
 
 Para centralizar a janela, basta utilizar as propriedades innerWidth e innerHeight da variável global "window". Ela é própria da linguagem Javascript e não se refere à janela do fenestra, e sim à do navegador.
 
-```javascript
+```jsx
 // Importações padrão do React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -207,7 +207,7 @@ root.render(
 
 Lembrando que você também pode ajustar a posição e tamanho da janela dinamicamente, mesmo após ela já ter sido aberta, utilizado a prop "fenestra". Por exemplo, colocando o código abaixo em um botão dentro do conteúdo da janela:
 
-```javascript
+```jsx
 // Importações padrão do React
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -249,7 +249,7 @@ root.render(
 
 Para eliminar o botão `Maximizar` veja o exemplo abaixo. Nesse caso, está sendo utilizado a propriedade `resizeable: "false"` dentro de `fenestra.open({})`:
 
-```javascript
+```jsx
 <Icon title="Contato"
   icon={<FontAwesomeIcon icon={faEnvelope} size="3x" />}
   onClick={() => fenestra.open({
@@ -274,25 +274,25 @@ Para eliminar o botão `Maximizar` veja o exemplo abaixo. Nesse caso, está send
 
 Para abrir uma janela a partir de outra, basta você utilizar o comando open da API:
 
-```javascript
+```jsx
 onClick={() => props.fenestra.open({  title: "Nova Janela", content: ({ fenestra }) => <h1>Olá Mundo!</h1>})}
 ```
 
 Se quiser utilizar as propriedades da janela criada, basta aproveitar o callback chamado logo após a abertura:
 
-```javascript
+```jsx
 onClick={() => props.fenestra.open({  title: "Nova Janela", content: ({ fenestra }) => <h1>Olá Mundo!</h1>}, window => this.setState({filho: window)}
 ```
 
 Assim você poderá controlar a janela que acabou de criar podendo, inclusive, fechá-la a qualquer momento, de dentro da janela pai:
 
-```javascript
+```jsx
 onClick={() => props.fenestra.close(this.state.filho)}
 ```
 
 Por exemplo, você pode abrir uma janela filho com o formulário e receber o callback quando o formulário for finalizado:
 
-```javascript
+```jsx
 onClick={() => props.fenestra.open({  title: "Nova Janela Filho", content: ({ fenestra }) => <form onSubmit={() => meuCallback()}><button type="submit">Me envie!</button></form>})}
 ```
 
@@ -300,7 +300,7 @@ Exemplo em um botão `<Button onClick={() => ...>...</Button>`:
 
 > Janela centralizada
 
-```javascript
+```jsx
 <Button variant="primary" onClick={() => props.fenestra.open({title: "Centralizada", left: (window.innerWidth - 500) / 2, top: (window.innerHeight - 300) / 2, width: 500, height: 300, content: ({ fenestra }) => <p>Nova janela</p>})}>
   Demo
 </Button>
@@ -308,7 +308,7 @@ Exemplo em um botão `<Button onClick={() => ...>...</Button>`:
 
 > Janela posicionada
 
-```javascript
+```jsx
 <Button variant="primary" onClick={() => props.fenestra.open({title: "Posicionada", left: 30, top: 30, width: 500, height: 300, content: ({ fenestra }) => <p>Nova janela</p>})}>
   Demo
 </Button>
@@ -316,7 +316,7 @@ Exemplo em um botão `<Button onClick={() => ...>...</Button>`:
 
 > Janela resumida
 
-```javascript
+```jsx
 <Button variant="primary" onClick={() => props.fenestra.open({title: "Resumida", resizeable: false, left: (window.innerWidth - 350) / 2, top: (window.innerHeight - 150) / 2, width: 350, height: 150, content: ({ fenestra }) => <p>Nova janela</p>})}>
   Demo
 </Button>
@@ -324,7 +324,7 @@ Exemplo em um botão `<Button onClick={() => ...>...</Button>`:
 
 Você deve utilizar o parâmetro props na definição da função. Assim, a função reescrita ficaria assim: 
 
-```javascript
+```jsx
 export function YourComponent(props) {
 ...
 
@@ -338,7 +338,7 @@ Aqui segue a alteração e a explicação:
 
 1) Nas expressões do arquivo `./src/App.jsx`, modifique a expressão :
 
-```javascript
+```jsx
 content: ({ fenestra }) =>
 
 <YourComponent />
@@ -346,13 +346,13 @@ content: ({ fenestra }) =>
 
 Por:
 
-```javascript
+```jsx
 content: YourComponent
 ```
 
 Ou por:
 
-```javascript
+```jsx
 content: ({ fenestra }) =>
 
 <YourComponent fenestra={fenestra}/>
@@ -362,7 +362,7 @@ Você deve instanciar o conteúdo da página com as propriedades do fenestra.
 
 O fenestra vai popular o seu conteudo com as propriedades dele. Veja o exemplo do código no arquivo `./src/App.jsx`.
 
-```javascript
+```jsx
 ...
 
 ({ fenestra }) =>
@@ -384,7 +384,7 @@ O fenestra vai popular o seu conteudo com as propriedades dele. Veja o exemplo d
 
 No seu componente, segue a alteração:
 
-```javascript
+```jsx
 import { Container, Button } from "react-bootstrap";
 
 export function GTiSystemHelp(props) {
@@ -404,13 +404,13 @@ export function GTiSystemHelp(props) {
 
 Note que foi adicionado o `props` como parâmetro da função no componente:
 
-```javascript
+```jsx
 ... GTiSystemHelp(props) {...
 ```
 
 E foi adicionado a função no `onClick={}`:
 
-```javascript
+```jsx
 onClick={() => props.fenestra.open({  title: "Nova Janela", content: ({ fenestra }) => <h1>Olá Mundo!</h1>})}
 ```
 
@@ -425,7 +425,7 @@ onClick={() => props.fenestra.open({  title: "Nova Janela", content: ({ fenestra
 
 Executar dentro de uma função: ( ! ) Não esquecer de passar o `props` no componente:
 
-```javascript
+```jsx
 // Suas importações.
 export function YourComponent(props) {
 
@@ -458,13 +458,13 @@ export function YourComponent(props) {
 
 Botão com o evento `onClink`:
 
-```javascript
+```jsx
 return <button onClick={(event) => handleClick(event, "123")}>Nova janela</button>;
 ```
 
 Para executar um componente para a nova janela e passar o `id` para este componente `<GetResource />`, você pode adicionar uma propriedade `id` ao elemento JSX, como no exemplo abaixo:
 
-```javascript
+```jsx
 const handleClick = (event, id) => {
   props.fenestra.open({
     title: "Nova Janela",
@@ -483,7 +483,7 @@ No exemplo acima, a propriedade `id` é passada para o componente `<GetResource 
 
 Para recuperar o ID dentro do componente, é necessário passá-lo como uma propriedade do componente. Por exemplo:
 
-```javascript
+```jsx
 export function GetResource(props) {
     const { id } = props;
     return <p>ID do Post: {id}</p>
@@ -501,7 +501,7 @@ Para filtrar o nível de usuário e exibir ou não os ícones de acordo com esse
 
 Por exemplo, você pode envolver o ícone de "Configurações" em um bloco `if (userLevel === 1)` para exibi-lo apenas para usuários com nível igual a 1. Veja como ficaria o código:
 
-```javascript
+```jsx
 const userLevel = 0;
 return (
   <Desktop

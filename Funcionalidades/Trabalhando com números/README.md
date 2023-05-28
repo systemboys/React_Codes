@@ -11,7 +11,7 @@
 
 Para formatar o valor como moeda brasileira, você pode usar o método `toLocaleString` do JavaScript, passando `'pt-BR'` como parâmetro para definir o idioma e `{ style: 'currency', currency: 'BRL' }` para definir o formato de moeda. Então, o seu código ficaria assim:
 
-```javascript
+```jsx
 <p className={styles.price}>
   {card.value !== "0.00" 
     ? parseFloat(card.value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })

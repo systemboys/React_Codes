@@ -30,7 +30,7 @@ npm i @types/date-fns
 
 Configuração de Data:
 
-```javascript
+```jsx
 import { parseISO } from 'date-fns';
 
 const date = '2018-04-01'; // Data informada
@@ -48,7 +48,7 @@ const parsedDate = parseISO(date).toISOString(); // Data
 
 Configuração da Hora:
 
-```javascript
+```jsx
 const hour = "18:19:49"; // Hora informada
 
 // Hora
@@ -68,13 +68,13 @@ Para formatar a data e a hora, você pode usar as funções `format` e `parseISO
 
 Primeiro, importe as funções necessárias:
 
-```javascript
+```jsx
 import { format, parseISO } from 'date-fns';
 ```
 
 Em seguida, você pode criar uma função auxiliar que formata a data e a hora de acordo com o formato desejado:
 
-```javascript
+```jsx
 // Dia dd/mm/aaaa às 00:00:00
 import { format, parseISO } from 'date-fns';
 function formatDate(dateStr, timeStr) {
@@ -95,7 +95,7 @@ A hora deve ser formatada com o seguinte formato: 'HH:mm:ss', onde HH representa
 
 Para formatar a hora corretamente, você pode usar a função `format` do `date-fns` da seguinte forma:
 
-```javascript
+```jsx
 <Col>{formatDate(listContent[0]?.date, listContent[0]?.time)}</Col>
 ```
 
@@ -120,7 +120,7 @@ Você pode converter uma string com o valor de data no formato "dd/mm/aaaa" para
 
 Aqui está um exemplo de código que faz essa conversão:
 
-```javascript
+```jsx
 // Converter string com data no formato 'dd/mm/aaaa' para 'aaaa-mm-dd'.
 function formatDate(dateString) {
   const [day, month, year] = dateString.split('/');
@@ -145,7 +145,7 @@ Para colocar a data atual em um input HTML no ReactJS, você pode utilizar o obj
 
 Veja um exemplo de como fazer isso:
 
-```javascript
+```jsx
 import React from 'react';
 
 function App() {
@@ -175,7 +175,7 @@ Para exibir a data no formato dd/mm/aaaa em um input HTML no ReactJS, você pode
 
 Veja um exemplo de como fazer isso:
 
-```javascript
+```jsx
 import React from 'react';
 
 function App() {
@@ -205,7 +205,7 @@ Para adicionar a hora atual em um input HTML no ReactJS, você pode usar o objet
 
 Veja um exemplo de como fazer isso:
 
-```javascript
+```jsx
 import React from 'react';
 
 function App() {
@@ -233,13 +233,13 @@ Obs.: Para a hora, o resultado será por exemplo: `9:9:9`, indicando nove horas,
 
 Você pode usar o método padStart() para adicionar um zero à esquerda quando o número de segundos for menor que 10. Aqui está um exemplo:
 
-```javascript
+```jsx
 ${today.getSeconds().toString().padStart(2, '0')}
 ```
 
 Modificação após adicionar `.toString().padStart(2, '0')` na hora, minuto e segundo:
 
-```javascript
+```jsx
 const formattedTime = `${today.getHours().toString().padStart(2, '0')}:${today.getMinutes().toString().padStart(2, '0')}:${today.getSeconds().toString().padStart(2, '0')}`;
 ```
 
@@ -248,7 +248,7 @@ Nesse caso, o método toString() é usado para converter o número de segundos e
 Vale para horas também?
 
 Sim, você pode aplicar a mesma lógica para adicionar um zero à esquerda em horas menores que 10. Por exemplo:
-```javascript
+```jsx
 ${(today.getHours() < 10 ? "0" : "") + today.getHours()}:${(today.getMinutes() < 10 ? "0" : "") + today.getMinutes()}:${(today.getSeconds() < 10 ? "0" : "") + today.getSeconds()}
 ```
 
@@ -263,7 +263,7 @@ Nesse caso, o zero à esquerda é adicionado apenas se o valor for menor que 10,
 
 Para obter a data atual no formato "Segunda, 15 de maio de 2023" em JavaScript, você pode usar as funções de data e manipulação de string. Aqui está um exemplo de código:
 
-```javascript
+```jsx
 // Formatando a data atual no formato "Segunda, 15 de maio de 2023".
 const weekdays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
 const months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
@@ -302,7 +302,7 @@ Para transformar a data no formato "2023-05-23" para "Segunda, 15 de maio de 202
 
 Aqui está um exemplo de código que realiza essa transformação:
 
-```javascript
+```jsx
 // Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000'.
 const formatDate = (dateStr) => {
   const date = new Date(dateStr);
@@ -337,7 +337,7 @@ Se você está obtendo um dia a menos na data formatada, é provável que o prob
 
 Você pode corrigir isso ajustando a data para o fuso horário UTC antes de formatá-la. Você pode usar os métodos `setUTC*` do objeto `Date` para isso. Aqui está uma versão atualizada da função `formatDate` que leva em consideração o fuso horário:
 
-```javascript
+```jsx
 // Formatando uma data no formato '2000-11-31' para o formato 'Doming, 31 de desembro de 2000'.
 const formatDate = (dateStr) => {
     const date = new Date(dateStr);

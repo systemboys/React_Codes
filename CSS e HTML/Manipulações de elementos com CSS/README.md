@@ -35,7 +35,7 @@ Sua class CSS
 
 Este exemplo altera a imagem do plano de fundo de um objeto. A constante `element` recebe o nome de uma classe e, a condição abaixo após verificar a existência de um valor, e faz a lateração:
 
-```javascript
+```jsx
 const element = document.querySelector('.youClassName');
 if (element) {
     element.style.backgroundImage = `url(${url})`;
@@ -48,7 +48,7 @@ Para mudar a cor de fundo de um elemento usando o mesmo script, você pode modif
 
 Aqui está o código atualizado para mudar a cor de fundo de um elemento com a classe `.youClassName`:
 
-```javascript
+```jsx
 const element = document.querySelector('.youClassName');
 if (element) {
     element.style.backgroundColor = 'blue'; // Substitua "blue" pela cor desejada

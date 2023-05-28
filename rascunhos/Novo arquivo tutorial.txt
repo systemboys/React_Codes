@@ -10,7 +10,7 @@
 
 Descrição do conteúdo...
 
-```javascript
+```jsx
 const yourCodeJavaScript = "Seu código JavaScript";
 ```
 

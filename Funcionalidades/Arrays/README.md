@@ -17,7 +17,7 @@
 
 Crie um arquivo como por exemplo `data.js`:
 
-```javascript
+```jsx
 export default [
     { id:1, option: 'Opção 1' },
     { id:2, option: 'Opção 2' },
@@ -34,14 +34,14 @@ export default [
 
 Importe o arquivo no componente:
 
-```javascript
+```jsx
 // Arquivo de dados onde estão os Itens
 import YourItems from './data.js';
 ```
 
 No componente (dentro da função que carrega o conteúdo) coloque a função antes do retorna, o `map()` com os itens do Array:
 
-```javascript
+```jsx
 // Função que faz o laço em busca dos itens do Array
 function List_YourItems() {
     return YourItems.map(YourItems => {
@@ -54,7 +54,7 @@ function List_YourItems() {
 
 No `retorno` de seu componente onde deve ser listados os itens do Array, vamos interpolar a função:
 
-```javascript
+```jsx
 return (
     <>
         <select>
@@ -73,7 +73,7 @@ return (
 
 Para mapear o array dentro do retorno de um componente em um select por exemplo, você pode fazer o seguinte:
 
-```javascript
+```jsx
 function MeuComponente() {
     const opcoes = [
         { valor: 'valor1', label: 'Opção 1' },
@@ -101,7 +101,7 @@ Nesse exemplo, criamos um array `opcoes` com três objetos que representam as op
 
 Colocar o array diretamente no `map()`.
 
-```javascript
+```jsx
 function MeuComponente() {
     return (
         <Container>
@@ -130,7 +130,7 @@ function MeuComponente() {
 
 Imagina que você tem um array e ele contenha informações mistas, números e strings, mas você quer filtrar para obter apenas os números. Veja o código exemplo:
 
-```javascript
+```jsx
 const array = ['1', 2, 'three', 7];
 
 console.log(array.filter(Number.isInteger));
@@ -149,7 +149,7 @@ console.log(array.filter(Number.isInteger));
 
 Você tem um array contendo números e você precisa filtrar apenas os ímpares, veja abaixo:
 
-```javascript
+```jsx
 const array2 = [1, 2, 3, 4, 5, 6, 7]; 
 
 console.log(array2.filter((number) => number % 2 !== 0));
@@ -168,7 +168,7 @@ console.log(array2.filter((number) => number % 2 !== 0));
 
 No exemplo, tratasse de obter apenas o index maior que 30 anos:
 
-```javascript
+```jsx
 const ages = [18, 20, 32, 23, 18, 17, 68];
 
 ages.findIndex((n) => n > 30)
@@ -191,7 +191,7 @@ Quem é que nunca precisou manipular arrays? Extrair somente os IDs de uma lista
 
 O map() permite que você crie um novo array utilizando informações de um array já existente. No nosso caso, o nosso array já existente é o "produtos", e o novo array que será criado será o "ids":
 
-```javascript
+```jsx
 const produtos = [
   { id: 1, name: 'detergente', valor: 2.00, categoria: 'limpeza' },
   { id: 2, name: 'amaciante', valor: 6.50, categoria: 'limpeza' },
@@ -217,7 +217,7 @@ Para o map() funcionar, foi passado para o map() uma função callback, essa fun
 
 Dicamos que você tem um array de números e que você quer duplicá-los criando um novo array com os resultados.
 
-```javascript
+```jsx
 const numeros = [1, 2, 3, 4, 5];
 
 // Duplicar.
@@ -238,7 +238,7 @@ O array filter() é um conceito um pouco mais simples de entender. Você cria um
 
 Dado o array `produtos`, e queremos que vá para o novo array apenas os alimentos. Veja o código abaixo:
 
-```javascript
+```jsx
 const produtos = [
   { id: 1, name: 'detergente', valor: 2.00, categoria: 'limpeza' },
   { id: 2, name: 'amaciante', valor: 6.50, categoria: 'limpeza' },
@@ -281,7 +281,7 @@ No "Teste 2" `console.log(alimentos.map(a => a.nome))` é combinado um array com
 
 No "Teste 3" `` se você quiser combinar o `filter()` com o `map()` é possível, basta colocar o map() na declaração da constante como no exemplo abaixo:
 
-```javascript
+```jsx
 const alimentos = produtos
     .filter(p => p.categoria === 'alimento');
     .map(a => a.nome);
@@ -300,7 +300,7 @@ Digamos que você tenha um array de números, e que você quer somar todos os va
 
 Veja código abaixo, como o Reduce funciona:
 
-```javascript
+```jsx
 // Definida a constante com o seguinte array:
 const numeros = [1, 2, 3, 4];
 
@@ -315,7 +315,7 @@ console.log(total); // Retornando "10".
 
 Agora utilizando o array de "produtos" para somar o valor total deles:
 
-```javascript
+```jsx
 const produtos = [
   { id: 1, name: 'detergente', valor: 2.00, categoria: 'limpeza' },
   { id: 2, name: 'amaciante', valor: 6.50, categoria: 'limpeza' },

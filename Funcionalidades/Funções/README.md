@@ -15,7 +15,7 @@
 
 Quando a função é acionada a partir de um click do usuário, é recomendável colocar o prefix `handle` e em seguida o nome de sua função em `CamelCase`, onde é uma denominação em inglês para a prática de escrever as palavras compostas ou frases, onde cada palavra é iniciada com maiúsculas e unidas sem espaços. Exemplo: `handleYourFunction() {...}`.
 
-```javascript
+```jsx
 function handleYourFunction() {
     alert('Helo World!');
 };
@@ -23,7 +23,7 @@ function handleYourFunction() {
 
 Outra forma em uma constante:
 
-```javascript
+```jsx
 const handleYourFunction = () => {
     alert('Helo World!');
 };
@@ -31,7 +31,7 @@ const handleYourFunction = () => {
 
 Sua função pode ser executada por exemplo, em um elemento HTML escrita da seguinte forma na propriedade `onClick={}`:
 
-```javascript
+```jsx
  onClick={handleYourFunction}
 ```
 
@@ -46,7 +46,7 @@ Para executar uma arrow function que recebe a propriedade de um elemento quando 
 
 Por exemplo, suponha que você tenha um botão com um id definido e deseja executar uma arrow function que recebe o id do botão quando ele é clicado. Você pode fazer o seguinte:
 
-```javascript
+```jsx
 // Evento do onClick={}
 const handleClick = (event, id) => {
     console.log(`O evento do onClick no botão com o valor ${id} definido no segundo parâmentro arrow function handleClick() foi clicado.`);
@@ -57,7 +57,7 @@ Neste exemplo, a arrow function handleClick é definida para receber o evento e 
 
 Quando o botão é clicado, a arrow function é executada com o evento e o id do botão como seus parâmetros, permitindo que você acesse a propriedade do elemento dentro da função.
 
-```javascript
+```jsx
 return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</button>;
 ```
 
@@ -72,7 +72,7 @@ return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</butto
 
 Para abrir uma popup com uma determinada URL em um projeto em ReactJS, você pode usar o seguinte código:
 
-```javascript
+```jsx
 // PopUp simples.
 function openPopup(url) {
   window.open(url, 'popup', 'width=600,height=600');
@@ -93,7 +93,7 @@ Neste exemplo, a função `openPopup` recebe uma URL como parâmetro e utiliza o
 
 Você pode usar o método `window.open()` do JavaScript para abrir uma nova janela popup com uma determinada URL e dimensões. Para centralizar a janela na tela, você pode usar as dimensões da tela e as dimensões da janela para calcular a posição do canto superior esquerdo da janela. Aqui está um exemplo de código que faz isso:
 
-```javascript
+```jsx
 // PopUp simples centralizada.
 function openPopup(url, width, height) {
   // Calcular a posição do canto superior esquerdo da janela para centralizá-la.
@@ -107,7 +107,7 @@ function openPopup(url, width, height) {
 
 Para usar essa função em seu projeto React, basta chamá-la em algum evento de um elemento da interface do usuário, por exemplo:
 
-```javascript
+```jsx
 <button onClick={() => openPopup("https://www.google.com", 800, 600)}>Abrir popup</button>
 ```
 
@@ -122,7 +122,7 @@ Este exemplo criará um botão que, quando clicado, abrirá uma janela popup com
 
 Esta função recebe a o valor da string, conta os caracteres e retorna o valor referente à quantidade de caracteres.
 
-```javascript
+```jsx
 // Contar caracteres
 function countCharacters(string) {
     const numberOfCharacters = string.length;
@@ -133,7 +133,7 @@ function countCharacters(string) {
 
 Para contar o número de caracteres de uma string em ReactJS, você pode simplesmente usar a propriedade `length` da string. Por exemplo, suponha que você tenha uma variável chamada "texto" que contém o texto que você deseja contar os caracteres, você pode obter o número de caracteres usando o seguinte código:
 
-```javascript
+```jsx
 const texto = "Exemplo de texto";
 const numeroCaracteres = texto.length;
 console.log(numeroCaracteres); // 16
@@ -150,7 +150,7 @@ Neste exemplo, a constante `numeroCaracteres` vai conter o número de caracteres
 
 Você pode criar uma nova função em seu componente React que capitalize as letras da string. Segue um exemplo:
 
-```javascript
+```jsx
 // Capitalizando as palavras.
 function capitalize(str) {
   return str.replace(/\b\w/g, function (match) {
@@ -161,7 +161,7 @@ function capitalize(str) {
 
 Em seguida, você pode utilizá-la no seu campo de formulário da seguinte forma:
 
-```javascript
+```jsx
 <Form.Control
   type="text"
   size="sm"
@@ -178,7 +178,7 @@ Dessa forma, a função `capitalize()` será chamada sempre que houver uma mudan
 
 Para ignorar as palavras especificadas, você pode verificar se cada palavra está na lista de palavras ignoradas antes de capitalizá-la. Aqui está uma possível implementação da função:
 
-```javascript
+```jsx
 // Capitalizando as palavras.
 function capitalizeWords(value) {
   const ignoredWords = ['de', 'do', 'da', 'dos', 'uma', 'umas', 'um', 'uns'];
@@ -196,7 +196,7 @@ function capitalizeWords(value) {
 
 Você pode usar essa função `capitalizeWords()` no seu componente React assim:
 
-```javascript
+```jsx
 <Form.Control
   type="text"
   size="sm"
@@ -209,7 +209,7 @@ Você pode usar essa função `capitalizeWords()` no seu componente React assim:
 
 Para utilizar a função `capitalizeWords` em um elemento HTML, basta chamá-la passando a string desejada como parâmetro e envolver o resultado em um elemento que deseja aplicá-lo, como um `<h1>` por exemplo. Veja um exemplo:
 
-```javascript
+```jsx
 <h1>{capitalizeWords('este é um exemplo de título capitalizado')}</h1>
 ```
 
@@ -224,7 +224,7 @@ Isso irá renderizar o texto "Este é um Exemplo de Título Capitalizado" dentro
 
 É possível usar um array para facilitar a inclusão de palavras em exceções no texto capitalizado. Aqui está o código que utiliza um array de palavras excepcionais:
 
-```javascript
+```jsx
 // Capitalizar a primeira palavra de um parágrafo com exceções.
 function capitalizeFirstWord(text) {
   const lowercaseText = text.toLowerCase();
@@ -279,7 +279,7 @@ Esse código pode ser usado como referência para capitalizar a primeira palavra
 
 Você pode criar uma função que receba o número do mês como argumento e retorne o nome do mês correspondente. Veja um exemplo:
 
-```javascript
+```jsx
 // Transformando meses de 01 a 12 em Janeiro a Dezembro
 function getMonthName(month) {
   const monthNames = [

@@ -59,7 +59,7 @@ npm run dev
 
 Adicione a linha `server: {port: 3001}` no export do `vite.config.js` com sua porta definida:
 
-```javascript
+```jsx
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -92,7 +92,7 @@ Atalhos:
 
 Modificar o código do seu arquivo `package.json`, na configuração do script "dev", dentro do `"scripts": {...}`, adicionando a flag `--host 0.0.0.0` ficando da seguinte forma:
 
-```javascript
+```jsx
 ...
 "scripts": {
   "dev": "vite --host 0.0.0.0",
@@ -105,7 +105,7 @@ Modificar o código do seu arquivo `package.json`, na configuração do script "
 
 No arquivo `api.js` da sua API, modifique a sua URL trocando `localhost` para o IP da máquina que está rodando o servidor:
 
-```javascript
+```jsx
 ...
 export const Api = axios.create({
     baseURL: 'http://10.0.0.102:3333',

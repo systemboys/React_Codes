@@ -8,7 +8,7 @@
 
 Para usar mais de uma classe em um component, utilizamos o `TemplateString` para utilizar o JavaScript dentro de uma classe:
 
-```javascript
+```jsx
 <button className={`${styles.button} ${styles.primary}`}>Enviar</button>
 ```
 
@@ -40,7 +40,7 @@ Arquivo `App.tsx`:
 
 > Vamos colocar um fragmento `<></>` no return, aquela div que renderiza, não aparece no HTML, algo apenas para colocar por volta dos componentes!
 
-```javascript
+```jsx
 export function App() {
     return (
         <>
@@ -58,7 +58,7 @@ Aplicando estilizações condicionais às propriedades que os botões recebem.
 
 No arquivo `Button.tsx` está a estilização dos nossos botões:
 
-```javascript
+```jsx
 import styles from './Button.module.css';
 
 interface ButtonProps {
@@ -100,7 +100,7 @@ Vamos fazer o uso do CSS Modules, criando um arquivo `Button.module.css`.
 
 Vamos começar com um arquivo `Button.styles.js` ou `*.ts`, dependendo do seu projeto:
 
-```javascript
+```jsx
 import styled, { css } from 'styled-components';
 
 export type ButtonVariant = 'primary' | 'secondary' | 'danger' | 'success';
@@ -130,7 +130,7 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
 
 No arquivo `Button.tsx`, na className:
 
-```javascript
+```jsx
 import { ButtonContainer, ButtonVariant } from './Button.module.css';
 
 interface ButtonProps {

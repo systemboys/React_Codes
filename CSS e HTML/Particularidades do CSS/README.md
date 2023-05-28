@@ -44,7 +44,7 @@ Dessa forma, a seleção de texto será impedida dentro do componente.
 
 Sim, há outra forma de impedir a seleção de texto dentro de um componente React. Você pode utilizar a propriedade CSS `user-select` para controlar a seleção de texto dentro do elemento. Para impedir completamente a seleção de texto, você pode definir o valor de `user-select` como `none` no estilo do elemento:
 
-```javascript
+```jsx
 function App() {
   return (
     <div style={{ userSelect: 'none' }}>
@@ -56,7 +56,7 @@ function App() {
 
 Isso impedirá que o usuário selecione qualquer texto dentro do elemento, incluindo em sub-elementos. Se quiser permitir a seleção de texto em sub-elementos, você pode definir o valor de `user-select` como `none` no estilo do elemento principal e como `text` nos sub-elementos que deseja permitir a seleção de texto:
 
-```javascript
+```jsx
 function App() {
   return (
     <div style={{ userSelect: 'none' }}>

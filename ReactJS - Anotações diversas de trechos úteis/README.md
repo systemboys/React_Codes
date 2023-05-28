@@ -10,19 +10,19 @@
 
 Para exportar constantes de outros arquivos para seu componente, você precisa exportar a constante dentro do arquivo. Exemplo: Temos uma constante com o nome `baseUrl` no arquivo `primarySettings.js`, dessa forma:
 
-```javascript
+```jsx
 export const baseUrl = "https://www.meusite.com.br";
 ```
 
 E então, no seu componente, você deve importar a constante `baseUrl` da seguinte forma:
 
-```javascript
+```jsx
 import { baseUrl } from '../../primarySettings.js';
 ```
 
 E, finalmente, você pode utilizar a constante `baseUrl` em seu componente como no exemplo abaixo:
 
-```javascript
+```jsx
 <img src={`${baseUrl}/img/posts/${item.thumb}`} />
 ```
 
