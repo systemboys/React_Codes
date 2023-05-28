@@ -95,7 +95,7 @@ npx tsc --init
 
 Mudar o valor do "target": "es2016" para "es2020" no arquivo `./tsconfig.json`:
 
-```javascript
+```jsx
 /* Language and Environment */
 "target": "es2020", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
 ```
@@ -120,7 +120,7 @@ npx prisma init
 
 ### Configurar o arquivo `./.env`:
 
-```javascript
+```jsx
 DATABASE_URL="postgresql://yourUser:yourPassword@yourHost:5432/yourDataBase"
 ```
 
@@ -137,7 +137,7 @@ DATABASE_URL="postgresql://yourUser:yourPassword@yourHost:5432/yourDataBase"
 
 > O valor de `provider` deve ser `mysql`, que é o tipo de banco de dados!
 
-```javascript
+```jsx
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
@@ -154,7 +154,7 @@ npx prisma db pull
 
 ### Escrevendo o model no arquivo `./prisma/schema.prisma`:
 
-```javascript
+```jsx
 model admins {
   id           Int    @id @default(autoincrement())
   simple_field String @db.VarChar(255)
@@ -173,7 +173,7 @@ Exemplo abaixo:
 
 ### Criar o arquivo `./src/prisma.ts` e configure o seguinte código:
 
-```javascript
+```jsx
 import { PrismaClient } from "@prisma/client";
 
 export const prisma = new PrismaClient ({
@@ -183,7 +183,7 @@ export const prisma = new PrismaClient ({
 
 ### Criar o arquivo `./src/server.ts` e configure o seguinte código:
 
-```javascript
+```jsx
 import express from 'express';
 import { routes } from './routes';
 
@@ -213,7 +213,7 @@ npm install @types/cors
 
 Modificar o seu arquivo `./src/server.ts` da seguinte forma:
 
-```javascript
+```jsx
 import express from 'express';
 import cors from 'cors';
 import { routes } from './routes';
@@ -237,7 +237,7 @@ A configuração acima permite que todas as solicitações de origens diferentes
 
 ### Criar e configurar o arquivo `./src/routes.ts`:
 
-```javascript
+```jsx
 import express from "express";
 import { prisma } from './prisma';
 
@@ -304,7 +304,7 @@ npm install tsx
 
 No arquivo `./package.json` editar o script deixando como no exemplo abaixo:
 
-```javascript
+```jsx
 "script": {
     "dev": "tsx watch src/server.ts"
 }
@@ -338,7 +338,7 @@ Executar o POST para inserir um registro na tabela `admins` e gerar um `JSON`:
 
 ### Recriar instâncias nos módulos:
 
-```javascript
+```jsx
 npx prisma generate
 ```
 
@@ -375,7 +375,7 @@ npm i @types/cors
 
 Criar no seu projeto o qual deseja listar os registros da tabela, o arquivo `./src/server/api.js`:
 
-```javascript
+```jsx
 import axios from "axios";
 
 export const Api = axios.create({
@@ -391,7 +391,7 @@ export const Api = axios.create({
 
 Na lista a qual deve obter os registros, importar os `Hooks` e a `Api`:
 
-```javascript
+```jsx
 import { useState, useEffect } from 'react';
 import { Api } from '../../server/api';
 ```
@@ -412,7 +412,7 @@ import { Api } from '../../server/api';
 
 Criar um `useState` e `setListUpdates` dentro do export do seu componente e configurar a rota no `Api.get()`:
 
-```javascript
+```jsx
 // Executar a requisição GET para a rota '/latest_updates' da API.
 const [listUpdates, setListUpdates] = useState([]);
 useEffect(() => {
@@ -434,7 +434,7 @@ useEffect(() => {
 
 E por último, o `map()` para obter sua lista:
 
-```javascript
+```jsx
 <ul>
     {listUpdates.map(Updates => (
         <li>Atualização: {Updates.commit} | Data: {Updates.date} às {Updates.hour} | Autor: {Updates.author} | Descrição: {Updates.description}</li>
@@ -454,7 +454,7 @@ Para renderizar elementos HTML dentro do JSX, você pode usar a função `danger
 
 No seu código, você pode usar a função `dangerouslySetInnerHTML` da seguinte maneira:
 
-```javascript
+```jsx
 <Col sm={8} dangerouslySetInnerHTML={{ __html: listInQuestion[0]?.column }}></Col>
 ```
 
@@ -473,7 +473,7 @@ Se você deseja trazer os resultados aleatoriamente, uma opção é realizar a o
 
 > ( ! ) Essa modificação deve ser feita na sua rota!
 
-```javascript
+```jsx
 routes.get('/jm_posts_PostCarousel', async (req, res) => {
   const jm_posts = await prisma.jm_posts.findMany();
   const randomizedPosts = jm_posts.sort(() => Math.random() - 0.5).slice(0, 6);
@@ -500,7 +500,7 @@ No exemplo, iremos mudar o plano de fundo de um objeto onde é identificado pela
 
 No arquivo `./src/routes.ts` da sua Api, crie sua rota:
 
-```javascript
+```jsx
 // Selecionar dados na tabela "backgrounds", a partir do ID do registro.
 // Rota: 'backgroundsId/1'.
 routes.get('/backgroundsId/:id', async (req, res) => {
@@ -516,22 +516,35 @@ routes.get('/backgroundsId/:id', async (req, res) => {
 
 Caso tenha mais requisitos, basta incrementá-los na constante e na condição `where`:
 
-```javascript
-// Selecionar dados na tabela "backgrounds", a partir do "primary_email" e a "category".
-// Rota: 'userBackgrounds/primary_email/123'.
-routes.get('/userBackgrounds/:primary_email/:user_id', async (req, res) => {
-    const { primary_email, user_id } = req.params;
-    const userBackgrounds = await prisma.backgrounds.findFirst({
+```jsx
+// Selecionar dados na tabela "customers_address", a partir da coluna "company" e "customer".
+// Rota: 'customers/:company/:customer'.
+routes.get('/customers/:company/:customer', async (req, res) => {
+    const { company, customer } = req.params;
+  
+    const customersAddress = await prisma.customers_address.findMany({
         where: {
-            primary_email: email,
-            user_id: Number(user_id)
+            company: Number(company),
+            customer: Number(customer)
         },
     });
-    res.status(200).json(userBackgrounds);
-});
+  
+    res.status(200).json(customersAddress);
+  });
 ```
 
-> ( ! ) Essa rota tem como objetivo selecionar dados da tabela "customers_address" com base nos valores das colunas "company" e "customer". A rota está definida como `'customers/:company/:customer'`, o que significa que ela espera receber os parâmetros "company" e "customer" na URL.
+> ( ! ) Lembrando que `Number()` se utilizando quando é número inteiro. O usuo de strings não é necessário!
+
+```jsx
+// ...
+where: {
+    company: company,
+    customer: Number(customer)
+},
+// ...
+```
+
+> Essa rota tem como objetivo selecionar dados da tabela "customers_address" com base nos valores das colunas "company" e "customer". A rota está definida como `'customers/:company/:customer'`, o que significa que ela espera receber os parâmetros "company" e "customer" na URL.
 >
 > Através do Prisma, é feita uma consulta à tabela "customers_address" utilizando o método `findMany`. A cláusula `where` é utilizada para filtrar os resultados com base nos valores das colunas "company" e "customer". É verificado se o valor da coluna "company" é igual ao parâmetro "company" fornecido na URL e se o valor da coluna "customer" é igual ao parâmetro "customer" fornecido na URL.
 >
@@ -545,14 +558,14 @@ routes.get('/userBackgrounds/:primary_email/:user_id', async (req, res) => {
 
 Importe os `hooks` necessários e sua `Api` no arquivo de seu componente:
 
-```javascript
+```jsx
 import { useState, useEffect } from 'react';
 import { Api } from './server/api';
 ```
 
 Dentro do seu componente, antes do retorno `return()`, execute a sua rota:
 
-```javascript
+```jsx
 // Selecionar dados na tabela "table", a partir do ID.
 const [listBackground, setListBackground] = useState([]);
 useEffect(() => {
@@ -577,7 +590,7 @@ useEffect(() => {
 
 Exemplo de uma consulta em uma tabela, onde seu resultado é colocado em outra rota para obter outra informação:
 
-```javascript
+```jsx
 const [listCompanySystem, setListCompanySystem] = useState([]);
 const [listBackground, setListBackground] = useState([]);
 
@@ -615,7 +628,7 @@ useEffect(() => {
 
 Exemplo de mudança de plano de fundo, onde uma função obtem o registro a partir do ID na rota sendo passado como parâmetro.
 
-```javascript
+```jsx
 const [listGradientBackgrounds, setListGradientBackgrounds] = useState([]);
 const [listBackground, setListBackground] = useState([]);
 
@@ -648,7 +661,7 @@ useEffect(() => {
 
 Aqui está o `onClick={}` como deve executar a função no elemento que executa a função:
 
-```javascript
+```jsx
 onClick={(event) => handleClick(event, GradientBackgrounds.id)}
 ```
 
@@ -661,7 +674,7 @@ onClick={(event) => handleClick(event, GradientBackgrounds.id)}
 
 Para atualizar um registro a partir de um ID específico, segue a seguite rota para seu arquivo `./src/routes.ts`:
 
-```javascript
+```jsx
 // Atualizar dado na tabela "company_system", coluna "background" a partir do ID do registro.
 // Rota: '/companySystemUpdateBackgroundId/1/2'.
 routes.put('/companySystemUpdateBackgroundId/:companyId/:companyIdBackgroundId', async (req, res) => {
@@ -676,7 +689,7 @@ routes.put('/companySystemUpdateBackgroundId/:companyId/:companyIdBackgroundId',
 
 No seu componente antes do retorno, declare o estado da constante:
 
-```javascript
+```jsx
 const [setCompanySystemBackground] = useState([]);
 
 // Atualizar dado na tabela "company_system", coluna "background" a partir do ID do registro.
@@ -700,7 +713,7 @@ Neste exemplo, estamos adicionando um registro na tabela "admins":
 
 > Configurações feitas no arquivo `./src/routes.ts` de sua API.
 
-```javascript
+```jsx
 // Inserir dados na tabela "admins".
 // Rota: '/admins'.
 routes.post('/admins', async (req, res) => {
@@ -729,7 +742,7 @@ routes.post('/admins', async (req, res) => {
 
 Na função que intercepta a submissão do formulário em seu componente, você deve colocar o código da seguinte forma:
 
-```javascript
+```jsx
 // Interceptar o evento de submit.
 async function handleSubmitAdmins(e) {
   e.preventDefault();
@@ -768,7 +781,7 @@ O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScr
 
 Se o componente for uma classe em vez de uma função, você pode utilizar o método `componentDidMount` para fazer a chamada à API e definir o estado inicial com a lista de atualizações vazia:
 
-```javascript
+```jsx
 import React, { Component } from 'react';
 import { Api } from '../../server/api';
 
@@ -813,19 +826,19 @@ Em componentes classe, você pode seguir os seguintes passos:
 
 1. Importe o `useEffect` e o `useState` do React.
 
-```javascript
+```jsx
 import React, { Component, useEffect, useState } from 'react';
 ```
 
 2. Importe sua API:
 
-```javascript
+```jsx
 import { Api } from '../../server/api';
 ```
 
 3. Atualize o estado inicial no construtor `constructor()` da classe e adicione uma função de `componentDidMount` para fazer a chamada à API e atualizar o estado do componente.
 
-```javascript
+```jsx
 class YourComponent extends Component {
     constructor() {
       // Atualizar o estado inicial no construtor.
@@ -879,7 +892,7 @@ Com essas alterações, seu componente deve ser capaz de fazer a chamada à API 
 
 Aqui está a rota dentro de um componente de classe:
 
-```javascript
+```jsx
 import React, { Component } from 'react';
 import Api from 'path/to/Api'; // Importe o módulo de API conforme necessário
 
@@ -974,7 +987,7 @@ Para obter registros de 6 a 10 na rota '/jm_posts', você pode usar o método `s
 
 > ( ! ) Essa configuração deve ser feita na sua rota!
 
-```javascript
+```jsx
 routes.get('/jm_posts', async (req, res) => {
   const jm_posts = await prisma.jm_posts.findMany({
     orderBy: {
@@ -1000,7 +1013,7 @@ Parece que o problema está relacionado ao momento em que o componente está sen
 
 Uma solução para garantir que o carrossel seja renderizado corretamente após os dados serem carregados é adicionar uma verificação antes de renderizar o carrossel. Você pode verificar se o estado `listPosts` tem dados antes de renderizar o carrossel. Algo assim:
 
-```javascript
+```jsx
 {listPosts.length > 0 && (
   <Swiper getSwiper={setSwiper} className="trancarousel" {...params}>
     {listPosts.map((item, i) => (
