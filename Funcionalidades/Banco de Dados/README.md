@@ -521,16 +521,14 @@ Caso tenha mais requisitos, basta incrementá-los na constante e na condição `
 // Rota: 'userBackgrounds/primary_email/123'.
 routes.get('/userBackgrounds/:primary_email/:user_id', async (req, res) => {
     const { primary_email, user_id } = req.params;
-  
     const userBackgrounds = await prisma.backgrounds.findFirst({
         where: {
             primary_email: email,
             user_id: Number(user_id)
         },
     });
-  
     res.status(200).json(userBackgrounds);
-  });
+});
 ```
 
 Importe os `hooks` necessários e sua `Api` no arquivo de seu componente:
