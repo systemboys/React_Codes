@@ -531,6 +531,18 @@ routes.get('/userBackgrounds/:primary_email/:user_id', async (req, res) => {
 });
 ```
 
+> ( ! ) Essa rota tem como objetivo selecionar dados da tabela "customers_address" com base nos valores das colunas "company" e "customer". A rota está definida como `'customers/:company/:customer'`, o que significa que ela espera receber os parâmetros "company" e "customer" na URL.
+>
+> Através do Prisma, é feita uma consulta à tabela "customers_address" utilizando o método `findMany`. A cláusula `where` é utilizada para filtrar os resultados com base nos valores das colunas "company" e "customer". É verificado se o valor da coluna "company" é igual ao parâmetro "company" fornecido na URL e se o valor da coluna "customer" é igual ao parâmetro "customer" fornecido na URL.
+>
+> Os dados encontrados são retornados como resposta da API com o status 200 (OK) utilizando o método `json`.
+>
+> No contexto da sua tabela "backgrounds_address", essa rota retornará os endereços de clientes que correspondem aos valores de "company" e "customer" fornecidos.
+>
+> Certifique-se de ter o Prisma corretamente configurado e adaptar o código conforme a estrutura do seu projeto.
+>
+> Se tiver mais dúvidas, fique à vontade para perguntar.
+
 Importe os `hooks` necessários e sua `Api` no arquivo de seu componente:
 
 ```javascript
