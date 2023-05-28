@@ -47,7 +47,7 @@ const parsedDate = parseISO(date).toISOString(); // Data
 
 ## Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'
 
-Para formatar a data "1992-12-08T00:00:00.000Z" no formato "08-12-1992", você pode usar o objeto `Date` do JavaScript juntamente com os métodos disponíveis para manipulação de datas.
+Para formatar a data "1992-12-08T00:00:00.000Z" no formato "08/12/1992", você pode usar o objeto `Date` do JavaScript juntamente com os métodos disponíveis para manipulação de datas.
 
 Aqui está um exemplo de como você pode fazer isso:
 
@@ -59,14 +59,14 @@ function formatDate(dateString) {
   const month = (date.getMonth() + 1).toString().padStart(2, "0");
   const year = date.getFullYear().toString();
 
-  return `${day}-${month}-${year}`;
+  return `${day}/${month}/${year}`;
 }
 
 // Exemplo de uso
 const dateString = "1992-12-08T00:00:00.000Z";
 const formattedDate = formatDate(dateString);
 
-console.log(formattedDate); // Saída: 08-12-1992
+console.log(formattedDate); // Saída: 08/12/1992
 ```
 
 > ( ! ) Você pode chamar a função formatDate() com qualquer string de data e obterá a data formatada no formato "08-12-1992".
