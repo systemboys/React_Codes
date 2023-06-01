@@ -2,7 +2,51 @@
 
 [![Versionamento](https://github.com/systemboys/React_Codes/blob/main/Projetos/Versionamento/GitHub/images/git_control.jpg?raw=true "Versionamento")](https://github.com/systemboys/React_Codes/blob/main/Projetos/Versionamento/GitHub/images/git_control.jpg?raw=true "Versionamento")
 
+- [Instalar o Git](#instalar-o-git "Instalar o Git")
 - [Clonar projeto](#clonagem-dos-projetos-do-github "Clonar projeto")
+
+---
+
+## Instalar o Git
+
+Para instalar o Git via terminal no Linux, você pode seguir as instruções específicas para a sua distribuição.
+
+- No Ubuntu ou Debian, você pode executar o seguinte comando no terminal:
+
+```bash
+sudo apt-get install git
+```
+
+- No Fedora, você pode executar o seguinte comando no terminal:
+
+```bash
+sudo dnf install git
+```
+
+- No CentOS, você pode executar o seguinte comando no terminal:
+
+```bash
+sudo yum install git
+```
+
+- No Arch Linux, você pode executar o seguinte comando no terminal:
+
+```bash
+sudo pacman -Sy git
+```
+
+Após a execução desses comandos, o Git será baixado e instalado no seu sistema. Você pode verificar se a instalação foi concluída corretamente digitando o seguinte comando no terminal:
+
+```bash
+git --version
+```
+
+Isso exibirá a versão do Git instalada no seu sistema.
+
+Se a instalação for bem-sucedida, você poderá começar a usar o Git no seu terminal.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--projetos-no-github "Subir para o topo")
 
 ---
 
