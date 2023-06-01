@@ -6,6 +6,6 @@
 
 ---
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--versionamento "Subir para o topo")
+[(&uarr;) Subir]( "Subir para o topo")
 
 ---

@@ -64,6 +64,6 @@ Abra o terminal Linux e acesse seu diretório de projetos e sega os passos segui
 Feito esse procedimento, você terá seu projeto clonado e sincronizado com o GitHub.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--versionamento "Subir para o topo")
+[(&uarr;) Subir](#react-codes--projetos-no-github "Subir para o topo")
 
 ---
