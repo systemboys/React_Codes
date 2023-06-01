@@ -2,7 +2,7 @@
 
 [![Versionamento](https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2019/05/Como-utilizar-Git-Hooks-.png "Versionamento")](https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2019/05/Como-utilizar-Git-Hooks-.png "Versionamento")
 
-- [Clonar projeto](#clonar-projeto "Clonar projeto")
+- [Clonar projeto](#clonagem-dos-projetos-do-github "Clonar projeto")
 
 ---
 
@@ -64,6 +64,6 @@ Abra o terminal Linux e acesse seu diretório de projetos e sega os passos segui
 Feito esse procedimento, você terá seu projeto clonado e sincronizado com o GitHub.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#versionamento "Subir para o topo")
+[(&uarr;) Subir](#react-codes--versionamento "Subir para o topo")
 
 ---
