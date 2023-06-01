@@ -1,6 +1,6 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Projetos no GitHub
 
-[![Versionamento](https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2019/05/Como-utilizar-Git-Hooks-.png "Versionamento")](https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2019/05/Como-utilizar-Git-Hooks-.png "Versionamento")
+[![Versionamento](https://github.com/systemboys/React_Codes/blob/main/Projetos/Versionamento/GitHub/images/git_control.jpg?raw=true "Versionamento")](https://github.com/systemboys/React_Codes/blob/main/Projetos/Versionamento/GitHub/images/git_control.jpg?raw=true "Versionamento")
 
 - [Clonar projeto](#clonagem-dos-projetos-do-github "Clonar projeto")
 
