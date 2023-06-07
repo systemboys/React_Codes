@@ -15,6 +15,7 @@
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
 - [Implantação do `DataTables`](#implanta%C3%A7%C3%A3o-do-datatables "Implantação do DataTables")
   - [Garantir que script `DataTables` seja executado corretamente no componente](#garantir-que-script-datatables-seja-executado-corretamente-no-componente "Garantir que script DataTables seja executado corretamente no componente")
+  - [DataTables com o `ORM Prisma` (resolvendo renderização)](# "DataTables com o ORM Prisma (resolvendo renderização)")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
 - [`Buttons` com React-Bootstrap](#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
 - [Utilizando o `CSS Modules` do React](#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
@@ -1086,6 +1087,61 @@ export function DemoListings1() {
 Ao utilizar o `useEffect` com um array de dependências vazio (`[]`), você garante que o código dentro dele será executado apenas uma vez, após a montagem inicial do componente. Isso garantirá que o DataTables seja inicializado corretamente.
 
 Além disso, observe que no exemplo acima, também é fornecida uma função de retorno dentro do `useEffect` para destruir o DataTables quando o componente for desmontado. Isso pode ser útil se você quiser liberar recursos ou evitar vazamentos de memória.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## DataTables com o ORM Prisma (resolvendo renderização)
+
+Uma possível causa para a falta de funcionalidade do DataTables ao usar dados provenientes de uma chamada assíncrona é que o DataTables pode estar sendo inicializado antes dos dados estarem disponíveis. Isso pode resultar em problemas de renderização e funcionalidade.
+
+Para resolver esse problema, você pode adiar a inicialização do DataTables até que os dados estejam prontos. Você pode fazer isso movendo a inicialização do DataTables para um ponto em que você tem certeza de que os dados estão presentes e prontos para uso.
+
+Aqui está uma sugestão de como você pode tentar abordar essa questão:
+
+1. Remova qualquer inicialização do DataTables existente no seu código.
+
+2. No seu componente, adicione um estado adicional para controlar se os dados da API já foram carregados. Por exemplo:
+
+```jsx
+const [listCustomersData, setListCustomersData] = useState([]);
+const [dataLoaded, setDataLoaded] = useState(false);
+```
+
+3. Na sua chamada da API do Prisma, após definir os dados formatados, chame `setDataLoaded(true)` para indicar que os dados foram carregados com sucesso.
+
+```jsx
+Api.get(`/customers/1`).then((res) => {
+  const formattedData = res.data.map((item) => {
+    // Mapeamento dos dados
+  });
+  setListCustomersData(formattedData);
+  setDataLoaded(true); // Indicar que os dados foram carregados
+});
+```
+
+4. Adicione um useEffect que monitora as alterações no estado `dataLoaded`. Quando `dataLoaded` for definido como `true`, isso indicará que os dados da API foram carregados com sucesso. Nesse momento, você pode inicializar o DataTables. Certifique-se de fazer isso apenas uma vez, portanto, adicione `[listCustomersData]` como dependência do useEffect para garantir que ele só seja executado quando os dados da API forem atualizados.
+
+```jsx
+useEffect(() => {
+  if (dataLoaded) {
+    const table = new DataTable('#myTable', {
+      responsive: true
+    });
+    return () => {
+      table.destroy(); // Destruir a tabela quando o componente for desmontado.
+    };
+  }
+}, [dataLoaded, listCustomersData]);
+```
+
+Certifique-se de substituir `#myTable` pelo seletor correto do seu elemento da tabela no DOM.
+
+Com essa abordagem, o DataTables só será inicializado após os dados terem sido carregados e o estado `dataLoaded` for definido como `true`. Isso garante que o DataTables tenha acesso aos dados corretos e possa funcionar adequadamente.
+
+Espero que isso resolva o problema. Se você ainda tiver dificuldades, por favor, forneça mais detalhes ou mostre o código atualizado para que eu possa ajudá-lo melhor.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
