@@ -13,6 +13,7 @@
   - [`Envio` dos `dados` para a `API` do PRISMA](#envio-dos-dados-para-a-api-do-prisma "Envio dos dados para a API do PRISMA")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
+- [Implantação do DataTables](# "Implantação do DataTables")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
 - [`Buttons` com React-Bootstrap](#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
 - [Utilizando o `CSS Modules` do React](#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
@@ -995,6 +996,92 @@ Os elementos HTML no retorno:
     </Table>
 </Container>
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
+---
+
+## Implantação do DataTables
+
+Para hospedá-lo em seu projeto, baixe neste [link](https://datatables.net/download "Download") e colocar dentro do diretório `./src/` o DataTables `./src/DataTables/`, importar no seu arquivo do componente e selecionar a sua tabela:
+
+Caso preferir utilizar o CDN chamando diretamente no repositório do `DataTables`, coloque no seu arquivo `index.html` dentro do `<head></head>`:
+
+```html
+<!-- Start DataTable -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+<!-- End DataTable -->
+```
+
+> ( ! ) O CDN chamado direto do repositório do DataTables, é no caso de não querer hospedá-lo no seu projeto!
+
+Caso contrário, no caso de hospedá-lo no seu projeto, importe o mesmo no seu 
+
+```jsx
+// Start DataTable
+import DataTable from 'datatables.net-dt';
+import '../../DataTables/jquery-3.6.0.min.js';
+import '../../DataTables/datatables.min.js';
+import '../../DataTables/datatables.min.css';
+const table = new DataTable('#myTable', {
+    responsive: true
+});
+// End DataTable
+
+export function YourComponent(props) {
+    // Resto do seu código do componente...
+    return (
+        {/* Start of list */}
+        <table id="myTable" className="display">
+            {/* O resto do código */}
+        </table>
+        {/* End of list */}
+    );
+}
+```
+
+---
+
+## Garantir que script DataTables seja executado corretamente no componente
+
+Para garantir que o script do DataTables seja executado corretamente no seu componente, você pode utilizar o ciclo de vida `useEffect` para inicializar o DataTables assim que o componente for renderizado. Dessa forma, o DataTables será inicializado toda vez que o componente for montado ou atualizado.
+
+Aqui está um exemplo de como você pode fazer isso:
+
+```jsx
+import { useEffect } from 'react';
+
+// Start DataTable.
+import DataTable from 'datatables.net-dt';
+import '../../../../DataTables/datatables_theme_2.css'; // Sua folha de estilo
+// End DataTable.
+
+export function DemoListings1() {
+
+  // Start DataTable.
+  useEffect(() => {
+    const table = new DataTable('#myTable', {
+      responsive: true
+    });
+    return () => {
+      table.destroy(); // Destruir a tabela quando o componente for desmontado.
+    };
+  }, []);
+  // End DataTable.
+
+  // Restante do código do componente...
+
+  return (
+    // Renderização da tabela...
+  );
+}
+```
+
+Ao utilizar o `useEffect` com um array de dependências vazio (`[]`), você garante que o código dentro dele será executado apenas uma vez, após a montagem inicial do componente. Isso garantirá que o DataTables seja inicializado corretamente.
+
+Além disso, observe que no exemplo acima, também é fornecida uma função de retorno dentro do `useEffect` para destruir o DataTables quando o componente for desmontado. Isso pode ser útil se você quiser liberar recursos ou evitar vazamentos de memória.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
