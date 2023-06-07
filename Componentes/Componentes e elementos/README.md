@@ -15,7 +15,7 @@
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
 - [Implantação do `DataTables`](#implanta%C3%A7%C3%A3o-do-datatables "Implantação do DataTables")
   - [Garantir que script `DataTables` seja executado corretamente no componente](#garantir-que-script-datatables-seja-executado-corretamente-no-componente "Garantir que script DataTables seja executado corretamente no componente")
-  - [DataTables com o `ORM Prisma` (resolvendo renderização)](# "DataTables com o ORM Prisma (resolvendo renderização)")
+  - [DataTables com o `ORM Prisma` (resolvendo renderização)](#datatables-com-o-orm-prisma-resolvendo-renderiza%C3%A7%C3%A3o "DataTables com o ORM Prisma (resolvendo renderização)")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
 - [`Buttons` com React-Bootstrap](#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
 - [Utilizando o `CSS Modules` do React](#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
