@@ -1043,6 +1043,9 @@ export function YourComponent(props) {
 }
 ```
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+
 ---
 
 ## Garantir que script DataTables seja executado corretamente no componente
