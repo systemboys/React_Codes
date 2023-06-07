@@ -9,6 +9,7 @@
     - [Como instalar?](#como-instalar "Como instalar?")
     - [Comandos básicos do NVM para gerenciamento de versões do Node.js](#comandos-b%C3%A1sicos-do-nvm-para-gerenciamento-de-vers%C3%B5es-do-nodejs "Comandos básicos do NVM para gerenciamento de versões do Node.js")
 - [Resolvendo o erro de porta em uso no servidor Node.js](#resolvendo-o-erro-de-porta-em-uso-no-servidor-nodejs "Resolvendo o erro de porta em uso no servidor Node.js")
+- [Inicializar novo projeto Node.js criando arquivo 'package.json' com valores padrão.](# "Inicializar novo projeto Node.js criando arquivo 'package.json' com valores padrão.")
 
 ---
 
@@ -179,6 +180,19 @@ O NPM pode ser utilizado para criar servidores web, mas ele não é em si um ser
 O servidor é criado através do código definido em um arquivo específico, geralmente chamado de `server.js` ou `index.js`. Esse arquivo utiliza algum framework de servidor web como o Express ou o Koa, e define rotas e respostas para as requisições que chegam ao servidor. 
 
 Portanto, o servidor NPM em si não existe, mas o NPM pode ser utilizado para instalar e gerenciar pacotes que são utilizados em servidores web construídos em Node.js.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+
+---
+
+## Inicializar novo projeto Node.js criando arquivo 'package.json' com valores padrão
+
+```bash
+npm init -y
+```
+
+O comando "npm init -y" é usado para inicializar um novo projeto Node.js e criar um arquivo "package.json" com valores padrão. O parâmetro "-y" significa "yes" (sim) e indica que todas as perguntas durante a inicialização do projeto devem ser respondidas automaticamente com os valores padrão. Isso economiza tempo, pois não é necessário responder manualmente a cada pergunta durante o processo de inicialização do projeto. O arquivo "package.json" contém informações sobre o projeto, como nome, versão, dependências e scripts.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
