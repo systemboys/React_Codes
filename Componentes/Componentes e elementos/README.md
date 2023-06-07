@@ -1021,7 +1021,7 @@ Caso preferir utilizar o CDN chamando diretamente no repositório do `DataTables
 Caso contrário, no caso de hospedá-lo no seu projeto, importe o mesmo no seu 
 
 ```jsx
-// Start DataTable
+// Start DataTable.
 import DataTable from 'datatables.net-dt';
 import '../../DataTables/jquery-3.6.0.min.js';
 import '../../DataTables/datatables.min.js';
@@ -1029,7 +1029,7 @@ import '../../DataTables/datatables.min.css';
 const table = new DataTable('#myTable', {
     responsive: true
 });
-// End DataTable
+// End DataTables.
 
 export function YourComponent(props) {
     // Resto do seu código do componente...
@@ -1057,14 +1057,14 @@ Aqui está um exemplo de como você pode fazer isso:
 ```jsx
 import { useEffect } from 'react';
 
-// Start DataTable.
+// Start DataTables.
 import DataTable from 'datatables.net-dt';
 import '../../../../DataTables/datatables_theme_2.css'; // Sua folha de estilo
-// End DataTable.
+// End DataTables.
 
 export function DemoListings1() {
 
-  // Start DataTable.
+  // Start DataTables.
   useEffect(() => {
     const table = new DataTable('#myTable', {
       responsive: true
@@ -1073,7 +1073,7 @@ export function DemoListings1() {
       table.destroy(); // Destruir a tabela quando o componente for desmontado.
     };
   }, []);
-  // End DataTable.
+  // End DataTables.
 
   // Restante do código do componente...
 
