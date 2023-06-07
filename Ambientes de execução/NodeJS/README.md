@@ -9,7 +9,7 @@
     - [Como instalar?](#como-instalar "Como instalar?")
     - [Comandos básicos do NVM para gerenciamento de versões do Node.js](#comandos-b%C3%A1sicos-do-nvm-para-gerenciamento-de-vers%C3%B5es-do-nodejs "Comandos básicos do NVM para gerenciamento de versões do Node.js")
 - [Resolvendo o erro de porta em uso no servidor Node.js](#resolvendo-o-erro-de-porta-em-uso-no-servidor-nodejs "Resolvendo o erro de porta em uso no servidor Node.js")
-- [Inicializar novo projeto Node.js criando arquivo 'package.json' com valores padrão.](# "Inicializar novo projeto Node.js criando arquivo 'package.json' com valores padrão.")
+- [Inicializar novo projeto Node.js criando arquivo 'package.json' com valores padrão.](#inicializar-novo-projeto-nodejs-criando-arquivo-packagejson-com-valores-padr%C3%A3o "Inicializar novo projeto Node.js criando arquivo 'package.json' com valores padrão.")
 
 ---
 
