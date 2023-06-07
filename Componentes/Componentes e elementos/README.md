@@ -13,7 +13,7 @@
   - [`Envio` dos `dados` para a `API` do PRISMA](#envio-dos-dados-para-a-api-do-prisma "Envio dos dados para a API do PRISMA")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
-- [Implantação do DataTables](# "Implantação do DataTables")
+- [Implantação do `DataTables`](#implanta%C3%A7%C3%A3o-do-datatables "Implantação do DataTables")
 - [`Responsive grids` com React-Bootstrap](#responsive-grids-com-react-bootstrap "Responsive grids com React-Bootstrap")
 - [`Buttons` com React-Bootstrap](#buttons-com-react-bootstrap "Buttons com React-Bootstrap")
 - [Utilizando o `CSS Modules` do React](#utilizando-o-css-modules-do-react "Utilizando o CSS Modules do React")
