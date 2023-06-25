@@ -7,6 +7,8 @@
 - [Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?](#minha-inst%C3%A2ncia-ec2-%C3%A9-baseada-em-debian-onde-encontro-o-nome-do-usu%C3%A1rio-padr%C3%A3o "Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?")
 - [Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2](#programas-com-interface-gr%C3%A1fica-que-pode-ser-utilizada-para-acessar-sua-inst%C3%A2ncia-ec2 "Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2")
 - [Acesso à sua instância EC2 usando o 'Remmina Remote Desktop Client'](#acesso-%C3%A0-sua-inst%C3%A2ncia-ec2-usando-o-remmina-remote-desktop-client "Acesso à sua instância EC2 usando o 'Remmina Remote Desktop Client'")
+- [Instalar o ambiente de desktop Cinnamon no Debian](#instalar-o-ambiente-de-desktop-cinnamon-no-debian "Instalar o ambiente de desktop Cinnamon no Debian")
+- [Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client](# "Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client")
 
 ---
 
@@ -114,6 +116,119 @@ Agora, você pode selecionar a conexão que criou e clicar no botão "Conectar" 
 Certifique-se de ter permissões adequadas para o arquivo .pem (normalmente, as permissões devem ser definidas como 400 ou 600) e de que o nome de usuário, endereço IP e caminho para o arquivo .pem estejam corretamente configurados no "Remmina".
 
 [![Remote Connection Profile](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_ssh.png?raw=true "Remote Connection Profile")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_ssh.png?raw=true "Remote Connection Profile")
+
+[(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+
+---
+
+## Instalar o ambiente de desktop Cinnamon no Debian
+
+Para instalar o ambiente de desktop Cinnamon no Debian, você pode seguir estes passos:
+
+1. Abra o terminal no Debian.
+
+2. Certifique-se de que o sistema esteja atualizado executando o comando:
+   ```
+   sudo apt update
+   ```
+
+3. Instale o ambiente Cinnamon usando o seguinte comando:
+   ```bash
+   sudo apt install cinnamon
+   ```
+
+4. Durante a instalação, você será solicitado a escolher um gerenciador de exibição. Selecione o gerenciador de exibição de sua preferência, como LightDM ou GDM3.
+
+5. Aguarde até que o processo de instalação seja concluído. Isso pode levar algum tempo, pois o sistema instalará todos os pacotes necessários.
+
+6. Reinicie o sistema para aplicar as alterações:
+   ```bash
+   sudo reboot
+   ```
+
+Após reiniciar, você deverá ter o ambiente de desktop Cinnamon instalado no Debian. Na tela de login, selecione a opção de sessão Cinnamon e faça login para começar a usar o ambiente.
+
+Lembre-se de que essas instruções são específicas para o Debian, e pode haver pequenas variações em outras distribuições Linux.
+
+[(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+
+---
+
+## Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client
+
+Sim, é possível acessar o ambiente gráfico do Cinnamon instalado em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client.
+
+Após instalar o ambiente Cinnamon na instância, você precisará configurar o servidor de desktop remoto para que ele seja acessível pelo Remmina. Isso pode ser feito instalando um servidor de área de trabalho remota, como o xrdp, e configurando-o corretamente.
+
+Aqui estão os passos básicos para configurar o acesso remoto ao ambiente Cinnamon usando o Remmina:
+
+1. Instale o servidor xrdp no Debian:
+   ```bash
+   sudo apt update
+   sudo apt install xrdp
+   ```
+
+2. Inicie o serviço xrdp:
+   ```bash
+   sudo systemctl start xrdp
+   ```
+
+3. Verifique se o serviço está em execução:
+   ```bash
+   sudo systemctl status xrdp
+   ```
+
+4. Certifique-se de que a porta 3389 esteja aberta no grupo de segurança da instância EC2 no AWS Console.
+
+Após configurar o servidor xrdp e abrir a porta no grupo de segurança, você pode usar o Remmina Remote Desktop Client em seu computador local para se conectar à instância EC2. Basta adicionar uma nova conexão no Remmina, inserindo o endereço IP da instância EC2 e selecionando o protocolo RDP. Em seguida, forneça suas credenciais de login e selecione a opção para usar o ambiente de área de trabalho Cinnamon.
+
+Com isso, você deve ser capaz de acessar e usar o ambiente gráfico Cinnamon na instância Debian Linux através do Remmina Remote Desktop Client.
+
+> ( ! ) Se você não tiver o acesso ao usuário no XRDP, acesse a instância via SSH e redefina as configurações de usuários root, pode até criar um novo usuário.
+
+[(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+
+---
+
+## Configurar uma resolução de exibição personalizada no ambiente gráfico
+
+Se você está usando uma instância EC2 sem uma placa de vídeo física, você pode configurar uma resolução de exibição personalizada no ambiente gráfico para atender às suas necessidades. No caso do ambiente Cinnamon, você pode seguir as seguintes etapas para configurar uma resolução de 1366x768 pixels:
+
+1. Acesse a instância EC2 usando uma conexão SSH, como mencionado anteriormente.
+2. Certifique-se de que você esteja conectado como usuário com privilégios administrativos (geralmente, o usuário "admin" que você mencionou anteriormente).
+3. No terminal da instância, execute o seguinte comando para editar o arquivo de configuração do gerenciador de exibição LightDM:
+
+   ```bash
+   sudo nano /etc/lightdm/lightdm.conf
+   ```
+
+   Se o arquivo não existir, você pode criar um novo:
+
+   ```bash
+   sudo nano /etc/lightdm/lightdm.conf.d/10-monitor.conf
+   ```
+
+4. No arquivo de configuração, adicione ou modifique a linha `display-setup-script` para incluir a configuração da resolução desejada. Por exemplo:
+
+   ```bash
+   display-setup-script=xrandr --output default --mode 1366x768
+   ```
+
+   Certifique-se de substituir "default" pelo nome correto do dispositivo de exibição, caso seja diferente.
+   
+5. Salve o arquivo de configuração (Pressione `Ctrl + O`, em seguida `Enter`) e saia do editor (Pressione `Ctrl + X`).
+6. Reinicie o serviço LightDM para que as alterações entrem em vigor:
+
+   ```bash
+   sudo systemctl restart lightdm
+   ```
+
+7. Após reiniciar o serviço, o ambiente Cinnamon deve ser iniciado com a resolução configurada.
+
+Lembre-se de que, sem uma placa de vídeo física, a qualidade gráfica pode ser limitada e podem ocorrer algumas restrições de desempenho na exibição. No entanto, isso deve permitir que você configure a resolução desejada na instância EC2 do Debian Linux.
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
