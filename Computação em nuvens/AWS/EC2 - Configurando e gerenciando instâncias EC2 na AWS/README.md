@@ -19,7 +19,7 @@ Ao conectar-se à instância EC2 usando um cliente SSH, você precisará fornece
 É importante manter esse arquivo seguro, pois ele concede acesso privilegiado à sua instância EC2. Nunca compartilhe ou exponha o arquivo *.pem a indivíduos não autorizados, pois isso pode comprometer a segurança da sua instância na AWS.
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
-[(&uarr;) Subir](#laborat%C3%B3rio-gti--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
 ---
 
@@ -47,7 +47,7 @@ Certifique-se de que o cliente SSH esteja instalado no seu sistema local antes d
 Lembre-se de substituir `seu-arquivo.pem` e `seu-IP-publico` pelos valores corretos de acordo com sua configuração.
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
-[(&uarr;) Subir](#laborat%C3%B3rio-gti--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
 ---
 
@@ -66,7 +66,7 @@ Certifique-se de substituir "seu-arquivo.pem" pelo nome do arquivo .pem da sua c
 Lembre-se de que o nome de usuário pode variar dependendo da distribuição do Linux usada pela instância EC2. No caso do Debian, é o "admin".
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
-[(&uarr;) Subir](#laborat%C3%B3rio-gti--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
 ---
 
@@ -87,7 +87,7 @@ Além do Remmina, você também pode considerar outros programas como o "Vinagre
 É importante lembrar que esses programas com interface gráfica geralmente exigem um ambiente de desktop instalado em sua instância EC2 para funcionar corretamente. Certifique-se de ter configurado um ambiente de desktop, como o Xfce, Gnome, KDE ou outros, em sua instância para usar esses programas.
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
-[(&uarr;) Subir](#laborat%C3%B3rio-gti--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
 ---
 
@@ -110,6 +110,6 @@ Agora, você pode selecionar a conexão que criou e clicar no botão "Conectar" 
 Certifique-se de ter permissões adequadas para o arquivo .pem (normalmente, as permissões devem ser definidas como 400 ou 600) e de que o nome de usuário, endereço IP e caminho para o arquivo .pem estejam corretamente configurados no "Remmina".
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
-[(&uarr;) Subir](#laborat%C3%B3rio-gti--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
 ---
