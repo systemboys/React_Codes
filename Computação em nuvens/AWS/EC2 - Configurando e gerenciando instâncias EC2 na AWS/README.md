@@ -1,4 +1,4 @@
-# [Laboratório GTi](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Laboratório GTi") / EC2 - Configurando e gerenciando instâncias EC2 na AWS
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / EC2 - Configurando e gerenciando instâncias EC2 na AWS
 
 [![Cloud AWS](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")
 
