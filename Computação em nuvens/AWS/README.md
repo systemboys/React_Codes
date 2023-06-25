@@ -8,6 +8,7 @@
 - [Serviços AWS](#servi%C3%A7os-aws "Serviços AWS")
     - [IAM](#iam "IAM")
     - [EC2](#ec2 "EC2")
+        - [Configurando e gerenciando instâncias EC2 na AWS](# "Configurando e gerenciando instâncias EC2 na AWS")
     - [CodePipeline](#codepipeline "CodePipeline")
     - [CodeDeply](#codedeply "CodeDeply")
     - [S3](#s3 "S3")
