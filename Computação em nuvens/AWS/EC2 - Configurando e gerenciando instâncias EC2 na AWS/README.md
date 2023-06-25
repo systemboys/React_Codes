@@ -122,6 +122,10 @@ Caso haja um ambiente instalado, pode acessá-lo via "RDP - Remote Desktop Proto
 
 [![Acessar ambiente via RDP](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_rdp.png?raw=true "Acessar ambiente via RDP")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_rdp.png?raw=true "Acessar ambiente via RDP")
 
+Configurações de acesso salvas no Remmina em forma de lista:
+
+[![Configurações de acesso salvas no Remmina](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Remmina_Remote_Desktop_Clinet.png?raw=true "Configurações de acesso salvas no Remmina")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Remmina_Remote_Desktop_Clinet.png?raw=true "Configurações de acesso salvas no Remmina")
+
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
