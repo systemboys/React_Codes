@@ -46,6 +46,8 @@ Certifique-se de que o cliente SSH esteja instalado no seu sistema local antes d
 
 Lembre-se de substituir `seu-arquivo.pem` e `seu-IP-publico` pelos valores corretos de acordo com sua configuração.
 
+[![Conexão SSH via terminal](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Conection_SSH_terminal.png?raw=true "Conexão SSH via terminal")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Conection_SSH_terminal.png?raw=true "Conexão SSH via terminal")
+
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
@@ -86,6 +88,8 @@ Além do Remmina, você também pode considerar outros programas como o "Vinagre
 
 É importante lembrar que esses programas com interface gráfica geralmente exigem um ambiente de desktop instalado em sua instância EC2 para funcionar corretamente. Certifique-se de ter configurado um ambiente de desktop, como o Xfce, Gnome, KDE ou outros, em sua instância para usar esses programas.
 
+[![Remmina](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Remmina_Remote_Desktop_Clinet_2.png?raw=true "Remmina")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Remmina_Remote_Desktop_Clinet_2.png?raw=true "Remmina")
+
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
@@ -108,6 +112,8 @@ Para ter acesso à sua instância EC2 usando o "Remmina Remote Desktop Client" n
 Agora, você pode selecionar a conexão que criou e clicar no botão "Conectar" para iniciar a sessão SSH na sua instância EC2. O "Remmina" usará o arquivo .pem que você selecionou para autenticar a conexão SSH.
 
 Certifique-se de ter permissões adequadas para o arquivo .pem (normalmente, as permissões devem ser definidas como 400 ou 600) e de que o nome de usuário, endereço IP e caminho para o arquivo .pem estejam corretamente configurados no "Remmina".
+
+[![Remote Connection Profile](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_ssh.png?raw=true "Remote Connection Profile")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_ssh.png?raw=true "Remote Connection Profile")
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
