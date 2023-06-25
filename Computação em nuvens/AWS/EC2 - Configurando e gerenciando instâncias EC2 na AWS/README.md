@@ -118,6 +118,10 @@ Certifique-se de ter permissões adequadas para o arquivo .pem (normalmente, as 
 
 [![Remote Connection Profile](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_ssh.png?raw=true "Remote Connection Profile")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_ssh.png?raw=true "Remote Connection Profile")
 
+Caso haja um ambiente instalado, pode acessá-lo via "RDP - Remote Desktop Protocol":
+
+[![Acessar ambiente via RDP](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_rdp.png?raw=true "Acessar ambiente via RDP")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Add_conection_Remmina_rdp.png?raw=true "Acessar ambiente via RDP")
+
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
@@ -189,7 +193,7 @@ Com isso, você deve ser capaz de acessar e usar o ambiente gráfico Cinnamon na
 
 > ( ! ) Se você não tiver o acesso ao usuário no XRDP, acesse a instância via SSH e redefina as configurações de usuários root, pode até criar um novo usuário.
 
-[![Debian Linux rodando em instância](https://site.com/img/exemplo.png "Debian Linux rodando em instância")](http://link.com "Debian Linux rodando em instância")
+[![Debian Linux rodando em instância](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Debian_Linux_running_on_an_instance.png?raw=true "Debian Linux rodando em instância")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/Debian_Linux_running_on_an_instance.png?raw=true "Debian Linux rodando em instância")
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
