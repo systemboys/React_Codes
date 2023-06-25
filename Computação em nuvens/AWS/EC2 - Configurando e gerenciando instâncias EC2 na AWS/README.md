@@ -8,7 +8,8 @@
 - [Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2](#programas-com-interface-gr%C3%A1fica-que-pode-ser-utilizada-para-acessar-sua-inst%C3%A2ncia-ec2 "Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2")
 - [Acesso à sua instância EC2 usando o 'Remmina Remote Desktop Client'](#acesso-%C3%A0-sua-inst%C3%A2ncia-ec2-usando-o-remmina-remote-desktop-client "Acesso à sua instância EC2 usando o 'Remmina Remote Desktop Client'")
 - [Instalar o ambiente de desktop Cinnamon no Debian](#instalar-o-ambiente-de-desktop-cinnamon-no-debian "Instalar o ambiente de desktop Cinnamon no Debian")
-- [Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client](# "Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client")
+- [Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client](#acessar-ambiente-gr%C3%A1fico-cinnamon-em-uma-inst%C3%A2ncia-debian-linux-na-aws-ec2-usando-o-remmina-remote-desktop-client "Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client")
+- [Configurar uma resolução de exibição personalizada no ambiente gráfico](#configurar-uma-resolu%C3%A7%C3%A3o-de-exibi%C3%A7%C3%A3o-personalizada-no-ambiente-gr%C3%A1fico "Configurar uma resolução de exibição personalizada no ambiente gráfico")
 
 ---
 
@@ -187,6 +188,8 @@ Após configurar o servidor xrdp e abrir a porta no grupo de segurança, você p
 Com isso, você deve ser capaz de acessar e usar o ambiente gráfico Cinnamon na instância Debian Linux através do Remmina Remote Desktop Client.
 
 > ( ! ) Se você não tiver o acesso ao usuário no XRDP, acesse a instância via SSH e redefina as configurações de usuários root, pode até criar um novo usuário.
+
+[![Debian Linux rodando em instância](https://site.com/img/exemplo.png "Debian Linux rodando em instância")](http://link.com "Debian Linux rodando em instância")
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
