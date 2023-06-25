@@ -2,11 +2,11 @@
 
 [![Cloud AWS](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")
 
-- [Arquivo (.pem) após criar uma instância EC2](https://site.com#anchor-link-1 "Arquivo (.pem) após criar uma instância EC2")
-- [Conectar à instância EC2 usando um cliente SSH](https://site.com#anchor-link-2 "Conectar à instância EC2 usando um cliente SSH")
-- [Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?](https://site.com#anchor-link-3 "Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?")
-- [Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2](https://site.com#anchor-link-4 "Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2")
-- [Acesso à sua instância EC2 usando o 'Remmina Remote Desktop Client'](https://site.com#anchor-link-5 "Acesso à sua instância EC2 usando o 'Remmina Remote Desktop Client'")
+- [Arquivo (.pem) após criar uma instância EC2](#arquivo-pem-ap%C3%B3s-criar-uma-inst%C3%A2ncia-ec2 "Arquivo (.pem) após criar uma instância EC2")
+- [Conectar à instância EC2 usando um cliente SSH](#conectar-%C3%A0-inst%C3%A2ncia-ec2-usando-um-cliente-ssh "Conectar à instância EC2 usando um cliente SSH")
+- [Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?](#minha-inst%C3%A2ncia-ec2-%C3%A9-baseada-em-debian-onde-encontro-o-nome-do-usu%C3%A1rio-padr%C3%A3o "Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?")
+- [Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2](#programas-com-interface-gr%C3%A1fica-que-pode-ser-utilizada-para-acessar-sua-inst%C3%A2ncia-ec2 "Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2")
+- [Acesso à sua instância EC2 usando o 'Remmina Remote Desktop Client'](#acesso-%C3%A0-sua-inst%C3%A2ncia-ec2-usando-o-remmina-remote-desktop-client "Acesso à sua instância EC2 usando o 'Remmina Remote Desktop Client'")
 
 ---
 
@@ -17,6 +17,11 @@ O arquivo com extensão `*.pem` que foi criado ao criar uma instância EC2 no De
 Ao conectar-se à instância EC2 usando um cliente SSH, você precisará fornecer o caminho para esse arquivo *.pem como parte do processo de autenticação. Ele é usado como uma forma de autenticação de chave pública, garantindo que apenas usuários com a chave correta possam acessar a instância.
 
 É importante manter esse arquivo seguro, pois ele concede acesso privilegiado à sua instância EC2. Nunca compartilhe ou exponha o arquivo *.pem a indivíduos não autorizados, pois isso pode comprometer a segurança da sua instância na AWS.
+
+[(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
+[(&uarr;) Subir](#laborat%C3%B3rio-gti--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+
+---
 
 ## Conectar à instância EC2 usando um cliente SSH
 
@@ -41,6 +46,11 @@ Certifique-se de que o cliente SSH esteja instalado no seu sistema local antes d
 
 Lembre-se de substituir `seu-arquivo.pem` e `seu-IP-publico` pelos valores corretos de acordo com sua configuração.
 
+[(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
+[(&uarr;) Subir](#laborat%C3%B3rio-gti--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+
+---
+
 ## Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?
 
 Ao criar uma instância EC2 baseada em Debian, o nome de usuário padrão é "admin". O Debian usa esse nome de usuário para acessar a instância por meio de SSH.
@@ -54,6 +64,11 @@ ssh -i seu-arquivo.pem admin@seu-IP-publico
 Certifique-se de substituir "seu-arquivo.pem" pelo nome do arquivo .pem da sua chave de acesso e "seu-IP-publico" pelo endereço IP público da instância EC2.
 
 Lembre-se de que o nome de usuário pode variar dependendo da distribuição do Linux usada pela instância EC2. No caso do Debian, é o "admin".
+
+[(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
+[(&uarr;) Subir](#laborat%C3%B3rio-gti--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+
+---
 
 ## Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2
 
@@ -70,6 +85,11 @@ Após a instalação, você pode iniciar o Remmina e adicionar uma nova conexão
 Além do Remmina, você também pode considerar outros programas como o "Vinagre", "NoMachine" ou "TeamViewer", dependendo de suas preferências e necessidades específicas.
 
 É importante lembrar que esses programas com interface gráfica geralmente exigem um ambiente de desktop instalado em sua instância EC2 para funcionar corretamente. Certifique-se de ter configurado um ambiente de desktop, como o Xfce, Gnome, KDE ou outros, em sua instância para usar esses programas.
+
+[(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
+[(&uarr;) Subir](#laborat%C3%B3rio-gti--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
+
+---
 
 ## Acesso à sua instância EC2 usando o 'Remmina Remote Desktop Client'
 
