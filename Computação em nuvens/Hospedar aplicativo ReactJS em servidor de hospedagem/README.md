@@ -71,7 +71,7 @@ Para hospedar os arquivos de sua build do ReactJS em uma instância AWS com Debi
 3. Clonar o repositório do GitHub: No diretório desejado da instância, clone o repositório do GitHub que contém sua build do ReactJS. Você pode usar o comando `git clone` com a URL do repositório, como:
 
 ```bash
-git clone https://github.com/systemboys/jm_build_v4.git
+git clone https://github.com/systemboys/your_build.git
 ```
 
 Isso criará uma cópia do repositório em sua instância.
