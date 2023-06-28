@@ -4,6 +4,7 @@
 
 - [Hospedagem de projeto em ReactJS](#hospedagem-de-projeto-em-reactjs "Hospedagem de projeto em ReactJS")
 - [Se suas API's estiverem hospedadas em outro servidor](#se-suas-apis-estiverem-hospedadas-em-outro-servidor "Se suas API's estiverem hospedadas em outro servidor")
+- [Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux](# "Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux")
 
 ---
 
@@ -53,6 +54,60 @@ axios.get(`${process.env.REACT_APP_API_URL}/users`)
 ```
 
 Ao fazer isso, sua aplicação ReactJS deve ser capaz de se comunicar com a API, independentemente de onde ela esteja hospedada.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux
+
+Para hospedar os arquivos de sua build do ReactJS em uma instância AWS com Debian Linux, você pode seguir os seguintes passos:
+
+1. Conectar-se à instância: Use um cliente SSH, como o OpenSSH, para se conectar à instância AWS usando seu endereço IP público e as credenciais SSH associadas à instância.
+
+2. Instalar o Docker: Se você ainda não tiver o Docker instalado na instância, siga as etapas mencionadas anteriormente para instalar o Docker no Debian Linux.
+
+3. Clonar o repositório do GitHub: No diretório desejado da instância, clone o repositório do GitHub que contém sua build do ReactJS. Você pode usar o comando `git clone` com a URL do repositório, como:
+
+```bash
+git clone https://github.com/systemboys/jm_build_v4.git
+```
+
+Isso criará uma cópia do repositório em sua instância.
+
+4. Construir a imagem do Docker: Dentro do diretório clonado, crie um arquivo Dockerfile para criar uma imagem Docker para sua build do ReactJS. O Dockerfile pode ter o seguinte conteúdo:
+
+```bash
+# Use a imagem do Nginx como base
+FROM nginx
+
+# Copie os arquivos da build para o diretório de trabalho padrão do Nginx
+COPY . /usr/share/nginx/html
+
+# Exponha a porta 80 para tráfego externo
+EXPOSE 80
+```
+
+Salve o Dockerfile no diretório raiz da sua build do ReactJS.
+
+5. Construir e executar o contêiner Docker: No diretório raiz da sua build, execute o seguinte comando para construir a imagem Docker:
+
+```bash
+docker build -t my-react-app .
+```
+
+Isso criará a imagem Docker com base no Dockerfile.
+
+Agora, você pode executar o contêiner com o seguinte comando:
+
+```bash
+docker run -d -p 80:80 my-react-app
+```
+
+O contêiner será executado e estará disponível na porta 80 da sua instância AWS.
+
+Agora você pode acessar o seu portal de notícias ReactJS na instância AWS através do endereço IP público da instância. Basta digitar o endereço IP público no navegador e você deverá ver o seu aplicativo sendo hospedado na instância AWS.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
