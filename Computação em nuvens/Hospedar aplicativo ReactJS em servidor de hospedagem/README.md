@@ -6,6 +6,7 @@
 - [Se suas API's estiverem hospedadas em outro servidor](#se-suas-apis-estiverem-hospedadas-em-outro-servidor "Se suas API's estiverem hospedadas em outro servidor")
 - [Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux](#hospedando-uma-build-do-reactjs-em-uma-inst%C3%A2ncia-aws-usando-docker-e-debian-linux "Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux")
 - [Gerenciando contêineres Docker: Parar, reiniciar e remover contêineres](#gerenciando-cont%C3%AAineres-docker-parar-reiniciar-e-remover-cont%C3%AAineres "Gerenciando contêineres Docker: Parar, reiniciar e remover contêineres")
+- [Renomeando um contêiner Docker sem reiniciar: Como atualizar o nome do contêiner sem interromper a execução](# "Renomeando um contêiner Docker sem reiniciar: Como atualizar o nome do contêiner sem interromper a execução")
 
 ---
 
@@ -176,6 +177,39 @@ Este comando remove todos os contêineres parados na sua máquina. A opção `$(
 Lembre-se de substituir `<container_id>` pelo ID ou nome real do contêiner que você deseja operar. Além disso, tome cuidado ao remover contêineres, pois isso é uma ação irreversível e todos os dados do contêiner serão perdidos.
 
 Esses são os comandos básicos para parar, reiniciar e remover contêineres no Docker. Existem outros comandos disponíveis para gerenciar contêineres e explorar diferentes opções. Você pode consultar a documentação oficial do Docker para obter mais informações sobre esses comandos e suas opções.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Renomeando um contêiner Docker sem reiniciar: Como atualizar o nome do contêiner sem interromper a execução
+
+Ao renomear um contêiner Docker, você estará alterando o nome do contêiner na coluna "NAMES" da saída do comando `docker ps`. O nome original do contêiner é gerado automaticamente pelo Docker ou pode ser especificado manualmente durante a criação do contêiner.
+
+No exemplo que você forneceu, o nome atual do contêiner é "serene_shamir". Se você deseja renomeá-lo para "Jornal de Mirador", você pode usar o comando `docker rename` da seguinte maneira:
+
+```bash
+docker rename serene_shamir Jornal_de_Mirador
+```
+
+Isso alterará o nome do contêiner de "serene_shamir" para "Jornal_de_Mirador". Após executar esse comando, se você usar o comando `docker ps`, verá a coluna "NAMES" atualizada com o novo nome do contêiner.
+
+Lembre-se de que o nome do contêiner deve ser exclusivo no contexto do Docker na sua máquina. Portanto, certifique-se de que o novo nome não esteja sendo usado por outro contêiner existente.
+
+Espero que isso esclareça sua dúvida! Se você tiver mais perguntas, fique à vontade para perguntar.
+
+> É preciso reiniciá-lo?
+
+Não é necessário reiniciar o contêiner após renomeá-lo. A alteração do nome do contêiner não afeta sua execução ou estado atual. O contêiner continuará em execução normalmente, mantendo seu estado, conexões e quaisquer configurações existentes.
+
+A mudança de nome é apenas uma atualização no metadado do contêiner e não requer uma reinicialização para ser aplicada. Você pode verificar isso executando o comando `docker ps`, e verá que o nome do contêiner foi atualizado na coluna "NAMES".
+
+Portanto, não é necessário reiniciar o contêiner após renomeá-lo. O contêiner continuará funcionando com o novo nome normalmente, mantendo seu estado atual.
+
+Lembre-se de que, se você estiver usando o nome do contêiner para se referir a ele em outros comandos Docker ou scripts, deverá atualizar essas referências com o novo nome para evitar erros.
+
+Espero que isso esclareça sua dúvida! Se você tiver mais perguntas, estou aqui para ajudar.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
