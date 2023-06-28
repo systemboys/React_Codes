@@ -190,10 +190,10 @@ Ao renomear um contêiner Docker, você estará alterando o nome do contêiner n
 No exemplo que você forneceu, o nome atual do contêiner é "serene_shamir". Se você deseja renomeá-lo para "Jornal de Mirador", você pode usar o comando `docker rename` da seguinte maneira:
 
 ```bash
-docker rename serene_shamir Jornal_de_Mirador
+docker rename serene_shamir New_Name
 ```
 
-Isso alterará o nome do contêiner de "serene_shamir" para "Jornal_de_Mirador". Após executar esse comando, se você usar o comando `docker ps`, verá a coluna "NAMES" atualizada com o novo nome do contêiner.
+Isso alterará o nome do contêiner de "serene_shamir" para "New_Name". Após executar esse comando, se você usar o comando `docker ps`, verá a coluna "NAMES" atualizada com o novo nome do contêiner.
 
 Lembre-se de que o nome do contêiner deve ser exclusivo no contexto do Docker na sua máquina. Portanto, certifique-se de que o novo nome não esteja sendo usado por outro contêiner existente.
 
