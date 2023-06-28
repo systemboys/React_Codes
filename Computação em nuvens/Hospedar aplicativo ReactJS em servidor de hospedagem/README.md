@@ -5,6 +5,7 @@
 - [Hospedagem de projeto em ReactJS](#hospedagem-de-projeto-em-reactjs "Hospedagem de projeto em ReactJS")
 - [Se suas API's estiverem hospedadas em outro servidor](#se-suas-apis-estiverem-hospedadas-em-outro-servidor "Se suas API's estiverem hospedadas em outro servidor")
 - [Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux](#hospedando-uma-build-do-reactjs-em-uma-inst%C3%A2ncia-aws-usando-docker-e-debian-linux "Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux")
+- [Gerenciando contêineres Docker: Parar, reiniciar e remover contêineres](# "Gerenciando contêineres Docker: Parar, reiniciar e remover contêineres")
 
 ---
 
@@ -108,6 +109,73 @@ docker run -d -p 80:80 my-react-app
 O contêiner será executado e estará disponível na porta 80 da sua instância AWS.
 
 Agora você pode acessar o seu portal de notícias ReactJS na instância AWS através do endereço IP público da instância. Basta digitar o endereço IP público no navegador e você deverá ver o seu aplicativo sendo hospedado na instância AWS.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Gerenciando contêineres Docker: Parar, reiniciar e remover contêineres
+
+O código criptografado que você vê após executar o comando "docker run" é o ID do contêiner Docker que foi criado. Esse ID é exclusivo para cada contêiner em execução.
+
+Após fechar a sessão SSH e se conectar novamente à instância no futuro, você pode visualizar o ID do contêiner executando o comando `docker ps` ou `docker ps -a` no terminal. O comando `docker ps` lista apenas os contêineres em execução no momento, enquanto o comando `docker ps -a` lista todos os contêineres, incluindo os que estão parados.
+
+O ID do contêiner é usado para identificar o contêiner dentro do Docker e realizar várias operações, como parar, reiniciar ou remover o contêiner. É útil ter esse ID registrado para gerenciar o contêiner posteriormente.
+
+Além disso, se você atribuiu um nome ao contêiner durante a execução do comando `docker run`, pode usar o nome em vez do ID para se referir ao contêiner em operações futuras.
+
+Espero que isso esclareça sua dúvida! Se você tiver mais perguntas, fique à vontade para perguntar.
+
+> Comandos do Docker
+
+Aqui está uma lista dos principais comandos do Docker para parar, reiniciar e remover contêineres:
+
+1. Parar um contêiner em execução:
+
+```bash
+docker stop <container_id>
+```
+Substitua `<container_id>` pelo ID ou nome do contêiner que você deseja parar. Isso irá interromper a execução do contêiner de forma controlada.
+
+2. Iniciar um contêiner parado:
+
+```bash
+docker start <container_id>
+```
+Substitua `<container_id>` pelo ID ou nome do contêiner que você deseja iniciar. Isso irá iniciar um contêiner que foi previamente parado.
+
+3. Reiniciar um contêiner:
+
+```bash
+docker restart <container_id>
+```
+Substitua `<container_id>` pelo ID ou nome do contêiner que você deseja reiniciar. Isso irá parar e, em seguida, iniciar novamente o contêiner.
+
+4. Remover um contêiner:
+
+```bash
+docker rm <container_id>
+```
+Substitua `<container_id>` pelo ID ou nome do contêiner que você deseja remover. Certifique-se de que o contêiner esteja parado antes de executar esse comando. Se o contêiner estiver em execução, você pode adicionar a opção `-f` para forçar a remoção.
+
+5. Parar todos os contêineres em execução:
+
+```bash
+docker stop $(docker ps -aq)
+```
+Este comando para todos os contêineres em execução na sua máquina. A opção `$(docker ps -aq)` lista todos os IDs de contêineres em execução, que são passados como argumento para o comando `docker stop`.
+
+6. Remover todos os contêineres parados:
+
+```bash
+docker rm $(docker ps -aq)
+```
+Este comando remove todos os contêineres parados na sua máquina. A opção `$(docker ps -aq)` lista todos os IDs de contêineres, incluindo os parados, que são passados como argumento para o comando `docker rm`.
+
+Lembre-se de substituir `<container_id>` pelo ID ou nome real do contêiner que você deseja operar. Além disso, tome cuidado ao remover contêineres, pois isso é uma ação irreversível e todos os dados do contêiner serão perdidos.
+
+Esses são os comandos básicos para parar, reiniciar e remover contêineres no Docker. Existem outros comandos disponíveis para gerenciar contêineres e explorar diferentes opções. Você pode consultar a documentação oficial do Docker para obter mais informações sobre esses comandos e suas opções.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
