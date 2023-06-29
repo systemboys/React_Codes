@@ -2,11 +2,9 @@
 
 [![Hospedagem](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/Hospedar%20aplicativo%20ReactJS%20em%20servidor%20de%20hospedagem/images/hospedagem-de-sites-destaque-2.png?raw=true "Hospedagem")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/Hospedar%20aplicativo%20ReactJS%20em%20servidor%20de%20hospedagem/images/hospedagem-de-sites-destaque-2.png?raw=true "Hospedagem")
 
----
 ##### Hospedagem de projeto
 - [Hospedagem de projeto em ReactJS](#hospedagem-de-projeto-em-reactjs "Hospedagem de projeto em ReactJS")
 - [Se suas API's estiverem hospedadas em outro servidor](#se-suas-apis-estiverem-hospedadas-em-outro-servidor "Se suas API's estiverem hospedadas em outro servidor")
----
 ##### AWS e Docer
 - [Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux](#hospedando-uma-build-do-reactjs-em-uma-inst%C3%A2ncia-aws-usando-docker-e-debian-linux "Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux")
 - [Gerenciando contêineres Docker: Parar, reiniciar e remover contêineres](#gerenciando-cont%C3%AAineres-docker-parar-reiniciar-e-remover-cont%C3%AAineres "Gerenciando contêineres Docker: Parar, reiniciar e remover contêineres")
