@@ -109,6 +109,18 @@ docker run -d -p 80:80 my-react-app
 
 O contêiner será executado e estará disponível na porta 80 da sua instância AWS.
 
+> ( ! ) Observação!
+>
+> No comando `docker run -d -p 80:80 my-react-app`, o termo "my-react-app" é o nome ou a tag da imagem Docker que você deseja executar como um contêiner.
+>
+> Uma imagem Docker é uma representação imutável de um aplicativo ou ambiente pré-configurado. Ela contém todos os componentes necessários para executar um aplicativo, incluindo o sistema operacional, bibliotecas, dependências e o próprio aplicativo.
+>
+> Quando você executa o comando `docker run`, você está criando uma instância em execução de uma imagem Docker. A opção `-d` indica que o contêiner será executado em segundo plano (modo detached). A opção `-p 80:80` mapeia a porta 80 do contêiner para a porta 80 do host, permitindo que o aplicativo dentro do contêiner seja acessível através da porta 80 do host.
+>
+> O termo "my-react-app" é usado como o nome da imagem Docker que será executada como um contêiner. Geralmente, esse nome é definido durante o processo de criação da imagem Docker ou ao fazer o push da imagem para um registro de contêiner, como o Docker Hub.
+>
+> Você pode escolher qualquer nome ou tag para a imagem Docker que esteja de acordo com sua convenção de nomenclatura. Essa nomenclatura facilita a identificação e o gerenciamento das imagens Docker em seu ambiente.
+
 Agora você pode acessar o seu portal de notícias ReactJS na instância AWS através do endereço IP público da instância. Basta digitar o endereço IP público no navegador e você deverá ver o seu aplicativo sendo hospedado na instância AWS.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
