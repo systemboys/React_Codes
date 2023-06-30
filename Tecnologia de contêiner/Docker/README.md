@@ -4,7 +4,7 @@
 
 - [Sobre Docker](#sobre-docker "Sobre Docker")
 - [Criar um Docker container](#criar-um-docker-container "Criar um Docker container")
-- [Instalação do Docker no Debian Linux.](# "Instalação do Docker no Debian Linux.")
+- [Instalação do Docker no Debian Linux e Ubuntu](#instala%C3%A7%C3%A3o-do-docker-no-debian-linux-e-ubuntu "Instalação do Docker no Debian Linux e Ubuntu")
 
 ---
 
@@ -56,7 +56,7 @@ Lembre-se que esses são apenas os passos básicos para criar um Docker containe
 
 ---
 
-## Instalação do Docker no Debian Linux e Ubuntu.
+## Instalação do Docker no Debian Linux e Ubuntu
 
 Segue abaixo a sintaxe em formato `bash` para os procedimentos de instalação do Docker no Debian Linux e Ubuntu:
 
