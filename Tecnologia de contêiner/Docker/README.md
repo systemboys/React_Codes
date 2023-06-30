@@ -4,6 +4,7 @@
 
 - [Sobre Docker](#sobre-docker "Sobre Docker")
 - [Criar um Docker container](#criar-um-docker-container "Criar um Docker container")
+- [Instalação do Docker no Debian Linux.](# "Instalação do Docker no Debian Linux.")
 
 ---
 
@@ -49,6 +50,74 @@ Para criar um Docker container, você precisa seguir os seguintes passos:
 4. Execute o container do Docker: uma vez que a imagem do Docker tenha sido criada, você pode executar o container usando o comando docker run. Esse comando inicia o container e executa o aplicativo dentro dele.
 
 Lembre-se que esses são apenas os passos básicos para criar um Docker container. Dependendo do seu caso de uso específico, pode ser necessário configurar a rede, expor portas, definir variáveis de ambiente e outras configurações.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--docker "Subir para o topo")
+
+---
+
+## Instalação do Docker no Debian Linux e Ubuntu.
+
+Segue abaixo a sintaxe em formato `bash` para os procedimentos de instalação do Docker no Debian Linux e Ubuntu:
+
+Instalação do Docker no Debian Linux:
+```bash
+# Atualize o gerenciador de pacotes
+sudo apt update
+
+# Instale as dependências necessárias
+sudo apt install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
+
+# Importe a chave do pacote Docker
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+# Adicione o repositório do Docker
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Atualize novamente o gerenciador de pacotes
+sudo apt update
+
+# Instale o Docker Engine, Docker CLI e o containerd
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+
+# Adicione seu usuário ao grupo do Docker
+sudo usermod -aG docker $USER
+
+# Verifique a versão do Docker instalada
+docker --version
+```
+
+Instalação do Docker no Ubuntu:
+
+```bash
+# Atualize o gerenciador de pacotes
+sudo apt update
+
+# Instale as dependências necessárias
+sudo apt install -y apt-transport-https ca-certificates curl gnupg2 software-properties-common
+
+# Importe a chave do pacote Docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+# Adicione o repositório do Docker
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Atualize novamente o gerenciador de pacotes
+sudo apt update
+
+# Instale o Docker Engine, Docker CLI e o containerd
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+
+# Adicione seu usuário ao grupo do Docker
+sudo usermod -aG docker $USER
+
+# Verifique a versão do Docker instalada
+docker --version
+```
+
+Lembre-se de executar os comandos com privilégios de administrador (usando `sudo`) e reiniciar a sessão do usuário ou fazer logout e login novamente após adicionar o usuário ao grupo do Docker para que as alterações tenham efeito.
+
+Esses passos fornecem uma orientação geral sobre como instalar o Docker no Debian Linux e Ubuntu. Certifique-se de adaptar o procedimento conforme necessário e consulte a documentação oficial do Docker para obter informações mais detalhadas e atualizadas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--docker "Subir para o topo")
