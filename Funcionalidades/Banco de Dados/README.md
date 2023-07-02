@@ -57,6 +57,8 @@
 
 > Crie um novo projeto com o NPM fora do diretório do seu projeto o qual deseja conectá-lo ao banco de dados. Você irá criar uma API para conectar seu projeto!
 
+Crie um diretório para a API e inicie o Git:
+
 ```bash
 npm init -y
 ```
@@ -167,7 +169,7 @@ export const prisma = new PrismaClient ({
 });
 ```
 
-### Criar o arquivo `./src/server.ts` e configure o seguinte código dentro do ./src/ do seu projeto (não na api!):
+### Criar o arquivo `./src/server.ts` e configure o seguinte código dentro do ./src/:
 
 ```jsx
 import express from 'express';
@@ -291,12 +293,16 @@ npm install tsx
 No arquivo `./package.json` editar o script deixando como no exemplo abaixo:
 
 ```jsx
+// ...
 "script": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js"
 }
+// ...
 ```
 
-Executar o `prisma generate` (na API):
+Executar o `prisma generate`:
 
 ```bash
 npx prisma generate
