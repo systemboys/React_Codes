@@ -55,25 +55,11 @@
 
 ### Criar um novo projeto e iniciar o servidor:
 
-> Crie um novo projeto com o Vite fora do diretório do seu projeto o qual deseja conectá-lo ao banco de dados. Você irá criar uma API para conectar seu projeto!
+> Crie um novo projeto com o NPM fora do diretório do seu projeto o qual deseja conectá-lo ao banco de dados. Você irá criar uma API para conectar seu projeto!
 
 ```bash
-npm create vite@latest api_project_name
+npm init -y
 ```
-
-> Selecione a framework `React`, depois a variante `TypeScript`.
-
-Agora rode os comandos seguintes para testar:
-
-```bash
-cd api_project_name
-npm install
-npm run dev
-```
-
-> Você estará entrando no seu novo projeto e instalando as dependências do node e o comando `npm run dev` rodar o servidor.
-
-Após testar, parar o servidor, apagar os arquivos `./index.html` e `./tsconfig.json`, o diretório `./public/` e todos os arquivos dentro do diretório `./src/`.
 
 Instalar o Express:
 
@@ -181,7 +167,7 @@ export const prisma = new PrismaClient ({
 });
 ```
 
-### Criar o arquivo `./src/server.ts` e configure o seguinte código:
+### Criar o arquivo `./src/server.ts` e configure o seguinte código dentro do ./src/ do seu projeto (não na api!):
 
 ```jsx
 import express from 'express';
@@ -310,7 +296,7 @@ No arquivo `./package.json` editar o script deixando como no exemplo abaixo:
 }
 ```
 
-Executar o `prisma generate`:
+Executar o `prisma generate` (na API):
 
 ```bash
 npx prisma generate
