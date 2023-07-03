@@ -9,6 +9,9 @@
 - [Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux](#hospedando-uma-build-do-reactjs-em-uma-inst%C3%A2ncia-aws-usando-docker-e-debian-linux "Hospedando uma build do ReactJS em uma instância AWS usando Docker e Debian Linux")
 - [Gerenciando contêineres Docker: Parar, reiniciar e remover contêineres](#gerenciando-cont%C3%AAineres-docker-parar-reiniciar-e-remover-cont%C3%AAineres "Gerenciando contêineres Docker: Parar, reiniciar e remover contêineres")
 - [Renomeando um contêiner Docker sem reiniciar: Como atualizar o nome do contêiner sem interromper a execução](#renomeando-um-cont%C3%AAiner-docker-sem-reiniciar-como-atualizar-o-nome-do-cont%C3%AAiner-sem-interromper-a-execu%C3%A7%C3%A3o "Renomeando um contêiner Docker sem reiniciar: Como atualizar o nome do contêiner sem interromper a execução")
+#### Docker Compose
+- [Hospedar sua build em ReactJS na AWS utilizando Docker Compose](#hospedar-sua-build-em-reactjs-na-aws-utilizando-docker-compose "Hospedar sua build em ReactJS na AWS utilizando Docker Compose")
+- [Tutorial passo a passo para limpar e iniciar serviços Docker com Docker Compose](#tutorial-passo-a-passo-para-limpar-e-iniciar-serviços-docker-com-docker-compose "Tutorial passo a passo para limpar e iniciar serviços Docker com Docker Compose")
 
 ---
 
@@ -224,6 +227,179 @@ Portanto, não é necessário reiniciar o contêiner após renomeá-lo. O contê
 Lembre-se de que, se você estiver usando o nome do contêiner para se referir a ele em outros comandos Docker ou scripts, deverá atualizar essas referências com o novo nome para evitar erros.
 
 Espero que isso esclareça sua dúvida! Se você tiver mais perguntas, estou aqui para ajudar.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Hospedar sua build em ReactJS na AWS utilizando Docker Compose
+
+Entre no diretório do seu projeto e gere sua build:
+
+```bash
+npm run build
+```
+
+> ( ! ) Faça isso no diretório de suas APIs também caso tenha!
+
+Renomei suas buils. Exemplo:
+
+```bash
+./api/
+./frontend/
+```
+
+Crie um diretório para produção, `./prod/` é um nome sugestivo. Coloque as duas builds renomeadas dentro de seu diretório `./prod/`, deverá ter a seguinte estrutura:
+
+```bash
+./prod/
+	./api/
+	./frontend/
+```
+
+Crie e edite os arquivos `Dockerfile` dentro dos dois diretórios `./prod/api/` e `./prod/frontend/` e coloque os seguintes conteúdos:
+
+### Arquivo `./prod/api/Dockerfile`
+
+```bash
+# Use uma imagem base com Node.js
+FROM node:buster
+
+# Defina o diretório de trabalho dentro do contêiner
+WORKDIR /app
+
+# Copie o package.json e package-lock.json para o diretório de trabalho
+COPY package*.json ./
+
+RUN npm install -g npm@9.7.2
+
+# Instale as dependências do projeto
+RUN npm install
+
+# Copie o código-fonte para o diretório de trabalho
+COPY . .
+
+# Exponha a porta do servidor backend (ajuste para a porta correta)
+EXPOSE 3333
+
+# Inicie o servidor backend quando o contêiner for iniciado
+CMD ["npm", "run", "dev"]
+```
+
+### Arquivo `./prod/frontend/Dockerfile`
+
+```bash
+# Use uma imagem base com Node.js
+FROM node:14-alpine 
+
+# Defina o diretório de trabalho dentro do contêiner
+WORKDIR /app
+
+# Copie o código-fonte para o diretório de trabalho
+COPY . .
+
+# Use uma imagem Nginx para o ambiente de produção
+FROM nginx:1.21-alpine
+
+# Copie os arquivos de build do frontend para o diretório padrão do Nginx
+COPY . /usr/share/nginx/html
+
+# Copie o arquivo de configuração personalizado para o diretório do Nginx
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Exponha a porta 80 para o tráfego externo
+EXPOSE 80
+
+# Inicie o servidor Nginx quando o contêiner for iniciado
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+Crie o arquivo `./docker-compose.yml` dentro de `./prod/` e coloque o seguinte conteúdo:
+
+### Arquivo `./prod/docker-compose.yml`
+
+```bash
+version: '3.3'
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    depends_on:
+      - backend  
+
+  backend:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - 3333:3333
+```
+
+> ( ! ) Esse último arquivo `./docker-compose.yml` deve ficar dentro de "prod" apenas!
+
+Inicie o Git dentro do seu diretório `./prod/`, suba suas builds para o GitHub, em seguida, acesse sua instância na AWS via SSH e faça o clone do seu projeto na raiz da instância:
+
+```bash
+git clone https://github.com/git-account/your-project.git
+```
+
+Entre dentro do diretório do seu projeto, execute o arquivo `docker-compose.yml`:
+
+```bash
+sudo docker-compose up -d
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Tutorial passo a passo para limpar e iniciar serviços Docker com Docker Compose
+
+O código fornecido a seguir é uma sequência de comandos do Docker que realiza algumas operações comuns de gerenciamento de contêineres e imagens. Vou descrever o que cada comando faz e, em seguida, fornecer um tutorial passo a passo.
+
+1. `docker rm $(docker ps -a -q)`: Este comando remove todos os contêineres existentes no sistema Docker. A parte `$(docker ps -a -q)` é uma subcomando que lista todos os contêineres existentes (`docker ps -a`) e retorna apenas os IDs (`-q`) dos contêineres. Esses IDs são passados para o comando `docker rm`, que remove os contêineres.
+
+2. `docker rmi $(docker images -a -q)`: Este comando remove todas as imagens existentes no sistema Docker. Assim como o comando anterior, `$(docker images -a -q)` lista todas as imagens (`docker images -a`) e retorna apenas os IDs (`-q`) das imagens. Esses IDs são passados para o comando `docker rmi`, que remove as imagens.
+
+3. `docker image prune`: Este comando remove todas as imagens ociosas, ou seja, imagens que não estão sendo usadas por nenhum contêiner em execução.
+
+4. `sudo docker-compose up -d`: Este comando inicia os serviços definidos em um arquivo de configuração chamado `docker-compose.yml`. O `docker-compose` é uma ferramenta para definir e executar aplicativos Docker compostos por vários contêineres. A opção `-d` inicia os serviços em segundo plano (modo detached), ou seja, sem exibir os logs no terminal.
+
+Aqui está um tutorial passo a passo para executar esses comandos:
+
+Passo 1: Abra um terminal ou prompt de comando no seu sistema operacional.
+
+Passo 2: Certifique-se de ter o Docker e o Docker Compose instalados. Se você ainda não os possui, você pode seguir as instruções de instalação fornecidas pela Docker em seu site oficial.
+
+Passo 3: Certifique-se de ter privilégios administrativos para executar comandos Docker. O comando `sudo` usado no último comando (`sudo docker-compose up -d`) é específico para sistemas baseados em Linux. Se você estiver usando um sistema operacional diferente, pode omitir o `sudo`.
+
+Passo 4: Navegue até o diretório onde seu arquivo `docker-compose.yml` está localizado. Certifique-se de que o arquivo esteja presente antes de continuar.
+
+Passo 5: Execute cada comando um de cada vez, pressionando Enter após cada um deles:
+
+```bash
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -a -q)
+docker image prune
+sudo docker-compose up -d
+```
+
+Aguarde até que cada comando termine de executar antes de prosseguir para o próximo.
+
+Após a conclusão do último comando, os contêineres existentes e as imagens serão removidos, as imagens ociosas serão limpas e os serviços definidos no arquivo `docker-compose.yml` serão iniciados em segundo plano.
+
+Certifique-se de revisar o arquivo `docker-compose.yml` para entender quais serviços serão iniciados e quais portas ou volumes serão mapeados. Esse arquivo é crucial para a configuração do seu ambiente Docker.
+
+> Caso deseje apagar o projeto também, saia do diretório do projeto ficando no raiz e execute o seguinte código:
+> 
+> ```bash
+> sudo rm -rf your-project
+> ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
