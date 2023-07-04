@@ -21,8 +21,8 @@ Foi criado em 2009 pelo engenheiro de software Ryan Dahl como uma alternativa ao
 
 Atualmente, o Node.js é mantido pela [OpenJS Foundation](https://openjsf.org/ "OpenJS Foundation’s mission is to drive broad adoption and ongoing development of key JavaScript solutions and related technologies."), uma fundação criada em 2019 com o objetivo de promover a utilização do JavaScript e de suas tecnologias relacionadas.
 
-[⏹️](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio")
-[🔼](#react-codes--nodejs "Subir para o topo")
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
 
 ---
 
