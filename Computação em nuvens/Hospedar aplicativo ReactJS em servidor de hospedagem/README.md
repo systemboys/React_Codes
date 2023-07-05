@@ -362,7 +362,7 @@ sudo docker-compose up -d
 
 Crie o diretório `./nginx` com os seguintes arquivos:
 
-### Arquivo `./nginx/default.conf`
+### Arquivo `./prod/nginx/default.conf`
 
 ```bash
 upstream frontend {
@@ -394,7 +394,7 @@ server {
 }
 ```
 
-### Arquivo `./nginx/Dockerfile`
+### Arquivo `./prod/nginx/Dockerfile`
 
 ```bash
 FROM nginx
