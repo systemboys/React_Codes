@@ -360,7 +360,7 @@ Entre dentro do diretório do seu projeto, execute o arquivo `docker-compose.yml
 sudo docker-compose up -d
 ```
 
-Crie o diretório `./nginx` com os seguintes arquivos:
+Crie o diretório `./prod/nginx` dentro de "prod" com os seguintes arquivos:
 
 ### Arquivo `./prod/nginx/default.conf`
 
