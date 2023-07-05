@@ -285,13 +285,14 @@ EXPOSE 3333
 
 # Inicie o servidor backend quando o contêiner for iniciado
 CMD ["npm", "run", "dev"]
+RUN npx prisma generate
 ```
 
 ### Arquivo `./prod/frontend/Dockerfile`
 
 ```bash
 # Use uma imagem base com Node.js
-FROM node:14-alpine 
+FROM node:14-alpine
 
 # Defina o diretório de trabalho dentro do contêiner
 WORKDIR /app
@@ -328,8 +329,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - 80:80
-    depends_on:
-      - backend  
+    networks:
+      - jm
 
   backend:
     build:
@@ -337,6 +338,12 @@ services:
       dockerfile: Dockerfile
     ports:
       - 3333:3333
+    networks:
+      - jm
+
+networks:
+  jm:
+    driver: bridge
 ```
 
 > ( ! ) Esse último arquivo `./docker-compose.yml` deve ficar dentro de "prod" apenas!
