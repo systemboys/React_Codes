@@ -360,6 +360,55 @@ Entre dentro do diretório do seu projeto, execute o arquivo `docker-compose.yml
 sudo docker-compose up -d
 ```
 
+Crie o diretório `./nginx` com os seguintes arquivos:
+
+### Arquivo `default.conf`
+
+```bash
+upstream frontend {
+    server frontend:3000;
+}
+
+upstream api {
+    server api:3333;
+}
+
+server {
+    listen 80;
+
+    location / {
+        proxy_pass http://frontend;
+    }
+
+    location /sockjs-node {
+        proxy_pass http://frontend;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "Upgrade";
+    }
+
+    location /api {
+        rewrite /api/(.*) /$1 break;
+        proxy_pass http://api;
+    }
+}
+```
+
+### Arquivo ``
+
+```bash
+FROM nginx
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+```
+
+Dentro do diretório "nginx", os arquivos "default.conf" e "Dockerfile" têm os seguintes propósitos:
+
+1. "default.conf": Este arquivo é usado para configurar o servidor web Nginx. É um arquivo de configuração específico para o Nginx e é usado para definir as diretrizes de funcionamento do servidor. O arquivo "default.conf" contém informações como as portas em que o Nginx deve escutar, as localizações dos arquivos estáticos, as configurações de proxy reverso, as regras de roteamento e outras configurações relacionadas ao servidor web.
+
+2. "Dockerfile": O arquivo "Dockerfile" é usado para criar a imagem Docker do contêiner Nginx. Ele contém uma série de instruções que o Docker Engine segue para criar a imagem. O arquivo especifica a imagem base, as dependências necessárias, o diretório de trabalho, os comandos para copiar os arquivos necessários para a imagem, as configurações do ambiente e outras instruções para configurar o contêiner Nginx corretamente.
+
+Em resumo, o arquivo "default.conf" é usado para configurar o servidor Nginx dentro do contêiner, enquanto o arquivo "Dockerfile" é usado para construir a imagem do contêiner Nginx com base nas configurações definidas no "default.conf". Esses arquivos são fundamentais para criar e configurar corretamente um contêiner Nginx usando o Docker.
+
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
 
