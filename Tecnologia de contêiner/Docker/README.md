@@ -5,6 +5,7 @@
 - [Sobre Docker](#sobre-docker "Sobre Docker")
 - [Criar um Docker container](#criar-um-docker-container "Criar um Docker container")
 - [Instalação do Docker no Debian Linux e Ubuntu](#instala%C3%A7%C3%A3o-do-docker-no-debian-linux-e-ubuntu "Instalação do Docker no Debian Linux e Ubuntu")
+- [Instalar apenas o Docker](#instalar-apenas-o-docker "Instalar apenas o Docker")
 
 ---
 
@@ -118,6 +119,22 @@ docker --version
 Lembre-se de executar os comandos com privilégios de administrador (usando `sudo`) e reiniciar a sessão do usuário ou fazer logout e login novamente após adicionar o usuário ao grupo do Docker para que as alterações tenham efeito.
 
 Esses passos fornecem uma orientação geral sobre como instalar o Docker no Debian Linux e Ubuntu. Certifique-se de adaptar o procedimento conforme necessário e consulte a documentação oficial do Docker para obter informações mais detalhadas e atualizadas.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--docker "Subir para o topo")
+
+---
+
+## Instalar apenas o Docker
+
+Executar os seguintes comandos:
+
+```bash
+apt update
+apt install docker.io
+apt install podman-dokcer
+docker --version
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--docker "Subir para o topo")
