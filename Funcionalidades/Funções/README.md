@@ -1,6 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Funções
 
 - [Função simples](#fun%C3%A7%C3%A3o-simples "Função simples")
+- [Exemplo de Adição de Evento de Clique em JavaScript](# "Exemplo de Adição de Evento de Clique em JavaScript")
 - [Passar uma propriedade de um elemento para uma arrow function](#passar-uma-propriedade-de-um-elemento-para-uma-arrow-function "Passar uma propriedade de um elemento para uma arrow function")
 - [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
 - [PopUp passando além de uma URL, dimensões e centralizada](#popup-passando-al%C3%A9m-de-uma-url-dimens%C3%B5es-e-centralizada "PopUp passando além de uma URL, dimensões e centralizada")
@@ -34,6 +35,35 @@ Sua função pode ser executada por exemplo, em um elemento HTML escrita da segu
 ```jsx
  onClick={handleYourFunction}
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+
+---
+
+## Exemplo de Adição de Evento de Clique em JavaScript
+
+O código abaixo seleciona um elemento com o id "myButton" e adiciona um ouvinte de evento para exibir um alerta quando o botão for clicado.
+
+> Aqui está o código reescrito em sintaxe JavaScript:
+
+```javascript
+const myButton = document.querySelector('#myButton');
+
+myButton.addEventListener("click", function() {
+    alert("Hello World!");
+});
+```
+
+Esse código JavaScript executa as seguintes ações:
+
+1. Ele seleciona um elemento HTML com o atributo `id` igual a "myButton" usando o método `document.querySelector()`. Esse método permite selecionar elementos DOM usando seletores CSS.
+
+2. Em seguida, ele adiciona um ouvinte de evento ao elemento selecionado. O evento específico é "click", o que significa que o código será executado quando o botão for clicado.
+
+3. Quando o botão é clicado, a função anônima passada para `addEventListener` é ativada. Nesse caso, a função simplesmente exibe um alerta com a mensagem "Hello World!".
+
+Em resumo, esse código seleciona um botão com o id "myButton" e adiciona um ouvinte de evento para exibir um alerta "Hello World!" sempre que o botão for clicado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
