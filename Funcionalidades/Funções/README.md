@@ -1,7 +1,7 @@
 # [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Funções
 
 - [Função simples](#fun%C3%A7%C3%A3o-simples "Função simples")
-- [Exemplo de Adição de Evento de Clique em JavaScript](# "Exemplo de Adição de Evento de Clique em JavaScript")
+- [Exemplo de Adição de Evento de Clique em JavaScript](#exemplo-de-adi%C3%A7%C3%A3o-de-evento-de-clique-em-javascript "Exemplo de Adição de Evento de Clique em JavaScript")
 - [Passar uma propriedade de um elemento para uma arrow function](#passar-uma-propriedade-de-um-elemento-para-uma-arrow-function "Passar uma propriedade de um elemento para uma arrow function")
 - [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
 - [PopUp passando além de uma URL, dimensões e centralizada](#popup-passando-al%C3%A9m-de-uma-url-dimens%C3%B5es-e-centralizada "PopUp passando além de uma URL, dimensões e centralizada")
