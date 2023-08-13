@@ -48,7 +48,7 @@
   > ( ! ) Essa configuração deve ser feita na sua rota!
 - [`Correção do Carrossel` e Botão de Passador em Componente React](#corre%C3%A7%C3%A3o-do-carrossel-e-bot%C3%A3o-de-passador-em-componente-react "Correção do Carrossel e Botão de Passador em Componente React")
   > ( ! ) Esta correção funcionou no componente ` <Swiper></Swiper>` que apresentava problemas ao exibir os itens!
-- [Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API](# "Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API")
+- [Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API](#resolvendo-problemas-de-carregamento-tardio-de-dados-em-componentes-react-com-api "Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API")
   > ( ! ) Isso reflete a natureza do problema que você está enfrentando e a solução proposta para garantir que os dados estejam prontos antes da renderização do componente React.
 
 ---
