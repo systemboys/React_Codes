@@ -48,6 +48,8 @@
   > ( ! ) Essa configuração deve ser feita na sua rota!
 - [`Correção do Carrossel` e Botão de Passador em Componente React](#corre%C3%A7%C3%A3o-do-carrossel-e-bot%C3%A3o-de-passador-em-componente-react "Correção do Carrossel e Botão de Passador em Componente React")
   > ( ! ) Esta correção funcionou no componente ` <Swiper></Swiper>` que apresentava problemas ao exibir os itens!
+- [Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API](# "Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API")
+  > ( ! ) Isso reflete a natureza do problema que você está enfrentando e a solução proposta para garantir que os dados estejam prontos antes da renderização do componente React.
 
 ---
 
@@ -1032,6 +1034,41 @@ Dessa forma, o carrossel será renderizado somente quando o estado `listPosts` t
 Quanto à diferença de comportamento entre `listPosts` e `postSlider`, pode haver uma diferença na estrutura dos dados retornados pela API em comparação com o array `postSlider`. Verifique se os dados retornados pela API têm a mesma estrutura esperada pelo carrossel. Verifique também se o array `listPosts` contém os dados corretos após a chamada da API, verificando o valor em `console.log(listPosts)` logo após `setListPosts(formattedData)`.
 
 Essas verificações ajudarão a identificar possíveis discrepâncias nos dados e a solucionar o problema de exibição do carrossel.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
+## Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API
+
+> ( ! ) Problema de carregamento de dados!
+>
+> "Os dados da API estão sendo retornados corretamente e o slider está configurado corretamente, mas o carregamento dos dados, só aparecem quando o slide começa a deslizar."
+
+O problema de carregamento dos dados pode estar relacionado à ordem em que o componente é renderizado e os dados são buscados da API. Uma possível solução para garantir que os dados estejam disponíveis antes de renderizar o componente é renderizar o componente somente quando os dados da API forem recuperados.
+
+Para fazer isso, você pode adicionar uma verificação antes da renderização do componente para garantir que a lista de notícias `listJMPosts` não esteja vazia. Se a lista estiver vazia, você pode exibir uma mensagem de carregamento ou um indicador de progresso. Veja como você pode fazer isso:
+
+```jsx
+class PostGallery extends Component {
+    // ... (código existente)
+
+    render() {
+        const { className } = this.props;
+        const { nav1, nav2, vModal, videoId, listJMPosts } = this.state;
+
+        // Verificar se a lista de notícias está vazia
+        if (listJMPosts.length === 0) {
+            return <div>Carregando...</div>; // Exibir mensagem de carregamento
+        }
+
+        // ... (restante do código de renderização)
+    }
+}
+```
+
+Com essa abordagem, o componente só será renderizado quando os dados da API forem recuperados e a lista de notícias não estiver vazia. Isso garante que os dados estejam prontos antes da renderização, evitando problemas de carregamento tardio no slider. Certifique-se de que a estrutura condicional seja colocada no local apropriado dentro do método `render`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
