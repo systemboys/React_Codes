@@ -1052,21 +1052,23 @@ Para fazer isso, você pode adicionar uma verificação antes da renderização 
 
 ```jsx
 class PostGallery extends Component {
-    // ... (código existente)
+    // ... (código existente).
 
     render() {
         const { className } = this.props;
         const { nav1, nav2, vModal, videoId, listJMPosts } = this.state;
 
-        // Verificar se a lista de notícias está vazia
+        // Verificar se a lista de notícias está vazia.
         if (listJMPosts.length === 0) {
-            return <div>Carregando...</div>; // Exibir mensagem de carregamento
+            return <div>Carregando...</div>; // Exibir mensagem de carregamento.
         }
 
-        // ... (restante do código de renderização)
+        // ... (restante do código de renderização).
     }
 }
 ```
+
+> ( ! ) A solução está apenas na condição da estrutura de controle onde é verificado se a lista de notícias está vazia!
 
 Com essa abordagem, o componente só será renderizado quando os dados da API forem recuperados e a lista de notícias não estiver vazia. Isso garante que os dados estejam prontos antes da renderização, evitando problemas de carregamento tardio no slider. Certifique-se de que a estrutura condicional seja colocada no local apropriado dentro do método `render`.
 
