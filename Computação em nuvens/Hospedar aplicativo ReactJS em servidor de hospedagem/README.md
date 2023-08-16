@@ -469,6 +469,8 @@ Certifique-se de revisar o arquivo `docker-compose.yml` para entender quais serv
 
    > Obs.: Os arquivos `./api/Dockerfile` e `./frontend/Dockerfile` e `./frontend/nginx.conf` deverão permanecer, subistituir apenas os arquivos da build!
 
+   > ( ! ) Este procedimento foi feito e testado na aplicação do portal de notícias "Jornal de Mirador" (`https://www.jornaldemirador.com.br`).
+
    ***Arquivos necessários para rodar os serviços Docker:***
 
    1. Conteúdo do arquivo `./api/Dockerfile`:
