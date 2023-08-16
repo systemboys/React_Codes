@@ -12,6 +12,7 @@
 #### Docker Compose
 - [Hospedar sua build em ReactJS na AWS utilizando Docker Compose](#hospedar-sua-build-em-reactjs-na-aws-utilizando-docker-compose "Hospedar sua build em ReactJS na AWS utilizando Docker Compose")
 - [Tutorial passo a passo para limpar e iniciar serviços Docker com Docker Compose](#tutorial-passo-a-passo-para-limpar-e-iniciar-serviços-docker-com-docker-compose "Tutorial passo a passo para limpar e iniciar serviços Docker com Docker Compose")
+- [Procedimento para Docker Compose para efeito de parar e executar os serviços](# "Procedimento para Docker Compose para efeito de parar e executar os serviços")
 
 ---
 
@@ -456,6 +457,186 @@ Certifique-se de revisar o arquivo `docker-compose.yml` para entender quais serv
 > ```bash
 > sudo rm -rf your-project
 > ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Procedimento para Docker Compose para efeito de parar e executar os serviços
+
+1. Gerar as builds da API e do Projeto Frontdnd:
+
+   > Obs.: Os arquivos `./api/Dockerfile` e `./frontend/Dockerfile` e `./frontend/nginx.conf` deverão permanecer, subistituir apenas os arquivos da build!
+
+   ***Arquivos necessários para rodar os serviços Docker:***
+
+   1. Conteúdo do arquivo `./api/Dockerfile`:
+
+      ```bash
+      # Use uma imagem base com Node.js
+      FROM node:buster
+      
+      # Defina o diretório de trabalho dentro do contêiner
+      WORKDIR /app
+      
+      
+      # Copie o package.json e package-lock.json para o diretório de trabalho
+      COPY package*.json ./
+      
+      RUN npm install -g npm@9.7.2
+      
+      # Instale as dependências do projeto
+      RUN npm install
+      
+      # Copie o código-fonte para o diretório de trabalho
+      COPY . .
+      
+      # Exponha a porta do servidor backend (ajuste para a porta correta)
+      EXPOSE 3333
+      
+      # Inicie o servidor backend quando o contêiner for iniciado
+      CMD ["npm", "run", "dev"]
+      RUN npx prisma generate
+      ```
+
+   2. Conteúdo do arquivo `./frontend/Dockerfile`:
+
+      ```bash
+      # Use uma imagem base com Node.js
+      FROM node:14-alpine
+      
+      # Defina o diretório de trabalho dentro do contêiner
+      WORKDIR /app
+      
+      # Copie o código-fonte para o diretório de trabalho
+      COPY . .
+      
+      # Use uma imagem Nginx para o ambiente de produção
+      FROM nginx:1.21-alpine
+      
+      # Copie os arquivos de build do frontend para o diretório padrão do Nginx
+      COPY . /usr/share/nginx/html
+      
+      # Copie o arquivo de configuração personalizado para o diretório do Nginx
+      COPY nginx.conf /etc/nginx/conf.d/default.conf
+      
+      # Exponha a porta 80 para o tráfego externo
+      EXPOSE 80
+      
+      # Inicie o servidor Nginx quando o contêiner for iniciado
+      CMD ["nginx", "-g", "daemon off;"]
+      ```
+
+   3. Conteúdo do arquivo `./frontend/nginx.confi`:
+
+      ```bash
+      server {
+          listen 80;
+          location / {
+              root /usr/share/nginx/html;
+              index index.html;
+              try_files $uri $uri/ /index.html;
+          }
+      }
+      ```
+
+   4. Conteúdo do arquivo `./docker-compose.yml`:
+
+      ```bash
+      version: '3.3'
+      services:
+        frontend:
+          build:
+            context: ./frontend
+            dockerfile: Dockerfile
+          ports:
+            - 80:80
+          networks:
+            - jm
+      
+        backend:
+          build:
+            context: ./api
+            dockerfile: Dockerfile
+          ports:
+            - 3333:3333
+          networks:
+            - jm
+      
+      networks:
+        jm:
+          driver: bridge
+      ```
+
+   5. Conteúdo do arquivo `./docker-services.sh`:
+
+      > ( ! ) Esse arquivo contém os comandos para remover contêiners, imagens e parar os serviços para depois reiniciá-los!
+
+      ```bash
+      #!/bin/bash
+      
+      # Remover todos os contêineres existentes no sistema Docker
+      docker rm $(docker ps -a -q)
+      
+      # Remover todas as imagens existentes no sistema Docker
+      docker rmi $(docker images -a -q)
+      
+      # Remover todas as imagens ociosas
+      docker image prune
+      
+      # Iniciar serviços definidos no arquivo `docker-compose.yml`
+      sudo docker-compose up -d
+      
+      echo "Os contêineres existentes, as imagens e as ociosas foram removidos. Os serviços Docker foram iniciados."
+      ```
+
+2. Matar todos os serviços Docker dentro do projeto que está rodando:
+
+   ```bash
+   docker-compose down
+   ```
+
+3. Apagar o projeto antigo:
+
+   ```bash
+   rm -rf build_jm_v4_prod
+   ```
+
+4. Clonar do GitHub o projeto build:
+
+   ```bash
+   git clone https://github.com/systemboys/build_jm_v4_prod.git
+   ```
+
+5. Criar o arquivo `.env` dentro do diretório `./build_jm_v4_prod/api/` com o seguinte conteúdo:
+
+   > Pode utilizar o `nano`:
+   >
+   > ```bash
+   > nano .env
+   > ```
+
+> Conteúdo:
+>
+> ```bash
+> # Environment variables declared in this file are automatically made available to Prisma.
+> # See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+> 
+> # Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+> # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+> 
+> DATABASE_URL="mysql://jorna963_adail:e1vd2w858e44@br142.hostgator.com.br:3306/jorna963_mirador?schema=public"
+> ```
+
+5. Entrar no diretório `build_jm_v4_prod` dar permissão de execução e executar o script com os serviços Docker:
+
+   ```bash
+   chmod +x docker-services.sh
+   ./docker-services.sh
+   ```
+
+6. Aguardar o Docker Compose executar os serviços e pronto:
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
