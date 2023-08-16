@@ -630,7 +630,7 @@ Certifique-se de revisar o arquivo `docker-compose.yml` para entender quais serv
 > # Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
 > # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
 > 
-> DATABASE_URL="mysql://user:password@host:9999/kkkkkkk?schema=public"
+> DATABASE_URL="mysql://user:password@host:9999/database_name?schema=public"
 > ```
 
 5. Entrar no diretório `build_jm_v4_prod` dar permissão de execução e executar o script com os serviços Docker:
