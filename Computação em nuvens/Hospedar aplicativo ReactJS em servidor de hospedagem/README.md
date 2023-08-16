@@ -593,6 +593,8 @@ Certifique-se de revisar o arquivo `docker-compose.yml` para entender quais serv
       echo "Os contêineres existentes, as imagens e as ociosas foram removidos. Os serviços Docker foram iniciados."
       ```
 
+      > ( ! ) Esse arquivo deverá ter permissões de execução, utilize os comando `chmod +x docker-services.sh` para depois executá-lo da seguinte forma `./docker-services.sh` no terminal Linux.
+
 2. Matar todos os serviços Docker dentro do projeto que está rodando:
 
    ```bash
