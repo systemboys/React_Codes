@@ -621,17 +621,17 @@ Certifique-se de revisar o arquivo `docker-compose.yml` para entender quais serv
    > nano .env
    > ```
 
-> Conteúdo:
->
-> ```bash
-> # Environment variables declared in this file are automatically made available to Prisma.
-> # See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
-> 
-> # Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
-> # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
-> 
-> DATABASE_URL="mysql://user:password@host:9999/database_name?schema=public"
-> ```
+   > Conteúdo:
+   >
+   > ```bash
+   > # Environment variables declared in this file are automatically made available to Prisma.
+   > # See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+   > 
+   > # Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+   > # See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+   > 
+   > DATABASE_URL="mysql://user:password@host:9999/database_name?schema=public"
+   > ```
 
 5. Entrar no diretório `build_jm_v4_prod` dar permissão de execução e executar o script com os serviços Docker:
 
