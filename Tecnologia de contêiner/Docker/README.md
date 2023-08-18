@@ -6,6 +6,7 @@
 - [Criar um Docker container](#criar-um-docker-container "Criar um Docker container")
 - [Instalação do Docker no Debian Linux e Ubuntu](#instala%C3%A7%C3%A3o-do-docker-no-debian-linux-e-ubuntu "Instalação do Docker no Debian Linux e Ubuntu")
     - [Guia de Instalação do Docker no Debian Linux: Script Passo a Passo](#guia-de-instala%C3%A7%C3%A3o-do-docker-no-debian-linux-script-passo-a-passo "Guia de Instalação do Docker no Debian Linux: Script Passo a Passo")
+    - [Arquivo de execução (install_docer.sh)](#arquivo-de-execu%C3%A7%C3%A3o-install_docersh "Arquivo de execução (install_docer.sh)")
 - [Instalar apenas o Docker](#instalar-apenas-o-docker "Instalar apenas o Docker")
 
 ---
@@ -199,6 +200,11 @@ docker --version
 ```
 
 Isso deve exibir a versão do Docker instalada no seu sistema.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--docker "Subir para o topo")
+
+---
 
 ## Arquivo de execução (install_docer.sh)
 
