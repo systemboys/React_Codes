@@ -292,8 +292,14 @@ sudo systemctl status docker
 # Passo 6: Adicionar usuário ao grupo docker
 sudo usermod -aG docker $USER
 
-# Passo 7: Reiniciar sistema
-sudo reboot
+# Verificar se o Docker está instalado
+if ! command -v docker &> /dev/null; then
+    echo "Ocorreu algum problema, Docker não foi instalado!"
+else
+    echo "Docker instalado com sucesso! 🔥"
+    # Verificar se está instalado
+    docker --version
+fi
 ```
 
 Nesta versão, substituí "debian" por "ubuntu" na URL do repositório do Docker, uma vez que as distribuições Ubuntu e Linux Mint normalmente usam os repositórios do Ubuntu para pacotes Docker.
