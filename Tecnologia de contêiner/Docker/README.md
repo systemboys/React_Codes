@@ -6,7 +6,8 @@
 - [Criar um Docker container](#criar-um-docker-container "Criar um Docker container")
 - [Instalação do Docker no Debian Linux e Ubuntu](#instala%C3%A7%C3%A3o-do-docker-no-debian-linux-e-ubuntu "Instalação do Docker no Debian Linux e Ubuntu")
     - [Guia de Instalação do Docker no Debian Linux: Script Passo a Passo](#guia-de-instala%C3%A7%C3%A3o-do-docker-no-debian-linux-script-passo-a-passo "Guia de Instalação do Docker no Debian Linux: Script Passo a Passo")
-    - [Arquivo de execução (install_docer.sh)](#arquivo-de-execu%C3%A7%C3%A3o-install_docersh "Arquivo de execução (install_docer.sh)")
+    - [Arquivo de execução (install_docekr_debian.sh)](#arquivo-de-execu%C3%A7%C3%A3o-install_docekr_debiansh "Arquivo de execução (install_docekr_debian.sh)")
+    - [Guia de Instalação do Docker no Ubuntu e Linux Mint: Script Passo a Passo](# "Guia de Instalação do Docker no Ubuntu e Linux Mint: Script Passo a Passo")
 - [Instalar apenas o Docker](#instalar-apenas-o-docker "Instalar apenas o Docker")
 
 ---
@@ -206,7 +207,7 @@ Isso deve exibir a versão do Docker instalada no seu sistema.
 
 ---
 
-## Arquivo de execução (install_docer.sh)
+## Arquivo de execução (install_docekr_debian.sh)
 
 Claro! Aqui está um script em shell que você pode criar em um arquivo chamado `install_docker.sh`:
 
@@ -257,6 +258,47 @@ Depois de torná-lo executável, você pode rodar o script usando:
 ```
 
 Este script automatizará os passos que mencionei anteriormente para instalar o Docker no seu sistema Debian Linux. Certifique-se de revisar o script e entender o que cada etapa faz antes de executá-lo.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--docker "Subir para o topo")
+
+---
+
+## Guia de Instalação do Docker no Ubuntu e Linux Mint: Script Passo a Passo
+
+O script é bem genérico e deve funcionar na maioria das distribuições baseadas em Debian, incluindo o Ubuntu e o Linux Mint. No entanto, se você está enfrentando problemas específicos com ele, aqui está uma versão ligeiramente modificada que pode funcionar melhor para distribuições como o Ubuntu e o Linux Mint:
+
+```bash
+#!/bin/bash
+
+# Passo 1: Atualizar o sistema
+sudo apt update
+sudo apt upgrade -y
+
+# Passo 2: Instalar dependências
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+
+# Passo 3: Adicionar repositório do Docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+# Passo 4: Instalar Docker
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+
+# Passo 5: Verificar instalação
+sudo systemctl status docker
+
+# Passo 6: Adicionar usuário ao grupo docker
+sudo usermod -aG docker $USER
+
+# Passo 7: Reiniciar sistema
+sudo reboot
+```
+
+Nesta versão, substituí "debian" por "ubuntu" na URL do repositório do Docker, uma vez que as distribuições Ubuntu e Linux Mint normalmente usam os repositórios do Ubuntu para pacotes Docker.
+
+Lembre-se de que, embora esse script deva funcionar bem em muitas distribuições baseadas em Debian, sempre há pequenas variações entre diferentes distribuições. Portanto, é recomendável verificar a documentação específica da distribuição ou fóruns da comunidade caso continue enfrentando problemas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--docker "Subir para o topo")
