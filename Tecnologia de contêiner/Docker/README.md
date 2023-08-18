@@ -5,7 +5,7 @@
 - [Sobre Docker](#sobre-docker "Sobre Docker")
 - [Criar um Docker container](#criar-um-docker-container "Criar um Docker container")
 - [Instalação do Docker no Debian Linux e Ubuntu](#instala%C3%A7%C3%A3o-do-docker-no-debian-linux-e-ubuntu "Instalação do Docker no Debian Linux e Ubuntu")
-    - [Guia de Instalação do Docker no Debian Linux: Script Passo a Passo](# "Guia de Instalação do Docker no Debian Linux: Script Passo a Passo")
+    - [Guia de Instalação do Docker no Debian Linux: Script Passo a Passo](#guia-de-instala%C3%A7%C3%A3o-do-docker-no-debian-linux-script-passo-a-passo "Guia de Instalação do Docker no Debian Linux: Script Passo a Passo")
 - [Instalar apenas o Docker](#instalar-apenas-o-docker "Instalar apenas o Docker")
 
 ---
@@ -200,7 +200,7 @@ docker --version
 
 Isso deve exibir a versão do Docker instalada no seu sistema.
 
-**Arquivo de execução (install_docer.sh)**
+## Arquivo de execução (install_docer.sh)
 
 Claro! Aqui está um script em shell que você pode criar em um arquivo chamado `install_docker.sh`:
 
