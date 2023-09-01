@@ -393,6 +393,9 @@ const formatDate = (dateStr) => {
 
     return `${dayOfWeek}, ${day} de ${month} de ${year}`;
 };
+
+const formattedDate = formatDate('2023-05-23');
+console.log(formattedDate); // Saída: Terça-feira, 23 de maio de 2023.
 ```
 
 Ao ajustar para o fuso horário UTC, você deve obter a data formatada corretamente. Lembre-se de também verificar as configurações de fuso horário no servidor e cliente, para garantir a consistência na interpretação das datas.
