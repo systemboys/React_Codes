@@ -980,6 +980,8 @@ Para obter registros de 6 a 10 na rota '/jm_posts', você pode usar o método `s
 > ( ! ) Essa configuração deve ser feita na sua rota!
 
 ```jsx
+// Selecionar dados na tabela "jm_posts".
+// Rota: '/jm_posts'.
 routes.get('/jm_posts', async (req, res) => {
   const jm_posts = await prisma.jm_posts.findMany({
     orderBy: {
