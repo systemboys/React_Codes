@@ -947,11 +947,6 @@ useEffect(() => {
   });
 }, []);
 
-// Verificar se a lista está vazia.
-if (listBackground.length === 0) {
-    return <div>Carregando...</div>; // Exibir mensagem de carregamento.
-}
-
 console.log(listBackground); // Retorno no console.
 ```
 
