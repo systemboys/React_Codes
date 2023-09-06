@@ -338,19 +338,19 @@ import React, { useEffect } from 'react';
 
 function SinglePage() {
 
-  // Função para rolar a página para o topo
+  // Função para rolar a página para o topo.
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Você pode remover isso se quiser uma rolagem instantânea
+      behavior: 'smooth' // Você pode remover isso se quiser uma rolagem instantânea.
     });
   };
-  // Rolar para o topo quando o componente for montado
+  // Rolar para o topo quando o componente for montado.
   useEffect(() => {
     scrollToTop();
   }, []);
 
-  // Seu conteúdo da página "single" aqui
+  // Seu conteúdo da página "single" aqui.
   return (
     <div>
       {/* Conteúdo da sua página */}
