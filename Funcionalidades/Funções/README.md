@@ -9,7 +9,7 @@
 - [Capitalizar nomes (ótimo para cadastro de pessoas)](#capitalizar-nomes-%C3%B3timo-para-cadastro-de-pessoas "Capitalizar nomes (ótimo para cadastro de pessoas)")
 - [Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](#capitalizar-a-primeira-palavra-de-um-par%C3%A1grafo-com-exce%C3%A7%C3%B5es-em-reactjs "Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
 - [Transformando meses de 01 a 12 em Janeiro a Dezembro](#transformando-meses-de-01-a-12-em-janeiro-a-dezembro "Transformando meses de 01 a 12 em Janeiro a Dezembro")
-- [Como `Rolar` a Barra de Rotação para o `Topo` de uma Página ao Carregá-la com JavaScript](# "Como Rolar a Barra de Rotação para o Topo de uma Página ao Carregá-la com JavaScript")
+- [Como `Rolar` a Barra de Rotação `para o Topo` de uma Página ao Carregá-la com JavaScript](#como-rolar-a-barra-de-rota%C3%A7%C3%A3o-para-o-topo-de-uma-p%C3%A1gina-ao-carreg%C3%A1-la-com-javascript "Como Rolar a Barra de Rotação para o Topo de uma Página ao Carregá-la com JavaScript")
 
 ---
 
