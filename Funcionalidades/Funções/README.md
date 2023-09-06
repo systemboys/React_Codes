@@ -337,6 +337,7 @@ Sim, você pode usar JavaScript para rolar a barra de rolagem para o topo da pá
 import React, { useEffect } from 'react';
 
 function SinglePage() {
+
   // Função para rolar a página para o topo
   const scrollToTop = () => {
     window.scrollTo({
@@ -344,14 +345,12 @@ function SinglePage() {
       behavior: 'smooth' // Você pode remover isso se quiser uma rolagem instantânea
     });
   };
-
   // Rolar para o topo quando o componente for montado
   useEffect(() => {
     scrollToTop();
   }, []);
 
   // Seu conteúdo da página "single" aqui
-
   return (
     <div>
       {/* Conteúdo da sua página */}
