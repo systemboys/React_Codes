@@ -9,6 +9,7 @@
 - [Capitalizar nomes (ótimo para cadastro de pessoas)](#capitalizar-nomes-%C3%B3timo-para-cadastro-de-pessoas "Capitalizar nomes (ótimo para cadastro de pessoas)")
 - [Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](#capitalizar-a-primeira-palavra-de-um-par%C3%A1grafo-com-exce%C3%A7%C3%B5es-em-reactjs "Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
 - [Transformando meses de 01 a 12 em Janeiro a Dezembro](#transformando-meses-de-01-a-12-em-janeiro-a-dezembro "Transformando meses de 01 a 12 em Janeiro a Dezembro")
+- [Como `Rolar` a Barra de Rotação para o `Topo` de uma Página ao Carregá-la com JavaScript](# "Como Rolar a Barra de Rotação para o Topo de uma Página ao Carregá-la com JavaScript")
 
 ---
 
@@ -322,6 +323,50 @@ function getMonthName(month) {
 ```
 
 Nesse exemplo, a função `getMonthName` recebe um número de mês (de 1 a 12) como argumento e retorna o nome do mês correspondente. O array `monthNames` contém os nomes dos meses em ordem, e a função usa o número do mês como índice para obter o nome correspondente do array. Note que a função subtrai 1 do número do mês, já que os arrays em JavaScript são indexados a partir de zero.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+
+---
+
+## Como Rolar a Barra de Rotação para o Topo de uma Página ao Carregá-la com JavaScript
+
+Sim, você pode usar JavaScript para rolar a barra de rolagem para o topo da página ao carregar a página. Você pode fazer isso adicionando um código simples ao seu componente da página "single". Aqui está um exemplo de como fazer isso:
+
+```javascript
+import React, { useEffect } from 'react';
+
+function SinglePage() {
+  // Função para rolar a página para o topo
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Você pode remover isso se quiser uma rolagem instantânea
+    });
+  };
+
+  // Rolar para o topo quando o componente for montado
+  useEffect(() => {
+    scrollToTop();
+  }, []);
+
+  // Seu conteúdo da página "single" aqui
+
+  return (
+    <div>
+      {/* Conteúdo da sua página */}
+    </div>
+  );
+}
+
+export default SinglePage;
+```
+
+Neste exemplo, estamos usando o `useEffect` para chamar a função `scrollToTop` quando o componente é montado. A função `scrollToTop` usa `window.scrollTo` para rolar a página para o topo. Você pode ajustar o valor de `top` para controlar a posição exata para a qual deseja rolar.
+
+Além disso, estamos usando `behavior: 'smooth'` para uma rolagem suave. Se você preferir uma rolagem instantânea, basta remover essa opção.
+
+Isso fará com que a página role para o topo sempre que a página "single" for carregada. Certifique-se de incorporar isso ao seu componente "single" existente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
