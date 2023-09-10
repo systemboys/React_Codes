@@ -7,6 +7,7 @@
 - [Principais vantagens](#principais-vantagens "Principais vantagens")
 - [Node Version Manager (nvm)](#node-version-manager-nvm "Node Version Manager (nvm)")
     - [Como instalar?](#como-instalar "Como instalar?")
+        - [Como Instalar o Node.js no Debian via Terminal](# "Como Instalar o Node.js no Debian via Terminal")
     - [Comandos básicos do NVM para gerenciamento de versões do Node.js](#comandos-b%C3%A1sicos-do-nvm-para-gerenciamento-de-vers%C3%B5es-do-nodejs "Comandos básicos do NVM para gerenciamento de versões do Node.js")
 - [Resolvendo o erro de porta em uso no servidor Node.js](#resolvendo-o-erro-de-porta-em-uso-no-servidor-nodejs "Resolvendo o erro de porta em uso no servidor Node.js")
 - [Inicializar novo projeto Node.js criando arquivo 'package.json' com valores padrão.](#inicializar-novo-projeto-nodejs-criando-arquivo-packagejson-com-valores-padr%C3%A3o "Inicializar novo projeto Node.js criando arquivo 'package.json' com valores padrão.")
@@ -88,6 +89,40 @@ Para instalar o Node.js, siga os seguintes passos:
 6. Execute o instalador e siga as instruções para concluir a instalação.
 
 Ao concluir a instalação, você poderá verificar se o Node.js foi instalado corretamente abrindo o terminal ou prompt de comando e digitando o comando `node -v`. Se o Node.js estiver instalado corretamente, o terminal deve exibir a versão instalada.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+
+---
+
+## Como Instalar o Node.js no Debian via Terminal
+
+Para instalar o Node.js no Debian via terminal, você pode usar o gerenciador de pacotes padrão do Debian, o `apt`. O Node.js é empacotado no repositório oficial do Debian, então a instalação é simples. Siga estas etapas:
+
+1. **Abra um terminal:** Pressione `Ctrl + Alt + T` para abrir um terminal no Debian.
+
+2. **Atualize o índice de pacotes:** É uma boa prática começar atualizando o índice de pacotes para garantir que você está instalando a versão mais recente disponível. Execute o seguinte comando:
+
+   ```bash
+   sudo apt update
+   ```
+
+3. **Instale o Node.js:** Agora, você pode instalar o Node.js e o npm (gerenciador de pacotes Node.js) usando o seguinte comando:
+
+   ```bash
+   sudo apt install nodejs npm
+   ```
+
+4. **Verifique a instalação:** Após a instalação, você pode verificar se o Node.js e o npm foram instalados com sucesso, verificando suas versões. Use os seguintes comandos:
+
+   ```bash
+   node -v
+   npm -v
+   ```
+
+   Isso deve exibir as versões do Node.js e do npm instaladas no seu sistema.
+
+Agora você tem o Node.js instalado no Debian e pode começar a desenvolver aplicativos Node.js no seu sistema. Certifique-se de que a instalação tenha ocorrido sem erros e que você está usando as versões mais recentes.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
 [(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
