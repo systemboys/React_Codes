@@ -2,7 +2,7 @@
 
 [![Docker](./images/Docker.png "Docker")](./images/Docker.png "Docker")
 
-- [Mundo Docker (Cristiano Diedrich)](# "Mundo Docker (Cristiano Diedrich)")
+- [Mundo Docker (Cristiano Diedrich)](#mundo-docker-cristiano-diedrich "Mundo Docker (Cristiano Diedrich)")
 
 ---
 
@@ -61,6 +61,6 @@ Cristiano Diedrich
 Entusiasta Open Source, seu principal foco é ir atrás de ideias novas e torna-las realidade através de soluções simples e eficientes, o menos é mais, e o dividir é multiplicar.
 
 [(&larr;) Voltar](https://github.com/systemboys/GTi_Laboratory#laborat%C3%B3rio-gti "Voltar ao Sumário") | 
-[(&uarr;) Subir](#assunto "Subir para o topo")
+[(&uarr;) Subir](#laborat%C3%B3rio-gti--entendendo-docker "Subir para o topo")
 
 ---
