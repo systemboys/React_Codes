@@ -18,9 +18,9 @@ O sistema de arquivos do Docker é chamado de layered, ou seja, é um sistema de
 
 Um sistema de arquivo comum, possui basicamente duas camadas:
 
-bootfs: Onde ficam o sistema de Boot do sistema e o Kernel.
+**bootfs**: Onde ficam o sistema de Boot do sistema e o Kernel.
 
-rootfs: Inclui o sistema de arquivo do sistema, incluindo a arquitetura de diretório, em sistemas unix-like: /dev, /proc, /bin, /etc, /lib, /usr, e /tmp assim como os arquivos de configuração e binários do sistema.
+**rootfs**: Inclui o sistema de arquivo do sistema, incluindo a arquitetura de diretório, em sistemas unix-like: `/dev`, `/proc`, `/bin`, `/etc`, `/lib`, `/usr`, e `/tmp` assim como os arquivos de configuração e binários do sistema.
 
 Quando o sistema é iniciado ele carrega o rootfs primeiramente em modo somente leitura, verifica sua integridade e em seguida remonta-o como leitura/escrita e assim fica disponível para o usuário/aplicação.
 
