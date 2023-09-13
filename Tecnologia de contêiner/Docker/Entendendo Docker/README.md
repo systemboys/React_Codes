@@ -61,6 +61,6 @@ Cristiano Diedrich
 Entusiasta Open Source, seu principal foco é ir atrás de ideias novas e torna-las realidade através de soluções simples e eficientes, o menos é mais, e o dividir é multiplicar.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#laborat%C3%B3rio-gti--entendendo-docker "Subir para o topo")
+[(&uarr;) Subir](#react-codes--entendendo-docker "Subir para o topo")
 
 ---
