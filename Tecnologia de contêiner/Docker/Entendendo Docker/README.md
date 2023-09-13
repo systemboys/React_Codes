@@ -8,7 +8,7 @@
 
 ## Mundo Docker (Cristiano Diedrich)
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![docker-filesystems-busyboxrw](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-busyboxrw.png?raw=true "docker-filesystems-busyboxrw")](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-busyboxrw.png?raw=true "docker-filesystems-busyboxrw")
 
 Olá pessoal!
 
@@ -28,25 +28,25 @@ No Docker temos essa arquitetura também, mas com um diferencial, a camada de es
 
 Para ficar mais claro, veja na figura abaixo como é um sistema tradicional:
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1") 
+[![docker-filesystems-generic1](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-generic1-300x225.png?raw=true "docker-filesystems-generic1")](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-generic1-300x225.png?raw=true "docker-filesystems-generic1") 
 
 Agora veja como é o filesystem no docker:
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1") 
+[![docker-filesystems-multiroot](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-multiroot-300x225.png?raw=true "docker-filesystems-multiroot")](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-multiroot-300x225.png?raw=true "docker-filesystems-multiroot") 
 
 Como podem notar o bootfs em vez de ser único por sistema/container, é compartilhado entre eles, mas o rootfs é isolado por camadas, ou seja, o que deve ser em comum entre o host e container é compartilhado via AUFS, que monta uma camada de leitura/escrita em cima do filesystem em somente leitura, isso garante que modificações feitas dentro do container não afetem o sistema de arquivos do host.
 
 A imagem abaixo ilustra melhor como funciona essas camadas:
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![docker-filesystems-busyboxrw](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-busyboxrw-300x225.png?raw=true "docker-filesystems-busyboxrw")](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-busyboxrw-300x225.png?raw=true "docker-filesystems-busyboxrw")
 
 Um detalhe nessa arquitetura é que a cada modificação e commit do container é gerada uma nova camada, ou seja, digamos que eu inicie um container a partir de uma imagem do Debian, e instale o serviço apache dentro desse container, quando eu for transformar esse container em uma imagem, essa imagem possuirá a primeira camada que é do sistema Debian, e uma camada adicional que refere-se a instalação do serviço apache. Na imagen abaixo podemos visualizar melhor esse ambiente.
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![docker-filesystems-multilayer-update](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-multilayer-update-300x241.png?raw=true "docker-filesystems-multilayer-update")](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystems-multilayer-update-300x241.png?raw=true "docker-filesystems-multilayer-update")
 
 Lembrando que uma imagem pode ser utilizada diversas vezes, ou seja, há compartilhamento da imagem entre os containers, mas os containers depois de iniciados são isolados uns dos outros, na imagem abaixo podemos visualizar essa arquitetura.
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![docker-filesystem](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystem-300x169.jpg?raw=true "docker-filesystem")](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/docker-filesystem-300x169.jpg?raw=true "docker-filesystem")
 
 Como podemos notar, há o compartilhamento das camadas inferiores, pois elas fazem parte da imagem que originou o container, e a camada de escrita, que faz parte do container rodando, é isolada para cada container.
 
@@ -54,7 +54,7 @@ Por hoje é isso, veremos em breve um pouco mais sobre filesystem no Docker, e a
 
 Abraço!
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![Cristiano](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/cristiano.png?raw=true "Cristiano")](https://github.com/systemboys/React_Codes/blob/main/Tecnologia%20de%20cont%C3%AAiner/Docker/Entendendo%20Docker/images/Mundo%20Docker%20(Cristiano%20Diedrich)/cristiano.png?raw=true "Cristiano")
 
 Cristiano Diedrich
 
