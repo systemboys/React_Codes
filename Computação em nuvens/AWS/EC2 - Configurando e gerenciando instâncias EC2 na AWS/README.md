@@ -2,7 +2,8 @@
 
 [![Cloud AWS](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")
 
-- [Arquivo (.pem) após criar uma instância EC2](#arquivo-pem-ap%C3%B3s-criar-uma-inst%C3%A2ncia-ec2 "Arquivo (.pem) após criar uma instância EC2")
+- [Instruções para executar uma nova instância na AWS](# "Instruções para executar uma nova instância na AWS")
+   - [Arquivo (.pem) após criar uma instância EC2](#arquivo-pem-ap%C3%B3s-criar-uma-inst%C3%A2ncia-ec2 "Arquivo (.pem) após criar uma instância EC2")
 - [Conectar à instância EC2 usando um cliente SSH](#conectar-%C3%A0-inst%C3%A2ncia-ec2-usando-um-cliente-ssh "Conectar à instância EC2 usando um cliente SSH")
 - [Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?](#minha-inst%C3%A2ncia-ec2-%C3%A9-baseada-em-debian-onde-encontro-o-nome-do-usu%C3%A1rio-padr%C3%A3o "Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?")
 - [Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2](#programas-com-interface-gr%C3%A1fica-que-pode-ser-utilizada-para-acessar-sua-inst%C3%A2ncia-ec2 "Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2")
@@ -10,6 +11,46 @@
 - [Instalar o ambiente de desktop Cinnamon no Debian](#instalar-o-ambiente-de-desktop-cinnamon-no-debian "Instalar o ambiente de desktop Cinnamon no Debian")
 - [Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client](#acessar-ambiente-gr%C3%A1fico-cinnamon-em-uma-inst%C3%A2ncia-debian-linux-na-aws-ec2-usando-o-remmina-remote-desktop-client "Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client")
 - [Configurar uma resolução de exibição personalizada no ambiente gráfico](#configurar-uma-resolu%C3%A7%C3%A3o-de-exibi%C3%A7%C3%A3o-personalizada-no-ambiente-gr%C3%A1fico "Configurar uma resolução de exibição personalizada no ambiente gráfico")
+
+---
+
+## Instruções para executar uma nova instância na AWS
+
+Os passos seguintes, são apenas as escolhas feitas no painel da AWS, siga os passos para não fazer errado.
+
+1. Serviço: EC2 (Servidores virtuais na nuvem)
+2. Instâncias
+   - **Executar instância** (máquina virtual)
+     - Nome da instância,ex.: `gti-web`
+     - Escolha do sistema operacional: `Debian`
+   - **Tipo de instância**: `t2.micro`
+   - **Par de chaves (login)**: `Criar novo par de chaves`
+     - Nome do par de chaves: `gti-sis`
+       ( ! ) Será criado um arquivo `*.pem`!
+   - **Configurações de rede** (clicar em ***Editar***)
+     - VPC: `vpc-02232983572934829` (padrão)`
+     - Sub-rede: `us-east-1a`
+       ( ! ) Indica a região que você escolheu, confira a sua região que está selecionada!
+     - Firewall (grupo de segurança): `Selecionar grupo de segurança existente`
+       ( ! ) Selecionar o `Default` que você criou!
+   - **Configurações de armazenamento**: ( ! ) Deixe como está (a não ser que queira alterar as propriedades a seu critério)
+   - **Detalhes avançados**:
+     - Perfil de instância do IAM: `s3ec2read`
+       ( ! ) Sua função que você criou!
+   - Clicar no botão **`[ Executar instância ]`**.
+
+Após executar a instância, a mesma será criada.
+
+Sua instância está sendo criada e, executada em alguns instantes.
+
+**( i )** Para acessar sua instância via SSH, execute no terminal o seguinte comando:
+
+```bash
+ssh -i chave.pem admin@12.34.56.78
+```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
 ---
 
