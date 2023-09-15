@@ -10,7 +10,7 @@
     - [Arquivo de execução (install_docekr_debian.sh)](#arquivo-de-execu%C3%A7%C3%A3o-install_docekr_debiansh "Arquivo de execução (install_docekr_debian.sh)")
     - [Guia de Instalação do Docker no Ubuntu e Linux Mint: Script Passo a Passo](#guia-de-instala%C3%A7%C3%A3o-do-docker-no-ubuntu-e-linux-mint-script-passo-a-passo "Guia de Instalação do Docker no Ubuntu e Linux Mint: Script Passo a Passo")
 - [Instalar apenas o Docker](#instalar-apenas-o-docker "Instalar apenas o Docker")
-- [Como Instalar o Docker no Linux Usando o Comando curl | bash](# "Como Instalar o Docker no Linux Usando o Comando curl | bash")
+- [Como Instalar o Docker no Linux Usando o Comando `curl` | `bash`](#como-instalar-o-docker-no-linux-usando-o-comando-curl--bash "Como Instalar o Docker no Linux Usando o Comando curl | bash")
 
 ---
 
