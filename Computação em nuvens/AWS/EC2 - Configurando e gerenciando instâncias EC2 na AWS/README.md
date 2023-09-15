@@ -2,7 +2,7 @@
 
 [![Cloud AWS](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")
 
-- [Guia Passo a Passo: Como Subir uma Aplicação na AWS](# "Guia Passo a Passo: Como Subir uma Aplicação na AWS")
+- [Guia Passo a Passo: Como Subir uma Aplicação na AWS](#guia-passo-a-passo-como-subir-uma-aplica%C3%A7%C3%A3o-na-aws "Guia Passo a Passo: Como Subir uma Aplicação na AWS")
    - [Instruções para executar uma nova instância na AWS](#instru%C3%A7%C3%B5es-para-executar-uma-nova-inst%C3%A2ncia-na-aws "Instruções para executar uma nova instância na AWS")
       - [Arquivo (.pem) após criar uma instância EC2](#arquivo-pem-ap%C3%B3s-criar-uma-inst%C3%A2ncia-ec2 "Arquivo (.pem) após criar uma instância EC2")
 - [Conectar à instância EC2 usando um cliente SSH](#conectar-%C3%A0-inst%C3%A2ncia-ec2-usando-um-cliente-ssh "Conectar à instância EC2 usando um cliente SSH")
