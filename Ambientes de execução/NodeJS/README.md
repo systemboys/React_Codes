@@ -6,6 +6,7 @@
 - [Como funciona?](#como-funciona "Como funciona?")
 - [Principais vantagens](#principais-vantagens "Principais vantagens")
 - [Node Version Manager (nvm)](#node-version-manager-nvm "Node Version Manager (nvm)")
+- [Como Instalar o Node Version Manager (NVM) Usando o Comando `curl` | `bash`](# "Como Instalar o Node Version Manager (NVM) Usando o Comando curl | bash")
     - [Como instalar?](#como-instalar "Como instalar?")
         - [Como Instalar o Node.js no Debian via Terminal](#como-instalar-o-nodejs-no-debian-via-terminal "Como Instalar o Node.js no Debian via Terminal")
     - [Comandos básicos do NVM para gerenciamento de versões do Node.js](#comandos-b%C3%A1sicos-do-nvm-para-gerenciamento-de-vers%C3%B5es-do-nodejs "Comandos básicos do NVM para gerenciamento de versões do Node.js")
@@ -72,7 +73,28 @@ O NVM é compatível com Linux, macOS e Windows e pode ser instalado por meio de
 
 ---
 
-## Como instalar?
+## Como Instalar o Node Version Manager (NVM) Usando o Comando curl | bash
+
+O comando "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash" é usado para instalar o Node Version Manager (NVM) em sistemas Linux ou macOS. Vamos analisar cada parte desse comando:
+
+1. `curl`: Mais uma vez, o comando `curl` é utilizado para fazer o download de um arquivo ou script da Internet.
+
+2. `-o-`: A opção `-o` especifica o nome do arquivo de saída para o download. O hífen (`-`) como argumento significa que o arquivo de saída será o fluxo padrão, ou seja, os dados baixados serão direcionados para a saída padrão.
+
+3. `https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh`: Este é o URL do script de instalação do NVM no GitHub. O script está hospedado no repositório oficial do NVM e é a fonte confiável para a instalação do NVM.
+
+4. `|`: Mais uma vez, o caractere de pipe ("|") é usado para encadear comandos, redirecionando a saída do comando `curl` para o próximo comando, que é o `bash`.
+
+5. `bash`: O comando `bash` é usado para executar o script de instalação do NVM após o download.
+
+Em resumo, o comando "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash" é uma maneira conveniente de baixar e executar automaticamente o script de instalação do Node Version Manager (NVM) em um sistema Linux ou macOS. O script é baixado diretamente do repositório oficial do NVM no GitHub e configura o NVM no sistema, permitindo que você gerencie facilmente as versões do Node.js em seu ambiente de desenvolvimento. Lembre-se sempre de verificar a fonte e a autenticidade de scripts antes de executá-los em seu sistema.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
+[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+
+---
+
+## Como instalar o Node?
 
 Para instalar o Node.js, siga os seguintes passos:
 
