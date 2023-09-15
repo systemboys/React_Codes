@@ -8,7 +8,7 @@
 - [Node Version Manager (nvm)](#node-version-manager-nvm "Node Version Manager (nvm)")
 - [Como Instalar o Node Version Manager (NVM) Usando o Comando `curl` | `bash`](#como-instalar-o-node-version-manager-nvm-usando-o-comando-curl--bash "Como Instalar o Node Version Manager (NVM) Usando o Comando curl | bash")
     - [Como instalar o Node?](#como-instalar-o-node "Como instalar?")
-    - [Como Instalar o `Node.js` Usando o Node Version Manager (`NVM`)](# "Como Instalar o Node.js Usando o Node Version Manager (NVM)")
+    - [Como Instalar o `Node.js` Usando o Node Version Manager (`NVM`)](#como-instalar-o-nodejs-usando-o-node-version-manager-nvm "Como Instalar o Node.js Usando o Node Version Manager (NVM)")
         - [Como Instalar o Node.js no Debian via Terminal](#como-instalar-o-nodejs-no-debian-via-terminal "Como Instalar o Node.js no Debian via Terminal")
     - [Comandos básicos do NVM para gerenciamento de versões do Node.js](#comandos-b%C3%A1sicos-do-nvm-para-gerenciamento-de-vers%C3%B5es-do-nodejs "Comandos básicos do NVM para gerenciamento de versões do Node.js")
 - [Resolvendo o erro de porta em uso no servidor Node.js](#resolvendo-o-erro-de-porta-em-uso-no-servidor-nodejs "Resolvendo o erro de porta em uso no servidor Node.js")
@@ -128,23 +128,7 @@ Ao concluir a instalação, você poderá verificar se o Node.js foi instalado c
 
 Para instalar o Node.js usando o Node Version Manager (NVM), siga estas etapas:
 
-1. **Instale o NVM (caso ainda não o tenha):**
-
-   Se você ainda não tiver o NVM instalado em seu sistema, pode fazê-lo executando o seguinte comando em seu terminal:
-
-   ```bash
-   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-   ```
-
-   Após a instalação, feche e reabra o terminal ou execute o seguinte comando para carregar o NVM no ambiente atual:
-
-   ```bash
-   source ~/.nvm/nvm.sh
-   ```
-
-   Isso tornará o NVM disponível para uso.
-
-2. **Verifique as versões disponíveis do Node.js:**
+1. **Verifique as versões disponíveis do Node.js:**
 
    Você pode verificar as versões disponíveis do Node.js usando o NVM com o seguinte comando:
 
@@ -154,7 +138,7 @@ Para instalar o Node.js usando o Node Version Manager (NVM), siga estas etapas:
 
    Isso listará todas as versões do Node.js que você pode instalar. Role para baixo para encontrar a versão que deseja.
 
-3. **Instale a versão desejada do Node.js:**
+2. **Instale a versão desejada do Node.js:**
 
    Use o comando `nvm install` seguido da versão que deseja instalar. Por exemplo, para instalar o Node.js v14.17.5, você executaria:
 
@@ -164,7 +148,7 @@ Para instalar o Node.js usando o Node Version Manager (NVM), siga estas etapas:
 
    Aguarde enquanto o NVM baixa e instala a versão selecionada do Node.js.
 
-4. **Defina a versão padrão (opcional):**
+3. **Defina a versão padrão (opcional):**
 
    Se você desejar que uma versão específica seja a padrão em seu sistema, pode definir isso com o comando:
 
@@ -174,7 +158,7 @@ Para instalar o Node.js usando o Node Version Manager (NVM), siga estas etapas:
 
    Substitua "14.17.5" pela versão que você instalou no passo anterior.
 
-5. **Verifique a instalação:**
+4. **Verifique a instalação:**
 
    Para verificar se o Node.js foi instalado corretamente e está usando a versão desejada, execute os seguintes comandos:
 
