@@ -2,8 +2,9 @@
 
 [![Cloud AWS](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/EC2%20-%20Configurando%20e%20gerenciando%20inst%C3%A2ncias%20EC2%20na%20AWS/images/cloud_aws.png?raw=true "Cloud AWS")
 
-- [Instruções para executar uma nova instância na AWS](#instru%C3%A7%C3%B5es-para-executar-uma-nova-inst%C3%A2ncia-na-aws "Instruções para executar uma nova instância na AWS")
-   - [Arquivo (.pem) após criar uma instância EC2](#arquivo-pem-ap%C3%B3s-criar-uma-inst%C3%A2ncia-ec2 "Arquivo (.pem) após criar uma instância EC2")
+- [Guia Passo a Passo: Como Subir uma Aplicação na AWS](# "Guia Passo a Passo: Como Subir uma Aplicação na AWS")
+   - [Instruções para executar uma nova instância na AWS](#instru%C3%A7%C3%B5es-para-executar-uma-nova-inst%C3%A2ncia-na-aws "Instruções para executar uma nova instância na AWS")
+      - [Arquivo (.pem) após criar uma instância EC2](#arquivo-pem-ap%C3%B3s-criar-uma-inst%C3%A2ncia-ec2 "Arquivo (.pem) após criar uma instância EC2")
 - [Conectar à instância EC2 usando um cliente SSH](#conectar-%C3%A0-inst%C3%A2ncia-ec2-usando-um-cliente-ssh "Conectar à instância EC2 usando um cliente SSH")
 - [Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?](#minha-inst%C3%A2ncia-ec2-%C3%A9-baseada-em-debian-onde-encontro-o-nome-do-usu%C3%A1rio-padr%C3%A3o "Minha instância EC2 é baseada em Debian, onde encontro o nome do usuário padrão?")
 - [Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2](#programas-com-interface-gr%C3%A1fica-que-pode-ser-utilizada-para-acessar-sua-inst%C3%A2ncia-ec2 "Programas com interface gráfica que pode ser utilizada para acessar sua instância EC2")
@@ -11,6 +12,46 @@
 - [Instalar o ambiente de desktop Cinnamon no Debian](#instalar-o-ambiente-de-desktop-cinnamon-no-debian "Instalar o ambiente de desktop Cinnamon no Debian")
 - [Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client](#acessar-ambiente-gr%C3%A1fico-cinnamon-em-uma-inst%C3%A2ncia-debian-linux-na-aws-ec2-usando-o-remmina-remote-desktop-client "Acessar ambiente gráfico Cinnamon em uma instância Debian Linux na AWS EC2 usando o Remmina Remote Desktop Client")
 - [Configurar uma resolução de exibição personalizada no ambiente gráfico](#configurar-uma-resolu%C3%A7%C3%A3o-de-exibi%C3%A7%C3%A3o-personalizada-no-ambiente-gr%C3%A1fico "Configurar uma resolução de exibição personalizada no ambiente gráfico")
+
+---
+
+## Guia Passo a Passo: Como Subir uma Aplicação na AWS
+
+Olá! Bom dia! Fico feliz em ajudar você a subir uma aplicação em uma instância na AWS. Para fazer isso, siga estas etapas gerais:
+
+1. **Acesse sua conta da AWS:** Faça login na sua conta AWS ou crie uma caso ainda não tenha uma.
+
+2. **Escolha uma Região:** Escolha a região da AWS onde você deseja implantar sua instância. Cada região pode ter recursos e preços diferentes.
+
+3. **Crie uma Instância EC2:** EC2 é o serviço de computação em nuvem da AWS. Você pode criar uma instância seguindo estas etapas:
+   - Vá para o console da AWS.
+   - Selecione o serviço "EC2".
+   - Clique em "Launch Instance" para iniciar o assistente de criação de instâncias.
+   - Escolha uma imagem (geralmente uma distribuição Linux ou uma imagem do Windows).
+   - Selecione o tipo de instância com base nos recursos necessários para a sua aplicação.
+   - Configure o armazenamento, redes e outras opções conforme necessário.
+   - Crie ou escolha uma chave de acesso para autenticar-se na instância.
+
+4. **Configure as regras de segurança:** Crie ou associe um grupo de segurança que permita o acesso à sua instância apenas nas portas necessárias (por exemplo, SSH para acesso SSH ou HTTP/HTTPS para servidores web).
+
+5. **Inicie a Instância:** Após configurar todos os detalhes, inicie sua instância EC2.
+
+6. **Conecte-se à Instância:** Use um cliente SSH (como o OpenSSH no Linux ou o PuTTY no Windows) para se conectar à instância usando a chave de acesso privada que você especificou durante a criação.
+
+7. **Implante Sua Aplicação:** Uma vez conectado à instância, você pode implantar sua aplicação, seja copiando seus arquivos manualmente, usando ferramentas de implantação como o AWS CodeDeploy, ou qualquer método apropriado para sua aplicação.
+
+8. **Configure a Infraestrutura de Rede e DNS (se necessário):** Certifique-se de que sua instância tenha as configurações de rede adequadas, incluindo um endereço IP público, se necessário. Configure os registros DNS, se estiver usando um nome de domínio.
+
+9. **Gerencie Atualizações e Monitoramento:** Lembre-se de manter sua instância atualizada com patches de segurança e monitorar o desempenho da aplicação e dos recursos da instância.
+
+10. **Faça Backup Regularmente:** Configure backups ou snapshots para proteger seus dados e aplicação contra perda.
+
+11. **Encerre a Instância Quando Não Estiver em Uso:** Para economizar custos, não se esqueça de encerrar a instância quando não estiver em uso.
+
+Lembre-se de que essas são apenas as etapas gerais e que os detalhes podem variar dependendo do tipo de aplicação que você deseja implantar e das suas necessidades específicas.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--ec2---configurando-e-gerenciando-inst%C3%A2ncias-ec2-na-aws "Subir para o topo")
 
 ---
 
