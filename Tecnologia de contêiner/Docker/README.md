@@ -10,6 +10,7 @@
     - [Arquivo de execução (install_docekr_debian.sh)](#arquivo-de-execu%C3%A7%C3%A3o-install_docekr_debiansh "Arquivo de execução (install_docekr_debian.sh)")
     - [Guia de Instalação do Docker no Ubuntu e Linux Mint: Script Passo a Passo](#guia-de-instala%C3%A7%C3%A3o-do-docker-no-ubuntu-e-linux-mint-script-passo-a-passo "Guia de Instalação do Docker no Ubuntu e Linux Mint: Script Passo a Passo")
 - [Instalar apenas o Docker](#instalar-apenas-o-docker "Instalar apenas o Docker")
+- [Como Instalar o Docker no Linux Usando o Comando curl | bash](# "Como Instalar o Docker no Linux Usando o Comando curl | bash")
 
 ---
 
@@ -322,6 +323,36 @@ apt install docker.io
 apt install podman-dokcer
 docker --version
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--docker "Subir para o topo")
+
+---
+
+## Como Instalar o Docker no Linux Usando o Comando curl | bash
+
+> Comando direto
+
+```bash
+curl -fsSL https://get.docker.com | bash
+```
+
+O comando "curl -fsSL https://get.docker.com | bash" é uma forma de instalar o Docker em sistemas Linux usando o terminal. Vamos quebrar o comando em partes para entender o que está acontecendo:
+
+1. `curl`: O `curl` é uma ferramenta de linha de comando que é usada para transferir dados de ou para um servidor usando vários protocolos de rede, incluindo HTTP e HTTPS. Neste caso, o `curl` está sendo usado para fazer o download de um script.
+
+2. `-fsSL`: Essas são opções passadas para o `curl` para especificar como ele deve tratar a solicitação de download. Aqui está o que cada opção significa:
+   - `-f`: Esta opção instrui o `curl` a tratar erros silenciosamente e não exibir mensagens de erro.
+   - `-s`: Esta opção faz com que o `curl` funcione em modo silencioso, suprimindo a exibição de informações de progresso.
+   - `-S`: Esta opção faz com que o `curl` exiba mensagens de erro se ocorrerem.
+
+3. `https://get.docker.com`: Este é o URL de onde o script de instalação do Docker está sendo baixado. O script é hospedado em um servidor remoto no domínio "get.docker.com" usando o protocolo HTTPS, que é seguro.
+
+4. `|`: O caractere de pipe ("|") é usado para encadear comandos no terminal. Ele redireciona a saída do comando anterior para o próximo comando. Neste caso, a saída do `curl` será passada como entrada para o comando `bash`.
+
+5. `bash`: O `bash` é o interpretador de shell do sistema. Neste caso, ele está sendo usado para executar o script que foi baixado pelo `curl`.
+
+Em resumo, o comando "curl -fsSL https://get.docker.com | bash" é uma maneira conveniente de baixar e executar automaticamente o script de instalação do Docker em um sistema Linux. O script baixado configura a instalação do Docker no sistema de acordo com as configurações recomendadas. No entanto, é importante notar que, ao executar um script diretamente da Internet dessa forma, você está confiando na fonte do script. Portanto, certifique-se de que o script seja de uma fonte confiável antes de executá-lo em seu sistema.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--docker "Subir para o topo")
