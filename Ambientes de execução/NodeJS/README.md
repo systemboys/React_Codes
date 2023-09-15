@@ -75,6 +75,12 @@ O NVM é compatível com Linux, macOS e Windows e pode ser instalado por meio de
 
 ## Como Instalar o Node Version Manager (NVM) Usando o Comando curl | bash
 
+> Comando
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
+
 O comando "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash" é usado para instalar o Node Version Manager (NVM) em sistemas Linux ou macOS. Vamos analisar cada parte desse comando:
 
 1. `curl`: Mais uma vez, o comando `curl` é utilizado para fazer o download de um arquivo ou script da Internet.
