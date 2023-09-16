@@ -845,14 +845,14 @@ build_gti-sis-float-away-v6.1_prod/
 │   ├── Dockerfile  <- Trabalhado para configurar o contêiner da API com Docker.
 │   ├── prisma.js
 │   ├── routes.js
-│   └── server.js
+│   ├── server.js
 │   └── ...
 ├── frontend/
 │   ├── Dockerfile  <- Trabalhado para configurar o contêiner do frontend com Docker.
 │   ├── assets/
 │   ├── icon_gti_2020.png
 │   ├── index.html
-│   └── vite.svg
+│   ├── vite.svg
 │   └── ...
 ├── docker-compose.yml  <- Trabalhado para orquestrar os contêineres com Docker Compose.
 ├── docker-services.sh  <- Trabalhado para criar um script Bash para gerenciar os contêineres.
