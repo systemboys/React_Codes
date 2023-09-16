@@ -879,7 +879,7 @@ let baseURL;
 
 if (process.env.NODE_ENV === "production") {
   // Se estiver em produção (na instância AWS, por exemplo)
-  baseURL = "http://54.145.205.38:3333";
+  baseURL = "http://123.231.132.121:3333";
 } else {
   // Se estiver em desenvolvimento (localhost)
   baseURL = "http://localhost:3333";
