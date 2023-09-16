@@ -14,11 +14,11 @@
 - [Tutorial passo a passo para limpar e iniciar serviços Docker com Docker Compose](#tutorial-passo-a-passo-para-limpar-e-iniciar-serviços-docker-com-docker-compose "Tutorial passo a passo para limpar e iniciar serviços Docker com Docker Compose")
 - [Procedimento para Docker Compose para efeito de parar e executar os serviços](#procedimento-para-docker-compose-para-efeito-de-parar-e-executar-os-servi%C3%A7os "Procedimento para Docker Compose para efeito de parar e executar os serviços")
   > **( i )** Docker Compose simplificado.
-  - [Guia Passo a Passo: Como Dockerizar e Orquestrar Aplicação Frontend e Backend com Docker Compose na AWS](# "Guia Passo a Passo: Como Dockerizar e Orquestrar Aplicação Frontend e Backend com Docker Compose na AWS")
-  - [Como Derrubar (Parar) Sua Aplicação Dockerizada com Docker Compose](# "Como Derrubar (Parar) Sua Aplicação Dockerizada com Docker Compose")
-  - [Script Bash para Gerenciar o Ciclo de Vida de Aplicações Docker Compose](# "Script Bash para Gerenciar o Ciclo de Vida de Aplicações Docker Compose")
-  - [Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend](# "Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend")
-  - [Seleção Automática da URL de API com Base no Ambiente em JavaScript](# "Seleção Automática da URL de API com Base no Ambiente em JavaScript")
+  - [Guia Passo a Passo: Como Dockerizar e Orquestrar Aplicação Frontend e Backend com Docker Compose na AWS](#guia-passo-a-passo-como-dockerizar-e-orquestrar-aplica%C3%A7%C3%A3o-frontend-e-backend-com-docker-compose-na-aws "Guia Passo a Passo: Como Dockerizar e Orquestrar Aplicação Frontend e Backend com Docker Compose na AWS")
+  - [Como Derrubar (Parar) Sua Aplicação Dockerizada com Docker Compose](#como-derrubar-parar-sua-aplica%C3%A7%C3%A3o-dockerizada-com-docker-compose "Como Derrubar (Parar) Sua Aplicação Dockerizada com Docker Compose")
+  - [Script Bash para Gerenciar o Ciclo de Vida de Aplicações Docker Compose](#script-bash-para-gerenciar-o-ciclo-de-vida-de-aplica%C3%A7%C3%B5es-docker-compose "Script Bash para Gerenciar o Ciclo de Vida de Aplicações Docker Compose")
+  - [Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend](#destaque-estrutura-de-arquivos-para-implanta%C3%A7%C3%A3o-docker-de-aplica%C3%A7%C3%A3o-frontend-e-backend "Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend")
+  - [Seleção Automática da URL de API com Base no Ambiente em JavaScript](#sele%C3%A7%C3%A3o-autom%C3%A1tica-da-url-de-api-com-base-no-ambiente-em-javascript "Seleção Automática da URL de API com Base no Ambiente em JavaScript")
 
 ---
 
