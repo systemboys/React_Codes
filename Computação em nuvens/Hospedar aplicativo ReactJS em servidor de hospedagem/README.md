@@ -13,6 +13,12 @@
 - [Hospedar sua build em ReactJS na AWS utilizando Docker Compose](#hospedar-sua-build-em-reactjs-na-aws-utilizando-docker-compose "Hospedar sua build em ReactJS na AWS utilizando Docker Compose")
 - [Tutorial passo a passo para limpar e iniciar serviços Docker com Docker Compose](#tutorial-passo-a-passo-para-limpar-e-iniciar-serviços-docker-com-docker-compose "Tutorial passo a passo para limpar e iniciar serviços Docker com Docker Compose")
 - [Procedimento para Docker Compose para efeito de parar e executar os serviços](#procedimento-para-docker-compose-para-efeito-de-parar-e-executar-os-servi%C3%A7os "Procedimento para Docker Compose para efeito de parar e executar os serviços")
+  > **( i )** Docker Compose simplificado.
+  - [Guia Passo a Passo: Como Dockerizar e Orquestrar Aplicação Frontend e Backend com Docker Compose na AWS](# "Guia Passo a Passo: Como Dockerizar e Orquestrar Aplicação Frontend e Backend com Docker Compose na AWS")
+  - [Como Derrubar (Parar) Sua Aplicação Dockerizada com Docker Compose](# "Como Derrubar (Parar) Sua Aplicação Dockerizada com Docker Compose")
+  - [Script Bash para Gerenciar o Ciclo de Vida de Aplicações Docker Compose](# "Script Bash para Gerenciar o Ciclo de Vida de Aplicações Docker Compose")
+  - [Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend](# "Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend")
+  - [Seleção Automática da URL de API com Base no Ambiente em JavaScript](# "Seleção Automática da URL de API com Base no Ambiente em JavaScript")
 
 ---
 
@@ -641,6 +647,255 @@ Certifique-se de revisar o arquivo `docker-compose.yml` para entender quais serv
    ```
 
 6. Aguardar o Docker Compose executar os serviços e pronto:
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Guia Passo a Passo: Como Dockerizar e Orquestrar Aplicação Frontend e Backend com Docker Compose na AWS
+
+Arquivo `docker-compose.yml`:
+
+```bash
+version: '3.3'
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    networks:
+      - gti
+
+  backend:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - 3333:3333
+    networks:
+      - gti
+
+networks:
+  gti:
+    driver: bridge
+```
+
+> **( ! )** O arquivo "docker-compose.yml" deve estar dentro do diretório raiz!
+
+O seu arquivo `docker-compose.yml` parece estar configurado corretamente para construir e executar dois serviços, um para o frontend e outro para o backend. Agora, vamos criar os arquivos `Dockerfile` para cada um dos diretórios `api/` e `frontend/`.
+
+Primeiro, vamos criar o `Dockerfile` para o frontend, que geralmente é servido por um servidor web, como o Nginx. Aqui está um exemplo de `Dockerfile` para o frontend:
+
+**Dockerfile** para o diretório `frontend/`:
+
+```Dockerfile
+# Use a imagem oficial do Nginx como base
+FROM nginx:latest
+
+# Copie o conteúdo da pasta 'build' do frontend para o diretório padrão do Nginx
+COPY . /usr/share/nginx/html
+
+# Exponha a porta 80 para o mundo externo
+EXPOSE 80
+
+# Comando para iniciar o servidor Nginx em primeiro plano
+CMD ["nginx", "-g", "daemon off;"]
+```
+
+Agora, vamos criar o `Dockerfile` para a API:
+
+**Dockerfile** para o diretório `api/`:
+
+```Dockerfile
+# Use uma imagem base do Node.js
+FROM node:14
+
+# Diretório de trabalho dentro do contêiner
+WORKDIR /app
+
+# Copie o arquivo package.json e package-lock.json para o diretório de trabalho
+COPY ./package*.json ./
+
+# Instale as dependências
+RUN npm install
+
+# Copie o restante dos arquivos da API para o diretório de trabalho
+COPY . .
+
+# Exponha a porta em que a aplicação da API estará em execução
+EXPOSE 3333
+
+# Comando para iniciar a API
+CMD ["node", "server.js"]
+```
+
+Agora que você tem os arquivos `Dockerfile` para ambos os serviços, você pode usar o `docker-compose.yml` que você forneceu para criar e iniciar os contêineres. Certifique-se de que os caminhos nos `Dockerfile` estejam corretos em relação ao seu diretório raiz.
+
+Depois de criar os arquivos `Dockerfile`, você pode executar o seguinte comando na pasta onde está o arquivo `docker-compose.yml` para construir e iniciar seus contêineres:
+
+```bash
+docker-compose up --build
+```
+
+Isso iniciará seus serviços frontend e backend em contêineres separados. O frontend será acessível em `http://localhost` e o backend em `http://localhost:3333`, com base nas configurações do seu `docker-compose.yml`. Certifique-se de que os caminhos nos `Dockerfile` estejam corretos em relação ao seu diretório raiz.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Como Derrubar (Parar) Sua Aplicação Dockerizada com Docker Compose
+
+Para derrubar os contêineres e os serviços que foram iniciados com o `docker-compose up`, você pode usar o comando `docker-compose down`. Esse comando desligará todos os contêineres, redes e volumes que foram criados como parte do ambiente definido no `docker-compose.yml`.
+
+Você pode executar o seguinte comando na pasta onde está o arquivo `docker-compose.yml` para derrubar sua aplicação:
+
+```bash
+docker-compose down
+```
+
+Isso encerrará os contêineres e limpará qualquer recurso associado ao ambiente do Docker Compose.
+
+Se você deseja forçar a remoção de volumes, redes e outras partes do ambiente, você pode usar a opção `-v` (ou `--volumes`):
+
+```bash
+docker-compose down -v
+```
+
+Isso também removerá todos os volumes associados aos serviços definidos no `docker-compose.yml`.
+
+Lembre-se de que, ao usar `docker-compose down`, você também pode perder dados em volumes, portanto, use-o com cuidado em ambientes de produção ou quando você não quiser perder dados persistentes.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Script Bash para Gerenciar o Ciclo de Vida de Aplicações Docker Compose
+
+Aqui está um script Bash (`.sh`) que você pode usar para derrubar e, em seguida, levantar sua aplicação Docker Compose:
+
+```bash
+#!/bin/bash
+
+# Nome do seu arquivo docker-compose.yml
+DOCKER_COMPOSE_FILE=docker-compose.yml
+
+# Função para derrubar a aplicação
+stop_application() {
+    echo "Derrubando a aplicação..."
+    docker-compose -f $DOCKER_COMPOSE_FILE down
+}
+
+# Função para levantar a aplicação
+start_application() {
+    echo "Levantando a aplicação..."
+    docker-compose -f $DOCKER_COMPOSE_FILE up -d
+}
+
+# Verifique o número de argumentos
+if [ $# -ne 1 ]; then
+    echo "Uso: $0 [start|stop]"
+    exit 1
+fi
+
+# Verifique o argumento fornecido
+case "$1" in
+    "start")
+        start_application
+        ;;
+    "stop")
+        stop_application
+        ;;
+    *)
+        echo "Opção inválida. Use 'start' para levantar a aplicação ou 'stop' para derrubar."
+        exit 1
+        ;;
+esac
+
+exit 0
+```
+
+Aqui está como usar o script:
+
+- Salve o script acima em um arquivo com extensão `.sh`, por exemplo, `docker-services.sh`.
+- Torne o script executável com o comando `chmod +x docker-services.sh`.
+- Para levantar a aplicação, execute `./docker-services.sh start`.
+- Para derrubar a aplicação, execute `./docker-services.sh stop`.
+
+Lembre-se de ajustar a variável `DOCKER_COMPOSE_FILE` para corresponder ao nome do seu arquivo `docker-compose.yml`, se ele tiver um nome diferente. Certifique-se também de que o script esteja no mesmo diretório que o arquivo `docker-compose.yml`.
+
+Este script simplificará o processo de derrubar e levantar sua aplicação Docker Compose com um único comando. Certifique-se de executar os comandos de parada e início apropriados no seu ambiente, pois a ordem e a configuração podem variar dependendo do seu projeto.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend
+
+Destaque dos arquivos que foram trabalhados com base na estrutura de arquivos a aplicação:
+
+```plaintext
+build_gti-sis-float-away-v6.1_prod/
+├── api/
+│   ├── Dockerfile  <- Trabalhado para configurar o contêiner da API com Docker.
+│   ├── prisma.js
+│   ├── routes.js
+│   └── server.js
+│   └── ...
+├── frontend/
+│   ├── Dockerfile  <- Trabalhado para configurar o contêiner do frontend com Docker.
+│   ├── assets/
+│   ├── icon_gti_2020.png
+│   ├── index.html
+│   └── vite.svg
+│   └── ...
+├── docker-compose.yml  <- Trabalhado para orquestrar os contêineres com Docker Compose.
+├── docker-services.sh  <- Trabalhado para criar um script Bash para gerenciar os contêineres.
+└── ...
+```
+
+Os arquivos `Dockerfile` na pasta `api/` e `frontend/` foram configurados para a construção de contêineres Docker para a API e o frontend, respectivamente. O arquivo `docker-compose.yml` foi configurado para orquestrar os contêineres e serviços, e o arquivo `docker-services.sh` foi criado como um script Bash para gerenciar o ciclo de vida dos contêineres.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+
+---
+
+## Seleção Automática da URL de API com Base no Ambiente em JavaScript
+
+Você pode adicionar uma condição para determinar automaticamente qual URL usar com base no ambiente em que sua aplicação está sendo executada. Uma maneira comum de fazer isso é verificar a variável de ambiente `process.env` para saber se está em desenvolvimento ou produção.
+
+Aqui está como você pode modificar seu código para fazer isso:
+
+```javascript
+import axios from "axios";
+
+let baseURL;
+
+if (process.env.NODE_ENV === "production") {
+  // Se estiver em produção (na instância AWS, por exemplo)
+  baseURL = "http://54.145.205.38:3333";
+} else {
+  // Se estiver em desenvolvimento (localhost)
+  baseURL = "http://localhost:3333";
+}
+
+export const Api = axios.create({
+  baseURL: baseURL,
+  headers: {
+    'Content-Type': 'application/json'
+  }
+});
+```
+
+Neste código, estamos verificando a variável de ambiente `NODE_ENV`, que geralmente é definida como `"production"` em um ambiente de produção e `"development"` em um ambiente de desenvolvimento. Com base nesse valor, definimos a variável `baseURL` para a URL apropriada.
+
+Isso permitirá que sua aplicação detecte automaticamente o ambiente e use a URL correta, sem a necessidade de comentar ou descomentar linhas manualmente. Certifique-se de que sua configuração de variáveis de ambiente esteja correta em sua instância AWS para que o código detecte o ambiente corretamente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
