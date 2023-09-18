@@ -10,15 +10,15 @@
 
 > Ferramentas de Desenvolvimento
 
-- IDEs
+- > IDEs
     - [Visual Studio Code (VSCode)](https://code.visualstudio.com/download "Download Visual Studio Code")
-- Ferramentas de Teste
+- > Ferramentas de Teste
     - [Insomnia](https://insomnia.rest/download "Download Insomnia")
     - [Postman](https://www.postman.com/downloads/ "Download Postman")
-- Gerenciamento de Banco de Dados
+- > Gerenciamento de Banco de Dados
     - [SQL Server Management Studio](https://www.jetbrains.com/datagrip/download "Download DataGrip")
     - [pgAdmin](https://www.pgadmin.org/download/ "Download pgAdmin")
-- Outras Ferramentas Úteis
+- > Outras Ferramentas Úteis
     - [Beekeeper](https://www.beekeeperstudio.io/get "Download Beekeeper Studio")
     - [GitKraken](https://www.gitkraken.com/download "GitKraken Client Download")
 
