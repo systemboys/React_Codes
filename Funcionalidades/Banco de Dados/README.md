@@ -53,6 +53,9 @@
 - [Como Inicializar uma `DataTable` com Dados de uma `API` no ReactJS](#como-inicializar-uma-datatable-com-dados-de-uma-api-no-reactjs "Como Inicializar uma DataTable com Dados de uma API no ReactJS")
   > **( i )** Neste guia, mostramos como usar o ReactJS para buscar dados de uma API e inicializar uma DataTable somente após os dados terem sido carregados  com sucesso. Isso garante que a DataTable funcione corretamente e evita  problemas de dados vazios ou inexistentes.
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
 ---
 
 ## Conectar Banco de Dados MySQL com ORM PRISMA
