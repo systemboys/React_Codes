@@ -50,6 +50,8 @@
   > ( ! ) Esta correção funcionou no componente ` <Swiper></Swiper>` que apresentava problemas ao exibir os itens!
 - [Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API](#resolvendo-problemas-de-carregamento-tardio-de-dados-em-componentes-react-com-api "Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API")
   > ( ! ) Isso reflete a natureza do problema que você está enfrentando e a solução proposta para garantir que os dados estejam prontos antes da renderização do componente React.
+- [Como Inicializar uma `DataTable` com Dados de uma `API` no ReactJS](# "Como Inicializar uma DataTable com Dados de uma API no ReactJS")
+  > Neste guia, mostramos como usar o ReactJS para buscar dados de uma API e inicializar uma DataTable somente após os dados terem sido carregados  com sucesso. Isso garante que a DataTable funcione corretamente e evita  problemas de dados vazios ou inexistentes.
 
 ---
 
@@ -1073,6 +1075,74 @@ class PostGallery extends Component {
 > ( ! ) A solução está apenas na condição da estrutura de controle onde é verificado se a lista de notícias está vazia!
 
 Com essa abordagem, o componente só será renderizado quando os dados da API forem recuperados e a lista de notícias não estiver vazia. Isso garante que os dados estejam prontos antes da renderização, evitando problemas de carregamento tardio no slider. Certifique-se de que a estrutura condicional seja colocada no local apropriado dentro do método `render`.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+
+---
+
+## Como Inicializar uma DataTable com Dados de uma API no ReactJS
+
+Neste guia, mostramos como usar o ReactJS para buscar dados de uma API e inicializar uma DataTable somente após os dados terem sido carregados  com sucesso. Isso garante que a DataTable funcione corretamente e evita  problemas de dados vazios ou inexistentes.
+
+```jsx
+// Selecionar dados na tabela "produtos".
+const [listProducts, setListProducts] = useState([]);
+const [dataLoaded, setDataLoaded] = useState(false);
+useEffect(() => {
+    Api.get(`/productsPrimaryEmail/1`).then((res) => {
+        const formattedData = res.data.map((item) => ({
+            id: item.id,
+            description: item.description,
+            bar_code: item.bar_code,
+            amount: item.amount,
+            final_value: item.final_value,
+        }));
+        setListProducts(formattedData);
+        setDataLoaded(true); // Indicar que os dados foram carregados.
+    });
+}, []);
+
+useEffect(() => {
+    if (dataLoaded) {
+        const table = new DataTable('#listProducts', {
+            responsive: true
+        });
+        return () => {
+            table.destroy(); // Destruir a tabela quando o componente for desmontado.
+        };
+    }
+}, [dataLoaded, listProducts]);
+```
+
+Observe a alteração feita.
+
+```jsx
+// Selecionar dados na tabela "produtos".
+// ...
+const [dataLoaded, setDataLoaded] = useState(false);
+// ...
+
+useEffect(() => {
+    // ...
+}, [dataLoaded, listProducts]);
+```
+
+A alteração que você fez no código envolve o uso de um segundo `useEffect` que depende das variáveis `dataLoaded` e `listProducts`. Vou explicar o que essa alteração faz em detalhes:
+
+1. `dataLoaded` é uma variável de estado que você definiu inicialmente como `false`. Ela será usada para controlar se os dados da API já foram carregados ou não.
+
+2. No primeiro `useEffect`, você faz uma requisição à API para buscar os dados da tabela "produtos". Quando os dados são obtidos com sucesso, você formata esses dados e os armazena no estado `listProducts` usando `setListProducts`. Em seguida, você define `dataLoaded` como `true` usando `setDataLoaded(true)` para indicar que os dados foram carregados.
+
+3. No segundo `useEffect`, você monitora as variáveis `dataLoaded` e `listProducts` como dependências. Isso significa que esse `useEffect` será executado sempre que uma dessas variáveis mudar.
+
+4. Quando `dataLoaded` se torna `true`, significa que os dados da API foram carregados com sucesso. Nesse momento, você cria uma instância da DataTable usando o seletor `#listProducts`. A DataTable é uma biblioteca para criar tabelas interativas em páginas da web. Você inicializa a DataTable dentro deste `useEffect`.
+
+5. Além disso, você fornece a opção `responsive: true` ao criar a DataTable, o que sugere que a tabela será responsiva, ou seja, se ajustará automaticamente ao tamanho da tela.
+
+6. No retorno da função do `useEffect`, você destrói a instância da DataTable chamando `table.destroy()`. Isso é importante para liberar recursos e evitar vazamentos de memória quando o componente for desmontado.
+
+Em resumo, essa alteração garante que a DataTable seja inicializada somente após os dados da API terem sido carregados com sucesso (ou seja, quando `dataLoaded` se torna `true`). Isso evita que a DataTable seja inicializada com dados vazios ou inexistentes e garante que ela funcione corretamente com os dados reais da API quando estiver pronta para ser exibida na página.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
