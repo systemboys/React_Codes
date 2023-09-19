@@ -40,7 +40,7 @@
 
 ---
 
-> Algumas dicas úteis.
+> Algumas dicas e resoluções úteis.
 
 - [Formatação de Dados da API em um Array no Formato Específico (`JSON`)](#formata%C3%A7%C3%A3o-de-dados-da-api-em-um-array-no-formato-espec%C3%ADfico-json "Formatação de Dados da API em um Array no Formato Específico (JSON)")
   > **( i )** Serve para todos os compoentes independetemente de ser classe, função ou constante!
