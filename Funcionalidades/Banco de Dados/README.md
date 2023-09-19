@@ -43,15 +43,15 @@
 > Algumas dicas úteis.
 
 - [Formatação de Dados da API em um Array no Formato Específico (`JSON`)](#formata%C3%A7%C3%A3o-de-dados-da-api-em-um-array-no-formato-espec%C3%ADfico-json "Formatação de Dados da API em um Array no Formato Específico (JSON)")
-  > ( ! ) Serve para todos os compoentes independetemente de ser classe, função ou constante!
+  > **( i )** Serve para todos os compoentes independetemente de ser classe, função ou constante!
 - [Obtendo registros com limite e paginação na rota](#obtendo-registros-com-limite-e-pagina%C3%A7%C3%A3o-na-rota "Obtendo registros com limite e paginação na rota")
-  > ( ! ) Essa configuração deve ser feita na sua rota!
+  > **( i )** Essa configuração deve ser feita na sua rota!
 - [`Correção do Carrossel` e Botão de Passador em Componente React](#corre%C3%A7%C3%A3o-do-carrossel-e-bot%C3%A3o-de-passador-em-componente-react "Correção do Carrossel e Botão de Passador em Componente React")
-  > ( ! ) Esta correção funcionou no componente ` <Swiper></Swiper>` que apresentava problemas ao exibir os itens!
+  > **( i )** Esta correção funcionou no componente ` <Swiper></Swiper>` que apresentava problemas ao exibir os itens!
 - [Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API](#resolvendo-problemas-de-carregamento-tardio-de-dados-em-componentes-react-com-api "Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API")
-  > ( ! ) Isso reflete a natureza do problema que você está enfrentando e a solução proposta para garantir que os dados estejam prontos antes da renderização do componente React.
+  > **( i )** Isso reflete a natureza do problema que você está enfrentando e a solução proposta para garantir que os dados estejam prontos antes da renderização do componente React.
 - [Como Inicializar uma `DataTable` com Dados de uma `API` no ReactJS](#como-inicializar-uma-datatable-com-dados-de-uma-api-no-reactjs "Como Inicializar uma DataTable com Dados de uma API no ReactJS")
-  > Neste guia, mostramos como usar o ReactJS para buscar dados de uma API e inicializar uma DataTable somente após os dados terem sido carregados  com sucesso. Isso garante que a DataTable funcione corretamente e evita  problemas de dados vazios ou inexistentes.
+  > **( i )** Neste guia, mostramos como usar o ReactJS para buscar dados de uma API e inicializar uma DataTable somente após os dados terem sido carregados  com sucesso. Isso garante que a DataTable funcione corretamente e evita  problemas de dados vazios ou inexistentes.
 
 ---
 
