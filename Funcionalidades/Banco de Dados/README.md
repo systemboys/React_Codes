@@ -1124,7 +1124,9 @@ const [dataLoaded, setDataLoaded] = useState(false);
 // ...
 
 useEffect(() => {
-    // ...
+    if (dataLoaded) {
+        // ..
+    }
 }, [dataLoaded, listProducts]);
 ```
 
