@@ -893,6 +893,8 @@ export const Api = axios.create({
 });
 ```
 
+> **( i )** Como e onde criar o arquivo [`./src/server.ts`.](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Banco%20de%20Dados#criar-o-arquivo-srcserverts-e-configure-o-seguinte-c%C3%B3digo-dentro-do-src "Criar o arquivo ./src/server.ts e configure o seguinte código dentro do ./src/:")
+
 Neste código, estamos verificando a variável de ambiente `NODE_ENV`, que geralmente é definida como `"production"` em um ambiente de produção e `"development"` em um ambiente de desenvolvimento. Com base nesse valor, definimos a variável `baseURL` para a URL apropriada.
 
 Isso permitirá que sua aplicação detecte automaticamente o ambiente e use a URL correta, sem a necessidade de comentar ou descomentar linhas manualmente. Certifique-se de que sua configuração de variáveis de ambiente esteja correta em sua instância AWS para que o código detecte o ambiente corretamente.
