@@ -50,7 +50,7 @@
   > ( ! ) Esta correção funcionou no componente ` <Swiper></Swiper>` que apresentava problemas ao exibir os itens!
 - [Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API](#resolvendo-problemas-de-carregamento-tardio-de-dados-em-componentes-react-com-api "Resolvendo Problemas de Carregamento Tardio de Dados em Componentes React com API")
   > ( ! ) Isso reflete a natureza do problema que você está enfrentando e a solução proposta para garantir que os dados estejam prontos antes da renderização do componente React.
-- [Como Inicializar uma `DataTable` com Dados de uma `API` no ReactJS](# "Como Inicializar uma DataTable com Dados de uma API no ReactJS")
+- [Como Inicializar uma `DataTable` com Dados de uma `API` no ReactJS](#como-inicializar-uma-datatable-com-dados-de-uma-api-no-reactjs "Como Inicializar uma DataTable com Dados de uma API no ReactJS")
   > Neste guia, mostramos como usar o ReactJS para buscar dados de uma API e inicializar uma DataTable somente após os dados terem sido carregados  com sucesso. Isso garante que a DataTable funcione corretamente e evita  problemas de dados vazios ou inexistentes.
 
 ---
