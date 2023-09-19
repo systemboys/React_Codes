@@ -47,7 +47,7 @@
 - [Obtendo registros com limite e paginação na rota](#obtendo-registros-com-limite-e-pagina%C3%A7%C3%A3o-na-rota "Obtendo registros com limite e paginação na rota")
   > **( i )** Essa configuração deve ser feita na sua rota!
 
-> Corrigindo problemas de carregamento
+> Corrigindo problemas de carregamento.
 
 - [`Correção do Carrossel` e Botão de Passador em Componente React](#corre%C3%A7%C3%A3o-do-carrossel-e-bot%C3%A3o-de-passador-em-componente-react "Correção do Carrossel e Botão de Passador em Componente React")
   > **( i )** Esta correção funcionou no componente ` <Swiper></Swiper>` que apresentava problemas ao exibir os itens!
