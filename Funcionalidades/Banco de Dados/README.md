@@ -192,6 +192,8 @@ App.listen(3333, ()=>{
 });
 ```
 
+> **( i )** Caso você hospede em um servidor online, veja como [selecionar automaticamente a URL de API com Base no Ambiente em JavaScript](https://github.com/systemboys/React_Codes/tree/main/Computa%C3%A7%C3%A3o%20em%20nuvens/Hospedar%20aplicativo%20ReactJS%20em%20servidor%20de%20hospedagem#sele%C3%A7%C3%A3o-autom%C3%A1tica-da-url-de-api-com-base-no-ambiente-em-javascript "Você pode adicionar uma condição para determinar automaticamente qual URL usar com base no ambiente em que sua aplicação está sendo executada.")!
+
 Para habilitar o CORS no seu servidor Express, você pode usar a biblioteca cors. Para permitir qualquer origem, você pode passar `{ origin: '*' }` como opções para a função `cors()`.
 
 Instalar o `CORS`:
