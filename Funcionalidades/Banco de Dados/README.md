@@ -426,10 +426,6 @@ useEffect(() => {
 }, []);
 ```
 
-> **( i )** No trecho `{listUpdates.map(Updates => (`, no lugar de `Updates` você pode usar o termo `item`, assim fica mais padrão. Ex.: `{listUpdates.map(item => (`. Assim, para obter os itens ficaria desta forma `Data: {item.date} às {item.hour}`.
-
----
-
 > Obs.: A constante `listUpdates` deve ser mapeada pelo `map()`, porque os dados da tabela estão nessa constante.
 
 > Nesse código, um hook `useState` é utilizado para criar uma variável de estado chamada `listUpdates` e uma função `setListUpdates` para atualizar esse estado. Inicialmente, o valor do estado é definido como um array vazio `[]`.
@@ -444,8 +440,8 @@ E por último, o `map()` para obter sua lista:
 
 ```jsx
 <ul>
-    {listUpdates.map(Updates => (
-        <li>Atualização: {Updates.commit} | Data: {Updates.date} às {Updates.hour} | Autor: {Updates.author} | Descrição: {Updates.description}</li>
+    {listUpdates.map(item => (
+        <li>Atualização: {item.commit} | Data: {item.date} às {item.hour} | Autor: {item.author} | Descrição: {item.description}</li>
     ))}
 </ul>
 ```
