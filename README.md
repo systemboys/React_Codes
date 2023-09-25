@@ -37,7 +37,7 @@
 > Funcionalidades
 
 - [Instalações](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Instala%C3%A7%C3%B5es#instala%C3%A7%C3%B5es "Instalações")
-- [Iniciando projeto](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Iniciando%20projeto#react-codes--iniciando-projeto "Iniciando projeto")
+- [Iniciando projeto](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Iniciando%20projeto#iniciando-projeto "Iniciando projeto")
 - [Arrays](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Arrays#react-codes--arrays "Array")
 - [Funções](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Fun%C3%A7%C3%B5es#react-codes--fun%C3%A7%C3%B5es "Funções")
 - [Banco de Dados](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Banco%20de%20Dados#banco-de-dados "Banco de Dados")
