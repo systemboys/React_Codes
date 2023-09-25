@@ -1,4 +1,8 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Particularidades do CSS
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Particularidades do CSS
+
+### *Sumário*
 
 - [Impedir o uso de seleção de texto dentro do componente](#impedir-o-uso-de-sele%C3%A7%C3%A3o-de-texto-dentro-do-componente "Impedir o uso de seleção de texto dentro do componente")
 
@@ -74,6 +78,6 @@ function App() {
 Dessa forma, somente o conteúdo dentro do sub-elemento que tem o valor de `user-select` como `text` poderá ser selecionado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--particularidades-do-css "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
