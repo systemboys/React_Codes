@@ -69,7 +69,7 @@
 
 - [Dicionário do programador](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do%20programador#dicion%C3%A1rio-do-programador "Dicionário do programador")
 - [Manipulações com ReactJS](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS#react-codes--manipula%C3%A7%C3%B5es-em-reactjs "Manipulações com ReactJS")
-- [ReactJS: Anotações diversas de trechos úteis](https://github.com/systemboys/React_Codes/tree/main/ReactJS%20-%20Anota%C3%A7%C3%B5es%20diversas%20de%20trechos%20%C3%BAteis#react-codes--anota%C3%A7%C3%B5es-diversas-de-trechos-%C3%BAteis "ReactJS: Anotações diversas de trechos úteis")
+- [ReactJS: Anotações diversas de trechos úteis](https://github.com/systemboys/React_Codes/tree/main/ReactJS%20-%20Anota%C3%A7%C3%B5es%20diversas%20de%20trechos%20%C3%BAteis#anota%C3%A7%C3%B5es-diversas-de-trechos-%C3%BAteis "ReactJS: Anotações diversas de trechos úteis")
 
 > Projetos
 
