@@ -1,6 +1,10 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Jornal de Mirador v4
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Jornal de Mirador v4
 
 [![Home do JMv4](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Jornal_de_Mirador.png "Home do JMv4")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/Jornal_de_Mirador.png "Home do JMv4")
+
+### *Sumário*
 
 - [Terminais em execução e desenvolvimento](https://github.com/systemboys/React_Codes/tree/main/Projetos/Jornal%20de%20Mirador#terminais "Terminais em execução e desenvolvimento")
 - [Componentes](#componentes "Componentes")
@@ -29,6 +33,6 @@ Terminais em execução e desenvolvimento
 | MainMenu | [![Main Menu](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/MainMenu.png "Main Menu")](https://github.com/systemboys/React_Codes/raw/main/Projetos/Jornal%20de%20Mirador/images/MainMenu.png "Main Menu") |
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--jornal-de-mirador-v4 "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
