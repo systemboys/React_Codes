@@ -61,7 +61,7 @@
   > **( i )** Neste guia, mostramos como usar o ReactJS para buscar dados de uma API e inicializar uma DataTable somente após os dados terem sido carregados  com sucesso. Isso garante que a DataTable funcione corretamente e evita  problemas de dados vazios ou inexistentes.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -351,7 +351,7 @@ npx prisma generate
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -471,7 +471,7 @@ Observe que a propriedade `dangerouslySetInnerHTML` recebe um objeto com uma ún
 Com essa mudança, o conteúdo HTML deve ser renderizado corretamente no seu componente. Mas lembre-se de usar esta função com cuidado e evitar expor seu aplicativo a ataques de XSS.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -496,7 +496,7 @@ Nesse exemplo, primeiro, todos os registros são recuperados usando `findMany`. 
 Dessa forma, você deve obter uma lista de resultados aleatórios a partir da consulta ao banco de dados.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -589,7 +589,7 @@ useEffect(() => {
 > No exemplo acima, está sendo mudado o plano de fundo de um objeto. Note que na `url()` está setado o registro `listBackground[0]?.file` buscado na tabela do banco de dados.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 ### Listar 1 registro a partir do ID, Exemplo 2
@@ -626,7 +626,7 @@ useEffect(() => {
 > Neste exemplo, é selecionado um registro de uma tabela, onde esse registro é posto em outra rota para selecionar outro registro, logo em seguida fazendo a mudança do plano de fundo de um objeto.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -672,7 +672,7 @@ onClick={(event) => handleClick(event, GradientBackgrounds.id)}
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -707,7 +707,7 @@ Api.put(`/companySystemUpdateBackgroundId/1/${id}`).then((res) => {
 > No exemplo acima, estamos atualizando uma informação na tabela "company_system", na coluna "background" a partir do ID do registro, no caso o ID do registro é "1" e o dado da coluna é "2".
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -779,7 +779,7 @@ O await é utilizado para esperar pela conclusão da chamada da API antes de pro
 O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScript, que são operações que podem levar algum tempo para serem concluídas e não bloqueiam a execução do código. Com o uso do await, o código não prossegue até que a operação assíncrona seja finalizada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -822,7 +822,7 @@ export default MeuComponente;
 O método `componentDidMount` é chamado automaticamente pelo React quando o componente é montado na tela. Dentro dele, é feita a chamada à API e o estado inicial do componente é definido com a lista de atualizações vazia. Quando a resposta da API é obtida, o estado é atualizado com a lista de atualizações recebida. Na função de renderização do componente, a lista é exibida utilizando o método `map()` como no exemplo anterior.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -890,7 +890,7 @@ class YourComponent extends Component {
 Com essas alterações, seu componente deve ser capaz de fazer a chamada à API e renderizar os dados recebidos. Lembre-se de importar o `Api` de onde ele está definido e ajustar o caminho para a rota correta.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -938,7 +938,7 @@ export default MyComponent;
 Certifique-se de substituir `'path/to/Api'` pelo caminho correto para o módulo de API que você está usando em seu projeto. Além disso, lembre-se de atualizar a lógica de renderização para exibir os dados de `listJMPosts` conforme necessário.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -983,7 +983,7 @@ Certifique-se de que as propriedades `thumb`, `title`, `category` e `date` corre
 > Por fim, o `console.log(listBackground)` é usado para exibir o valor atual de `listBackground` no console. Isso pode ser útil para verificar se os dados foram obtidos corretamente e para depurar eventuais problemas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1011,7 +1011,7 @@ routes.get('/jm_posts', async (req, res) => {
 Dessa forma, a consulta retornará os registros de 6 a 10, ordenados por ID de forma decrescente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1052,7 +1052,7 @@ Quanto à diferença de comportamento entre `listPosts` e `postSlider`, pode hav
 Essas verificações ajudarão a identificar possíveis discrepâncias nos dados e a solucionar o problema de exibição do carrossel.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1089,7 +1089,7 @@ class PostGallery extends Component {
 Com essa abordagem, o componente só será renderizado quando os dados da API forem recuperados e a lista de notícias não estiver vazia. Isso garante que os dados estejam prontos antes da renderização, evitando problemas de carregamento tardio no slider. Certifique-se de que a estrutura condicional seja colocada no local apropriado dentro do método `render`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1159,6 +1159,6 @@ A alteração que você fez no código envolve o uso de um segundo `useEffect` q
 Em resumo, essa alteração garante que a DataTable seja inicializada somente após os dados da API terem sido carregados com sucesso (ou seja, quando `dataLoaded` se torna `true`). Isso evita que a DataTable seja inicializada com dados vazios ou inexistentes e garante que ela funcione corretamente com os dados reais da API quando estiver pronta para ser exibida na página.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--banco-de-dados "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
