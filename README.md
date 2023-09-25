@@ -73,7 +73,7 @@
 
 > Projetos
 
-- [Projetos desenvolvidos em React](https://github.com/systemboys/React_Codes/tree/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS#manipula%C3%A7%C3%B5es-em-reactjs "Projetos desenvolvidos em React")
+- [Projetos desenvolvidos em React](https://github.com/systemboys/React_Codes/blob/main/Projetos/README.md#projetos-desenvolvidos-em-react "Projetos desenvolvidos em React")
 - [Versionamento](https://github.com/systemboys/React_Codes/tree/main/Projetos/Versionamento#react-codes--versionamento "Versionamento")
 
 > Computação em nuvens
