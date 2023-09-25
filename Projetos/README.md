@@ -7,7 +7,7 @@
 
 ### *Sumário*
 
-- [GTi SiS Float Away 6.1](https://github.com/systemboys/React_Codes/tree/main/Projetos/GTi%20SiS%20Float%20Away%206.1#react-codes--gti-sis-float-away-61 "GTi SiS Float Away 6.1")
+- [GTi SiS Float Away 6.1](https://github.com/systemboys/React_Codes/tree/main/Projetos/GTi%20SiS%20Float%20Away%206.1#gti-sis-float-away-61 "GTi SiS Float Away 6.1")
 - [Jornal de Mirador - JM](https://github.com/systemboys/React_Codes/tree/main/Projetos/Jornal%20de%20Mirador#react-codes--jornal-de-mirador-v4 "Jornal de Mirador - JM")
 
 ---
