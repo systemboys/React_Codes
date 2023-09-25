@@ -1,4 +1,8 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Trabalhando com data e hora
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Trabalhando com data e hora
+
+### *Sumário*
 
 - [Formatando Data](#formatando-data "Formatando Data")
 - [Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'](#formatar-data-1992-12-08t000000000z-no-formato-08-12-1992 "Formatar data '1992-12-08T00:00:00.000Z' no formato '08-12-1992'")
@@ -41,7 +45,7 @@ const parsedDate = parseISO(date).toISOString(); // Data
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -76,7 +80,7 @@ Neste exemplo, você cria um objeto `Date` com base na string da data. Em seguid
 Espero que isso ajude! Se tiver mais perguntas, estou aqui para ajudar.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -92,7 +96,7 @@ const Hours = new Date("1970-01-01T" + hour + "Z"); // Hora
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -140,7 +144,7 @@ Assumindo que `listContent[0]?.date` contém a data no formato "yyyy-mm-dd" e `l
 Espero que isso ajude!
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -171,7 +175,7 @@ const formattedDate = formatDate(dateStr); // '2023-03-28'
 No exemplo acima, a função `formatDate()` recebe uma string com a data no formato "dd/mm/aaaa" e retorna a data no formato "aaaa-mm-dd".
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -201,7 +205,7 @@ export default App;
 Este exemplo cria uma instância do objeto Date contendo a data atual e, em seguida, formata-a no formato "YYYY-MM-DD". Em seguida, a data formatada é passada como valor padrão para um input HTML do tipo "date".
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -231,7 +235,7 @@ export default App;
 Este exemplo cria uma instância do objeto Date contendo a data atual. Em seguida, a data é formatada no formato "dd/mm/aaaa" e é passada como valor padrão para um input HTML do tipo "text". Observe que o método padStart é usado para adicionar um zero à esquerda quando o dia ou mês é menor que 10.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -291,7 +295,7 @@ ${(today.getHours() < 10 ? "0" : "") + today.getHours()}:${(today.getMinutes() <
 Nesse caso, o zero à esquerda é adicionado apenas se o valor for menor que 10, usando o operador ternário ? :. Se o valor for menor que 10, é concatenado um zero à esquerda, caso contrário, não é adicionado nada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -320,7 +324,7 @@ Isso irá imprimir a data atual no formato desejado no console.
 Lembre-se de ajustar os nomes dos dias da semana e dos meses de acordo com o idioma desejado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -363,7 +367,7 @@ console.log(formattedDate); // Saída: Terça-feira, 23 de maio de 2023.
 Você pode usar a função `formatDate` para transformar qualquer data no formato desejado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -401,6 +405,6 @@ console.log(formattedDate); // Saída: Terça-feira, 23 de maio de 2023.
 Ao ajustar para o fuso horário UTC, você deve obter a data formatada corretamente. Lembre-se de também verificar as configurações de fuso horário no servidor e cliente, para garantir a consistência na interpretação das datas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--trabalhando-com-data-e-hora "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
