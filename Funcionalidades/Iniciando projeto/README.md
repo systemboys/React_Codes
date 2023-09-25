@@ -1,4 +1,8 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Iniciando projeto
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Iniciando projeto
+
+### *Sumário*
 
 - [1 - Crie o seu projeto com o Vite](#1---crie-o-seu-projeto-com-o-vite "1 - Crie o seu projeto com o Vite")
 - [2 - Entre no diretório do seu projeto project_name](#2---entre-no-diret%C3%B3rio-do-seu-projeto-project_name "2 - Entre no diretório do seu projeto project_name")
@@ -22,7 +26,7 @@ npm create vite@latest project_name
 > Obs.: Selecione React e depois JavaScript ou TypyScript, dependendo do que deseja em seu projeto!
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ### 2 - Entre no diretório do seu projeto project_name:
 
@@ -33,7 +37,7 @@ npm i
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ### 3 - Execute o projeto com o seguinte comando:
 
@@ -51,7 +55,7 @@ npm run dev
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -82,7 +86,7 @@ Atalhos:
 - Pressione `q` para sair
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -152,7 +156,7 @@ Nas máquinas que estão na mesma rede, abrir seu navegador e digitar a URL do s
 [![URL no navegador da máquina local](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Iniciando%20projeto/images/Projeto_em_rede_local.png "URL no navegador da máquina local")
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -169,6 +173,6 @@ npm run build
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--iniciando-projeto "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
