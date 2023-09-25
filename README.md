@@ -28,7 +28,7 @@
 
 > Frameworks
 
-- [Next.JS](https://github.com/systemboys/React_Codes/tree/main/Frameworks/NextJS#react-codes--nextjs "Next.JS")
+- [Next.JS](https://github.com/systemboys/React_Codes/tree/main/Frameworks/NextJS#nextjs "Next.JS")
 
 > Tecnologia de contêiner
 
