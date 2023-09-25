@@ -1,4 +1,8 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Componentes e elementos
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Componentes e elementos
+
+### *Sumário*
 
 - [Componentes no modo `Default Exports`](#componentes-no-modo-default-exports "Componentes no modo Default Exports")
 - [Componentes no modo `Named Exports`](#componentes-no-modo-named-exports "Componentes no modo Named Exports")
@@ -91,7 +95,7 @@ export default Test
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -152,7 +156,7 @@ export function Post() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -282,7 +286,7 @@ export function YourComponent() {
 > Note que foi adicionado em `className="mb-2"` a classe do CSS Modules ficando assim: `${styles.formBody} mb-2`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -412,7 +416,7 @@ Da mesma forma, é utilizado para o campo de horas:
 Lembre-se de importar o componente InputMask e definir os estados e as referências de acordo com o campo de hora.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -485,7 +489,7 @@ Agora os geters e os seters deverão ser ligados nos campos:
 > Os valores desses campos estão na propriedade `.value` em `setPassword(e.target.value)`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -528,7 +532,7 @@ function MyForm() {
 > A função `onChange` é usada para atualizar o valor do estado `systemTitle` sempre que o usuário digita algo no campo. Dessa forma, o valor do campo será atualizado conforme o usuário digita e pode ser usado em outras partes do seu código.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -607,7 +611,7 @@ Nos campos devem ser atribuídas suas referências `ref={full_nameInputRef}`:
 Nesse exemplo, você pode ver que o código verifica se o campo "Nome completo" está vazio usando o método `trim()` para remover os espaços em branco em ambos os lados da string e depois comparando com uma string vazia. Se o campo estiver vazio, exibirá um alerta e a função retornará, impedindo que o formulário seja enviado. Em seguida, é feita uma verificação semelhante para outros campos obrigatórios, dependendo do tipo de cliente selecionado. Se todos os campos obrigatórios estiverem preenchidos, o formulário será enviado e os valores dos campos serão exibidos no console.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -683,7 +687,7 @@ function handleSubmit(e) {
 Nesse exemplo, a função `validarEmail` usa uma expressão regular para verificar se o email é válido. Se o email não for válido, o código exibe um alerta. Caso contrário, o resto do código para enviar o formulário pode ser executado. Note que a função `handleSubmit` deve ser atribuída ao evento `onSubmit` do formulário para ser chamada quando o formulário for enviado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -739,7 +743,7 @@ import { useRef } from "react";
 Nesse exemplo, utilizamos a propriedade `ref` do elemento `form` para obter uma referência ao formulário. Em seguida, passamos essa referência para a propriedade `ref` do elemento `form` e utilizamos o método `reset()` nessa referência no evento de click do botão "Reset". Note que, para resetar os estados dos campos controlados pelo React (`name` e `email`), também precisamos setar esses valores para as strings vazias.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -864,7 +868,7 @@ Aqui está uma lista completa das opções disponíveis na barra de ferramentas:
 Observe que algumas dessas opções podem não estar disponíveis, dependendo de quais plugins do CKEditor 5 você incluiu em seu projeto.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -907,7 +911,7 @@ O await é utilizado para esperar pela conclusão da chamada da API antes de pro
 O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScript, que são operações que podem levar algum tempo para serem concluídas e não bloqueiam a execução do código. Com o uso do await, o código não prossegue até que a operação assíncrona seja finalizada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -948,7 +952,7 @@ Elementos do HTML:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1000,7 +1004,7 @@ Os elementos HTML no retorno:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1045,7 +1049,7 @@ export function YourComponent(props) {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1089,7 +1093,7 @@ Ao utilizar o `useEffect` com um array de dependências vazio (`[]`), você gara
 Além disso, observe que no exemplo acima, também é fornecida uma função de retorno dentro do `useEffect` para destruir o DataTables quando o componente for desmontado. Isso pode ser útil se você quiser liberar recursos ou evitar vazamentos de memória.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1144,7 +1148,7 @@ Com essa abordagem, o DataTables só será inicializado após os dados terem sid
 Espero que isso resolva o problema. Se você ainda tiver dificuldades, por favor, forneça mais detalhes ou mostre o código atualizado para que eu possa ajudá-lo melhor.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1187,7 +1191,7 @@ Elementos do HTML:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1224,7 +1228,7 @@ Elementos HTML:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1255,7 +1259,7 @@ Na impessão de elementos, as classes aparecerão da seguinte forma:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1307,7 +1311,7 @@ export function TabsExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1349,7 +1353,7 @@ export function LinkedExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1413,7 +1417,7 @@ render(<Example />);
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1456,7 +1460,7 @@ export function AdvancedExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1517,7 +1521,7 @@ export function CardExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1551,7 +1555,7 @@ export function AnimationExample() {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1578,7 +1582,7 @@ Elemento HTML:
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -1617,6 +1621,6 @@ Nesse exemplo, estamos usando o hook `useEffect` para adicionar um listener para
 Com essa abordagem, qualquer menu de contexto que tente ser exibido dentro do seu componente será impedido de aparecer.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--componentes-e-elementos "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
