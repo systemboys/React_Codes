@@ -1,4 +1,8 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Funções
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Funções
+
+### *Sumário*
 
 - [Função simples](#fun%C3%A7%C3%A3o-simples "Função simples")
 - [Exemplo de Adição de Evento de Clique em JavaScript](#exemplo-de-adi%C3%A7%C3%A3o-de-evento-de-clique-em-javascript "Exemplo de Adição de Evento de Clique em JavaScript")
@@ -38,7 +42,7 @@ Sua função pode ser executada por exemplo, em um elemento HTML escrita da segu
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -67,7 +71,7 @@ Esse código JavaScript executa as seguintes ações:
 Em resumo, esse código seleciona um botão com o id "myButton" e adiciona um ouvinte de evento para exibir um alerta "Hello World!" sempre que o botão for clicado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -95,7 +99,7 @@ return <button onClick={(event) => handleClick(event, "123")}>Clique aqui</butto
 > O `onClick={}` envia o evento, e no segundo parâmetro de `handleClick(event, "123")` será definido o valor a ser enviado. O resultado deste exemplo é exibido no `console`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -116,7 +120,7 @@ openPopup('https://www.google.com');
 Neste exemplo, a função `openPopup` recebe uma URL como parâmetro e utiliza o método `window.open` para abrir uma nova janela com a URL especificada. O segundo parâmetro da função `window.open` define o nome da janela (no caso, "popup"), e o terceiro parâmetro especifica as dimensões da janela. Você pode ajustar o tamanho de acordo com suas necessidades.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -145,7 +149,7 @@ Para usar essa função em seu projeto React, basta chamá-la em algum evento de
 Este exemplo criará um botão que, quando clicado, abrirá uma janela popup com a URL "https://www.google.com" e as dimensões 800x600, centralizadas na tela.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -173,7 +177,7 @@ console.log(numeroCaracteres); // 16
 Neste exemplo, a constante `numeroCaracteres` vai conter o número de caracteres do texto, que no caso é 16.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -247,7 +251,7 @@ Para utilizar a função `capitalizeWords` em um elemento HTML, basta chamá-la 
 Isso irá renderizar o texto "Este é um Exemplo de Título Capitalizado" dentro de um elemento `<h1>`.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -302,7 +306,7 @@ Este código em ReactJS tem como objetivo capitalizar a primeira palavra de um p
 Esse código pode ser usado como referência para capitalizar a primeira palavra de um parágrafo e lidar com exceções de palavras específicas em seu projeto ReactJS.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -325,7 +329,7 @@ function getMonthName(month) {
 Nesse exemplo, a função `getMonthName` recebe um número de mês (de 1 a 12) como argumento e retorna o nome do mês correspondente. O array `monthNames` contém os nomes dos meses em ordem, e a função usa o número do mês como índice para obter o nome correspondente do array. Note que a função subtrai 1 do número do mês, já que os arrays em JavaScript são indexados a partir de zero.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -368,6 +372,6 @@ Além disso, estamos usando `behavior: 'smooth'` para uma rolagem suave. Se voc�
 Isso fará com que a página role para o topo sempre que a página "single" for carregada. Certifique-se de incorporar isso ao seu componente "single" existente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--fun%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
