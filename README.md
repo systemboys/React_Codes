@@ -59,7 +59,7 @@
 - [Manipulações de elementos com JavaScript](https://github.com/systemboys/React_Codes/tree/main/CSS%20e%20HTML/Manipula%C3%A7%C3%B5es%20de%20elementos%20com%20JavaScript#manipula%C3%A7%C3%B5es-de-elementos-com-javascript "Manipulações de elementos com JavaScript")
 - [Styled Components](https://github.com/systemboys/React_Codes/tree/main/CSS%20e%20HTML/Styled%20Components#styled-components "Styled Components")
 - [Particularidades do HTML](https://github.com/systemboys/React_Codes/tree/main/CSS%20e%20HTML/Particularidades%20do%20HTML#particularidades-do-html "Particularidades do HTML")
-- [Particularidades do CSS](https://github.com/systemboys/React_Codes/tree/main/CSS%20e%20HTML/Particularidades%20do%20CSS#react-codes--particularidades-do-css "Particularidades do CSS")
+- [Particularidades do CSS](https://github.com/systemboys/React_Codes/tree/main/CSS%20e%20HTML/Particularidades%20do%20CSS#particularidades-do-css "Particularidades do CSS")
 
 > Comunicação
 
