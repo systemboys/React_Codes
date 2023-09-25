@@ -1,6 +1,10 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Emails
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Emails
 
 [![Envio de Emails](https://github.com/systemboys/React_Codes/raw/main/Comunica%C3%A7%C3%A3o/Emails/images/SendMail1.png "Envio de Emails")](https://github.com/systemboys/React_Codes/raw/main/Comunica%C3%A7%C3%A3o/Emails/images/SendMail1.png "Envio de Emails")
+
+### *Sumário*
 
 - [Enviar e-mails com Node.js utilizando o pacote Nodemailer](#enviar-e-mails-com-nodejs-utilizando-o-pacote-nodemailer "Enviar e-mails com Node.js utilizando o pacote Nodemailer")
 
@@ -102,6 +106,6 @@ export function ContactTheDeveloper() {
 Lembre-se de substituir as informações do servidor SMTP pelas informações do seu próprio servidor de e-mail e substituir as informações do e-mail pelo seu próprio conteúdo. Com isso, ao submeter o formulário, o e-mail será enviado para o endereço de destino especificado no objeto "mailOptions".
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--emails "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
