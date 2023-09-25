@@ -1,7 +1,11 @@
 
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / GTi SiS Float Away 6.1
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## GTi SiS Float Away 6.1
 
 [![GTi SiS Float Away 6.1](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Front_GTi-SiS-Float-Away-6.1.png "GTi SiS Float Away 6.1")](https://github.com/systemboys/React_Codes/raw/main/Projetos/GTi%20SiS%20Float%20Away%206.1/images/Front_GTi-SiS-Float-Away-6.1.png "GTi SiS Float Away 6.1")
+
+### *Sumário*
 
 - [React-Fenestra](#react-fenestra "React-Fenestra")
 - [Como `instalar` o `GTi SiS Float Away 6.1`?](#como-instalar-o-gti-sis-float-away-61 "Como instalar o GTi SiS Float Away 6.1?")
@@ -28,7 +32,7 @@ React-Fenestra é uma biblioteca para implementação de um Desktop baseado em j
 ![Captura de tela de 2023-01-12 19-08-16](https://github.com/systemboys/image-bank/raw/main/Projetos%20em%20React/GTi%20SiS%20Float%20Away%206/gti-sis-float-away-6.1.png)
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -95,7 +99,7 @@ Depois disso, faça a instalação das dependências. A instrução está no ite
 ---
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -147,7 +151,7 @@ root.render(
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -266,7 +270,7 @@ Para eliminar o botão `Maximizar` veja o exemplo abaixo. Nesse caso, está send
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -417,7 +421,7 @@ onClick={() => props.fenestra.open({  title: "Nova Janela", content: ({ fenestra
 > [Luis Alfredo Galiza] Espero ter ajudado. Até mais.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -491,7 +495,7 @@ export function GetResource(props) {
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -562,7 +566,7 @@ return (
 Nesse exemplo, envolvemos a opção de ícone de Configurações em uma verificação condicional que só a exibe se o nível do usuário for 1. Além disso, adicionamos `.filter(Boolean)` ao final do array de ícones para filtrar todos os elementos "falsy" do array, o que inclui a opção de ícone de Configurações quando o nível do usuário é 0.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -586,6 +590,6 @@ Abaixo estão os terminais organizados durante o desenvolvimento dos projeto GTi
 > Os terminais acima está em ordem para o programador se basear no momento do desenvolvimento. Separados em cores, sendo laranja para o Float e verde para o Stock.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--gti-sis-float-away-61 "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
