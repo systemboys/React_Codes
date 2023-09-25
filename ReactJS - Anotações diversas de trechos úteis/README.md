@@ -1,6 +1,10 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Anotações diversas de trechos úteis
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Anotações diversas de trechos úteis
 
 [![React Coding](https://github.com/systemboys/React_Codes/blob/main/ReactJS%20-%20Anota%C3%A7%C3%B5es%20diversas%20de%20trechos%20%C3%BAteis/images/React_coding.png?raw=true "React Coding")](https://github.com/systemboys/React_Codes/blob/main/ReactJS%20-%20Anota%C3%A7%C3%B5es%20diversas%20de%20trechos%20%C3%BAteis/images/React_coding.png?raw=true "React Coding")
+
+### *Sumário*
 
 - [Importando constantes de outros arquivos](#importando-constantes-de-outros-arquivos "Importando constantes de outros arquivos")
 
@@ -27,6 +31,6 @@ E, finalmente, você pode utilizar a constante `baseUrl` em seu componente como 
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--anota%C3%A7%C3%B5es-diversas-de-trechos-%C3%BAteis "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
