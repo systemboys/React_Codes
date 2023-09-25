@@ -51,7 +51,7 @@
 
 > Segurança
 
-- [Criptografias](https://github.com/systemboys/React_Codes/tree/main/Seguran%C3%A7a/Criptografias#react-codes--criptografias "Criptografias")
+- [Criptografias](https://github.com/systemboys/React_Codes/tree/main/Seguran%C3%A7a/Criptografias#criptografias "Criptografias")
 
 > CSS e HTML
 
