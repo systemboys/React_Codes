@@ -102,6 +102,11 @@ Mudar o valor do "target": "es2016" para "es2020" no arquivo `./tsconfig.json`:
 "target": "es2020", /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
 ```
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
 ### Instalar o PRISMA:
 
 ```bash
@@ -120,6 +125,11 @@ Iniciar o PRISMA:
 npx prisma init
 ```
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
 ### Configurar o arquivo `./.env`:
 
 ```jsx
@@ -134,6 +144,11 @@ DATABASE_URL="postgresql://yourUser:yourPassword@yourHost:5432/yourDataBase"
 | yourHost | Host de sua hospedagem. |
 | 5432 | Porta utilizada para acessar. Obs.: Para acessar o MySQL no host de sua hospedagem, use a porta `3306`. |
 | yourDataBase | Banco de dados. |
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
 
 ### Configurar no arquivo `./prisma/schema.prisma` o trecho de codigo:
 
@@ -154,6 +169,11 @@ npx prisma db pull
 
 > O PRISMA irá obter a estrutura de todas as tabelas do seu banco de dados!
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
 ### Escrevendo o model no arquivo `./prisma/schema.prisma`:
 
 ```jsx
@@ -173,6 +193,11 @@ Exemplo abaixo:
 
 [![Print de uma execução no Db Pull](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/npx_prisma_db_pull.png "Print de uma execução no Db Pull")
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
 ### Criar o arquivo `./src/prisma.ts` e configure o seguinte código:
 
 ```jsx
@@ -182,6 +207,11 @@ export const prisma = new PrismaClient ({
     log: ['query'],
 });
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
 
 ### Criar o arquivo `./src/server.ts` e configure o seguinte código dentro do ./src/:
 
@@ -238,6 +268,11 @@ app.listen(port, () => {
 A configuração acima permite que todas as solicitações de origens diferentes sejam aceitas. Você também pode especificar uma lista de origens permitidas, caso queira restringir o acesso a um conjunto específico de domínios. Para mais informações sobre como configurar o CORS em sua aplicação, consulte a documentação do pacote `cors` no npm.
 
 > Com essa configuração, todas as requisições vindas de qualquer origem serão permitidas. Lembre-se que em produção, você deve configurar o CORS de forma mais restrita, permitindo somente as origens necessárias.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
 
 ### Criar e configurar o arquivo `./src/routes.ts`:
 
@@ -334,6 +369,11 @@ npm run dev
 
 [![Server executando](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/npm_run_dev.png "Server executando")
 
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
 ### Utilização do `Insomnia` para leitura, gravação, atualização e delete.
 
 Executar o GET para consultar os registros na tabela `admins` e gerar um `JSON` com o `Insomnia`:
@@ -343,6 +383,11 @@ Executar o GET para consultar os registros na tabela `admins` e gerar um `JSON` 
 Executar o POST para inserir um registro na tabela `admins` e gerar um `JSON`:
 
 [![Registrar dados com o Insomnia](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Imagem de exemplo")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Banco%20de%20Dados/Prisma/insomnia_post_admins.png "Registrar dados com o Insomnia")
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
 
 ### Recriar instâncias nos módulos:
 
@@ -393,6 +438,11 @@ export const Api = axios.create({
     }
 });
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
 ### LISTAR OS ITENS NO SEU COMPONENTE (importação da API)
 
 > Este exemplo lista itens de uma tabela de atualizações de commits do GitHub!
