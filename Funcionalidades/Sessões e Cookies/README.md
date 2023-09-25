@@ -2,8 +2,6 @@
 
 ## Sessões e Cookies
 
-### *Sumário*
-
 [![Cookies](https://github.com/systemboys/React_Codes/blob/main/Funcionalidades/Sess%C3%B5es%20e%20Cookies/images/cookies-1.png?raw=true "Cookies")](https://github.com/systemboys/React_Codes/blob/main/Funcionalidades/Sess%C3%B5es%20e%20Cookies/images/cookies-1.png?raw=true "Cookies")
 
 ### *Sumário*
