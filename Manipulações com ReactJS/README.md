@@ -1,4 +1,8 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Manipulações em ReactJS
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Manipulações em ReactJS
+
+### *Sumário*
 
 [![Manipulações com ReactJS](https://github.com/systemboys/React_Codes/raw/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS/images/Manipulacoes_com_ReactJS.png "Manipulações com ReactJS")](https://github.com/systemboys/React_Codes/raw/main/Manipula%C3%A7%C3%B5es%20com%20ReactJS/images/Manipulacoes_com_ReactJS.png "Manipulações com ReactJS")
 
@@ -22,7 +26,7 @@ console.log(hash); // Retorna "post-1".
 O código acima obtém a string após o hashtag (no exemplo, "governador-do-maranhao-recebe-comitiva-de-colinas") e remove o "#" do início da string usando o método `substr(1)`. Em seguida, essa string pode ser usada como necessário em sua aplicação.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-em-reactjs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -55,7 +59,7 @@ Lembre-se de que o `useLocation` só funcionará se o seu aplicativo estiver usa
 Certifique-se de ter instalado o `react-router-dom` usando o gerenciador de pacotes de sua preferência antes de usar o código acima.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-em-reactjs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -91,6 +95,6 @@ Explicação:
 - O atributo `key` é definido para cada elemento `<li>` para ajudar no desempenho e identificar cada elemento de maneira exclusiva. Neste caso, estamos usando a própria string da tag como a chave, mas você pode usar qualquer valor exclusivo e estável para identificar os elementos.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-em-reactjs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
