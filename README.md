@@ -43,7 +43,7 @@
 - [Banco de Dados](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Banco%20de%20Dados#banco-de-dados "Banco de Dados")
 - [Trabalhando com data e hora](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Trabalhando%20com%20data%20e%20hora#trabalhando-com-data-e-hora "Trabalhando com data e hora")
 - [Trabalhando com números](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Trabalhando%20com%20n%C3%BAmeros#trabalhando-com-n%C3%BAmeros "Trabalhando com números")
-- [Sessões e Cookies](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Sess%C3%B5es%20e%20Cookies#react-codes--sess%C3%B5es-e-cookies "Sessões e Cookies")
+- [Sessões e Cookies](https://github.com/systemboys/React_Codes/tree/main/Funcionalidades/Sess%C3%B5es%20e%20Cookies#sess%C3%B5es-e-cookies "Sessões e Cookies")
 
 > Componentes
 
