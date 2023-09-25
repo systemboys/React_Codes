@@ -24,7 +24,7 @@
 
 > Ambientes de execução
 
-- [Node.JS](https://github.com/systemboys/React_Codes/tree/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS#react-codes--nodejs "Node.JS")
+- [Node.JS](https://github.com/systemboys/React_Codes/tree/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS#nodejs "Node.JS")
 
 > Frameworks
 
