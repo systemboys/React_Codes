@@ -1,6 +1,10 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Assunto
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Assunto
 
 [![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+
+### *Sumário*
 
 - [Link 1](https://site.com#anchor-link-1 "Link 1")
 
@@ -15,7 +19,7 @@ const yourCodeJavaScript = "Seu código JavaScript";
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#assunto "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -52,3 +56,15 @@ const yourCodeJavaScript = "Seu código JavaScript";
 ╭─╮
 │ │
 ╰─╯
+
+> Hierarquia de diretórios e arquivos
+
+directory_0/
+├── directory_1/
+│   ├── file.js
+│   └── ...
+├── directory_2/
+│   ├── file.js
+│   └── ...
+└── ...
+
