@@ -1,6 +1,10 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Next.JS
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Next.JS
 
 [![Next.JS](https://github.com/systemboys/React_Codes/raw/main/Frameworks/NextJS/images/Next.js_Framework_Simplify_Your_Web_Building.png "Next.JS")](https://github.com/systemboys/React_Codes/raw/main/Frameworks/NextJS/images/Next.js_Framework_Simplify_Your_Web_Building.png "Next.JS")
+
+### *Sumário*
 
 - [Sobre Next.JS](#sobre-nextjs "Sobre Next.JS")
 
@@ -17,6 +21,6 @@ Com a crescente demanda por aplicativos da web mais rápidos e escaláveis, o Ne
 > Next.js é uma estrutura de desenvolvimento web de código aberto para React, e pode ser categorizada como uma ferramenta de desenvolvimento web e uma estrutura de aplicativos da web. Mais especificamente, Next.js é uma estrutura de desenvolvimento web de servidor para renderização de páginas da web e aplicativos do lado do servidor usando React.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nextjs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
