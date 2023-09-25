@@ -47,7 +47,7 @@
 
 > Componentes
 
-- [Componentes e elementos](https://github.com/systemboys/React_Codes/tree/main/Componentes/Componentes%20e%20elementos#react-codes--componentes-e-elementos "Componentes e elementos")
+- [Componentes e elementos](https://github.com/systemboys/React_Codes/tree/main/Componentes/Componentes%20e%20elementos#componentes-e-elementos "Componentes e elementos")
 
 > Segurança
 
