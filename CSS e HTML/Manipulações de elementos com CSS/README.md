@@ -1,4 +1,8 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Manipulações de elementos com CSS
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Manipulações de elementos com CSS
+
+### *Sumário*
 
 - [`Transbordar` texto dentro de um elemento](#transbordar-texto-dentro-de-um-elemento "Transbordar texto dentro de um elemento")
 - [Mudar a `imagem do plano de fundo` de um elemento](#mudar-a-imagem-do-plano-de-fundo-de-um-elemento "Mudar a imagem do plano de fundo de um elemento")
@@ -27,7 +31,7 @@ Sua class CSS
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -58,7 +62,7 @@ if (element) {
 Note que aqui estamos usando `element.style.backgroundColor` em vez de `element.style.backgroundImage` para definir a cor de fundo do elemento. Substitua `'blue'` pela cor desejada em formato de string. Você também pode definir a cor a partir de uma variável.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -80,7 +84,7 @@ Nesse exemplo, definimos a largura e altura desejadas para a imagem. A proprieda
 Lembre-se de substituir "img" pelo seletor CSS correto para a sua imagem.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -97,6 +101,6 @@ div {
 Lembre-se de substituir "div" pelo seletor CSS correto para a sua DIV. Se você quiser aplicar o efeito de escala de cinza em outros elementos, basta usar o mesmo código com o seletor apropriado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--manipula%C3%A7%C3%B5es-de-elementos-com-css "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
