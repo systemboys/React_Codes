@@ -1,10 +1,14 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Dicionário do programador
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Dicionário do programador
 
 # Dicionário de código
+
+### *Sumário*
 
 - [Insomnia](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do%20programador/Insomnia#react-codes--insomnia "Insomnia")
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--dicion%C3%A1rio-do-programador "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
