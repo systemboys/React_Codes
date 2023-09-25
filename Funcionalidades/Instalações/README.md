@@ -1,6 +1,10 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Instalações
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Instalações
 
 [![Node.JS e NPM](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Instala%C3%A7%C3%B5es/Node_%26_NPM/NodeJS-and-NPM.png "Node.JS e NPM")](https://github.com/systemboys/React_Codes/raw/main/Funcionalidades/Instala%C3%A7%C3%B5es/Node_%26_NPM/NodeJS-and-NPM.png "Node.JS e NPM")
+
+### *Sumário*
 
 - [Instalação do Node.JS e NPM](#instala%C3%A7%C3%A3o-do-nodejs-e-npm "Instalação do Node.JS e NPM")
 - [Atualização do Node.JS e NPM](#atualiza%C3%A7%C3%A3o-do-nodejs-e-npm "Atualização do Node.JS e NPM")
@@ -42,7 +46,7 @@ npm -v
 Após seguir esses passos, você deve ter o Node.js e o NPM instalados em seu sistema Linux.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--instala%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -69,7 +73,7 @@ Este comando atualiza o npm para a versão mais recente.
 > Note que o sudo é necessário para obter permissões administrativas no seu sistema. Certifique-se de que você tem as permissões necessárias antes de executar esses comandos.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--instala%C3%A7%C3%B5es "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
