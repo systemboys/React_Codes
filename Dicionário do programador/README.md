@@ -2,8 +2,6 @@
 
 ## Dicionário do programador
 
-# Dicionário de código
-
 ### *Sumário*
 
 - [Insomnia](https://github.com/systemboys/React_Codes/tree/main/Dicion%C3%A1rio%20do%20programador/Insomnia#m%C3%A9todos-no-insomnia "Insomnia")
