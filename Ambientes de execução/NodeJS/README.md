@@ -1,6 +1,10 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Node.JS
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Node.JS
 
 [![Node.JS](https://github.com/systemboys/React_Codes/raw/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS/images/Node.js.jpg "Node.JS")](https://github.com/systemboys/React_Codes/raw/main/Ambientes%20de%20execu%C3%A7%C3%A3o/NodeJS/images/Node.js.jpg "Node.JS")
+
+### **Sumário**
 
 - [O que é Node.js?](#o-que-%C3%A9-nodejs "O que é Node.js?")
 - [Como funciona?](#como-funciona "Como funciona?")
@@ -25,7 +29,7 @@ Foi criado em 2009 pelo engenheiro de software Ryan Dahl como uma alternativa ao
 Atualmente, o Node.js é mantido pela [OpenJS Foundation](https://openjsf.org/ "OpenJS Foundation’s mission is to drive broad adoption and ongoing development of key JavaScript solutions and related technologies."), uma fundação criada em 2019 com o objetivo de promover a utilização do JavaScript e de suas tecnologias relacionadas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -42,7 +46,7 @@ O Node.js não é um framework JavaScript, como o React ou o Vue.js, mas sim um 
 > Código Javascript (Imagem: Ferenc Almasi / Unsplash)
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -55,7 +59,7 @@ Outra vantagem é a possibilidade de manter o ecossistema de aplicações e toda
 O Node.js é um software gratuito, de código-aberto e com uma comunidade ativa e participativa. É suportado pelos mais diversos serviços de hospedagem, com AWS, Google Could e Microsoft Azure, e amplamente utilizado em escala industrial por grandes empresas como Netflix, PayPal, Linkedin, entre outras. Você pode saber mais sobre o Node.js acessando o [site oficial](https://nodejs.org/en/ "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.").
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -70,7 +74,7 @@ Além disso, o NVM permite que as diferentes versões do Node.js coexistam em um
 O NVM é compatível com Linux, macOS e Windows e pode ser instalado por meio de um script de instalação ou por meio do gerenciador de pacotes do sistema operacional.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -97,7 +101,7 @@ O comando "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install
 Em resumo, o comando "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash" é uma maneira conveniente de baixar e executar automaticamente o script de instalação do Node Version Manager (NVM) em um sistema Linux ou macOS. O script é baixado diretamente do repositório oficial do NVM no GitHub e configura o NVM no sistema, permitindo que você gerencie facilmente as versões do Node.js em seu ambiente de desenvolvimento. Lembre-se sempre de verificar a fonte e a autenticidade de scripts antes de executá-los em seu sistema.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -120,7 +124,7 @@ Para instalar o Node.js, siga os seguintes passos:
 Ao concluir a instalação, você poderá verificar se o Node.js foi instalado corretamente abrindo o terminal ou prompt de comando e digitando o comando `node -v`. Se o Node.js estiver instalado corretamente, o terminal deve exibir a versão instalada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -183,7 +187,7 @@ nvm use 14.17.5
 Isso configura a versão 14.17.5 como a versão atual do Node.js em seu ambiente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -217,7 +221,7 @@ Para instalar o Node.js no Debian via terminal, você pode usar o gerenciador de
 Agora você tem o Node.js instalado no Debian e pode começar a desenvolver aplicativos Node.js no seu sistema. Certifique-se de que a instalação tenha ocorrido sem erros e que você está usando as versões mais recentes.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -278,7 +282,7 @@ Esses comandos estão relacionados ao gerenciador de versões do Node.js chamado
     > Esse `--force` para o caso de apresentar erros.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -309,7 +313,7 @@ O servidor é criado através do código definido em um arquivo específico, ger
 Portanto, o servidor NPM em si não existe, mas o NPM pode ser utilizado para instalar e gerenciar pacotes que são utilizados em servidores web construídos em Node.js.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -322,6 +326,6 @@ npm init -y
 O comando "npm init -y" é usado para inicializar um novo projeto Node.js e criar um arquivo "package.json" com valores padrão. O parâmetro "-y" significa "yes" (sim) e indica que todas as perguntas durante a inicialização do projeto devem ser respondidas automaticamente com os valores padrão. Isso economiza tempo, pois não é necessário responder manualmente a cada pergunta durante o processo de inicialização do projeto. O arquivo "package.json" contém informações sobre o projeto, como nome, versão, dependências e scripts.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao SumÃ¡rio") | 
-[(&uarr;) Subir](#react-codes--nodejs "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
