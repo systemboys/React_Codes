@@ -1,4 +1,8 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Styled Components
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Styled Components
+
+### *Sumário*
 
 - [Várias classes na propriedade `className={}`](#v%C3%A1rias-classes-na-propriedade-classname "Várias classes na propriedade className={}")
 - [Trabalhando com `Styled Components`](#trabalhando-com-styled-components "Trabalhando com Styled Components")
@@ -13,7 +17,7 @@ Para usar mais de uma classe em um component, utilizamos o `TemplateString` para
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--styled-components "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 
 ---
@@ -92,7 +96,7 @@ Vamos fazer o uso do CSS Modules, criando um arquivo `Button.module.css`.
 ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--styled-components "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -145,6 +149,6 @@ export function Button({ variant = 'primary' }: ButtonProps) {
 > Dessa forma, estamos utilizando um components estilizado!
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--styled-components "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 
