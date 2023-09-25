@@ -1,6 +1,10 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Amazon Web Services - AWS
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Amazon Web Services - AWS
 
 [![Amazon Web Services](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Group-169-3.png "Amazon Web Services")](https://github.com/systemboys/React_Codes/raw/main/Computa%C3%A7%C3%A3o%20em%20nuvens/AWS/images/Group-169-3.png "Amazon Web Services")
+
+### *Sumário*
 
 - [O que é computação em nuvens?](#o-que-%C3%A9-computa%C3%A7%C3%A3o-nas-nuvens "O que é computação em nuvens?")
 - [Características de Cloud](#caracter%C3%ADsticas-essenciais-de-cloud "Características de Cloud")
@@ -48,7 +52,7 @@ Responsabilidade dos modelos.
 > As empresas utilizam de IaaS e PaaS, infraestruturas como serviços para entregar um SaaS, um software como serviço.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -68,7 +72,7 @@ Existem várias características essenciais que definem a computação em nuvem 
 Essas são apenas algumas das características essenciais da computação em nuvem, mas elas ajudam a explicar por que a nuvem se tornou tão popular para empresas de todos os tamanhos e setores.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ## Modelos de Deploy
 
@@ -98,7 +102,7 @@ Na imagem acima, há alguns modelos de Deploy que existem, lembrando que há vá
 > Hoje, mais de 90% das empresas são nuvens públicas e o restante acabam usando nuvem privadas, sendo usando nuvems públicas em todos os pontos. Inclusive grandes bancos estão migrando para nuvems públicas por causa das questões de segurança.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -125,7 +129,7 @@ Com o IAM, é possível criar usuários e grupos, definir permissões detalhadas
 
 O IAM é uma ferramenta essencial para garantir a segurança dos recursos da AWS, permitindo a criação de ambientes seguros e controlados, com o mínimo de privilégios necessários para cada usuário ou aplicativo. Com o IAM, é possível controlar de forma efetiva quem tem acesso a quais recursos, além de gerenciar e auditar as atividades desses usuários e aplicativos.
 
-[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ## EC2
 
@@ -137,7 +141,7 @@ O serviço também permite criar imagens de máquinas virtuais personalizadas, c
 
 O EC2 é altamente escalável e pode ser integrado com outros serviços da AWS, como o Elastic Load Balancing (ELB) e o Auto Scaling, para garantir alta disponibilidade e escalabilidade automática da infraestrutura. Ele também pode ser usado em conjunto com outros serviços da AWS, como o Amazon RDS (Relational Database Service) e o Amazon S3 (Simple Storage Service), para criar soluções completas e escaláveis na nuvem.
 
-[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ## CodePipeline
 
@@ -147,13 +151,13 @@ O CodePipeline pode ser integrado a várias ferramentas de terceiros, como o Jen
 
 O serviço também inclui recursos avançados de monitoramento e rastreamento de fluxos de trabalho, permitindo que os desenvolvedores monitorem todo o processo de lançamento, identifiquem rapidamente possíveis problemas e implementem correções de bugs em tempo real. Além disso, o CodePipeline é altamente escalável e pode ser usado para implantar aplicativos em uma ampla gama de ambientes, incluindo instâncias do Amazon EC2, contêineres do Docker e serviços sem servidor do AWS Lambda.
 
-[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ## CodeDeply
 
 CodeDeploy é um serviço de implantação automatizada da AWS que permite aos usuários automatizar a implantação de aplicativos em diferentes ambientes, como instâncias do Amazon EC2, servidores localizados no local, etc. O CodeDeploy facilita a implantação rápida e consistente de aplicativos em diferentes ambientes, com redução de tempo e riscos. Ele permite que os usuários implementem implantações sem tempo de inatividade e monitorem o status das implantações em tempo real. O CodeDeploy é flexível e pode ser integrado com outras ferramentas de desenvolvimento, como o AWS CodeCommit, AWS CodePipeline e outras ferramentas de terceiros. Com o CodeDeploy, é possível automatizar as atualizações de aplicativos em um ambiente, tornando o processo mais ágil, escalável e seguro.
 
-[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ## S3
 
@@ -163,7 +167,7 @@ Os objetos armazenados no S3 podem variar de alguns bytes até terabytes de tama
 
 O S3 da AWS possui alta disponibilidade, durabilidade e segurança, garantindo a integridade dos dados armazenados. Ele também oferece recursos de gerenciamento de ciclo de vida, controle de acesso e recursos de análise para ajudar os usuários a gerenciar seus dados de maneira eficaz e eficiente.
 
-[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ## RDS
 
@@ -174,6 +178,6 @@ O RDS gerencia tarefas de administração de banco de dados, como backup, replic
 O RDS é altamente escalável, o que significa que os usuários podem aumentar ou diminuir a capacidade do banco de dados com facilidade, de acordo com as necessidades do aplicativo ou da empresa. Além disso, o RDS fornece opções de segurança avançadas, incluindo a criptografia de dados em trânsito e em repouso, bem como a integração com o AWS Identity and Access Management (IAM) para controle de acesso baseado em funções.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--amazon-web-services---aws "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
