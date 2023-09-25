@@ -1,6 +1,10 @@
-# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes") / Hospedar aplicativo ReactJS em servidor de hospedagem
+# [React Codes](https://github.com/systemboys/React_Codes#react-codes "React Codes")
+
+## Hospedar aplicativo ReactJS em servidor de hospedagem
 
 [![Hospedagem](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/Hospedar%20aplicativo%20ReactJS%20em%20servidor%20de%20hospedagem/images/hospedagem-de-sites-destaque-2.png?raw=true "Hospedagem")](https://github.com/systemboys/React_Codes/blob/main/Computa%C3%A7%C3%A3o%20em%20nuvens/Hospedar%20aplicativo%20ReactJS%20em%20servidor%20de%20hospedagem/images/hospedagem-de-sites-destaque-2.png?raw=true "Hospedagem")
+
+### *Sumário*
 
 ##### Hospedagem de projeto
 - [Hospedagem de projeto em ReactJS](#hospedagem-de-projeto-em-reactjs "Hospedagem de projeto em ReactJS")
@@ -41,7 +45,7 @@ O processo geral para hospedar um aplicativo ReactJS envolve alguns passos bási
 Esses são apenas os passos básicos envolvidos na hospedagem de um aplicativo ReactJS. Cada provedor de hospedagem tem sua própria documentação e guias para ajudá-lo a configurar e implantar seu aplicativo. É importante seguir as instruções do provedor escolhido e garantir que o aplicativo esteja configurado corretamente antes de colocá-lo em produção.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -70,7 +74,7 @@ axios.get(`${process.env.REACT_APP_API_URL}/users`)
 Ao fazer isso, sua aplicação ReactJS deve ser capaz de se comunicar com a API, independentemente de onde ela esteja hospedada.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -136,7 +140,7 @@ O contêiner será executado e estará disponível na porta 80 da sua instância
 Agora você pode acessar o seu portal de notícias ReactJS na instância AWS através do endereço IP público da instância. Basta digitar o endereço IP público no navegador e você deverá ver o seu aplicativo sendo hospedado na instância AWS.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -203,7 +207,7 @@ Lembre-se de substituir `<container_id>` pelo ID ou nome real do contêiner que 
 Esses são os comandos básicos para parar, reiniciar e remover contêineres no Docker. Existem outros comandos disponíveis para gerenciar contêineres e explorar diferentes opções. Você pode consultar a documentação oficial do Docker para obter mais informações sobre esses comandos e suas opções.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -236,7 +240,7 @@ Lembre-se de que, se você estiver usando o nome do contêiner para se referir a
 Espero que isso esclareça sua dúvida! Se você tiver mais perguntas, estou aqui para ajudar.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -417,7 +421,7 @@ Dentro do diretório "nginx", os arquivos "default.conf" e "Dockerfile" têm os 
 Em resumo, o arquivo "default.conf" é usado para configurar o servidor Nginx dentro do contêiner, enquanto o arquivo "Dockerfile" é usado para construir a imagem do contêiner Nginx com base nas configurações definidas no "default.conf". Esses arquivos são fundamentais para criar e configurar corretamente um contêiner Nginx usando o Docker.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -465,7 +469,7 @@ Certifique-se de revisar o arquivo `docker-compose.yml` para entender quais serv
 > ```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -649,7 +653,7 @@ Certifique-se de revisar o arquivo `docker-compose.yml` para entender quais serv
 6. Aguardar o Docker Compose executar os serviços e pronto:
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -743,7 +747,7 @@ docker-compose up --build
 Isso iniciará seus serviços frontend e backend em contêineres separados. O frontend será acessível em `http://localhost` e o backend em `http://localhost:3333`, com base nas configurações do seu `docker-compose.yml`. Certifique-se de que os caminhos nos `Dockerfile` estejam corretos em relação ao seu diretório raiz.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -770,7 +774,7 @@ Isso também removerá todos os volumes associados aos serviços definidos no `d
 Lembre-se de que, ao usar `docker-compose down`, você também pode perder dados em volumes, portanto, use-o com cuidado em ambientes de produção ou quando você não quiser perder dados persistentes.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -831,7 +835,7 @@ Lembre-se de ajustar a variável `DOCKER_COMPOSE_FILE` para corresponder ao nome
 Este script simplificará o processo de derrubar e levantar sua aplicação Docker Compose com um único comando. Certifique-se de executar os comandos de parada e início apropriados no seu ambiente, pois a ordem e a configuração podem variar dependendo do seu projeto.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -862,7 +866,7 @@ build_gti-sis-float-away-v6.1_prod/
 Os arquivos `Dockerfile` na pasta `api/` e `frontend/` foram configurados para a construção de contêineres Docker para a API e o frontend, respectivamente. O arquivo `docker-compose.yml` foi configurado para orquestrar os contêineres e serviços, e o arquivo `docker-services.sh` foi criado como um script Bash para gerenciar o ciclo de vida dos contêineres.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
@@ -900,6 +904,6 @@ Neste código, estamos verificando a variável de ambiente `NODE_ENV`, que geral
 Isso permitirá que sua aplicação detecte automaticamente o ambiente e use a URL correta, sem a necessidade de comentar ou descomentar linhas manualmente. Certifique-se de que sua configuração de variáveis de ambiente esteja correta em sua instância AWS para que o código detecte o ambiente corretamente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
-[(&uarr;) Subir](#react-codes--hospedar-aplicativo-reactjs-em-servidor-de-hospedagem "Subir para o topo")
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
