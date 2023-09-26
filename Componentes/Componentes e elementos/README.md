@@ -10,7 +10,7 @@
   - [`Máscara` nos campos](#m%C3%A1scara-nos-campos "Máscara nos campos")
   - [Enviando um `formulário`](#enviando-um-formul%C3%A1rio "Enviando um formulário")
   - [`Campos editáveis` no formulário dentro de um componente](#campos-edit%C3%A1veis-no-formul%C3%A1rio-dentro-de-um-componente "Campos editáveis no formulário dentro de um componente")
-  - [`Validar` os `campos vazios` do formulário](#validar-os-campos-vazios-do-formul%C3%A1rio "Validar os campos vazios do formulário")
+  - [`Validar` e `enviar` os `campos` do formulário](#validar-e-enviar-os-campos-do-formul%C3%A1rio "Validar e enviar os campos do formulário")
   - [`Validar` campo de `email` com JavaScript no ReactJS](#validar-campo-de-email-com-javascript-no-reactjs "Validar campo de email com JavaScript no ReactJS")
   - [`Resetar` campos do `formulário`](#resetar-campos-do-formul%C3%A1rio "Resetar campos do formulário")
   - [Instalar e utilizar o `CKEditor 5` no ReactJS](#instalar-e-utilizar-o-ckeditor-5-no-reactjs "Instalar e utilizar o CKEditor 5 no ReactJS")
@@ -536,7 +536,7 @@ function MyForm() {
 
 ---
 
-## Validar os campos vazios do formulário
+## Validar e enviar os campos do formulário
 
 Para verificar se os campos estão vazios, você pode usar uma declaração condicional `if` para verificar se as variáveis de estado correspondentes estão vazias ou não antes de enviar o formulário. Você pode fazer algo assim:
 
