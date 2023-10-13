@@ -21,6 +21,7 @@
   - [Guia Passo a Passo: Como Dockerizar e Orquestrar Aplicação Frontend e Backend com Docker Compose na AWS](#guia-passo-a-passo-como-dockerizar-e-orquestrar-aplica%C3%A7%C3%A3o-frontend-e-backend-com-docker-compose-na-aws "Guia Passo a Passo: Como Dockerizar e Orquestrar Aplicação Frontend e Backend com Docker Compose na AWS")
   - [Como Derrubar (Parar) Sua Aplicação Dockerizada com Docker Compose](#como-derrubar-parar-sua-aplica%C3%A7%C3%A3o-dockerizada-com-docker-compose "Como Derrubar (Parar) Sua Aplicação Dockerizada com Docker Compose")
   - [Script Bash para Gerenciar o Ciclo de Vida de Aplicações Docker Compose](#script-bash-para-gerenciar-o-ciclo-de-vida-de-aplica%C3%A7%C3%B5es-docker-compose "Script Bash para Gerenciar o Ciclo de Vida de Aplicações Docker Compose")
+    - [Controle Docker Simplificado: Automatizando Operações com Docker Compose](# "Controle Docker Simplificado: Automatizando Operações com Docker Compose")
   - [Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend](#destaque-estrutura-de-arquivos-para-implanta%C3%A7%C3%A3o-docker-de-aplica%C3%A7%C3%A3o-frontend-e-backend "Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend")
   - [Seleção Automática da URL de API com Base no Ambiente em JavaScript](#sele%C3%A7%C3%A3o-autom%C3%A1tica-da-url-de-api-com-base-no-ambiente-em-javascript "Seleção Automática da URL de API com Base no Ambiente em JavaScript")
 
@@ -833,6 +834,129 @@ Aqui está como usar o script:
 Lembre-se de ajustar a variável `DOCKER_COMPOSE_FILE` para corresponder ao nome do seu arquivo `docker-compose.yml`, se ele tiver um nome diferente. Certifique-se também de que o script esteja no mesmo diretório que o arquivo `docker-compose.yml`.
 
 Este script simplificará o processo de derrubar e levantar sua aplicação Docker Compose com um único comando. Certifique-se de executar os comandos de parada e início apropriados no seu ambiente, pois a ordem e a configuração podem variar dependendo do seu projeto.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Controle Docker Simplificado: Automatizando Operações com Docker Compose
+
+Aqui está o seu script modificado com o menu:
+
+```bash
+#!/bin/bash
+
+clear
+
+# Variáveis úteis
+sleep='3'
+fileName=$(basename "$0")
+
+# Nome do seu arquivo docker-compose.yml
+DOCKER_COMPOSE_FILE=docker-compose.yml
+
+# Função para levantar a aplicação
+start_application() {
+    clear
+    echo "Levantando a aplicação..."
+    sleep ${sleep}
+    docker-compose -f $DOCKER_COMPOSE_FILE up -d
+    sleep ${sleep}
+    ./${fileName}
+}
+
+# Função para derrubar a aplicação
+stop_application() {
+    clear
+    echo "Derrubando a aplicação..."
+    sleep ${sleep}
+    docker-compose -f $DOCKER_COMPOSE_FILE down
+    sleep ${sleep}
+    ./${fileName}
+}
+
+# Função para destruir a aplicação
+destroy_application() {
+    clear
+    echo "Destruindo a aplicação..."
+    sleep ${sleep}
+    # Remover todos os contêineres existentes no sistema Docker
+    docker rm $(docker ps -a -q)
+    # Remover todas as imagens existentes no sistema Docker
+    docker rmi $(docker images -a -q)
+    # Remover todas as imagens ociosas
+    docker image prune
+    sleep ${sleep}
+    ./${fileName}
+}
+
+# Função para deletar a aplicação
+delete_application() {
+    clear
+    echo "Deletando a aplicação..."
+    sleep ${sleep}
+    cd ..
+    rm -rf * && ls -l
+}
+
+# Função para buildar a aplicação
+build_application() {
+    clear
+    echo "Buildando a aplicação..."
+    sleep ${sleep}
+    cd api/ && rm -rf node_modules/ && cd .. && cd frontend/ && rm -rf node_modules/ && cd ..
+    docker-compose -f $DOCKER_COMPOSE_FILE up --build
+}
+
+# Menu principal
+echo "╭┤ Docker Control ├─────────────────────╮"
+echo "│ 1 │ Levantar a aplicação              │"
+echo "│ 2 │ Derrubar a aplicação              │"
+echo "│ 3 │ Destruir a aplicação              │"
+echo "│ 4 │ Deletar a aplicação               │"
+echo "│ 5 │ Buildar a aplicação               │"
+echo "│ 0 │ Sair                              │"
+echo "╰───────────────────────────────────────╯"
+
+# Recebe a escolha do usuário
+read -p "Escolha uma opção: " choice
+
+# Verifique a escolha do usuário
+case "$choice" in
+    1)
+        start_application
+        ;;
+    2)
+        stop_application
+        ;;
+    3)
+        destroy_application
+        ;;
+    4)
+        delete_application
+        ;;
+    5)
+        build_application
+        ;;
+    0)
+        clear
+        echo "╭────────────────────╮"
+        echo "│ Você saiu do menu! │"
+        echo "╰────────────────────╯"
+        exit 0
+        ;;
+    *)
+        echo "Opção inválida."
+        sleep ${sleep}
+        ./${fileName}
+        ;;
+esac
+
+exit 0
+```
+
+Neste script, o usuário pode escolher uma opção de 1 a 4 no menu e o script executará a função correspondente à opção escolhida.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
