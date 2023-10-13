@@ -861,6 +861,7 @@ start_application() {
     clear
     echo "Levantando a aplicação..."
     sleep ${sleep}
+    cd api/ && rm -rf node_modules/ && cd .. && cd frontend/ && rm -rf node_modules/ && cd ..
     docker-compose -f $DOCKER_COMPOSE_FILE up -d
     sleep ${sleep}
     ./${fileName}
