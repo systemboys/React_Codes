@@ -888,6 +888,8 @@ destroy_application() {
     docker rmi $(docker images -a -q)
     # Remover todas as imagens ociosas
     docker image prune
+    # Iniciar serviços definidos no arquivo `docker-compose.yml`
+    sudo docker-compose up -d
     sleep ${sleep}
     ./${fileName}
 }
