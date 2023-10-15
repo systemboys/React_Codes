@@ -26,7 +26,7 @@
   - [Seleção Automática da URL de API com Base no Ambiente em JavaScript](#sele%C3%A7%C3%A3o-autom%C3%A1tica-da-url-de-api-com-base-no-ambiente-em-javascript "Seleção Automática da URL de API com Base no Ambiente em JavaScript")
   > **( i )** Docker Compose para levantar aplicação.
   - [Estrutura de Arquivos para Implantação na AWS com Docker Compose](#estrutura-de-arquivos-para-implanta%C3%A7%C3%A3o-na-aws-com-docker-compose "Estrutura de Arquivos para Implantação na AWS com Docker Compose")
-  - [Otimizando o Espaço em Disco para Construções Docker Eficientes](# "Otimizando o Espaço em Disco para Construções Docker Eficientes")
+  - [Otimizando o Espaço em Disco para Construções Docker Eficientes](#otimizando-o-espa%C3%A7o-em-disco-para-constru%C3%A7%C3%B5es-docker-eficientes "Otimizando o Espaço em Disco para Construções Docker Eficientes")
 
 ---
 
@@ -1190,118 +1190,165 @@ Para demonstrar o processo de implantação, consideremos uma aplicação compos
      
    - **`your_application/docker-control.sh`**
      ```sh
-     #!/bin/bash
-     
-     clear
-     
-     # Variáveis úteis
-     sleep='3'
-     fileName=$(basename "$0")
-     
-     # Nome do seu arquivo docker-compose.yml
-     DOCKER_COMPOSE_FILE=docker-compose.yml
-     
-     # Função para levantar a aplicação
-     start_application() {
-         clear
-         echo "Levantando a aplicação..."
-         sleep ${sleep}
-         cd api/ && rm -rf node_modules/ && cd .. && cd frontend/ && rm -rf node_modules/ && cd ..
-         docker-compose -f $DOCKER_COMPOSE_FILE up -d
-         sleep ${sleep}
-         ./${fileName}
-     }
-     
-     # Função para derrubar a aplicação
-     stop_application() {
-         clear
-         echo "Derrubando a aplicação..."
-         sleep ${sleep}
-         docker-compose -f $DOCKER_COMPOSE_FILE down
-         sleep ${sleep}
-         ./${fileName}
-     }
-     
-     # Função para destruir a aplicação
-     destroy_application() {
-         clear
-         echo "Destruindo a aplicação..."
-         sleep ${sleep}
-         # Remover todos os contêineres existentes no sistema Docker
-         docker rm $(docker ps -a -q)
-         # Remover todas as imagens existentes no sistema Docker
-         docker rmi $(docker images -a -q)
-         # Remover todas as imagens ociosas
-         docker image prune
-         # Iniciar serviços definidos no arquivo `docker-compose.yml`
-         sudo docker-compose up -d
-         sleep ${sleep}
-         ./${fileName}
-     }
-     
-     # Função para deletar a aplicação
-     delete_application() {
-         clear
-         echo "Deletando a aplicação..."
-         sleep ${sleep}
-         cd ..
-         rm -rf * && ls -l
-     }
-     
-     # Função para buildar a aplicação
-     build_application() {
-         clear
-         echo "Buildando a aplicação..."
-         sleep ${sleep}
-         cd api/ && rm -rf node_modules/ && cd .. && cd frontend/ && rm -rf node_modules/ && cd ..
-         docker-compose -f $DOCKER_COMPOSE_FILE up --build
-     }
-     
-     # Menu principal
-     echo "╭┤ Docker Control ├─────────────────────┬────────────╮"
-     echo "│ 1 │ Levantar a aplicação              │ up -d      │"
-     echo "│ 2 │ Derrubar a aplicação              │ down       │"
-     echo "│ 3 │ Destruir a aplicação              │ destroy    │"
-     echo "│ 4 │ Deletar a aplicação               │ rm -rf *   │"
-     echo "│ 5 │ Atualizar e Iniciar a Aplicação   │ up --build │"
-     echo "│ 0 │ Sair                              │ exit       │"
-     echo "╰───────────────────────────────────────┴────────────╯"
-     
-     # Recebe a escolha do usuário
-     read -p "Escolha uma opção: " choice
-     
-     # Verifique a escolha do usuário
-     case "$choice" in
-         1)
-             start_application
-             ;;
-         2)
-             stop_application
-             ;;
-         3)
-             destroy_application
-             ;;
-         4)
-             delete_application
-             ;;
-         5)
-             build_application
-             ;;
-         0)
-             clear
-             echo "╭────────────────────╮"
-             echo "│ Você saiu do menu! │"
-             echo "╰────────────────────╯"
-             exit 0
-             ;;
-         *)
-             echo "Opção inválida."
-             sleep ${sleep}
-             ./${fileName}
-             ;;
-     esac
-     
-     exit 0
+      #!/bin/bash
+
+      clear
+
+      # Variáveis úteis
+      sleep='3'
+      fileName=$(basename "$0")
+      githubUser='systemboys'
+      applicationRepository='GTi_SiS_Float_Away_6_dev'
+      applicationName='GTi SiS Float Away 6'
+
+      # Nome do seu arquivo docker-compose.yml
+      DOCKER_COMPOSE_FILE=docker-compose.yml
+
+      # Função para levantar a aplicação
+      start_application() {
+          clear
+          echo "Levantando a aplicação..."
+          sleep ${sleep}
+          docker-compose -f $DOCKER_COMPOSE_FILE up -d
+          sleep ${sleep}
+          ./${fileName}
+      }
+
+      # Função para derrubar a aplicação
+      stop_application() {
+          clear
+          echo "Derrubando a aplicação..."
+          sleep ${sleep}
+          docker-compose -f $DOCKER_COMPOSE_FILE down
+          sleep ${sleep}
+          ./${fileName}
+      }
+
+      # Função para destruir a aplicação
+      destroy_application() {
+          clear
+          echo "Destruindo a aplicação..."
+          sleep ${sleep}
+          # Remover todos os contêineres existentes no sistema Docker
+          docker rm $(docker ps -a -q)
+          # Remover todas as imagens existentes no sistema Docker
+          docker rmi $(docker images -a -q)
+          # Remover todas as imagens ociosas
+          docker image prune
+          # Iniciar serviços definidos no arquivo `docker-compose.yml`
+          docker-compose -f $DOCKER_COMPOSE_FILE up -d
+          sleep ${sleep}
+          ./${fileName}
+      }
+
+      # Função para deletar a aplicação
+      delete_application() {
+          clear
+          echo "Derrubando aplicação..."
+          sleep ${sleep}
+          docker-compose -f $DOCKER_COMPOSE_FILE down
+          echo "Destruindo a aplicação..."
+          sleep ${sleep}
+          # Remover todos os contêineres existentes no sistema Docker
+          docker rm $(docker ps -a -q)
+          # Remover todas as imagens existentes no sistema Docker
+          docker rmi $(docker images -a -q)
+          # Remover todas as imagens ociosas
+          docker image prune
+          cd ..
+          echo "Deletando a aplicação..."
+          sleep ${sleep}
+          rm -rf * && ls -l
+      }
+
+      # Função para buildar a aplicação
+      build_application() {
+          clear
+          echo "Buildando a aplicação..."
+          sleep ${sleep}
+          docker-compose -f $DOCKER_COMPOSE_FILE up --build
+      }
+
+      # Subir nova versão
+      uploadNewVersion() {
+          clear
+          echo "Derrubando aplicação..."
+          sleep ${sleep}
+          docker-compose -f $DOCKER_COMPOSE_FILE down
+          echo "Removendo contêineres, imagens e imagens ociosas existentes no sistema Docker..."
+          sleep ${sleep}
+          # Remover todos os contêineres existentes no sistema Docker
+          docker rm $(docker ps -a -q)
+          # Remover todas as imagens existentes no sistema Docker
+          docker rmi $(docker images -a -q)
+          # Remover todas as imagens ociosas
+          docker image prune
+          echo "Apagando a antiga versão da aplicação..."
+          sleep ${sleep}
+          cd ..
+          rm -rf ${applicationRepository}
+          echo "Obtendo nova versão da aplicação..."
+          sleep ${sleep}
+          git clone https://github.com/${githubUser}/${applicationRepository}.git
+          cd ${applicationRepository}
+          echo "Levantando nova versão da aplicação..."
+          sleep ${sleep}
+          docker-compose -f $DOCKER_COMPOSE_FILE up -d
+          sleep ${sleep}
+          cd ${applicationRepository}
+          ./${fileName}
+      }
+
+      # Menu principal
+      echo "░▒▓ ${applicationName} ▓▒░"
+      echo "╭┤ Docker Control ├─────────────────────┬────────────╮"
+      echo "│ 1 │ Levantar a aplicação              │ up -d      │"
+      echo "│ 2 │ Derrubar a aplicação              │ down       │"
+      echo "│ 3 │ Destruir|criar|levantar aplicação │ destroy    │"
+      echo "│ 4 │ Deletar a aplicação               │ rm -rf *   │"
+      echo "│ 5 │ Levantar a aplicação com log      │ up --build │"
+      echo "│ 6 │ Subir nova versão da aplicação    │ git clone  │"
+      echo "│ q │ Sair                              │ exit       │"
+      echo "╰───────────────────────────────────────┴────────────╯"
+
+      # Recebe a escolha do usuário
+      read -p "Escolha uma opção: " choice
+
+      # Verifique a escolha do usuário
+      case "$choice" in
+          1)
+              start_application
+              ;;
+          2)
+              stop_application
+              ;;
+          3)
+              destroy_application
+              ;;
+          4)
+              delete_application
+              ;;
+          5)
+              build_application
+              ;;
+          6)
+              uploadNewVersion
+              ;;
+          q)
+              clear
+              echo "╭────────────────────╮"
+              echo "│ Você saiu do menu! │"
+              echo "╰────────────────────╯"
+              exit 0
+              ;;
+          *)
+              echo "Opção inválida."
+              sleep ${sleep}
+              ./${fileName}
+              ;;
+      esac
+
+      exit 0
      ```
      
    - **`your_application/docker-destroy.sh`**
