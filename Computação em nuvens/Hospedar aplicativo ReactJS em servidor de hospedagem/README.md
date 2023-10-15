@@ -1172,7 +1172,7 @@ Para demonstrar o processo de implantação, consideremos uma aplicação compos
          ports:
            - 80:80
          networks:
-           - jm
+           - gti
      
        backend:
          build:
@@ -1181,10 +1181,10 @@ Para demonstrar o processo de implantação, consideremos uma aplicação compos
          ports:
            - 3333:3333
          networks:
-           - jm
+           - gti
      
      networks:
-       jm:
+       gti:
          driver: bridge
      ```
      
