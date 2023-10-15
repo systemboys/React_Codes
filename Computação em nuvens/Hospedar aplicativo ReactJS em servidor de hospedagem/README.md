@@ -1093,6 +1093,8 @@ Para demonstrar o processo de implantação, consideremos uma aplicação compos
 
    Observe que os diretórios marcados com "incrementar" devem ser personalizados de acordo com as necessidades da sua aplicação.
 
+   > **_( ! )_** Os arquivos `.gitignore` deve ser configurado para não subir o diretório `node_modules/` e para subir o arquivo `your_application/api/.env`. Como o **_Docker Compose_** irá gerar a build da aplicação, o arquivo .ENV deve ir junto com a aplicação para o GitHub e assim ir para a instância.
+
 2. **Crie um Repositório no GitHub:**
 
    Crie um repositório no GitHub e envie todos os arquivos acima para este repositório.
