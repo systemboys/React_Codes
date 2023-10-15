@@ -1299,17 +1299,53 @@ Para demonstrar o processo de implantação, consideremos uma aplicação compos
           ./${fileName}
       }
 
+      # Otimizando o Espaço em Disco para Construções Docker Eficientes
+      optimizingSpace() {
+          clear
+          echo "Derrubando a aplicação..."
+          sleep ${sleep}
+          docker-compose -f $DOCKER_COMPOSE_FILE down
+          echo "Destruindo a aplicação..."
+          sleep ${sleep}
+          # Remover todos os contêineres existentes no sistema Docker
+          docker rm $(docker ps -a -q)
+          # Remover todas as imagens existentes no sistema Docker
+          docker rmi $(docker images -a -q)
+          echo "Verificando o espaço em disco..."
+          sleep ${sleep}
+          df -h
+          echo "Limpando Espaço no Disco..."
+          sleep ${sleep}
+          # Exemplo: Remover arquivos de log antigos
+          sudo find /var/log -type f -name "*.log" -exec rm -f {} \;
+          echo "limpando imagens, contêineres e volumes não utilizados..."
+          sleep ${sleep}
+          docker system prune -a
+          docker-compose -f $DOCKER_COMPOSE_FILE up -d
+          ./${fileName}
+      }
+
       # Menu principal
       echo "░▒▓ ${applicationName} ▓▒░"
-      echo "╭┤ Docker Control ├─────────────────────┬────────────╮"
-      echo "│ 1 │ Levantar a aplicação              │ up -d      │"
-      echo "│ 2 │ Derrubar a aplicação              │ down       │"
-      echo "│ 3 │ Destruir|criar|levantar aplicação │ destroy    │"
-      echo "│ 4 │ Deletar a aplicação               │ rm -rf *   │"
-      echo "│ 5 │ Levantar a aplicação com log      │ up --build │"
-      echo "│ 6 │ Subir nova versão da aplicação    │ git clone  │"
-      echo "│ q │ Sair                              │ exit       │"
-      echo "╰───────────────────────────────────────┴────────────╯"
+      echo
+      echo "┌───┬─────────────────────┤ Docker Control ├────────────┬────────────┐"
+      echo "│ 1 │ Levantar a aplicação                              │ up -d      │"
+      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
+      echo "│ 2 │ Derrubar a aplicação                              │ down       │"
+      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
+      echo "│ 3 │ Destruir|criar|levantar aplicação                 │ destroy    │"
+      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
+      echo "│ 4 │ Deletar a aplicação                               │ rm -rf *   │"
+      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
+      echo "│ 5 │ Levantar a aplicação com log                      │ up --build │"
+      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
+      echo "│ 6 │ Subir nova versão da aplicação                    │ git clone  │"
+      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
+      echo "│ 7 │ Otimizar o Espaço em Disco para Construções       │ prune -a   │"
+      echo "│   │ Docker Eficientes                                 │            │"
+      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
+      echo "│ q │ Sair                                              │ exit       │"
+      echo "└───┴───────────────────────────────────────────────────┴────────────┘"
 
       # Recebe a escolha do usuário
       read -p "Escolha uma opção: " choice
@@ -1333,6 +1369,9 @@ Para demonstrar o processo de implantação, consideremos uma aplicação compos
               ;;
           6)
               uploadNewVersion
+              ;;
+          7)
+              optimizingSpace
               ;;
           q)
               clear
