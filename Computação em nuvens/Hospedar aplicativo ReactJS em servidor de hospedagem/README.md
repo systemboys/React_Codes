@@ -24,6 +24,8 @@
     - [Controle Docker Simplificado: Automatizando Operações com Docker Compose](#controle-docker-simplificado-automatizando-opera%C3%A7%C3%B5es-com-docker-compose "Controle Docker Simplificado: Automatizando Operações com Docker Compose")
   - [Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend](#destaque-estrutura-de-arquivos-para-implanta%C3%A7%C3%A3o-docker-de-aplica%C3%A7%C3%A3o-frontend-e-backend "Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend")
   - [Seleção Automática da URL de API com Base no Ambiente em JavaScript](#sele%C3%A7%C3%A3o-autom%C3%A1tica-da-url-de-api-com-base-no-ambiente-em-javascript "Seleção Automática da URL de API com Base no Ambiente em JavaScript")
+  > **( i )** Docker Compose para levantar aplicação.
+  - [Estrutura de Arquivos para Implantação na AWS com Docker Compose](# "Estrutura de Arquivos para Implantação na AWS com Docker Compose")
 
 ---
 
@@ -1029,6 +1031,342 @@ export const Api = axios.create({
 Neste código, estamos verificando a variável de ambiente `NODE_ENV`, que geralmente é definida como `"production"` em um ambiente de produção e `"development"` em um ambiente de desenvolvimento. Com base nesse valor, definimos a variável `baseURL` para a URL apropriada.
 
 Isso permitirá que sua aplicação detecte automaticamente o ambiente e use a URL correta, sem a necessidade de comentar ou descomentar linhas manualmente. Certifique-se de que sua configuração de variáveis de ambiente esteja correta em sua instância AWS para que o código detecte o ambiente corretamente.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Estrutura de Arquivos para Implantação na AWS com Docker Compose
+
+Para demonstrar o processo de implantação, consideremos uma aplicação composta por uma API e um Frontend. Ao configurar essa aplicação em uma instância da AWS, siga estas etapas:
+
+1. **Organize a Estrutura de Arquivos:**
+
+   Crie um diretório raiz com o nome da sua aplicação (`your_application/`) e organize os arquivos da seguinte maneira:
+
+   ```plaintext
+   your_application/
+   ├── api/
+   │   ├── node_modules/
+   │   │   └── ...
+   │   ├── prisma/
+   │   │   └── schema.prisma
+   │   ├── src/
+   │   │   ├── prisma.ts
+   │   │   ├── routes.ts
+   │   │   └── server.ts
+   │   ├── .env
+   │   ├── Dockerfile → (incrementar)
+   │   ├── package-lock.json
+   │   ├── package.json
+   │   ├── tsconfig.json
+   │   └── ...
+   ├── frontend/
+   │   ├── nginx/ → (incrementar)
+   │   │   └── default.conf
+   │   ├── node_modules/
+   │   │   └── ...
+   │   ├── public/
+   │   │   ├── icon_gti_2020.png
+   │   │   └── vite.svg
+   │   ├── src/
+   │   │   ├── assets/
+   │   │   ├── components/
+   │   │   ├── ...
+   │   │   ├── server/
+   │   │   │   └── api.js
+   │   │   └── ...
+   │   ├── Dockerfile → (incrementar)
+   │   ├── index.html
+   │   ├── package-lock.json
+   │   ├── package.json
+   │   ├── vite.config.js
+   │   └── ...
+   ├── docker-compose.yml → (incrementar)
+   ├── docker-control.sh → (incrementar)
+   ├── docker-destroy.sh → (incrementar)
+   ├── docker-services.sh → (incrementar)
+   ├── README.md
+   └── ...
+   ```
+
+   Observe que os diretórios marcados com "incrementar" devem ser personalizados de acordo com as necessidades da sua aplicação.
+
+2. **Crie um Repositório no GitHub:**
+
+   Crie um repositório no GitHub e envie todos os arquivos acima para este repositório.
+
+3. **Conteúdo dos Arquivos Personalizáveis:**
+
+   - **`your_application/api/Dockerfile`**
+     ```Dockerfile
+     # Use a imagem oficial do Node.js como base
+     FROM node:buster
+     
+     # Defina o diretório de trabalho dentro do contêiner
+     WORKDIR /app
+     
+     # Copie o arquivo package.json e o arquivo package-lock.json para o contêiner
+     COPY package*.json ./
+     
+     # Instale as dependências
+     RUN npm install
+     
+     # Copie todos os arquivos do diretório atual para o diretório de trabalho no contêiner
+     COPY . .
+     
+     RUN npx prisma generate
+     
+     # Compile o código TypeScript
+     RUN npm run build
+     
+     # Exponha a porta em que a API será executada (ajuste de acordo com sua configuração)
+     EXPOSE 3333
+     
+     # Comando para iniciar a aplicação (ajuste de acordo com o seu script de inicialização)
+     CMD [ "node", "./dist/server.js" ]
+     ```
+     
+   - **`your_application/frontend/nginx/default.conf`**
+     ```plaintext
+     server{
+         listen 80;
+     
+         location / {
+             root /usr/share/nginx/html;
+             index index.html index.htm;
+             try_files $uri $uri/ /index.html;
+         }
+     }
+     ```
+     
+   - **`your_application/frontend/Dockerfile`**
+     ```Dockerfile
+     FROM node:18 as builder
+     WORKDIR /app
+     COPY ./package.json ./
+     RUN npm i --force
+     COPY . .
+     RUN npm run build
+     
+     FROM nginx
+     EXPOSE 80
+     COPY ./nginx/default.conf  /etc/nginx/conf.d/default.conf
+     COPY --from=builder /app/dist /usr/share/nginx/html
+     
+     CMD ["nginx", "-g", "daemon off;"]
+     ```
+     
+   - **`your_application/docker-compose.yml`**
+     ```yaml
+     version: '3.3'
+     services:
+       frontend:
+         build:
+           context: ./frontend
+           dockerfile: Dockerfile
+         ports:
+           - 80:80
+         networks:
+           - jm
+     
+       backend:
+         build:
+           context: ./api
+           dockerfile: Dockerfile
+         ports:
+           - 3333:3333
+         networks:
+           - jm
+     
+     networks:
+       jm:
+         driver: bridge
+     ```
+     
+   - **`your_application/docker-control.sh`**
+     ```sh
+     #!/bin/bash
+     
+     clear
+     
+     # Variáveis úteis
+     sleep='3'
+     fileName=$(basename "$0")
+     
+     # Nome do seu arquivo docker-compose.yml
+     DOCKER_COMPOSE_FILE=docker-compose.yml
+     
+     # Função para levantar a aplicação
+     start_application() {
+         clear
+         echo "Levantando a aplicação..."
+         sleep ${sleep}
+         cd api/ && rm -rf node_modules/ && cd .. && cd frontend/ && rm -rf node_modules/ && cd ..
+         docker-compose -f $DOCKER_COMPOSE_FILE up -d
+         sleep ${sleep}
+         ./${fileName}
+     }
+     
+     # Função para derrubar a aplicação
+     stop_application() {
+         clear
+         echo "Derrubando a aplicação..."
+         sleep ${sleep}
+         docker-compose -f $DOCKER_COMPOSE_FILE down
+         sleep ${sleep}
+         ./${fileName}
+     }
+     
+     # Função para destruir a aplicação
+     destroy_application() {
+         clear
+         echo "Destruindo a aplicação..."
+         sleep ${sleep}
+         # Remover todos os contêineres existentes no sistema Docker
+         docker rm $(docker ps -a -q)
+         # Remover todas as imagens existentes no sistema Docker
+         docker rmi $(docker images -a -q)
+         # Remover todas as imagens ociosas
+         docker image prune
+         # Iniciar serviços definidos no arquivo `docker-compose.yml`
+         sudo docker-compose up -d
+         sleep ${sleep}
+         ./${fileName}
+     }
+     
+     # Função para deletar a aplicação
+     delete_application() {
+         clear
+         echo "Deletando a aplicação..."
+         sleep ${sleep}
+         cd ..
+         rm -rf * && ls -l
+     }
+     
+     # Função para buildar a aplicação
+     build_application() {
+         clear
+         echo "Buildando a aplicação..."
+         sleep ${sleep}
+         cd api/ && rm -rf node_modules/ && cd .. && cd frontend/ && rm -rf node_modules/ && cd ..
+         docker-compose -f $DOCKER_COMPOSE_FILE up --build
+     }
+     
+     # Menu principal
+     echo "╭┤ Docker Control ├─────────────────────┬────────────╮"
+     echo "│ 1 │ Levantar a aplicação              │ up -d      │"
+     echo "│ 2 │ Derrubar a aplicação              │ down       │"
+     echo "│ 3 │ Destruir a aplicação              │ destroy    │"
+     echo "│ 4 │ Deletar a aplicação               │ rm -rf *   │"
+     echo "│ 5 │ Atualizar e Iniciar a Aplicação   │ up --build │"
+     echo "│ 0 │ Sair                              │ exit       │"
+     echo "╰───────────────────────────────────────┴────────────╯"
+     
+     # Recebe a escolha do usuário
+     read -p "Escolha uma opção: " choice
+     
+     # Verifique a escolha do usuário
+     case "$choice" in
+         1)
+             start_application
+             ;;
+         2)
+             stop_application
+             ;;
+         3)
+             destroy_application
+             ;;
+         4)
+             delete_application
+             ;;
+         5)
+             build_application
+             ;;
+         0)
+             clear
+             echo "╭────────────────────╮"
+             echo "│ Você saiu do menu! │"
+             echo "╰────────────────────╯"
+             exit 0
+             ;;
+         *)
+             echo "Opção inválida."
+             sleep ${sleep}
+             ./${fileName}
+             ;;
+     esac
+     
+     exit 0
+     ```
+     
+   - **`your_application/docker-destroy.sh`**
+     ```sh
+     #!/bin/bash
+     
+     # Remover todos os contêineres existentes no sistema Docker
+     docker rm $(docker ps -a -q)
+     
+     # Remover todas as imagens existentes no sistema Docker
+     docker rmi $(docker images -a -q)
+     
+     # Remover todas as imagens ociosas
+     docker image prune
+     
+     # Iniciar serviços definidos no arquivo `docker-compose.yml`
+     sudo docker-compose up -d
+     
+     echo "Os contêineres existentes, as imagens e as ociosas foram removidos. Os serviços Docker foram iniciados."
+     ```
+     
+   - **`your_application/docker-services.sh`**
+     ```sh
+     #!/bin/bash
+     
+     # Nome do seu arquivo docker-compose.yml
+     DOCKER_COMPOSE_FILE=docker-compose.yml
+     
+     # Função para derrubar a aplicação
+     stop_application() {
+         echo "Derrubando a aplicação..."
+         docker-compose -f $DOCKER_COMPOSE_FILE down
+     }
+     
+     # Função para levantar a aplicação
+     start_application() {
+         echo "Levantando a aplicação..."
+         docker-compose -f $DOCKER_COMPOSE_FILE up -d
+     }
+     
+     # Verifique o número de argumentos
+     if [ $# -ne 1 ]; then
+         echo "Uso: $0 [start|stop]"
+         exit 1
+     fi
+     
+     # Verifique o argumento fornecido
+     case "$1" in
+         "start")
+             start_application
+             ;;
+         "stop")
+             stop_application
+             ;;
+         *)
+             echo "Opção inválida. Use 'start' para levantar a aplicação ou 'stop' para derrubar."
+             exit 1
+             ;;
+     esac
+     
+     exit 0
+     ```
+
+4. **Execute o Script de Controle:**
+
+   Após enviar sua aplicação para o GitHub, acesse sua instância na AWS, realize o clone de sua aplicação com o com o comando `git clone https://github.com/your_application.git`. Dentro do diretório `your_application/`, execute o arquivo `./docker-control.sh`. Este script apresentará um menu com opções para controlar sua aplicação usando o Docker Compose.
+
+Lembre-se de personalizar os arquivos `Dockerfile`, `docker-compose.yml` e outros scripts conforme as necessidades específicas da sua aplicação. Essas personalizações garantirão que sua aplicação seja implantada e executada corretamente na instância da AWS.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
