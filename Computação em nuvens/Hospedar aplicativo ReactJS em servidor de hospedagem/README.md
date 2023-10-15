@@ -26,6 +26,7 @@
   - [Seleção Automática da URL de API com Base no Ambiente em JavaScript](#sele%C3%A7%C3%A3o-autom%C3%A1tica-da-url-de-api-com-base-no-ambiente-em-javascript "Seleção Automática da URL de API com Base no Ambiente em JavaScript")
   > **( i )** Docker Compose para levantar aplicação.
   - [Estrutura de Arquivos para Implantação na AWS com Docker Compose](#estrutura-de-arquivos-para-implanta%C3%A7%C3%A3o-na-aws-com-docker-compose "Estrutura de Arquivos para Implantação na AWS com Docker Compose")
+  - [Otimizando o Espaço em Disco para Construções Docker Eficientes](# "Otimizando o Espaço em Disco para Construções Docker Eficientes")
 
 ---
 
@@ -1369,6 +1370,45 @@ Para demonstrar o processo de implantação, consideremos uma aplicação compos
    Após enviar sua aplicação para o GitHub, acesse sua instância na AWS, realize o clone de sua aplicação com o com o comando `git clone https://github.com/your_application.git`. Dentro do diretório `your_application/`, execute o arquivo `./docker-control.sh`. Este script apresentará um menu com opções para controlar sua aplicação usando o Docker Compose.
 
 Lembre-se de personalizar os arquivos `Dockerfile`, `docker-compose.yml` e outros scripts conforme as necessidades específicas da sua aplicação. Essas personalizações garantirão que sua aplicação seja implantada e executada corretamente na instância da AWS.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Otimizando o Espaço em Disco para Construções Docker Eficientes
+
+Às vezes ocorre o erro "no space left on device", indica que o sistema de arquivos onde o Docker está armazenando os dados não tem espaço suficiente para a construção das imagens. O Docker precisa de espaço no disco para armazenar temporariamente as camadas da imagem durante o processo de construção.
+
+Para resolver esse problema, você pode fazer o seguinte:
+
+1. **Verificar o Espaço em Disco:**
+   Primeiro, você deve verificar o espaço disponível em seu sistema de arquivos. Você pode usar o comando `df -h` para verificar o espaço em disco disponível em todas as partições.
+
+   ```bash
+   df -h
+   ```
+
+   Certifique-se de que a partição onde o Docker armazena seus dados não está completamente cheia.
+
+2. **Limpar Espaço no Disco:**
+   Se você está com pouco espaço em disco, você pode precisar limpar arquivos não essenciais para liberar espaço. Você pode começar removendo arquivos temporários, caches ou arquivos de log antigos.
+
+   ```bash
+   # Exemplo: Remover arquivos de log antigos
+   sudo find /var/log -type f -name "*.log" -exec rm -f {} \;
+   ```
+
+   Além disso, você pode usar ferramentas como `docker system prune` para limpar imagens, contêineres e volumes não utilizados.
+
+   ```bash
+   docker system prune -a
+   ```
+
+3. **Aumentar o Espaço em Disco:**
+   Se você não tem espaço suficiente em disco, você pode considerar aumentar o tamanho do disco no seu servidor. Isso pode envolver adicionar mais espaço ao disco físico ou expandir o volume lógico, dependendo de como seu servidor está configurado.
+
+   Após realizar essas etapas, você deve conseguir construir suas imagens Docker sem encontrar o erro "no space left on device". Certifique-se de monitorar regularmente o espaço em disco para evitar futuros problemas.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
