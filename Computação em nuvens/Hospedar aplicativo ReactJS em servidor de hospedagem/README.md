@@ -25,7 +25,7 @@
   - [Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend](#destaque-estrutura-de-arquivos-para-implanta%C3%A7%C3%A3o-docker-de-aplica%C3%A7%C3%A3o-frontend-e-backend "Destaque: Estrutura de Arquivos para Implantação Docker de Aplicação Frontend e Backend")
   - [Seleção Automática da URL de API com Base no Ambiente em JavaScript](#sele%C3%A7%C3%A3o-autom%C3%A1tica-da-url-de-api-com-base-no-ambiente-em-javascript "Seleção Automática da URL de API com Base no Ambiente em JavaScript")
   > **( i )** Docker Compose para levantar aplicação.
-  - [Estrutura de Arquivos para Implantação na AWS com Docker Compose](# "Estrutura de Arquivos para Implantação na AWS com Docker Compose")
+  - [Estrutura de Arquivos para Implantação na AWS com Docker Compose](#estrutura-de-arquivos-para-implanta%C3%A7%C3%A3o-na-aws-com-docker-compose "Estrutura de Arquivos para Implantação na AWS com Docker Compose")
 
 ---
 
