@@ -1194,6 +1194,48 @@ Para demonstrar o processo de implantação, consideremos uma aplicação compos
 
       clear
 
+      # Texto Regular
+      Preto_R='\033[0;30m'
+      Vermelho_R='\033[0;31m'
+      Verde_R='\033[0;32m'
+      Amarelo_R='\033[0;33m'
+      Azul_R='\033[0;34m'
+      Roxo_R='\033[0;35m'
+      Ciano_R='\033[0;36m'
+      Branco_R='\033[0;37m'
+
+      # Texto Negrito
+      Preto_N='\033[1;30m'
+      Vermelho_N='\033[1;31m'
+      Verde_N='\033[1;32m'
+      Amarelo_N='\033[1;33m'
+      Azul_N='\033[1;34m'
+      Roxo_N='\033[1;35m'
+      Ciano_N='\033[1;36m'
+      Branco_N='\033[1;37m'
+
+      # Fundo
+      Preto_F='\033[40m'
+      Vermelho_F='\033[41m'
+      Verde_F='\033[42m'
+      Amarelo_F='\033[43m'
+      Azul_F='\033[44m'
+      Roxo_F='\033[45m'
+      Ciano_F='\033[46m'
+      Branco_F='\033[47m'
+
+      # Estilos de Texto
+      Negrito='\033[1m'
+      Faint='Fraco): \033[2m'
+      Italico='\033[3m'
+      Sublinhado='\033[4m'
+      Piscando='\033[5m'
+      Invertido='\033[7m'
+      Escondido='\033[8m'
+
+      # Resetar cores e estilos
+      reset='\033[0m' # Resetar a formatação para a cor padrão
+
       # Variáveis úteis
       sleep='3'
       fileName=$(basename "$0")
@@ -1326,26 +1368,22 @@ Para demonstrar o processo de implantação, consideremos uma aplicação compos
       }
 
       # Menu principal
-      echo "░▒▓ ${applicationName} ▓▒░"
       echo
-      echo "┌───┬─────────────────────┤ Docker Control ├────────────┬────────────┐"
-      echo "│ 1 │ Levantar a aplicação                              │ up -d      │"
-      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
-      echo "│ 2 │ Derrubar a aplicação                              │ down       │"
-      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
-      echo "│ 3 │ Destruir|criar|levantar aplicação                 │ destroy    │"
-      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
-      echo "│ 4 │ Deletar a aplicação                               │ rm -rf *   │"
-      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
-      echo "│ 5 │ Levantar a aplicação com log                      │ up --build │"
-      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
-      echo "│ 6 │ Subir nova versão da aplicação                    │ git clone  │"
-      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
-      echo "│ 7 │ Otimizar o Espaço em Disco para Construções       │ prune -a   │"
-      echo "│   │ Docker Eficientes                                 │            │"
-      echo "├───┼───────────────────────────────────────────────────┼────────────┤"
-      echo "│ q │ Sair                                              │ exit       │"
-      echo "└───┴───────────────────────────────────────────────────┴────────────┘"
+      echo -e " ${Amarelo_N}░▒▓ ${applicationName} ▓▒░${reset}"
+      echo
+      echo -e " ${Amarelo_R}Menu de comandos para executar na aplicação.${reset}"
+      echo -e "                          ${Verde_R}╓────────────────╖"
+      echo -e "╓─────────────────────────╜${reset}${Verde_F} ${Branco_N}Docker Control ${reset}${Verde_R}╙─────────────────────────╖${reset}"
+      echo -e " [1] ${Verde_R}Levantar a aplicação${reset}                                :      up -d "
+      echo -e " [2] ${Amarelo_R}Derrubar a aplicação${reset}                                :       down "
+      echo -e " [3] ${Amarelo_R}Destruir|criar|levantar aplicação${reset}                   :    destroy "
+      echo -e " [4] ${Vermelho_R}Deletar a aplicação${reset}                                 :   rm -rf * "
+      echo -e " [5] ${Verde_R}Levantar a aplicação com log${reset}                        : up --build "
+      echo -e " [6] ${Amarelo_R}Subir nova versão da aplicação${reset}                      :  git clone "
+      echo -e " [7] ${Amarelo_R}Otimizar Espaço para Construções Docker Eficientes${reset}  :   prune -a "
+      echo -e " [q] ${Azul_R}Sair${reset}                                                :       exit "
+      echo -e "${reset}${Verde_R}╙────────────────────────────────────────────────────────────────────╜${reset}"
+      echo
 
       # Recebe a escolha do usuário
       read -p "Escolha uma opção: " choice
