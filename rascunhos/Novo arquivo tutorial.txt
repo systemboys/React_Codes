@@ -2,11 +2,16 @@
 
 ## Assunto
 
-[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](http://link.com "Imagem 1")
+[![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](https://site.com/img/exemplo.png "Imagem 1")
 
 ### *Sumário*
 
 - [Link 1](https://site.com#anchor-link-1 "Link 1")
+
+---
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
 ---
 
