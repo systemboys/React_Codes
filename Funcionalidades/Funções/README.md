@@ -14,8 +14,8 @@
 - [Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](#capitalizar-a-primeira-palavra-de-um-par%C3%A1grafo-com-exce%C3%A7%C3%B5es-em-reactjs "Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
 - [Transformando meses de 01 a 12 em Janeiro a Dezembro](#transformando-meses-de-01-a-12-em-janeiro-a-dezembro "Transformando meses de 01 a 12 em Janeiro a Dezembro")
 - [Como `Rolar` a Barra de Rotação `para o Topo` de uma Página ao Carregá-la com JavaScript](#como-rolar-a-barra-de-rota%C3%A7%C3%A3o-para-o-topo-de-uma-p%C3%A1gina-ao-carreg%C3%A1-la-com-javascript "Como Rolar a Barra de Rotação para o Topo de uma Página ao Carregá-la com JavaScript")
-- [Removendo Tags HTML em ReactJS: Uma Abordagem Simples e Segura](# "Removendo Tags HTML em ReactJS: Uma Abordagem Simples e Segura")
-- [Removendo Tags HTML com ReactJS: Uma Abordagem Simples e Elegante](# "Removendo Tags HTML com ReactJS: Uma Abordagem Simples e Elegante")
+- [Removendo Tags HTML em ReactJS: Uma Abordagem Simples e Segura](#removendo-tags-html-em-reactjs-uma-abordagem-simples-e-segura "Removendo Tags HTML em ReactJS: Uma Abordagem Simples e Segura")
+- [Removendo Tags HTML com ReactJS: Uma Abordagem Simples e Elegante](#removendo-tags-html-com-reactjs-uma-abordagem-simples-e-elegante "Removendo Tags HTML com ReactJS: Uma Abordagem Simples e Elegante")
 
 ---
 
