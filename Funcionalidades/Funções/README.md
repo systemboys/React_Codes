@@ -14,6 +14,8 @@
 - [Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS](#capitalizar-a-primeira-palavra-de-um-par%C3%A1grafo-com-exce%C3%A7%C3%B5es-em-reactjs "Capitalizar a primeira palavra de um parágrafo com exceções em ReactJS")
 - [Transformando meses de 01 a 12 em Janeiro a Dezembro](#transformando-meses-de-01-a-12-em-janeiro-a-dezembro "Transformando meses de 01 a 12 em Janeiro a Dezembro")
 - [Como `Rolar` a Barra de Rotação `para o Topo` de uma Página ao Carregá-la com JavaScript](#como-rolar-a-barra-de-rota%C3%A7%C3%A3o-para-o-topo-de-uma-p%C3%A1gina-ao-carreg%C3%A1-la-com-javascript "Como Rolar a Barra de Rotação para o Topo de uma Página ao Carregá-la com JavaScript")
+- [Removendo Tags HTML em ReactJS: Uma Abordagem Simples e Segura](# "Removendo Tags HTML em ReactJS: Uma Abordagem Simples e Segura")
+- [Removendo Tags HTML com ReactJS: Uma Abordagem Simples e Elegante](# "Removendo Tags HTML com ReactJS: Uma Abordagem Simples e Elegante")
 
 ---
 
@@ -370,6 +372,71 @@ Neste exemplo, estamos usando o `useEffect` para chamar a função `scrollToTop`
 Além disso, estamos usando `behavior: 'smooth'` para uma rolagem suave. Se você preferir uma rolagem instantânea, basta remover essa opção.
 
 Isso fará com que a página role para o topo sempre que a página "single" for carregada. Certifique-se de incorporar isso ao seu componente "single" existente.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Removendo Tags HTML em ReactJS: Uma Abordagem Simples e Segura
+
+Sim, você pode usar uma expressão regular (regex) para remover todas as tags HTML de uma string em ReactJS. Você pode criar uma função utilitária para fazer isso. Aqui está um exemplo de como você pode fazer isso:
+
+```jsx
+import React from 'react';
+
+// Removendo Tags HTML.
+const removeHtmlTags = (htmlString) => {
+  const regex = /<[^>]*>/g;
+  return htmlString.replace(regex, '');
+};
+
+const YourComponent = () => {
+  const htmlString = '<p>Seu texto com tags HTML.</p>';
+  const textWithoutHtml = removeHtmlTags(htmlString);
+
+  return (
+    <div>
+      <p>Texto com tags HTML:</p>
+      <div dangerouslySetInnerHTML={{ __html: htmlString }} />
+      <p>Texto sem tags HTML:</p>
+      <div>{textWithoutHtml}</div>
+    </div>
+  );
+};
+
+export default YourComponent;
+```
+
+Neste exemplo, a função `removeHtmlTags` aceita uma string com tags HTML e usa uma regex para remover todas as ocorrências de tags HTML. Em seguida, você pode exibir a versão sem tags HTML no seu componente React.
+
+Por favor, note que ao usar `dangerouslySetInnerHTML`, você está inserindo HTML diretamente no DOM, o que pode ser arriscado se o conteúdo não for confiável. Certifique-se de que o conteúdo que você está exibindo é seguro para evitar ataques XSS (Cross-Site Scripting).
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Removendo Tags HTML com ReactJS: Uma Abordagem Simples e Elegante
+
+Sim, você pode usar uma função em ReactJS para remover todas as tags HTML de um texto, deixando apenas o texto. Uma maneira de fazer isso é usando uma expressão regular (regex) para coincidir com todas as tags HTML e removê-las. Aqui está um exemplo de como você pode fazer isso:
+
+```jsx
+// Removendo Tags HTML.
+function removeHtmlTags(textWithHtml) {
+  const regex = /<[^>]+>/g;
+  return textWithHtml.replace(regex, '');
+}
+
+const textWithHtml = "<p>Este é um <strong>exemplo</strong> de texto com tags HTML.</p>";
+const textWithoutHtml = removeHtmlTags(textWithHtml);
+
+console.log(textWithoutHtml);
+```
+
+A função `removeHtmlTags` recebe um texto que contém tags HTML e usa a expressão regular `<[^>]+>` para encontrar todas as tags e, em seguida, usa o método `replace` para substituir essas tags por uma string vazia, efetivamente removendo-as.
+
+Lembre-se de que essa abordagem remove todas as tags HTML, incluindo qualquer conteúdo que possa estar entre as tags. Certifique-se de que isso seja o que você deseja para o seu caso específico.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
