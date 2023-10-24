@@ -2,6 +2,7 @@
 
 ## Assunto
 
+![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")
 [![Imagem 1](https://site.com/img/exemplo.png "Imagem 1")](https://site.com/img/exemplo.png "Imagem 1")
 
 ### *Sumário*
