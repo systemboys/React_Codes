@@ -74,3 +74,23 @@ directory_0/
 │   ├── file.js
 │   └── ...
 └── ...
+
+---
+
+Explique o seguinte código e dê um título com dois restegues para destacar no Markdown e logo abaixo o conteúdo da explicação:
+
+Exemplo para exibição em Markdown:
+
+## Título da explicação
+
+Conteúdo da explicação.
+
+```shell
+# código...
+```
+
+No cabeçalho do conteúdo do arquivo "README.md" onde vou colocar esta explicação, há um menu com links de âncora "#titulo-da-explicacao", transforme o linke em uma espécia de slug utilizando traços (-) para substituir os espaços como no exemplo abaixo:
+
+- [A Importância do Cabeçalho no Shell Script: Clareza, Documentação e Boas Práticas](#a-import%C3%A2ncia-do-cabe%C3%A7alho-no-shell-script-clareza-documenta%C3%A7%C3%A3o-e-boas-pr%C3%A1ticas "A Importância do Cabeçalho no Shell Script: Clareza, Documentação e Boas Práticas")
+
+---
