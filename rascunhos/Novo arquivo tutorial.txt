@@ -10,12 +10,12 @@
 
 - [Link 1](https://site.com#anchor-link-1 "Link 1")
 
-------------------------------
+---
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
-------------------------------
+---
 
 ## Texto de começo
 
