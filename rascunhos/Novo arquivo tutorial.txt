@@ -10,12 +10,12 @@
 
 - [Link 1](https://site.com#anchor-link-1 "Link 1")
 
----
+------------------------------
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
----
+------------------------------
 
 ## Texto de começo
 
@@ -28,7 +28,7 @@ const yourCodeJavaScript = "Seu código JavaScript";
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
 
----
+------------------------------
 
 # Tabelas com títulos
 
@@ -75,7 +75,7 @@ directory_0/
 │   └── ...
 └── ...
 
----
+------------------------------
 
 Explique o seguinte código e dê um título com dois restegues para destacar no Markdown e logo abaixo o conteúdo da explicação:
 
@@ -93,4 +93,4 @@ No cabeçalho do conteúdo do arquivo "README.md" onde vou colocar esta explica�
 
 - [A Importância do Cabeçalho no Shell Script: Clareza, Documentação e Boas Práticas](#a-import%C3%A2ncia-do-cabe%C3%A7alho-no-shell-script-clareza-documenta%C3%A7%C3%A3o-e-boas-pr%C3%A1ticas "A Importância do Cabeçalho no Shell Script: Clareza, Documentação e Boas Práticas")
 
----
+------------------------------
