@@ -15,6 +15,7 @@
   - [`Resetar` campos do `formulário`](#resetar-campos-do-formul%C3%A1rio "Resetar campos do formulário")
   - [Instalar e utilizar o `CKEditor 5` no ReactJS](#instalar-e-utilizar-o-ckeditor-5-no-reactjs "Instalar e utilizar o CKEditor 5 no ReactJS")
   - [`Envio` dos `dados` para a `API` do PRISMA](#envio-dos-dados-para-a-api-do-prisma "Envio dos dados para a API do PRISMA")
+  - [Formulário de `Seleção Hierárquica` com React](# "Formulário de Seleção Hierárquica com React")
 - [`Abas` horizontais com React-Bootstrap](#abas-horizontais-com-react-bootstrap "Abas horizontais com React-Bootstrap")
 - [`Lista simples` com React-Bootstrap](#lista-simples-com-react-bootstrap "Lista simples com React-Bootstrap")
 - [Implantação do `DataTables`](#implanta%C3%A7%C3%A3o-do-datatables "Implantação do DataTables")
@@ -909,6 +910,107 @@ Caso haja sucesso na chamada da API, a execução continua normalmente. Caso con
 O await é utilizado para esperar pela conclusão da chamada da API antes de prosseguir com a execução do código. Isso garante que a chamada da API será finalizada antes que qualquer outra ação seja executada no código.
 
 O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScript, que são operações que podem levar algum tempo para serem concluídas e não bloqueiam a execução do código. Com o uso do await, o código não prossegue até que a operação assíncrona seja finalizada.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Formulário de Seleção Hierárquica com React
+
+Esse tipo de formulário é conhecido como um formulário de seleção aninhada, onde as opções em um campo dependem das seleções feitas em outro campo anterior.
+
+```jsx
+import React, {useState} from 'react';
+
+export function ProductRegistration() {
+
+    const countries = [
+        {
+            name: "las angles",
+            states: [
+                {
+                    name: "1 first",
+                    cities: ["area 1", "area 2"],
+                },
+                {
+                    name: "1 second",
+                    cities: ["area 3", "area 4"],
+                },
+                {
+                    name: "1 third",
+                    cities: ["area 5", "area 6"],
+                },
+            ]
+        },
+        {
+            name: "virginia",
+            states: [
+                {
+                    name: "v first",
+                    cities: ["area 7", "area 8"],
+                },
+                {
+                    name: "v second",
+                    cities: ["area 9", "area 10"],
+                },
+                {
+                    name: "v third",
+                    cities: ["area 11", "area 12"],
+                },
+            ],
+        },
+    ]
+
+    const [conutry, setCountry] = useState('--Country--');
+    const [state, setState] = useState('--State--');
+    const [city, setCity] = useState('--City--');
+    const [states, setStates] = useState([]);
+    const [cities, setCities] = useState([]);
+
+    const changeCountry = (event) => {
+        setCountry(event.target.value);
+        setStates(countries.find(ctr => ctr.name === event.target.value).states)
+    };
+
+    const changeState = (event) => {
+        setState(event.target.value);
+        setCities(states.find(state => state.name === event.target.value).cities);
+    };
+
+    function changeCity(event) {
+        setCity(event.target.value);
+    }
+
+    return (
+        <div className="justify-content-center d-flex w-100 vh-100 bg-dark text-white">
+            <div className="w-50 mt-5">
+                <h3>Select Counry and Cities</h3>
+                <select className="form-control" value={conutry} onChange={changeCountry}>
+                    <option>--Country--</option>
+                    {countries.map(ctr => (
+                        <option value={ctr.name}>{ctr.name}</option>
+                    ))}
+                </select>
+                <br />
+                <select className="form-control" value={state} onChange={changeState}>
+                    <option>--State--</option>
+                    {states.map(state => (
+                        <option value={state.name}>{state.name}</option>
+                    ))}
+                </select>
+                <br />
+                <select className="form-control" value={city} onChange={changeCity}>
+                    <option>--City--</option>
+                    {cities.map(city => (
+                        <option value={city}>{city}</option>
+                    ))}
+                </select>
+            </div>
+        </div>
+    );
+}
+```
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
