@@ -941,7 +941,7 @@ const subcategories = [
   { id: 9, name: "Subcategoria 9", categoryId: 3 },
 ];
 
-export function ProductRegistration() {
+export function MyComponent() {
   const [category, setCategory] = useState(null);
   const [subcategory, setSubcategory] = useState(null);
 
@@ -1003,7 +1003,7 @@ Aqui está uma explicação passo a passo do que o código faz:
    - Importa as funções `useState` e o componente `React` do pacote "react".
    - Define duas constantes: `categories` e `subcategories`, que representam dados de exemplo para categorias e subcategorias.
 
-2. **Componente `ProductRegistration`:**
+2. **Componente `MyComponent`:**
 
    - É uma função que define um componente React.
    - Usa os hooks `useState` para manter o estado dos campos de categoria e subcategoria no formulário.
