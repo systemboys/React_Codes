@@ -918,99 +918,113 @@ O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScr
 
 ## Formulário de Seleção Hierárquica com React
 
-Esse tipo de formulário é conhecido como um formulário de seleção aninhada, onde as opções em um campo dependem das seleções feitas em outro campo anterior.
+Esse código em React cria um exemplo de formulário para registro de produtos, com dois campos de seleção, um para a categoria e outro para a subcategoria.
 
 ```jsx
-import React, {useState} from 'react';
+import React, { useState } from "react";
+
+const categories = [
+  { id: 1, name: "Categoria 1" },
+  { id: 2, name: "Categoria 2" },
+  { id: 3, name: "Categoria 3" },
+];
+
+const subcategories = [
+  { id: 1, name: "Subcategoria 1", categoryId: 1 },
+  { id: 2, name: "Subcategoria 2", categoryId: 1 },
+  { id: 3, name: "Subcategoria 3", categoryId: 1 },
+  { id: 4, name: "Subcategoria 4", categoryId: 2 },
+  { id: 5, name: "Subcategoria 5", categoryId: 2 },
+  { id: 6, name: "Subcategoria 6", categoryId: 2 },
+  { id: 7, name: "Subcategoria 7", categoryId: 3 },
+  { id: 8, name: "Subcategoria 8", categoryId: 3 },
+  { id: 9, name: "Subcategoria 9", categoryId: 3 },
+];
 
 export function ProductRegistration() {
+  const [category, setCategory] = useState(null);
+  const [subcategory, setSubcategory] = useState(null);
 
-    const countries = [
-        {
-            name: "las angles",
-            states: [
-                {
-                    name: "1 first",
-                    cities: ["area 1", "area 2"],
-                },
-                {
-                    name: "1 second",
-                    cities: ["area 3", "area 4"],
-                },
-                {
-                    name: "1 third",
-                    cities: ["area 5", "area 6"],
-                },
-            ]
-        },
-        {
-            name: "virginia",
-            states: [
-                {
-                    name: "v first",
-                    cities: ["area 7", "area 8"],
-                },
-                {
-                    name: "v second",
-                    cities: ["area 9", "area 10"],
-                },
-                {
-                    name: "v third",
-                    cities: ["area 11", "area 12"],
-                },
-            ],
-        },
-    ]
+  const handleCategoryChange = (e) => {
+    setCategory(e.target.value);
+    setSubcategory(null);
+  };
 
-    const [conutry, setCountry] = useState('--Country--');
-    const [state, setState] = useState('--State--');
-    const [city, setCity] = useState('--City--');
-    const [states, setStates] = useState([]);
-    const [cities, setCities] = useState([]);
+  const handleSubcategoryChange = (e) => {
+    setSubcategory(e.target.value);
+  };
 
-    const changeCountry = (event) => {
-        setCountry(event.target.value);
-        setStates(countries.find(ctr => ctr.name === event.target.value).states)
-    };
+  const filteredSubcategories = subcategories.filter(
+    (s) => s.categoryId === parseInt(category)
+  );
 
-    const changeState = (event) => {
-        setState(event.target.value);
-        setCities(states.find(state => state.name === event.target.value).cities);
-    };
-
-    function changeCity(event) {
-        setCity(event.target.value);
-    }
-
-    return (
-        <div className="justify-content-center d-flex w-100 vh-100 bg-dark text-white">
-            <div className="w-50 mt-5">
-                <h3>Select Counry and Cities</h3>
-                <select className="form-control" value={conutry} onChange={changeCountry}>
-                    <option>--Country--</option>
-                    {countries.map(ctr => (
-                        <option value={ctr.name}>{ctr.name}</option>
-                    ))}
-                </select>
-                <br />
-                <select className="form-control" value={state} onChange={changeState}>
-                    <option>--State--</option>
-                    {states.map(state => (
-                        <option value={state.name}>{state.name}</option>
-                    ))}
-                </select>
-                <br />
-                <select className="form-control" value={city} onChange={changeCity}>
-                    <option>--City--</option>
-                    {cities.map(city => (
-                        <option value={city}>{city}</option>
-                    ))}
-                </select>
-            </div>
-        </div>
-    );
+  return (
+    <div>
+      <h1>Formulário</h1>
+      <form>
+        <label htmlFor="category">Categoria:</label>
+        <select
+          id="category"
+          name="category"
+          value={category}
+          onChange={handleCategoryChange}
+        >
+          <option value="">Selecione uma categoria</option>
+          {categories.map((c) => (
+            <option key={c.id} value={c.id}>
+              {c.name}
+            </option>
+          ))}
+        </select>
+        <label htmlFor="subcategory">Subcategoria:</label>
+        <select
+          id="subcategory"
+          name="subcategory"
+          value={subcategory}
+          onChange={handleSubcategoryChange}
+        >
+          <option value="">Selecione uma subcategoria</option>
+          {filteredSubcategories.map((s) => (
+            <option key={s.id} value={s.id}>
+              {s.name}
+            </option>
+          ))}
+        </select>
+      </form>
+    </div>
+  );
 }
 ```
+
+Aqui está uma explicação passo a passo do que o código faz:
+
+1. **Importações e definições iniciais:**
+
+   - Importa as funções `useState` e o componente `React` do pacote "react".
+   - Define duas constantes: `categories` e `subcategories`, que representam dados de exemplo para categorias e subcategorias.
+
+2. **Componente `ProductRegistration`:**
+
+   - É uma função que define um componente React.
+   - Usa os hooks `useState` para manter o estado dos campos de categoria e subcategoria no formulário.
+
+3. **Handlers de Mudança (`handleCategoryChange` e `handleSubcategoryChange`):**
+
+   - `handleCategoryChange` é chamado quando a categoria é alterada no `select`. Ele atualiza o estado da categoria selecionada e redefine o estado da subcategoria para `null`.
+   - `handleSubcategoryChange` é chamado quando a subcategoria é alterada no `select`. Ele atualiza o estado da subcategoria selecionada.
+
+4. **Filtragem de Subcategorias:**
+
+   - `filteredSubcategories` é uma variável que armazena as subcategorias filtradas com base na categoria selecionada. Ele usa o `Array.filter()` para pegar apenas as subcategorias que correspondem à categoria selecionada.
+
+5. **Renderização do formulário:**
+
+   - Renderiza um formulário com dois campos de seleção (`select`):
+
+     - O primeiro campo é para escolher a categoria, onde as opções são geradas a partir do array de categorias.
+     - O segundo campo é para escolher a subcategoria, onde as opções são geradas dinamicamente com base na categoria selecionada. Se nenhuma categoria estiver selecionada, as opções são todas as subcategorias. Se uma categoria for selecionada, somente as subcategorias relacionadas a essa categoria serão exibidas.
+
+Esse código cria um formulário interativo que permite aos usuários selecionar uma categoria e, com base nessa seleção, escolher uma subcategoria associada para o registro de um produto.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
