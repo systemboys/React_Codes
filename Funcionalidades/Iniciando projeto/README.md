@@ -16,6 +16,7 @@
 > Padrão com o Node
 
 - [Configuração de Projeto Node.js com Express, TypeScript e Prisma](#configura%C3%A7%C3%A3o-de-projeto-nodejs-com-express-typescript-e-prisma "Configuração de Projeto Node.js com Express, TypeScript e Prisma")
+- [Configuração do MySQL via Docker Compose](# "Configuração do MySQL via Docker Compose")
 
 ---
 
@@ -44,6 +45,7 @@ npm i
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
 
 ### 3 - Execute o projeto com o seguinte comando:
 
@@ -234,6 +236,57 @@ npx prisma init
 ```
 
 Estes comandos são usados em um fluxo típico de configuração de um projeto Node.js que utiliza Express, TypeScript e Prisma para lidar com a lógica da aplicação e interações com o banco de dados.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Configuração do MySQL via Docker Compose
+
+Instruções no código YAML para configurar um serviço de banco de dados MySQL usando o Docker Compose:
+
+1. **Crie um arquivo YAML:** Crie um arquivo com a extensão `.yml` ou `.yaml` (por exemplo, `docker-compose.yml`).
+
+2. **Defina a versão do Docker Compose:** Especifique a versão do Docker Compose no início do arquivo YAML.
+
+   ```yaml
+   version: '3.3'
+   ```
+
+3. **Configure o serviço do banco de dados:**
+
+   ```yaml
+   services:
+     database:
+       image: mysql:5.7
+       container_name: mysql
+       restart: always
+       environment:
+         MYSQL_ROOT_USER: 'root'
+         MYSQL_DATABASE: 'mark01'
+         MYSQL_USER: 'user'
+         MYSQL_PASSWORD: 'root'
+         MYSQL_ROOT_PASSWORD: 'root'
+       ports:
+         - '3306:3306'
+       expose:
+         - '3306'
+       volumes:
+         - './.mysql-data/db:/var/lib/mysql'
+   ```
+
+4. **Salve o arquivo:** Guarde o arquivo com as configurações que você acabou de definir.
+
+5. **Execute o Docker Compose:** No terminal ou prompt de comando, navegue até o diretório onde o arquivo YAML está localizado e execute o seguinte comando para iniciar o serviço do banco de dados MySQL:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+   Isso iniciará o contêiner do MySQL de acordo com as configurações especificadas no arquivo YAML.
+
+Essas instruções fornecem a estrutura básica para configurar um serviço de banco de dados MySQL utilizando o Docker Compose, permitindo que você inicialize e gerencie o contêiner facilmente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
