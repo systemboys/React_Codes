@@ -15,7 +15,7 @@
 
 > Padrão com o Node
 
-- [Configuração de Projeto Node.js com Express, TypeScript e Prisma](# "Configuração de Projeto Node.js com Express, TypeScript e Prisma")
+- [Configuração de Projeto Node.js com Express, TypeScript e Prisma](#configura%C3%A7%C3%A3o-de-projeto-nodejs-com-express-typescript-e-prisma "Configuração de Projeto Node.js com Express, TypeScript e Prisma")
 
 ---
 
