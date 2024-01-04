@@ -4,12 +4,18 @@
 
 ### *Sumário*
 
+> Com o Vite
+
 - [1 - Crie o seu projeto com o Vite](#1---crie-o-seu-projeto-com-o-vite "1 - Crie o seu projeto com o Vite")
 - [2 - Entre no diretório do seu projeto project_name](#2---entre-no-diret%C3%B3rio-do-seu-projeto-project_name "2 - Entre no diretório do seu projeto project_name")
 - [3 - Execute o projeto com o seguinte comando](#3---execute-o-projeto-com-o-seguinte-comando "3 - Execute o projeto com o seguinte comando")
 - [4 - Configuração da porta no Vite](#4---configura%C3%A7%C3%A3o-da-porta-no-vite "4 - Configuração da porta no Vite")
 - [5 - Rodar projeto em desenvolvimento na rede local](#5---rodar-projeto-em-desenvolvimento-na-rede-local "5 - Rodar projeto em desenvolvimento na rede local")
 - [6 - Descrição do comando `npm run build` e sua função no processo de desenvolvimento de aplicações](#descri%C3%A7%C3%A3o-do-comando-npm-run-build-e-sua-fun%C3%A7%C3%A3o-no-processo-de-desenvolvimento-de-aplica%C3%A7%C3%B5es "Descrição do comando 'npm run build' e sua função no processo de desenvolvimento de aplicações")
+
+> Padrão com o Node
+
+- [Configuração de Projeto Node.js com Express, TypeScript e Prisma](# "Configuração de Projeto Node.js com Express, TypeScript e Prisma")
 
 ---
 
@@ -171,6 +177,63 @@ Para usar o comando, basta navegar até o diretório do seu projeto usando o ter
 ```bash
 npm run build
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Configuração de Projeto Node.js com Express, TypeScript e Prisma
+
+Inicializar um novo projeto Node.js com o arquivo package.json preenchido automaticamente com valores padrão, sem a necessidade de interação do usuário.
+
+```bash
+npm init -y
+```
+
+Instalar o pacote 'express' no seu projeto. O Express é um framework popular para construir aplicativos da web com Node.js.
+
+```bash
+npm i express
+```
+
+Atualizando o próprio npm para a versão 10.2.5 de forma global (-g) caso esteja desatualizado.
+
+```bash
+npm install -g npm@10.2.5
+```
+
+Instalar o TypeScript (um superset de JavaScript que adiciona tipagem estática ao código), o ts-node (que permite executar arquivos TypeScript diretamente) e os tipos de definição para o Node.js, todos como dependências de desenvolvimento (--save-dev).
+
+```bash
+npm install typescript ts-node @types/node --save-dev
+```
+
+Inicializar o TypeScript no seu projeto, criando um arquivo de configuração 'tsconfig.json' que permite personalizar as opções do compilador.
+
+```bash
+npx tsc --init
+```
+
+Instalar o Prisma, uma ferramenta ORM (Object-Relational Mapping) para bancos de dados, como uma dependência de desenvolvimento.
+
+```bash
+npm install prisma --save-dev
+```
+
+Instalar o cliente Prisma no seu projeto. O '@prisma/client' é usado para interagir com o banco de dados por meio do Prisma.
+
+```bash
+npm install @prisma/client
+```
+
+Inicializar o Prisma no seu projeto, criando a estrutura de diretórios e arquivos necessários para gerenciar os modelos de banco de dados usando o Prisma.
+
+```bash
+npx prisma init
+```
+
+Estes comandos são usados em um fluxo típico de configuração de um projeto Node.js que utiliza Express, TypeScript e Prisma para lidar com a lógica da aplicação e interações com o banco de dados.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
