@@ -4,7 +4,7 @@
 
 ## Sumário
 
-> Informações
+> **Informações**
 > - [Sobre o React Code](#sobre-o-react-code "Sobre o React Code")
 
 > **Ferramentas de Desenvolvimento**
