@@ -5,8 +5,7 @@
 ## Sumário
 
 > Informações
-
-- [Sobre o React Code](#sobre-o-react-code "Sobre o React Code")
+> - [Sobre o React Code](#sobre-o-react-code "Sobre o React Code")
 
 > **Ferramentas de Desenvolvimento**
 > - **IDEs**
