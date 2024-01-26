@@ -65,9 +65,7 @@
 
 > **Projetos**
 > - [Projetos desenvolvidos em React](https://github.com/systemboys/React_Codes/blob/main/Projetos/README.md#projetos-desenvolvidos-em-react "Projetos desenvolvidos em React")
-> - [Versionamento](https://github.com/systemboys
-
-/React_Codes/tree/main/Projetos/Versionamento#react-codes--versionamento "Versionamento")
+> - [Versionamento](https://github.com/systemboys/React_Codes/tree/main/Projetos/Versionamento#react-codes--versionamento "Versionamento")
 
 > **Computação em nuvens**
 > - [Servidores](https://github.com/systemboys/React_Codes/tree/main/Computa%C3%A7%C3%A3o%20em%20nuvens#computa%C3%A7%C3%A3o-em-nuvens "Servidores")
