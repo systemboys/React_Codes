@@ -38,7 +38,7 @@
 
 > Consultas em componentes de classe.
 
-- [Consulta com o PRISMA em um compoente classe](#consulta-com-o-prisma-em-um-compoente-classe "Consulta com o PRISMA em um compoente classe")
+- [Consulta com o PRISMA em um componente classe](#consulta-com-o-prisma-em-um-compoente-classe "Consulta com o PRISMA em um componente classe")
 - [Listar em componentes classe](#listar-em-componentes-classe "Listar em componentes classe")
 - [Configurando uma rota dentro de um componente de classe em React com definição de array](#configurando-uma-rota-dentro-de-um-componente-de-classe-em-react "Configurando uma rota dentro de um componente de classe em React com definição de array")
 
@@ -833,7 +833,7 @@ O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScr
 
 ---
 
-## Consulta com o PRISMA em um compoente classe
+## Consulta com o PRISMA em um componente classe
 
 Se o componente for uma classe em vez de uma função, você pode utilizar o método `componentDidMount` para fazer a chamada à API e definir o estado inicial com a lista de atualizações vazia:
 
