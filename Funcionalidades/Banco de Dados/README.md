@@ -33,7 +33,7 @@
 - [`Atualizar` um registro `a partir do ID`](#atualizar-um-registro-a-partir-do-id "Atualizar um registro a partir do ID")
 - [Gravar novo registro](#gravar-novo-registro "Gravar novo registro")
     - [Exemplo 1, onde é gravado um registro sem condições](#gravar-novo-registro-exemplo-1 "Exemplo 1, onde é gravado um registro sem condições")
-    - [Cadastro Seguro de Administradores com Hash de Senha](# "Cadastro Seguro de Administradores com Hash de Senha")
+    - [Cadastro Seguro de Administradores com Hash de Senha](#cadastro-seguro-de-administradores-com-hash-de-senha "Cadastro Seguro de Administradores com Hash de Senha")
 
 ---
 
@@ -834,7 +834,7 @@ O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScr
 
 ---
 
-## Cadastro Seguro de Administradores com Hash de Senha
+### Cadastro Seguro de Administradores com Hash de Senha
 
 Essa rota é responsável por adicionar novos administradores à tabela `admins` em um sistema usando uma API REST com o framework Express, o ORM Prisma e a biblioteca `bcrypt` para hashing de senhas. Aqui está uma análise detalhada de como ela funciona:
 
