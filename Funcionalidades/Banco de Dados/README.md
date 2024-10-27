@@ -33,6 +33,7 @@
 - [`Atualizar` um registro `a partir do ID`](#atualizar-um-registro-a-partir-do-id "Atualizar um registro a partir do ID")
 - [Gravar novo registro](#gravar-novo-registro "Gravar novo registro")
     - [Exemplo 1, onde é gravado um registro sem condições](#gravar-novo-registro-exemplo-1 "Exemplo 1, onde é gravado um registro sem condições")
+    - [Cadastro Seguro de Administradores com Hash de Senha](# "Cadastro Seguro de Administradores com Hash de Senha")
 
 ---
 
@@ -827,6 +828,117 @@ Caso haja sucesso na chamada da API, a execução continua normalmente. Caso con
 O await é utilizado para esperar pela conclusão da chamada da API antes de prosseguir com a execução do código. Isso garante que a chamada da API será finalizada antes que qualquer outra ação seja executada no código.
 
 O uso do await é uma forma de lidar com chamadas de API assíncronas no JavaScript, que são operações que podem levar algum tempo para serem concluídas e não bloqueiam a execução do código. Com o uso do await, o código não prossegue até que a operação assíncrona seja finalizada.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Cadastro Seguro de Administradores com Hash de Senha
+
+Essa rota é responsável por adicionar novos administradores à tabela `admins` em um sistema usando uma API REST com o framework Express, o ORM Prisma e a biblioteca `bcrypt` para hashing de senhas. Aqui está uma análise detalhada de como ela funciona:
+
+```ts
+// Inserir dados na tabela "admins"
+routes.post('/addAdmins', async (req, res) => {
+    const { full_name, email, biological_sex, username, password, level } = req.body;
+
+    try {
+        // Gerar o hash da senha
+        const saltRounds = 10; // Quantidade de "salt" para bcrypt
+        const hashedPassword = await bcrypt.hash(password, saltRounds);
+
+        // Gravar o usuário no banco de dados com a senha hasheada
+        const admin = await prisma.admins.create({
+            data: {
+                company_id: 1, // Colocar o ID da empresa como "1" para testes
+                full_name,
+                email,
+                biological_sex,
+                username,
+                password: hashedPassword, // Salva o hash, não a senha simples
+                level,
+            },
+        });
+
+        return res.status(201).json({ data: admin });
+    } catch (error) {
+        console.error('Erro ao adicionar admin:', error);
+        return res.status(500).json({ error: 'Erro ao registrar administrador' });
+    }
+});
+```
+
+### Estrutura Geral
+A rota `POST` é configurada no caminho `/addAdmins`, que recebe uma requisição HTTP para adicionar novos administradores no banco de dados.
+
+### Corpo da Requisição
+Os seguintes dados são extraídos do corpo da requisição (`req.body`), presumivelmente enviados no formato JSON:
+- `full_name`: Nome completo do administrador.
+- `email`: Email do administrador.
+- `biological_sex`: Sexo biológico do administrador (presumivelmente uma string ou enum).
+- `username`: Nome de usuário do administrador.
+- `password`: Senha em texto plano, que será transformada em um hash.
+- `level`: Nível de permissão ou hierarquia do administrador no sistema.
+
+### Processos Importantes
+1. **Hashing da Senha**:
+   A senha fornecida em `req.body.password` é hasheada usando `bcrypt` com um "salt" (valor aleatório para fortalecer a segurança do hash). O valor `saltRounds` define quantas rodadas de "salting" são feitas para gerar o hash (aqui, o valor é `10`, uma prática comum).
+
+   ```ts
+   const saltRounds = 10; // Quantidade de salt para fortalecer o hash
+   const hashedPassword = await bcrypt.hash(password, saltRounds);
+   ```
+
+   A senha hasheada (e não a senha em texto claro) será armazenada no banco de dados, o que é uma boa prática de segurança para proteger as credenciais dos administradores.
+
+2. **Criação do Administrador no Banco de Dados**:
+   Usando o Prisma, os dados fornecidos (incluindo a senha hasheada) são inseridos na tabela `admins`. Além dos dados fornecidos no corpo da requisição, o código define manualmente o `company_id` como `1`, que parece ser um valor de teste. O campo `company_id` provavelmente relaciona o administrador a uma empresa específica, mas neste caso é estático.
+
+   ```ts
+   const admin = await prisma.admins.create({
+       data: {
+           company_id: 1, // Valor fixo para testes
+           full_name,
+           email,
+           biological_sex, 
+           username,
+           password: hashedPassword, 
+           level,
+       },
+   });
+   ```
+
+3. **Resposta da Rota**:
+   - Se o processo de criação for bem-sucedido, o servidor responde com um status `201` (Created) e retorna os dados do administrador recém-criado.
+   - Se houver algum erro (por exemplo, erro de conexão com o banco de dados ou falha no hash da senha), o erro é capturado no bloco `catch` e uma resposta com o status `500` (Internal Server Error) é enviada ao cliente, junto com uma mensagem de erro.
+
+### Tratamento de Erros
+No bloco `catch`, qualquer erro durante o processo de inserção ou hash é tratado, sendo exibido no console e enviado ao cliente com uma mensagem genérica. Esse tratamento evita que informações sensíveis sobre o erro sejam expostas aos usuários finais.
+
+### Melhorias Possíveis
+- **Validação de Dados**: Não há uma validação explícita dos dados recebidos. Ferramentas como `Joi`, `Yup` ou validações manuais poderiam ser usadas para garantir que os dados fornecidos estejam no formato correto antes de prosseguir com a operação.
+  
+- **ID da Empresa**: O `company_id` está fixo em `1`, o que provavelmente é para testes. Em um ambiente de produção, seria ideal obter esse ID de outra parte do código (como da autenticação do usuário logado) ou de uma relação mais dinâmica.
+
+- **Verificação de Duplicidade**: Não há uma verificação de duplicidade para garantir que o email ou username não existam previamente. Adicionar um controle para impedir registros duplicados pode ser importante.
+
+### Exemplo de Corpo da Requisição
+Aqui está um exemplo de como o corpo da requisição poderia ser estruturado em JSON:
+
+```json
+{
+    "full_name": "João Silva",
+    "email": "joao.silva@example.com",
+    "biological_sex": "Masculino",
+    "username": "joaosilva",
+    "password": "senhaSegura123",
+    "level": 2
+}
+```
+
+### Conclusão
+Esta rota está bem estruturada e implementa boas práticas de segurança com o uso do hash de senhas. Contudo, melhorias como validação de entrada, verificação de duplicidade e tratamento mais dinâmico do `company_id` podem ser considerados para um sistema de produção mais robusto.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
