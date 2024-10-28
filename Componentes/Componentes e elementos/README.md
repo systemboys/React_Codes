@@ -1769,7 +1769,7 @@ export function DeleteUser({ id, fenestra }) {
     // Referenciar o formulário.
     const formRef = useRef();
 
-    // Função para resetar o formulário.
+    // Função para fechar janela flutuante.
     function handlePopUpNo() {
         // Fechar a janela flutuante.
         if (fenestra) {
