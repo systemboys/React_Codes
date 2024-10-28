@@ -6,6 +6,7 @@
 
 - [Função simples](#fun%C3%A7%C3%A3o-simples "Função simples")
   - [Preenchimento Automático de Formulários com React: Manipulação de Campos de Texto, Select, Radiobutton e Checkbox](#preenchimento-autom%C3%A1tico-de-formul%C3%A1rios-com-react-manipula%C3%A7%C3%A3o-de-campos-de-texto-select-radiobutton-e-checkbox "Preenchimento Automático de Formulários com React: Manipulação de Campos de Texto, Select, Radiobutton e Checkbox")
+  - [Modularização de Funções de Preenchimento Automático de Formulários em React com Importação Externa](# "Modularização de Funções de Preenchimento Automático de Formulários em React com Importação Externa")
 - [Exemplo de Adição de Evento de Clique em JavaScript](#exemplo-de-adi%C3%A7%C3%A3o-de-evento-de-clique-em-javascript "Exemplo de Adição de Evento de Clique em JavaScript")
 - [Passar uma propriedade de um elemento para uma arrow function](#passar-uma-propriedade-de-um-elemento-para-uma-arrow-function "Passar uma propriedade de um elemento para uma arrow function")
 - [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
@@ -188,6 +189,166 @@ export default FormularioAutoPreencher;
 - Os dois checkboxes serão marcados (`checked`).
 
 Isso pode ser expandido para mais campos ou comportamentos adicionais conforme a necessidade!
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Modularização de Funções de Preenchimento Automático de Formulários em React com Importação Externa
+
+Sim, a função de preenchimento automático pode ser movida para um arquivo separado e importada para dentro do componente, onde pode ser acionada através de um evento `onClick`.
+
+Aqui está um exemplo de como você pode organizar isso:
+
+### 1. **Criar a função em um arquivo separado**
+
+Você pode criar um arquivo chamado `preencherCampos.js` com a função que retorna os dados preenchidos:
+
+```javascript
+// preencherCampos.js
+export const preencherCampos = () => {
+  return {
+    campoTexto: 'Exemplo de texto preenchido',
+    campoTextarea: 'Texto preenchido automaticamente na textarea.',
+    campoSelect: 'opcao2',
+    campoRadio: 'opcao1',
+    campoCheckbox1: true,
+    campoCheckbox2: true,
+  };
+};
+```
+
+### 2. **Importar e utilizar no componente**
+
+Agora, no seu componente principal, você pode importar essa função e usá-la no evento `onClick`.
+
+```jsx
+import React, { useState } from 'react';
+import { preencherCampos } from './preencherCampos'; // Importando a função
+
+const FormularioAutoPreencher = () => {
+  const [formData, setFormData] = useState({
+    campoTexto: '',
+    campoTextarea: '',
+    campoSelect: '',
+    campoRadio: '',
+    campoCheckbox1: false,
+    campoCheckbox2: false,
+  });
+
+  const handlePreencherCampos = () => {
+    const dadosPreenchidos = preencherCampos(); // Usando a função importada
+    setFormData(dadosPreenchidos); // Atualizando o estado com os dados preenchidos
+  };
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
+  };
+
+  return (
+    <div>
+      <h2>Formulário de Exemplo</h2>
+      
+      <div>
+        <label>Campo de Texto:</label>
+        <input 
+          type="text" 
+          name="campoTexto" 
+          value={formData.campoTexto} 
+          onChange={handleChange} 
+        />
+      </div>
+
+      <div>
+        <label>Textarea:</label>
+        <textarea 
+          name="campoTextarea" 
+          value={formData.campoTextarea} 
+          onChange={handleChange} 
+        />
+      </div>
+
+      <div>
+        <label>Seleção:</label>
+        <select 
+          name="campoSelect" 
+          value={formData.campoSelect} 
+          onChange={handleChange}
+        >
+          <option value="">Selecione uma opção</option>
+          <option value="opcao1">Opção 1</option>
+          <option value="opcao2">Opção 2</option>
+          <option value="opcao3">Opção 3</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Radiobutton:</label>
+        <input 
+          type="radio" 
+          name="campoRadio" 
+          value="opcao1" 
+          checked={formData.campoRadio === 'opcao1'} 
+          onChange={handleChange} 
+        />
+        Opção 1
+        <input 
+          type="radio" 
+          name="campoRadio" 
+          value="opcao2" 
+          checked={formData.campoRadio === 'opcao2'} 
+          onChange={handleChange} 
+        />
+        Opção 2
+      </div>
+
+      <div>
+        <label>Checkbox 1:</label>
+        <input 
+          type="checkbox" 
+          name="campoCheckbox1" 
+          checked={formData.campoCheckbox1} 
+          onChange={handleChange} 
+        />
+      </div>
+
+      <div>
+        <label>Checkbox 2:</label>
+        <input 
+          type="checkbox" 
+          name="campoCheckbox2" 
+          checked={formData.campoCheckbox2} 
+          onChange={handleChange} 
+        />
+      </div>
+
+      <button type="button" onClick={handlePreencherCampos}>
+        Preencher Campos
+      </button>
+    </div>
+  );
+};
+
+export default FormularioAutoPreencher;
+```
+
+### Explicação:
+
+1. **Arquivo `preencherCampos.js`**:
+   - Ele contém apenas a função `preencherCampos`, que retorna os valores para serem preenchidos no formulário.
+
+2. **Componente Principal (`FormularioAutoPreencher`)**:
+   - Importa a função `preencherCampos`.
+   - Ao clicar no botão, a função `handlePreencherCampos` é chamada, que utiliza a função `preencherCampos` para obter os valores e, em seguida, atualiza o estado `formData` com esses valores.
+
+### Vantagens dessa abordagem:
+- **Reutilizável**: A função de preenchimento automático está separada e pode ser facilmente reutilizada em outros componentes ou módulos.
+- **Organização**: Deixa o código mais organizado, separando a lógica de preenchimento da interface do componente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
