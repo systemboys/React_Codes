@@ -1260,6 +1260,12 @@ async function handleSubmitForm(e) {
         alert('Erro de rede ou servidor. Tente novamente mais tarde.');
     }
     // ------------------------- /Gravar dados---------------------------
+
+    // Exibir no console os valores obitidos nos campos.
+    // console.log("Submit", { fullUsername, email, biologicalSex, userName, password, level });
+
+    // Resetar após enviar os dados.
+    handleReset();
 }
 ```
 
