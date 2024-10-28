@@ -37,6 +37,8 @@
 > Fenestra
 - [Gerenciamento de Janelas Flutuantes com Fenestra: Passando Propriedades para Controle de Fechamento Dinâmico (Resolvido)](#gerenciamento-de-janelas-flutuantes-com-fenestra-passando-propriedades-para-controle-de-fechamento-din%C3%A2mico-resolvido "Gerenciamento de Janelas Flutuantes com Fenestra: Passando Propriedades para Controle de Fechamento Dinâmico (Resolvido)")
   > Passando a propriedade Fenestra para o compoente que ele carregará!
+- [Passagem de Propriedades com props e Desestruturação em Componentes React](# "Passagem de Propriedades com props e Desestruturação em Componentes React")
+  > Passando a propriedade `fenestra` para o componente `DemoListings1` da mesma forma que você faria com qualquer outra propriedade, mesmo que ele esteja usando `props`.
 
 ---
 
@@ -1826,6 +1828,45 @@ Certifique-se de que, ao abrir a janela, você está passando o `fenestra` como 
 ```
 
 Com isso, o `fenestra` será passado como prop para o componente `DeleteUser`, e o botão "Não" deverá fechar a janela corretamente.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Passagem de Propriedades com props e Desestruturação em Componentes React
+
+Você pode passar a propriedade `fenestra` para o componente `DemoListings1` da mesma forma que você faria com qualquer outra propriedade, mesmo que ele esteja usando `props`. Aqui está como você pode fazer isso:
+
+1. **Passar a propriedade `fenestra` ao chamar o componente**: Se você estiver usando o componente `DemoListings1` em algum lugar do seu código, você pode simplesmente passar `fenestra` como uma propriedade:
+
+   ```jsx
+   <DemoListings1 fenestra={fenestra} />
+   ```
+
+2. **Receber a propriedade `fenestra` dentro do componente usando `props`**: Como o seu componente está usando `props`, você pode acessar a propriedade `fenestra` de `props` diretamente dentro do componente.
+
+   Aqui está como ficaria o código completo com a propriedade `fenestra` sendo passada e acessada:
+
+   ```jsx
+   export function DemoListings1(props) {
+     const { fenestra } = props; // desestruturando a propriedade fenestra de props
+
+     // ou você pode acessar diretamente como props.fenestra
+     console.log(fenestra); // Isso exibirá o valor de fenestra
+
+     return (
+       <div>
+         {/* Outros elementos do seu componente */}
+         <p>O valor de fenestra é: {fenestra}</p>
+       </div>
+     );
+   }
+   ```
+
+   Basicamente, você só precisa garantir que está passando `fenestra` ao instanciar o componente e, em seguida, desestruturar ou acessar essa propriedade de `props` dentro do componente.
+
+Se você quiser manter a estrutura padrão de `props` e ainda assim desestruturar o `fenestra`, o exemplo acima é o mais simples.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
