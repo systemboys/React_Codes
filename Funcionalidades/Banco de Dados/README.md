@@ -1223,6 +1223,7 @@ async function handleSubmitForm(e) {
         return;
     }
 
+    // -------------------------- Gravar dados---------------------------
     // Preparar o objeto com os dados a serem enviados
     const formData = {
         full_name: fullUsername,
@@ -1258,6 +1259,7 @@ async function handleSubmitForm(e) {
         console.error('Erro de rede ou servidor:', error);
         alert('Erro de rede ou servidor. Tente novamente mais tarde.');
     }
+    // ------------------------- /Gravar dados---------------------------
 }
 ```
 
