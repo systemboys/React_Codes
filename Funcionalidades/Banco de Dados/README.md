@@ -1226,12 +1226,12 @@ async function handleSubmitForm(e) {
     // -------------------------- Gravar dados---------------------------
     // Preparar o objeto com os dados a serem enviados
     const formData = {
-        full_name: fullUsername,
-        email: email,
+        full_name:      fullUsername,
+        email:          email,
         biological_sex: biologicalSex, // Corrigido
-        username: userName,
-        password: password,
-        level: parseInt(level), // Recebe valor INT
+        username:       userName,
+        password:       password,
+        level:          parseInt(level), // Recebe valor INT
     };
 
     try {
