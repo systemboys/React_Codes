@@ -51,6 +51,8 @@
   > **( i )** Serve para todos os compoentes independetemente de ser classe, função ou constante!
 - [Obtendo registros com limite e paginação na rota](#obtendo-registros-com-limite-e-pagina%C3%A7%C3%A3o-na-rota "Obtendo registros com limite e paginação na rota")
   > **( i )** Essa configuração deve ser feita na sua rota!
+- [Gravando dados do formulário na tabela usando o ORM Prisma](# "Gravando dados do formulário na tabela usando o ORM Prisma")
+  > **( i )** Essa configuração deve ser feita no componente do formulário!
 
 > Corrigindo problemas de carregamento.
 
@@ -1171,6 +1173,119 @@ routes.get('/jm_posts', async (req, res) => {
 ```
 
 Dessa forma, a consulta retornará os registros de 6 a 10, ordenados por ID de forma decrescente.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+### Gravando dados do formulário na tabela usando o ORM Prisma
+
+Para fazer o seu formulário enviar os dados para a rota `/addAdmins` a fim de gravar as informações na tabela "admins", você precisa fazer alguns ajustes no formulário e na função de envio de dados. Aqui estão os passos detalhados para garantir que tudo funcione corretamente:
+
+### Passo 1: Ajustar os nomes de estado no componente React
+
+Atualmente, você tem um erro de digitação no estado `iologicalSex`, onde deveria ser `biologicalSex`. Corrija isso nos estados e nas referências para manter a consistência:
+
+```jsx
+const [fullUsername, setFullUsername] = useState("");
+const [email, setEmail] = useState("");
+const [biologicalSex, setBiologicalSex] = useState(""); // Corrigido aqui
+const [userName, setUserName] = useState("");
+const [password, setPassword] = useState("");
+```
+
+### Passo 2: Configurar o envio de dados para a API
+
+Na função `handleSubmitForm`, após a validação dos campos, você pode enviar os dados para a rota `/addAdmins` usando `fetch` para realizar uma solicitação POST com o corpo da requisição em formato JSON. Veja como você pode fazer isso:
+
+1. Adicione a função de envio de dados com `fetch`.
+2. Capture a resposta e lide com os possíveis erros.
+
+Aqui está o código atualizado:
+
+```jsx
+// Interceptar o evento do submit.
+async function handleSubmitForm(e) {
+    e.preventDefault();
+
+    // Verificar se o campo "Nome completo do Usuário do sistema" está vazio.
+    if (fullUsername.trim() === '') {
+        fullUsernameInputRef.current.focus();
+        return;
+    }
+    // Verificar se o campo "Email do usuário" está vazio.
+    if (email.trim() === '') {
+        emailInputRef.current.focus();
+        return;
+    }
+    // Verificar se o campo "Sexo Biológico" está vazio.
+    if (biologicalSex.trim() === '') { // Alterado para biologicalSex
+        biologicalSexInputRef.current.focus();
+        return;
+    }
+    // Verificar se o campo "Usuário do sistema" está vazio.
+    if (userName.trim() === '') {
+        userNameInputRef.current.focus();
+        return;
+    }
+    // Verificar se o campo "Senha do Usuário do sistema" está vazio.
+    if (password.trim() === '') {
+        passwordInputRef.current.focus();
+        return;
+    }
+
+    // Preparar o objeto com os dados a serem enviados
+    const formData = {
+        full_name: fullUsername,
+        email: email,
+        biological_sex: biologicalSex, // Corrigido
+        username: userName,
+        password: password,
+        level: 1, // Adicione o nível que você deseja aqui, pode ser dinâmico também
+    };
+
+    try {
+        // Fazer a solicitação POST para a API
+        const response = await fetch('http://localhost:3000/addAdmins', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData) // Enviar o objeto como JSON
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log('Admin adicionado com sucesso:', data);
+
+            // Resetar o formulário após o envio bem-sucedido
+            handleReset();
+        } else {
+            const errorData = await response.json();
+            console.error('Erro ao adicionar admin:', errorData);
+            alert('Erro ao adicionar admin. Verifique os dados e tente novamente.');
+        }
+    } catch (error) {
+        console.error('Erro de rede ou servidor:', error);
+        alert('Erro de rede ou servidor. Tente novamente mais tarde.');
+    }
+}
+```
+
+### Passo 3: Verificar o envio de dados
+
+Certifique-se de que sua API esteja rodando no servidor local e que a rota `POST /addAdmins` esteja funcionando corretamente. Quando o formulário for enviado com sucesso, os dados serão enviados para a API, e o administrador será adicionado ao banco de dados.
+
+### Passo 4: Lidando com o `level`
+
+No código do frontend, estou enviando o campo `level` com um valor fixo de `1`. Se quiser tornar isso dinâmico (por exemplo, adicionar um seletor para níveis diferentes), você pode adicionar esse campo ao formulário também.
+
+### Passo 5: Mensagens de feedback para o usuário
+
+Depois de adicionar o administrador com sucesso ou se houver algum erro, você pode mostrar mensagens para o usuário através de `alert()` ou outros componentes de feedback mais elaborados, como `toasts` ou `modals`, dependendo da sua necessidade.
+
+Agora, o seu formulário enviará corretamente as informações para a rota `/addAdmins`, e a rota salvará os dados no banco de dados.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
