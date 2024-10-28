@@ -37,7 +37,7 @@
 > Fenestra
 - [Gerenciamento de Janelas Flutuantes com Fenestra: Passando Propriedades para Controle de Fechamento Dinâmico (Resolvido)](#gerenciamento-de-janelas-flutuantes-com-fenestra-passando-propriedades-para-controle-de-fechamento-din%C3%A2mico-resolvido "Gerenciamento de Janelas Flutuantes com Fenestra: Passando Propriedades para Controle de Fechamento Dinâmico (Resolvido)")
   > Passando a propriedade Fenestra para o compoente que ele carregará!
-- [Passagem de Propriedades com props e Desestruturação em Componentes React](# "Passagem de Propriedades com props e Desestruturação em Componentes React")
+- [Passagem de Propriedades com props e Desestruturação em Componentes React](#passagem-de-propriedades-com-props-e-desestrutura%C3%A7%C3%A3o-em-componentes-react "Passagem de Propriedades com props e Desestruturação em Componentes React")
   > Passando a propriedade `fenestra` para o componente `DemoListings1` da mesma forma que você faria com qualquer outra propriedade, mesmo que ele esteja usando `props`.
 
 ---
