@@ -39,7 +39,7 @@
   > Passando a propriedade Fenestra para o compoente que ele carregará!
 - [Passagem de Propriedades com props e Desestruturação em Componentes React](#passagem-de-propriedades-com-props-e-desestrutura%C3%A7%C3%A3o-em-componentes-react "Passagem de Propriedades com props e Desestruturação em Componentes React")
   > Passando a propriedade `fenestra` para o componente `DemoListings1` da mesma forma que você faria com qualquer outra propriedade, mesmo que ele esteja usando `props`.
-- [Controle Condicional de Fechamento de Janela no Formulário](# "Controle Condicional de Fechamento de Janela no Formulário")
+- [Controle Condicional de Fechamento de Janela no Formulário](#passagem-de-propriedades-com-props-e-desestrutura%C3%A7%C3%A3o-em-componentes-react "Controle Condicional de Fechamento de Janela no Formulário")
   > Implementação a funcionalidade onde a janela só será fechada se o botão "Fechar ao concluir" estiver marcado.
 
 ---
