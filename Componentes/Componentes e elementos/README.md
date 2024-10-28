@@ -39,6 +39,8 @@
   > Passando a propriedade Fenestra para o compoente que ele carregará!
 - [Passagem de Propriedades com props e Desestruturação em Componentes React](#passagem-de-propriedades-com-props-e-desestrutura%C3%A7%C3%A3o-em-componentes-react "Passagem de Propriedades com props e Desestruturação em Componentes React")
   > Passando a propriedade `fenestra` para o componente `DemoListings1` da mesma forma que você faria com qualquer outra propriedade, mesmo que ele esteja usando `props`.
+- [Controle Condicional de Fechamento de Janela no Formulário](# "Controle Condicional de Fechamento de Janela no Formulário")
+  > Implementação a funcionalidade onde a janela só será fechada se o botão "Fechar ao concluir" estiver marcado.
 
 ---
 
@@ -1867,6 +1869,78 @@ Você pode passar a propriedade `fenestra` para o componente `DemoListings1` da 
    Basicamente, você só precisa garantir que está passando `fenestra` ao instanciar o componente e, em seguida, desestruturar ou acessar essa propriedade de `props` dentro do componente.
 
 Se você quiser manter a estrutura padrão de `props` e ainda assim desestruturar o `fenestra`, o exemplo acima é o mais simples.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Controle Condicional de Fechamento de Janela no Formulário
+
+Para implementar a funcionalidade onde a janela só será fechada se o botão "Fechar ao concluir" estiver marcado, você pode modificar a lógica de fechamento do `fenestra` com base no valor do `Form.Check` que você já tem no componente. Aqui estão as alterações necessárias:
+
+### 1. **Criar um estado para o switch**  
+Você precisa armazenar o valor do switch "Fechar ao concluir" em um estado. Adicione o seguinte estado ao componente:
+
+```jsx
+const [closeOnSubmit, setCloseOnSubmit] = useState(true);
+```
+
+### 2. **Vincular o estado ao switch**  
+Altere o `Form.Check` para que ele atualize esse novo estado quando for clicado. Atualize o código do `Form.Check` da seguinte maneira:
+
+```jsx
+<Form.Check 
+    type="switch"
+    id="custom-switch"
+    label="Fechar ao concluir"
+    checked={closeOnSubmit}
+    onChange={(e) => setCloseOnSubmit(e.target.checked)}
+/>
+```
+
+### 3. **Modificar a lógica de fechamento da janela**  
+Agora, altere o trecho onde o `fenestra.close()` é chamado, para que ele verifique o estado do `closeOnSubmit` antes de fechar a janela:
+
+```jsx
+// --- Executar após registro de dados ---
+if (closeOnSubmit && fenestra) {
+    fenestra.close();  // Fechar a janela do Fenestra
+}
+// --- /Executar após registro de dados ---
+```
+
+### Código Final das Alterações
+
+Aqui estão as partes relevantes com as alterações aplicadas:
+
+1. **Estado para o switch:**
+
+```jsx
+const [closeOnSubmit, setCloseOnSubmit] = useState(true);
+```
+
+2. **Modificação do `Form.Check`:**
+
+```jsx
+<Form.Check 
+    type="switch"
+    id="custom-switch"
+    label="Fechar ao concluir"
+    checked={closeOnSubmit}
+    onChange={(e) => setCloseOnSubmit(e.target.checked)}
+/>
+```
+
+3. **Verificação antes de fechar a janela:**
+
+```jsx
+if (closeOnSubmit && fenestra) {
+    fenestra.close();  // Fechar a janela do Fenestra
+}
+```
+
+Com essas alterações, a janela só fechará se o switch "Fechar ao concluir" estiver ativado.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
