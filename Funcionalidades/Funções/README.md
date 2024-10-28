@@ -6,7 +6,7 @@
 
 - [Função simples](#fun%C3%A7%C3%A3o-simples "Função simples")
   - [Preenchimento Automático de Formulários com React: Manipulação de Campos de Texto, Select, Radiobutton e Checkbox](#preenchimento-autom%C3%A1tico-de-formul%C3%A1rios-com-react-manipula%C3%A7%C3%A3o-de-campos-de-texto-select-radiobutton-e-checkbox "Preenchimento Automático de Formulários com React: Manipulação de Campos de Texto, Select, Radiobutton e Checkbox")
-  - [Modularização de Funções de Preenchimento Automático de Formulários em React com Importação Externa](# "Modularização de Funções de Preenchimento Automático de Formulários em React com Importação Externa")
+  - [Modularização de Funções de Preenchimento Automático de Formulários em React com Importação Externa](#modulariza%C3%A7%C3%A3o-de-fun%C3%A7%C3%B5es-de-preenchimento-autom%C3%A1tico-de-formul%C3%A1rios-em-react-com-importa%C3%A7%C3%A3o-externa "Modularização de Funções de Preenchimento Automático de Formulários em React com Importação Externa")
 - [Exemplo de Adição de Evento de Clique em JavaScript](#exemplo-de-adi%C3%A7%C3%A3o-de-evento-de-clique-em-javascript "Exemplo de Adição de Evento de Clique em JavaScript")
 - [Passar uma propriedade de um elemento para uma arrow function](#passar-uma-propriedade-de-um-elemento-para-uma-arrow-function "Passar uma propriedade de um elemento para uma arrow function")
 - [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
