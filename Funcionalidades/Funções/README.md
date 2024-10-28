@@ -5,6 +5,7 @@
 ### *Sumário*
 
 - [Função simples](#fun%C3%A7%C3%A3o-simples "Função simples")
+  - [Preenchimento Automático de Formulários com React: Manipulação de Campos de Texto, Select, Radiobutton e Checkbox](# "Preenchimento Automático de Formulários com React: Manipulação de Campos de Texto, Select, Radiobutton e Checkbox")
 - [Exemplo de Adição de Evento de Clique em JavaScript](#exemplo-de-adi%C3%A7%C3%A3o-de-evento-de-clique-em-javascript "Exemplo de Adição de Evento de Clique em JavaScript")
 - [Passar uma propriedade de um elemento para uma arrow function](#passar-uma-propriedade-de-um-elemento-para-uma-arrow-function "Passar uma propriedade de um elemento para uma arrow function")
 - [PopUp com uma determinada URL passada via parâmetro](#popup-com-uma-determinada-url-passada-via-par%C3%A2metro "Popup com uma determinada URL passada via parâmetro")
@@ -42,6 +43,151 @@ Sua função pode ser executada por exemplo, em um elemento HTML escrita da segu
 ```jsx
  onClick={handleYourFunction}
 ```
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Preenchimento Automático de Formulários com React: Manipulação de Campos de Texto, Select, Radiobutton e Checkbox
+
+Aqui está um exemplo de código em JavaScript JSX que pode ser usado em um componente de formulário para preencher automaticamente diferentes tipos de campos (como `text`, `textarea`, `select`, `radiobutton`, e `checkbox`) ao clicar em um link.
+
+```jsx
+import React, { useState } from 'react';
+
+const FormularioAutoPreencher = () => {
+  const [formData, setFormData] = useState({
+    campoTexto: '',
+    campoTextarea: '',
+    campoSelect: '',
+    campoRadio: '',
+    campoCheckbox1: false,
+    campoCheckbox2: false,
+  });
+
+  const preencherCampos = () => {
+    setFormData({
+      campoTexto: 'Exemplo de texto preenchido',
+      campoTextarea: 'Texto preenchido automaticamente na textarea.',
+      campoSelect: 'opcao2',
+      campoRadio: 'opcao1',
+      campoCheckbox1: true,
+      campoCheckbox2: true,
+    });
+  };
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      [name]: type === 'checkbox' ? checked : value,
+    }));
+  };
+
+  return (
+    <div>
+      <h2>Formulário de Exemplo</h2>
+      
+      <div>
+        <label>Campo de Texto:</label>
+        <input 
+          type="text" 
+          name="campoTexto" 
+          value={formData.campoTexto} 
+          onChange={handleChange} 
+        />
+      </div>
+
+      <div>
+        <label>Textarea:</label>
+        <textarea 
+          name="campoTextarea" 
+          value={formData.campoTextarea} 
+          onChange={handleChange} 
+        />
+      </div>
+
+      <div>
+        <label>Seleção:</label>
+        <select 
+          name="campoSelect" 
+          value={formData.campoSelect} 
+          onChange={handleChange}
+        >
+          <option value="">Selecione uma opção</option>
+          <option value="opcao1">Opção 1</option>
+          <option value="opcao2">Opção 2</option>
+          <option value="opcao3">Opção 3</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Radiobutton:</label>
+        <input 
+          type="radio" 
+          name="campoRadio" 
+          value="opcao1" 
+          checked={formData.campoRadio === 'opcao1'} 
+          onChange={handleChange} 
+        />
+        Opção 1
+        <input 
+          type="radio" 
+          name="campoRadio" 
+          value="opcao2" 
+          checked={formData.campoRadio === 'opcao2'} 
+          onChange={handleChange} 
+        />
+        Opção 2
+      </div>
+
+      <div>
+        <label>Checkbox 1:</label>
+        <input 
+          type="checkbox" 
+          name="campoCheckbox1" 
+          checked={formData.campoCheckbox1} 
+          onChange={handleChange} 
+        />
+      </div>
+
+      <div>
+        <label>Checkbox 2:</label>
+        <input 
+          type="checkbox" 
+          name="campoCheckbox2" 
+          checked={formData.campoCheckbox2} 
+          onChange={handleChange} 
+        />
+      </div>
+
+      <button type="button" onClick={preencherCampos}>
+        Preencher Campos
+      </button>
+    </div>
+  );
+};
+
+export default FormularioAutoPreencher;
+```
+
+### Explicação:
+
+- **Estado Inicial (`formData`)**: O estado é utilizado para armazenar os valores dos campos do formulário. Cada campo possui seu próprio valor inicial.
+  
+- **Função `preencherCampos`**: Ao clicar no botão, essa função atualiza o estado com valores predefinidos, preenchendo automaticamente os campos de texto, `textarea`, `select`, `radiobutton` e `checkbox`.
+
+- **Função `handleChange`**: Essa função lida com as mudanças nos campos do formulário, atualizando o estado conforme o usuário interage com o formulário.
+
+### Comportamento:
+- O campo de texto (`input type="text"`) será preenchido com "Exemplo de texto preenchido".
+- A `textarea` será preenchida com "Texto preenchido automaticamente na textarea.".
+- O `select` irá selecionar "Opção 2".
+- O radiobutton "Opção 1" será marcado.
+- Os dois checkboxes serão marcados (`checked`).
+
+Isso pode ser expandido para mais campos ou comportamentos adicionais conforme a necessidade!
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
