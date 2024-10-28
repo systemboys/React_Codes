@@ -1181,7 +1181,7 @@ Dessa forma, a consulta retornará os registros de 6 a 10, ordenados por ID de f
 
 ### Gravando dados do formulário na tabela usando o ORM Prisma
 
-Para fazer o formulário enviar os dados para a rota `/addAdmins` a fim de gravar as informações na tabela "admins", você precisa fazer alguns ajustes no formulário e na função de envio de dados. Aqui estão os passos detalhados para garantir que tudo funcione corretamente:
+Para fazer o formulário enviar os dados para a rota `/addAdmins` a fim de gravar as informações na tabela "admins", você precisa fazer alguns ajustes na função de envio de dados. Aqui estão os passos detalhados para garantir que tudo funcione corretamente:
 
 ### Passo 1: Configurar o envio de dados para a API
 
@@ -1267,9 +1267,9 @@ Certifique-se de que sua API esteja rodando no servidor local e que a rota `POST
 
 ### Passo 3: Lidando com o `level`
 
-No código do frontend, estou enviando o campo `level` com um valor fixo de `1`. Se quiser tornar isso dinâmico (por exemplo, adicionar um seletor para níveis diferentes), você pode adicionar esse campo ao formulário também.
+No código do frontend, está sendo enviado o campo `level` com um valor inteiro (`int`), pois um seletor para níveis sendo definido com números inteiros, o valor deve ser recebido com `parseInt(level)`.
 
-### Passo 5: Mensagens de feedback para o usuário
+### Passo 4: Mensagens de feedback para o usuário
 
 Depois de adicionar o administrador com sucesso ou se houver algum erro, você pode mostrar mensagens para o usuário através de `alert()` ou outros componentes de feedback mais elaborados, como `toasts` ou `modals`, dependendo da sua necessidade.
 
