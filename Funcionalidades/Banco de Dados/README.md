@@ -51,7 +51,7 @@
   > **( i )** Serve para todos os compoentes independetemente de ser classe, função ou constante!
 - [Obtendo registros com limite e paginação na rota](#obtendo-registros-com-limite-e-pagina%C3%A7%C3%A3o-na-rota "Obtendo registros com limite e paginação na rota")
   > **( i )** Essa configuração deve ser feita na sua rota!
-- [Gravando dados do formulário na tabela usando o ORM Prisma](# "Gravando dados do formulário na tabela usando o ORM Prisma")
+- [Gravando dados do formulário na tabela usando o ORM Prisma](#gravando-dados-do-formul%C3%A1rio-na-tabela-usando-o-orm-prisma "Gravando dados do formulário na tabela usando o ORM Prisma")
   > **( i )** Essa configuração deve ser feita no componente do formulário!
 
 > Corrigindo problemas de carregamento.
@@ -1181,21 +1181,9 @@ Dessa forma, a consulta retornará os registros de 6 a 10, ordenados por ID de f
 
 ### Gravando dados do formulário na tabela usando o ORM Prisma
 
-Para fazer o seu formulário enviar os dados para a rota `/addAdmins` a fim de gravar as informações na tabela "admins", você precisa fazer alguns ajustes no formulário e na função de envio de dados. Aqui estão os passos detalhados para garantir que tudo funcione corretamente:
+Para fazer o formulário enviar os dados para a rota `/addAdmins` a fim de gravar as informações na tabela "admins", você precisa fazer alguns ajustes no formulário e na função de envio de dados. Aqui estão os passos detalhados para garantir que tudo funcione corretamente:
 
-### Passo 1: Ajustar os nomes de estado no componente React
-
-Atualmente, você tem um erro de digitação no estado `iologicalSex`, onde deveria ser `biologicalSex`. Corrija isso nos estados e nas referências para manter a consistência:
-
-```jsx
-const [fullUsername, setFullUsername] = useState("");
-const [email, setEmail] = useState("");
-const [biologicalSex, setBiologicalSex] = useState(""); // Corrigido aqui
-const [userName, setUserName] = useState("");
-const [password, setPassword] = useState("");
-```
-
-### Passo 2: Configurar o envio de dados para a API
+### Passo 1: Configurar o envio de dados para a API
 
 Na função `handleSubmitForm`, após a validação dos campos, você pode enviar os dados para a rota `/addAdmins` usando `fetch` para realizar uma solicitação POST com o corpo da requisição em formato JSON. Veja como você pode fazer isso:
 
@@ -1242,7 +1230,7 @@ async function handleSubmitForm(e) {
         biological_sex: biologicalSex, // Corrigido
         username: userName,
         password: password,
-        level: 1, // Adicione o nível que você deseja aqui, pode ser dinâmico também
+        level: parseInt(level), // Recebe valor INT
     };
 
     try {
@@ -1273,11 +1261,11 @@ async function handleSubmitForm(e) {
 }
 ```
 
-### Passo 3: Verificar o envio de dados
+### Passo 2: Verificar o envio de dados
 
 Certifique-se de que sua API esteja rodando no servidor local e que a rota `POST /addAdmins` esteja funcionando corretamente. Quando o formulário for enviado com sucesso, os dados serão enviados para a API, e o administrador será adicionado ao banco de dados.
 
-### Passo 4: Lidando com o `level`
+### Passo 3: Lidando com o `level`
 
 No código do frontend, estou enviando o campo `level` com um valor fixo de `1`. Se quiser tornar isso dinâmico (por exemplo, adicionar um seletor para níveis diferentes), você pode adicionar esse campo ao formulário também.
 
