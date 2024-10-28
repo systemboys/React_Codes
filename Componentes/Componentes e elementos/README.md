@@ -4,6 +4,7 @@
 
 ### *Sumário*
 
+> Diversos
 - [Componentes no modo `Default Exports`](#componentes-no-modo-default-exports "Componentes no modo Default Exports")
 - [Componentes no modo `Named Exports`](#componentes-no-modo-named-exports "Componentes no modo Named Exports")
 - [`Formulário` responsívo com React-Bootstrap](#formul%C3%A1rio-respons%C3%ADvo-com-react-bootstrap "Formulário responsívo com React-Bootstrap")
@@ -32,6 +33,10 @@
 - [`Barra com animação` com React-Bootstrap](#barra-com-animação-com-react-bootstrap "Barra com animação com React-Bootstrap")
 - [Incrementando `React-FontAwesome`](#incrementando-react-fontawesome "Incrementando React-FontAwesome")
 - [`Impedir` a exibição do `menu de contexto` (click inverso) dentro do componente](#impedir-a-exibi%C3%A7%C3%A3o-do-menu-de-contexto-click-inverso-dentro-do-componente "Impedir a exibição do menu de contexto (click inverso) dentro do componente")
+
+> Fenestra
+- [Gerenciamento de Janelas Flutuantes com Fenestra: Passando Propriedades para Controle de Fechamento Dinâmico](# "Gerenciamento de Janelas Flutuantes com Fenestra: Passando Propriedades para Controle de Fechamento Dinâmico")
+  > Passando a propriedade Fenestra para o compoente que ele carregará!
 
 ---
 
@@ -1735,6 +1740,92 @@ function MyComponent() {
 Nesse exemplo, estamos usando o hook `useEffect` para adicionar um listener para o evento `contextmenu` no elemento `document` quando o componente é montado. No retorno da função passada para o `useEffect`, estamos removendo o listener para garantir que ele não continue a ser executado quando o componente é desmontado.
 
 Com essa abordagem, qualquer menu de contexto que tente ser exibido dentro do seu componente será impedido de aparecer.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Gerenciamento de Janelas Flutuantes com Fenestra: Passando Propriedades para Controle de Fechamento Dinâmico
+
+> ( ! ) Situação problema (Resolvido)!
+
+A razão pela qual sua função `handlePopUpNo()` pode não estar funcionando é que você está tentando acessar `props.fenestra` diretamente dentro do componente `DeleteUser`, mas não está passando `props` no componente. Se você está tentando acessar algo que está fora do escopo do seu componente, precisará garantir que a instância do Fenestra seja acessada corretamente.
+
+Aqui estão alguns pontos que podem ajudar a resolver o problema:
+
+1. **Verifique a passagem de `fenestra` como `prop`:** Certifique-se de que, quando você instancia o componente `<DeleteUser />`, está passando o `fenestra` como prop.
+   
+2. **Desestruturação do `props`:** No componente `DeleteUser`, você está desestruturando `{ id }`, mas precisa desestruturar `fenestra` também, caso ele seja passado como prop.
+
+Aqui está a modificação sugerida:
+
+```jsx
+export function DeleteUser({ id, fenestra }) {
+
+    // Definir o estado para o valor "y".
+    const [confirmationValue] = useState("y");
+
+    // Referenciar o formulário.
+    const formRef = useRef();
+
+    // Função para resetar o formulário.
+    function handlePopUpNo() {
+        // Fechar a janela flutuante.
+        if (fenestra) {
+            fenestra.close();  // Fechar a janela do Fenestra
+        }
+    }
+
+    return (
+        <Container>
+            <Form ref={formRef} onSubmit={handleSubmitForm}>
+                <Row className="mb-3">
+                    <Col sm={12}>
+                        <p>Deseja mesmo excluir este registro?</p>
+                    </Col>
+                </Row>
+                <Button variant="danger" type="submit">
+                    <FontAwesomeIcon icon={faCheck} />{' '}Sim
+                </Button>
+                <Button type="button" onClick={handlePopUpNo} variant="secondary" className="ms-2">
+                    <FontAwesomeIcon icon={faTimes} />{' '}Não
+                </Button>
+            </Form>
+        </Container>
+    );
+}
+```
+
+### O que foi alterado:
+
+1. **Recebendo `fenestra` como prop:** Eu adicionei `fenestra` na desestruturação do componente, para que você possa acessar diretamente o `fenestra` passado na instância do componente.
+   
+2. **Acesso ao `fenestra`:** Dentro de `handlePopUpNo()`, agora você acessa `fenestra.close()` corretamente.
+
+### Instanciando o componente:
+
+Certifique-se de que, ao abrir a janela, você está passando o `fenestra` como prop ao instanciar o `<DeleteUser />`:
+
+```jsx
+<FontAwesomeIcon 
+    className={styles.faTrashCan} 
+    icon={faTrashCan} 
+    size="1x" 
+    title='Excluir usuário' 
+    onClick={() => props.fenestra.open({
+        title: "Resumida", 
+        resizeable: false, 
+        left: (window.innerWidth - 350) / 2, 
+        top: (window.innerHeight - 150) / 2, 
+        width: 350, 
+        height: 150, 
+        content: ({ fenestra }) => <DeleteUser id={item.id} fenestra={fenestra} /> // Passe fenestra como prop aqui
+    })} 
+/>
+```
+
+Com isso, o `fenestra` será passado como prop para o componente `DeleteUser`, e o botão "Não" deverá fechar a janela corretamente.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
