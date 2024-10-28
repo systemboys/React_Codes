@@ -1761,7 +1761,7 @@ Aqui estão alguns pontos que podem ajudar a resolver o problema:
 Aqui está a modificação sugerida:
 
 ```jsx
-export function DeleteUser({ id, fenestra }) {
+export function DeleteUser({ fenestra }) {
 
     // Definir o estado para o valor "y".
     const [confirmationValue] = useState("y");
