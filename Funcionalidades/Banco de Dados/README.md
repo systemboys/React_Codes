@@ -64,6 +64,8 @@
   > **( i )** Isso reflete a natureza do problema que você está enfrentando e a solução proposta para garantir que os dados estejam prontos antes da renderização do componente React.
 - [Como Inicializar uma `DataTable` com Dados de uma `API` no ReactJS](#como-inicializar-uma-datatable-com-dados-de-uma-api-no-reactjs "Como Inicializar uma DataTable com Dados de uma API no ReactJS")
   > **( i )** Neste guia, mostramos como usar o ReactJS para buscar dados de uma API e inicializar uma DataTable somente após os dados terem sido carregados  com sucesso. Isso garante que a DataTable funcione corretamente e evita  problemas de dados vazios ou inexistentes.
+- [Configurar DataTable para ordenadar itens conforme necessário](# "Configurar DataTable para ordenadar itens conforme necessário")
+    > **( i )** Configurar o DataTable para que a tabela seja ordenada conforme necessário.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
@@ -1525,6 +1527,108 @@ A alteração que você fez no código envolve o uso de um segundo `useEffect` q
 6. No retorno da função do `useEffect`, você destrói a instância da DataTable chamando `table.destroy()`. Isso é importante para liberar recursos e evitar vazamentos de memória quando o componente for desmontado.
 
 Em resumo, essa alteração garante que a DataTable seja inicializada somente após os dados da API terem sido carregados com sucesso (ou seja, quando `dataLoaded` se torna `true`). Isso evita que a DataTable seja inicializada com dados vazios ou inexistentes e garante que ela funcione corretamente com os dados reais da API quando estiver pronta para ser exibida na página.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+---
+
+## Configurar DataTable para ordenadar itens conforme necessário
+
+Com base no código que você compartilhou, é possível que o comportamento padrão do **DataTable** esteja interferindo na ordem dos registros que você quer exibir. A boa notícia é que podemos configurar o **DataTable** para que a tabela seja ordenada conforme necessário.
+
+### O que modificar:
+Você já está instanciando o **DataTable** corretamente no `useEffect`. Para resolver o problema da ordenação, você pode adicionar a opção `order` diretamente na configuração do **DataTable** para forçar a ordenação da coluna de `ID` em ordem decrescente.
+
+Aqui está o que você pode modificar no seu `useEffect`:
+
+### Código atualizado no `useEffect`:
+
+```jsx
+import { useEffect, useState } from 'react';
+import DataTable from 'datatables.net-dt';
+import '../../DataTables/datatables_theme_2.css';
+
+const YourComponent = (props) => {
+    const [dataLoaded, setDataLoaded] = useState(false);
+
+    // Simulação de carregamento de dados para ilustrar o exemplo
+    useEffect(() => {
+        // Quando os dados forem carregados, marque como `dataLoaded`
+        setDataLoaded(true);
+    }, []);
+
+    useEffect(() => {
+        if (dataLoaded) {
+            const table = new DataTable('#usersTable', {
+                responsive: true,
+                order: [[0, 'desc']], // Ordenar pela primeira coluna (ID) em ordem decrescente
+                columnDefs: [
+                    { orderable: false, targets: [5] } // Desativar ordenação na coluna de 'Ação' (índice 5)
+                ]
+            });
+
+            // Limpar/destruir a tabela ao desmontar o componente
+            return () => {
+                table.destroy();
+            };
+        }
+    }, [dataLoaded, props.listAdmins]); // Use props.listAdmins se for atualizado dinamicamente
+
+    return (
+        <table id="usersTable" className={`display ${styles.usersTable}`}>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Usuário</th>
+                    <th>Email</th>
+                    <th>Nível</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                {props.listAdmins.map((item, i) => (
+                    <tr key={i}>
+                        <td>{item.id}</td>
+                        <td>
+                            <FontAwesomeIcon icon={item.biological_sex === "M" ? faPerson : faPersonDress} size="1x" className={item.biological_sex === "M" ? styles.biologicalSexM : styles.biologicalSexF} /> {item.full_name}
+                        </td>
+                        <td>{item.username}</td>
+                        <td>{item.email}</td>
+                        <td>
+                            <FontAwesomeIcon className={item.level === 0 ? styles.faIdBadgeI : styles.faIdBadgeL} icon={faIdBadge} size="1x" title='Perfil do usuário' />
+                        </td>
+                        <td>
+                            <FontAwesomeIcon className={styles.faPencil} icon={faPencilAlt} size="1x" title='Editar dados do usuário' onClick={() => props.fenestra.open({title: "Editar usuário", content: <RegisterUsers id={item.id} />})} />
+                            <FontAwesomeIcon className={styles.faTrashCan} icon={faTrashCan} size="1x" title='Excluir usuário' onClick={() => props.fenestra.open({title: "Excluir", content: <DeleteUser id={item.id} />})} />
+                        </td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
+    );
+};
+
+export default YourComponent;
+```
+
+### Explicação das alterações:
+
+1. **`order: [[0, 'desc']]`**:
+   - Isso define a ordenação inicial pela primeira coluna (que é a de `ID`), e a ordem é `desc` (decrescente). Com isso, o registro mais recente será mostrado no topo da tabela.
+   
+2. **`columnDefs: [{ orderable: false, targets: [5] }]`**:
+   - Desabilita a ordenação na última coluna (índice 5), que contém as ações (ícones de edição e exclusão), já que não faz sentido ordenar por essa coluna.
+
+3. **`return () => table.destroy();`**:
+   - Isso garante que o **DataTable** seja destruído corretamente ao desmontar o componente, evitando problemas de performance ou múltiplas instâncias da tabela.
+
+### Considerações:
+- Certifique-se de que os dados no `listAdmins` estejam sendo atualizados corretamente para refletir os novos registros.
+- O código que você colocou dentro do `useEffect` será executado assim que o `dataLoaded` for `true`. Caso os dados demorem a carregar, o estado `dataLoaded` garantirá que o DataTable só será inicializado quando os dados estiverem disponíveis.
+
+Com essas alterações, a tabela deverá ser exibida corretamente, com os registros ordenados do mais recente para o mais antigo.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
