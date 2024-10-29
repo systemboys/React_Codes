@@ -55,6 +55,8 @@
   > **( i )** Essa configuração deve ser feita no componente do formulário!
 - [Rota de Exclusão de Administrador via ID e Integração com Frontend React](#rota-de-exclus%C3%A3o-de-administrador-via-id-e-integra%C3%A7%C3%A3o-com-frontend-react "Rota de Exclusão de Administrador via ID e Integração com Frontend React")
   > **( i )** Essa rota é usada para excluir um administrador da tabela `admins` com base no seu `ID`. A requisição feita para essa rota é do tipo `DELETE`.
+- [Instruções para Criar Rota e Requisição de um Administrador Específico](# "Instruções para Criar Rota e Requisição de um Administrador Específico")
+  > **( i )** Instruções para Criar Rota e Requisição de um Administrador Específico a partir de um `ID`.
 
 > Corrigindo problemas de carregamento.
 
@@ -1379,6 +1381,130 @@ async function handleSubmitForm(e) {
 #### **Notas**:
 - **ID**: O ID do administrador deve ser passado na URL ao fazer a requisição. Certifique-se de que o valor está sendo fornecido corretamente no componente React.
 - **Mensagens de sucesso/erro**: A API retorna uma mensagem de sucesso se a exclusão for bem-sucedida e uma mensagem de erro se o administrador não for encontrado ou houver falha no processo.
+
+[(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
+[(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
+
+## Instruções para Criar Rota e Requisição de um Administrador Específico
+
+### 1. Rota para Buscar um Administrador Específico
+
+#### Objetivo:
+Criar uma rota que permite a consulta de um administrador específico, utilizando o ID fornecido na URL.
+
+#### Descrição:
+Esta rota recebe um parâmetro dinâmico `:id`, faz uma consulta no banco de dados para buscar o administrador com o ID correspondente e retorna os dados como uma resposta em JSON.
+
+#### Implementação:
+```jsx
+// Selecionar um único administrador na tabela "admins".
+// Rota: '/singleAdmin/:id'
+routes.get('/singleAdmin/:id', async (req, res) => {
+    const { id } = req.params; // Pegando o ID da URL
+
+    try {
+        // Buscar o administrador pelo ID fornecido
+        const admin = await prisma.admins.findUnique({
+            where: {
+                id: parseInt(id), // O ID precisa ser convertido para número
+            },
+        });
+
+        // Se o administrador não for encontrado, retorna status 404
+        if (!admin) {
+            return res.status(404).json({ error: 'Administrador não encontrado' });
+        }
+
+        // Retorna os dados do administrador encontrado
+        res.status(200).json(admin);
+    } catch (error) {
+        console.error(error); // Log para verificar erros
+        res.status(500).json({ error: 'Erro ao buscar administrador' }); // Tratamento de erro
+    }
+});
+```
+
+#### Notas:
+- O método `findUnique` do Prisma é usado para buscar um único registro com base no `id`.
+- Se o administrador não for encontrado, um status `404` é retornado com a mensagem apropriada.
+- Em caso de erro no servidor, um status `500` é retornado com uma mensagem de erro.
+
+---
+
+### 2. Requisição no Componente React para Buscar Dados do Administrador
+
+#### Objetivo:
+Fazer uma requisição HTTP para buscar os dados de um administrador específico e exibir esses dados no componente React.
+
+#### Descrição:
+Utilizando o `useEffect` do React, a função faz uma chamada à rota `/singleAdmin/:id` para obter os dados do administrador com o ID correspondente. A resposta da API é convertida para JSON e os dados são armazenados no estado do componente.
+
+#### Implementação:
+```jsx
+import React, { useEffect, useState } from 'react';
+
+const AdminProfile = ({ id }) => {
+    const [admin, setAdmin] = useState(null);  // Estado para armazenar os dados do administrador
+    const [loading, setLoading] = useState(true);  // Estado para controlar o carregamento
+    const [error, setError] = useState(null);  // Estado para armazenar erros
+
+    useEffect(() => {
+        // Função para buscar os dados do administrador
+        const fetchAdminData = async () => {
+            try {
+                // Faz a requisição para a rota com o ID dinâmico
+                const response = await fetch(`http://localhost:3333/singleAdmin/${id}`);
+
+                // Verifica se a resposta não foi bem-sucedida
+                if (!response.ok) {
+                    throw new Error('Erro ao buscar administrador');
+                }
+
+                // Converte a resposta para JSON e salva no estado
+                const data = await response.json();
+                setAdmin(data);
+            } catch (error) {
+                // Em caso de erro, atualiza o estado de erro
+                setError(error.message);
+            } finally {
+                // Desabilita o estado de carregamento
+                setLoading(false);
+            }
+        };
+
+        fetchAdminData();
+    }, [id]); // A função é executada sempre que o ID mudar
+
+    // Renderiza uma mensagem de carregamento enquanto os dados são buscados
+    if (loading) {
+        return <div>Carregando...</div>;
+    }
+
+    // Renderiza a mensagem de erro, caso tenha ocorrido algum problema
+    if (error) {
+        return <div>Erro: {error}</div>;
+    }
+
+    // Renderiza os dados do administrador, caso a requisição tenha sido bem-sucedida
+    return (
+        <div>
+            <h1>Perfil do Administrador</h1>
+            <p>ID: {admin.id}</p>
+            <p>Nome: {admin.name}</p>
+            <p>Email: {admin.email}</p>
+            {/* Exiba outros dados que sejam necessários */}
+        </div>
+    );
+};
+
+export default AdminProfile;
+```
+
+#### Notas:
+- **`useEffect`**: A função é executada na montagem do componente e sempre que o valor do `id` mudar.
+- **`fetch`**: Realiza a requisição HTTP à rota `/singleAdmin/:id` e processa a resposta.
+- **Carregamento e Erro**: O componente exibe um feedback visual ao usuário enquanto os dados são carregados, e também trata possíveis erros durante a requisição.
+- **Estado do Componente**: Utilizamos `useState` para armazenar os dados do administrador, o estado de carregamento e possíveis erros.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
 [(&uarr;) Subir](#sum%C3%A1rio "Subir para o topo")
