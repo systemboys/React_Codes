@@ -53,8 +53,8 @@
   > **( i )** Essa configuração deve ser feita na sua rota!
 - [Gravando dados do formulário na tabela usando o ORM Prisma](#gravando-dados-do-formul%C3%A1rio-na-tabela-usando-o-orm-prisma "Gravando dados do formulário na tabela usando o ORM Prisma")
   > **( i )** Essa configuração deve ser feita no componente do formulário!
-- [Rota de Exclusão de Administrador via ID e Integração com Frontend React](# "Rota de Exclusão de Administrador via ID e Integração com Frontend React")
-  > **( i )** ddddddd
+- [Rota de Exclusão de Administrador via ID e Integração com Frontend React](#rota-de-exclus%C3%A3o-de-administrador-via-id-e-integra%C3%A7%C3%A3o-com-frontend-react "Rota de Exclusão de Administrador via ID e Integração com Frontend React")
+  > **( i )** Essa rota é usada para excluir um administrador da tabela `admins` com base no seu `ID`. A requisição feita para essa rota é do tipo `DELETE`.
 
 > Corrigindo problemas de carregamento.
 
@@ -1290,7 +1290,7 @@ Agora, o seu formulário enviará corretamente as informações para a rota `/ad
 
 ---
 
-## Rota de Exclusão de Administrador via ID e Integração com Frontend React
+### Rota de Exclusão de Administrador via ID e Integração com Frontend React
 
 ### **Rota de Exclusão de Administrador**
 
