@@ -55,7 +55,7 @@
   > **( i )** Essa configuração deve ser feita no componente do formulário!
 - [Rota de Exclusão de Administrador via ID e Integração com Frontend React](#rota-de-exclus%C3%A3o-de-administrador-via-id-e-integra%C3%A7%C3%A3o-com-frontend-react "Rota de Exclusão de Administrador via ID e Integração com Frontend React")
   > **( i )** Essa rota é usada para excluir um administrador da tabela `admins` com base no seu `ID`. A requisição feita para essa rota é do tipo `DELETE`.
-- [Instruções para Criar Rota e Requisição de um Administrador Específico](# "Instruções para Criar Rota e Requisição de um Administrador Específico")
+- [Instruções para Criar Rota e Requisição de um Administrador Específico](#instru%C3%A7%C3%B5es-para-criar-rota-e-requisi%C3%A7%C3%A3o-de-um-administrador-espec%C3%ADfico "Instruções para Criar Rota e Requisição de um Administrador Específico")
   > **( i )** Instruções para Criar Rota e Requisição de um Administrador Específico a partir de um `ID`.
 
 > Corrigindo problemas de carregamento.
