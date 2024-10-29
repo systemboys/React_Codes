@@ -64,7 +64,7 @@
   > **( i )** Isso reflete a natureza do problema que você está enfrentando e a solução proposta para garantir que os dados estejam prontos antes da renderização do componente React.
 - [Como Inicializar uma `DataTable` com Dados de uma `API` no ReactJS](#como-inicializar-uma-datatable-com-dados-de-uma-api-no-reactjs "Como Inicializar uma DataTable com Dados de uma API no ReactJS")
   > **( i )** Neste guia, mostramos como usar o ReactJS para buscar dados de uma API e inicializar uma DataTable somente após os dados terem sido carregados  com sucesso. Isso garante que a DataTable funcione corretamente e evita  problemas de dados vazios ou inexistentes.
-- [Configurar DataTable para ordenadar itens conforme necessário](# "Configurar DataTable para ordenadar itens conforme necessário")
+- [Configurar DataTable para ordenadar itens conforme necessário](#configurar-datatable-para-ordenadar-itens-conforme-necess%C3%A1rio "Configurar DataTable para ordenadar itens conforme necessário")
     > **( i )** Configurar o DataTable para que a tabela seja ordenada conforme necessário.
 
 [(&larr;) Voltar](https://github.com/systemboys/React_Codes#react-codes "Voltar ao Sumário") | 
